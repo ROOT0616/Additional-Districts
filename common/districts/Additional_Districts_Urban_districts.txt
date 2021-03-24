@@ -1,30 +1,27 @@
 @base_cost = 300
 @city_cost = 500
 
+
 # 遺跡都市  district_archaeological_cities 住居*5	発掘者*2	（自然発生）
 district_archaeological_cities = {
 	base_buildtime = 240
-
 	min_for_deposits_on_planet = 5
 	max_for_deposits_on_planet = 10
-
 	show_on_uncolonized = {
 		uses_district_set = standard
 	}
-
 	potential = {
 		uses_district_set = standard
 	}
-
 	allow = {
-		NOT = { has_modifier = resort_colony }
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
-
 	conversion_ratio = 1
 	# convert_to = {
 	# 	district_archaeological_cities_uncapped
 	# }
-
 	resources = {
 		category = planet_districts
 		cost = {
@@ -34,11 +31,9 @@ district_archaeological_cities = {
 			energy = 1
 		}
 	}
-
 	planet_modifier = {
 		planet_housing_add = 2
 	}
-
 	# triggered_planet_modifier = {
 	# 	potential = {
 	# 		exists = owner
@@ -55,11 +50,9 @@ district_archaeological_cities = {
 	# 	}
 	# 	text = job_fe_acolyte_generator_effect_desc
 	# }
-
 	prerequisites = {
 		tech_power_plant_1
 	}
-
 	ai_weight = {
 		weight = 0
 		modifier = {
@@ -72,7 +65,11 @@ district_archaeological_cities = {
 				}
 				any_owned_pop = {
 					is_unemployed = yes
-					NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+					NOT = {
+						has_citizenship_type = {
+							type = citizenship_organic_trophy
+						}
+					}
 					NOR = {
 						is_pop_category = specialist
 						is_pop_category = ruler
@@ -91,7 +88,6 @@ district_archaeological_cities = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		energy = 1
 		trigger = {
