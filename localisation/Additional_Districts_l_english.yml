@@ -1,0 +1,41 @@
+﻿l_english:
+
+##############################
+#####    ディシジョン    ######
+##############################
+
+
+
+#######################
+#####    技術    ######
+#######################
+
+ mixed_use_development_plan:0 "大規模地区開発計画"
+ mixed_use_development_plan_desc:0 ""
+
+ large_scale_in_water_construction_technology:0 ""
+ large_scale_in_water_construction_technology_desc:0 ""
+
+ large_scale_air_construction_technology:0 ""
+ large_scale_air_construction_technology_desc:0 ""
+
+ large_scale_ground_construction_technology:0 ""
+ large_scale_ground_construction_technology_desc:0 ""
+
+#######################
+#####    仕事    ######
+#######################
+
+
+
+#######################
+#####    区域    ######
+#######################
+
+ district_archaeological_cities:0 ""
+ district_archaeological_cities_desc:0 ""
+
+
+
+# :0 ""
+# _desc:0 ""

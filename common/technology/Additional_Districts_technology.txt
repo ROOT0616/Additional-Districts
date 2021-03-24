@@ -1,0 +1,124 @@
+# 大規模地区開発計画	mixed_use_development_plan	 Tire4
+mixed_use_development_plan = {
+	cost = @tier4cost3
+	area = society
+	tier = 1
+	category = {
+		new_worlds
+	}
+	weight = @tier4weight3
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+# 大規模水中建設技術	Large_scale_in_water_construction_technology	 Tire4
+large_scale_in_water_construction_technology = {
+	cost = @tier4cost3
+	area = society
+	tier = 1
+	category = {
+		new_worlds
+	}
+	prerequisites = {
+		"mixed_use_development_plan"
+	}
+	weight = @tier4weight3
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+# 大規模空中建設技術	large_scale_air_construction_technology	 Tire4
+large_scale_air_construction_technology = {
+	cost = @tier4cost3
+	area = society
+	tier = 1
+	category = {
+		new_worlds
+	}
+	prerequisites = {
+		"mixed_use_development_plan"
+	}
+	weight = @tier4weight3
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
+
+# 大規模地中建設技術	large_scale_ground_construction_technology	 Tire4
+large_scale_ground_construction_technology = {
+	cost = @tier4cost3
+	area = society
+	tier = 1
+	category = {
+		new_worlds
+	}
+	prerequisites = {
+		"mixed_use_development_plan"
+	}
+	weight = @tier4weight3
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}
