@@ -1,0 +1,6 @@
+on_press_begin = {
+	events = {
+		# Open the menu
+		additionaldistricts.01
+	}
+}

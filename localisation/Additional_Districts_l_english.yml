@@ -13,13 +13,13 @@
  mixed_use_development_plan:0 "大規模地区開発計画"
  mixed_use_development_plan_desc:0 ""
 
- large_scale_in_water_construction_technology:0 ""
+ large_scale_in_water_construction_technology:0 "大規模水中建設技術"
  large_scale_in_water_construction_technology_desc:0 ""
 
- large_scale_air_construction_technology:0 ""
+ large_scale_air_construction_technology:0 "大規模空中建設技術"
  large_scale_air_construction_technology_desc:0 ""
 
- large_scale_ground_construction_technology:0 ""
+ large_scale_ground_construction_technology:0 "大規模地中建設技術"
  large_scale_ground_construction_technology_desc:0 ""
 
 #######################
@@ -32,10 +32,93 @@
 #####    区域    ######
 #######################
 
- district_archaeological_cities:0 ""
+ district_archaeological_cities:0 "遺跡都市"
  district_archaeological_cities_desc:0 ""
+ district_sky_cities:0 "空中都市"
+ district_sky_cities_desc:0 ""
+ district_water_cities:0 "水上都市"
+ district_water_cities_desc:0 ""
+ district_under_water_cities:0 "水中都市"
+ district_under_water_cities_desc:0 ""
+ district_underground_cities:0 "地下都市"
+ district_underground_cities_desc:0 ""
 
+ district_solar_power_generation:0 "太陽光発電"
+ district_solar_power_generation_desc:0 ""
+ district_geothermal_electric_power_generation:0 "地熱発電"
+ district_geothermal_electric_power_generation_desc:0 ""
+ district_tidal_current_generation:0 "潮流発電"
+ district_tidal_current_generation_desc:0 ""
+ district_natural_nuclear_power_generation:0 "天然原子炉発電"
+ district_natural_nuclear_power_generation_desc:0 ""
 
+ district_open_pit_ore_deposits:0 "露天鉱床"
+ district_open_pit_ore_deposits_desc:0 ""
+ district_under_water_deposits:0 "水中鉱床"
+ district_under_water_deposits_desc:0 ""
+ district_orbital_deposits:0 "軌道鉱石群"
+ district_orbital_deposits_desc:0 ""
+ district_high_quality_deposits:0 "高質鉱床"
+ district_high_quality_deposits_desc:0 ""
+ district_low_quality_deposits:0 "低質鉱床"
+ district_low_quality_deposits_desc:0 ""
+
+ district_shed_cultivation_land:0 "棚状耕作地"
+ district_shed_cultivation_land_desc:0 ""
+ district_in_water_ecosystem:0 "水中生態系"
+ district_in_water_ecosystem_desc:0 ""
+ district_mycorrhizal_communities:0 "菌類群生体"
+ district_mycorrhizal_communities_desc:0 ""
+ district_large_scale_grazing_land:0 "大規模牧草地"
+ district_large_scale_grazing_land_desc:0 ""
+ district_large_scale_agricultural_land:0 "大自然農業地"
+ district_large_scale_agricultural_land_desc:0 ""
+
+#######################
+#####    区域    ######
+#######################
+
+ d_archaeological_cities:0 "遺跡都市"
+ d_archaeological_cities_desc:0 ""
+ d_sky_cities:0 "空中都市"
+ d_sky_cities_desc:0 ""
+ d_water_cities:0 "水上都市"
+ d_water_cities_desc:0 ""
+ d_under_water_cities:0 "水中都市"
+ d_under_water_cities_desc:0 ""
+ d_underground_cities:0 "地下都市"
+ d_underground_cities_desc:0 ""
+
+ d_solar_power_generation:0 "太陽光発電"
+ d_solar_power_generation_desc:0 ""
+ d_geothermal_electric_power_generation:0 "地熱発電"
+ d_geothermal_electric_power_generation_desc:0 ""
+ d_tidal_current_generation:0 "潮流発電"
+ d_tidal_current_generation_desc:0 ""
+ d_natural_nuclear_power_generation:0 "天然原子炉発電"
+ d_natural_nuclear_power_generation_desc:0 ""
+
+ d_open_pit_ore_deposits:0 "露天鉱床"
+ d_open_pit_ore_deposits_desc:0 ""
+ d_under_water_deposits:0 "水中鉱床"
+ d_under_water_deposits_desc:0 ""
+ d_orbital_deposits:0 "軌道鉱石群"
+ d_orbital_deposits_desc:0 ""
+ d_high_quality_deposits:0 "高質鉱床"
+ d_high_quality_deposits_desc:0 ""
+ d_low_quality_deposits:0 "低質鉱床"
+ d_low_quality_deposits_desc:0 ""
+
+ d_shed_cultivation_land:0 "棚状耕作地"
+ d_shed_cultivation_land_desc:0 ""
+ d_in_water_ecosystem:0 "水中生態系"
+ d_in_water_ecosystem_desc:0 ""
+ d_mycorrhizal_communities:0 "菌類群生体"
+ d_mycorrhizal_communities_desc:0 ""
+ d_large_scale_grazing_land:0 "大規模牧草地"
+ d_large_scale_grazing_land_desc:0 ""
+ d_large_scale_agricultural_land:0 "大自然農業地"
+ d_large_scale_agricultural_land_desc:0 ""
 
 # :0 ""
 # _desc:0 ""

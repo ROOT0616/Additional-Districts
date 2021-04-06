@@ -1,0 +1,428 @@
+@high = 16
+@med = 8
+@low = 4
+
+@high_rare = 0.5
+@mid_rare = 0.25
+@low_rare = 0.1
+
+@planet_type_bonus = 1.5
+
+##############################
+#####    都市区域追加    ######
+##############################
+
+# 遺跡都市  district_archaeological_cities 住居*5	発掘者*2	（自然発生）
+d_archaeological_cities = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_archaeological_cities_max = 1
+	}
+	potential = {
+		has_planet_flag = do_archaeological_cities
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 空中都市　住居*30	事務員*2	交易価値	（自然発生）	（技術開発）
+d_sky_cities = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_sky_cities_max = 1
+	}
+	potential = {
+		has_planet_flag = do_sky_cities
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 水上都市	water_cities	住居*20	事務員*2	交易価値	（自然発生）（技術開発）
+d_water_cities = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_water_cities_max = 1
+	}
+	potential = {
+		AND = {
+			OR = {
+				is_planet_class = pc_continental
+				is_planet_class = pc_ocean
+				is_planet_class = pc_tropical
+			}
+			has_planet_flag = do_water_cities
+		}
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 水中都市	under_water_cities	住居*5	水中農家*2	農作物	（自然発生）	（技術開発）
+d_under_water_cities = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_under_water_cities_max = 1
+	}
+	potential = {
+		AND = {
+			OR = {
+				is_planet_class = pc_continental
+				is_planet_class = pc_ocean
+				is_planet_class = pc_tropical
+			}
+			has_planet_flag = do_under_water_cities
+		}
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+#地下都市 underground_cities	住居*5	施設維持業者*1	鉱物生産	（自然発生）	（技術開発）
+d_underground_cities = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_underground_cities_max = 1
+	}
+	potential = {
+		AND = {
+			NOR = {
+				# is_planet_class = pc_continental
+				is_planet_class = pc_ocean
+				# is_planet_class = pc_tropical
+			}
+			has_planet_flag = do_underground_cities
+		}
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+##############################
+#####    発電区域追加    ######
+##############################
+# 太陽光発電	技術者*5	（技術開発）
+# 地熱発電	地熱技師*2	（技術開発）
+# 潮流発電	技術者*5	（技術開発）
+# 天然原子炉発電	原子技師*2	（技術開発）
+
+#太陽光発電 solar_power_generation	住居*2	技術者*5	（技術開発）
+d_solar_power_generation = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_solar_power_generation_max = 1
+	}
+	potential = {
+		has_planet_flag = do_solar_power_generation
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+#地熱発電 geothermal_electric_power_generation	住居*2 地熱技師*2	（技術開発）
+d_geothermal_electric_power_generation = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_geothermal_electric_power_generation_max = 1
+	}
+	potential = {
+		has_planet_flag = do_geothermal_electric_power_generation
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+#潮流発電 tidal_current_generation	住居*2 技術者*5	（技術開発）
+d_tidal_current_generation = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_tidal_current_generation_max = 1
+	}
+	potential = {
+		has_planet_flag = do_tidal_current_generation
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+#天然原子炉発電 natural_nuclear_power_generation	住居*2 原子技師*2	（技術開発）
+d_natural_nuclear_power_generation = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_natural_nuclear_power_generation_max = 1
+	}
+	potential = {
+		has_planet_flag = do_natural_nuclear_power_generation
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+##############################
+#####    鉱物区域追加    ######
+##############################	
+# 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
+# 水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
+# 軌道鉱石群	orbital_deposits	宇宙採掘者*2	（技術開発）
+# 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
+# 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生）
+
+# 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
+d_open_pit_ore_deposits = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_open_pit_ore_deposits_max = 1
+	}
+	potential = {
+		has_planet_flag = do_open_pit_ore_deposits
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
+d_under_water_deposits = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_under_water_deposits_max = 1
+	}
+	potential = {
+		has_planet_flag = do_under_water_deposits
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 軌道鉱石群	orbital_deposits	宇宙採掘者*2	（技術開発）
+d_orbital_deposits = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_orbital_deposits_max = 1
+	}
+	potential = {
+		has_planet_flag = do_orbital_deposits
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
+d_high_quality_deposits = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_high_quality_deposits_max = 1
+	}
+	potential = {
+		has_planet_flag = do_high_quality_deposits
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生
+d_low_quality_deposits = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_low_quality_deposits_max = 1
+	}
+	potential = {
+		has_planet_flag = do_low_quality_deposits
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+##############################
+#####    農業区域追加    ######
+##############################
+# 棚状耕作地	shed_cultivation_land	（技術開発）
+# 水中生態系	in_water_ecosystem	（自然発生）
+# 菌類群生体	mycorrhizal_communities	（自然発生）
+# 大規模牧草地	large_scale_grazing_land（技術開発）
+# 大自然農業地	large_scale_agricultural_land（技術開発）
+
+# 棚状耕作地	shed_cultivation_land	（技術開発）
+d_shed_cultivation_land = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_shed_cultivation_land_max = 1
+	}
+	potential = {
+		has_planet_flag = do_shed_cultivation_land
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 水中生態系	in_water_ecosystem	（自然発生）
+d_in_water_ecosystem = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_in_water_ecosystem_max = 1
+	}
+	potential = {
+		has_planet_flag = do_in_water_ecosystem
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 菌類群生体	mycorrhizal_communities	（自然発生）
+d_mycorrhizal_communities = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_mycorrhizal_communities_max = 1
+	}
+	potential = {
+		has_planet_flag = do_mycorrhizal_communities
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 大規模牧草地	large_scale_grazing_land	（技術開発）
+d_large_scale_grazing_land = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_large_scale_grazing_land_max = 1
+	}
+	potential = {
+		has_planet_flag = do_large_scale_grazing_land
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 大自然農業地	large_scale_agricultural_land（技術開発）
+d_large_scale_agricultural_land = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_large_scale_agricultural_land_max = 1
+	}
+	potential = {
+		has_planet_flag = do_large_scale_agricultural_land
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+################################
+#####    その他区域追加    ######
+################################
+# 古代遺跡群	（自然発生）
+# 古代データバンク	（自然発生）
+# 天然の要塞	（自然発生）
+# 観光特区	（技術開発)
+
+
+
+################################
+#####    その他区域追加    ######
+################################
+# 後で設置可能（1-5つまで設置可能？）
+# 官庁街
+# 大学街
+# 住宅街
+# 造船工廠
+# 通信区域
+# 観光区域
+# 防衛区域
+# 構想特区	起業家（研究力とか交易価値？）
+# 研究特区	研究者
+# 宇宙港区域
+# 軌道エレベーター
