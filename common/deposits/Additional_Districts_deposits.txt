@@ -12,30 +12,18 @@
 #####    都市区域追加    ######
 ##############################
 
-<<<<<<< HEAD
 # 遺跡都市  district_ad_archaeological_cities 住居*5	発掘者*2	（自然発生）
 d_ad_archaeological_cities = {
-=======
-# 遺跡都市  district_archaeological_cities 住居*5	発掘者*2	（自然発生）
-d_archaeological_cities = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_archaeological_cities_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_archaeological_cities
-=======
-		district_archaeological_cities_max = 1
-	}
-	potential = {
-		has_planet_flag = do_archaeological_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -43,28 +31,17 @@ d_archaeological_cities = {
 }
 
 # 空中都市　住居*30	事務員*2	交易価値	（自然発生）	（技術開発）
-<<<<<<< HEAD
 d_ad_sky_cities = {
-=======
-d_sky_cities = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_sky_cities_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_sky_cities
-=======
-		district_sky_cities_max = 1
-	}
-	potential = {
-		has_planet_flag = do_sky_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -72,22 +49,14 @@ d_sky_cities = {
 }
 
 # 水上都市	water_cities	住居*20	事務員*2	交易価値	（自然発生）（技術開発）
-<<<<<<< HEAD
 d_ad_water_cities = {
-=======
-d_water_cities = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_water_cities_max = 1
-=======
-		district_water_cities_max = 1
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	potential = {
 		AND = {
@@ -96,11 +65,7 @@ d_water_cities = {
 				is_planet_class = pc_ocean
 				is_planet_class = pc_tropical
 			}
-<<<<<<< HEAD
 			has_planet_flag = do_ad_water_cities
-=======
-			has_planet_flag = do_water_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 		}
 	}
 	drop_weight = {
@@ -109,22 +74,14 @@ d_water_cities = {
 }
 
 # 水中都市	under_water_cities	住居*5	水中農家*2	農作物	（自然発生）	（技術開発）
-<<<<<<< HEAD
 d_ad_under_water_cities = {
-=======
-d_under_water_cities = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_under_water_cities_max = 1
-=======
-		district_under_water_cities_max = 1
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	potential = {
 		AND = {
@@ -133,11 +90,7 @@ d_under_water_cities = {
 				is_planet_class = pc_ocean
 				is_planet_class = pc_tropical
 			}
-<<<<<<< HEAD
 			has_planet_flag = do_ad_under_water_cities
-=======
-			has_planet_flag = do_under_water_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 		}
 	}
 	drop_weight = {
@@ -146,22 +99,14 @@ d_under_water_cities = {
 }
 
 #地下都市 underground_cities	住居*5	施設維持業者*1	鉱物生産	（自然発生）	（技術開発）
-<<<<<<< HEAD
 d_ad_underground_cities = {
-=======
-d_underground_cities = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_underground_cities_max = 1
-=======
-		district_underground_cities_max = 1
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	potential = {
 		AND = {
@@ -170,11 +115,7 @@ d_underground_cities = {
 				is_planet_class = pc_ocean
 				# is_planet_class = pc_tropical
 			}
-<<<<<<< HEAD
 			has_planet_flag = do_ad_underground_cities
-=======
-			has_planet_flag = do_underground_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 		}
 	}
 	drop_weight = {
@@ -191,28 +132,17 @@ d_underground_cities = {
 # 天然原子炉発電	原子技師*2	（技術開発）
 
 #太陽光発電 solar_power_generation	住居*2	技術者*5	（技術開発）
-<<<<<<< HEAD
 d_ad_solar_power_generation = {
-=======
-d_solar_power_generation = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_solar_power_generation_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_solar_power_generation
-=======
-		district_solar_power_generation_max = 1
-	}
-	potential = {
-		has_planet_flag = do_solar_power_generation
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -220,28 +150,17 @@ d_solar_power_generation = {
 }
 
 #地熱発電 geothermal_electric_power_generation	住居*2 地熱技師*2	（技術開発）
-<<<<<<< HEAD
 d_ad_geothermal_electric_power_generation = {
-=======
-d_geothermal_electric_power_generation = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_geothermal_electric_power_generation_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_geothermal_electric_power_generation
-=======
-		district_geothermal_electric_power_generation_max = 1
-	}
-	potential = {
-		has_planet_flag = do_geothermal_electric_power_generation
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -249,28 +168,17 @@ d_geothermal_electric_power_generation = {
 }
 
 #潮流発電 tidal_current_generation	住居*2 技術者*5	（技術開発）
-<<<<<<< HEAD
 d_ad_tidal_current_generation = {
-=======
-d_tidal_current_generation = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_tidal_current_generation_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_tidal_current_generation
-=======
-		district_tidal_current_generation_max = 1
-	}
-	potential = {
-		has_planet_flag = do_tidal_current_generation
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -278,28 +186,17 @@ d_tidal_current_generation = {
 }
 
 #天然原子炉発電 natural_nuclear_power_generation	住居*2 原子技師*2	（技術開発）
-<<<<<<< HEAD
 d_ad_natural_nuclear_power_generation = {
-=======
-d_natural_nuclear_power_generation = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_natural_nuclear_power_generation_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_natural_nuclear_power_generation
-=======
-		district_natural_nuclear_power_generation_max = 1
-	}
-	potential = {
-		has_planet_flag = do_natural_nuclear_power_generation
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -316,28 +213,17 @@ d_natural_nuclear_power_generation = {
 # 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生）
 
 # 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
-<<<<<<< HEAD
 d_ad_open_pit_ore_deposits = {
-=======
-d_open_pit_ore_deposits = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_open_pit_ore_deposits_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_open_pit_ore_deposits
-=======
-		district_open_pit_ore_deposits_max = 1
-	}
-	potential = {
-		has_planet_flag = do_open_pit_ore_deposits
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -345,28 +231,17 @@ d_open_pit_ore_deposits = {
 }
 
 # 水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
-<<<<<<< HEAD
 d_ad_under_water_deposits = {
-=======
-d_under_water_deposits = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_under_water_deposits_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_under_water_deposits
-=======
-		district_under_water_deposits_max = 1
-	}
-	potential = {
-		has_planet_flag = do_under_water_deposits
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -374,28 +249,17 @@ d_under_water_deposits = {
 }
 
 # 軌道鉱石群	orbital_deposits	宇宙採掘者*2	（技術開発）
-<<<<<<< HEAD
 d_ad_orbital_deposits = {
-=======
-d_orbital_deposits = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_orbital_deposits_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_orbital_deposits
-=======
-		district_orbital_deposits_max = 1
-	}
-	potential = {
-		has_planet_flag = do_orbital_deposits
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -403,28 +267,17 @@ d_orbital_deposits = {
 }
 
 # 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
-<<<<<<< HEAD
 d_ad_high_quality_deposits = {
-=======
-d_high_quality_deposits = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_high_quality_deposits_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_high_quality_deposits
-=======
-		district_high_quality_deposits_max = 1
-	}
-	potential = {
-		has_planet_flag = do_high_quality_deposits
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -432,28 +285,17 @@ d_high_quality_deposits = {
 }
 
 # 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生
-<<<<<<< HEAD
 d_ad_low_quality_deposits = {
-=======
-d_low_quality_deposits = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_low_quality_deposits_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_low_quality_deposits
-=======
-		district_low_quality_deposits_max = 1
-	}
-	potential = {
-		has_planet_flag = do_low_quality_deposits
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -470,28 +312,17 @@ d_low_quality_deposits = {
 # 大自然農業地	large_scale_agricultural_land（技術開発）
 
 # 棚状耕作地	shed_cultivation_land	（技術開発）
-<<<<<<< HEAD
 d_ad_shed_cultivation_land = {
-=======
-d_shed_cultivation_land = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_shed_cultivation_land_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_shed_cultivation_land
-=======
-		district_shed_cultivation_land_max = 1
-	}
-	potential = {
-		has_planet_flag = do_shed_cultivation_land
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -499,28 +330,17 @@ d_shed_cultivation_land = {
 }
 
 # 水中生態系	in_water_ecosystem	（自然発生）
-<<<<<<< HEAD
 d_ad_in_water_ecosystem = {
-=======
-d_in_water_ecosystem = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_in_water_ecosystem_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_in_water_ecosystem
-=======
-		district_in_water_ecosystem_max = 1
-	}
-	potential = {
-		has_planet_flag = do_in_water_ecosystem
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -528,28 +348,17 @@ d_in_water_ecosystem = {
 }
 
 # 菌類群生体	mycorrhizal_communities	（自然発生）
-<<<<<<< HEAD
 d_ad_mycorrhizal_communities = {
-=======
-d_mycorrhizal_communities = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_mycorrhizal_communities_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_mycorrhizal_communities
-=======
-		district_mycorrhizal_communities_max = 1
-	}
-	potential = {
-		has_planet_flag = do_mycorrhizal_communities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -557,28 +366,17 @@ d_mycorrhizal_communities = {
 }
 
 # 大規模牧草地	large_scale_grazing_land	（技術開発）
-<<<<<<< HEAD
 d_ad_large_scale_grazing_land = {
-=======
-d_large_scale_grazing_land = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_large_scale_grazing_land_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_large_scale_grazing_land
-=======
-		district_large_scale_grazing_land_max = 1
-	}
-	potential = {
-		has_planet_flag = do_large_scale_grazing_land
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -586,28 +384,17 @@ d_large_scale_grazing_land = {
 }
 
 # 大自然農業地	large_scale_agricultural_land（技術開発）
-<<<<<<< HEAD
 d_ad_large_scale_agricultural_land = {
-=======
-d_large_scale_agricultural_land = {
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-<<<<<<< HEAD
 		district_ad_large_scale_agricultural_land_max = 1
 	}
 	potential = {
 		has_planet_flag = do_ad_large_scale_agricultural_land
-=======
-		district_large_scale_agricultural_land_max = 1
-	}
-	potential = {
-		has_planet_flag = do_large_scale_agricultural_land
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 	}
 	drop_weight = {
 		weight = @low
@@ -617,7 +404,6 @@ d_large_scale_agricultural_land = {
 ################################
 #####    その他区域追加    ######
 ################################
-<<<<<<< HEAD
 # 古代遺跡群	ancient_ruins	（自然発生）
 # 古代データバンク	ancient_databank	（自然発生）
 # 天然の要塞	natural_fortress	（自然発生）
@@ -695,14 +481,6 @@ d_ad_special_tourism_zone = {
 		weight = @low
 	}
 }
-=======
-# 古代遺跡群	（自然発生）
-# 古代データバンク	（自然発生）
-# 天然の要塞	（自然発生）
-# 観光特区	（技術開発)
-
-
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 
 ################################
 #####    その他区域追加    ######

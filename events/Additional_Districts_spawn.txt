@@ -1,15 +1,9 @@
 namespace = additionaldistricts
 
-<<<<<<< HEAD
 @MicroSpace = 30
 @SmallSpace = 40
 @MiddleSpace = 50
 @LargeSpace = 60
-=======
-@SmallSpace = 100
-@MiddleSpace = 300
-@LargeSpace = 500
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 
 # Normal Spawn Event
 country_event = {
@@ -18,21 +12,14 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-<<<<<<< HEAD
 		# 遺跡都市  district_ad_archaeological_cities 住居*5	発掘者*2	（自然発生）
 		while = {
 			count = @MicroSpace
-=======
-		# 遺跡都市  district_archaeological_cities 住居*5	発掘者*2	（自然発生）
-		while = {
-			count = @SmallSpace
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			random_planet = {
 				limit = {
 					NOR = {
 						is_star = yes
 						is_asteroid = yes
-<<<<<<< HEAD
 						# is_planet_class = pc_desert #砂漠型惑星
 						# is_planet_class = pc_arid #乾燥型惑星
 						# is_planet_class = pc_tundra #ツンドラ型惑星
@@ -76,55 +63,21 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_archaeological_cities
-=======
-						is_planet_class = pc_ocean
-						is_planet_class = pc_gas_giant
-						is_planet_class = pc_molten
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_toxic
-						is_planet_class = pc_nuked
-						is_planet_class = pc_ai
-						is_planet_class = pc_hive
-						is_planet_class = pc_machine
-						is_planet_class = pc_shielded
-						is_planet_class = pc_shrouded
-						is_planet_class = pc_shattered
-						is_planet_class = pc_infested
-						is_planet_class = pc_cybrex
-						is_planet_class = pc_egg_cracked
-						is_planet_class = pc_ringworld_habitable
-						is_planet_class = pc_ringworld_habitable_damaged
-						is_planet_class = pc_ringworld_tech
-						is_planet_class = pc_ringworld_seam
-						is_planet_class = pc_ringworld_seam_damaged
-						is_planet_class = pc_habitat
-					}
-				}
-				set_planet_flag = do_archaeological_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 1
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_archaeological_cities
 				}
 				add_deposit = d_ad_archaeological_cities
-=======
-					has_planet_flag = do_archaeological_cities
-				}
-				add_deposit = d_archaeological_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = @SmallSpace
 			random_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_archaeological_cities
 				}
 				add_deposit = d_ad_archaeological_cities
@@ -133,23 +86,11 @@ country_event = {
 		# 空中都市	住居*30	事務員*2	交易価値	（自然発生）	（技術開発）
 		while = {
 			count = @MicroSpace
-=======
-					has_planet_flag = do_archaeological_cities
-				}
-				add_deposit = d_archaeological_cities
-			}
-		}
-		
-		# 空中都市	住居*30	事務員*2	交易価値	（自然発生）	（技術開発）
-		while = {
-			count = @SmallSpace
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			random_planet = {
 				limit = {
 					NOR = {
 						is_star = yes
 						is_asteroid = yes
-<<<<<<< HEAD
 						# is_planet_class = pc_desert #砂漠型惑星
 						# is_planet_class = pc_arid #乾燥型惑星
 						# is_planet_class = pc_tundra #ツンドラ型惑星
@@ -193,39 +134,12 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_sky_cities
-=======
-						is_planet_class = pc_gas_giant
-						is_planet_class = pc_molten
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_toxic
-						is_planet_class = pc_nuked
-						is_planet_class = pc_ai
-						is_planet_class = pc_hive
-						is_planet_class = pc_machine
-						is_planet_class = pc_shielded
-						is_planet_class = pc_shrouded
-						is_planet_class = pc_shattered
-						is_planet_class = pc_infested
-						is_planet_class = pc_cybrex
-						is_planet_class = pc_egg_cracked
-						is_planet_class = pc_ringworld_habitable
-						is_planet_class = pc_ringworld_habitable_damaged
-						is_planet_class = pc_ringworld_tech
-						is_planet_class = pc_ringworld_seam
-						is_planet_class = pc_ringworld_seam_damaged
-						is_planet_class = pc_habitat
-					}
-				}
-				set_planet_flag = do_sky_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 1
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_sky_cities
 				}
 				add_deposit = d_ad_sky_cities
@@ -243,32 +157,11 @@ country_event = {
 		# 水上都市  （自然発生）
 		while = {
 			count = @MicroSpace
-=======
-					has_planet_flag = do_sky_cities
-				}
-				add_deposit = d_sky_cities
-			}
-		}
-		while = {
-			count = @MiddleSpace
-			random_planet = {
-				limit = {
-					has_planet_flag = do_sky_cities
-				}
-				add_deposit = d_sky_cities
-			}
-		}
-		
-		# 水上都市  （自然発生）
-		while = {
-			count = @SmallSpace
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			random_planet = {
 				limit = {
 					NOR = {
 						is_star = yes
 						is_asteroid = yes
-<<<<<<< HEAD
 						is_planet_class = pc_desert #砂漠型惑星
 						is_planet_class = pc_arid #乾燥型惑星
 						is_planet_class = pc_savannah #サバンナ型惑星
@@ -312,57 +205,21 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_water_cities
-=======
-						is_planet_class = pc_desert
-						is_planet_class = pc_savannah
-						is_planet_class = pc_arid
-						is_planet_class = pc_gas_giant
-						is_planet_class = pc_molten
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_toxic
-						is_planet_class = pc_nuked
-						is_planet_class = pc_ai
-						is_planet_class = pc_hive
-						is_planet_class = pc_machine
-						is_planet_class = pc_shielded
-						is_planet_class = pc_shrouded
-						is_planet_class = pc_shattered
-						is_planet_class = pc_infested
-						is_planet_class = pc_cybrex
-						is_planet_class = pc_egg_cracked
-						is_planet_class = pc_ringworld_habitable
-						is_planet_class = pc_ringworld_habitable_damaged
-						is_planet_class = pc_ringworld_tech
-						is_planet_class = pc_ringworld_seam
-						is_planet_class = pc_ringworld_seam_damaged
-						is_planet_class = pc_habitat
-					}
-				}
-				set_planet_flag = do_water_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 1
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_water_cities
 				}
 				add_deposit = d_ad_water_cities
-=======
-					has_planet_flag = do_water_cities
-				}
-				add_deposit = d_water_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = @SmallSpace
 			random_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_water_cities
 				}
 				add_deposit = d_ad_water_cities
@@ -419,69 +276,21 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_under_water_cities
-=======
-					has_planet_flag = do_water_cities
-				}
-				add_deposit = d_water_cities
-			}
-		}
-		
-		# 水中都市		（自然発生）	（技術開発）
-		while = {
-			count = @SmallSpace
-			random_planet = {
-				limit = {
-					is_star = no
-					is_asteroid = no
-					is_planet_class = pc_desert
-					is_planet_class = pc_savannah
-					is_planet_class = pc_arid
-					is_planet_class = pc_gas_giant
-					is_planet_class = pc_molten
-					is_planet_class = pc_barren
-					is_planet_class = pc_barren_cold
-					is_planet_class = pc_toxic
-					is_planet_class = pc_nuked
-					is_planet_class = pc_ai
-					is_planet_class = pc_hive
-					is_planet_class = pc_machine
-					is_planet_class = pc_shielded
-					is_planet_class = pc_shrouded
-					is_planet_class = pc_shattered
-					is_planet_class = pc_infested
-					is_planet_class = pc_cybrex
-					is_planet_class = pc_egg_cracked
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_ringworld_habitable_damaged
-					is_planet_class = pc_ringworld_tech
-					is_planet_class = pc_ringworld_seam
-					is_planet_class = pc_ringworld_seam_damaged
-					is_planet_class = pc_habitat
-				}
-				set_planet_flag = do_under_water_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 1
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_under_water_cities
 				}
 				add_deposit = d_ad_under_water_cities
-=======
-					has_planet_flag = do_under_water_cities
-				}
-				add_deposit = d_under_water_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = @SmallSpace
 			random_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_under_water_cities
 				}
 				add_deposit = d_ad_under_water_cities
@@ -538,67 +347,21 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_underground_cities
-=======
-					has_planet_flag = do_under_water_cities
-				}
-				add_deposit = d_under_water_cities
-			}
-		}
-		
-		# 地下都市		（自然発生）	（技術開発）
-		while = {
-			count = @SmallSpace
-			random_planet = {
-				limit = {
-					is_star = no
-					is_asteroid = no
-					is_planet_class = pc_ocean
-					is_planet_class = pc_gas_giant
-					is_planet_class = pc_molten
-					is_planet_class = pc_barren
-					is_planet_class = pc_barren_cold
-					is_planet_class = pc_toxic
-					is_planet_class = pc_nuked
-					is_planet_class = pc_ai
-					is_planet_class = pc_hive
-					is_planet_class = pc_machine
-					is_planet_class = pc_shielded
-					is_planet_class = pc_shrouded
-					is_planet_class = pc_shattered
-					is_planet_class = pc_infested
-					is_planet_class = pc_cybrex
-					is_planet_class = pc_egg_cracked
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_ringworld_habitable_damaged
-					is_planet_class = pc_ringworld_tech
-					is_planet_class = pc_ringworld_seam
-					is_planet_class = pc_ringworld_seam_damaged
-					is_planet_class = pc_habitat
-				}
-				set_planet_flag = do_underground_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 1
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_underground_cities
 				}
 				add_deposit = d_ad_underground_cities
-=======
-					has_planet_flag = do_underground_cities
-				}
-				add_deposit = d_underground_cities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = @SmallSpace
 			random_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_underground_cities
 				}
 				add_deposit = d_ad_underground_cities
@@ -607,23 +370,11 @@ country_event = {
 		# 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
 		while = {
 			count = @SmallSpace
-=======
-					has_planet_flag = do_underground_cities
-				}
-				add_deposit = d_underground_cities
-			}
-		}
-
-		# 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
-		while = {
-			count = @MiddleSpace
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			random_planet = {
 				limit = {
 					NOR = {
 						is_star = yes
 						is_asteroid = yes
-<<<<<<< HEAD
 						# is_planet_class = pc_desert #砂漠型惑星
 						# is_planet_class = pc_arid #乾燥型惑星
 						# is_planet_class = pc_tundra #ツンドラ型惑星
@@ -667,40 +418,12 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_open_pit_ore_deposits
-=======
-						is_planet_class = pc_ocean
-						is_planet_class = pc_gas_giant
-						is_planet_class = pc_molten
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_toxic
-						is_planet_class = pc_nuked
-						is_planet_class = pc_ai
-						is_planet_class = pc_hive
-						is_planet_class = pc_machine
-						is_planet_class = pc_shielded
-						is_planet_class = pc_shrouded
-						is_planet_class = pc_shattered
-						is_planet_class = pc_infested
-						is_planet_class = pc_cybrex
-						is_planet_class = pc_egg_cracked
-						is_planet_class = pc_ringworld_habitable
-						is_planet_class = pc_ringworld_habitable_damaged
-						is_planet_class = pc_ringworld_tech
-						is_planet_class = pc_ringworld_seam
-						is_planet_class = pc_ringworld_seam_damaged
-						is_planet_class = pc_habitat
-					}
-				}
-				set_planet_flag = do_open_pit_ore_deposits
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 1
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_open_pit_ore_deposits
 				}
 				add_deposit = d_ad_open_pit_ore_deposits
@@ -718,32 +441,11 @@ country_event = {
 		# 水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
 		while = {
 			count = @SmallSpace
-=======
-					has_planet_flag = do_open_pit_ore_deposits
-				}
-				add_deposit = d_open_pit_ore_deposits
-			}
-		}
-		while = {
-			count = @MiddleSpace
-			random_planet = {
-				limit = {
-					has_planet_flag = do_open_pit_ore_deposits
-				}
-				add_deposit = d_open_pit_ore_deposits
-			}
-		}
-
-		# 水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
-		while = {
-			count = @MiddleSpace
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			random_planet = {
 				limit = {
 					NOR = {
 						is_star = yes
 						is_asteroid = yes
-<<<<<<< HEAD
 						is_planet_class = pc_desert #砂漠型惑星
 						is_planet_class = pc_arid #乾燥型惑星
 						# is_planet_class = pc_tundra #ツンドラ型惑星
@@ -787,43 +489,12 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_under_water_deposits
-=======
-						# is_planet_class = pc_ocean
-						is_planet_class = pc_desert
-						is_planet_class = pc_savannah
-						is_planet_class = pc_arid
-						is_planet_class = pc_gas_giant
-						is_planet_class = pc_molten
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_toxic
-						is_planet_class = pc_nuked
-						is_planet_class = pc_ai
-						is_planet_class = pc_hive
-						is_planet_class = pc_machine
-						is_planet_class = pc_shielded
-						is_planet_class = pc_shrouded
-						is_planet_class = pc_shattered
-						is_planet_class = pc_infested
-						is_planet_class = pc_cybrex
-						is_planet_class = pc_egg_cracked
-						is_planet_class = pc_ringworld_habitable
-						is_planet_class = pc_ringworld_habitable_damaged
-						is_planet_class = pc_ringworld_tech
-						is_planet_class = pc_ringworld_seam
-						is_planet_class = pc_ringworld_seam_damaged
-						is_planet_class = pc_habitat
-					}
-				}
-				set_planet_flag = do_under_water_deposits
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 2
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_under_water_deposits
 				}
 				add_deposit = d_ad_under_water_deposits
@@ -841,32 +512,11 @@ country_event = {
 		# 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
 		while = {
 			count = @SmallSpace
-=======
-					has_planet_flag = do_under_water_deposits
-				}
-				add_deposit = d_under_water_deposits
-			}
-		}
-		while = {
-			count = @MiddleSpace
-			random_planet = {
-				limit = {
-					has_planet_flag = do_under_water_deposits
-				}
-				add_deposit = d_under_water_deposits
-			}
-		}
-
-		# 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
-		while = {
-			count = @MiddleSpace
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			random_planet = {
 				limit = {
 					NOR = {
 						is_star = yes
 						is_asteroid = yes
-<<<<<<< HEAD
 						# is_planet_class = pc_desert #砂漠型惑星
 						# is_planet_class = pc_arid #乾燥型惑星
 						# is_planet_class = pc_tundra #ツンドラ型惑星
@@ -910,43 +560,12 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_high_quality_deposits
-=======
-						# is_planet_class = pc_ocean
-						# is_planet_class = pc_desert
-						# is_planet_class = pc_savannah
-						# is_planet_class = pc_arid
-						is_planet_class = pc_gas_giant
-						is_planet_class = pc_molten
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_toxic
-						is_planet_class = pc_nuked
-						is_planet_class = pc_ai
-						is_planet_class = pc_hive
-						is_planet_class = pc_machine
-						is_planet_class = pc_shielded
-						is_planet_class = pc_shrouded
-						is_planet_class = pc_shattered
-						is_planet_class = pc_infested
-						is_planet_class = pc_cybrex
-						is_planet_class = pc_egg_cracked
-						is_planet_class = pc_ringworld_habitable
-						is_planet_class = pc_ringworld_habitable_damaged
-						is_planet_class = pc_ringworld_tech
-						is_planet_class = pc_ringworld_seam
-						is_planet_class = pc_ringworld_seam_damaged
-						is_planet_class = pc_habitat
-					}
-				}
-				set_planet_flag = do_high_quality_deposits
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 2
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_high_quality_deposits
 				}
 				add_deposit = d_ad_high_quality_deposits
@@ -964,32 +583,11 @@ country_event = {
 		# 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生）
 		while = {
 			count = @SmallSpace
-=======
-					has_planet_flag = do_high_quality_deposits
-				}
-				add_deposit = d_high_quality_deposits
-			}
-		}
-		while = {
-			count = @MiddleSpace
-			random_planet = {
-				limit = {
-					has_planet_flag = do_high_quality_deposits
-				}
-				add_deposit = d_high_quality_deposits
-			}
-		}
-
-		# 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生）
-		while = {
-			count = @MiddleSpace
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			random_planet = {
 				limit = {
 					NOR = {
 						is_star = yes
 						is_asteroid = yes
-<<<<<<< HEAD
 						# is_planet_class = pc_desert #砂漠型惑星
 						# is_planet_class = pc_arid #乾燥型惑星
 						# is_planet_class = pc_tundra #ツンドラ型惑星
@@ -1033,43 +631,12 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_low_quality_deposits
-=======
-						# is_planet_class = pc_ocean
-						# is_planet_class = pc_desert
-						# is_planet_class = pc_savannah
-						# is_planet_class = pc_arid
-						is_planet_class = pc_gas_giant
-						is_planet_class = pc_molten
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_toxic
-						is_planet_class = pc_nuked
-						is_planet_class = pc_ai
-						is_planet_class = pc_hive
-						is_planet_class = pc_machine
-						is_planet_class = pc_shielded
-						is_planet_class = pc_shrouded
-						is_planet_class = pc_shattered
-						is_planet_class = pc_infested
-						is_planet_class = pc_cybrex
-						is_planet_class = pc_egg_cracked
-						is_planet_class = pc_ringworld_habitable
-						is_planet_class = pc_ringworld_habitable_damaged
-						is_planet_class = pc_ringworld_tech
-						is_planet_class = pc_ringworld_seam
-						is_planet_class = pc_ringworld_seam_damaged
-						is_planet_class = pc_habitat
-					}
-				}
-				set_planet_flag = do_low_quality_deposits
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 2
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_low_quality_deposits
 				}
 				add_deposit = d_ad_low_quality_deposits
@@ -1087,32 +654,11 @@ country_event = {
 		# 水中生態系	in_water_ecosystem	（自然発生）
 		while = {
 			count = @SmallSpace
-=======
-					has_planet_flag = do_low_quality_deposits
-				}
-				add_deposit = d_low_quality_deposits
-			}
-		}
-		while = {
-			count = @MiddleSpace
-			random_planet = {
-				limit = {
-					has_planet_flag = do_low_quality_deposits
-				}
-				add_deposit = d_low_quality_deposits
-			}
-		}
-
-		# 水中生態系	in_water_ecosystem	（自然発生）
-		while = {
-			count = @MiddleSpace
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			random_planet = {
 				limit = {
 					NOR = {
 						is_star = yes
 						is_asteroid = yes
-<<<<<<< HEAD
 						is_planet_class = pc_desert #砂漠型惑星
 						is_planet_class = pc_arid #乾燥型惑星
 						is_planet_class = pc_tundra #ツンドラ型惑星
@@ -1156,43 +702,12 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_in_water_ecosystem
-=======
-						# is_planet_class = pc_ocean
-						is_planet_class = pc_desert
-						is_planet_class = pc_savannah
-						is_planet_class = pc_arid
-						is_planet_class = pc_gas_giant
-						is_planet_class = pc_molten
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_toxic
-						is_planet_class = pc_nuked
-						is_planet_class = pc_ai
-						is_planet_class = pc_hive
-						is_planet_class = pc_machine
-						is_planet_class = pc_shielded
-						is_planet_class = pc_shrouded
-						is_planet_class = pc_shattered
-						is_planet_class = pc_infested
-						is_planet_class = pc_cybrex
-						is_planet_class = pc_egg_cracked
-						is_planet_class = pc_ringworld_habitable
-						is_planet_class = pc_ringworld_habitable_damaged
-						is_planet_class = pc_ringworld_tech
-						is_planet_class = pc_ringworld_seam
-						is_planet_class = pc_ringworld_seam_damaged
-						is_planet_class = pc_habitat
-					}
-				}
-				set_planet_flag = do_in_water_ecosystem
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 2
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_in_water_ecosystem
 				}
 				add_deposit = d_ad_in_water_ecosystem
@@ -1281,32 +796,11 @@ country_event = {
 		# 古代遺跡群	ancient_ruins	（自然発生）
 		while = {
 			count = @MicroSpace
-=======
-					has_planet_flag = do_in_water_ecosystem
-				}
-				add_deposit = d_in_water_ecosystem
-			}
-		}
-		while = {
-			count = @MiddleSpace
-			random_planet = {
-				limit = {
-					has_planet_flag = do_in_water_ecosystem
-				}
-				add_deposit = d_in_water_ecosystem
-			}
-		}
-
-		# 菌類群生体	mycorrhizal_communities	（自然発生）
-		while = {
-			count = @MiddleSpace
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			random_planet = {
 				limit = {
 					NOR = {
 						is_star = yes
 						is_asteroid = yes
-<<<<<<< HEAD
 						# is_planet_class = pc_desert #砂漠型惑星
 						# is_planet_class = pc_arid #乾燥型惑星
 						# is_planet_class = pc_tundra #ツンドラ型惑星
@@ -1350,43 +844,12 @@ country_event = {
 					}
 				}
 				set_planet_flag = do_ad_ancient_ruins
-=======
-						# is_planet_class = pc_ocean
-						# is_planet_class = pc_desert
-						# is_planet_class = pc_savannah
-						# is_planet_class = pc_arid
-						is_planet_class = pc_gas_giant
-						is_planet_class = pc_molten
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_toxic
-						is_planet_class = pc_nuked
-						is_planet_class = pc_ai
-						is_planet_class = pc_hive
-						is_planet_class = pc_machine
-						is_planet_class = pc_shielded
-						is_planet_class = pc_shrouded
-						is_planet_class = pc_shattered
-						is_planet_class = pc_infested
-						is_planet_class = pc_cybrex
-						is_planet_class = pc_egg_cracked
-						is_planet_class = pc_ringworld_habitable
-						is_planet_class = pc_ringworld_habitable_damaged
-						is_planet_class = pc_ringworld_tech
-						is_planet_class = pc_ringworld_seam
-						is_planet_class = pc_ringworld_seam_damaged
-						is_planet_class = pc_habitat
-					}
-				}
-				set_planet_flag = do_mycorrhizal_communities
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
 			}
 		}
 		while = {
 			count = 2
 			every_planet = {
 				limit = {
-<<<<<<< HEAD
 					has_planet_flag = do_ad_ancient_ruins
 				}
 				add_deposit = d_ad_ancient_ruins
@@ -1613,22 +1076,3 @@ country_event = {
 		}
 	}
 }
-=======
-					has_planet_flag = do_mycorrhizal_communities
-				}
-				add_deposit = d_mycorrhizal_communities
-			}
-		}
-		while = {
-			count = @MiddleSpace
-			random_planet = {
-				limit = {
-					has_planet_flag = do_mycorrhizal_communities
-				}
-				add_deposit = d_mycorrhizal_communities
-			}
-		}
-
-	}
-}
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
