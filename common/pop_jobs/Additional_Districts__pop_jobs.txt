@@ -1,28 +1,410 @@
-# #式武官   統合力10 影響力1 → 勲章0.02
-# bureau_of_ceremonies = {
-# 	category = specialist
-# 	condition_string = SPECIALIST_JOB_TRIGGER
-# 	building_icon = building_bureau_of_ceremonies
-# 	clothes_texture_index = 3
-# 	possible_pre_triggers = {
-# 		has_owner = yes
-# 		is_being_purged = no
-# 		is_being_assimilated = no
-# 	}
-# 	possible = {
-# 		specialist_job_check_trigger = yes
-# 	}
-# 	resources = {
-# 		category = planet_metallurgists
-# 		produces = {
-# 			ngm_order_of_merit = 0.2
-# 		}
-# 		upkeep = {
-# 			unity = 10
-# 			influence = 1
-# 		}
-# 	}
-# 	weight = {
-# 		weight = @specialist_job_weight
-# 	}
-# }
+#発掘者 excavator  出土品 0.5
+ad_excavator = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			minor_artifacts = 0.5
+		}
+		# upkeep = {
+		# 	unity = 10
+		# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+#水中農家	water_farmer   食物	6
+ad_water_farmer = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_farmers
+		produces = {
+			food = 6
+		}
+		# upkeep = {
+		# 	unity = 10
+		# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+#施設維持業者	facility_maintainer   鉱石	5
+ad_facility_maintainer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 5
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+#地熱技師	geothermal_technician   エネルギー	6
+ad_geothermal_technician = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_technician
+		produces = {
+			energy = 6
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# 原子技師 atomic_engineer   エネルギー	7
+ad_atomic_engineer = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_technician
+		produces = {
+			energy = 7
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# 採掘者 miner   鉱石	6
+ad_miner = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 6
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# 水中採掘者 underwater_miner   鉱石	5
+ad_underwater_miner = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 5
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# 宇宙採掘者 space_miner   鉱石	5
+ad_space_miner = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 5
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# 効率的採掘者 efficient_miner   鉱石	8
+ad_efficient_miner = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 8
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# 低効率採掘者 low_efficiency_miner   鉱石	3
+ad_low_efficiency_miner = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 3
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# 菌農家 fungus_farmer   食物	5
+ad_fungus_farmer = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_farmers
+		produces = {
+			food = 5
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# 酪農家 dairy_farmer   食物 5
+ad_dairy_farmer = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_farmers
+		produces = {
+			food = 5
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# 大規模農家  large_scale_farmer   食物 6
+ad_large_scale_farmer = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_farmers
+		produces = {
+			food = 6
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# データマイナー data_minor 化学 物理 社会 2 科学者出力*1.2
+ad_large_scale_farmer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_researchers_produces_mult = 0.2
+	}
+	resources = {
+		category = planet_researchers
+		produces = {
+			physics_research = 2
+			society_research = 2
+			engineering_research = 2
+		}
+		# upkeep = {
+			# 	unity = 10
+			# 	influence = 1
+		# }
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
