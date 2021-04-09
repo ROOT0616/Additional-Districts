@@ -30,7 +30,7 @@ d_ad_archaeological_cities = {
 	}
 }
 
-# 空中都市　住居*30	事務員*2	交易価値	（自然発生）	（技術開発）
+# 空中都市 sky_cities 住居*30	事務員*2	交易価値	（自然発生）	（技術開発）
 d_ad_sky_cities = {
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
@@ -48,7 +48,7 @@ d_ad_sky_cities = {
 	}
 }
 
-# 水上都市	water_cities	住居*20	事務員*2	交易価値	（自然発生）（技術開発）
+# 水上都市	water_cities	住居*20	事務員*2	交易価値	（自然発生）
 d_ad_water_cities = {
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
@@ -126,10 +126,10 @@ d_ad_underground_cities = {
 ##############################
 #####    発電区域追加    ######
 ##############################
-# 太陽光発電	技術者*5	（技術開発）
-# 地熱発電	地熱技師*2	（技術開発）
-# 潮流発電	技術者*5	（技術開発）
-# 天然原子炉発電	原子技師*2	（技術開発）
+# 太陽光発電	solar_power_generation	技術者*5	（技術開発）
+# 地熱発電	geothermal_electric_power_generation	地熱技師*2	（技術開発）
+# 潮流発電	tidal_current_generation	技術者*5	（技術開発）
+# 天然原子炉発電	natural_nuclear_power_generation	原子技師*2	（技術開発）
 
 #太陽光発電 solar_power_generation	住居*2	技術者*5	（技術開発）
 d_ad_solar_power_generation = {
@@ -485,15 +485,212 @@ d_ad_special_tourism_zone = {
 ################################
 #####    その他区域追加    ######
 ################################
-# 後で設置可能（1-5つまで設置可能？）
-# 官庁街
-# 大学街
-# 住宅街
-# 造船工廠
-# 通信区域
-# 観光区域
-# 防衛区域
-# 構想特区	起業家（研究力とか交易価値？）
-# 研究特区	研究者
-# 宇宙港区域
-# 軌道エレベーター
+# 官庁街 government_district
+# 大学街 university_district
+# 住宅街 residential_area
+# 造船工廠 shipbuilding_arsenal
+# 通信区域 communication_area
+# 観光区域 tourist_area
+# 防衛区域 defense_zone
+# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
+# 研究特区 special_research_zone 	研究者 researchers
+# 宇宙港区域 spaceport_area
+# 軌道エレベーター orbital_elevator
+
+# 官庁街 government_district
+d_ad_government_district = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_government_district_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_government_district
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 大学街 university_district
+d_ad_university_district = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_university_district_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_university_district
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 住宅街 residential_area
+d_ad_residential_area = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_residential_area_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_special_tourism_zone
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 造船工廠 shipbuilding_arsenal
+	d_ad_shipbuilding_arsenal = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_shipbuilding_arsenal_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_shipbuilding_arsenal
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 通信区域 communication_area
+d_ad_communication_area = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_communication_area_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_communication_area
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 観光区域 tourist_area
+d_ad_tourist_area = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_tourist_area_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_tourist_area
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 防衛区域 defense_zone
+	d_ad_defense_zone = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_defense_zone_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_defense_zone
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
+d_ad_conceptual_zone = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_conceptual_zone_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_conceptual_zone
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 研究特区 special_research_zone 	研究者 researchers
+d_ad_special_research_zone = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_special_research_zone_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_special_research_zone
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 宇宙港区域 spaceport_area
+d_ad_spaceport_area = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_spaceport_area_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_spaceport_area
+	}
+	drop_weight = {
+		weight = @low
+	}
+}
+
+# 軌道エレベーター orbital_elevator
+d_ad_orbital_elevator = {
+	is_for_colonizeable = yes
+	use_for_min_max_adjustments = yes
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = no
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_orbital_elevator_max = 5
+	}
+	potential = {
+		has_planet_flag = do_ad_orbital_elevator
+	}
+	drop_weight = {
+		weight = @low
+	}
+}

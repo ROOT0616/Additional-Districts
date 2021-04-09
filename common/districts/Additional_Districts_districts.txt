@@ -906,7 +906,7 @@ district_ad_open_pit_ore_deposits = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_miner_add = 5
+		job_miner_add = 5
 	}
 	ai_weight = {
 		weight = 0
@@ -1870,7 +1870,7 @@ district_ad_ancient_databank = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_large_scale_farmer_add = 4
+		job_ad_data_minor_add = 4
 	}
 	ai_weight = {
 		weight = 0
@@ -1974,7 +1974,7 @@ district_ad_natural_fortress = {
 	}
 }
 
-# 観光特区	special_tourism_zone	エンターテイナー*3（自然発生）
+# 観光特区	special_tourism_zone	住居*2 エンターテイナー*4 交易価値+5 快適度+5 （自然発生）
 district_ad_special_tourism_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2043,7 +2043,9 @@ district_ad_special_tourism_zone = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_entertainer_add = 3
+		job_entertainer_add = 4
+		trade_value_add = 5
+		planet_amenities_add = 5
 	}
 	ai_weight = {
 		weight = 0
@@ -2063,15 +2065,963 @@ district_ad_special_tourism_zone = {
 ################################
 #####    その他区域追加    ######
 ################################
-# 後で設置可能（1-5つまで設置可能？）
-# 官庁街
-# 大学街
-# 住宅街
-# 造船工廠
-# 通信区域
-# 観光区域
-# 防衛区域
-# 構想特区	起業家（研究力とか交易価値？）
-# 研究特区	研究者
-# 宇宙港区域
-# 軌道エレベーター
+# 後で設置可能（1-5つまで設置可能）
+# 官庁街 government_district
+# 大学街 university_district
+# 住宅街 residential_area
+# 造船工廠 shipbuilding_arsenal
+# 通信区域 communication_area
+# 観光区域 tourist_area
+# 防衛区域 defense_zone
+# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
+# 研究特区 special_research_zone 	研究者 researchers
+# 宇宙港区域 spaceport_area
+# 軌道エレベーター orbital_elevator
+
+# 官庁街 government_district
+district_ad_government_district = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_government_district
+	}
+	allow = {
+		has_deposit = d_ad_government_district
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		# job_entertainer_add = 3
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+# 大学街 university_district
+district_ad_university_district = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_university_district
+	}
+	allow = {
+		has_deposit = d_ad_university_district
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		# job_entertainer_add = 3
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+# 住宅街 residential_area
+district_ad_residential_area = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_residential_area
+	}
+	allow = {
+		has_deposit = d_ad_residential_area
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		# job_entertainer_add = 3
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+# 造船工廠 shipbuilding_arsenal
+district_ad_shipbuilding_arsenal = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_shipbuilding_arsenal
+	}
+	allow = {
+		has_deposit = d_ad_shipbuilding_arsenal
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		# job_entertainer_add = 3
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+# 通信区域 communication_area
+district_ad_communication_area = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_communication_area
+	}
+	allow = {
+		has_deposit = d_ad_communication_area
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		# job_entertainer_add = 3
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+# 観光区域 tourist_area
+district_ad_tourist_area = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_tourist_area
+	}
+	allow = {
+		has_deposit = d_ad_tourist_area
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		job_entertainer_add = 2
+		trade_value_add = 5
+		planet_amenities_add = 5
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+# 防衛区域 defense_zone
+district_ad_defense_zone = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_defense_zone
+	}
+	allow = {
+		has_deposit = d_ad_defense_zone
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		# job_entertainer_add = 3
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
+district_ad_conceptual_zone = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_conceptual_zone
+	}
+	allow = {
+		has_deposit = d_ad_conceptual_zone
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		# job_entertainer_add = 3
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+# 研究特区 special_research_zone 	研究者 researchers
+district_ad_special_research_zone = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_special_research_zone
+	}
+	allow = {
+		has_deposit = d_ad_special_research_zone
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		# job_entertainer_add = 3
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+# 宇宙港区域 spaceport_area
+district_ad_spaceport_area = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_spaceport_area
+	}
+	allow = {
+		has_deposit = d_ad_spaceport_area
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		# job_entertainer_add = 3
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+# 軌道エレベーター orbital_elevator
+district_ad_orbital_elevator = {
+	base_buildtime = 240
+	show_on_uncolonized = {
+		uses_district_set = standard
+	}
+
+	potential = {
+		NOR = {
+			is_star = yes
+			is_asteroid = yes
+			# is_planet_class = pc_desert #砂漠型惑星
+			# is_planet_class = pc_arid #乾燥型惑星
+			# is_planet_class = pc_savannah #サバンナ型惑星
+			# is_planet_class = pc_continental #大陸型惑星
+			# is_planet_class = pc_tropical #熱帯型惑星
+			# is_planet_class = pc_ocean #海洋型惑星
+			# is_planet_class = pc_arctic #極寒型惑星
+			# is_planet_class = pc_tundra #ツンドラ型惑星
+			# is_planet_class = pc_alpine #高山型惑星
+			# is_planet_class = pc_gaia #ガイア型惑星
+			# is_planet_class = pc_relic #遺物惑星
+			# is_planet_class = pc_city #エキュメノポリス
+			# is_planet_class = pc_toxic #有毒惑星
+			# is_planet_class = pc_nuked #死の惑星
+			# is_planet_class = pc_infested #汚染された惑星
+			is_planet_class = pc_shrouded #シュラウドの惑星
+			is_planet_class = pc_gray_goo #ナノマシン惑星
+			is_planet_class = pc_egg_cracked #卵の破片 
+			is_planet_class = pc_habitat #軌道上居住地
+			is_planet_class = pc_ringworld_habitable #リングワールド
+			is_planet_class = pc_habitat_shielded #隔離された軌道上居住地
+			is_planet_class = pc_ringworld_tech #リングワールド
+			is_planet_class = pc_ringworld_seam #リングワールド
+			is_planet_class = pc_ringworld_habitable_damaged #リングワールド
+			is_planet_class = pc_ringworld_tech_damaged #リングワールド
+			is_planet_class = pc_ringworld_seam_damaged #リングワールド
+			is_planet_class = pc_ringworld_shielded #隔離された区画	
+			is_planet_class = pc_shielded #封鎖された星
+			is_planet_class = pc_ai #人工知能の星
+			is_planet_class = pc_machine #機械惑星
+			is_planet_class = pc_hive #集合意識惑星
+			is_planet_class = pc_cybrex #$pc_ringworld_habitable$
+			is_planet_class = pc_shattered #粉砕された惑星
+			is_planet_class = pc_gas_giant #巨大ガス惑星
+			is_planet_class = pc_asteroid #小惑星
+			is_planet_class = pc_molten #溶融惑星
+			is_planet_class = pc_frozen #氷結惑星
+			is_planet_class = pc_broken #破壊された惑星
+			is_planet_class = pc_barren #不毛の星
+			is_planet_class = pc_barren_cold #不毛の星
+		}
+		has_planet_flag = do_ad_orbital_elevator
+	}
+	allow = {
+		has_deposit = d_ad_orbital_elevator
+	}
+	conversion_ratio = 1
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	planet_modifier = {
+		planet_housing_add = 2
+		# job_entertainer_add = 3
+	}
+	ai_weight = {
+		weight = 0
+		# modifier = {
+		# 	weight = 3
+		# 		free_jobs < 2
+		# }
+	}
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}

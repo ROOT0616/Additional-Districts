@@ -143,35 +143,6 @@ ad_atomic_engineer = {
 	}
 }
 
-# 採掘者 miner   鉱石	6
-ad_miner = {
-	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
-	possible_pre_triggers = {
-		has_owner = yes
-		is_being_purged = no
-		is_being_assimilated = no
-	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
-	resources = {
-		category = planet_miners
-		produces = {
-			minerals = 6
-		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
-	}
-	weight = {
-		weight = @worker_job_weight
-	}
-}
-
 # 水中採掘者 underwater_miner   鉱石	5
 ad_underwater_miner = {
 	category = worker
@@ -376,7 +347,7 @@ ad_large_scale_farmer = {
 }
 
 # データマイナー data_minor 化学 物理 社会 2 科学者出力*1.2
-ad_large_scale_farmer = {
+ad_data_minor = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	# building_icon = 

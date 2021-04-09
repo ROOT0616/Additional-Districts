@@ -1,44 +1,812 @@
-# #犯罪抑止力-10％　安定度5％	エネルギー-5
-# decision_planet_patrolling = {
-# 	owned_planets_only = yes
-# 	enactment_time = 0
-# 	resources = {
-# 		category = decisions
-# 		cost = {
-# 			minerals = 50
-# 			energy = 100
-# 		}
-# 	}
-# 	potential = {
-# 		owner = {
-# 			is_regular_empire = yes
-# 			is_lithoid_empire = no
-# 			is_ai = no
-# 			OR = {
-# 				has_ethic = ethic_materialist
-# 				has_ethic = ethic_fanatic_materialist
-# 				has_ethic = ethic_authoritarian
-# 				has_ethic = ethic_fanatic_authoritarian
-# 			}
-# 		}
-# 	}
-# 	allow = {
-# 		NOT = {
-# 			has_modifier = patrolling_society
-# 		}
-# 		NOT = {
-# 			has_modifier = fanatic_patrolling_society
-# 		}
-# 		NOT = {
-# 			has_modifier = hyper_fanatic_patrolling_society
-# 		}
-# 	}
-# 	effect = {
-# 		add_modifier = {
-# 			modifier = "patrolling_society"
-# 		}
-# 		hidden_effect = {
-# 			add_deposit = d_patrolling_society_deposit
-# 		}
-# 	}
-# }
+##############################
+#####    都市区域追加    ######
+##############################
+#大規模空中地区建設 large_scale_air_area_construction
+decision_ad_large_scale_air_area_construction = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_sky_cities
+		}
+	}
+	prerequisites = {
+		large_scale_air_construction_technology
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_sky_cities
+		}
+	}
+	effect = {
+		while = {
+			count = 2
+			add_deposit = d_ad_sky_cities
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_sky_cities
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 1.25
+			# has_ethic = ethic_materialist
+		}
+	}
+}
+#大規模水中地区建設 large_scale_water_area_construction 
+decision_ad_large_scale_water_area_construction = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_under_water_cities
+		}
+	}
+	prerequisites = {
+		large_scale_in_water_construction_technology
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_under_water_cities
+		}
+	}
+	effect = {
+		while = {
+			count = 5
+			add_deposit = d_ad_under_water_cities
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_under_water_cities
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+#大規模地下地区建設 large_scale_underground_area_construction 
+decision_ad_large_scale_underground_area_construction = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_underground_cities
+		}
+	}
+	prerequisites = {
+		large_scale_ground_construction_technology
+	}
+	allow = {
+		has_planet_flag = do_ad_underground_cities
+	}
+	effect = {
+		while = {
+			count = 5
+			add_deposit = d_ad_underground_cities
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_underground_cities
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+##############################
+#####    発電区域追加    ######
+##############################
+# 太陽光発電	solar_power_generation	技術者*5	（技術開発）
+# 地熱発電	geothermal_electric_power_generation	地熱技師*2	（技術開発）
+# 潮流発電	tidal_current_generation	技術者*5	（技術開発）
+# 天然原子炉発電	natural_nuclear_power_generation	原子技師*2	（技術開発）
+
+# 太陽光発電	solar_power_generation	技術者*5	（技術開発）
+decision_ad_solar_power_generation = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_solar_power_generation
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		has_planet_flag = do_ad_solar_power_generation
+	}
+	effect = {
+		while = {
+			count = 5
+			add_deposit = d_ad_solar_power_generation
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_solar_power_generation
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 地熱発電	geothermal_electric_power_generation	地熱技師*2	（技術開発）
+decision_ad_geothermal_electric_power_generation = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_geothermal_electric_power_generation
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		has_planet_flag = do_ad_geothermal_electric_power_generation
+	}
+	effect = {
+		while = {
+			count = 5
+			add_deposit = d_ad_geothermal_electric_power_generation
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_geothermal_electric_power_generation
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 潮流発電	tidal_current_generation	技術者*5	（技術開発）
+decision_ad_tidal_current_generation = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_tidal_current_generation
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		has_planet_flag = do_ad_tidal_current_generation
+	}
+	effect = {
+		while = {
+			count = 5
+			add_deposit = d_ad_tidal_current_generation
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_tidal_current_generation
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 天然原子炉発電	natural_nuclear_power_generation	原子技師*2	（技術開発）
+decision_ad_natural_nuclear_power_generation = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_natural_nuclear_power_generation
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		has_planet_flag = do_ad_natural_nuclear_power_generation
+	}
+	effect = {
+		while = {
+			count = 5
+			add_deposit = d_ad_natural_nuclear_power_generation
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_natural_nuclear_power_generation
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+##############################
+#####    鉱物区域追加    ######
+##############################	
+# 軌道鉱石群	orbital_deposits	宇宙採掘者*2	（技術開発）
+
+# 軌道鉱石群	orbital_deposits	宇宙採掘者*2	（技術開発）
+decision_ad_orbital_deposits = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_orbital_deposits
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		has_planet_flag = do_ad_orbital_deposits
+	}
+	effect = {
+		while = {
+			count = 5
+			add_deposit = d_ad_orbital_deposits
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_orbital_deposits
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+##############################
+#####    農業区域追加    ######
+##############################
+# 棚状耕作地	shed_cultivation_land	（技術開発）
+# 大規模牧草地	large_scale_grazing_land（技術開発）
+# 大自然農業地	large_scale_agricultural_land（技術開発）
+
+# 棚状耕作地	shed_cultivation_land	（技術開発）
+decision_ad_shed_cultivation_land = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_shed_cultivation_land
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		has_planet_flag = do_ad_shed_cultivation_land
+	}
+	effect = {
+		while = {
+			count = 5
+			add_deposit = d_ad_shed_cultivation_land
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_shed_cultivation_land
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 大規模牧草地	large_scale_grazing_land	（技術開発）
+decision_ad_large_scale_grazing_land = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_large_scale_grazing_land
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		has_planet_flag = do_ad_large_scale_grazing_land
+	}
+	effect = {
+		while = {
+			count = 5
+			add_deposit = d_ad_large_scale_grazing_land
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_large_scale_grazing_land
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 大自然農業地	large_scale_agricultural_land	（技術開発）
+decision_ad_large_scale_agricultural_land = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_large_scale_agricultural_land
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		has_planet_flag = do_ad_large_scale_agricultural_land
+	}
+	effect = {
+		while = {
+			count = 5
+			add_deposit = d_ad_large_scale_agricultural_land
+		}
+		hidden_effect = {
+			set_planet_flag = do_ad_large_scale_agricultural_land
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+################################
+#####    その他区域追加    ######
+################################
+# 官庁街 government_district
+# 大学街 university_district
+# 住宅街 residential_area
+# 造船工廠 shipbuilding_arsenal
+# 通信区域 communication_area
+# 観光区域 tourist_area
+# 防衛区域 defense_zone
+# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
+# 研究特区 special_research_zone 	研究者 researchers
+# 宇宙港区域 spaceport_area
+# 軌道エレベーター orbital_elevator
+
+# 官庁街 government_district
+decision_ad_government_district = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_government_district
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_government_district
+		}
+	}
+	effect = {
+		add_deposit = d_ad_government_district
+		hidden_effect = {
+			set_planet_flag = do_ad_government_district
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 大学街 university_district
+decision_ad_university_district = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_university_district
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_university_district
+		}
+	}
+	effect = {
+		add_deposit = d_ad_university_district
+		hidden_effect = {
+			set_planet_flag = do_ad_university_district
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 住宅街 residential_area
+decision_ad_residential_area = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_residential_area
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_residential_area
+		}
+	}
+	effect = {
+		add_deposit = d_ad_residential_area
+		hidden_effect = {
+			set_planet_flag = do_ad_residential_area
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 造船工廠 shipbuilding_arsenal
+decision_ad_shipbuilding_arsenal = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_shipbuilding_arsenal
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_shipbuilding_arsenal
+		}
+	}
+	effect = {
+		add_deposit = d_ad_shipbuilding_arsenal
+		hidden_effect = {
+			set_planet_flag = do_ad_shipbuilding_arsenal
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 通信区域 communication_area
+decision_ad_communication_area = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_communication_area
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_communication_area
+		}
+	}
+	effect = {
+		add_deposit = d_ad_communication_area
+		hidden_effect = {
+			set_planet_flag = do_ad_communication_area
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 観光区域 tourist_area
+decision_ad_tourist_area = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_tourist_area
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_tourist_area
+		}
+	}
+	effect = {
+		add_deposit = d_ad_tourist_area
+		hidden_effect = {
+			set_planet_flag = do_ad_tourist_area
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 防衛区域 defense_zone
+decision_ad_defense_zone = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_defense_zone
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_defense_zone
+		}
+	}
+	effect = {
+		while = {
+			count = 5
+		}
+		add_deposit = d_ad_defense_zone
+		hidden_effect = {
+			set_planet_flag = do_ad_defense_zone
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
+decision_ad_conceptual_zone = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_conceptual_zone
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_conceptual_zone
+		}
+	}
+	effect = {
+		while = {
+			count = 5
+		}
+		add_deposit = d_ad_conceptual_zone
+		hidden_effect = {
+			set_planet_flag = do_ad_conceptual_zone
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 研究特区 special_research_zone 	研究者 researchers
+decision_ad_special_research_zone = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_special_research_zone
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_special_research_zone
+		}
+	}
+	effect = {
+		while = {
+			count = 5
+		}
+		add_deposit = d_ad_special_research_zone
+		hidden_effect = {
+			set_planet_flag = do_ad_special_research_zone
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 宇宙港区域 spaceport_area
+decision_ad_spaceport_area = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_spaceport_area
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_spaceport_area
+		}
+	}
+	effect = {
+		add_deposit = d_ad_spaceport_area
+		hidden_effect = {
+			set_planet_flag = do_ad_spaceport_area
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 軌道エレベーター orbital_elevator
+decision_ad_orbital_elevator = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			# minerals = 50
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_orbital_elevator
+		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_orbital_elevator
+		}
+	}
+	effect = {
+		add_deposit = d_ad_orbital_elevator
+		hidden_effect = {
+			set_planet_flag = do_ad_orbital_elevator
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}

@@ -4,7 +4,71 @@
 #####    ディシジョン    ######
 ##############################
 
+ decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
+ decision_ad_large_scale_air_area_construction_desc:0 ""
 
+ decision_ad_large_scale_water_area_construction:0 "大規模水中地区建設"
+ decision_ad_large_scale_water_area_construction_desc:0 ""
+
+ decision_ad_large_scale_underground_area_construction:0 "大規模地下地区建設"
+ decision_ad_large_scale_underground_area_construction_desc:0 ""
+
+ decision_ad_solar_power_generation:0 "区画整備：太陽光発電地区"
+ decision_ad_solar_power_generation_desc:0 ""
+
+ decision_ad_geothermal_electric_power_generation:0 "区画整備：地熱発電地区"
+ decision_ad_geothermal_electric_power_generation_desc:0 ""
+
+ decision_ad_tidal_current_generation:0 "区画整備：潮流発電地区"
+ decision_ad_tidal_current_generation_desc:0 ""
+
+ decision_ad_natural_nuclear_power_generation:0 "区画整備：天然原子炉発電地区"
+ decision_ad_natural_nuclear_power_generation_desc:0 ""
+
+ decision_ad_orbital_deposits:0 "区画整備：軌道鉱石群地区"
+ decision_ad_orbital_deposits_desc:0 ""
+
+ decision_ad_shed_cultivation_land:0 "区画整備：棚状耕作地区"
+ decision_ad_shed_cultivation_land_desc:0 ""
+
+ decision_ad_large_scale_grazing_land:0 "区画整備：大規模牧草地地区"
+ decision_ad_large_scale_grazing_land_desc:0 ""
+
+ decision_ad_large_scale_agricultural_land:0 "区画整備：大自然農業地地区"
+ decision_ad_large_scale_agricultural_land_desc:0 ""
+
+ decision_ad_government_district:0 "区画整備：官庁街"
+ decision_ad_government_district_desc:0 ""
+
+ decision_ad_university_district:0 "区画整備：大学街"
+ decision_ad_university_district_desc:0 ""
+
+ decision_ad_residential_area:0 "区画整備：住宅街"
+ decision_ad_residential_area_desc:0 ""
+
+ decision_ad_shipbuilding_arsenal:0 "区画整備：造船工廠"
+ decision_ad_shipbuilding_arsenal_desc:0 ""
+
+ decision_ad_communication_area:0 "区画整備：通信区域"
+ decision_ad_communication_area_desc:0 ""
+
+ decision_ad_tourist_area:0 "区画整備：観光区域"
+ decision_ad_tourist_area_desc:0 ""
+
+ decision_ad_defense_zone:0 "区画整備：防衛区域"
+ decision_ad_defense_zone_desc:0 ""
+
+ decision_ad_conceptual_zone:0 "区画整備：構想特区"
+ decision_ad_conceptual_zone_desc:0 ""
+
+ decision_ad_special_research_zone:0 "区画整備：研究特区"
+ decision_ad_special_research_zone_desc:0 ""
+
+ decision_ad_spaceport_area:0 "区画整備：宇宙港区域"
+ decision_ad_spaceport_area_desc:0 ""
+
+ decision_ad_orbital_elevator:0 "区画整理：軌道エレベーター"
+ decision_ad_orbital_elevator_desc:0 ""
 
 #######################
 #####    技術    ######
@@ -51,11 +115,6 @@
  job_ad_atomic_engineer_desc:0 ""
  mod_job_ad_atomic_engineer_add:0 "原子技師の職業枠"
 
- job_ad_miner:0 "採掘者"
- job_ad_miner_plural:0 "採掘者"
- job_ad_miner_desc:0 ""
- mod_job_ad_miner_add:0 "採掘者の職業枠"
-
  job_ad_underwater_miner:0 "水中採掘者"
  job_ad_underwater_miner_plural:0 "水中採掘者"
  job_ad_underwater_miner_desc:0 ""
@@ -91,11 +150,15 @@
  job_ad_large_scale_farmer_desc:0 ""
  mod_job_ad_large_scale_farmer_add:0 "大規模農家の職業枠"
 
+ job_ad_data_minor:0 "データマイナー"
+ job_ad_data_minor_plural:0 "データマイナー"
+ job_ad_data_minor_desc:0 ""
+ mod_job_ad_data_minor_add:0 "データマイナーの職業枠"
+
 #######################
 #####    区域    ######
 #######################
 
-<<<<<<< HEAD
  district_ad_archaeological_cities:0 "遺跡都市"
  district_ad_archaeological_cities_plural:0 "遺跡都市"
  district_ad_archaeological_cities_desc:0 ""
@@ -169,55 +232,44 @@
  district_ad_special_tourism_zone:0 "観光特区"
  district_ad_special_tourism_zone_plural:0 "観光特区"
  district_ad_special_tourism_zone_desc:0 ""
-=======
- district_archaeological_cities:0 "遺跡都市"
- district_archaeological_cities_desc:0 ""
- district_sky_cities:0 "空中都市"
- district_sky_cities_desc:0 ""
- district_water_cities:0 "水上都市"
- district_water_cities_desc:0 ""
- district_under_water_cities:0 "水中都市"
- district_under_water_cities_desc:0 ""
- district_underground_cities:0 "地下都市"
- district_underground_cities_desc:0 ""
-
- district_solar_power_generation:0 "太陽光発電"
- district_solar_power_generation_desc:0 ""
- district_geothermal_electric_power_generation:0 "地熱発電"
- district_geothermal_electric_power_generation_desc:0 ""
- district_tidal_current_generation:0 "潮流発電"
- district_tidal_current_generation_desc:0 ""
- district_natural_nuclear_power_generation:0 "天然原子炉発電"
- district_natural_nuclear_power_generation_desc:0 ""
-
- district_open_pit_ore_deposits:0 "露天鉱床"
- district_open_pit_ore_deposits_desc:0 ""
- district_under_water_deposits:0 "水中鉱床"
- district_under_water_deposits_desc:0 ""
- district_orbital_deposits:0 "軌道鉱石群"
- district_orbital_deposits_desc:0 ""
- district_high_quality_deposits:0 "高質鉱床"
- district_high_quality_deposits_desc:0 ""
- district_low_quality_deposits:0 "低質鉱床"
- district_low_quality_deposits_desc:0 ""
-
- district_shed_cultivation_land:0 "棚状耕作地"
- district_shed_cultivation_land_desc:0 ""
- district_in_water_ecosystem:0 "水中生態系"
- district_in_water_ecosystem_desc:0 ""
- district_mycorrhizal_communities:0 "菌類群生体"
- district_mycorrhizal_communities_desc:0 ""
- district_large_scale_grazing_land:0 "大規模牧草地"
- district_large_scale_grazing_land_desc:0 ""
- district_large_scale_agricultural_land:0 "大自然農業地"
- district_large_scale_agricultural_land_desc:0 ""
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
+ district_ad_government_district:0 "官庁街"
+ district_ad_government_district_desc:0 ""
+ district_ad_government_district_plural:0 ""
+ district_ad_university_district:0 "大学街"
+ district_ad_university_district_desc:0 ""
+ district_ad_university_district_plural:0 ""
+ district_ad_residential_area:0 "住宅街"
+ district_ad_residential_area_desc:0 ""
+ district_ad_residential_area_plural:0 ""
+ district_ad_shipbuilding_arsenal:0 "造船工廠"
+ district_ad_shipbuilding_arsenal_desc:0 ""
+ district_ad_shipbuilding_arsenal_plural:0 ""
+ district_ad_communication_area:0 "通信区域"
+ district_ad_communication_area_desc:0 ""
+ district_ad_communication_area_plural:0 ""
+ district_ad_tourist_area:0 "観光区域"
+ district_ad_tourist_area_desc:0 ""
+ district_ad_tourist_area_plural:0 ""
+ district_ad_defense_zone:0 "防衛区域"
+ district_ad_defense_zone_desc:0 ""
+ district_ad_defense_zone_plural:0 ""
+ district_ad_conceptual_zone:0 "構想特区"
+ district_ad_conceptual_zone_desc:0 ""
+ district_ad_conceptual_zone_plural:0 ""
+ district_ad_special_research_zone:0 "研究特区"
+ district_ad_special_research_zone_desc:0 ""
+ district_ad_special_research_zone_plural:0 ""
+ district_ad_spaceport_area:0 "宇宙港区域"
+ district_ad_spaceport_area_desc:0 ""
+ district_ad_spaceport_area_plural:0 ""
+ district_ad_orbital_elevator:0 "軌道エレベーター"
+ district_ad_orbital_elevator_desc:0 ""
+ district_ad_orbital_elevator_plural:0 ""
 
 #######################
 #####    区域    ######
 #######################
 
-<<<<<<< HEAD
  d_ad_archaeological_cities:0 "遺跡都市"
  d_ad_archaeological_cities_desc:0 ""
  d_ad_sky_cities:0 "空中都市"
@@ -268,49 +320,29 @@
  d_ad_natural_fortress_desc:0 ""
  d_ad_special_tourism_zone:0 "観光特区"
  d_ad_special_tourism_zone_desc:0 ""
-=======
- d_archaeological_cities:0 "遺跡都市"
- d_archaeological_cities_desc:0 ""
- d_sky_cities:0 "空中都市"
- d_sky_cities_desc:0 ""
- d_water_cities:0 "水上都市"
- d_water_cities_desc:0 ""
- d_under_water_cities:0 "水中都市"
- d_under_water_cities_desc:0 ""
- d_underground_cities:0 "地下都市"
- d_underground_cities_desc:0 ""
 
- d_solar_power_generation:0 "太陽光発電"
- d_solar_power_generation_desc:0 ""
- d_geothermal_electric_power_generation:0 "地熱発電"
- d_geothermal_electric_power_generation_desc:0 ""
- d_tidal_current_generation:0 "潮流発電"
- d_tidal_current_generation_desc:0 ""
- d_natural_nuclear_power_generation:0 "天然原子炉発電"
- d_natural_nuclear_power_generation_desc:0 ""
-
- d_open_pit_ore_deposits:0 "露天鉱床"
- d_open_pit_ore_deposits_desc:0 ""
- d_under_water_deposits:0 "水中鉱床"
- d_under_water_deposits_desc:0 ""
- d_orbital_deposits:0 "軌道鉱石群"
- d_orbital_deposits_desc:0 ""
- d_high_quality_deposits:0 "高質鉱床"
- d_high_quality_deposits_desc:0 ""
- d_low_quality_deposits:0 "低質鉱床"
- d_low_quality_deposits_desc:0 ""
-
- d_shed_cultivation_land:0 "棚状耕作地"
- d_shed_cultivation_land_desc:0 ""
- d_in_water_ecosystem:0 "水中生態系"
- d_in_water_ecosystem_desc:0 ""
- d_mycorrhizal_communities:0 "菌類群生体"
- d_mycorrhizal_communities_desc:0 ""
- d_large_scale_grazing_land:0 "大規模牧草地"
- d_large_scale_grazing_land_desc:0 ""
- d_large_scale_agricultural_land:0 "大自然農業地"
- d_large_scale_agricultural_land_desc:0 ""
->>>>>>> 2c776222556c8464b05a57b525445bd7fe5d33a8
+ d_ad_government_district:0 "官庁街"
+ d_ad_government_district_desc:0 ""
+ d_ad_university_district:0 "大学街"
+ d_ad_university_district_desc:0 ""
+ d_ad_residential_area:0 "住宅街"
+ d_ad_residential_area_desc:0 ""
+ d_ad_shipbuilding_arsenal:0 "造船工廠"
+ d_ad_shipbuilding_arsenal_desc:0 ""
+ d_ad_communication_area:0 "通信区域"
+ d_ad_communication_area_desc:0 ""
+ d_ad_tourist_area:0 "観光区域"
+ d_ad_tourist_area_desc:0 ""
+ d_ad_defense_zone:0 "防衛区域"
+ d_ad_defense_zone_desc:0 ""
+ d_ad_conceptual_zone:0 "構想特区"
+ d_ad_conceptual_zone_desc:0 ""
+ d_ad_special_research_zone:0 "研究特区"
+ d_ad_special_research_zone_desc:0 ""
+ d_ad_spaceport_area:0 "宇宙港区域"
+ d_ad_spaceport_area_desc:0 ""
+ d_ad_orbital_elevator:0 "軌道エレベーター"
+ d_ad_orbital_elevator_desc:0 ""
 
 # :0 ""
 # _desc:0 ""
