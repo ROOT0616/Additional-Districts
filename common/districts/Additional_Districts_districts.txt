@@ -481,7 +481,7 @@ district_ad_underground_cities = {
 # 地熱発電	地熱技師*2	（技術開発）
 # 潮流発電	技術者*5	（技術開発）
 # 天然原子炉発電	原子技師*2	（技術開発）
-#太陽光発電 solar_power_generation	住居*2	技術者*5	（技術開発）
+#太陽光発電	住居*2	技術者*5	（技術開発）
 district_ad_solar_power_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2078,7 +2078,7 @@ district_ad_special_tourism_zone = {
 # 宇宙港区域 spaceport_area
 # 軌道エレベーター orbital_elevator
 
-# 官庁街 government_district
+# 官庁街 government_district	住居*2	行政官*2	官僚*6
 district_ad_government_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2147,7 +2147,9 @@ district_ad_government_district = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		# job_entertainer_add = 3
+		job_administrator_add = 2
+		job_bureaucrat_add = 6
+		
 	}
 	ai_weight = {
 		weight = 0
@@ -2164,7 +2166,7 @@ district_ad_government_district = {
 	}
 }
 
-# 大学街 university_district
+# 大学街 university_district	住居*2 科学総裁*2 科学者*6
 district_ad_university_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2233,7 +2235,8 @@ district_ad_university_district = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		# job_entertainer_add = 3
+		job_head_researcher_add = 2
+		job_researcher_add = 6
 	}
 	ai_weight = {
 		weight = 0
@@ -2250,7 +2253,7 @@ district_ad_university_district = {
 	}
 }
 
-# 住宅街 residential_area
+# 住宅街 residential_area	住居*10	役員*2	事務員*6
 district_ad_residential_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2318,8 +2321,9 @@ district_ad_residential_area = {
 		}
 	}
 	planet_modifier = {
-		planet_housing_add = 2
-		# job_entertainer_add = 3
+		planet_housing_add = 10
+		job_executive_add = 2
+		job_clerk_add = 6
 	}
 	ai_weight = {
 		weight = 0
@@ -2336,7 +2340,7 @@ district_ad_residential_area = {
 	}
 }
 
-# 造船工廠 shipbuilding_arsenal
+# 造船工廠 shipbuilding_arsenal	住居*2	造船技師*4	
 district_ad_shipbuilding_arsenal = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2405,7 +2409,7 @@ district_ad_shipbuilding_arsenal = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		# job_entertainer_add = 3
+		job_ad_shipwright_add = 4
 	}
 	ai_weight = {
 		weight = 0
@@ -2422,7 +2426,7 @@ district_ad_shipbuilding_arsenal = {
 	}
 }
 
-# 通信区域 communication_area
+# 通信区域 communication_area	住居*2	インフラ技師*4
 district_ad_communication_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2491,7 +2495,7 @@ district_ad_communication_area = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		# job_entertainer_add = 3
+		job_ad_infrastructure_engineer_add = 4
 	}
 	ai_weight = {
 		weight = 0
@@ -2508,7 +2512,7 @@ district_ad_communication_area = {
 	}
 }
 
-# 観光区域 tourist_area
+# 観光区域 tourist_area	住居*2	エンターテイナー*４
 district_ad_tourist_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2577,9 +2581,7 @@ district_ad_tourist_area = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_entertainer_add = 2
-		trade_value_add = 5
-		planet_amenities_add = 5
+		job_entertainer_add = 4
 	}
 	ai_weight = {
 		weight = 0
@@ -2596,7 +2598,7 @@ district_ad_tourist_area = {
 	}
 }
 
-# 防衛区域 defense_zone
+# 防衛区域 defense_zone	住居*2	防衛大将*2	兵士*6
 district_ad_defense_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2665,7 +2667,8 @@ district_ad_defense_zone = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		# job_entertainer_add = 3
+		job_ad_captain_of_a_defence_force_add = 2
+		job_soldier_add = 6
 	}
 	ai_weight = {
 		weight = 0
@@ -2682,7 +2685,7 @@ district_ad_defense_zone = {
 	}
 }
 
-# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
+# 構想特区 conceptual_zone	住居*2	豪商*2	起業家*6
 district_ad_conceptual_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2751,7 +2754,8 @@ district_ad_conceptual_zone = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		# job_entertainer_add = 3
+		job_merchant_add = 2
+		job_ad_entrepreneur_add = 6
 	}
 	ai_weight = {
 		weight = 0
@@ -2768,7 +2772,7 @@ district_ad_conceptual_zone = {
 	}
 }
 
-# 研究特区 special_research_zone 	研究者 researchers
+# 研究特区 special_research_zone 	住居*2	研究者*12
 district_ad_special_research_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2837,7 +2841,7 @@ district_ad_special_research_zone = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		# job_entertainer_add = 3
+		job_researcher_add = 12
 	}
 	ai_weight = {
 		weight = 0
@@ -2854,13 +2858,12 @@ district_ad_special_research_zone = {
 	}
 }
 
-# 宇宙港区域 spaceport_area
+# 宇宙港区域 spaceport_area	住居*2	宇宙港整備員*2
 district_ad_spaceport_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
 		uses_district_set = standard
 	}
-
 	potential = {
 		NOR = {
 			is_star = yes
@@ -2923,7 +2926,7 @@ district_ad_spaceport_area = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		# job_entertainer_add = 3
+		job_ad_spaceport_mechanics_add = 2
 	}
 	ai_weight = {
 		weight = 0
@@ -2940,7 +2943,7 @@ district_ad_spaceport_area = {
 	}
 }
 
-# 軌道エレベーター orbital_elevator
+# 軌道エレベーター orbital_elevator 	住居*2	快適度	5	交易価値	5	幸福度	5
 district_ad_orbital_elevator = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -3009,7 +3012,9 @@ district_ad_orbital_elevator = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		# job_entertainer_add = 3
+		pop_happiness = 5
+		planet_amenities_add = 5
+		trade_value_add = 5
 	}
 	ai_weight = {
 		weight = 0

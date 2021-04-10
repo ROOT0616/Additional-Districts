@@ -97,7 +97,9 @@ decision_ad_large_scale_underground_area_construction = {
 		large_scale_ground_construction_technology
 	}
 	allow = {
-		has_planet_flag = do_ad_underground_cities
+		NOT = {
+			has_planet_flag = do_ad_underground_cities
+		}
 	}
 	effect = {
 		while = {
@@ -140,7 +142,9 @@ decision_ad_solar_power_generation = {
 		mixed_use_development_plan
 	}
 	allow = {
-		has_planet_flag = do_ad_solar_power_generation
+		NOT = {
+			has_planet_flag = do_ad_solar_power_generation
+		}
 	}
 	effect = {
 		while = {
@@ -175,7 +179,9 @@ decision_ad_geothermal_electric_power_generation = {
 		mixed_use_development_plan
 	}
 	allow = {
-		has_planet_flag = do_ad_geothermal_electric_power_generation
+		NOT = {
+			has_planet_flag = do_ad_geothermal_electric_power_generation
+		}
 	}
 	effect = {
 		while = {
@@ -210,7 +216,9 @@ decision_ad_tidal_current_generation = {
 		mixed_use_development_plan
 	}
 	allow = {
-		has_planet_flag = do_ad_tidal_current_generation
+		NOT = {
+			has_planet_flag = do_ad_tidal_current_generation
+		}
 	}
 	effect = {
 		while = {
@@ -245,7 +253,9 @@ decision_ad_natural_nuclear_power_generation = {
 		mixed_use_development_plan
 	}
 	allow = {
-		has_planet_flag = do_ad_natural_nuclear_power_generation
+		NOT = {
+			has_planet_flag = do_ad_natural_nuclear_power_generation
+		}
 	}
 	effect = {
 		while = {
@@ -285,7 +295,9 @@ decision_ad_orbital_deposits = {
 		mixed_use_development_plan
 	}
 	allow = {
-		has_planet_flag = do_ad_orbital_deposits
+		NOT = {
+			has_planet_flag = do_ad_orbital_deposits
+		}
 	}
 	effect = {
 		while = {
@@ -327,7 +339,9 @@ decision_ad_shed_cultivation_land = {
 		mixed_use_development_plan
 	}
 	allow = {
-		has_planet_flag = do_ad_shed_cultivation_land
+		NOT = {
+			has_planet_flag = do_ad_shed_cultivation_land
+		}
 	}
 	effect = {
 		while = {
@@ -362,7 +376,9 @@ decision_ad_large_scale_grazing_land = {
 		mixed_use_development_plan
 	}
 	allow = {
-		has_planet_flag = do_ad_large_scale_grazing_land
+		NOT = {
+			has_planet_flag = do_ad_large_scale_grazing_land
+		}
 	}
 	effect = {
 		while = {
@@ -397,7 +413,9 @@ decision_ad_large_scale_agricultural_land = {
 		mixed_use_development_plan
 	}
 	allow = {
-		has_planet_flag = do_ad_large_scale_agricultural_land
+		NOT = {
+			has_planet_flag = do_ad_large_scale_agricultural_land
+		}
 	}
 	effect = {
 		while = {

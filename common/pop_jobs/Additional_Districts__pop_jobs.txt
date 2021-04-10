@@ -1,3 +1,22 @@
+# 		職業
+# 発掘者	出土品	0.5
+# 水中農家	消費財	1	→食料	6
+# 施設維持業者	消費財	1	→	鉱石	5	快適度	3
+# 地熱技師	エネルギ	6
+# 原子技師	消費財	2	→	エネルギ	8
+# 水中採掘者	消費財	1	→	鉱石	5
+# 宇宙採掘者	消費財	2	→	鉱石	6
+# 効率的採掘者	鉱石	8
+# 低効率採掘者	鉱石	3
+# 菌農家	食料	5
+# 酪農家	消費財	1	→	食物 8
+# 大規模農家	食料	6
+# データマイナー	消費財	2	→	化学 物理 社会 2 科学者出力*1.2
+# 造船技師	造船速度X	宇宙軍	宇宙軍許容量	2
+# インフラ技師	消費財	2	→	専門家出力X	安定度	1
+# 防衛隊長	消費財	2	→	防衛軍X	宇宙軍許容量	4
+# 起業家	消費財	2	→	交易価値X	社会研究力	4
+
 #発掘者 excavator  出土品 0.5
 ad_excavator = {
 	category = specialist
@@ -27,7 +46,7 @@ ad_excavator = {
 	}
 }
 
-#水中農家	water_farmer   食物	6
+#水中農家	water_farmer   消費財	1	→	食料	6
 ad_water_farmer = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -46,17 +65,16 @@ ad_water_farmer = {
 		produces = {
 			food = 6
 		}
-		# upkeep = {
-		# 	unity = 10
-		# 	influence = 1
-		# }
+		upkeep = {
+				consumer_goods = 1
+			}
 	}
 	weight = {
 		weight = @worker_job_weight
 	}
 }
 
-#施設維持業者	facility_maintainer   鉱石	5
+#施設維持業者	facility_maintainer   消費財	1	→	鉱石	5	快適度	3
 ad_facility_maintainer = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -70,22 +88,24 @@ ad_facility_maintainer = {
 	possible = {
 		specialist_job_check_trigger = yes
 	}
+	planet_modifier = {
+		planet_amenities_add = 3
+	}
 	resources = {
 		category = planet_miners
 		produces = {
 			minerals = 5
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
+		upkeep = {
+			consumer_goods = 1
+		}
 	}
 	weight = {
 		weight = @specialist_job_weight
 	}
 }
 
-#地熱技師	geothermal_technician   エネルギー	6
+#地熱技師	geothermal_technician   エネルギ	6
 ad_geothermal_technician = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -104,17 +124,13 @@ ad_geothermal_technician = {
 		produces = {
 			energy = 6
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
 	}
 	weight = {
 		weight = @worker_job_weight
 	}
 }
 
-# 原子技師 atomic_engineer   エネルギー	7
+# 原子技師 atomic_engineer   消費財	2	→	エネルギ	8
 ad_atomic_engineer = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -131,19 +147,18 @@ ad_atomic_engineer = {
 	resources = {
 		category = planet_technician
 		produces = {
-			energy = 7
+			energy = 8
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
+		upkeep = {
+			consumer_goods = 2
+		}
 	}
 	weight = {
 		weight = @worker_job_weight
 	}
 }
 
-# 水中採掘者 underwater_miner   鉱石	5
+# 水中採掘者 underwater_miner   消費財	1	→	鉱石	5
 ad_underwater_miner = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -162,17 +177,16 @@ ad_underwater_miner = {
 		produces = {
 			minerals = 5
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
+		upkeep = {
+			consumer_goods = 1
+		}
 	}
 	weight = {
 		weight = @worker_job_weight
 	}
 }
 
-# 宇宙採掘者 space_miner   鉱石	5
+# 宇宙採掘者 space_miner   消費財	2	→	鉱石	6
 ad_space_miner = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -189,12 +203,11 @@ ad_space_miner = {
 	resources = {
 		category = planet_miners
 		produces = {
-			minerals = 5
+			minerals = 6
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
+		upkeep = {
+			consumer_goods = 2
+		}
 	}
 	weight = {
 		weight = @worker_job_weight
@@ -220,10 +233,6 @@ ad_efficient_miner = {
 		produces = {
 			minerals = 8
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
 	}
 	weight = {
 		weight = @worker_job_weight
@@ -249,10 +258,6 @@ ad_low_efficiency_miner = {
 		produces = {
 			minerals = 3
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
 	}
 	weight = {
 		weight = @worker_job_weight
@@ -278,17 +283,13 @@ ad_fungus_farmer = {
 		produces = {
 			food = 5
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
 	}
 	weight = {
 		weight = @worker_job_weight
 	}
 }
 
-# 酪農家 dairy_farmer   食物 5
+# 酪農家 dairy_farmer   消費財	1	→	食物 8
 ad_dairy_farmer = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -305,12 +306,11 @@ ad_dairy_farmer = {
 	resources = {
 		category = planet_farmers
 		produces = {
-			food = 5
+			food = 8
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
+		upkeep = {
+			consumer_goods = 1
+		}
 	}
 	weight = {
 		weight = @worker_job_weight
@@ -336,17 +336,13 @@ ad_large_scale_farmer = {
 		produces = {
 			food = 6
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
 	}
 	weight = {
 		weight = @worker_job_weight
 	}
 }
 
-# データマイナー data_minor 化学 物理 社会 2 科学者出力*1.2
+# データマイナー data_minor 消費財	2	→	化学 物理 社会 2 科学者出力*0.05
 ad_data_minor = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -361,7 +357,7 @@ ad_data_minor = {
 		specialist_job_check_trigger = yes
 	}
 	planet_modifier = {
-		planet_researchers_produces_mult = 0.2
+		planet_researchers_produces_mult = 0.05
 	}
 	resources = {
 		category = planet_researchers
@@ -370,10 +366,160 @@ ad_data_minor = {
 			society_research = 2
 			engineering_research = 2
 		}
-		# upkeep = {
-			# 	unity = 10
-			# 	influence = 1
-		# }
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+# 造船技師	shipwright	消費財	2	→	造船速度*0.05	宇宙軍許容量	2
+ad_shipwright = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	country_modifier = {
+		starbase_shipyard_build_speed_mult = 0.05
+		country_naval_cap_add = 2
+	}
+	resources = {
+		category = planet_technician
+		produces = {
+			unity = 2
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+# インフラ技師 infrastructure_engineer	消費財	2	→	専門家出力*0.05	安定度	1
+ad_infrastructure_engineer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_stability_add = 1
+		planet_jobs_specialist_produces_mult = 0.05
+	}
+	resources = {
+		category = planet_researchers
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+# 防衛隊長	captain_of_a_defence_force	消費財	2	→	防衛軍*0.05	宇宙軍許容量	4
+ad_captain_of_a_defence_force = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+	country_modifier = {
+		army_defense_damage_mult = 0.05
+		army_defense_health_mult = 0.05
+		army_defense_morale_mult = 0.05
+		country_naval_cap_add = 4
+	}
+	resources = {
+		category = armies
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+	}
+}
+
+# 起業家	entrepreneur	消費財	2	→	交易価値*0.05	社会研究力	4
+ad_entrepreneur = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	planet_modifier = {
+		trade_value_mult = 0.05
+	}
+	resources = {
+		category = planet_merchants
+		produces = {
+			society_research = 4
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+# 宇宙港整備員	spaceport_mechanics	消費財	2	→	宇宙軍許容量	6
+ad_spaceport_mechanics = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	country_modifier = {
+		country_naval_cap_add = 6
+	}
+	resources = {
+		category = planet_researchers
+		upkeep = {
+			consumer_goods = 2
+		}
 	}
 	weight = {
 		weight = @specialist_job_weight
