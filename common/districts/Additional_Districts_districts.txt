@@ -481,7 +481,8 @@ district_ad_underground_cities = {
 # 地熱発電	地熱技師*2	（技術開発）
 # 潮流発電	技術者*5	（技術開発）
 # 天然原子炉発電	原子技師*2	（技術開発）
-#太陽光発電	住居*2	技術者*5	（技術開発）
+
+#太陽光発電	solar_power_generation	住居*2	技術者*5	（技術開発）
 district_ad_solar_power_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -1278,6 +1279,7 @@ district_ad_low_quality_deposits = {
 # 菌類群生体	mycorrhizal_communities	（自然発生）
 # 大規模牧草地	large_scale_grazing_land	（技術開発）
 # 大自然農業地	large_scale_agricultural_land	（技術開発）
+
 # 棚状耕作地	shed_cultivation_land	農家*5（技術開発）
 district_ad_shed_cultivation_land = {
 	base_buildtime = 240
@@ -1715,6 +1717,7 @@ district_ad_large_scale_agricultural_land = {
 # 古代データバンク	ancient_databank	（自然発生）
 # 天然の要塞	natural_fortress	（自然発生）
 # 観光特区	special_tourism_zone	（自然発生）
+
 # 古代遺跡群	ancient_ruins	発掘者*6 （自然発生）
 district_ad_ancient_ruins = {
 	base_buildtime = 240
