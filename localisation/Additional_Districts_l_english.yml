@@ -4,38 +4,23 @@
 #####    ディシジョン    ######
 ##############################
 
- decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
- decision_ad_large_scale_air_area_construction_desc:0 ""
+ decision_ad_display:0 "街：表示"
+ decision_ad_display_desc:0 ""
+
+ decision_ad_undisplay:0 "街：非表示"
+ decision_ad_undisplay_desc:0 ""
+
+decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
+ decision_ad_large_scale_air_area_construction_desc:0 "地上だけではなく空中に浮かぶ都市を築き上げる計画を実行する。"
 
  decision_ad_large_scale_water_area_construction:0 "大規模水中地区建設"
- decision_ad_large_scale_water_area_construction_desc:0 ""
+ decision_ad_large_scale_water_area_construction_desc:0 "地上だけではなく水中に都市を築き上げる計画を実行する。"
 
  decision_ad_large_scale_underground_area_construction:0 "大規模地下地区建設"
- decision_ad_large_scale_underground_area_construction_desc:0 ""
+ decision_ad_large_scale_underground_area_construction_desc:0 "地上だけではなく地中に都市を築き上げる計画を実行する。"
 
- decision_ad_solar_power_generation:0 "区画整備：太陽光発電地区"
- decision_ad_solar_power_generation_desc:0 ""
-
- decision_ad_geothermal_electric_power_generation:0 "区画整備：地熱発電地区"
- decision_ad_geothermal_electric_power_generation_desc:0 ""
-
- decision_ad_tidal_current_generation:0 "区画整備：潮流発電地区"
- decision_ad_tidal_current_generation_desc:0 ""
-
- decision_ad_natural_nuclear_power_generation:0 "区画整備：天然原子炉発電地区"
- decision_ad_natural_nuclear_power_generation_desc:0 ""
-
- decision_ad_orbital_deposits:0 "区画整備：軌道鉱石群地区"
- decision_ad_orbital_deposits_desc:0 ""
-
- decision_ad_shed_cultivation_land:0 "区画整備：棚状耕作地区"
- decision_ad_shed_cultivation_land_desc:0 ""
-
- decision_ad_large_scale_grazing_land:0 "区画整備：大規模牧草地地区"
- decision_ad_large_scale_grazing_land_desc:0 ""
-
- decision_ad_large_scale_agricultural_land:0 "区画整備：大自然農業地地区"
- decision_ad_large_scale_agricultural_land_desc:0 ""
+ decision_ad_solar_power_generation:0 "街整備：太陽光発電地区"
+ decision_ad_solar_power_generation_desc:0 "惑星に大規模な太陽光パネルを整備し、惑星の反射光を増やす。"
 
  decision_ad_government_district:0 "街整備：官庁街"
  decision_ad_government_district_desc:0 ""
@@ -69,6 +54,42 @@
 
  decision_ad_orbital_elevator:0 "街整理：軌道エレベーター"
  decision_ad_orbital_elevator_desc:0 ""
+
+ decision_ad_undo_solar_power_generation:0 "街削除：太陽光発電地区"
+ decision_ad_undo_solar_power_generation_desc:0 ""
+
+ decision_ad_undo_government_district:0 "街削除：官庁街"
+ decision_ad_undo_government_district_desc:0 ""
+
+ decision_ad_undo_university_district:0 "街削除：大学街"
+ decision_ad_undo_university_district_desc:0 ""
+
+ decision_ad_undo_residential_area:0 "街削除：住宅街"
+ decision_ad_undo_residential_area_desc:0 ""
+
+ decision_ad_undo_shipbuilding_arsenal:0 "街削除：造船工廠"
+ decision_ad_undo_shipbuilding_arsenal_desc:0 ""
+
+ decision_ad_undo_communication_area:0 "街削除：通信区域"
+ decision_ad_undo_communication_area_desc:0 ""
+
+ decision_ad_undo_tourist_area:0 "街削除：観光区域"
+ decision_ad_undo_tourist_area_desc:0 ""
+
+ decision_ad_undo_defense_zone:0 "街削除：防衛区域"
+ decision_ad_undo_defense_zone_desc:0 ""
+
+ decision_ad_undo_conceptual_zone:0 "街削除：構想特区"
+ decision_ad_undo_conceptual_zone_desc:0 ""
+
+ decision_ad_undo_special_research_zone:0 "街削除：研究特区"
+ decision_ad_undo_special_research_zone_desc:0 ""
+
+ decision_ad_undo_spaceport_area:0 "街削除：宇宙港区域"
+ decision_ad_undo_spaceport_area_desc:0 ""
+
+ decision_ad_undo_orbital_elevator:0 "街削除：軌道エレベーター"
+ decision_ad_undo_orbital_elevator_desc:0 ""
 
 #######################
 #####    技術    ######
@@ -150,6 +171,11 @@
  job_ad_large_scale_farmer_desc:0 ""
  mod_job_ad_large_scale_farmer_add:0 "大規模農家の職業枠"
 
+ job_ad_Professorship:0 "教授職"
+ job_ad_Professorship_plural:0 "教授職"
+ job_ad_Professorship_desc:0 ""
+ mod_job_ad_Professorship_add:0 "教授職の職業枠"
+
  job_ad_data_minor:0 "データマイナー"
  job_ad_data_minor_plural:0 "データマイナー"
  job_ad_data_minor_desc:0 ""
@@ -165,10 +191,15 @@
  job_ad_infrastructure_engineer_desc:0 ""
  mod_job_ad_infrastructure_engineer_add:0 "インフラ技師の職業枠"
 
- job_ad_captain_of_a_defence_force:0 "防衛隊長"
- job_ad_captain_of_a_defence_force_plural:0 "防衛隊長"
- job_ad_captain_of_a_defence_force_desc:0 ""
- mod_job_ad_captain_of_a_defence_force_add:0 "防衛隊長の職業枠"
+ job_ad_commissioned_officer:0 "将校"
+ job_ad_commissioned_officer_plural:0 "将校"
+ job_ad_commissioned_officer_desc:0 ""
+ mod_job_ad_commissioned_officer_add:0 "将校の職業枠"
+
+ job_ad_general_officer:0 "将官"
+ job_ad_general_officer_plural:0 "将官"
+ job_ad_general_officer_desc:0 ""
+ mod_job_ad_general_officer_add:0 "将官の職業枠"
 
  job_ad_entrepreneur:0 "起業家"
  job_ad_entrepreneur_plural:0 "起業家"
@@ -327,7 +358,7 @@
  mod_district_ad_orbital_elevator_max:0 "最大$district_ad_orbital_elevator$"
 
 #######################
-#####    区域    ######
+#####    地区    ######
 #######################
 
  d_ad_archaeological_cities:0 "遺跡都市"

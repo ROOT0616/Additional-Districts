@@ -1,3 +1,56 @@
+##########################################
+#####    2次区域追加の表示と非表示    ######
+##########################################
+#2次街追加の非表示	undo_town_display
+decision_ad_undo_town_display = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+	}
+	prerequisites = {
+		large_scale_air_construction_technology
+	}
+	allow = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+	}
+	effect = {
+		hidden_effect = {
+			set_planet_flag = do_ad_undo_display
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#2次街追加の表示	town_display
+decision_ad_town_display = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		has_planet_flag = do_ad_undo_display
+	}
+	prerequisites = {
+		large_scale_air_construction_technology
+	}
+	allow = {
+		has_planet_flag = do_ad_undo_display
+	}
+	effect = {
+		hidden_effect = {
+			remove_planet_flag = do_ad_undo_display
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
 ##############################
 #####    都市区域追加    ######
 ##############################
@@ -8,7 +61,9 @@ decision_ad_large_scale_air_area_construction = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 1000
+			alloys = 500
+			exotic_gases = 100
 		}
 	}
 	potential = {
@@ -20,6 +75,12 @@ decision_ad_large_scale_air_area_construction = {
 		large_scale_air_construction_technology
 	}
 	allow = {
+		# owner = {
+		# 	resource_stockpile_compare = {
+		# 		resource = energy
+		# 		value >= 1000
+		# 	}
+		# }
 		NOT = {
 			has_planet_flag = do_ad_sky_cities
 		}
@@ -41,6 +102,7 @@ decision_ad_large_scale_air_area_construction = {
 		}
 	}
 }
+
 #大規模水中地区建設 large_scale_water_area_construction 
 decision_ad_large_scale_water_area_construction = {
 	owned_planets_only = yes
@@ -48,7 +110,8 @@ decision_ad_large_scale_water_area_construction = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 1000
+			alloys = 500
 		}
 	}
 	potential = {
@@ -85,7 +148,8 @@ decision_ad_large_scale_underground_area_construction = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
+			alloys = 1000
 		}
 	}
 	potential = {
@@ -119,9 +183,6 @@ decision_ad_large_scale_underground_area_construction = {
 #####    発電区域追加    ######
 ##############################
 # 太陽光発電	solar_power_generation	技術者*5	（技術開発）
-# 地熱発電	geothermal_electric_power_generation	地熱技師*2	（技術開発）
-# 潮流発電	tidal_current_generation	技術者*5	（技術開発）
-# 天然原子炉発電	natural_nuclear_power_generation	原子技師*2	（技術開発）
 
 # 太陽光発電	solar_power_generation	技術者*5	（技術開発）
 decision_ad_solar_power_generation = {
@@ -130,10 +191,13 @@ decision_ad_solar_power_generation = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_solar_power_generation
 		}
@@ -160,274 +224,33 @@ decision_ad_solar_power_generation = {
 	}
 }
 
-# 地熱発電	geothermal_electric_power_generation	地熱技師*2	（技術開発）
-decision_ad_geothermal_electric_power_generation = {
+# 太陽光発電の削除
+decision_ad_undo_solar_power_generation = {
 	owned_planets_only = yes
 	enactment_time = 0
-	resources = {
-		category = decisions
-		cost = {
-			# minerals = 50
-		}
-	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_geothermal_electric_power_generation
+			has_planet_flag = do_ad_undisplay
 		}
+		has_planet_flag = do_ad_solar_power_generation
 	}
 	prerequisites = {
 		mixed_use_development_plan
 	}
 	allow = {
-		NOT = {
-			has_planet_flag = do_ad_geothermal_electric_power_generation
-		}
+		has_planet_flag = do_ad_solar_power_generation
 	}
 	effect = {
 		while = {
 			count = 5
-			add_deposit = d_ad_geothermal_electric_power_generation
+			remove_deposit = d_ad_solar_power_generation
 		}
 		hidden_effect = {
-			set_planet_flag = do_ad_geothermal_electric_power_generation
+			remove_planet_flag = do_ad_solar_power_generation
 		}
 	}
 	ai_weight = {
-		weight = 0.5
-	}
-}
-
-# 潮流発電	tidal_current_generation	技術者*5	（技術開発）
-decision_ad_tidal_current_generation = {
-	owned_planets_only = yes
-	enactment_time = 0
-	resources = {
-		category = decisions
-		cost = {
-			# minerals = 50
-		}
-	}
-	potential = {
-		NOT = {
-			has_planet_flag = do_ad_tidal_current_generation
-		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
-	}
-	allow = {
-		NOT = {
-			has_planet_flag = do_ad_tidal_current_generation
-		}
-	}
-	effect = {
-		while = {
-			count = 5
-			add_deposit = d_ad_tidal_current_generation
-		}
-		hidden_effect = {
-			set_planet_flag = do_ad_tidal_current_generation
-		}
-	}
-	ai_weight = {
-		weight = 0.5
-	}
-}
-
-# 天然原子炉発電	natural_nuclear_power_generation	原子技師*2	（技術開発）
-decision_ad_natural_nuclear_power_generation = {
-	owned_planets_only = yes
-	enactment_time = 0
-	resources = {
-		category = decisions
-		cost = {
-			# minerals = 50
-		}
-	}
-	potential = {
-		NOT = {
-			has_planet_flag = do_ad_natural_nuclear_power_generation
-		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
-	}
-	allow = {
-		NOT = {
-			has_planet_flag = do_ad_natural_nuclear_power_generation
-		}
-	}
-	effect = {
-		while = {
-			count = 5
-			add_deposit = d_ad_natural_nuclear_power_generation
-		}
-		hidden_effect = {
-			set_planet_flag = do_ad_natural_nuclear_power_generation
-		}
-	}
-	ai_weight = {
-		weight = 0.5
-	}
-}
-
-##############################
-#####    鉱物区域追加    ######
-##############################	
-# 軌道鉱石群	orbital_deposits	宇宙採掘者*2	（技術開発）
-
-# 軌道鉱石群	orbital_deposits	宇宙採掘者*2	（技術開発）
-decision_ad_orbital_deposits = {
-	owned_planets_only = yes
-	enactment_time = 0
-	resources = {
-		category = decisions
-		cost = {
-			# minerals = 50
-		}
-	}
-	potential = {
-		NOT = {
-			has_planet_flag = do_ad_orbital_deposits
-		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
-	}
-	allow = {
-		NOT = {
-			has_planet_flag = do_ad_orbital_deposits
-		}
-	}
-	effect = {
-		while = {
-			count = 5
-			add_deposit = d_ad_orbital_deposits
-		}
-		hidden_effect = {
-			set_planet_flag = do_ad_orbital_deposits
-		}
-	}
-	ai_weight = {
-		weight = 0.5
-	}
-}
-
-##############################
-#####    農業区域追加    ######
-##############################
-# 棚状耕作地	shed_cultivation_land	（技術開発）
-# 大規模牧草地	large_scale_grazing_land（技術開発）
-# 大自然農業地	large_scale_agricultural_land（技術開発）
-
-# 棚状耕作地	shed_cultivation_land	（技術開発）
-decision_ad_shed_cultivation_land = {
-	owned_planets_only = yes
-	enactment_time = 0
-	resources = {
-		category = decisions
-		cost = {
-			# minerals = 50
-		}
-	}
-	potential = {
-		NOT = {
-			has_planet_flag = do_ad_shed_cultivation_land
-		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
-	}
-	allow = {
-		NOT = {
-			has_planet_flag = do_ad_shed_cultivation_land
-		}
-	}
-	effect = {
-		while = {
-			count = 5
-			add_deposit = d_ad_shed_cultivation_land
-		}
-		hidden_effect = {
-			set_planet_flag = do_ad_shed_cultivation_land
-		}
-	}
-	ai_weight = {
-		weight = 0.5
-	}
-}
-
-# 大規模牧草地	large_scale_grazing_land	（技術開発）
-decision_ad_large_scale_grazing_land = {
-	owned_planets_only = yes
-	enactment_time = 0
-	resources = {
-		category = decisions
-		cost = {
-			# minerals = 50
-		}
-	}
-	potential = {
-		NOT = {
-			has_planet_flag = do_ad_large_scale_grazing_land
-		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
-	}
-	allow = {
-		NOT = {
-			has_planet_flag = do_ad_large_scale_grazing_land
-		}
-	}
-	effect = {
-		while = {
-			count = 5
-			add_deposit = d_ad_large_scale_grazing_land
-		}
-		hidden_effect = {
-			set_planet_flag = do_ad_large_scale_grazing_land
-		}
-	}
-	ai_weight = {
-		weight = 0.5
-	}
-}
-
-# 大自然農業地	large_scale_agricultural_land	（技術開発）
-decision_ad_large_scale_agricultural_land = {
-	owned_planets_only = yes
-	enactment_time = 0
-	resources = {
-		category = decisions
-		cost = {
-			# minerals = 50
-		}
-	}
-	potential = {
-		NOT = {
-			has_planet_flag = do_ad_large_scale_agricultural_land
-		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
-	}
-	allow = {
-		NOT = {
-			has_planet_flag = do_ad_large_scale_agricultural_land
-		}
-	}
-	effect = {
-		while = {
-			count = 5
-			add_deposit = d_ad_large_scale_agricultural_land
-		}
-		hidden_effect = {
-			set_planet_flag = do_ad_large_scale_agricultural_land
-		}
-	}
-	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -446,17 +269,20 @@ decision_ad_large_scale_agricultural_land = {
 # 宇宙港区域 spaceport_area
 # 軌道エレベーター orbital_elevator
 
-# 官庁街 government_district
+# 官庁街 government_district	
 decision_ad_government_district = {
 	owned_planets_only = yes
 	enactment_time = 0
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_government_district
 		}
@@ -480,6 +306,33 @@ decision_ad_government_district = {
 	}
 }
 
+# 官庁街の削除
+decision_ad_undo_government_district = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+		has_planet_flag = do_ad_government_district
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+		has_planet_flag = do_ad_government_district
+	}
+	effect = {
+		remove_deposit = d_ad_government_district
+		hidden_effect = {
+			remove_planet_flag = do_ad_government_district
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
 # 大学街 university_district
 decision_ad_university_district = {
 	owned_planets_only = yes
@@ -487,10 +340,13 @@ decision_ad_university_district = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_university_district
 		}
@@ -514,6 +370,33 @@ decision_ad_university_district = {
 	}
 }
 
+# 大学街の削除
+decision_ad_undo_university_district = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+			has_planet_flag = do_ad_university_district
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+			has_planet_flag = do_ad_university_district
+	}
+	effect = {
+		remove_deposit = d_ad_university_district
+		hidden_effect = {
+			remove_planet_flag = do_ad_university_district
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
 # 住宅街 residential_area
 decision_ad_residential_area = {
 	owned_planets_only = yes
@@ -521,10 +404,13 @@ decision_ad_residential_area = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_residential_area
 		}
@@ -548,6 +434,33 @@ decision_ad_residential_area = {
 	}
 }
 
+# 住宅街の削除
+decision_ad_undo_residential_area = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+			has_planet_flag = do_ad_residential_area
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+			has_planet_flag = do_ad_residential_area
+	}
+	effect = {
+		remove_deposit = d_ad_residential_area
+		hidden_effect = {
+			remove_planet_flag = do_ad_residential_area
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
 # 造船工廠 shipbuilding_arsenal
 decision_ad_shipbuilding_arsenal = {
 	owned_planets_only = yes
@@ -555,10 +468,13 @@ decision_ad_shipbuilding_arsenal = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_shipbuilding_arsenal
 		}
@@ -582,6 +498,33 @@ decision_ad_shipbuilding_arsenal = {
 	}
 }
 
+# 造船工廠の削除
+decision_ad_undo_shipbuilding_arsenal = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+			has_planet_flag = do_ad_shipbuilding_arsenal
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+			has_planet_flag = do_ad_shipbuilding_arsenal
+	}
+	effect = {
+		remove_deposit = d_ad_shipbuilding_arsenal
+		hidden_effect = {
+			remove_planet_flag = do_ad_shipbuilding_arsenal
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
 # 通信区域 communication_area
 decision_ad_communication_area = {
 	owned_planets_only = yes
@@ -589,10 +532,13 @@ decision_ad_communication_area = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_communication_area
 		}
@@ -616,6 +562,33 @@ decision_ad_communication_area = {
 	}
 }
 
+# 通信区域の削除
+decision_ad_undo_communication_area = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+			has_planet_flag = do_ad_communication_area
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+			has_planet_flag = do_ad_communication_area
+	}
+	effect = {
+		remove_deposit = d_ad_communication_area
+		hidden_effect = {
+			remove_planet_flag = do_ad_communication_area
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
 # 観光区域 tourist_area
 decision_ad_tourist_area = {
 	owned_planets_only = yes
@@ -623,10 +596,13 @@ decision_ad_tourist_area = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_tourist_area
 		}
@@ -650,6 +626,33 @@ decision_ad_tourist_area = {
 	}
 }
 
+# 観光区域の削除
+decision_ad_undo_tourist_area = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+			has_planet_flag = do_ad_tourist_area
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+			has_planet_flag = do_ad_tourist_area
+	}
+	effect = {
+		remove_deposit = d_ad_tourist_area
+		hidden_effect = {
+			remove_planet_flag = do_ad_tourist_area
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
 # 防衛区域 defense_zone
 decision_ad_defense_zone = {
 	owned_planets_only = yes
@@ -657,10 +660,13 @@ decision_ad_defense_zone = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_defense_zone
 		}
@@ -674,12 +680,36 @@ decision_ad_defense_zone = {
 		}
 	}
 	effect = {
-		while = {
-			count = 5
-		}
 		add_deposit = d_ad_defense_zone
 		hidden_effect = {
 			set_planet_flag = do_ad_defense_zone
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 防衛区域の削除
+decision_ad_undo_defense_zone = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+			has_planet_flag = do_ad_defense_zone
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+			has_planet_flag = do_ad_defense_zone
+	}
+	effect = {
+		remove_deposit = d_ad_defense_zone
+		hidden_effect = {
+			remove_planet_flag = do_ad_defense_zone
 		}
 	}
 	ai_weight = {
@@ -694,10 +724,13 @@ decision_ad_conceptual_zone = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_conceptual_zone
 		}
@@ -711,12 +744,36 @@ decision_ad_conceptual_zone = {
 		}
 	}
 	effect = {
-		while = {
-			count = 5
-		}
 		add_deposit = d_ad_conceptual_zone
 		hidden_effect = {
 			set_planet_flag = do_ad_conceptual_zone
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 構想特区の削除
+decision_ad_undo_conceptual_zone = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+			has_planet_flag = do_ad_conceptual_zone
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+			has_planet_flag = do_ad_conceptual_zone
+	}
+	effect = {
+		remove_deposit = d_ad_conceptual_zone
+		hidden_effect = {
+			remove_planet_flag = do_ad_conceptual_zone
 		}
 	}
 	ai_weight = {
@@ -731,10 +788,13 @@ decision_ad_special_research_zone = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_special_research_zone
 		}
@@ -748,12 +808,36 @@ decision_ad_special_research_zone = {
 		}
 	}
 	effect = {
-		while = {
-			count = 5
-		}
 		add_deposit = d_ad_special_research_zone
 		hidden_effect = {
 			set_planet_flag = do_ad_special_research_zone
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 研究特区の削除
+decision_ad_undo_special_research_zone = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+			has_planet_flag = do_ad_special_research_zone
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+			has_planet_flag = do_ad_special_research_zone
+	}
+	effect = {
+		remove_deposit = d_ad_special_research_zone
+		hidden_effect = {
+			remove_planet_flag = do_ad_special_research_zone
 		}
 	}
 	ai_weight = {
@@ -768,10 +852,13 @@ decision_ad_spaceport_area = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_spaceport_area
 		}
@@ -795,6 +882,33 @@ decision_ad_spaceport_area = {
 	}
 }
 
+# 宇宙港区域の削除
+decision_ad_undo_spaceport_area = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+			has_planet_flag = do_ad_spaceport_area
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+			has_planet_flag = do_ad_spaceport_area
+	}
+	effect = {
+		remove_deposit = d_ad_spaceport_area
+		hidden_effect = {
+			remove_planet_flag = do_ad_spaceport_area
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
 # 軌道エレベーター orbital_elevator
 decision_ad_orbital_elevator = {
 	owned_planets_only = yes
@@ -802,10 +916,13 @@ decision_ad_orbital_elevator = {
 	resources = {
 		category = decisions
 		cost = {
-			# minerals = 50
+			minerals = 500
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_orbital_elevator
 		}
@@ -822,6 +939,33 @@ decision_ad_orbital_elevator = {
 		add_deposit = d_ad_orbital_elevator
 		hidden_effect = {
 			set_planet_flag = do_ad_orbital_elevator
+		}
+	}
+	ai_weight = {
+		weight = 0.5
+	}
+}
+
+# 軌道エレベーターの削除
+decision_ad_undo_orbital_elevator = {
+	owned_planets_only = yes
+	enactment_time = 0
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+			has_planet_flag = do_ad_orbital_elevator
+	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
+	allow = {
+			has_planet_flag = do_ad_orbital_elevator
+	}
+	effect = {
+		remove_deposit = d_ad_orbital_elevator
+		hidden_effect = {
+			remove_planet_flag = do_ad_orbital_elevator
 		}
 	}
 	ai_weight = {

@@ -1,40 +1,121 @@
-#  pc_desert #砂漠型惑星
-#  pc_arid #乾燥型惑星
-#  pc_tundra #ツンドラ型惑星
-#  pc_continental #大陸型惑星
-#  pc_tropical #熱帯型惑星
-#  pc_ocean #海洋型惑星
-#  pc_arctic #極寒型惑星
-#  pc_alpine #高山型惑星
-#  pc_savannah #サバンナ型惑星
 #  pc_city #エキュメノポリス
 #  pc_toxic #有毒惑星
-#  pc_shrouded #シュラウドの惑星
-#  pc_infested #汚染された惑星
 #  pc_gaia #ガイア型惑星
-#  pc_nuked #死の惑星
+#  pc_superhabitable_habitability #極上惑星
 #  pc_relic #遺物惑星
-#  pc_gray_goo:0 #ナノマシン惑星
-#  pc_egg_cracked #卵の破片 
-#  pc_habitat #軌道上居住地
-#  pc_ringworld_habitable #リングワールド
-#  pc_habitat_shielded #隔離された軌道上居住地
-#  pc_ringworld_tech #リングワールド
-#  pc_ringworld_seam #リングワールド
-#  pc_ringworld_habitable_damaged #リングワールド
-#  pc_ringworld_tech_damaged #リングワールド
-#  pc_ringworld_seam_damaged #リングワールド
-#  pc_ringworld_shielded #隔離された区画	
-#  pc_shielded #封鎖された星
-#  pc_ai #人工知能の星
-#  pc_machine #機械惑星
-#  pc_hive #集合意識惑星
-#  pc_cybrex #$pc_ringworld_habitable$
-#  pc_shattered #粉砕された惑星
-#  pc_gas_giant #巨大ガス惑星
-#  pc_asteroid #小惑星
-#  pc_molten #溶融惑星
-#  pc_frozen #氷結惑星
-#  pc_broken #破壊された惑星
-#  pc_barren #不毛の星
-#  pc_barren_cold #不毛の星
+#  pc_nuked #死の惑星
+
+Wet
+1. pc_continental #大陸型惑星
+2. pc_tropical #熱帯型惑星
+3. pc_ocean #海洋型惑星
+4. pc_cascadian #カスカディアン型惑星 
+# 窒素と酸素を主成分とする大気を持ち、沿岸の森と高くそびえる山々に囲われた領域を伴う亜熱帯山岳型の惑星。活発な暴風雨に雪の多い冬と温かく短期な夏の間に大きな差がある水圏を持つ。
+5. pc_desertislands #環礁型惑星
+6. pc_subarctic #亜北極海型惑星
+# 窒素と酸素を主成分とする大気と寒く広大な水圏を持つ岩石の惑星。地表の90％以上は海洋と極冠に覆われ、険しいでこぼことしたまばらな島々が表面に点在している。そこには海洋生態系を支える豊富な火山活動と地熱活動が存在する。
+7. pc_mangrove #マングローブ型惑星
+8. pc_hajungle #高地ジャングル型惑星
+9. pc_retinal #レチナール惑星
+# 窒素と酸素を主成分とする大気を持つ岩石の惑星。海洋に隔てられた大陸を伴う活発で安定した水圏がある。植物はクロロフィルの代わりにレチナールデヒドを基にしており、そのため惑星は紫の色調という特色がある。
+10. pc_forest #森林惑星
+11. pc_wetswamp #森林湿地型惑星
+12. pc_lake #湖沼惑星
+13. pc_tepid #微温惑星
+# 窒素と酸素を主成分とする大気を持つ岩石の惑星。海洋で隔てられた大きな陸地を持つ活発で安定した水圏がある。軸傾斜がほとんど無いこの惑星は、理想的な成長条件を備えており、様々な種類の光合成プロセスの進化を可能にしている。
+
+Dry
+1. pc_desert #砂漠型惑星
+2. pc_arid #乾燥型惑星
+3. pc_savannah #サバンナ型惑星
+4. pc_steppe #ステップ型惑星
+5. pc_sandsea #砂海型惑星
+# 窒素と酸素を主成分とする大気を持つ、暑く乾燥した岩石の惑星。砂丘の海が地表のほとんどを占めている。水圏は主に地下の帯水層にあり、オアシスと山の泉を作り出している。
+6. pc_oasis #オアシス型惑星
+7. pc_mesa #卓上台地型惑星
+# 窒素と酸素を主成分とする大気を持つ、熱く乾燥した岩石の惑星。とても大きな高原と卓上台地は赤道の周囲で共通していると共に涼しい森林極地の地域を有する。水圏のほとんどは長い川であり、川底を覆う植物で渓谷は切り取られている。
+8. pc_hadesert #高地砂漠型惑星
+# 窒素と酸素を主成分とする大気を持つ、冷たく乾燥した岩石の惑星。極度の高度の岳が惑星のほとんどは雨陰を引き起こし、塩類湖底と乾燥した渓谷が平地の大半を占める。水圏は僅かな湖と山の泉にある。
+9. pc_prairie #プレーリー型惑星
+# 窒素と酸素を主成分とする大気を持つ岩石の惑星。巨大な内海を包み込む単一の大陸を持つ季節性の水圏。乾燥した夏季と厳しい寒さの冬季が対照的である。
+10. pc_med #地中海型惑星
+11. pc_outback #高湿乾燥型惑星
+# 窒素と酸素を主成分とする大気を持つ、乾燥した暑い惑星。地表の大半は乾燥、または半乾燥した低木地帯か砂漠だが水辺の周囲には他の植生もみられる。水圏の大部分は内陸の海か自然の地下泉に限られている。
+12. pc_veld #ベルト型惑星
+# 窒素と酸素を主成分とする大気を持つ、乾燥した岩石の惑星。この亜熱帯の風景は、低木の林と開けたサバンナに覆われている。この惑星は穏やかな冬と長く暑い夏の気候を持つ。
+13. pc_semiarid #半乾燥型惑星
+# 窒素と酸素を主成分とする大気に覆われたスカブランドと岩だらけの谷間に支配された岩石の惑星。水圏のおかげで短いながらも重要な雨季があるが、どこにでもある草を除けば、植生は保護された谷間や大きな水域の近くに集中している。
+
+Cold
+1. pc_arctic #極寒型惑星
+2. pc_tundra #ツンドラ型惑星
+3. pc_alpine #高山型惑星
+4. pc_swamp #沼地型惑星
+5. pc_frozen_desert #冷凍砂漠型惑星
+6. pc_glacial #氷河型惑星
+7. pc_boreal #亜寒帯型惑星
+8. pc_mushroom #菌糸体惑星
+9. pc_antarctic #南極型惑星
+10. pc_snow #氷雪型惑星
+11. pc_highland #高地型惑星
+12. pc_mud #泥惑星
+13. pc_aeolian #風成型惑星
+# 窒素と酸素を主成分とする大気を持つ、凍てついた岩石の惑星。時速300km以上の風が吹くこともある。この風によって、陥没穴、スロットキャニオン、窪地などの空洞が作られ、風雨から守られた内部で生命が繁栄している。
+14. pc_duneforest #砂丘森型惑星
+# 窒素と酸素を主成分とする大気を持つ、冷たい山岳の惑星。霧が多く、降水量が少ないため、低地の多くは乾燥した砂丘となっており、雪がほとんど降らないため森林が山頂を覆っている。
+
+
+
+
+#  	# Wet
+# is_planet_class = pc_continental #大陸型惑星
+# is_planet_class = pc_tropical #熱帯型惑星
+# is_planet_class = pc_ocean #海洋型惑星
+# is_planet_class = pc_cascadian #カスカディアン型惑星 
+#is_planet_class = pc_desertislands #環礁型惑星
+#is_planet_class = pc_subarctic #亜北極海型惑星
+#is_planet_class = pc_mangrove #マングローブ型惑星
+#is_planet_class = pc_hajungle #高地ジャングル型惑星
+#is_planet_class = pc_retinal #レチナール惑星
+#is_planet_class = pc_forest #森林惑星
+#is_planet_class = pc_wetswamp #森林湿地型惑星
+#is_planet_class = pc_lake #湖沼惑星
+#is_planet_class = pc_tepid #微温惑星
+
+#  	# Dry
+#is_planet_class = pc_desert #砂漠型惑星
+#is_planet_class = pc_arid #乾燥型惑星
+#is_planet_class = pc_savannah #サバンナ型惑星
+#is_planet_class = pc_steppe #ステップ型惑星
+#is_planet_class = pc_sandsea #砂海型惑星
+#is_planet_class = pc_oasis #オアシス型惑星
+#is_planet_class = pc_mesa #卓上台地型惑星
+#is_planet_class = pc_hadesert #高地砂漠型惑星
+#is_planet_class = pc_prairie #プレーリー型惑星
+#is_planet_class = pc_med #地中海型惑星
+#is_planet_class = pc_outback #高湿乾燥型惑星
+#is_planet_class = pc_veld #ベルト型惑星
+#is_planet_class = pc_semiarid #半乾燥型惑星
+
+#  	# Cold
+#is_planet_class = pc_arctic #極寒型惑星
+#is_planet_class = pc_tundra #ツンドラ型惑星
+#is_planet_class = pc_alpine #高山型惑星
+#is_planet_class = pc_swamp #沼地型惑星
+#is_planet_class = pc_frozen_desert #冷凍砂漠型惑星
+#is_planet_class = pc_glacial #氷河型惑星
+#is_planet_class = pc_boreal #亜寒帯型惑星
+#is_planet_class = pc_mushroom #菌糸体惑星
+#is_planet_class = pc_antarctic #南極型惑星
+#is_planet_class = pc_snow #氷雪型惑星
+#is_planet_class = pc_highland #高地型惑星
+#is_planet_class = pc_mud #泥惑星
+#is_planet_class = pc_aeolian #風成型惑星
+#is_planet_class = pc_duneforest #砂丘森型惑星
+
+#is_planet_class = pc_gaia #ガイア型惑星
+#is_planet_class = pc_superhabitable_habitability #極上惑星
+#is_planet_class = pc_relic #遺物惑星
+#is_planet_class = pc_city #エキュメノポリス
+#is_planet_class = pc_toxic #有毒惑星
+#is_planet_class = pc_nuked #死の惑星

@@ -1,8 +1,9 @@
-version="0.8"
+version="1.1"
 tags={
 	"Gameplay"
 	"Diplomacy"
 	"Overhaul"
 }
-name="Additional Districts"
-supported_version="2.8.*"
+name="Additional Districts [JP]"
+supported_version="3.0.*"
+remote_file_id="2461143784"
