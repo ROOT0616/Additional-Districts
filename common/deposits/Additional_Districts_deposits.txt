@@ -552,7 +552,7 @@ d_ad_residential_area = {
 }
 
 # 造船工廠 shipbuilding_arsenal
-	d_ad_shipbuilding_arsenal = {
+d_ad_shipbuilding_arsenal = {
 	is_for_colonizeable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes

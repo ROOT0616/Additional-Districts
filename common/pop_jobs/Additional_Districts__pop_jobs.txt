@@ -506,7 +506,7 @@ ad_spaceport_mechanics = {
 }
 
 # 教授職  消費財5  →  専門家出力*0.05
-ad_Professorship = {
+ad_professorship = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	# building_icon = 
