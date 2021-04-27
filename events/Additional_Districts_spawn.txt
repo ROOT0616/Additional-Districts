@@ -1,7 +1,7 @@
 namespace = additionaldistricts
-@MicroSpace = 5
+@MicroSpace = 15
 @MicroDeposits = 10
-@SmallSpace = 15
+@SmallSpace = 30
 @SmallDeposits = 15
 ## 	Normal Spawn Event
 event = {
@@ -116,7 +116,6 @@ country_event = {
 						is_planet_class = pc_superhabitable						#極上惑星
 						is_planet_class = pc_relic						#遺物惑星
 						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
 						is_planet_class = pc_nuked						#死の惑星
 					}
 				}
@@ -217,7 +216,6 @@ country_event = {
 						is_planet_class = pc_superhabitable						#極上惑星
 						is_planet_class = pc_relic						#遺物惑星
 						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
 						is_planet_class = pc_nuked						#死の惑星
 					}
 				}
@@ -317,7 +315,6 @@ country_event = {
 						is_planet_class = pc_superhabitable						#極上惑星
 						is_planet_class = pc_relic						#遺物惑星
 						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
 						is_planet_class = pc_nuked						#死の惑星
 					}
 				}
@@ -417,7 +414,6 @@ country_event = {
 						is_planet_class = pc_superhabitable						#極上惑星
 						is_planet_class = pc_relic						#遺物惑星
 						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
 						is_planet_class = pc_nuked						#死の惑星
 					}
 				}
@@ -517,7 +513,6 @@ country_event = {
 						is_planet_class = pc_superhabitable						#極上惑星
 						is_planet_class = pc_relic						#遺物惑星
 						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
 						is_planet_class = pc_nuked						#死の惑星
 					}
 				}

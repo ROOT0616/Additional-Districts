@@ -1,0 +1,104 @@
+#######################
+#####    鉱物    ######
+#######################
+# 鉱石収入
+low_mineral_income = {
+	owner = {
+		has_monthly_income = {
+			resource = minerals
+			value <= 30
+		}
+	}
+}
+
+medium_mineral_income = {
+	owner = {
+		has_monthly_income = {
+			resource = minerals
+			value <= 100
+		}
+		has_monthly_income = {
+			resource = minerals
+			value > 30
+		}
+	}
+}
+
+large_mineral_income = {
+	owner = {
+		has_monthly_income = {
+			resource = minerals
+			value > 100
+		}
+	}
+}
+
+##########################
+#####   エネルギー   ######
+##########################
+# Energy Incomes
+low_energy_income = {
+	owner = {
+		has_monthly_income = {
+			resource = energy
+			value <= 20
+		}
+	}
+}
+
+medium_energy_income = {
+	owner = {
+		has_monthly_income = {
+			resource = energy
+			value <= 60
+		}
+		has_monthly_income = {
+			resource = energy
+			value > 20
+		}
+	}
+}
+
+large_energy_income = {
+	owner = {
+		has_monthly_income = {
+			resource = energy
+			value > 60
+		}
+	}
+}
+
+#####################
+#####   食料   ######
+#####################
+# Food Incomes
+low_food_income = {
+	owner = {
+		has_monthly_income = {
+			resource = food
+			value <= 10
+		}
+	}
+}
+
+medium_food_income = {
+	owner = {
+		has_monthly_income = {
+			resource = food
+			value <= 30
+		}
+		has_monthly_income = {
+			resource = food
+			value > 10
+		}
+	}
+}
+
+large_food_income = {
+	owner = {
+		has_monthly_income = {
+			resource = food
+			value > 30
+		}
+	}
+}

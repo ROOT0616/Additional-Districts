@@ -1,0 +1,84 @@
+
+automate_ringworld_machine_planet = {
+	available = {
+		has_designation = col_ring_mix
+		owner = {
+			has_authority = auth_machine_intelligence
+		}
+		free_jobs < 3
+	}
+
+	prio_districts = {
+		district_rw_city
+		district_rw_generator
+		district_rw_industrial
+		district_rw_science
+	}
+
+	buildings = {
+		1 = {
+			building = building_machine_capital
+			available = {
+				always = yes
+			}
+		}
+
+		2 = {
+			building = building_machine_assembly_plant
+			available = {
+				always = yes
+			}
+		}
+
+		3 = {
+			building = building_supercomputer
+			available = {
+				always = yes
+			}
+		}
+
+		4 = {
+			building = building_foundry_1
+			available = {
+				owner = {
+					foundry_1_upkeep_affordable = yes
+				}
+			}
+		}
+
+		5 = {
+			building = building_energy_grid
+			available = {
+				owner = {
+					energy_grid_upkeep_affordable = yes
+				}
+			}
+		}
+
+		6 = {
+			building = building_galactic_memorial_1
+			available = {
+				owner = {
+					has_valid_civic = civic_machine_memorialist
+				}
+				NOR = {
+					has_building = building_galactic_memorial_1
+					has_building = building_galactic_memorial_2
+					has_building = building_galactic_memorial_3
+				}
+			}
+		}
+
+		7 = {
+			building = building_gas_extractors
+		}
+
+		8 = {
+			building = building_crystal_mines
+		}
+
+		9 = {
+			building = building_mote_harvesters
+		}
+	}
+}
