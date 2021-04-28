@@ -7,8 +7,10 @@
  decision_ad_town_display:0 "街：表示"
  decision_ad_town_display_desc:0 ""
 
+
  decision_ad_undo_town_display:0 "街：非表示"
  decision_ad_undo_town_display_desc:0 ""
+
 
 decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
  decision_ad_large_scale_air_area_construction_desc:0 "地上だけではなく空中に浮かぶ都市を築き上げる計画を実行する。"
@@ -211,6 +213,52 @@ decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
  job_ad_spaceport_mechanics_desc:0 "宇宙港を管理し、管制を行う専門的オペレーター"
  mod_job_ad_spaceport_mechanics_add:0 "宇宙港整備員の職業枠"
 
+
+ job_ad_servicer:0 "サービス職"
+ job_ad_servicer_plural:0 "サービス職"
+ job_ad_servicer_desc:0 ""
+ mod_job_ad_servicer_add:0 "サービス職の職業枠"
+
+ job_ad_forcrd_larbor:0 "強制労働者"
+ job_ad_forcrd_larbor_plural:0 "強制労働者"
+ job_ad_forcrd_larbor_desc:0 ""
+ mod_job_ad_forcrd_larbor_add:0 "強制労働者の職業枠"
+
+ job_ad_banker:0 "銀行家"
+ job_ad_banker_plural:0 "銀行家"
+ job_ad_banker_desc:0 ""
+ mod_job_ad_banker_add:0 "銀行家の職業枠"
+
+ job_ad_lawyer:0 "法曹"
+ job_ad_lawyer_plural:0 "法曹"
+ job_ad_lawyer_desc:0 ""
+ mod_job_ad_lawyer_add:0 "法曹の職業枠"
+
+ job_ad_journalist:0 "ジャーナリスト"
+ job_ad_journalist_plural:0 "ジャーナリスト"
+ job_ad_journalist_desc:0 ""
+ mod_job_ad_journalist_add:0 "ジャーナリストの職業枠"
+
+ job_ad_librarian:0 "データ司書"
+ job_ad_librarian_plural:0 "データ司書"
+ job_ad_librarian_desc:0 ""
+ mod_job_ad_librarian_add:0 "データ司書の職業枠"
+
+ job_ad_psp:0 "公安職員"
+ job_ad_psp_plural:0 "公安職員"
+ job_ad_psp_desc:0 ""
+ mod_job_ad_psp_add:0 "公安職員の職業枠"
+
+ job_ad_ministor:0 "側近"
+ job_ad_ministor_plural:0 "側近"
+ job_ad_ministor_desc:0 ""
+ mod_job_ad_ministor_add:0 "側近の職業枠"
+
+ job_ad_congressman:0 "代弁者"
+ job_ad_congressman_plural:0 "代弁者"
+ job_ad_congressman_desc:0 ""
+ mod_job_ad_congressman_add:0 "代弁者の職業枠"
+
 #######################
 #####    区域    ######
 #######################
@@ -218,6 +266,7 @@ decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
  district_ad_archaeological_cities:0 "遺跡都市"
  district_ad_archaeological_cities_plural:0 "遺跡都市"
  district_ad_archaeological_cities_desc:0 ""
+
  mod_district_ad_archaeological_cities_max:0 "最大$district_ad_archaeological_cities$"
  district_ad_sky_cities:0 "空中都市"
  district_ad_sky_cities_plural:0 "空中都市"
@@ -435,19 +484,102 @@ decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
  d_ad_orbital_elevator:0 "軌道エレベーター"
  d_ad_orbital_elevator_desc:0 "惑星軌道に通じるワイヤーで固定された軌道基地"
 
+#######################
+#####    建物    ######
+#######################
 
- pc_continental_adj:0 ""
- pc_ocean_adj:0 ""
- pc_tropical_adj:0 ""
- pc_desert_adj:0 ""
- pc_arid_adj:0 ""
- pc_tundra_adj:0 ""
- pc_arctic_adj:0 ""
- pc_alpine_adj:0 ""
- pc_savannah_adj:0 ""
- pc_city_adj:0 ""
- pc_gaia_adj:0 ""
- pc_relic_adj:0 ""
- pc_nuked_adj:0 ""
+ building_ad_Palace:0 "宮殿"
+ building_ad_Palace_desc:0 "国家元首や君主が住み、執務を行う宮殿。彼らの側近やスタッフは国家運営を大きく左右する。"
+
+ building_ad_CEO:0 "CEOオフィス"
+ building_ad_CEO_desc:0 "CEOのためのオフィス。多くの秘書やスタッフが常駐し、快適なCEOライフをサポートしている。"
+
+ building_ad_M_def:0 "国防省"
+ building_ad_M_def_desc:0 "多数の高級官僚や事務員が務める役所。治安や福祉の監督を行う官庁。"
+
+ building_ad_O_def:0 "管理警備本部"
+ building_ad_O_def_desc:0 "多数のエリートや労働者が働く財閥の中枢企業。警備員や企業軍を監督する企業。"
+
+ building_ad_M_dom:0 "内務省"
+ building_ad_M_dom_desc:0 "多数の高級官僚や事務員が務める役所。治安や福祉の監督を行う官庁。"
+
+ building_ad_O_dom:0 "労務管理本部"
+ building_ad_O_dom_desc:0 "多数のエリートや労働者が働く財閥の中枢企業。社員の福祉や内部規律を担当する企業。"
+
+ building_ad_M_dip:0 "外務省"
+ building_ad_M_dip_desc:0 "多数の高級官僚や事務員が務める役所。外交や属国の管理を行う官庁。"
+
+ building_ad_O_dip:0 "外商本部"
+ building_ad_O_dip_desc:0 "多数のエリートや労働者が働く財閥の中枢企業。外部と交渉し、企業の利益を追求する企業。"
+
+ building_ad_M_inf:0 "情報省"
+ building_ad_M_inf_desc:0 "多数の高級官僚や事務員が務める役所。諜報や国内通信の運用を行う官庁。"
+
+ building_ad_O_inf:0 "情報セキュリティー本部"
+ building_ad_O_inf_desc:0 "多数のエリートや労働者が働く財閥の中枢企業。情報保全と外部情報収集を行う企業"
+
+ building_ad_M_tra:0 "運輸省"
+ building_ad_M_tra_desc:0 "多数の高級官僚や事務員が務める役所。輸送や流通面から経済を支援する官庁。"
+
+ building_ad_O_tra:0 "流通搬送本部"
+ building_ad_O_tra_desc:0 "多数のエリートや労働者が働く財閥の中枢企業。"
+
+ building_ad_M_ind:0 "産業省"
+ building_ad_M_ind_desc:0 "多数の高級官僚や事務員が務める役所。生産や許認可を行う官庁。"
+
+ building_ad_O_ind:0 "製造技術本部"
+ building_ad_O_ind_desc:0 "多数のエリートや労働者が働く財閥の中枢企業。"
+
+ building_ad_E_cap:0 "議事堂"
+ building_ad_E_cap_desc:0 "権限はともかく立法機関として政府に影響を与える議員のための施設。"
+
+ building_ad_C_cap:0 "株主総会議場"
+ building_ad_C_cap_desc:0 "多数のエリートや労働者が働く財閥の中枢企業。"
+
+ building_ad_E_court:0 "帝国裁判所"
+ building_ad_E_court_desc:0 "国家の治安や司法を守る番人が集う施設。"
+
+ building_ad_C_court:0 "本社査問会議場"
+ building_ad_C_court_desc:0 "企業に対して罪を犯した社員などを裁き、制裁を加える施設。"
+
+ building_ad_E_bank:0 "中央準備銀行"
+ building_ad_E_bank_desc:0 "国家の金融を監督する特殊な銀行。"
+
+ building_ad_O_bank:0 "企業資産管理本部"
+ building_ad_O_bank_desc:0 "企業の有する債権や資産を管理運用するための企業。"
+
+ building_ad_E_mil:0 "参謀本部"
+ building_ad_E_mil_desc:0 "軍を指揮し、さまざまな計画を立案する官庁。"
+
+ building_ad_C_mil:0 "企業警備作戦本部"
+ building_ad_C_mil_desc:0 "企業の有する艦隊や陸軍を統括し、命令を行う部署。"
+
+ building_ad_broad:0 "中央放送局"
+ building_ad_broad_desc:0 "国家の立場を説明し、民衆に宣伝を行う機関。"
+
+ building_ad_G_datebank:0 "帝国記録保管庫"
+ building_ad_G_datebank_desc:0 "国家の重要な記録や文明の記録を行うデータバンク"
+
+ building_ad_medicinelab:0 "医薬基盤研究所"
+ building_ad_medicinelab_desc:0 "国家規模で医療の発展を目指す研究所"
+
+
+#######################
+#####    ○○○○    ######
+#######################
+
+#  pc_continental_adj:0 ""
+#  pc_ocean_adj:0 ""
+#  pc_tropical_adj:0 ""
+#  pc_desert_adj:0 ""
+#  pc_arid_adj:0 ""
+#  pc_tundra_adj:0 ""
+#  pc_arctic_adj:0 ""
+#  pc_alpine_adj:0 ""
+#  pc_savannah_adj:0 ""
+#  pc_city_adj:0 ""
+#  pc_gaia_adj:0 ""
+#  pc_relic_adj:0 ""
+#  pc_nuked_adj:0 ""
 # :0 ""
 # _desc:0 ""

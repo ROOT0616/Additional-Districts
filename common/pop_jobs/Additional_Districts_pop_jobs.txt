@@ -25,6 +25,23 @@
 # 統治者
 # 将官    消費財    4    →    防衛軍8    宇宙軍許容量    16
 
+
+# ※統治者
+# ad_Ministor  側近        消費財消費3    影響力+1        (知識や経歴、忠実さからこの国の頂点を支える、閣僚や補佐官、侍従やシンクタンク職員。)
+# ad_Congressman  代弁者        消費財消費3    安定度+5、幸福度+5%    (選挙で選ばれた議員や、高名な社会活動家、退役した英雄的軍人など社会や市民の意見を代表し、政府に強い働きかけを行う人々。)
+
+# ※専門家
+# ad_Banker  銀行家        快適度+3、交易価値+5、エネルギー+5    (金融の専門家で、投資や利回りなどの専門家。)
+# ad_Lawyer  法曹        快適度+1、社会学+2、犯罪度-5        (法や政治、社会に熟知した専門家。弁護士や司法書士、検察官など幅広い役職を含める。)
+# ad_Journalist  ジャーナリスト    労働者政治力-10%、快適度+2、統合力+3    (（彼らが信じた、もしくは信じさせたい）真実を集め、民衆に大きな影響を与える専門家。)
+# ad_librarian  データ司書    統合力+3、研究力+2ずつ            (有形、無形の情報媒体や情報自体を保管し、管理する知識の番人。)
+# ad_PSP  公安職員    暗号力+1、犯罪度-15、安定度+1        (国家の安全のために、スパイや暴力的団体、テロリストを監視し、摘発する治安職員。)
+
+# 労働者
+# ad_Servicer  サービス職    快適度+2、幸福度+1%            (介護、清掃、運転代行、運送など、エッセンシャルワーカーと呼ばれるサービス提供者)
+# ad_Forcrd_larbor  強制労働者    食料、鉱物+1ずつ、消費財+0.1        (本人の意図とは関係なく、様々な要因で強制的に労働させられる市民権保持者)
+
+
 # 	労働者
 # 水中農家    消費財    1    →食料    6
 ad_water_farmer = {
@@ -322,6 +339,56 @@ ad_large_scale_farmer = {
 	}
 }
 
+# ad_servicer  サービス職    快適度+2、幸福度+1%            (介護、清掃、運転代行、運送など、エッセンシャルワーカーと呼ばれるサービス提供者)
+ad_servicer = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_amenities_add = 2
+		pop_happiness = 1
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
+# ad_forcrd_larbor  強制労働者    食料、鉱物+1ずつ、消費財+0.1        (本人の意図とは関係なく、様々な要因で強制的に労働させられる市民権保持者)
+ad_forcrd_larbor = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		worker_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_farmers
+		produces = {
+			food = 1
+			minerals = 1
+			consumer_goods = 0.1
+		}
+	}
+	weight = {
+		weight = @worker_job_weight
+	}
+}
+
 # 	専門家
 # データマイナー    消費財    5    →    物理 社会 工学2 科学者出力0.05
 ad_data_minor = {
@@ -336,6 +403,9 @@ ad_data_minor = {
 	}
 	possible = {
 		specialist_job_check_trigger = yes
+	}
+	country_modifier = {
+		intel_encryption_add = 1
 	}
 	planet_modifier = {
 		planet_researchers_produces_mult = 0.05
@@ -562,6 +632,149 @@ ad_excavator = {
 	}
 }
 
+# ad_banker  銀行家        快適度+3、交易価値+5、エネルギー+5    (金融の専門家で、投資や利回りなどの専門家。)
+ad_banker = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_amenities_add = 3
+		trade_value_add = 5
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			energy = 5
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+# ad_lawyer  法曹        快適度+1、社会学+2、犯罪度-5        (法や政治、社会に熟知した専門家。弁護士や司法書士、検察官など幅広い役職を含める。)
+ad_lawyer = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_amenities_add = 1
+		planet_crime_add = -5 
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			society_research = 2
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+# ad_journalist  ジャーナリスト    労働者政治力-10%、快適度+2、統合力+3    (（彼らが信じた、もしくは信じさせたい）真実を集め、民衆に大きな影響を与える専門家。)
+ad_journalist = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	country_modifier = {
+		pop_cat_worker_political_power = -10
+	}
+	planet_modifier = {
+		planet_amenities_add = 2
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			unity = 3
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+# ad_librarian  データ司書    統合力+3、研究力+2ずつ            (有形、無形の情報媒体や情報自体を保管し、管理する知識の番人。)
+ad_librarian = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	resources = {
+		category = planet_miners
+		produces = {
+			unity = 3
+			physics_research = 2
+			society_research = 2
+			engineering_research = 2
+		}
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
+# ad_PSP  公安職員    暗号力+1、犯罪度-15、安定度+1        (国家の安全のために、スパイや暴力的団体、テロリストを監視し、摘発する治安職員。)
+ad_psp = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	# building_icon = 
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+	country_modifier = {
+		intel_encryption_add = 1
+	}
+	planet_modifier = {
+		planet_crime_add = -15
+		planet_stability_add = 1
+	}
+	weight = {
+		weight = @specialist_job_weight
+	}
+}
+
 # 統治者
 # 将官    消費財    4    →    防衛軍8    宇宙軍許容量    16
 ad_general_officer = {
@@ -594,3 +807,57 @@ ad_general_officer = {
 	}
 }
 
+# ad_ministor  側近        消費財消費3    影響力+1        (知識や経歴、忠実さからこの国の頂点を支える、閣僚や補佐官、侍従やシンクタンク職員。)
+ad_ministor = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+	resources = {
+		category = armies
+		upkeep = {
+			consumer_goods = 3
+		}
+		produces = {
+			influence = 1
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+	}
+}
+
+# ad_congressman  代弁者        消費財消費3    安定度+5、幸福度+5%    (選挙で選ばれた議員や、高名な社会活動家、退役した英雄的軍人など社会や市民の意見を代表し、政府に強い働きかけを行う人々。)
+ad_congressman = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	clothes_texture_index = 3
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		ruler_job_check_trigger = yes
+	}
+	planet_modifier = {
+		planet_stability_add = 5
+		pop_happiness = 5
+	}
+	resources = {
+		category = armies
+		upkeep = {
+			consumer_goods = 3
+		}
+	}
+	weight = {
+		weight = @ruler_job_weight
+	}
+}

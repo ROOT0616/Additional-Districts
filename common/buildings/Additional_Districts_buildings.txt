@@ -1,0 +1,1212 @@
+# ※帝国に1つ
+# building_ad_Palace  宮殿			安定度+10						側近Job+1			(国家元首や君主が住み、執務を行う宮殿。彼らの側近やスタッフは国家運営を大きく左右する。)企業以外	維持:エネ3  			建設:鉱物1000、時間550
+# building_ad_CEO  CEOオフィス		安定度+10						側近Job+1			(CEOのためのオフィス。多くの秘書やスタッフが常駐し、快適なCEOライフをサポートしている。)企業のみ	維持:エネ3  			建設:鉱物800、時間550
+# building_ad_M_def  国防省			宇宙軍許容量+30、地上軍士気+10				行政官+1、将校+1、官僚+1	(多数の高級官僚や事務員が務める役所。軍政面での国軍支援を行う官庁。)企業以外				維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+# building_ad_O_def  管理警備本部		宇宙軍許容量+10、地上軍士気+5、艦隊建造速度+10		役員+1、将校+1、管理職+1	(多数のエリートや労働者が働く財閥の中枢企業。警備員や企業軍を監督する企業。)企業のみ			維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+# building_ad_M_dom  内務省			帝国の犯罪度-10%、各惑星幸福度+10%			行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。治安や福祉の監督を行う官庁。)企業以外				維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+# building_ad_O_dom  労務管理本部		帝国の犯罪度-10%、各惑星幸福度+5%、リーダー経験値+10%	役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。社員の福祉や内部規律を担当する企業。)企業のみ		維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+# building_ad_M_dip  外務省			外交発言力+10%、使節+1					行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。外交や属国の管理を行う官庁。)企業以外				維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+# building_ad_O_dip  外商本部		支社価値+10%、使節+1、交易価値+10%			役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。外部と交渉し、企業の利益を追求する企業。)企業のみ	維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+# building_ad_M_inf  情報省			解読力+5、暗号力+10					行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。諜報や国内通信の運用を行う官庁。)企業以外			維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+# building_ad_O_inf  情報セキュリティー本部	解読力+10、暗号力+5					役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。情報保全と外部情報収集を行う企業)企業のみ		維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+# building_ad_M_tra  運輸省			交易保護値+3、交易価値+10%				行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。輸送や流通面から経済を支援する官庁。)企業以外			維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+# building_ad_O_tra  流通搬送本部		交易保護値+5、交易価値+10%、支社価値+10%		役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。)企業のみ						維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+# building_ad_M_ind  産業省			労働者生産量+5%						行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。生産や許認可を行う官庁。)企業以外				維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+# building_ad_O_ind  製造技術本部		研究力+5%						役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。)企業のみ						維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+# building_ad_E_cap  議事堂			なし							代弁者+1、官僚+2		(権限はともかく立法機関として政府に影響を与える議員のための施設。)企業以外				維持:エネ3			建設:鉱物900、時間500
+# building_ad_C_cap  株主総会議場		なし							代弁者+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。)企業のみ						維持:エネ3			建設:鉱物900、時間500
+# building_ad_E_court  帝国裁判所		犯罪度-20、安定度+10					行政官+1、法曹+2		(国家の治安や司法を守る番人が集う施設。)企業以外							維持:エネ3			建設:鉱物900、時間500
+# building_ad_C_court  本社査問会議場		犯罪度-20、安定度+10					役員+1、法曹+2			(企業に対して罪を犯した社員などを裁き、制裁を加える施設。)企業のみ					維持:エネ3			建設:鉱物900、時間500
+# building_ad_E_bank  中央準備銀行		エネルギー算出+10%					行政官+1、銀行家+2		(国家の金融を監督する特殊な銀行。)企業以外
+# 							維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+# building_ad_O_bank  企業資産管理本部	エネルギー算出+10%、交易価値+5%				役員+1、銀行家+2		(企業の有する債権や資産を管理運用するための企業。)企業のみ						維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+# building_ad_E_mil  参謀本部		宇宙軍移動速度+5%、射程+5%				将官+1、将校+2			(軍を指揮し、さまざまな計画を立案する官庁。)企業以外						維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+# building_ad_C_mil  企業警備作戦本部	宇宙軍移動速度+5%、射程+5%				将官+1、将校+2			(企業の有する艦隊や陸軍を統括し、命令を行う部署。)企業のみ						維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+# building_ad_broad  中央放送局		統治志向魅力+15%					代弁者+1、ジャーナリスト+2	(国家の立場を説明し、民衆に宣伝を行う機関。)								維持:エネ3、レアクリ1		建設:鉱物800、レアクリ100、時間550
+# building_ad_G_datebank  帝国記録保管庫		なし							科学総裁+1、データ司書+2	(国家の重要な記録や文明の記録を行うデータバンク)							維持:エネ3、エキゾガス2		建設:鉱物700、エキゾガス200、時間550
+# building_ad_medicinelab  医薬基盤研究所		Pop成長速度+5%、リーダー寿命+10年			科学総裁+1、医療従事者+4	(国家規模で医療の発展を目指す研究所)
+
+# building_ad_Palace  宮殿			安定度+10						側近Job+1			(国家元首や君主が住み、執務を行う宮殿。彼らの側近やスタッフは国家運営を大きく左右する。)企業以外	維持:エネ3  			建設:鉱物1000、時間550
+building_ad_Palace = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_Palace
+			}
+		}
+	}
+	planet_modifier = {
+		planet_stability_add = 10
+		job_ad_ministor_add = 1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_Palace
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_Palace
+				}
+				remove_country_flag = built_ad_Palace
+			}
+		}
+	}
+}
+
+# building_ad_CEO  CEOオフィス		安定度+10						側近Job+1			(CEOのためのオフィス。多くの秘書やスタッフが常駐し、快適なCEOライフをサポートしている。)企業のみ	維持:エネ3  			建設:鉱物800、時間550
+building_ad_CEO = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_CEO
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		planet_stability_add = 10
+		job_ad_ministor_add = 1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_CEO
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_CEO
+				}
+				remove_country_flag = built_ad_CEO
+			}
+		}
+	}
+}
+
+# building_ad_M_def  国防省			宇宙軍許容量+30、地上軍士気+10				行政官+1、将校+1、官僚+1	(多数の高級官僚や事務員が務める役所。軍政面での国軍支援を行う官庁。)企業以外				維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+building_ad_M_def = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_M_def
+			}
+		}
+	}
+	planet_modifier = {
+		job_administrator_add = 1
+		job_ad_commissioned_officer_add = 1
+		job_bureaucrat_add = 1
+	}
+	country_modifier = {
+		country_naval_cap_add = 30
+		army_morale = 10
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			volatile_motes = 100
+		}
+		upkeep = {
+			energy = 5
+			volatile_motes = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_M_def
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_def
+				}
+				remove_country_flag = built_ad_M_def
+			}
+		}
+	}
+}
+
+# building_ad_O_def  管理警備本部		宇宙軍許容量+10、地上軍士気+5、艦隊建造速度+10		役員+1、将校+1、管理職+1	(多数のエリートや労働者が働く財閥の中枢企業。警備員や企業軍を監督する企業。)企業のみ			維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+building_ad_O_def = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_M_def
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_executive_add = 1
+		job_manager_add = 1
+		job_ad_commissioned_officer_add = 1
+
+	}
+	country_modifier = {
+		country_naval_cap_add = 10
+		army_morale = 5
+		starbase_shipyard_build_speed_mult = 0.1
+		}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			volatile_motes = 1
+		}
+		upkeep = {
+			energy = 5
+			volatile_motes = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_M_def
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_def
+				}
+				remove_country_flag = built_ad_M_def
+			}
+		}
+	}
+}
+
+# building_ad_M_dom  内務省			帝国の犯罪度-10%、各惑星幸福度+10%			行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。治安や福祉の監督を行う官庁。)企業以外				維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+building_ad_M_dom = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_M_dom
+			}
+		}
+	}
+	planet_modifier = {
+		job_administrator_add = 1
+		job_bureaucrat_add = 2
+	}
+	country_modifier = {
+		planet_crime_mult = -0.1
+		pop_happiness = 0.1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			rare_crystals = 100
+		}
+		upkeep = {
+			energy = 5
+			rare_crystals = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_M_dom
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_dom
+				}
+				remove_country_flag = built_ad_M_dom
+			}
+		}
+	}
+}
+
+# building_ad_O_dom  労務管理本部		帝国の犯罪度-10%、各惑星幸福度+5%、リーダー経験値+10%	役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。社員の福祉や内部規律を担当する企業。)企業のみ		維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+building_ad_O_dom = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_O_dom
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_executive_add = 1
+		job_manager_add = 2
+	}
+	country_modifier = {
+		planet_crime_mult = -0.1
+		pop_happiness = 0.05
+		species_leader_exp_gain = 0.1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			rare_crystals = 100
+		}
+		upkeep = {
+			energy = 5
+			rare_crystals = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_O_dom
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_dom
+				}
+				remove_country_flag = built_ad_O_dom
+			}
+		}
+	}
+}
+
+# building_ad_M_dip  外務省			外交発言力+10%、使節+1					行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。外交や属国の管理を行う官庁。)企業以外				維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+building_ad_M_dip = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_M_dip
+			}
+		}
+	}
+	planet_modifier = {
+		job_administrator_add = 1
+		job_bureaucrat_add = 2
+	}
+	country_modifier = {
+		diplo_weight_mult = 0.1
+		envoys_add = 1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			volatile_motes = 100
+		}
+		upkeep = {
+			energy = 5
+			volatile_motes = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_M_dip
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_dip
+				}
+				remove_country_flag = built_ad_M_dip
+			}
+		}
+	}
+}
+
+# building_ad_O_dip  外商本部		支社価値+10%、使節+1、交易価値+10%			役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。外部と交渉し、企業の利益を追求する企業。)企業のみ	維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+building_ad_O_dip = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_O_dip
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_executive_add = 1
+		job_manager_add = 2
+	}
+	country_modifier = {
+		envoys_add = 1
+		trade_value_mult = 0.1
+		branch_office_value_mult = 0.1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			volatile_motes = 100
+		}
+		upkeep = {
+			energy = 5
+			volatile_motes = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_O_dip
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_dip
+				}
+				remove_country_flag = built_ad_O_dip
+			}
+		}
+	}
+}
+
+# building_ad_M_inf  情報省			解読力+5、暗号力+10					行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。諜報や国内通信の運用を行う官庁。)企業以外			維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+building_ad_M_inf = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_M_inf
+			}
+		}
+	}
+	planet_modifier = {
+		job_administrator_add = 1
+		job_bureaucrat_add = 2
+	}
+	country_modifier = {
+		intel_decryption_add = 5
+		intel_encryption_add = 10
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			exotic_gases = 100
+		}
+		upkeep = {
+			energy = 5
+			exotic_gases = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_M_inf
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_inf
+				}
+				remove_country_flag = built_ad_M_inf
+			}
+		}
+	}
+}
+
+# building_ad_O_inf  情報セキュリティー本部	解読力+10、暗号力+5					役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。情報保全と外部情報収集を行う企業)企業のみ		維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+building_ad_O_inf = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_O_inf
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_executive_add = 1
+		job_manager_add = 2
+	}
+	country_modifier = {
+		intel_decryption_add = 10
+		intel_encryption_add = 5
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			exotic_gases = 100
+		}
+		upkeep = {
+			energy = 5
+			exotic_gases = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_O_inf
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_inf
+				}
+				remove_country_flag = built_ad_O_inf
+			}
+		}
+	}
+}
+
+# building_ad_M_tra  運輸省			交易保護値+3、交易価値+10%				行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。輸送や流通面から経済を支援する官庁。)企業以外			維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+building_ad_M_tra = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_M_tra
+			}
+		}
+	}
+	planet_modifier = {
+		job_administrator_add = 1
+		job_bureaucrat_add = 2
+	}
+	country_modifier = {
+		local_trade_protection_add = 3
+		trade_value_mult = 0.1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			rare_crystals = 100
+		}
+		upkeep = {
+			energy = 5
+			rare_crystals = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_M_tra
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_tra
+				}
+				remove_country_flag = built_ad_M_tra
+			}
+		}
+	}
+}
+
+# building_ad_O_tra  流通搬送本部		交易保護値+5、交易価値+10%、支社価値+10%		役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。)企業のみ						維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+building_ad_O_tra = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_O_tra
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_executive_add = 1
+		job_manager_add = 2
+	}
+	country_modifier = {
+		local_trade_protection_add = 5
+		trade_value_mult = 0.1
+		branch_office_value_mult = 0.1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			rare_crystals = 100
+		}
+		upkeep = {
+			energy = 5
+			rare_crystals = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_O_tra
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_tra
+				}
+				remove_country_flag = built_ad_O_tra
+			}
+		}
+	}
+}
+
+# building_ad_M_ind  産業省			労働者生産量+5%						行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。生産や許認可を行う官庁。)企業以外				維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+building_ad_M_ind = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_M_ind
+			}
+		}
+	}
+	planet_modifier = {
+		job_administrator_add = 1
+		job_bureaucrat_add = 2
+	}
+	country_modifier = {
+		planet_jobs_worker_produces_mult = 0.05
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			exotic_gases = 100
+		}
+		upkeep = {
+			energy = 5
+			exotic_gases = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_M_ind
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_ind
+				}
+				remove_country_flag = built_ad_M_ind
+			}
+		}
+	}
+}
+
+# building_ad_O_ind  製造技術本部		研究力+5%						役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。)企業のみ						維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+building_ad_O_ind = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_O_ind
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_executive_add = 1
+		job_manager_add = 2
+	}
+	country_modifier = {
+		all_technology_research_speed = 0.05
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			exotic_gases = 100
+		}
+		upkeep = {
+			energy = 5
+			exotic_gases = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_O_ind
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_ind
+				}
+				remove_country_flag = built_ad_O_ind
+			}
+		}
+	}
+}
+
+# building_ad_E_cap  議事堂			なし							代弁者+1、官僚+2		(権限はともかく立法機関として政府に影響を与える議員のための施設。)企業以外				維持:エネ3			建設:鉱物900、時間500
+building_ad_E_cap = {
+	base_buildtime = 500
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_E_cap
+			}
+		}
+	}
+	planet_modifier = {
+		job_ad_congressman_add = 1
+		job_bureaucrat_add = 2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 900
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_E_cap
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_E_cap
+				}
+				remove_country_flag = built_ad_E_cap
+			}
+		}
+	}
+}
+
+# building_ad_C_cap  株主総会議場		なし							代弁者+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。)企業のみ						維持:エネ3			建設:鉱物900、時間500
+building_ad_C_cap = {
+	base_buildtime = 500
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_C_cap
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_ad_congressman_add = 1
+		job_manager_add = 2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 900
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_C_cap
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_C_cap
+				}
+				remove_country_flag = built_ad_C_cap
+			}
+		}
+	}
+}
+
+# building_ad_E_court  帝国裁判所		犯罪度-20、安定度+10					行政官+1、法曹+2		(国家の治安や司法を守る番人が集う施設。)企業以外							維持:エネ3			建設:鉱物900、時間500
+building_ad_E_court = {
+	base_buildtime = 500
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_E_court
+			}
+		}
+	}
+	planet_modifier = {
+		planet_crime_add = -20
+		planet_stability_add = 10
+		job_administrator_add = 1
+		job_ad_lawyer_add = 2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 900
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_E_court
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_E_court
+				}
+				remove_country_flag = built_ad_E_court
+			}
+		}
+	}
+}
+
+# building_ad_C_court  本社査問会議場		犯罪度-20、安定度+10					役員+1、法曹+2			(企業に対して罪を犯した社員などを裁き、制裁を加える施設。)企業のみ					維持:エネ3			建設:鉱物900、時間500
+building_ad_C_court = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_C_court
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_executive_add = 1
+		job_ad_lawyer_add = 2
+		planet_crime_add = -20
+		planet_stability_add = 10
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 900
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_C_court
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_C_court
+				}
+				remove_country_flag = built_ad_C_court
+			}
+		}
+	}
+}
+
+# building_ad_E_bank  中央準備銀行		エネルギー算出+10%					行政官+1、銀行家+2		(国家の金融を監督する特殊な銀行。)企業以外
+# 							維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+building_ad_E_bank = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_E_bank
+			}
+		}
+	}
+	planet_modifier = {
+		job_administrator_add = 1
+		job_ad_banker_add = 2
+	}
+	country_modifier = {
+		country_energy_produces_mult = 0.1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			rare_crystals = 100
+		}
+		upkeep = {
+			energy = 5
+			rare_crystals = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_E_bank
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_E_bank
+				}
+				remove_country_flag = built_ad_E_bank
+			}
+		}
+	}
+}
+
+# building_ad_O_bank  企業資産管理本部	エネルギー算出+10%、交易価値+5%				役員+1、銀行家+2		(企業の有する債権や資産を管理運用するための企業。)企業のみ						維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+building_ad_O_bank = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_O_bank
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_executive_add = 1
+		job_ad_banker_add = 2
+	}
+	country_modifier = {
+		trade_value_mult = 0.05
+		country_energy_produces_mult = 0.1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			rare_crystals = 100
+		}
+		upkeep = {
+			energy = 5
+			rare_crystals = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_O_bank
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_bank
+				}
+				remove_country_flag = built_ad_O_bank
+			}
+		}
+	}
+}
+
+# building_ad_E_mil  参謀本部		宇宙軍移動速度+5%、射程+5%				将官+1、将校+2			(軍を指揮し、さまざまな計画を立案する官庁。)企業以外						維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+building_ad_E_mil = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOR = {
+				has_authority = auth_corporate
+				has_country_flag = built_ad_E_mil
+			}
+		}
+	}
+	planet_modifier = {
+		job_ad_general_officer_add = 1
+		job_ad_commissioned_officer_per_pop = 2
+	}
+	country_modifier = {
+		ship_speed_mult = 0.05
+		ship_weapon_range_mult = 0.05
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			volatile_motes = 100
+		}
+		upkeep = {
+			energy = 5
+			volatile_motes = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_E_mil
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_E_mil
+				}
+				remove_country_flag = built_ad_E_mil
+			}
+		}
+	}
+}
+
+# building_ad_C_mil  企業警備作戦本部	宇宙軍移動速度+5%、射程+5%				将官+1、将校+2			(企業の有する艦隊や陸軍を統括し、命令を行う部署。)企業のみ						維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+building_ad_C_mil = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			AND = {
+				has_authority = auth_corporate
+				NOT = {
+					has_country_flag = built_ad_C_mil
+				}
+			}
+		}
+	}
+	planet_modifier = {
+		job_ad_general_officer_add = 1
+		job_ad_commissioned_officer_per_pop = 2
+	}
+	country_modifier = {
+		ship_speed_mult = 0.05
+		ship_weapon_range_mult = 0.05
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			volatile_motes = 100
+		}
+		upkeep = {
+			energy = 5
+			volatile_motes = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_C_mil
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_C_mil
+				}
+				remove_country_flag = built_ad_C_mil
+			}
+		}
+	}
+}
+
+# building_ad_broad  中央放送局		統治志向魅力+15%					代弁者+1、ジャーナリスト+2	(国家の立場を説明し、民衆に宣伝を行う機関。)								維持:エネ3、レアクリ1		建設:鉱物800、レアクリ100、時間550
+building_ad_broad = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOT = {
+				has_country_flag = built_ad_broad
+			}
+		}
+	}
+	planet_modifier = {
+		job_ad_congressman_add = 1
+		job_ad_journalist_add = 2
+	}
+	country_modifier = {
+		pop_government_ethic_attraction = 0.15
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 800
+			rare_crystals = 100
+		}
+		upkeep = {
+			energy = 3
+			rare_crystals = 1
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_broad
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_broad
+				}
+				remove_country_flag = built_ad_broad
+			}
+		}
+	}
+}
+
+# building_ad_G_datebank  帝国記録保管庫		なし							科学総裁+1、データ司書+2	(国家の重要な記録や文明の記録を行うデータバンク)							維持:エネ3、エキゾガス2		建設:鉱物700、エキゾガス200、時間550
+building_ad_G_datebank = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOT = {
+				has_country_flag = built_ad_G_datebank
+			}
+		}
+	}
+	planet_modifier = {
+		job_head_researcher_add = 1
+		job_ad_librarian_add = 2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 700
+			exotic_gases = 200
+		}
+		upkeep = {
+			energy = 3
+			exotic_gases = 2
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_G_datebank
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_G_datebank
+				}
+				remove_country_flag = built_ad_G_datebank
+			}
+		}
+	}
+}
+
+# building_ad_medicinelab  医薬基盤研究所		Pop成長速度+5%、リーダー寿命+10年			科学総裁+1、医療従事者+4	(国家規模で医療の発展を目指す研究所)
+building_ad_medicinelab = {
+	base_buildtime = 550
+	base_cap_amount = 1
+	potential = {
+		owner = {
+			NOT = {
+				has_country_flag = built_ad_medicinelab
+			}
+		}
+	}
+	planet_modifier = {
+		job_head_researcher_add = 1
+		job_healthcare_add = 4
+	}
+	country_modifier = {
+		pop_growth_speed = 0.05
+		leader_age = 10
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	on_built = {
+		owner = {
+			set_country_flag = built_ad_medicinelab
+		}
+	}
+	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_medicinelab
+				}
+				remove_country_flag = built_ad_medicinelab
+			}
+		}
+	}
+}
