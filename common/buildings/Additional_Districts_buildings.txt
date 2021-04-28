@@ -993,7 +993,7 @@ building_ad_E_mil = {
 	}
 	planet_modifier = {
 		job_ad_general_officer_add = 1
-		job_ad_commissioned_officer_per_pop = 2
+		job_ad_commissioned_officer_add = 2
 	}
 	country_modifier = {
 		ship_speed_mult = 0.05

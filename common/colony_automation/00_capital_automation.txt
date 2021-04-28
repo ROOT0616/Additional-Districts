@@ -3,7 +3,6 @@ automate_capital_planet = {
 	available = {
 		has_designation = col_capital
 	}
-
 	prio_districts = {
 		district_ad_ancient_ruins
 		district_ad_ancient_databank
@@ -33,7 +32,6 @@ automate_capital_planet = {
 		district_ad_large_scale_grazing_land
 		district_ad_large_scale_agricultural_land
 	}
-
 	buildings = {
 		1 = {
 			building = building_capital
@@ -41,17 +39,18 @@ automate_capital_planet = {
 				always = yes
 			}
 		}
-
 		2 = {
 			building = building_research_lab_1
 			available = {
 				owner = {
 					research_lab_1_upkeep_affordable = yes
 				}
-				num_buildings = { type = building_research_lab_1 value = 0 }
+				num_buildings = {
+					type = building_research_lab_1
+					value = 0
+				}
 			}
 		}
-
 		3 = {
 			building = building_factory_1
 			available = {
@@ -60,7 +59,6 @@ automate_capital_planet = {
 				}
 			}
 		}
-
 		4 = {
 			building = building_foundry_1
 			available = {
@@ -69,7 +67,6 @@ automate_capital_planet = {
 				}
 			}
 		}
-
 		5 = {
 			building = building_embassy
 			available = {
@@ -78,7 +75,6 @@ automate_capital_planet = {
 				}
 			}
 		}
-
 		6 = {
 			# Amenity building
 			building = building_holo_theatres
@@ -86,66 +82,83 @@ automate_capital_planet = {
 				owner = {
 					is_spiritualist = no
 				}
-				num_buildings = { type = building_holo_theatres value = 0 }
+				num_buildings = {
+					type = building_holo_theatres
+					value = 0
+				}
 			}
 		}
-
 		7 = {
 			building = building_temple
 			available = {
 				owner = {
 					is_spiritualist = yes
 				}
-				num_buildings = { type = building_temple value = 0 }
+				num_buildings = {
+					type = building_temple
+					value = 0
+				}
 			}
 		}
-
 		8 = {
 			building = building_robot_assembly_plant
 			available = {
 				owner = {
 					robot_assembly_plant_upkeep_affordable = yes
-					NOT = { has_policy_flag = robots_outlawed }
+					NOT = {
+						has_policy_flag = robots_outlawed
+					}
 				}
 			}
 		}
-
 		9 = {
 			building = building_psi_corps
-			available = { owner = { has_ascension_perk = ap_mind_over_matter } }
+			available = {
+				owner = {
+					has_ascension_perk = ap_mind_over_matter
+				}
+			}
 		}
-
 		10 = {
 			building = building_clone_vats
-			available = { owner = { has_ascension_perk = ap_engineered_evolution } }
+			available = {
+				owner = {
+					has_ascension_perk = ap_engineered_evolution
+				}
+			}
 		}
-
 		11 = {
 			building = building_necrophage_elevation_chamber
 			available = {
 				owner = {
 					has_origin = origin_necrophage
 					has_trait = trait_necrophage
-					NOT = { has_valid_civic = civic_fanatic_purifiers }
+					NOT = {
+						has_valid_civic = civic_fanatic_purifiers
+					}
 				}
 			}
 		}
-
 		12 = {
 			building = building_research_lab_1
 			available = {
 				owner = {
 					research_lab_1_upkeep_affordable = yes
 				}
-				num_buildings = { type = building_research_lab_1 value = 1 }
+				num_buildings = {
+					type = building_research_lab_1
+					value = 1
+				}
 			}
 		}
-
 		13 = {
 			building = building_dread_encampment
-			available = { owner = { has_valid_civic = civic_reanimated_armies } }
+			available = {
+				owner = {
+					has_valid_civic = civic_reanimated_armies
+				}
+			}
 		}
-
 		14 = {
 			building = building_sacrificial_temple_1
 			available = {
@@ -156,10 +169,12 @@ automate_capital_planet = {
 						has_valid_civic = civic_death_cult_corporate
 					}
 				}
-				num_buildings = { type = building_sacrificial_temple_1 value = 0 }
+				num_buildings = {
+					type = building_sacrificial_temple_1
+					value = 0
+				}
 			}
 		}
-
 		15 = {
 			building = building_galactic_memorial_1
 			available = {
@@ -170,46 +185,255 @@ automate_capital_planet = {
 						has_valid_civic = civic_machine_memorialist
 					}
 				}
-				num_buildings = { type = building_galactic_memorial_1 value = 0 }
+				num_buildings = {
+					type = building_galactic_memorial_1
+					value = 0
+				}
 			}
 		}
-
 		16 = {
 			building = building_nuumismatic_shrine
-			available = { owner = { has_country_flag = nuumismatic_shrine } }
+			available = {
+				owner = {
+					has_country_flag = nuumismatic_shrine
+				}
+			}
 		}
-
 		17 = {
 			building = building_institute
 		}
-
 		18 = {
 			building = building_research_lab_1
 			available = {
 				owner = {
 					research_lab_1_upkeep_affordable = yes
 				}
-				num_buildings = { type = building_research_lab_1 value = 2 }
+				num_buildings = {
+					type = building_research_lab_1
+					value = 2
+				}
 			}
 		}
-
 		19 = {
+			building = building_ad_Palace
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		20 = {
+			building = building_ad_CEO
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		21 = {
+			building = building_ad_M_def
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		22 = {
+			building = building_ad_O_def
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		23 = {
+			building = building_ad_M_dom
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		24 = {
+			building = building_ad_O_dom
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		25 = {
+			building = building_ad_M_dip
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		26 = {
+			building = building_ad_O_dip
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		27 = {
+			building = building_ad_M_inf
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		28 = {
+			building = building_ad_O_inf
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		29 = {
+			building = building_ad_M_tra
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		30 = {
+			building = building_ad_O_tra
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		31 = {
+			building = building_ad_M_ind
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		32 = {
+			building = building_ad_O_ind
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		33 = {
+			building = building_ad_E_cap
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		34 = {
+			building = building_ad_C_cap
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		35 = {
+			building = building_ad_E_court
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		36 = {
+			building = building_ad_C_court
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		37 = {
+			building =  building_ad_E_bank
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		38 = {
+			building = building_ad_O_bank
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		39 = {
+			building = building_ad_E_mil
+			available = {
+				owner = {
+					NOT = {
+						has_authority = auth_corporate
+					}
+				}
+			}
+		}
+		40 = {
+			building = building_ad_C_mil
+			available = {
+				owner = {
+					has_authority = auth_corporate
+				}
+			}
+		}
+		41 = {
+			building = building_ad_broad
+		}
+		42 = {
+			building = building_ad_G_datebank
+		}
+		43 = {
+			building = building_ad_medicinelab
+		}
+		44 = {
 			building = building_ministry_production
 		}
-
-		20 = {
+		45 = {
 			building = building_galactic_stock_exchange
 		}
-
-		21 = {
+		46 = {
 			building = building_crystal_mines
 		}
-
-		22 = {
+		47 = {
 			building = building_mote_harvesters
 		}
-
-		23 = {
+		48 = {
 			building = building_gas_extractors
 		}
 	}
