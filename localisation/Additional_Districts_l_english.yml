@@ -12,7 +12,7 @@
  decision_ad_undo_town_display_desc:0 ""
 
 
-decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
+ decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
  decision_ad_large_scale_air_area_construction_desc:0 "地上だけではなく空中に浮かぶ都市を築き上げる計画を実行する。"
 
  decision_ad_large_scale_water_area_construction:0 "大規模水中地区建設"
@@ -213,50 +213,49 @@ decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
  job_ad_spaceport_mechanics_desc:0 "宇宙港を管理し、管制を行う専門的オペレーター"
  mod_job_ad_spaceport_mechanics_add:0 "宇宙港整備員の職業枠"
 
-
  job_ad_servicer:0 "サービス職"
  job_ad_servicer_plural:0 "サービス職"
- job_ad_servicer_desc:0 ""
+ job_ad_servicer_desc:0 "介護、清掃、運転代行、運送など、エッセンシャルワーカーと呼ばれるサービス提供者"
  mod_job_ad_servicer_add:0 "サービス職の職業枠"
 
  job_ad_forcrd_larbor:0 "強制労働者"
  job_ad_forcrd_larbor_plural:0 "強制労働者"
- job_ad_forcrd_larbor_desc:0 ""
+ job_ad_forcrd_larbor_desc:0 "本人の意図とは関係なく、様々な要因で強制的に労働させられる市民権保持者"
  mod_job_ad_forcrd_larbor_add:0 "強制労働者の職業枠"
 
  job_ad_banker:0 "銀行家"
  job_ad_banker_plural:0 "銀行家"
- job_ad_banker_desc:0 ""
+ job_ad_banker_desc:0 "金融の専門家で、投資や利回りなどの専門家。"
  mod_job_ad_banker_add:0 "銀行家の職業枠"
 
  job_ad_lawyer:0 "法曹"
  job_ad_lawyer_plural:0 "法曹"
- job_ad_lawyer_desc:0 ""
+ job_ad_lawyer_desc:0 "法や政治、社会に熟知した専門家。弁護士や司法書士、検察官など幅広い役職を含める。"
  mod_job_ad_lawyer_add:0 "法曹の職業枠"
 
  job_ad_journalist:0 "ジャーナリスト"
  job_ad_journalist_plural:0 "ジャーナリスト"
- job_ad_journalist_desc:0 ""
+ job_ad_journalist_desc:0 "（彼らが信じた、もしくは信じさせたい）真実を集め、民衆に大きな影響を与える専門家。"
  mod_job_ad_journalist_add:0 "ジャーナリストの職業枠"
 
  job_ad_librarian:0 "データ司書"
  job_ad_librarian_plural:0 "データ司書"
- job_ad_librarian_desc:0 ""
+ job_ad_librarian_desc:0 "有形、無形の情報媒体や情報自体を保管し、管理する知識の番人。"
  mod_job_ad_librarian_add:0 "データ司書の職業枠"
 
  job_ad_psp:0 "公安職員"
  job_ad_psp_plural:0 "公安職員"
- job_ad_psp_desc:0 ""
+ job_ad_psp_desc:0 "国家の安全のために、スパイや暴力的団体、テロリストを監視し、摘発する治安職員。"
  mod_job_ad_psp_add:0 "公安職員の職業枠"
 
  job_ad_ministor:0 "側近"
  job_ad_ministor_plural:0 "側近"
- job_ad_ministor_desc:0 ""
+ job_ad_ministor_desc:0 "知識や経歴、忠実さからこの国の頂点を支える、閣僚や補佐官、侍従やシンクタンク職員。"
  mod_job_ad_ministor_add:0 "側近の職業枠"
 
  job_ad_congressman:0 "代弁者"
  job_ad_congressman_plural:0 "代弁者"
- job_ad_congressman_desc:0 ""
+ job_ad_congressman_desc:0 "選挙で選ばれた議員や、高名な社会活動家、退役した英雄的軍人など社会や市民の意見を代表し、政府に強い働きかけを行う人々。"
  mod_job_ad_congressman_add:0 "代弁者の職業枠"
 
 #######################
@@ -266,6 +265,7 @@ decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
  district_ad_archaeological_cities:0 "遺跡都市"
  district_ad_archaeological_cities_plural:0 "遺跡都市"
  district_ad_archaeological_cities_desc:0 ""
+
 
  mod_district_ad_archaeological_cities_max:0 "最大$district_ad_archaeological_cities$"
  district_ad_sky_cities:0 "空中都市"
@@ -563,6 +563,104 @@ decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
  building_ad_medicinelab:0 "医薬基盤研究所"
  building_ad_medicinelab_desc:0 "国家規模で医療の発展を目指す研究所"
 
+ building_ad_P_datebank:0 "惑星データバンク"
+ building_ad_P_datebank_desc:0 "各惑星に設けられたさまざまな情報を保管する施設。"
+
+ building_ad_E_libraly:0 "帝国図書館"
+ building_ad_E_libraly_desc:0 "君主により国家からの自由を認められた情報を保管する施設。"
+
+ building_ad_welness:0 "労働福祉センター"
+ building_ad_welness_desc:0 "失業や介護など、市民の福祉に対する対応を行う役所。"
+
+ building_ad_P_Police:0 "公安局"
+ building_ad_P_Police_desc:0 "各惑星の危険人物や思想を監視し、暴発を未然に防ぐことを目的とした役所。"
+
+ building_ad_labor:0 "任意労働監督署"
+ building_ad_labor_desc:0 "「任意」で無償労働を申し出た人々を監督し、ノルマを達成させるための役所。"
+
+ building_ad_Co_bank:0 "開発植民銀行"
+ building_ad_Co_bank_desc:0 "各惑星の発展を支援し、低金利の貸付を行う公的金融機関"
+
+ building_ad_inobate:0 "イノベーションセンター"
+ building_ad_inobate_desc:0 "様々なアイデアを支援し、起業や特許取得を支援する施設"
+
+ building_ad_P_HQ:0 "管区軍司令部"
+ building_ad_P_HQ_desc:0 "各惑星に駐屯する軍や艦隊を指揮する司令部。"
+
+ building_ad_O_imp:0 "入境管理局"
+ building_ad_O_imp_desc:0 "惑星に入る物品や移民等を検査、確認を行い、不正や過剰な流入を防ぐ役所。"
+
+ building_ad_O_imm:0 "移民推進局"
+ building_ad_O_imm_desc:0 "惑星からの移民を推進し、支援する役所。"
+
+ building_ad_O_exp:0 "出境管理局"
+ building_ad_O_exp_desc:0 "惑星から輸出される物品や移民等を検査、確認を行い、不正や過剰な流出を防ぐ役所。"
+
+ building_ad_presidential:0 "プレジデンシャルオフィス"
+ building_ad_presidential_desc:0 "高度な知識やアイデアを生かして活動する人々のためのオフィス"
+
+ building_ad_telecommu:0 "運輸通信管制局"
+ building_ad_telecommu_desc:0 "惑星間通信や輸送面を管制する役所。"
+
+ building_ad_university:0 "総合大学"
+ building_ad_university_desc:0 "将来の専門家を教育し、様々な研究を行う高等教育機関"
+
+ building_ad_perfectethic:0 "安全思想教育センター"
+ building_ad_perfectethic_desc:0 "この施設では社会において安全な思想を広めることができる。"
+
+ building_ad_diversity:0 "社会多様性センター"
+ building_ad_diversity_desc:0 "社会に排斥された者は存在するべきではなく、多様性教育を広げるための機関。"
+
+ building_ad_judgement:0 "異民族審判所"
+ building_ad_judgement_desc:0 "異種族や異種族に同調する同胞を裁き、高尚な社会を維持するために存在する施設。"
+
+ building_ad_P_broad:0 "放送局"
+ building_ad_P_broad_desc:0 "各惑星で報道や放送を担う機関。"
+
+ building_ad_slam:0 "スラム"
+ building_ad_slam_desc:0 "低所得層が住む不衛生かつ犯罪の温床となる地域。"
+
+ building_ad_apart:0 "大規模高層住宅"
+ building_ad_apart_desc:0 "整備されて治安もしっかりしている、それ自体が一つの町として機能する高層住宅。"
+
+ building_ad_mansion:0 "高級住宅街"
+ building_ad_mansion_desc:0 "富裕層が住むゆとりのある住宅街"
+
+ building_ad_red_light:0 "歓楽街"
+ building_ad_red_light_desc:0 "酒場や映画館、賭場、風俗店等の娯楽街。"
+
+ building_ad_P_prison:0 "刑務所"
+ building_ad_P_prison_desc:0 "犯罪者を収容し、社会の片隅に汚れを集めることができる。"
+
+ building_ad_F_camp:0 "強制収容所"
+ building_ad_F_camp_desc:0 "社会にとって不利益をもたらす者を少しでも利益を生み出させるようにする。"
+
+ building_ad_college:0 "専門学校"
+ building_ad_college_desc:0 "特定の専門領域の知識を有する専門家や労働者を生み出す教育機関"
+
+ building_ad_H_hotel:0 "高級ホテル"
+ building_ad_H_hotel_desc:0 "高所得層やVIPが宿泊する度の種族にとっても快適な宿泊所"
+
+ building_ad_S_broade:0 "報道ステーション"
+ building_ad_S_broade_desc:0 "みんなの町の報道機関。"
+
+ building_ad_L_office:0 "法律事務所"
+ building_ad_L_office_desc:0 "法律上の手続きやトラブルを解決するために相談する場所。"
+
+ building_ad_AA_base:0 "砲兵空軍基地"
+ building_ad_AA_base_desc:0 "惑星に迅速に展開し、敵陸軍に攻撃を加える基地。"
+
+ building_ad_W_camp:0 "廃棄物処理施設"
+ building_ad_W_camp_desc:0 "帝国中の廃棄物を集積し、処理する施設。"
+
+ building_ad_D_Auto:0 "自動防衛設備"
+ building_ad_D_Auto_desc:0 "自動で敵陸軍を破壊するタレットやミサイルサイロ群。"
+
+ building_ad_Anti_b_pit:0 "対爆壕"
+ building_ad_Anti_b_pit_desc:0 "爆撃や陸戦に対して市民を守るための施設。"
+
+ building_ad_Anti_s_misile:0 "対宙ミサイル施設"
+ building_ad_Anti_s_misile_desc:0 "軌道上に展開する敵艦隊を攻撃する施設"
 
 #######################
 #####    ○○○○    ######
@@ -583,3 +681,4 @@ decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
 #  pc_nuked_adj:0 ""
 # :0 ""
 # _desc:0 ""
+

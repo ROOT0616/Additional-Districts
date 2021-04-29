@@ -1,631 +1,4 @@
 @base_cost = 250
-###########################
-#####    通常都市    ######
-###########################
-# 都市区域
-district_city = {
-	base_buildtime = 480
-	is_capped_by_modifier = no
-	show_on_uncolonized = {
-		exists = from
-		from = {
-			is_regular_empire = yes
-		}
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
-		}
-	}
-	potential = {
-		exists = owner
-		owner = {
-			is_regular_empire = yes
-		}
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
-		}
-	}
-	allow = {
-		NOT = {
-			has_modifier = resort_colony
-		}
-		NOT = {
-			has_modifier = slave_colony
-		}
-	}
-	conversion_ratio = 0.5
-	convert_to = {
-		district_arcology_housing
-		district_nexus
-		district_hive
-	}
-	resources = {
-		category = planet_districts_cities
-		cost = {
-			minerals = 500
-		}
-		upkeep = {
-			energy = 2
-		}
-	}
-	planet_modifier = {
-		planet_housing_add = 5
-		planet_max_buildings_add = 1
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_valid_civic = civic_agrarian_idyll
-			}
-		}
-		modifier = {
-			planet_housing_add = -1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		modifier = {
-			job_clerk_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_non_swapped_tradition = tr_prosperity_public_works
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_housing_1
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_technology = tech_housing_2
-				NOT = {
-					has_valid_civic = civic_agrarian_idyll
-				}
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
-			}
-		}
-		modifier = {
-			job_clerk_add = 1
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		text = job_clerk_effect_desc
-	}
-	ai_weight = {
-		weight = 0
-		modifier = {
-			weight = 10
-			free_housing < 0
-		}
-		modifier = {
-			factor = 5
-			free_housing < 5
-		}
-		modifier = {
-			weight = 1
-			NOR = {
-				num_free_districts = {
-					type = district_ad_archaeological_cities
-					value > 0
-				}
-				num_free_districts = {
-					type = district_ad_sky_cities
-					value > 0
-				}
-				num_free_districts = {
-					type = district_ad_water_cities
-					value > 0
-				}
-				num_free_districts = {
-					type = district_ad_under_water_cities
-					value > 0
-				}
-				num_free_districts = {
-					type = district_ad_underground_cities
-					value > 0
-				}
-			}
-		}
-	}
-}
-
-# 工業区域
-district_industrial = {
-	base_buildtime = 480
-	is_capped_by_modifier = no
-	prerequisites = {
-		tech_basic_industry
-	}
-	show_on_uncolonized = {
-		exists = from
-		uses_district_industrial = yes
-	}
-	potential = {
-		exists = owner
-		uses_district_industrial = yes
-	}
-	allow = {
-		NOT = {
-			has_modifier = resort_colony
-		}
-		NOT = {
-			has_modifier = slave_colony
-		}
-	}
-	conversion_ratio = 0.5
-	convert_to = {
-		district_arcology_arms_industry
-	}
-	resources = {
-		category = planet_districts_industrial
-		cost = {
-			minerals = 500
-		}
-		upkeep = {
-			energy = 2
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = {
-					has_edict = industrial_maintenance
-				}
-			}
-			energy = 2
-		}
-	}
-	planet_modifier = {
-		planet_housing_add = 2
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		modifier = {
-			job_artisan_add = 1
-			job_foundry_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_hive_empire = yes
-			}
-		}
-		modifier = {
-			job_alloy_drone_add = 2
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-			}
-		}
-		modifier = {
-			job_fabricator_add = 2
-		}
-	}
-	# Extra jobs from foundry buildings
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			has_active_building = building_foundry_2
-		}
-		modifier = {
-			job_foundry_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			has_active_building = building_foundry_3
-		}
-		modifier = {
-			job_foundry_add = 2
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-			}
-			has_active_building = building_foundry_2
-		}
-		modifier = {
-			job_fabricator_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-			}
-			has_active_building = building_foundry_3
-		}
-		modifier = {
-			job_fabricator_add = 2
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_hive_empire = yes
-			}
-			has_active_building = building_foundry_2
-		}
-		modifier = {
-			job_alloy_drone_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_hive_empire = yes
-			}
-			has_active_building = building_foundry_3
-		}
-		modifier = {
-			job_alloy_drone_add = 2
-		}
-	}
-	# Extra jobs from factory buildings
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			has_active_building = building_factory_2
-		}
-		modifier = {
-			job_artisan_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			has_active_building = building_factory_3
-		}
-		modifier = {
-			job_artisan_add = 2
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-			}
-			has_active_building = building_factory_2
-		}
-		modifier = {
-			job_artisan_drone_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-			}
-			has_active_building = building_factory_3
-		}
-		modifier = {
-			job_artisan_drone_add = 2
-		}
-	}
-	# Designation Job Changes
-	triggered_planet_modifier = {
-		potential = {
-			has_designation = col_foundry
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		modifier = {
-			job_artisan_add = -1
-			job_foundry_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			has_designation = col_factory
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		modifier = {
-			job_artisan_add = 1
-			job_foundry_add = -1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			OR = {
-				has_designation = col_foundry
-				has_designation = col_mac_foundry
-			}
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-				country_uses_consumer_goods = yes
-			}
-			OR = {
-				# Can only reduce your artisan production if you actually have some
-				has_active_building = building_factory_2
-				has_active_building = building_factory_3
-			}
-		}
-		modifier = {
-			job_artisan_drone_add = -1
-			job_alloy_drone_add = 1
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			OR = {
-				has_designation = col_factory
-				has_designation = col_mac_factory
-			}
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-				country_uses_consumer_goods = yes
-			}
-		}
-		modifier = {
-			job_artisan_drone_add = 1
-			job_alloy_drone_add = -1
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		text = job_artisan_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-				has_valid_civic = civic_machine_servitor
-			}
-			OR = {
-				has_active_building = building_factory_2
-				has_active_building = building_factory_3
-			}
-		}
-		text = job_artisan_drone_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		text = job_foundry_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-			}
-		}
-		text = job_fabricator_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_hive_empire = yes
-			}
-		}
-		text = job_alloy_drone_effect_desc
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-				has_edict = industrial_maintenance
-			}
-		}
-		modifier = {
-			job_maintenance_drone_add = 1
-		}
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				is_machine_empire = yes
-				has_edict = industrial_maintenance
-			}
-		}
-		text = job_maintenance_drone_effect_desc
-	}
-	ai_weight = {
-		weight = 0.5
-		modifier = {
-			factor = 0
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			owner = {
-				has_country_resource = {
-					type = minerals
-					amount <= 500
-				}
-			}
-		}
-		modifier = {
-			factor = 4
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value > 100
-				}
-			}
-		}
-		modifier = {
-			factor = 4
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value > 75
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			owner = {
-				country_uses_consumer_goods = yes
-				has_monthly_income = {
-					resource = consumer_goods
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			owner = {
-				country_uses_consumer_goods = yes
-				has_monthly_income = {
-					resource = consumer_goods
-					value < 5
-				}
-				has_monthly_income = {
-					resource = minerals
-					value >= 20
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			owner = {
-				has_monthly_income = {
-					resource = alloys
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			years_passed <= 20
-			owner = {
-				has_monthly_income = {
-					resource = alloys
-					value < 20
-				}
-				has_monthly_income = {
-					resource = minerals
-					value >= 20
-				}
-			}
-		}
-	}
-	ai_resource_production = {
-		alloys = 0.5
-		trigger = {
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 10
-				}
-			}
-		}
-	}
-	ai_resource_production = {
-		consumer_goods = 0.5
-		trigger = {
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 10
-				}
-			}
-			owner = {
-				country_uses_consumer_goods = yes
-			}
-		}
-	}
-}
-
 ##############################
 #####    都市区域追加    ######
 ##############################
@@ -757,7 +130,7 @@ district_ad_archaeological_cities = {
 		}
 	}
 	ai_resource_production = {
-		minor_artifacts = 1
+		minor_artifacts = 2
 		trigger = {
 			always = yes
 		}
@@ -881,6 +254,12 @@ district_ad_sky_cities = {
 			free_housing <= 5
 		}
 	}
+	ai_resource_production = {
+		energy = 5
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 #水上都市 water_cities	住居*20	事務員*2	交易価値	（自然発生）（技術開発）
@@ -998,6 +377,12 @@ district_ad_water_cities = {
 		modifier = {
 			factor = 5
 			free_housing <= 5
+		}
+	}
+	ai_resource_production = {
+		energy = 8
+		trigger = {
+			always = yes
 		}
 	}
 }
@@ -1118,6 +503,11 @@ district_ad_under_water_cities = {
 			free_housing < 5
 		}
 	}
+	ai_resource_production = {
+		food = 5
+		trigger = {
+		}
+	}
 }
 
 #地下都市 underground_cities	住居*5	施設維持業者*1	鉱物生産	（自然発生）	（技術開発）
@@ -1234,6 +624,12 @@ district_ad_underground_cities = {
 		modifier = {
 			factor = 5
 			free_housing < 5
+		}
+	}
+	ai_resource_production = {
+		minerals = 5
+		trigger = {
+			always = yes
 		}
 	}
 }
@@ -1388,7 +784,7 @@ district_ad_solar_power_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 2
+		energy = 12
 		trigger = {
 			always = yes
 		}
@@ -1491,7 +887,7 @@ district_ad_geothermal_electric_power_generation = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_geothermal_technician_add = 2
+		job_ad_geothermal_technician_add = 4
 	}
 	ai_weight = {
 		weight = 6
@@ -1537,13 +933,13 @@ district_ad_geothermal_electric_power_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 2
+		energy = 8
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		energy = 3.4
+		energy = 12
 		trigger = {
 			OR = {
 				low_energy_income = yes
@@ -1696,13 +1092,13 @@ district_ad_tidal_current_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 2
+		energy = 12
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		energy = 3.4
+		energy = 16
 		trigger = {
 			OR = {
 				low_energy_income = yes
@@ -1855,13 +1251,13 @@ district_ad_natural_nuclear_power_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 2
+		energy = 8
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		energy = 2.4
+		energy = 16
 		trigger = {
 			OR = {
 				low_energy_income = yes
@@ -2021,13 +1417,13 @@ district_ad_open_pit_ore_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 2
+		minerals = 6
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		minerals = 1.5
+		minerals = 8
 		trigger = {
 			OR = {
 				low_mineral_income = yes
@@ -2179,13 +1575,13 @@ district_ad_under_water_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 2
+		minerals = 6
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		minerals = 1.5
+		minerals = 8
 		trigger = {
 			OR = {
 				low_mineral_income = yes
@@ -2338,13 +1734,13 @@ district_ad_orbital_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 2
+		minerals = 6
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		minerals = 1.5
+		minerals = 8
 		trigger = {
 			OR = {
 				low_mineral_income = yes
@@ -2497,13 +1893,13 @@ district_ad_high_quality_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 1.8
+		minerals = 10
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		minerals = 2
+		minerals = 14
 		trigger = {
 			OR = {
 				low_mineral_income = yes
@@ -2656,13 +2052,13 @@ district_ad_low_quality_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 1.8
+		minerals = 4
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		minerals = 1.5
+		minerals = 6
 		trigger = {
 			OR = {
 				low_mineral_income = yes
@@ -2799,7 +2195,7 @@ district_ad_shed_cultivation_land = {
 			}
 		}
 		modifier = {
-			factor = 9
+			factor = 20
 			owner = {
 				has_monthly_income = {
 					resource = food
@@ -2822,13 +2218,13 @@ district_ad_shed_cultivation_land = {
 		}
 	}
 	ai_resource_production = {
-		food = 1
+		food = 10
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		food = 2.8
+		food = 14
 		trigger = {
 			OR = {
 				low_food_income = yes
@@ -2937,7 +2333,7 @@ district_ad_in_water_ecosystem = {
 		job_ad_water_farmer_add = 5
 	}
 	ai_weight = {
-		weight = 5.5
+		weight = 6
 		modifier = {
 			factor = 3
 			owner = {
@@ -2957,7 +2353,7 @@ district_ad_in_water_ecosystem = {
 			}
 		}
 		modifier = {
-			factor = 9
+			factor = 20
 			owner = {
 				has_monthly_income = {
 					resource = food
@@ -2980,13 +2376,13 @@ district_ad_in_water_ecosystem = {
 		}
 	}
 	ai_resource_production = {
-		food = 1
+		food = 10
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		food = 3.6
+		food = 14
 		trigger = {
 			OR = {
 				low_food_income = yes
@@ -3244,7 +2640,7 @@ district_ad_large_scale_grazing_land = {
 		job_ad_dairy_farmer_add = 4
 	}
 	ai_weight = {
-		weight = 6.5
+		weight = 6
 		modifier = {
 			factor = 3
 			owner = {
@@ -3264,7 +2660,7 @@ district_ad_large_scale_grazing_land = {
 			}
 		}
 		modifier = {
-			factor = 9
+			factor = 20
 			owner = {
 				has_monthly_income = {
 					resource = food
@@ -3287,13 +2683,13 @@ district_ad_large_scale_grazing_land = {
 		}
 	}
 	ai_resource_production = {
-		food = 1
+		food = 10
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		food = 2.8
+		food = 14
 		trigger = {
 			OR = {
 				low_food_income = yes
@@ -3402,7 +2798,7 @@ district_ad_large_scale_agricultural_land = {
 		job_ad_large_scale_farmer_add = 4
 	}
 	ai_weight = {
-		weight = 6.5
+		weight = 6
 		modifier = {
 			factor = 3
 			owner = {
@@ -3422,7 +2818,7 @@ district_ad_large_scale_agricultural_land = {
 			}
 		}
 		modifier = {
-			factor = 9
+			factor = 20
 			owner = {
 				has_monthly_income = {
 					resource = food
@@ -3445,13 +2841,13 @@ district_ad_large_scale_agricultural_land = {
 		}
 	}
 	ai_resource_production = {
-		food = 1
+		food = 10
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		food = 2.8
+		food = 14
 		trigger = {
 			OR = {
 				low_food_income = yes
@@ -5204,7 +4600,7 @@ district_ad_orbital_elevator = {
 		planet_max_buildings_add = 1
 		planet_amenities_add = 5
 		trade_value_add = 5
-		pop_happiness = 5
+		pop_happiness = 0.05
 		job_ad_spaceport_mechanics_add = 1
 		job_ad_shipwright_add = 1
 	}

@@ -107,7 +107,7 @@ early_minerals_plan = {
 		rare_crystals = 1
 	}
 	focus = {
-		minor_artifacts = 1
+		minor_artifacts = 2
 		energy = 10
 		minerals = 50
 		alloys = 20
@@ -174,10 +174,15 @@ early_minerals_plan = {
 		modifier = {
 			weight = 1
 			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value <= 50
-					value >= 0
+				AND = {
+					has_monthly_income = {
+						resource = minerals
+						value <= 50
+					}
+					has_monthly_income = {
+						resource = minerals
+						value >= 0
+					}
 				}
 			}
 		}
