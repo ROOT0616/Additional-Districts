@@ -1878,7 +1878,6 @@ building_ad_P_broad = {
 # building_ad_slam  スラム			労働者幸福度-10%、住宅+30			サービス職+1、事務員+2				(低所得層が住む不衛生かつ犯罪の温床となる地域。)						維持:エネ1			建設:鉱物300、時間100		
 building_ad_slam = {
 	base_buildtime = 100
-	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
@@ -1905,7 +1904,6 @@ building_ad_slam = {
 # building_ad_apart  大規模高層住宅		住宅+20						サービス職+3、事務員+3				(整備されて治安もしっかりしている、それ自体が一つの町として機能する高層住宅。)		維持:エネ6、消費財1		建設:鉱物700、時間500
 building_ad_apart = {
 	base_buildtime = 500
-	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
@@ -1932,7 +1930,6 @@ building_ad_apart = {
 # building_ad_mansion  高級住宅街		住宅+10、統治者幸福度+20%、快適度+5%		サービス職+3、事務員+3、法務執行官+1		(富裕層が住むゆとりのある住宅街)								維持:エネ4、消費財2		建設:鉱物400、レアクリ50、時間700
 building_ad_mansion = {
 	base_buildtime = 700
-	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
@@ -1963,7 +1960,6 @@ building_ad_mansion = {
 # building_ad_red_light  歓楽街			労働者幸福度+5%、快適度+5%			エンターテイナー+4、文化人+1			(酒場や映画館、賭場、風俗店等の娯楽街。)精神主義以外						維持:エネ6、消費財2		建設:鉱物600、時間500
 building_ad_red_light = {
 	base_buildtime = 550
-	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
@@ -1995,7 +1991,6 @@ building_ad_red_light = {
 # building_ad_P_prison  刑務所			犯罪度-5%					法務執行官+2、法曹+1				(犯罪者を収容し、社会の片隅に汚れを集めることができる。)					維持:エネ2、合金1		建設:鉱物600、合金100時間500
 building_ad_P_prison = {
 	base_buildtime = 500
-	base_cap_amount = 1
 	category = government
 	potential = {
 		owner = {
@@ -2023,7 +2018,6 @@ building_ad_P_prison = {
 # building_ad_F_camp  強制収容所		犯罪度-10%、統治志向魅力+10%、幸福度-5%		官僚+1、法務執行官+2、強制労働者+10		(社会にとって不利益をもたらす者を少しでも利益を生み出させるようにする。)権威主義のみ		維持:エネ2、合金1		建設:鉱物600、時間500
 building_ad_F_camp = {
 	base_buildtime = 500
-	base_cap_amount = 1
 	category = government
 	potential = {
 		owner = {
@@ -2056,7 +2050,6 @@ building_ad_F_camp = {
 # building_ad_college  専門学校		なし						研究者+1、法曹+1、医療従事者+1、文化人+1	(特定の専門領域の知識を有する専門家や労働者を生み出す教育機関)物質主義のみ			維持:エネ3、エキゾガス1		建設:鉱物400、エキゾガス100、合金100、時間650	
 building_ad_college = {
 	base_buildtime = 650
-	base_cap_amount = 1
 	category = research
 	potential = {
 		owner = {
@@ -2090,7 +2083,6 @@ building_ad_college = {
 # building_ad_H_hotel  高級ホテル		流入魅力+10%、住宅+5、快適度+5%			エンターテイナー+2、サービス職+2		(高所得層やVIPが宿泊する度の種族にとっても快適な宿泊所)受容主義のみ				維持:エネ4、消費財3		建設:鉱物300、合金50、レアクリ100、時間800
 building_ad_H_hotel = {
 	base_buildtime = 800
-	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
@@ -2126,7 +2118,6 @@ building_ad_H_hotel = {
 # 							維持:エネ2、レアクリ1		建設:鉱物500、レアクリ50、合金50、時間550
 building_ad_S_broade = {
 	base_buildtime = 550
-	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
@@ -2154,7 +2145,6 @@ building_ad_S_broade = {
 # building_ad_L_office  法律事務所		なし						法曹+1、事務員+2				(法律上の手続きやトラブルを解決するために相談する場所。)					維持:エネ2、揮発粉1		建設:鉱物500、揮発粉50、時間550
 building_ad_L_office = {
 	base_buildtime = 550
-	base_cap_amount = 1
 	category = government
 	potential = {
 		owner = {
@@ -2181,7 +2171,6 @@ building_ad_L_office = {
 # building_ad_AA_base  砲兵空軍基地		防衛軍与ダメージ+10%、防衛軍指揮ダメージ+10%	将校+1、兵士+2					(惑星に迅速に展開し、敵陸軍に攻撃を加える基地。)
 building_ad_AA_base = {
 	base_buildtime = 550
-	base_cap_amount = 1
 	category = army
 	potential = {
 		owner = {
