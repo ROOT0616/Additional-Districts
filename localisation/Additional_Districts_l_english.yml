@@ -197,6 +197,8 @@
  job_ad_commissioned_officer_plural:0 "将校"
  job_ad_commissioned_officer_desc:0 "軍において管理、運用、指揮等を行う中間管理職"
  mod_job_ad_commissioned_officer_add:0 "将校の職業枠"
+ mod_job_ad_commissioned_officer_per_pop:0 "$VALUE$ POP につき$job_ad_commissioned_officer$の職業枠§G+1§!"
+ mod_job_ad_commissioned_officer_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ad_commissioned_officer_add£ §G+1§!"
 
  job_ad_general_officer:0 "将官"
  job_ad_general_officer_plural:0 "将官"
@@ -217,11 +219,15 @@
  job_ad_servicer_plural:0 "サービス職"
  job_ad_servicer_desc:0 "介護、清掃、運転代行、運送など、エッセンシャルワーカーと呼ばれるサービス提供者"
  mod_job_ad_servicer_add:0 "サービス職の職業枠"
+ mod_job_ad_servicer_per_pop:0 "$VALUE$ POP につき$job_ad_servicer$の職業枠§G+1§!"
+ mod_job_ad_servicer_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ad_servicer_add£ §G+1§!"
 
  job_ad_forcrd_larbor:0 "強制労働者"
  job_ad_forcrd_larbor_plural:0 "強制労働者"
  job_ad_forcrd_larbor_desc:0 "本人の意図とは関係なく、様々な要因で強制的に労働させられる市民権保持者"
  mod_job_ad_forcrd_larbor_add:0 "強制労働者の職業枠"
+ mod_job_ad_forcrd_larbor_per_pop:0 "$VALUE$ POP につき$job_ad_forcrd_larbor$の職業枠§G+1§!"
+ mod_job_ad_forcrd_larbor_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ad_forcrd_larbor_add£ §G+1§!"
 
  job_ad_banker:0 "銀行家"
  job_ad_banker_plural:0 "銀行家"

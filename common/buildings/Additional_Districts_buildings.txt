@@ -2096,7 +2096,7 @@ building_ad_H_hotel = {
 	planet_modifier = {
 		job_entertainer_add = 2
 		job_ad_servicer_add = 2
-		immigrants_protection = 0.1
+		planet_immigration_pull_mult = 0.1
 		planet_housing_add = 5
 		planet_amenities_mult = 0.5
 	}
