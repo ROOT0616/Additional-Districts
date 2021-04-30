@@ -73,6 +73,7 @@ building_ad_Palace = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_Palace
@@ -116,6 +117,7 @@ building_ad_CEO = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -161,6 +163,7 @@ building_ad_M_def = {
 	category = army
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_M_def
@@ -211,6 +214,7 @@ building_ad_O_def = {
 	category = army
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -265,6 +269,7 @@ building_ad_M_dom = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_M_dom
@@ -314,6 +319,7 @@ building_ad_O_dom = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -366,6 +372,7 @@ building_ad_M_dip = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_M_dip
@@ -415,6 +422,7 @@ building_ad_O_dip = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -473,6 +481,7 @@ building_ad_M_inf = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_M_inf
@@ -522,6 +531,7 @@ building_ad_O_inf = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -573,6 +583,7 @@ building_ad_M_tra = {
 	category = trade
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_M_tra
@@ -628,6 +639,7 @@ building_ad_O_tra = {
 	base_cap_amount = 1
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -686,6 +698,7 @@ building_ad_M_ind = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_M_ind
@@ -734,6 +747,7 @@ building_ad_O_ind = {
 	category = research
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -784,6 +798,7 @@ building_ad_E_cap = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_E_cap
@@ -827,6 +842,7 @@ building_ad_C_cap = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -872,6 +888,7 @@ building_ad_E_court = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_E_court
@@ -917,6 +934,7 @@ building_ad_C_court = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -965,6 +983,7 @@ building_ad_E_bank = {
 	category = trade
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_E_bank
@@ -1019,6 +1038,7 @@ building_ad_O_bank = {
 	category = trade
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -1076,6 +1096,7 @@ building_ad_E_mil = {
 	category = army
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = built_ad_E_mil
@@ -1125,6 +1146,7 @@ building_ad_C_mil = {
 	category = army
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -1176,6 +1198,7 @@ building_ad_broad = {
 	category = government
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOT = {
 				has_country_flag = built_ad_broad
 			}
@@ -1223,6 +1246,7 @@ building_ad_G_datebank = {
 	base_cap_amount = 1
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOT = {
 				has_country_flag = built_ad_G_datebank
 			}
@@ -1267,6 +1291,7 @@ building_ad_medicinelab = {
 	category = amenity
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			NOT = {
 				has_country_flag = built_ad_medicinelab
 			}
@@ -1311,9 +1336,10 @@ building_ad_medicinelab = {
 building_ad_P_datebank = {
 	base_buildtime = 650
 	base_cap_amount = 1
-	category = amenity
+	category = research
 	potential = {
 		owner = {
+			is_regular_empire = yes
 			OR = {
 				has_ethic = ethic_fanatic_materialist
 				has_ethic = ethic_materialist
@@ -1340,391 +1366,258 @@ building_ad_P_datebank = {
 
 # building_ad_E_libraly  帝国図書館			なし						データ司書+2					(君主により国家からの自由を認められた情報を保管する施設。)君主制のみ			維持:エネ3、エキゾガス1		建設:鉱物600、エキゾガス200、合金100、時間650
 building_ad_E_libraly = {
-	base_buildtime = 550
+	base_buildtime = 650
 	base_cap_amount = 1
-	category = amenity
+	category = research
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_librarian_add = 2
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 600
+			exotic_gases = 200
+			alloys = 100
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			exotic_gases = 1
 		}
 	}
 }
 
 # building_ad_welness  労働福祉センター		20Popあたりにサービス職+1			官僚+1、事務員+2、サービス職+4			(失業や介護など、市民の福祉に対する対応を行う役所。)					維持:エネ3、消費財2		建設:鉱物800、レアクリ200、時間500
 building_ad_welness = {
-	base_buildtime = 550
+	base_buildtime = 500
 	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_bureaucrat_add = 1
+		job_clerk_add = 2
+		job_ad_servicer_add = 4
+		job_ad_servicer_per_pop = 20
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 800
+			rare_crystals = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			consumer_goods = 2
 		}
 	}
 }
 
 # building_ad_P_Police  公安局				暗号力+5、30Popあたりに法務執行官+1		官僚+1、法務執行官+2、公安職員+2		(各惑星の危険人物や思想を監視し、暴発を未然に防ぐことを目的とした役所。)		維持:エネ3、揮発粉1		建設:鉱物900、揮発粉200、時間600
 building_ad_P_Police = {
-	base_buildtime = 550
+	base_buildtime = 600
 	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
+		job_bureaucrat_add = 1
+		job_ad_psp_add = 2
+		job_enforcer_add = 2
+		job_enforcer_per_pop = 30
 	}
 	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		intel_encryption_add = 5
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 900
+			volatile_motes = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			volatile_motes = 1
 		}
 	}
 }
 
 # building_ad_labor  任意労働監督署			20Popあたりに強制労働者+1			官僚+1、強制労働者+10			(「任意」で無償労働を申し出た人々を監督し、ノルマを達成させるための役所。)権威主義のみ	維持:エネ3、揮発粉1		建設:鉱物900、揮発粉200、時間600
 building_ad_labor = {
-	base_buildtime = 550
+	base_buildtime = 600
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_fanatic_authoritarian
+				has_ethic = ethic_authoritarian
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_bureaucrat_add = 1
+		job_ad_forcrd_larbor_add = 10
+		job_ad_forcrd_larbor_per_pop = 20
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 900
+			volatile_motes = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			volatile_motes = 1
 		}
 	}
 }
 
 # building_ad_Co_bank  開発植民銀行			30Popあたりに開拓者+1				銀行家+2					(各惑星の発展を支援し、低金利の貸付を行う公的金融機関)				維持:エネ3、エキゾガス1		建設:鉱物900、エキゾガス200、時間600
 building_ad_Co_bank = {
-	base_buildtime = 550
+	base_buildtime = 600
 	base_cap_amount = 1
-	category = amenity
+	category = trade
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_banker_add = 2
+		job_colonist_per_pop = 30
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 900
+			exotic_gases = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			exotic_gases = 1
 		}
 	}
 }
 
 # building_ad_inobate  イノベーションセンター		20Popあたりに事務員+1				役員+1、起業家+2、管理職+2、事務員+5		(様々なアイデアを支援し、起業や特許取得を支援する施設)平等主義のみ			維持:エネ3、レアクリ1		建設:鉱物900、レアクリ200、時間600
 building_ad_inobate = {
-	base_buildtime = 550
+	base_buildtime = 600
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_executive_add = 1
+		job_ad_entrepreneur_add = 2
+		job_manager_add = 2
+		job_clerk_add = 5
+		job_clerk_per_pop = 20
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 900
+			rare_crystals = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			rare_crystals = 1
 		}
 	}
 }
 
 # building_ad_P_HQ  管区軍司令部			なし						将官+1、将校+2					(各惑星に駐屯する軍や艦隊を指揮する司令部。)						維持:エネ3、揮発粉1		建設:鉱物900、揮発粉200、時間600
 building_ad_P_HQ = {
-	base_buildtime = 550
+	base_buildtime = 600
 	base_cap_amount = 1
-	category = amenity
+	category = army
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_commissioned_officer_add = 2
+		job_ad_general_officer_add = 1
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 900
+			volatile_motes = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			volatile_motes = 1
 		}
 	}
 }
 
 # building_ad_O_imp  入境管理局			流入魅力+30%					官僚+1、事務員+3				(惑星に入る物品や移民等を検査、確認を行い、不正や過剰な流入を防ぐ役所。)		維持:エネ3、エキゾガス1		建設:鉱物900、エキゾガス200、時間600
 building_ad_O_imp = {
-	base_buildtime = 550
+	base_buildtime = 600
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_executive_add = 1
+		job_clerk_per_pop = 3
+		planet_immigration_pull_mult = 0.3
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 900
+			exotic_gases = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			exotic_gases = 1
 		}
 	}
 }
 
 # building_ad_O_imm  移民推進局			流出圧力+50%					官僚+1、事務員+3				(惑星からの移民を推進し、支援する役所。)						維持:エネ3、エキゾガス1		建設:鉱物900、エキゾガス200、時間600
 building_ad_O_imm = {
-	base_buildtime = 550
+	base_buildtime = 600
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_bureaucrat_add = 1
+		job_clerk_per_pop = 3
+		planet_emigration_push_mult = 0.5
 	}
 	resources = {
 		category = planet_buildings
@@ -1733,228 +1626,145 @@ building_ad_O_imm = {
 		}
 		upkeep = {
 			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
 		}
 	}
 }
 
 # building_ad_O_exp  出境管理局			流出圧力-30%					官僚+1、事務員+3				(惑星から輸出される物品や移民等を検査、確認を行い、不正や過剰な流出を防ぐ役所。)	維持:エネ3、エキゾガス1		建設:鉱物900、エキゾガス200、時間600
 building_ad_O_exp = {
-	base_buildtime = 550
+	base_buildtime = 600
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_bureaucrat_add = 1
+		job_clerk_add = 3
+		planet_emigration_push_mult = -0.3
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 900
+			exotic_gases = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			exotic_gases = 1
 		}
 	}
 }
 
 # building_ad_presidential  プレジデンシャルオフィス	20Popあたりに事務員+1				役員+2、管理職+2、法曹+2、事務員+5		(高度な知識やアイデアを生かして活動する人々のためのオフィス)				維持:エネ3、レアクリ1		建設:鉱物900、レアクリ200、時間600
 building_ad_presidential = {
-	base_buildtime = 550
+	base_buildtime = 600
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_executive_add = 2
+		job_manager_add = 2
+		job_ad_lawyer_add = 2
+		job_clerk_add = 5
+		job_clerk_per_pop = 20
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 900
+			rare_crystals = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			rare_crystals = 1
 		}
 	}
 }
 
 # building_ad_telecommu  運輸通信管制局			なし						官僚+1、インフラ技師+2				(惑星間通信や輸送面を管制する役所。)							維持:エネ3、レアクリ2		建設:鉱物600、レアクリ200、合金100、時間650
 building_ad_telecommu = {
-	base_buildtime = 550
+	base_buildtime = 650
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_bureaucrat_add = 1
+		job_ad_infrastructure_engineer_add = 2
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 600
+			alloys = 100
+			rare_crystals = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			rare_crystals = 2
 		}
 	}
 }
 
 # building_ad_university  総合大学			なし						科学総裁+1、教授職+2、研究者+2、文化人+2	(将来の専門家を教育し、様々な研究を行う高等教育機関)					維持:エネ3、エキゾガス2		建設:鉱物600、エキゾガス200、合金100、時間650
 building_ad_university = {
-	base_buildtime = 550
+	base_buildtime = 650
 	base_cap_amount = 1
-	category = amenity
+	category = research
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
 		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_professorship_add = 2
+		job_researcher_add = 2
+		job_culture_worker_add = 2
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 600
+			alloys = 100
+			exotic_gases = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			exotic_gases = 1
 		}
 	}
 }
 
 # building_ad_perfectethic  安全思想教育センター		統治志向魅力+20%				官僚+1、公安職員+2、強制労働者+3		(この施設では社会において安全な思想を広めることができる。)権威主義のみ		維持:エネ3、レアクリ1		建設:鉱物600、レアクリ100、合金100、時間650
 building_ad_perfectethic = {
-	base_buildtime = 550
+	base_buildtime = 650
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_bureaucrat_add = 1
+		job_ad_psp_add = 2
+		job_ad_forcrd_larbor_add = 3
+		pop_government_ethic_attraction = 0.2
 	}
 	resources = {
 		category = planet_buildings
@@ -1963,159 +1773,103 @@ building_ad_perfectethic = {
 		}
 		upkeep = {
 			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
 		}
 	}
 }
 
 # building_ad_diversity  社会多様性センター		受容志向魅力+20%				官僚+1、文化人+3			(社会に排斥された者は存在するべきではなく、多様性教育を広げるための機関。)受容主義のみ	維持:エネ3、レアクリ1		建設:鉱物600、レアクリ100、合金100、時間650
 building_ad_diversity = {
-	base_buildtime = 550
+	base_buildtime = 650
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_bureaucrat_add = 1
+		job_culture_worker_add = 3
+		pop_ethic_xenophile_attraction_mult = 0.2
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 600
+			alloys = 100
+			rare_crystals = 100
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			rare_crystals = 1
 		}
 	}
 }
 
 # building_ad_judgement  異民族審判所			犯罪度-20%					官僚+1、文化人+1、法曹+2		(異種族や異種族に同調する同胞を裁き、高尚な社会を維持するために存在する施設。)排他主義のみ	維持:エネ3、レアクリ1		建設:鉱物600、レアクリ100、合金100、時間650
 building_ad_judgement = {
-	base_buildtime = 550
+	base_buildtime = 650
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_bureaucrat_add = 1
+		job_culture_worker_add = 1
+		job_ad_lawyer_add = 2
+		planet_crime_mult = -0.2
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 600
+			alloys = 100
+			rare_crystals = 100
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			rare_crystals = 1
 		}
 	}
 }
 
 # building_ad_P_broad  放送局				安定度+5、幸福度+5%				ジャーナリスト+2、文化人+1			(各惑星で報道や放送を担う機関。)							維持:エネ3、レアクリ1		建設:鉱物600、レアクリ100、合金100、時間650
 building_ad_P_broad = {
-	base_buildtime = 550
+	base_buildtime = 650
 	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_journalist_add = 2
+		job_culture_worker_add = 1
+		planet_stability_add = 5
+		pop_happiness = 0.05
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 600
+			alloys = 100
+			rare_crystals = 100
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			rare_crystals = 1
 		}
 	}
 }
@@ -2123,138 +1877,85 @@ building_ad_P_broad = {
 # ※個数限定なし	
 # building_ad_slam  スラム			労働者幸福度-10%、住宅+30			サービス職+1、事務員+2				(低所得層が住む不衛生かつ犯罪の温床となる地域。)						維持:エネ1			建設:鉱物300、時間100		
 building_ad_slam = {
-	base_buildtime = 550
+	base_buildtime = 100
 	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_servicer_add = 1
+		job_clerk_add = 2
+		planet_housing_add = 30
+		pop_cat_worker_happiness = -0.1
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 300
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 1
 		}
 	}
 }
 
 # building_ad_apart  大規模高層住宅		住宅+20						サービス職+3、事務員+3				(整備されて治安もしっかりしている、それ自体が一つの町として機能する高層住宅。)		維持:エネ6、消費財1		建設:鉱物700、時間500
 building_ad_apart = {
-	base_buildtime = 550
+	base_buildtime = 500
 	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_servicer_add = 3
+		job_clerk_add = 3
+		planet_housing_add = 20
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 700
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 6
+			consumer_goods = 1
 		}
 	}
 }
 
 # building_ad_mansion  高級住宅街		住宅+10、統治者幸福度+20%、快適度+5%		サービス職+3、事務員+3、法務執行官+1		(富裕層が住むゆとりのある住宅街)								維持:エネ4、消費財2		建設:鉱物400、レアクリ50、時間700
 building_ad_mansion = {
-	base_buildtime = 550
+	base_buildtime = 700
 	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_enforcer_add = 1
+		job_ad_servicer_add = 3
+		job_clerk_add = 3
+		planet_amenities_mult = 0.05
+		planet_housing_add = 10
+		pop_cat_ruler_happiness = 20
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 400
+			rare_crystals = 50
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 4
+			consumer_goods = 2
 		}
 	}
 }
@@ -2266,225 +1967,157 @@ building_ad_red_light = {
 	category = amenity
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			NOR = {
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_entertainer_add = 4
+		job_culture_worker_add = 1
+		planet_amenities_mult = 0.05
+		pop_cat_worker_happiness = 0.05
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 600
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 6
+			consumer_goods = 2
 		}
 	}
 }
 
 # building_ad_P_prison  刑務所			犯罪度-5%					法務執行官+2、法曹+1				(犯罪者を収容し、社会の片隅に汚れを集めることができる。)					維持:エネ2、合金1		建設:鉱物600、合金100時間500
 building_ad_P_prison = {
-	base_buildtime = 550
+	base_buildtime = 500
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_enforcer_add = 2
+		job_ad_lawyer_add = 1
+		planet_crime_mult = -0.05
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 600
+			alloys = 100
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 2
+			alloys = 1
 		}
 	}
 }
 
 # building_ad_F_camp  強制収容所		犯罪度-10%、統治志向魅力+10%、幸福度-5%		官僚+1、法務執行官+2、強制労働者+10		(社会にとって不利益をもたらす者を少しでも利益を生み出させるようにする。)権威主義のみ		維持:エネ2、合金1		建設:鉱物600、時間500
 building_ad_F_camp = {
-	base_buildtime = 550
+	base_buildtime = 500
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_bureaucrat_add = 1
+		job_enforcer_add = 2
+		job_ad_forcrd_larbor_add = 10
+		planet_crime_mult = -0.1
+		pop_government_ethic_attraction = 0.1
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 600
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 2
+			alloys = 1
 		}
 	}
 }
 
 # building_ad_college  専門学校		なし						研究者+1、法曹+1、医療従事者+1、文化人+1	(特定の専門領域の知識を有する専門家や労働者を生み出す教育機関)物質主義のみ			維持:エネ3、エキゾガス1		建設:鉱物400、エキゾガス100、合金100、時間650	
 building_ad_college = {
-	base_buildtime = 550
+	base_buildtime = 650
 	base_cap_amount = 1
-	category = amenity
+	category = research
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_researcher_add = 1
+		job_ad_lawyer_add = 1
+		job_healthcare_add = 1
+		job_culture_worker_add = 1
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 400
+			alloys = 100
+			exotic_gases = 100
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			exotic_gases = 1
 		}
 	}
 }
 
 # building_ad_H_hotel  高級ホテル		流入魅力+10%、住宅+5、快適度+5%			エンターテイナー+2、サービス職+2		(高所得層やVIPが宿泊する度の種族にとっても快適な宿泊所)受容主義のみ				維持:エネ4、消費財3		建設:鉱物300、合金50、レアクリ100、時間800
 building_ad_H_hotel = {
-	base_buildtime = 550
+	base_buildtime = 800
 	base_cap_amount = 1
 	category = amenity
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_entertainer_add = 2
+		job_ad_servicer_add = 2
+		immigrants_protection = 0.1
+		planet_housing_add = 5
+		planet_amenities_mult = 0.5
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 300
+			alloys = 50
+			rare_crystals = 100
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 4
+			consumer_goods = 3
 		}
 	}
 }
@@ -2497,41 +2130,23 @@ building_ad_S_broade = {
 	category = amenity
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_journalist_add = 1
+		job_clerk_add = 2
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 500
+			alloys = 50
+			rare_crystals = 50
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 2
+			rare_crystals = 1
 		}
 	}
 }
@@ -2540,44 +2155,25 @@ building_ad_S_broade = {
 building_ad_L_office = {
 	base_buildtime = 550
 	base_cap_amount = 1
-	category = amenity
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_lawyer_add = 1
+		job_clerk_add = 2
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 500
+			volatile_motes = 50
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 2
+			volatile_motes = 1
 		}
 	}
 }
@@ -2586,228 +2182,149 @@ building_ad_L_office = {
 building_ad_AA_base = {
 	base_buildtime = 550
 	base_cap_amount = 1
-	category = amenity
+	category = army
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_commissioned_officer_add = 1
+		job_soldier_add = 2
+		army_defense_damage_mult = 0.1
+		army_defense_morale_mult = 0.1
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 300
+			alloys = 200
+			volatile_motes = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 2
+			alloys = 2
+			volatile_motes = 1
 		}
 	}
 }
 
 # building_ad_W_camp  廃棄物処理施設		居住性-5%、幸福度+5%				事務員+1、サービス職+3				(帝国中の廃棄物を集積し、処理する施設。)							維持:エネ3、揮発粉1		建設:鉱物900、揮発粉200、時間600
 building_ad_W_camp = {
-	base_buildtime = 550
-	base_cap_amount = 1
-	category = amenity
+	base_buildtime = 600
+	category = government
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_clerk_add = 1
+		job_ad_servicer_add = 3
+		pop_happiness = 0.05
+		pop_habitability = -0.05
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 900
+			volatile_motes = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 3
+			volatile_motes = 1
 		}
 	}
 }
 
 # building_ad_D_Auto  自動防衛設備		防衛軍与ダメージ+30%				なし						(自動で敵陸軍を破壊するタレットやミサイルサイロ群。)軍国主義のみ				維持:エネ1、合金2、揮発粉1		建設:鉱物400、合金50、揮発粉200、時間300
 building_ad_D_Auto = {
-	base_buildtime = 550
-	base_cap_amount = 1
-	category = amenity
+	base_buildtime = 300
+	category = army
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		army_defense_damage_mult = 0.3
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 400
+			alloys = 50
+			volatile_motes = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 1
+			alloys = 2
+			volatile_motes = 1
 		}
 	}
 }
 
 # building_ad_Anti_b_pit  対爆壕			惑星の荒廃度-20%、防衛軍耐久度+10%		兵士+1						(爆撃や陸戦に対して市民を守るための施設。)平和主義のみ					維持:エネ1、合金1、揮発粉1		建設:鉱物400、合金100、揮発粉100、時間100
 building_ad_Anti_b_pit = {
-	base_buildtime = 550
-	base_cap_amount = 1
-	category = amenity
+	base_buildtime = 100
+	category = army
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
+			is_regular_empire = yes
+			OR = {
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
 			}
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_soldier_add = 1
+		army_defense_health_mult = 0.1
+		planet_devastation = -0.2
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 400
+			alloys = 100
+			volatile_motes = 100
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 1
+			alloys = 1
+			volatile_motes = 1
 		}
 	}
 }
 
 # building_ad_Anti_s_misile  対宙ミサイル施設	軌道上の艦隊に与ダメージ			将校+1、兵士+1					(軌道上に展開する敵艦隊を攻撃する施設)							維持:エネ2、合金2、揮発粉1		建設:鉱物300、合金200、揮発粉200、時間450
 building_ad_Anti_s_misile = {
-	base_buildtime = 550
-	base_cap_amount = 1
-	category = amenity
+	base_buildtime = 450
+	category = army
 	potential = {
 		owner = {
-			NOT = {
-				has_country_flag = built_ad_medicinelab
-			}
+			is_regular_empire = yes
 		}
 	}
 	planet_modifier = {
-		job_head_researcher_add = 1
-		job_healthcare_add = 4
-	}
-	country_modifier = {
-		pop_growth_speed = 0.05
-		leader_age = 10
+		job_ad_commissioned_officer_add = 1
+		job_soldier_add = 1
 	}
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = 1000
+			minerals = 300
+			alloys = 200
+			volatile_motes = 200
 		}
 		upkeep = {
-			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			set_country_flag = built_ad_medicinelab
-		}
-	}
-	on_destroy = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			energy = 2
+			alloys = 2
+			volatile_motes = 1
 		}
 	}
 }
