@@ -1,10 +1,3 @@
-#  pc_city #エキュメノポリス
-#  pc_toxic #有毒惑星
-#  pc_gaia #ガイア型惑星
-#  pc_superhabitable #極上惑星
-#  pc_relic #遺物惑星
-#  pc_nuked #死の惑星
-
 Wet
 1. pc_continental #大陸型惑星
 2. pc_tropical #熱帯型惑星
