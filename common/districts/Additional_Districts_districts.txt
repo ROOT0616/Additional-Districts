@@ -1046,6 +1046,7 @@ district_ad_tidal_current_generation = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
+		planet_max_districts_add = 1
 		job_technician_add = 5
 	}
 	ai_weight = {
@@ -1529,6 +1530,7 @@ district_ad_under_water_deposits = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
+		planet_max_districts_add = 1
 		job_ad_underwater_miner_add = 2
 	}
 	ai_weight = {
@@ -1688,6 +1690,7 @@ district_ad_orbital_deposits = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
+		planet_max_districts_add = 1
 		job_ad_space_miner_add = 2
 	}
 	ai_weight = {
@@ -2330,6 +2333,7 @@ district_ad_in_water_ecosystem = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
+		planet_max_districts_add = 1
 		job_ad_water_farmer_add = 5
 	}
 	ai_weight = {

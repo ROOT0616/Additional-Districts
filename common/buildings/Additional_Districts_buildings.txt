@@ -1090,7 +1090,7 @@ building_ad_C_mil = {
 	}
 	planet_modifier = {
 		job_ad_general_officer_add = 1
-		job_ad_commissioned_officer_per_pop = 2
+		job_ad_commissioned_officer_add = 2
 	}
 	country_modifier = {
 		ship_speed_mult = 0.05
@@ -1342,7 +1342,7 @@ building_ad_welness = {
 		job_bureaucrat_add = 1
 		job_clerk_add = 2
 		job_ad_servicer_add = 4
-		job_ad_servicer_per_pop = 20
+		job_ad_servicer_per_pop = 0.05 # 1 per 20
 	}
 	resources = {
 		category = planet_buildings
@@ -1357,7 +1357,7 @@ building_ad_welness = {
 	}
 }
 
-# building_ad_P_Police  公安局				暗号力+5、30Popあたりに法務執行官+1		官僚+1、法務執行官+2、公安職員+2		(各惑星の危険人物や思想を監視し、暴発を未然に防ぐことを目的とした役所。)		維持:エネ3、揮発粉1		建設:鉱物900、揮発粉200、時間600
+# building_ad_P_Police  公安局				暗号力+5、25Popあたりに法務執行官+1		官僚+1、法務執行官+2、公安職員+2		(各惑星の危険人物や思想を監視し、暴発を未然に防ぐことを目的とした役所。)		維持:エネ3、揮発粉1		建設:鉱物900、揮発粉200、時間600
 building_ad_P_Police = {
 	base_buildtime = 600
 	base_cap_amount = 1
@@ -1371,7 +1371,7 @@ building_ad_P_Police = {
 		job_bureaucrat_add = 1
 		job_ad_psp_add = 2
 		job_enforcer_add = 2
-		job_enforcer_per_pop = 30
+		job_enforcer_per_pop = 0.04 # 1 per 25
 	}
 	country_modifier = {
 		intel_encryption_add = 5
@@ -1406,7 +1406,7 @@ building_ad_labor = {
 	planet_modifier = {
 		job_bureaucrat_add = 1
 		job_ad_forcrd_larbor_add = 10
-		job_ad_forcrd_larbor_per_pop = 20
+		job_ad_forcrd_larbor_per_pop = 0.05 # 1 per 20
 	}
 	resources = {
 		category = planet_buildings
@@ -1421,7 +1421,7 @@ building_ad_labor = {
 	}
 }
 
-# building_ad_Co_bank  開発植民銀行			30Popあたりに開拓者+1				銀行家+2					(各惑星の発展を支援し、低金利の貸付を行う公的金融機関)				維持:エネ3、エキゾガス1		建設:鉱物900、エキゾガス200、時間600
+# building_ad_Co_bank  開発植民銀行			25Popあたりに開拓者+1				銀行家+2					(各惑星の発展を支援し、低金利の貸付を行う公的金融機関)				維持:エネ3、エキゾガス1		建設:鉱物900、エキゾガス200、時間600
 building_ad_Co_bank = {
 	base_buildtime = 600
 	base_cap_amount = 1
@@ -1433,7 +1433,7 @@ building_ad_Co_bank = {
 	}
 	planet_modifier = {
 		job_ad_banker_add = 2
-		job_colonist_per_pop = 30
+		job_colonist_per_pop = 0.04 # 1 per 25
 	}
 	resources = {
 		category = planet_buildings
@@ -1467,7 +1467,7 @@ building_ad_inobate = {
 		job_ad_entrepreneur_add = 2
 		job_manager_add = 2
 		job_clerk_add = 5
-		job_clerk_per_pop = 20
+		job_clerk_per_pop = 0.05 # 1 per 20
 	}
 	resources = {
 		category = planet_buildings
@@ -1521,7 +1521,7 @@ building_ad_O_imp = {
 	}
 	planet_modifier = {
 		job_executive_add = 1
-		job_clerk_per_pop = 3
+		job_clerk_add = 3
 		planet_immigration_pull_mult = 0.3
 	}
 	resources = {
@@ -1549,7 +1549,7 @@ building_ad_O_imm = {
 	}
 	planet_modifier = {
 		job_bureaucrat_add = 1
-		job_clerk_per_pop = 3
+		job_clerk_add = 3
 		planet_emigration_push_mult = 0.5
 	}
 	resources = {
@@ -1606,7 +1606,7 @@ building_ad_presidential = {
 		job_manager_add = 2
 		job_ad_lawyer_add = 2
 		job_clerk_add = 5
-		job_clerk_per_pop = 20
+		job_clerk_per_pop = 0.05 # 1 per 20
 	}
 	resources = {
 		category = planet_buildings
