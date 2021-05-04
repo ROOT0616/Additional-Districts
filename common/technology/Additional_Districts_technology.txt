@@ -1,12 +1,12 @@
 # 大規模地区開発計画	mixed_use_development_plan	 Tire4
 mixed_use_development_plan = {
-	cost = @tier4cost3
+	cost = @tier2cost2
 	area = society
 	tier = 1
 	category = {
 		new_worlds
 	}
-	weight = @tier4weight3
+	weight = @tier2weight2
 	weight_modifier = {
 		modifier = {
 			factor = 1.25

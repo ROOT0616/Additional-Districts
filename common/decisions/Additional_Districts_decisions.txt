@@ -281,6 +281,9 @@ decision_ad_government_district = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_4
+		}
+		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
@@ -291,14 +294,54 @@ decision_ad_government_district = {
 		mixed_use_development_plan
 	}
 	allow = {
-		NOT = {
+		NOR = {
+			NOT = {
 			has_planet_flag = do_ad_government_district
+			}
+			NAND = {
+			has_planet_flag = do_ad_university_district
+			has_planet_flag = do_ad_shipbuilding_arsenal
+			has_planet_flag = do_ad_communication_area
+			has_planet_flag = do_ad_tourist_area
+			}
 		}
 	}
 	effect = {
 		add_deposit = d_ad_government_district
 		hidden_effect = {
 			set_planet_flag = do_ad_government_district
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
 		}
 	}
 	ai_weight = {
@@ -326,6 +369,38 @@ decision_ad_undo_government_district = {
 		remove_deposit = d_ad_government_district
 		hidden_effect = {
 			remove_planet_flag = do_ad_government_district
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
@@ -345,6 +420,9 @@ decision_ad_university_district = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_4
+		}
+		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
@@ -363,6 +441,38 @@ decision_ad_university_district = {
 		add_deposit = d_ad_university_district
 		hidden_effect = {
 			set_planet_flag = do_ad_university_district
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
 		}
 	}
 	ai_weight = {
@@ -390,6 +500,38 @@ decision_ad_undo_university_district = {
 		remove_deposit = d_ad_university_district
 		hidden_effect = {
 			remove_planet_flag = do_ad_university_district
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
@@ -473,6 +615,9 @@ decision_ad_shipbuilding_arsenal = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_4
+		}
+		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
@@ -491,6 +636,38 @@ decision_ad_shipbuilding_arsenal = {
 		add_deposit = d_ad_shipbuilding_arsenal
 		hidden_effect = {
 			set_planet_flag = do_ad_shipbuilding_arsenal
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
 		}
 	}
 	ai_weight = {
@@ -518,6 +695,38 @@ decision_ad_undo_shipbuilding_arsenal = {
 		remove_deposit = d_ad_shipbuilding_arsenal
 		hidden_effect = {
 			remove_planet_flag = do_ad_shipbuilding_arsenal
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
@@ -537,6 +746,9 @@ decision_ad_communication_area = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_4
+		}
+		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
@@ -555,6 +767,38 @@ decision_ad_communication_area = {
 		add_deposit = d_ad_communication_area
 		hidden_effect = {
 			set_planet_flag = do_ad_communication_area
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
 		}
 	}
 	ai_weight = {
@@ -582,6 +826,38 @@ decision_ad_undo_communication_area = {
 		remove_deposit = d_ad_communication_area
 		hidden_effect = {
 			remove_planet_flag = do_ad_communication_area
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
@@ -601,6 +877,9 @@ decision_ad_tourist_area = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_4
+		}
+		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
@@ -619,6 +898,38 @@ decision_ad_tourist_area = {
 		add_deposit = d_ad_tourist_area
 		hidden_effect = {
 			set_planet_flag = do_ad_tourist_area
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
 		}
 	}
 	ai_weight = {
@@ -646,6 +957,38 @@ decision_ad_undo_tourist_area = {
 		remove_deposit = d_ad_tourist_area
 		hidden_effect = {
 			remove_planet_flag = do_ad_tourist_area
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
@@ -665,6 +1008,9 @@ decision_ad_defense_zone = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_4
+		}
+		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
@@ -683,6 +1029,38 @@ decision_ad_defense_zone = {
 		add_deposit = d_ad_defense_zone
 		hidden_effect = {
 			set_planet_flag = do_ad_defense_zone
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
 		}
 	}
 	ai_weight = {
@@ -710,6 +1088,38 @@ decision_ad_undo_defense_zone = {
 		remove_deposit = d_ad_defense_zone
 		hidden_effect = {
 			remove_planet_flag = do_ad_defense_zone
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
@@ -729,6 +1139,9 @@ decision_ad_conceptual_zone = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_4
+		}
+		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
@@ -747,6 +1160,38 @@ decision_ad_conceptual_zone = {
 		add_deposit = d_ad_conceptual_zone
 		hidden_effect = {
 			set_planet_flag = do_ad_conceptual_zone
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
 		}
 	}
 	ai_weight = {
@@ -774,6 +1219,38 @@ decision_ad_undo_conceptual_zone = {
 		remove_deposit = d_ad_conceptual_zone
 		hidden_effect = {
 			remove_planet_flag = do_ad_conceptual_zone
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
@@ -793,6 +1270,9 @@ decision_ad_special_research_zone = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_4
+		}
+		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
@@ -811,6 +1291,38 @@ decision_ad_special_research_zone = {
 		add_deposit = d_ad_special_research_zone
 		hidden_effect = {
 			set_planet_flag = do_ad_special_research_zone
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
 		}
 	}
 	ai_weight = {
@@ -838,6 +1350,38 @@ decision_ad_undo_special_research_zone = {
 		remove_deposit = d_ad_special_research_zone
 		hidden_effect = {
 			remove_planet_flag = do_ad_special_research_zone
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
@@ -857,6 +1401,9 @@ decision_ad_spaceport_area = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_4
+		}
+		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
@@ -875,6 +1422,38 @@ decision_ad_spaceport_area = {
 		add_deposit = d_ad_spaceport_area
 		hidden_effect = {
 			set_planet_flag = do_ad_spaceport_area
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
 		}
 	}
 	ai_weight = {
@@ -902,6 +1481,38 @@ decision_ad_undo_spaceport_area = {
 		remove_deposit = d_ad_spaceport_area
 		hidden_effect = {
 			remove_planet_flag = do_ad_spaceport_area
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
@@ -921,6 +1532,9 @@ decision_ad_orbital_elevator = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_4
+		}
+		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
@@ -939,6 +1553,38 @@ decision_ad_orbital_elevator = {
 		add_deposit = d_ad_orbital_elevator
 		hidden_effect = {
 			set_planet_flag = do_ad_orbital_elevator
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
 		}
 	}
 	ai_weight = {
@@ -966,6 +1612,38 @@ decision_ad_undo_orbital_elevator = {
 		remove_deposit = d_ad_orbital_elevator
 		hidden_effect = {
 			remove_planet_flag = do_ad_orbital_elevator
+			if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = { 
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
