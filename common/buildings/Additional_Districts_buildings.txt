@@ -28,10 +28,32 @@ building_ad_Palace = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_Palace
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_Palace
+					}
+				}
+				set_country_flag = built_ad_Palace
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_Palace
+				}
+				remove_country_flag = built_ad_Palace
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_Palace
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -74,10 +96,32 @@ building_ad_CEO = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_CEO
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_CEO
+					}
+				}
+				set_country_flag = built_ad_CEO
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_CEO
+				}
+				remove_country_flag = built_ad_CEO
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_CEO
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -125,10 +169,32 @@ building_ad_M_def = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_M_def
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_M_def
+					}
+				}
+				set_country_flag = built_ad_M_def
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_def
+				}
+				remove_country_flag = built_ad_M_def
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_M_def
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -180,10 +246,32 @@ building_ad_O_def = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_M_def
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_O_def
+					}
+				}
+				set_country_flag = built_ad_O_def
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_def
+				}
+				remove_country_flag = built_ad_O_def
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_M_def
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -230,10 +318,32 @@ building_ad_M_dom = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_M_dom
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_M_dom
+					}
+				}
+				set_country_flag = built_ad_M_dom
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_dom
+				}
+				remove_country_flag = built_ad_M_dom
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_M_dom
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -283,10 +393,32 @@ building_ad_O_dom = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_O_dom
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_O_dom
+					}
+				}
+				set_country_flag = built_ad_O_dom
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_dom
+				}
+				remove_country_flag = built_ad_O_dom
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_O_dom
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -333,10 +465,32 @@ building_ad_M_dip = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_M_dip
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_M_dip
+					}
+				}
+				set_country_flag = built_ad_M_dip
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_dip
+				}
+				remove_country_flag = built_ad_M_dip
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_M_dip
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -386,10 +540,32 @@ building_ad_O_dip = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_O_dip
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_O_dip
+					}
+				}
+				set_country_flag = built_ad_O_dip
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_dip
+				}
+				remove_country_flag = built_ad_O_dip
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_O_dip
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -442,10 +618,32 @@ building_ad_M_inf = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_M_inf
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_M_inf
+					}
+				}
+				set_country_flag = built_ad_M_inf
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_inf
+				}
+				remove_country_flag = built_ad_M_inf
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_M_inf
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -494,10 +692,32 @@ building_ad_O_inf = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_O_inf
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_O_inf
+					}
+				}
+				set_country_flag = built_ad_O_inf
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_inf
+				}
+				remove_country_flag = built_ad_O_inf
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_O_inf
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -544,10 +764,32 @@ building_ad_M_tra = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_M_tra
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_M_tra
+					}
+				}
+				set_country_flag = built_ad_M_tra
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_tra
+				}
+				remove_country_flag = built_ad_M_tra
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_M_tra
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -603,10 +845,32 @@ building_ad_O_tra = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_O_tra
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_O_tra
+					}
+				}
+				set_country_flag = built_ad_O_tra
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_tra
+				}
+				remove_country_flag = built_ad_O_tra
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_O_tra
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -658,10 +922,32 @@ building_ad_M_ind = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_M_ind
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_M_ind
+					}
+				}
+				set_country_flag = built_ad_M_ind
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_M_ind
+				}
+				remove_country_flag = built_ad_M_ind
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_M_ind
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -709,10 +995,32 @@ building_ad_O_ind = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_O_ind
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_O_ind
+					}
+				}
+				set_country_flag = built_ad_O_ind
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_ind
+				}
+				remove_country_flag = built_ad_O_ind
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_O_ind
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -753,10 +1061,32 @@ building_ad_E_cap = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_E_cap
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_E_cap
+					}
+				}
+				set_country_flag = built_ad_E_cap
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_E_cap
+				}
+				remove_country_flag = built_ad_E_cap
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_E_cap
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -799,10 +1129,32 @@ building_ad_C_cap = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_C_cap
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_C_cap
+					}
+				}
+				set_country_flag = built_ad_C_cap
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_C_cap
+				}
+				remove_country_flag = built_ad_C_cap
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_C_cap
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -845,10 +1197,32 @@ building_ad_E_court = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_E_court
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_E_court
+					}
+				}
+				set_country_flag = built_ad_E_court
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_E_court
+				}
+				remove_country_flag = built_ad_E_court
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_E_court
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -893,10 +1267,32 @@ building_ad_C_court = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_C_court
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_C_court
+					}
+				}
+				set_country_flag = built_ad_C_court
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_C_court
+				}
+				remove_country_flag = built_ad_C_court
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_C_court
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -943,10 +1339,32 @@ building_ad_E_bank = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_E_bank
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_E_bank
+					}
+				}
+				set_country_flag = built_ad_E_bank
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_E_bank
+				}
+				remove_country_flag = built_ad_E_bank
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_E_bank
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -1001,10 +1419,32 @@ building_ad_O_bank = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_O_bank
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_O_bank
+					}
+				}
+				set_country_flag = built_ad_O_bank
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_O_bank
+				}
+				remove_country_flag = built_ad_O_bank
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_O_bank
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -1057,10 +1497,32 @@ building_ad_E_mil = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_E_mil
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_E_mil
+					}
+				}
+				set_country_flag = built_ad_E_mil
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_E_mil
+				}
+				remove_country_flag = built_ad_E_mil
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_E_mil
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -1109,10 +1571,32 @@ building_ad_C_mil = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_C_mil
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_C_mil
+					}
+				}
+				set_country_flag = built_ad_C_mil
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_C_mil
+				}
+				remove_country_flag = built_ad_C_mil
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_C_mil
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -1157,10 +1641,32 @@ building_ad_broad = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_broad
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_broad
+					}
+				}
+				set_country_flag = built_ad_broad
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_broad
+				}
+				remove_country_flag = built_ad_broad
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_broad
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -1202,10 +1708,32 @@ building_ad_G_datebank = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_G_datebank
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = built_ad_G_datebank
+					}
+				}
+				set_country_flag = built_ad_G_datebank
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_G_datebank
+				}
+				remove_country_flag = built_ad_G_datebank
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_G_datebank
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -1249,10 +1777,32 @@ building_ad_medicinelab = {
 	}
 	on_built = {
 		owner = {
-			set_country_flag = built_ad_medicinelab
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = built_ad_medicinelab
+					}
+				}
+				set_country_flag = built_ad_medicinelab
+			}
 		}
 	}
 	on_destroy = {
+		owner = {
+			if = {
+				limit = {
+					has_country_flag = built_ad_medicinelab
+				}
+				remove_country_flag = built_ad_medicinelab
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			set_country_flag = built_ad_medicinelab
+		}
+	}
+	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
@@ -2144,7 +2694,7 @@ building_ad_W_camp = {
 		job_clerk_add = 1
 		job_ad_servicer_add = 3
 		pop_happiness = 0.05
-		pop_habitability = -0.05
+		pc_habitat_habitability = -0.05
 	}
 	resources = {
 		category = planet_buildings
@@ -2206,7 +2756,7 @@ building_ad_Anti_b_pit = {
 	planet_modifier = {
 		job_soldier_add = 1
 		army_defense_health_mult = 0.1
-		planet_devastation = -0.2
+		planet_orbital_bombardment_damage = -0.2
 	}
 	resources = {
 		category = planet_buildings

@@ -216,7 +216,7 @@ ad_facility_maintainer = {
 		planet_amenities_add = 3
 	}
 	resources = {
-		category = planet_miners
+		category = planet_ad_facility_maintainer
 		produces = {
 			minerals = 5
 		}
@@ -1507,7 +1507,7 @@ ad_forcrd_larbor = {
 		worker_job_check_trigger = yes
 	}
 	resources = {
-		category = planet_farmers
+		category = planet_ad_forcrd_larbor
 		produces = {
 			food = 1
 			minerals = 1
@@ -1604,7 +1604,7 @@ ad_infrastructure_engineer = {
 		planet_jobs_specialist_produces_mult = 0.05
 	}
 	resources = {
-		category = planet_researchers
+		category = planet_technician
 		upkeep = {
 			consumer_goods = 3
 		}
@@ -1695,7 +1695,7 @@ ad_spaceport_mechanics = {
 		country_naval_cap_add = 6
 	}
 	resources = {
-		category = planet_researchers
+		category = planet_technician
 		upkeep = {
 			consumer_goods = 2
 		}
@@ -1748,14 +1748,10 @@ ad_excavator = {
 		specialist_job_check_trigger = yes
 	}
 	resources = {
-		category = planet_miners
+		category = planet_ad_excavator
 		produces = {
 			minor_artifacts = 0.5
 		}
-		# upkeep = {
-		# 	unity = 10
-		# 	influence = 1
-		# }
 	}
 	weight = {
 		weight = @specialist_job_weight
@@ -1781,7 +1777,7 @@ ad_banker = {
 		trade_value_add = 5
 	}
 	resources = {
-		category = planet_miners
+		category = planet_ad_banker
 		produces = {
 			energy = 5
 		}
@@ -1810,7 +1806,7 @@ ad_lawyer = {
 		planet_crime_add = -5 
 	}
 	resources = {
-		category = planet_miners
+		category = planet_enforcers
 		produces = {
 			society_research = 2
 		}
@@ -1841,7 +1837,7 @@ ad_journalist = {
 		planet_amenities_add = 2
 	}
 	resources = {
-		category = planet_miners
+		category = planet_ad_journalist
 		produces = {
 			unity = 3
 		}
@@ -1866,7 +1862,7 @@ ad_librarian = {
 		specialist_job_check_trigger = yes
 	}
 	resources = {
-		category = planet_miners
+		category = planet_researchers
 		produces = {
 			unity = 3
 			physics_research = 2
@@ -1950,7 +1946,7 @@ ad_ministor = {
 		ruler_job_check_trigger = yes
 	}
 	resources = {
-		category = armies
+		category = planet_ad_ministor
 		upkeep = {
 			consumer_goods = 3
 		}
@@ -1981,7 +1977,7 @@ ad_congressman = {
 		pop_happiness = 0.05
 	}
 	resources = {
-		category = armies
+		category = planet_ad_congressman
 		upkeep = {
 			consumer_goods = 3
 		}
