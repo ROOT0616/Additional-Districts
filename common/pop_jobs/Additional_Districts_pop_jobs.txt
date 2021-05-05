@@ -1503,6 +1503,12 @@ ad_forcrd_larbor = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+	}
+
 	possible = {
 		worker_job_check_trigger = yes
 	}
