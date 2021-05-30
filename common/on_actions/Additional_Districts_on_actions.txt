@@ -4,3 +4,10 @@ on_press_begin = {
 		additionaldistricts.01
 	}
 }
+
+# this = country
+on_monthly_pulse_country = {
+	events = {
+		additionaldistricts.07
+	}
+}

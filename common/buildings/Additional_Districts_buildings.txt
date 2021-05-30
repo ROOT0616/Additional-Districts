@@ -9,7 +9,7 @@ building_ad_Palace = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_Palace
+				has_country_flag = build_ad_Palace
 			}
 		}
 	}
@@ -29,37 +29,33 @@ building_ad_Palace = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_Palace
+						has_country_flag = build_ad_Palace
 					}
 				}
-				set_country_flag = built_ad_Palace
+				set_country_flag = build_ad_Palace
 			}
 		}
+		set_planet_flag = build_planet_ad_Palace
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_Palace
-				}
-				remove_country_flag = built_ad_Palace
-			}
+			remove_country_flag = build_ad_Palace
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_Palace
+			set_country_flag = build_ad_Palace
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_Palace
+					has_country_flag = build_ad_Palace
 				}
-				remove_country_flag = built_ad_Palace
+				remove_country_flag = build_ad_Palace
 			}
 		}
 	}
@@ -76,7 +72,7 @@ building_ad_CEO = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_CEO
+					has_country_flag = build_ad_CEO
 				}
 			}
 		}
@@ -97,37 +93,33 @@ building_ad_CEO = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_CEO
+						has_country_flag = build_ad_CEO
 					}
 				}
-				set_country_flag = built_ad_CEO
+				set_country_flag = build_ad_CEO
 			}
 		}
+		set_planet_flag = build_planet_ad_CEO
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_CEO
-				}
-				remove_country_flag = built_ad_CEO
-			}
+			remove_country_flag = build_ad_CEO
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_CEO
+			set_country_flag = build_ad_CEO
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_CEO
+					has_country_flag = build_ad_CEO
 				}
-				remove_country_flag = built_ad_CEO
+				remove_country_flag = build_ad_CEO
 			}
 		}
 	}
@@ -143,7 +135,7 @@ building_ad_M_def = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_M_def
+				has_country_flag = build_ad_M_def
 			}
 		}
 	}
@@ -170,37 +162,33 @@ building_ad_M_def = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_M_def
+						has_country_flag = build_ad_M_def
 					}
 				}
-				set_country_flag = built_ad_M_def
+				set_country_flag = build_ad_M_def
 			}
 		}
+		set_planet_flag = build_planet_ad_M_def
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_M_def
-				}
-				remove_country_flag = built_ad_M_def
-			}
+			remove_country_flag = build_ad_M_def
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_M_def
+			set_country_flag = build_ad_M_def
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_M_def
+					has_country_flag = build_ad_M_def
 				}
-				remove_country_flag = built_ad_M_def
+				remove_country_flag = build_ad_M_def
 			}
 		}
 	}
@@ -217,7 +205,7 @@ building_ad_O_def = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_M_def
+					has_country_flag = build_ad_M_def
 				}
 			}
 		}
@@ -226,13 +214,12 @@ building_ad_O_def = {
 		job_executive_add = 1
 		job_manager_add = 1
 		job_ad_commissioned_officer_add = 1
-
 	}
 	country_modifier = {
 		country_naval_cap_add = 10
 		army_morale = 5
 		starbase_shipyard_build_speed_mult = 0.1
-		}
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -247,37 +234,33 @@ building_ad_O_def = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_O_def
+						has_country_flag = build_ad_O_def
 					}
 				}
-				set_country_flag = built_ad_O_def
+				set_country_flag = build_ad_O_def
 			}
 		}
+		set_planet_flag = build_planet_ad_O_def
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_O_def
-				}
-				remove_country_flag = built_ad_O_def
-			}
+			remove_country_flag = build_ad_O_def
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_M_def
+			set_country_flag = build_ad_M_def
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_M_def
+					has_country_flag = build_ad_M_def
 				}
-				remove_country_flag = built_ad_M_def
+				remove_country_flag = build_ad_M_def
 			}
 		}
 	}
@@ -293,7 +276,7 @@ building_ad_M_dom = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_M_dom
+				has_country_flag = build_ad_M_dom
 			}
 		}
 	}
@@ -319,37 +302,33 @@ building_ad_M_dom = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_M_dom
+						has_country_flag = build_ad_M_dom
 					}
 				}
-				set_country_flag = built_ad_M_dom
+				set_country_flag = build_ad_M_dom
 			}
 		}
+		set_planet_flag = build_planet_ad_M_dom
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_M_dom
-				}
-				remove_country_flag = built_ad_M_dom
-			}
+			remove_country_flag = build_ad_M_dom
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_M_dom
+			set_country_flag = build_ad_M_dom
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_M_dom
+					has_country_flag = build_ad_M_dom
 				}
-				remove_country_flag = built_ad_M_dom
+				remove_country_flag = build_ad_M_dom
 			}
 		}
 	}
@@ -366,7 +345,7 @@ building_ad_O_dom = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_O_dom
+					has_country_flag = build_ad_O_dom
 				}
 			}
 		}
@@ -394,37 +373,33 @@ building_ad_O_dom = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_O_dom
+						has_country_flag = build_ad_O_dom
 					}
 				}
-				set_country_flag = built_ad_O_dom
+				set_country_flag = build_ad_O_dom
 			}
 		}
+		set_planet_flag = build_planet_ad_O_dom
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_O_dom
-				}
-				remove_country_flag = built_ad_O_dom
-			}
+			remove_country_flag = build_ad_O_dom
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_O_dom
+			set_country_flag = build_ad_O_dom
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_O_dom
+					has_country_flag = build_ad_O_dom
 				}
-				remove_country_flag = built_ad_O_dom
+				remove_country_flag = build_ad_O_dom
 			}
 		}
 	}
@@ -440,7 +415,7 @@ building_ad_M_dip = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_M_dip
+				has_country_flag = build_ad_M_dip
 			}
 		}
 	}
@@ -466,37 +441,33 @@ building_ad_M_dip = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_M_dip
+						has_country_flag = build_ad_M_dip
 					}
 				}
-				set_country_flag = built_ad_M_dip
+				set_country_flag = build_ad_M_dip
 			}
 		}
+		set_planet_flag = build_planet_ad_M_dip
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_M_dip
-				}
-				remove_country_flag = built_ad_M_dip
-			}
+			remove_country_flag = build_ad_M_dip
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_M_dip
+			set_country_flag = build_ad_M_dip
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_M_dip
+					has_country_flag = build_ad_M_dip
 				}
-				remove_country_flag = built_ad_M_dip
+				remove_country_flag = build_ad_M_dip
 			}
 		}
 	}
@@ -513,7 +484,7 @@ building_ad_O_dip = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_O_dip
+					has_country_flag = build_ad_O_dip
 				}
 			}
 		}
@@ -541,37 +512,33 @@ building_ad_O_dip = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_O_dip
+						has_country_flag = build_ad_O_dip
 					}
 				}
-				set_country_flag = built_ad_O_dip
+				set_country_flag = build_ad_O_dip
 			}
 		}
+		set_planet_flag = build_planet_ad_O_dip
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_O_dip
-				}
-				remove_country_flag = built_ad_O_dip
-			}
+			remove_country_flag = build_ad_O_dip
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_O_dip
+			set_country_flag = build_ad_O_dip
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_O_dip
+					has_country_flag = build_ad_O_dip
 				}
-				remove_country_flag = built_ad_O_dip
+				remove_country_flag = build_ad_O_dip
 			}
 		}
 	}
@@ -593,7 +560,7 @@ building_ad_M_inf = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_M_inf
+				has_country_flag = build_ad_M_inf
 			}
 		}
 	}
@@ -619,37 +586,33 @@ building_ad_M_inf = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_M_inf
+						has_country_flag = build_ad_M_inf
 					}
 				}
-				set_country_flag = built_ad_M_inf
+				set_country_flag = build_ad_M_inf
 			}
 		}
+		set_planet_flag = build_planet_ad_M_inf
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_M_inf
-				}
-				remove_country_flag = built_ad_M_inf
-			}
+			remove_country_flag = build_ad_M_inf
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_M_inf
+			set_country_flag = build_ad_M_inf
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_M_inf
+					has_country_flag = build_ad_M_inf
 				}
-				remove_country_flag = built_ad_M_inf
+				remove_country_flag = build_ad_M_inf
 			}
 		}
 	}
@@ -666,7 +629,7 @@ building_ad_O_inf = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_O_inf
+					has_country_flag = build_ad_O_inf
 				}
 			}
 		}
@@ -693,37 +656,33 @@ building_ad_O_inf = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_O_inf
+						has_country_flag = build_ad_O_inf
 					}
 				}
-				set_country_flag = built_ad_O_inf
+				set_country_flag = build_ad_O_inf
 			}
 		}
+		set_planet_flag = build_planet_ad_O_inf
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_O_inf
-				}
-				remove_country_flag = built_ad_O_inf
-			}
+			remove_country_flag = build_ad_O_inf
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_O_inf
+			set_country_flag = build_ad_O_inf
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_O_inf
+					has_country_flag = build_ad_O_inf
 				}
-				remove_country_flag = built_ad_O_inf
+				remove_country_flag = build_ad_O_inf
 			}
 		}
 	}
@@ -739,7 +698,7 @@ building_ad_M_tra = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_M_tra
+				has_country_flag = build_ad_M_tra
 			}
 		}
 	}
@@ -764,38 +723,27 @@ building_ad_M_tra = {
 	}
 	on_built = {
 		owner = {
-			if = {
-				limit = { 
-					NOT = {
-						has_country_flag = built_ad_M_tra
-					}
-				}
-				set_country_flag = built_ad_M_tra
-			}
+			set_country_flag = build_ad_M_tra
 		}
+		set_planet_flag = build_planet_ad_M_tra
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_M_tra
-				}
-				remove_country_flag = built_ad_M_tra
-			}
+			remove_country_flag = build_ad_M_tra
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_M_tra
+			set_country_flag = build_ad_M_tra
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_M_tra
+					has_country_flag = build_ad_M_tra
 				}
-				remove_country_flag = built_ad_M_tra
+				remove_country_flag = build_ad_M_tra
 			}
 		}
 	}
@@ -818,7 +766,7 @@ building_ad_O_tra = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_O_tra
+					has_country_flag = build_ad_O_tra
 				}
 			}
 		}
@@ -846,43 +794,39 @@ building_ad_O_tra = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_O_tra
+						has_country_flag = build_ad_O_tra
 					}
 				}
-				set_country_flag = built_ad_O_tra
+				set_country_flag = build_ad_O_tra
 			}
 		}
+		set_planet_flag = build_planet_ad_O_tra
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_O_tra
-				}
-				remove_country_flag = built_ad_O_tra
-			}
+			remove_country_flag = build_ad_O_tra
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_O_tra
+			set_country_flag = build_ad_O_tra
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_O_tra
+					has_country_flag = build_ad_O_tra
 				}
-				remove_country_flag = built_ad_O_tra
+				remove_country_flag = build_ad_O_tra
 			}
 		}
 	}
 	ai_resource_production = {
 		energy = 8
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 	}
@@ -898,7 +842,7 @@ building_ad_M_ind = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_M_ind
+				has_country_flag = build_ad_M_ind
 			}
 		}
 	}
@@ -922,38 +866,27 @@ building_ad_M_ind = {
 	}
 	on_built = {
 		owner = {
-			if = {
-				limit = { 
-					NOT = {
-						has_country_flag = built_ad_M_ind
-					}
-				}
-				set_country_flag = built_ad_M_ind
-			}
+			set_country_flag = build_ad_M_ind
 		}
+		set_planet_flag = build_planet_ad_M_ind
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_M_ind
-				}
-				remove_country_flag = built_ad_M_ind
-			}
+			remove_country_flag = build_ad_M_ind
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_M_ind
+			set_country_flag = build_ad_M_ind
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_M_ind
+					has_country_flag = build_ad_M_ind
 				}
-				remove_country_flag = built_ad_M_ind
+				remove_country_flag = build_ad_M_ind
 			}
 		}
 	}
@@ -970,7 +903,7 @@ building_ad_O_ind = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_O_ind
+					has_country_flag = build_ad_O_ind
 				}
 			}
 		}
@@ -996,37 +929,33 @@ building_ad_O_ind = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_O_ind
+						has_country_flag = build_ad_O_ind
 					}
 				}
-				set_country_flag = built_ad_O_ind
+				set_country_flag = build_ad_O_ind
 			}
 		}
+		set_planet_flag = build_planet_ad_O_ind
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_O_ind
-				}
-				remove_country_flag = built_ad_O_ind
-			}
+			remove_country_flag = build_ad_O_ind
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_O_ind
+			set_country_flag = build_ad_O_ind
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_O_ind
+					has_country_flag = build_ad_O_ind
 				}
-				remove_country_flag = built_ad_O_ind
+				remove_country_flag = build_ad_O_ind
 			}
 		}
 	}
@@ -1042,7 +971,7 @@ building_ad_E_cap = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_E_cap
+				has_country_flag = build_ad_E_cap
 			}
 		}
 	}
@@ -1062,37 +991,33 @@ building_ad_E_cap = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_E_cap
+						has_country_flag = build_ad_E_cap
 					}
 				}
-				set_country_flag = built_ad_E_cap
+				set_country_flag = build_ad_E_cap
 			}
 		}
+		set_planet_flag = build_planet_ad_E_cap
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_E_cap
-				}
-				remove_country_flag = built_ad_E_cap
-			}
+			remove_country_flag = build_ad_E_cap
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_E_cap
+			set_country_flag = build_ad_E_cap
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_E_cap
+					has_country_flag = build_ad_E_cap
 				}
-				remove_country_flag = built_ad_E_cap
+				remove_country_flag = build_ad_E_cap
 			}
 		}
 	}
@@ -1109,7 +1034,7 @@ building_ad_C_cap = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_C_cap
+					has_country_flag = build_ad_C_cap
 				}
 			}
 		}
@@ -1130,37 +1055,33 @@ building_ad_C_cap = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_C_cap
+						has_country_flag = build_ad_C_cap
 					}
 				}
-				set_country_flag = built_ad_C_cap
+				set_country_flag = build_ad_C_cap
 			}
 		}
+		set_planet_flag = build_planet_ad_C_cap
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_C_cap
-				}
-				remove_country_flag = built_ad_C_cap
-			}
+			remove_country_flag = build_ad_C_cap
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_C_cap
+			set_country_flag = build_ad_C_cap
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_C_cap
+					has_country_flag = build_ad_C_cap
 				}
-				remove_country_flag = built_ad_C_cap
+				remove_country_flag = build_ad_C_cap
 			}
 		}
 	}
@@ -1176,7 +1097,7 @@ building_ad_E_court = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_E_court
+				has_country_flag = build_ad_E_court
 			}
 		}
 	}
@@ -1198,37 +1119,33 @@ building_ad_E_court = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_E_court
+						has_country_flag = build_ad_E_court
 					}
 				}
-				set_country_flag = built_ad_E_court
+				set_country_flag = build_ad_E_court
 			}
 		}
+		set_planet_flag = build_planet_ad_E_court
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_E_court
-				}
-				remove_country_flag = built_ad_E_court
-			}
+			remove_country_flag = build_ad_E_court
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_E_court
+			set_country_flag = build_ad_E_court
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_E_court
+					has_country_flag = build_ad_E_court
 				}
-				remove_country_flag = built_ad_E_court
+				remove_country_flag = build_ad_E_court
 			}
 		}
 	}
@@ -1245,7 +1162,7 @@ building_ad_C_court = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_C_court
+					has_country_flag = build_ad_C_court
 				}
 			}
 		}
@@ -1268,37 +1185,33 @@ building_ad_C_court = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_C_court
+						has_country_flag = build_ad_C_court
 					}
 				}
-				set_country_flag = built_ad_C_court
+				set_country_flag = build_ad_C_court
 			}
 		}
+		set_planet_flag = build_planet_ad_C_court
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_C_court
-				}
-				remove_country_flag = built_ad_C_court
-			}
+			remove_country_flag = build_ad_C_court
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_C_court
+			set_country_flag = build_ad_C_court
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_C_court
+					has_country_flag = build_ad_C_court
 				}
-				remove_country_flag = built_ad_C_court
+				remove_country_flag = build_ad_C_court
 			}
 		}
 	}
@@ -1315,7 +1228,7 @@ building_ad_E_bank = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_E_bank
+				has_country_flag = build_ad_E_bank
 			}
 		}
 	}
@@ -1340,43 +1253,39 @@ building_ad_E_bank = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_E_bank
+						has_country_flag = build_ad_E_bank
 					}
 				}
-				set_country_flag = built_ad_E_bank
+				set_country_flag = build_ad_E_bank
 			}
 		}
+		set_planet_flag = build_planet_ad_E_bank
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_E_bank
-				}
-				remove_country_flag = built_ad_E_bank
-			}
+			remove_country_flag = build_ad_E_bank
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_E_bank
+			set_country_flag = build_ad_E_bank
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_E_bank
+					has_country_flag = build_ad_E_bank
 				}
-				remove_country_flag = built_ad_E_bank
+				remove_country_flag = build_ad_E_bank
 			}
 		}
 	}
 	ai_resource_production = {
 		energy = 8
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 	}
@@ -1393,7 +1302,7 @@ building_ad_O_bank = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_O_bank
+					has_country_flag = build_ad_O_bank
 				}
 			}
 		}
@@ -1419,44 +1328,33 @@ building_ad_O_bank = {
 	}
 	on_built = {
 		owner = {
-			if = {
-				limit = { 
-					NOT = {
-						has_country_flag = built_ad_O_bank
-					}
-				}
-				set_country_flag = built_ad_O_bank
-			}
+			set_country_flag = build_ad_O_bank
 		}
+		set_planet_flag = build_planet_ad_O_bank
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_O_bank
-				}
-				remove_country_flag = built_ad_O_bank
-			}
+			remove_country_flag = build_ad_O_bank
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_O_bank
+			set_country_flag = build_ad_O_bank
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_O_bank
+					has_country_flag = build_ad_O_bank
 				}
-				remove_country_flag = built_ad_O_bank
+				remove_country_flag = build_ad_O_bank
 			}
 		}
 	}
 	ai_resource_production = {
 		energy = 8
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 	}
@@ -1472,7 +1370,7 @@ building_ad_E_mil = {
 			is_regular_empire = yes
 			NOR = {
 				has_authority = auth_corporate
-				has_country_flag = built_ad_E_mil
+				has_country_flag = build_ad_E_mil
 			}
 		}
 	}
@@ -1497,38 +1395,27 @@ building_ad_E_mil = {
 	}
 	on_built = {
 		owner = {
-			if = {
-				limit = { 
-					NOT = {
-						has_country_flag = built_ad_E_mil
-					}
-				}
-				set_country_flag = built_ad_E_mil
-			}
+			set_country_flag = build_ad_E_mil
 		}
+		set_planet_flag = build_planet_ad_E_mil
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_E_mil
-				}
-				remove_country_flag = built_ad_E_mil
-			}
+			remove_country_flag = build_ad_E_mil
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_E_mil
+			set_country_flag = build_ad_E_mil
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_E_mil
+					has_country_flag = build_ad_E_mil
 				}
-				remove_country_flag = built_ad_E_mil
+				remove_country_flag = build_ad_E_mil
 			}
 		}
 	}
@@ -1545,7 +1432,7 @@ building_ad_C_mil = {
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
-					has_country_flag = built_ad_C_mil
+					has_country_flag = build_ad_C_mil
 				}
 			}
 		}
@@ -1572,37 +1459,33 @@ building_ad_C_mil = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_C_mil
+						has_country_flag = build_ad_C_mil
 					}
 				}
-				set_country_flag = built_ad_C_mil
+				set_country_flag = build_ad_C_mil
 			}
 		}
+		set_planet_flag = build_planet_ad_C_mil
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_C_mil
-				}
-				remove_country_flag = built_ad_C_mil
-			}
+			remove_country_flag = build_ad_C_mil
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_C_mil
+			set_country_flag = build_ad_C_mil
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_C_mil
+					has_country_flag = build_ad_C_mil
 				}
-				remove_country_flag = built_ad_C_mil
+				remove_country_flag = build_ad_C_mil
 			}
 		}
 	}
@@ -1617,7 +1500,7 @@ building_ad_broad = {
 		owner = {
 			is_regular_empire = yes
 			NOT = {
-				has_country_flag = built_ad_broad
+				has_country_flag = build_ad_broad
 			}
 		}
 	}
@@ -1642,37 +1525,33 @@ building_ad_broad = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_broad
+						has_country_flag = build_ad_broad
 					}
 				}
-				set_country_flag = built_ad_broad
+				set_country_flag = build_ad_broad
 			}
 		}
+		set_planet_flag = build_planet_ad_broad
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_broad
-				}
-				remove_country_flag = built_ad_broad
-			}
+			remove_country_flag = build_ad_broad
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_broad
+			set_country_flag = build_ad_broad
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_broad
+					has_country_flag = build_ad_broad
 				}
-				remove_country_flag = built_ad_broad
+				remove_country_flag = build_ad_broad
 			}
 		}
 	}
@@ -1687,7 +1566,7 @@ building_ad_G_datebank = {
 		owner = {
 			is_regular_empire = yes
 			NOT = {
-				has_country_flag = built_ad_G_datebank
+				has_country_flag = build_ad_G_datebank
 			}
 		}
 	}
@@ -1709,37 +1588,33 @@ building_ad_G_datebank = {
 	on_built = {
 		owner = {
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
-						has_country_flag = built_ad_G_datebank
+						has_country_flag = build_ad_G_datebank
 					}
 				}
-				set_country_flag = built_ad_G_datebank
+				set_country_flag = build_ad_G_datebank
 			}
 		}
+		set_planet_flag = build_planet_ad_G_datebank
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_G_datebank
-				}
-				remove_country_flag = built_ad_G_datebank
-			}
+			remove_country_flag = build_ad_G_datebank
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_G_datebank
+			set_country_flag = build_ad_G_datebank
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_G_datebank
+					has_country_flag = build_ad_G_datebank
 				}
-				remove_country_flag = built_ad_G_datebank
+				remove_country_flag = build_ad_G_datebank
 			}
 		}
 	}
@@ -1754,7 +1629,7 @@ building_ad_medicinelab = {
 		owner = {
 			is_regular_empire = yes
 			NOT = {
-				has_country_flag = built_ad_medicinelab
+				has_country_flag = build_ad_medicinelab
 			}
 		}
 	}
@@ -1780,35 +1655,31 @@ building_ad_medicinelab = {
 			if = {
 				limit = {
 					NOT = {
-						has_country_flag = built_ad_medicinelab
+						has_country_flag = build_ad_medicinelab
 					}
 				}
-				set_country_flag = built_ad_medicinelab
+				set_country_flag = build_ad_medicinelab
 			}
 		}
+		set_planet_flag = build_planet_ad_medicinelab
 	}
 	on_destroy = {
 		owner = {
-			if = {
-				limit = {
-					has_country_flag = built_ad_medicinelab
-				}
-				remove_country_flag = built_ad_medicinelab
-			}
+			remove_country_flag = build_ad_medicinelab
 		}
 	}
 	on_queued = {
 		owner = {
-			set_country_flag = built_ad_medicinelab
+			set_country_flag = build_ad_medicinelab
 		}
 	}
 	on_unqueued = {
 		owner = {
 			if = {
 				limit = {
-					has_country_flag = built_ad_medicinelab
+					has_country_flag = build_ad_medicinelab
 				}
-				remove_country_flag = built_ad_medicinelab
+				remove_country_flag = build_ad_medicinelab
 			}
 		}
 	}
@@ -1892,7 +1763,7 @@ building_ad_welness = {
 		job_bureaucrat_add = 1
 		job_clerk_add = 2
 		job_ad_servicer_add = 4
-		job_ad_servicer_per_pop = 0.05 # 1 per 20
+		job_ad_servicer_per_pop = 0.05		# 1 per 20
 	}
 	resources = {
 		category = planet_buildings
@@ -1921,7 +1792,7 @@ building_ad_P_Police = {
 		job_bureaucrat_add = 1
 		job_ad_psp_add = 2
 		job_enforcer_add = 2
-		job_enforcer_per_pop = 0.04 # 1 per 25
+		job_enforcer_per_pop = 0.04		# 1 per 25
 	}
 	country_modifier = {
 		intel_encryption_add = 5
@@ -1956,7 +1827,7 @@ building_ad_labor = {
 	planet_modifier = {
 		job_bureaucrat_add = 1
 		job_ad_forcrd_larbor_add = 10
-		job_ad_forcrd_larbor_per_pop = 0.05 # 1 per 20
+		job_ad_forcrd_larbor_per_pop = 0.05		# 1 per 20
 	}
 	resources = {
 		category = planet_buildings
@@ -1983,7 +1854,7 @@ building_ad_Co_bank = {
 	}
 	planet_modifier = {
 		job_ad_banker_add = 2
-		job_colonist_per_pop = 0.04 # 1 per 25
+		job_colonist_per_pop = 0.04		# 1 per 25
 	}
 	resources = {
 		category = planet_buildings
@@ -2017,7 +1888,7 @@ building_ad_inobate = {
 		job_ad_entrepreneur_add = 2
 		job_manager_add = 2
 		job_clerk_add = 5
-		job_clerk_per_pop = 0.05 # 1 per 20
+		job_clerk_per_pop = 0.05		# 1 per 20
 	}
 	resources = {
 		category = planet_buildings
@@ -2156,7 +2027,7 @@ building_ad_presidential = {
 		job_manager_add = 2
 		job_ad_lawyer_add = 2
 		job_clerk_add = 5
-		job_clerk_per_pop = 0.05 # 1 per 20
+		job_clerk_per_pop = 0.05		# 1 per 20
 	}
 	resources = {
 		category = planet_buildings

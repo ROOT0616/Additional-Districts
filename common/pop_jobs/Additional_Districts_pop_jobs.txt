@@ -1641,7 +1641,7 @@ ad_commissioned_officer = {
 		country_naval_cap_add = 10
 	}
 	resources = {
-		category = armies
+		category = planet_soldiers
 		upkeep = {
 			consumer_goods = 3
 		}
@@ -1928,7 +1928,7 @@ ad_general_officer = {
 		country_naval_cap_add = 16
 	}
 	resources = {
-		category = armies
+		category = planet_soldiers
 		upkeep = {
 			consumer_goods = 2
 		}
