@@ -1607,7 +1607,7 @@ ad_infrastructure_engineer = {
 		specialist_job_check_trigger = yes
 	}
 	planet_modifier = {
-		planet_jobs_specialist_produces_mult = 0.05
+		planet_jobs_worker_produces_mult = 0.05
 	}
 	resources = {
 		category = planet_technician

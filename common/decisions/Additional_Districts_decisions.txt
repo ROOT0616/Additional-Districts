@@ -68,6 +68,9 @@ decision_ad_large_scale_air_area_construction = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+		NOT = {
 			has_planet_flag = do_ad_sky_cities
 		}
 	}
@@ -116,6 +119,9 @@ decision_ad_large_scale_water_area_construction = {
 	}
 	potential = {
 		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+		NOT = {
 			has_planet_flag = do_ad_under_water_cities
 		}
 	}
@@ -153,6 +159,9 @@ decision_ad_large_scale_underground_area_construction = {
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
 		NOT = {
 			has_planet_flag = do_ad_underground_cities
 		}
@@ -361,33 +370,25 @@ decision_ad_undo_government_district = {
 			remove_planet_flag = do_ad_government_district
 			if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
+					has_planet_flag = do_ad_4
 				}
 				remove_planet_flag = do_ad_4
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
+					has_planet_flag = do_ad_3
 				}
 				remove_planet_flag = do_ad_3
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
+					has_planet_flag = do_ad_2
 				}
 				remove_planet_flag = do_ad_2
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
+					has_planet_flag = do_ad_1
 				}
 				remove_planet_flag = do_ad_1
 			}
@@ -492,33 +493,25 @@ decision_ad_undo_university_district = {
 			remove_planet_flag = do_ad_university_district
 			if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
+					has_planet_flag = do_ad_4
 				}
 				remove_planet_flag = do_ad_4
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
+					has_planet_flag = do_ad_3
 				}
 				remove_planet_flag = do_ad_3
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
+					has_planet_flag = do_ad_2
 				}
 				remove_planet_flag = do_ad_2
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
+					has_planet_flag = do_ad_1
 				}
 				remove_planet_flag = do_ad_1
 			}
@@ -540,6 +533,9 @@ decision_ad_residential_area = {
 		}
 	}
 	potential = {
+		NOT = {
+			has_planet_flag = do_ad_4
+		}
 		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
@@ -586,6 +582,30 @@ decision_ad_undo_residential_area = {
 		remove_deposit = d_ad_residential_area
 		hidden_effect = {
 			remove_planet_flag = do_ad_residential_area
+			if = {
+				limit = {
+					has_planet_flag = do_ad_4
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_3
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_2
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_1
+				}
+				remove_planet_flag = do_ad_1
+			}
 		}
 	}
 	ai_weight = {
@@ -687,33 +707,25 @@ decision_ad_undo_shipbuilding_arsenal = {
 			remove_planet_flag = do_ad_shipbuilding_arsenal
 			if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
+					has_planet_flag = do_ad_4
 				}
 				remove_planet_flag = do_ad_4
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
+					has_planet_flag = do_ad_3
 				}
 				remove_planet_flag = do_ad_3
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
+					has_planet_flag = do_ad_2
 				}
 				remove_planet_flag = do_ad_2
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
+					has_planet_flag = do_ad_1
 				}
 				remove_planet_flag = do_ad_1
 			}
@@ -818,33 +830,25 @@ decision_ad_undo_communication_area = {
 			remove_planet_flag = do_ad_communication_area
 			if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
+					has_planet_flag = do_ad_4
 				}
 				remove_planet_flag = do_ad_4
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
+					has_planet_flag = do_ad_3
 				}
 				remove_planet_flag = do_ad_3
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
+					has_planet_flag = do_ad_2
 				}
 				remove_planet_flag = do_ad_2
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
+					has_planet_flag = do_ad_1
 				}
 				remove_planet_flag = do_ad_1
 			}
@@ -949,33 +953,25 @@ decision_ad_undo_tourist_area = {
 			remove_planet_flag = do_ad_tourist_area
 			if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
+					has_planet_flag = do_ad_4
 				}
 				remove_planet_flag = do_ad_4
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
+					has_planet_flag = do_ad_3
 				}
 				remove_planet_flag = do_ad_3
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
+					has_planet_flag = do_ad_2
 				}
 				remove_planet_flag = do_ad_2
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
+					has_planet_flag = do_ad_1
 				}
 				remove_planet_flag = do_ad_1
 			}
@@ -1080,33 +1076,25 @@ decision_ad_undo_defense_zone = {
 			remove_planet_flag = do_ad_defense_zone
 			if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
+					has_planet_flag = do_ad_4
 				}
 				remove_planet_flag = do_ad_4
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
+					has_planet_flag = do_ad_3
 				}
 				remove_planet_flag = do_ad_3
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
+					has_planet_flag = do_ad_2
 				}
 				remove_planet_flag = do_ad_2
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
+					has_planet_flag = do_ad_1
 				}
 				remove_planet_flag = do_ad_1
 			}
@@ -1211,33 +1199,25 @@ decision_ad_undo_conceptual_zone = {
 			remove_planet_flag = do_ad_conceptual_zone
 			if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
+					has_planet_flag = do_ad_4
 				}
 				remove_planet_flag = do_ad_4
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
+					has_planet_flag = do_ad_3
 				}
 				remove_planet_flag = do_ad_3
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
+					has_planet_flag = do_ad_2
 				}
 				remove_planet_flag = do_ad_2
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
+					has_planet_flag = do_ad_1
 				}
 				remove_planet_flag = do_ad_1
 			}
@@ -1342,33 +1322,25 @@ decision_ad_undo_special_research_zone = {
 			remove_planet_flag = do_ad_special_research_zone
 			if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
+					has_planet_flag = do_ad_4
 				}
 				remove_planet_flag = do_ad_4
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
+					has_planet_flag = do_ad_3
 				}
 				remove_planet_flag = do_ad_3
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
+					has_planet_flag = do_ad_2
 				}
 				remove_planet_flag = do_ad_2
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
+					has_planet_flag = do_ad_1
 				}
 				remove_planet_flag = do_ad_1
 			}
@@ -1473,33 +1445,25 @@ decision_ad_undo_spaceport_area = {
 			remove_planet_flag = do_ad_spaceport_area
 			if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
+					has_planet_flag = do_ad_4
 				}
 				remove_planet_flag = do_ad_4
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
+					has_planet_flag = do_ad_3
 				}
 				remove_planet_flag = do_ad_3
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
+					has_planet_flag = do_ad_2
 				}
 				remove_planet_flag = do_ad_2
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
+					has_planet_flag = do_ad_1
 				}
 				remove_planet_flag = do_ad_1
 			}
@@ -1604,33 +1568,25 @@ decision_ad_undo_orbital_elevator = {
 			remove_planet_flag = do_ad_orbital_elevator
 			if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
+					has_planet_flag = do_ad_4
 				}
 				remove_planet_flag = do_ad_4
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
+					has_planet_flag = do_ad_3
 				}
 				remove_planet_flag = do_ad_3
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
+					has_planet_flag = do_ad_2
 				}
 				remove_planet_flag = do_ad_2
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
+					has_planet_flag = do_ad_1
 				}
 				remove_planet_flag = do_ad_1
 			}
