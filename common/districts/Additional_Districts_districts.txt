@@ -10,12 +10,14 @@ district_ad_archaeological_cities = {
 		OR = {
 			uses_district_set = standard
 			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 	}
 	potential = {
 		OR = {
 			uses_district_set = standard
 			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 		has_planet_flag = do_ad_archaeological_cities
 	}
@@ -171,12 +173,14 @@ district_ad_sky_cities = {
 		OR = {
 			uses_district_set = standard
 			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 	}
 	potential = {
 		OR = {
 			uses_district_set = standard
 			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 		has_planet_flag = do_ad_sky_cities
 	}
@@ -337,12 +341,14 @@ district_ad_water_cities = {
 		OR = {
 			uses_district_set = standard
 			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 	}
 	potential = {
 		OR = {
 			uses_district_set = standard
 			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 		has_planet_flag = do_ad_water_cities
 	}
@@ -509,12 +515,14 @@ district_ad_under_water_cities = {
 		OR = {
 			uses_district_set = standard
 			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 	}
 	potential = {
 		OR = {
 			uses_district_set = standard
 			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 		has_planet_flag = do_ad_under_water_cities
 	}
@@ -661,12 +669,14 @@ district_ad_underground_cities = {
 		OR = {
 			uses_district_set = standard
 			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 	}
 	potential = {
 		OR = {
 			uses_district_set = standard
 			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 		has_planet_flag = do_ad_underground_cities
 	}
@@ -824,15 +834,25 @@ district_ad_underground_cities = {
 district_ad_solar_power_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
 		has_planet_flag = do_ad_solar_power_generation
 	}
 	allow = {
 		has_deposit = d_ad_solar_power_generation
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_generator
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -855,7 +875,9 @@ district_ad_solar_power_generation = {
 				}
 			}
 		}
-		job_technician_add = 5
+		modifier = {
+			job_technician_add = 5
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -863,6 +885,9 @@ district_ad_solar_power_generation = {
 			owner = {
 				has_ethic = ethic_gestalt_consciousness
 			}
+		}
+		modifier = {
+			job_technician_drone_add = 5
 		}
 	}
 	ai_weight = {
@@ -920,87 +945,25 @@ district_ad_solar_power_generation = {
 district_ad_geothermal_electric_power_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
 		has_planet_flag = do_ad_geothermal_electric_power_generation
 	}
 	allow = {
 		has_deposit = d_ad_geothermal_electric_power_generation
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_generator
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -1012,7 +975,30 @@ district_ad_geothermal_electric_power_generation = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_geothermal_technician_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
+		}
+		modifier = {
+			job_ad_geothermal_technician_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			job_ad_geothermal_technician_drone_add = 4
+		}
 	}
 	ai_weight = {
 		weight = 6
@@ -1078,87 +1064,25 @@ district_ad_geothermal_electric_power_generation = {
 district_ad_tidal_current_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
 		has_planet_flag = do_ad_tidal_current_generation
 	}
 	allow = {
 		has_deposit = d_ad_tidal_current_generation
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_generator
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -1172,7 +1096,30 @@ district_ad_tidal_current_generation = {
 	planet_modifier = {
 		planet_housing_add = 2
 		planet_max_districts_add = 1
-		job_technician_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
+		}
+		modifier = {
+			job_technician_add = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			job_technician_drone_add = 5
+		}
 	}
 	ai_weight = {
 		weight = 6
@@ -1238,87 +1185,25 @@ district_ad_tidal_current_generation = {
 district_ad_natural_nuclear_power_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
 		has_planet_flag = do_ad_natural_nuclear_power_generation
 	}
 	allow = {
 		has_deposit = d_ad_natural_nuclear_power_generation
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_generator
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -1331,7 +1216,30 @@ district_ad_natural_nuclear_power_generation = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_atomic_engineer_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
+		}
+		modifier = {
+			job_ad_atomic_engineer_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			job_ad_atomic_engineer_drone_add = 2
+		}
 	}
 	ai_weight = {
 		weight = 5.5
@@ -1405,15 +1313,25 @@ district_ad_natural_nuclear_power_generation = {
 district_ad_open_pit_ore_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
 		has_planet_flag = do_ad_open_pit_ore_deposits
 	}
 	allow = {
 		has_deposit = d_ad_open_pit_ore_deposits
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_mining
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -1425,7 +1343,91 @@ district_ad_open_pit_ore_deposits = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_miner_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_mining_drone_add = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_mining_drone_add = 2
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_miner_add = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_mine_add = 5
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_mining_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_miner_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		text = job_fe_acolyte_mine_effect_desc
 	}
 	ai_weight = {
 		weight = 6
@@ -1491,87 +1493,25 @@ district_ad_open_pit_ore_deposits = {
 district_ad_under_water_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
 		has_planet_flag = do_ad_under_water_deposits
 	}
 	allow = {
 		has_deposit = d_ad_under_water_deposits
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_mining
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -1584,7 +1524,63 @@ district_ad_under_water_deposits = {
 	planet_modifier = {
 		planet_housing_add = 2
 		planet_max_districts_add = 1
-		job_ad_underwater_miner_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_underwater_miner_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_underwater_miner_drone_add = 2
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_ad_underwater_miner_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_mine_add = 2
+		}
 	}
 	ai_weight = {
 		weight = 5.5
@@ -1650,87 +1646,25 @@ district_ad_under_water_deposits = {
 district_ad_orbital_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
 		has_planet_flag = do_ad_orbital_deposits
 	}
 	allow = {
 		has_deposit = d_ad_orbital_deposits
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_mining
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -1744,7 +1678,63 @@ district_ad_orbital_deposits = {
 	planet_modifier = {
 		planet_housing_add = 2
 		planet_max_districts_add = 1
-		job_ad_space_miner_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_space_miner_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_space_miner_drone_add = 2
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_ad_space_miner_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_mine_add = 2
+		}
 	}
 	ai_weight = {
 		weight = 5
@@ -1810,15 +1800,25 @@ district_ad_orbital_deposits = {
 district_ad_high_quality_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
 		has_planet_flag = do_ad_high_quality_deposits
 	}
 	allow = {
 		has_deposit = d_ad_high_quality_deposits
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_mining
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -1831,7 +1831,63 @@ district_ad_high_quality_deposits = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_efficient_miner_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_efficient_miner_drone_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_efficient_miner_drone_add = 2
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_ad_efficient_miner_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_mine_add = 3
+		}
 	}
 	ai_weight = {
 		weight = 8
@@ -1897,15 +1953,25 @@ district_ad_high_quality_deposits = {
 district_ad_low_quality_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
 		has_planet_flag = do_ad_low_quality_deposits
 	}
 	allow = {
 		has_deposit = d_ad_low_quality_deposits
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_mining
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -1918,7 +1984,63 @@ district_ad_low_quality_deposits = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_low_efficiency_miner_add = 7
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_low_efficiency_miner_drone_add = 7
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_low_efficiency_miner_drone_add = 2
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_ad_low_efficiency_miner_add = 7
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_mine_add = 7
+		}
 	}
 	ai_weight = {
 		weight = 4.5
@@ -1992,87 +2114,25 @@ district_ad_low_quality_deposits = {
 district_ad_shed_cultivation_land = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
 		has_planet_flag = do_ad_shed_cultivation_land
 	}
 	allow = {
 		has_deposit = d_ad_shed_cultivation_land
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_farming
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -2084,7 +2144,103 @@ district_ad_shed_cultivation_land = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_farmer_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_agrarian_idyll
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_agri_drone_add = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_agri_drone_add = 2
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_farmer_add = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_farm_add = 5
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_agri_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_farmer_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		text = job_fe_acolyte_farm_effect_desc
 	}
 	ai_weight = {
 		weight = 6
@@ -2150,87 +2306,25 @@ district_ad_shed_cultivation_land = {
 district_ad_in_water_ecosystem = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
 		has_planet_flag = do_ad_in_water_ecosystem
 	}
 	allow = {
 		has_deposit = d_ad_in_water_ecosystem
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_farming
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -2243,7 +2337,75 @@ district_ad_in_water_ecosystem = {
 	planet_modifier = {
 		planet_housing_add = 2
 		planet_max_districts_add = 1
-		job_ad_water_farmer_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_agrarian_idyll
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_water_farmer_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_water_farmer_drone_add = 2
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_ad_water_farmer_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_farm_add = 2
+		}
 	}
 	ai_weight = {
 		weight = 6
@@ -2309,87 +2471,25 @@ district_ad_in_water_ecosystem = {
 district_ad_mycorrhizal_communities = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
 		has_planet_flag = do_ad_mycorrhizal_communities
 	}
 	allow = {
 		has_deposit = d_ad_mycorrhizal_communities
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_farming
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -2401,7 +2501,75 @@ district_ad_mycorrhizal_communities = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_fungus_farmer_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_agrarian_idyll
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_fungus_farmer_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_fungus_farmer_drone_add = 2
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_ad_fungus_farmer_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_farm_add = 2
+		}
 	}
 	ai_weight = {
 		weight = 4
@@ -2458,87 +2626,25 @@ district_ad_mycorrhizal_communities = {
 district_ad_large_scale_grazing_land = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
 		has_planet_flag = do_ad_large_scale_grazing_land
 	}
 	allow = {
 		has_deposit = d_ad_large_scale_grazing_land
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_farming
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -2550,7 +2656,75 @@ district_ad_large_scale_grazing_land = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_dairy_farmer_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_agrarian_idyll
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_dairy_farmer_drone_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_dairy_farmer_drone_add = 2
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_ad_dairy_farmer_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_farm_add = 4
+		}
 	}
 	ai_weight = {
 		weight = 6
@@ -2616,87 +2790,25 @@ district_ad_large_scale_grazing_land = {
 district_ad_large_scale_agricultural_land = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
 		has_planet_flag = do_ad_large_scale_agricultural_land
 	}
 	allow = {
 		has_deposit = d_ad_large_scale_agricultural_land
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_farming
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -2708,7 +2820,75 @@ district_ad_large_scale_agricultural_land = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_large_scale_farmer_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_agrarian_idyll
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_large_scale_farmer_drone_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_large_scale_farmer_drone_add = 2
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_ad_large_scale_farmer_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_fallen_empire_spiritualist = yes
+			}
+		}
+		modifier = {
+			job_fe_acolyte_farm_add = 4
+		}
 	}
 	ai_weight = {
 		weight = 6
@@ -2781,15 +2961,24 @@ district_ad_large_scale_agricultural_land = {
 district_ad_ancient_ruins = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
 		has_planet_flag = do_ad_ancient_ruins
 	}
 	allow = {
 		has_deposit = d_ad_ancient_ruins
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -2801,7 +2990,28 @@ district_ad_ancient_ruins = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_excavator_add = 6
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_excavator_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_excavator_drone_add = 6
+		}
 	}
 	ai_weight = {
 		weight = 15
@@ -2824,15 +3034,24 @@ district_ad_ancient_ruins = {
 district_ad_ancient_databank = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
 		has_planet_flag = do_ad_ancient_databank
 	}
 	allow = {
 		has_deposit = d_ad_ancient_databank
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -2844,7 +3063,28 @@ district_ad_ancient_databank = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_ad_data_minor_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_data_minor_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_data_minor_drone_add = 4
+		}
 	}
 	ai_weight = {
 		weight = 15
@@ -2879,7 +3119,11 @@ district_ad_ancient_databank = {
 district_ad_natural_fortress = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
 		OR = {
@@ -2958,8 +3202,13 @@ district_ad_natural_fortress = {
 	}
 	allow = {
 		has_deposit = d_ad_natural_fortress
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -2971,9 +3220,30 @@ district_ad_natural_fortress = {
 		}
 	}
 	planet_modifier = {
-		planet_orbital_bombardment_damage = -0.05
+		planet_orbital_bombardment_damage = -0.1
 		planet_housing_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
 		job_soldier_add = 4
+	}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_soldier_drone_add = 4
+		}
 	}
 	ai_weight = {
 		weight = 15
@@ -2996,7 +3266,11 @@ district_ad_natural_fortress = {
 district_ad_special_tourism_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
+		}
 	}
 	potential = {
 		OR = {
@@ -3075,8 +3349,13 @@ district_ad_special_tourism_zone = {
 	}
 	allow = {
 		has_deposit = d_ad_special_tourism_zone
+		NOT = {
+			has_modifier = resort_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
@@ -3088,9 +3367,30 @@ district_ad_special_tourism_zone = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
-		job_entertainer_add = 4
 		trade_value_add = 5
 		planet_amenities_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+		job_entertainer_add = 4
+	}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 4
+		}
 	}
 	ai_weight = {
 		weight = 15
@@ -4086,7 +4386,7 @@ district_ad_defense_zone = {
 		modifier = {
 			job_ad_general_officer_add = 2
 			job_ad_commissioned_officer_add = 4
-			job_soldier_add = 8	
+			job_soldier_add = 8
 		}
 	}
 	triggered_planet_modifier = {
@@ -4230,7 +4530,7 @@ district_ad_conceptual_zone = {
 		}
 		modifier = {
 			job_merchant_add = 2
-			job_ad_entrepreneur_add	= 6
+			job_ad_entrepreneur_add = 6
 		}
 	}
 	triggered_planet_modifier = {
@@ -4343,8 +4643,8 @@ district_ad_special_research_zone = {
 			do_is_arcology_planet = yes
 		}
 		modifier = {
-		job_head_researcher_add = 1
-		job_researcher_add = 2
+			job_head_researcher_add = 1
+			job_researcher_add = 2
 		}
 	}
 	triggered_planet_modifier = {
