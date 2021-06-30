@@ -1,4 +1,5 @@
-@base_cost = 250
+@base_ad_cost = 250
+@base_ad_2cost = 300
 ##############################
 #####    都市区域追加    ######
 ##############################
@@ -6,94 +7,34 @@
 district_ad_archaeological_cities = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+		}
 	}
 	potential = {
 		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
+			uses_district_set = standard
+			uses_district_set = hive_world
 		}
 		has_planet_flag = do_ad_archaeological_cities
 	}
 	allow = {
 		has_deposit = d_ad_archaeological_cities
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
 	conversion_ratio = 1
-	# convert_to = {
-	# 	district_archaeological_cities_uncapped
-	# }
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
 	resources = {
 		category = planet_districts_cities
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -103,7 +44,87 @@ district_ad_archaeological_cities = {
 	planet_modifier = {
 		planet_housing_add = 5
 		planet_max_buildings_add = 1
-		job_ad_excavator_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_excavator_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_excavator_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_non_swapped_tradition = tr_prosperity_public_works
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = {
+					has_valid_civic = civic_agrarian_idyll
+				}
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+			}
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
 	}
 	ai_weight = {
 		weight = 2.5
@@ -128,6 +149,12 @@ district_ad_archaeological_cities = {
 			factor = 5
 			free_housing <= 5
 		}
+		modifier = {
+			weight = 10000
+			planet = {
+				free_district_slots <= 1
+			}
+		}
 	}
 	ai_resource_production = {
 		minor_artifacts = 2
@@ -141,15 +168,30 @@ district_ad_archaeological_cities = {
 district_ad_sky_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+		}
 	}
 	potential = {
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+		}
 		has_planet_flag = do_ad_sky_cities
 	}
 	allow = {
 		has_deposit = d_ad_sky_cities
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
 	resources = {
 		category = planet_districts_cities
 		cost = {
@@ -164,8 +206,106 @@ district_ad_sky_cities = {
 		planet_housing_add = 30
 		planet_max_districts_add = 1
 		planet_max_buildings_add = 3
-		job_clerk_add = 2
 		trade_value_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_clerk_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_non_swapped_tradition = tr_prosperity_public_works
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = {
+					has_valid_civic = civic_agrarian_idyll
+				}
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+			}
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		text = job_clerk_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_maintenance_drone_effect_desc
 	}
 	ai_weight = {
 		weight = 3
@@ -194,87 +334,30 @@ district_ad_sky_cities = {
 district_ad_water_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+		}
 	}
 	potential = {
 		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
+			uses_district_set = standard
+			uses_district_set = hive_world
 		}
 		has_planet_flag = do_ad_water_cities
 	}
 	allow = {
 		has_deposit = d_ad_water_cities
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
 	resources = {
 		category = planet_districts_cities
 		cost = {
@@ -289,8 +372,106 @@ district_ad_water_cities = {
 		planet_housing_add = 20
 		planet_max_districts_add = 1
 		planet_max_buildings_add = 2
-		job_clerk_add = 2
 		trade_value_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_clerk_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_non_swapped_tradition = tr_prosperity_public_works
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = {
+					has_valid_civic = civic_agrarian_idyll
+				}
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+			}
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		text = job_clerk_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_maintenance_drone_effect_desc
 	}
 	ai_weight = {
 		weight = 2.8
@@ -306,9 +487,15 @@ district_ad_water_cities = {
 			factor = 5
 			free_housing <= 5
 		}
+		modifier = {
+			weight = 10000
+			planet = {
+				free_district_slots <= 1
+			}
+		}
 	}
 	ai_resource_production = {
-		energy = 8
+		energy = 4
 		trigger = {
 			always = yes
 		}
@@ -319,15 +506,30 @@ district_ad_water_cities = {
 district_ad_under_water_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+		}
 	}
 	potential = {
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+		}
 		has_planet_flag = do_ad_under_water_cities
 	}
 	allow = {
 		has_deposit = d_ad_under_water_cities
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
 	resources = {
 		category = planet_districts_cities
 		cost = {
@@ -342,7 +544,87 @@ district_ad_under_water_cities = {
 		planet_housing_add = 5
 		planet_max_districts_add = 1
 		planet_max_buildings_add = 1
-		job_ad_water_farmer_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_water_farmer_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_water_farmer_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_non_swapped_tradition = tr_prosperity_public_works
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = {
+					has_valid_civic = civic_agrarian_idyll
+				}
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+			}
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
 	}
 	ai_weight = {
 		weight = 2.5
@@ -358,6 +640,12 @@ district_ad_under_water_cities = {
 			factor = 5
 			free_housing < 5
 		}
+		modifier = {
+			weight = 10000
+			planet = {
+				free_district_slots <= 1
+			}
+		}
 	}
 	ai_resource_production = {
 		food = 5
@@ -370,15 +658,30 @@ district_ad_under_water_cities = {
 district_ad_underground_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
-		uses_district_set = standard
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+		}
 	}
 	potential = {
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+		}
 		has_planet_flag = do_ad_underground_cities
 	}
 	allow = {
 		has_deposit = d_ad_underground_cities
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
 	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+	}
 	resources = {
 		category = planet_districts_cities
 		cost = {
@@ -393,7 +696,87 @@ district_ad_underground_cities = {
 		planet_housing_add = 5
 		planet_max_districts_add = 1
 		planet_max_buildings_add = 1
-		job_ad_facility_maintainer_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_facility_maintainer_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_facility_maintainer_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_non_swapped_tradition = tr_prosperity_public_works
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = {
+					has_valid_civic = civic_agrarian_idyll
+				}
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+			}
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
 	}
 	ai_weight = {
 		weight = 2.5
@@ -408,6 +791,18 @@ district_ad_underground_cities = {
 		modifier = {
 			factor = 5
 			free_housing < 5
+		}
+		modifier = {
+			weight = 10000
+			planet = {
+				free_district_slots <= 1
+			}
+		}
+		modifier = {
+			weight = 10000
+			planet = {
+				free_district_slots <= 1
+			}
 		}
 	}
 	ai_resource_production = {
@@ -441,7 +836,7 @@ district_ad_solar_power_generation = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -450,7 +845,25 @@ district_ad_solar_power_generation = {
 	}
 	planet_modifier = {
 		planet_housing_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOT = {
+					has_ethic = ethic_gestalt_consciousness
+				}
+			}
+		}
 		job_technician_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_gestalt_consciousness
+			}
+		}
 	}
 	ai_weight = {
 		weight = 3
@@ -591,7 +1004,7 @@ district_ad_geothermal_electric_power_generation = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -645,7 +1058,7 @@ district_ad_geothermal_electric_power_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 8
+		energy = 4
 		trigger = {
 			always = yes
 		}
@@ -749,7 +1162,7 @@ district_ad_tidal_current_generation = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -811,7 +1224,7 @@ district_ad_tidal_current_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 16
+		energy = 8
 		trigger = {
 			OR = {
 				low_energy_income = yes
@@ -909,7 +1322,7 @@ district_ad_natural_nuclear_power_generation = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -964,13 +1377,13 @@ district_ad_natural_nuclear_power_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 8
+		energy = 4
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		energy = 16
+		energy = 8
 		trigger = {
 			OR = {
 				low_energy_income = yes
@@ -1004,7 +1417,7 @@ district_ad_open_pit_ore_deposits = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -1162,7 +1575,7 @@ district_ad_under_water_deposits = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -1321,7 +1734,7 @@ district_ad_orbital_deposits = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -1409,7 +1822,7 @@ district_ad_high_quality_deposits = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -1496,7 +1909,7 @@ district_ad_low_quality_deposits = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -1663,7 +2076,7 @@ district_ad_shed_cultivation_land = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 0.5
@@ -1821,7 +2234,7 @@ district_ad_in_water_ecosystem = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 0.5
@@ -1980,7 +2393,7 @@ district_ad_mycorrhizal_communities = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -2129,7 +2542,7 @@ district_ad_large_scale_grazing_land = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 0.5
@@ -2287,7 +2700,7 @@ district_ad_large_scale_agricultural_land = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 0.5
@@ -2380,7 +2793,7 @@ district_ad_ancient_ruins = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -2423,7 +2836,7 @@ district_ad_ancient_databank = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 3
@@ -2550,7 +2963,7 @@ district_ad_natural_fortress = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 1
@@ -2667,7 +3080,7 @@ district_ad_special_tourism_zone = {
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_cost
 		}
 		upkeep = {
 			energy = 3
@@ -2715,29 +3128,131 @@ district_ad_special_tourism_zone = {
 district_ad_government_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_government_district = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_government_district
 	}
 	allow = {
 		has_deposit = d_ad_government_district
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 2
 		planet_max_buildings_add = 1
-		job_administrator_add = 2
-		job_bureaucrat_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_administrator_add = 1
+			job_bureaucrat_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_synapse_drone_add = 4
+			job_maintenance_drone_add = 1
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_administrator_add = 1
+			job_bureaucrat_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+			job_synapse_drone = 2
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_administrator_add = 2
+			job_bureaucrat_add = 8
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+			job_synapse_drone = 8
+		}
 	}
 	ai_weight = {
 		weight = 1
@@ -2758,29 +3273,131 @@ district_ad_government_district = {
 district_ad_university_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_university_district = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_university_district
 	}
 	allow = {
 		has_deposit = d_ad_university_district
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 5
 		planet_max_buildings_add = 1
-		job_ad_professorship_add = 2
-		job_researcher_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_professorship_add = 2
+			job_researcher_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_professorship_drone_add = 2
+			job_calculator_add = 2
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_professorship_add = 1
+			job_researcher_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_calculator_add = 1
+			job_ad_professorship_drone_add = 1
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_professorship_add = 4
+			job_researcher_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_calculator_add = 4
+			job_ad_professorship_drone_add = 4
+		}
 	}
 	ai_weight = {
 		weight = 1
@@ -2801,7 +3418,7 @@ district_ad_university_district = {
 district_ad_residential_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_residential_area = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_residential_area
@@ -2809,20 +3426,111 @@ district_ad_residential_area = {
 	allow = {
 		has_deposit = d_ad_residential_area
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts_cities
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 10
 		planet_max_buildings_add = 1
-		job_clerk_add = 5
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_clerk_add = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_clerk_drone_add = 5
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_clerk_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_clerk_drone_add = 2
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 20
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_clerk_add = 10
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_clerk_drone_add = 10
+		}
 	}
 	ai_weight = {
 		weight = 1
@@ -2843,28 +3551,125 @@ district_ad_residential_area = {
 district_ad_shipbuilding_arsenal = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_shipbuilding_arsenal = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_shipbuilding_arsenal
 	}
 	allow = {
 		has_deposit = d_ad_shipbuilding_arsenal
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 2
 		planet_max_buildings_add = 1
-		job_ad_shipwright_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_shipwright_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_shipwright_drone_add = 2
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_shipwright_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_shipwright_drone_add = 1
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_shipwright_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_shipwright_add = 4
+		}
 	}
 	ai_weight = {
 		weight = 1
@@ -2885,28 +3690,125 @@ district_ad_shipbuilding_arsenal = {
 district_ad_communication_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_communication_area = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_communication_area
 	}
 	allow = {
 		has_deposit = d_ad_communication_area
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 2
 		planet_max_buildings_add = 1
-		job_ad_infrastructure_engineer_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_infrastructure_engineer_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_infrastructure_engineer_drone_add = 2
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_infrastructure_engineer_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_infrastructure_engineer_drone_add = 1
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_infrastructure_engineer_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_infrastructure_engineer_drone_add = 4
+		}
 	}
 	ai_weight = {
 		weight = 1
@@ -2927,28 +3829,125 @@ district_ad_communication_area = {
 district_ad_tourist_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_tourist_area = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_tourist_area
 	}
 	allow = {
 		has_deposit = d_ad_tourist_area
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 3
 		planet_max_buildings_add = 1
-		job_entertainer_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_entertainer_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_maintenance_drone_add = 4
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_entertainer_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_maintenance_drone_add = 2
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_entertainer_add = 8
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_maintenance_drone_add = 8
+		}
 	}
 	ai_weight = {
 		weight = 1
@@ -2969,30 +3968,137 @@ district_ad_tourist_area = {
 district_ad_defense_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_defense_zone = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_defense_zone
 	}
 	allow = {
 		has_deposit = d_ad_defense_zone
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 3
 		planet_max_buildings_add = 1
-		job_ad_general_officer_add = 1
-		job_ad_commissioned_officer_add = 2
-		job_soldier_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_general_officer_add = 1
+			job_ad_commissioned_officer_add = 2
+			job_soldier_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_general_officer_drone_add = 1
+			job_ad_commissioned_officer_drone_add = 2
+			job_warrior_drone_add = 4
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_general_officer_add = 1
+			job_ad_commissioned_officer_add = 1
+			job_soldier_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_general_officer_drone_add = 1
+			job_ad_commissioned_officer_drone_add = 1
+			job_warrior_drone_add = 2
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_general_officer_add = 2
+			job_ad_commissioned_officer_add = 4
+			job_soldier_add = 8	
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_general_officer_drone_add = 2
+			job_ad_commissioned_officer_drone_add = 4
+			job_warrior_drone_add = 8
+		}
 	}
 	ai_weight = {
 		weight = 1
@@ -3013,29 +4119,128 @@ district_ad_defense_zone = {
 district_ad_conceptual_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_conceptual_zone = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_conceptual_zone
 	}
 	allow = {
 		has_deposit = d_ad_conceptual_zone
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 2
 		planet_max_buildings_add = 1
-		job_merchant_add = 1
-		job_ad_entrepreneur_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_merchant_add = 1
+			job_ad_entrepreneur_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_entrepreneur_drone_add = 3
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_merchant_add = 1
+			job_ad_entrepreneur_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_entrepreneur_drone_add = 1
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_merchant_add = 2
+			job_ad_entrepreneur_add	= 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_entrepreneur_drone_add = 6
+		}
 	}
 	ai_weight = {
 		weight = 1
@@ -3056,29 +4261,128 @@ district_ad_conceptual_zone = {
 district_ad_special_research_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_special_research_zone = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_special_research_zone
 	}
 	allow = {
 		has_deposit = d_ad_special_research_zone
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 2
 		planet_max_buildings_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_head_researcher_add = 1
+			job_researcher_add = 5
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_calculator_add = 6
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
 		job_head_researcher_add = 1
-		job_researcher_add = 5
+		job_researcher_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_calculator_add = 3
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_head_researcher_add = 2
+			job_researcher_add = 10
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_calculator_add = 14
+		}
 	}
 	ai_weight = {
 		weight = 1
@@ -3099,28 +4403,125 @@ district_ad_special_research_zone = {
 district_ad_spaceport_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_spaceport_area = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_spaceport_area
 	}
 	allow = {
 		has_deposit = d_ad_spaceport_area
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
 		planet_housing_add = 2
 		planet_max_buildings_add = 1
-		job_ad_spaceport_mechanics_add = 3
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_drone_add = 6
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_add = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_drone_add = 3
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_add = 12
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_drone_add = 12
+		}
 	}
 	ai_weight = {
 		weight = 1
@@ -3141,22 +4542,44 @@ district_ad_spaceport_area = {
 district_ad_orbital_elevator = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		uses_district_set = standard
+		has_district_ad_orbital_elevator = yes
 	}
 	potential = {
 		has_planet_flag = do_ad_orbital_elevator
 	}
 	allow = {
 		has_deposit = d_ad_orbital_elevator
+		NOT = {
+			has_modifier = resort_colony
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-	conversion_ratio = 1
+	conversion_ratio = 0.75
+	convert_to = {
+	}
 	resources = {
 		category = planet_districts
 		cost = {
-			minerals = @base_cost
+			minerals = @base_ad_2cost
 		}
 		upkeep = {
 			energy = 3
+		}
+		### Arcology Planets
+		upkeep = {
+			trigger = {
+				do_is_arcology_planet = yes
+			}
+			energy = 4
+		}
+		### Ringworlds
+		upkeep = {
+			trigger = {
+				do_is_ringworld = yes
+			}
+			energy = 8
 		}
 	}
 	planet_modifier = {
@@ -3165,8 +4588,88 @@ district_ad_orbital_elevator = {
 		planet_amenities_add = 5
 		trade_value_add = 5
 		pop_happiness = 0.05
-		job_ad_spaceport_mechanics_add = 1
-		job_ad_shipwright_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_add = 1
+			job_ad_shipwright_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_drone_add = 1
+			job_ad_shipwright_drone_add = 1
+		}
+	}
+	### Arcology Planets
+	triggered_planet_modifier = {
+		potential = {
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			planet_housing_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_add = 1
+			job_ad_shipwright_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_arcology_planet = yes
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_drone_add = 1
+			job_ad_shipwright_drone_add = 1
+		}
+	}
+	### Ringworlds
+	triggered_planet_modifier = {
+		potential = {
+			do_is_ringworld = yes
+		}
+		modifier = {
+			planet_housing_add = 6
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_regular_empire = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_add = 2
+			job_ad_shipwright_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			is_gestalt = yes
+			do_is_ringworld = yes
+		}
+		modifier = {
+			job_ad_spaceport_mechanics_drone_add = 2
+			job_ad_shipwright_drone_add = 2
+		}
 	}
 	ai_weight = {
 		weight = 1

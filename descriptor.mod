@@ -1,4 +1,4 @@
-version="1.30"
+version="1.20"
 tags={
 	"Gameplay"
 	"Diplomacy"
