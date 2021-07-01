@@ -129,7 +129,7 @@ district_ad_archaeological_cities = {
 		}
 	}
 	ai_weight = {
-		weight = 2.5
+		weight = 100
 		modifier = {
 			factor = 100
 			owner = {
@@ -154,12 +154,12 @@ district_ad_archaeological_cities = {
 		modifier = {
 			weight = 10000
 			planet = {
-				free_district_slots <= 1
+				free_district_slots <= 2
 			}
 		}
 	}
 	ai_resource_production = {
-		minor_artifacts = 2
+		minor_artifacts = 10
 		trigger = {
 			always = yes
 		}
@@ -312,7 +312,7 @@ district_ad_sky_cities = {
 		text = job_maintenance_drone_effect_desc
 	}
 	ai_weight = {
-		weight = 3
+		weight = 100
 		modifier = {
 			factor = 100
 			free_housing < 0
@@ -480,7 +480,7 @@ district_ad_water_cities = {
 		text = job_maintenance_drone_effect_desc
 	}
 	ai_weight = {
-		weight = 2.8
+		weight = 100
 		modifier = {
 			factor = 100
 			free_housing < 0
@@ -635,7 +635,7 @@ district_ad_under_water_cities = {
 		}
 	}
 	ai_weight = {
-		weight = 2.5
+		weight = 80
 		modifier = {
 			factor = 100
 			free_housing < 0
@@ -789,7 +789,7 @@ district_ad_underground_cities = {
 		}
 	}
 	ai_weight = {
-		weight = 2.5
+		weight = 80
 		modifier = {
 			factor = 100
 			free_housing < 0
@@ -891,7 +891,7 @@ district_ad_solar_power_generation = {
 		}
 	}
 	ai_weight = {
-		weight = 3
+		weight = 30
 		modifier = {
 			factor = 3
 			owner = {
@@ -902,7 +902,7 @@ district_ad_solar_power_generation = {
 			}
 		}
 		modifier = {
-			factor = 3
+			weight = 100000
 			owner = {
 				has_monthly_income = {
 					resource = energy
@@ -934,7 +934,7 @@ district_ad_solar_power_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 12
+		energy = 24
 		trigger = {
 			always = yes
 		}
@@ -1001,7 +1001,7 @@ district_ad_geothermal_electric_power_generation = {
 		}
 	}
 	ai_weight = {
-		weight = 6
+		weight = 60
 		modifier = {
 			factor = 3
 			owner = {
@@ -1050,7 +1050,7 @@ district_ad_geothermal_electric_power_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 12
+		energy = 24
 		trigger = {
 			OR = {
 				low_energy_income = yes
@@ -1122,7 +1122,7 @@ district_ad_tidal_current_generation = {
 		}
 	}
 	ai_weight = {
-		weight = 6
+		weight = 1000
 		modifier = {
 			factor = 3
 			owner = {
@@ -1171,7 +1171,7 @@ district_ad_tidal_current_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 8
+		energy = 16
 		trigger = {
 			OR = {
 				low_energy_income = yes
@@ -1242,7 +1242,7 @@ district_ad_natural_nuclear_power_generation = {
 		}
 	}
 	ai_weight = {
-		weight = 5.5
+		weight = 55
 		modifier = {
 			factor = 3
 			owner = {
@@ -1291,7 +1291,7 @@ district_ad_natural_nuclear_power_generation = {
 		}
 	}
 	ai_resource_production = {
-		energy = 8
+		energy = 16
 		trigger = {
 			OR = {
 				low_energy_income = yes
@@ -1430,7 +1430,7 @@ district_ad_open_pit_ore_deposits = {
 		text = job_fe_acolyte_mine_effect_desc
 	}
 	ai_weight = {
-		weight = 6
+		weight = 60
 		modifier = {
 			factor = 3
 			owner = {
@@ -1459,7 +1459,7 @@ district_ad_open_pit_ore_deposits = {
 			}
 		}
 		modifier = {
-			factor = 100
+			factor = 1000
 			owner = {
 				has_monthly_income = {
 					resource = minerals
@@ -1479,7 +1479,7 @@ district_ad_open_pit_ore_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 8
+		minerals = 16
 		trigger = {
 			OR = {
 				low_mineral_income = yes
@@ -1583,7 +1583,7 @@ district_ad_under_water_deposits = {
 		}
 	}
 	ai_weight = {
-		weight = 5.5
+		weight = 550
 		modifier = {
 			factor = 3
 			owner = {
@@ -1612,7 +1612,7 @@ district_ad_under_water_deposits = {
 			}
 		}
 		modifier = {
-			factor = 100
+			factor = 1000
 			owner = {
 				has_monthly_income = {
 					resource = minerals
@@ -1632,7 +1632,7 @@ district_ad_under_water_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 8
+		minerals = 16
 		trigger = {
 			OR = {
 				low_mineral_income = yes
@@ -1737,7 +1737,7 @@ district_ad_orbital_deposits = {
 		}
 	}
 	ai_weight = {
-		weight = 5
+		weight = 50
 		modifier = {
 			factor = 3
 			owner = {
@@ -1766,7 +1766,7 @@ district_ad_orbital_deposits = {
 			}
 		}
 		modifier = {
-			factor = 100
+			factor = 1000
 			owner = {
 				has_monthly_income = {
 					resource = minerals
@@ -1786,7 +1786,7 @@ district_ad_orbital_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 8
+		minerals = 16
 		trigger = {
 			OR = {
 				low_mineral_income = yes
@@ -1890,7 +1890,7 @@ district_ad_high_quality_deposits = {
 		}
 	}
 	ai_weight = {
-		weight = 8
+		weight = 80
 		modifier = {
 			factor = 3
 			owner = {
@@ -1919,7 +1919,7 @@ district_ad_high_quality_deposits = {
 			}
 		}
 		modifier = {
-			factor = 100
+			factor = 1000
 			owner = {
 				has_monthly_income = {
 					resource = minerals
@@ -1939,7 +1939,7 @@ district_ad_high_quality_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 14
+		minerals = 58
 		trigger = {
 			OR = {
 				low_mineral_income = yes
@@ -2043,7 +2043,7 @@ district_ad_low_quality_deposits = {
 		}
 	}
 	ai_weight = {
-		weight = 4.5
+		weight = 45
 		modifier = {
 			factor = 3
 			owner = {
@@ -2072,7 +2072,7 @@ district_ad_low_quality_deposits = {
 			}
 		}
 		modifier = {
-			factor = 100
+			factor = 1000
 			owner = {
 				has_monthly_income = {
 					resource = minerals
@@ -2092,7 +2092,7 @@ district_ad_low_quality_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 6
+		minerals = 12
 		trigger = {
 			OR = {
 				low_mineral_income = yes
@@ -2408,7 +2408,7 @@ district_ad_in_water_ecosystem = {
 		}
 	}
 	ai_weight = {
-		weight = 6
+		weight = 60
 		modifier = {
 			factor = 3
 			owner = {
@@ -2433,15 +2433,6 @@ district_ad_in_water_ecosystem = {
 				has_monthly_income = {
 					resource = food
 					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value >= 10
 				}
 			}
 		}

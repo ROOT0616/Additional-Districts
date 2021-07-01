@@ -20,7 +20,7 @@ automate_farming_planet = {
 		district_ad_large_scale_grazing_land
 		district_ad_large_scale_agricultural_land
 		district_ad_mycorrhizal_communities
-		# district_farming
+		district_farming
 	}
 
 	buildings = {

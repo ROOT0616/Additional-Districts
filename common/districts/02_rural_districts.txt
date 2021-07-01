@@ -18,29 +18,7 @@ district_generator = {
 		NOT = {
 			has_modifier = slave_colony
 		}
-		if = {
-			limit = {
-				is_ai = yes
-			}
-			NOR = {
-				num_free_districts = {
-					type = district_ad_solar_power_generation
-					value > 0
-				}
-				num_free_districts = {
-					type = district_ad_geothermal_electric_power_generation
-					value > 0
-				}
-				num_free_districts = {
-					type = district_ad_tidal_current_generation
-					value > 0
-				}
-				num_free_districts = {
-					type = district_ad_natural_nuclear_power_generation
-					value > 0
-				}
-			}
-		}
+		is_ad_free_generator = yes
 	}
 	conversion_ratio = 1
 	convert_to = {
@@ -187,24 +165,7 @@ district_generator = {
 		weight = 0
 		modifier = {
 			weight = 1
-			NOR = {
-				num_free_districts = {
-					type = district_ad_solar_power_generation
-					value > 0
-				}
-				num_free_districts = {
-					type = district_ad_geothermal_electric_power_generation
-					value > 0
-				}
-				num_free_districts = {
-					type = district_ad_tidal_current_generation
-					value > 0
-				}
-				num_free_districts = {
-					type = district_ad_natural_nuclear_power_generation
-					value > 0
-				}
-			}
+			is_ad_free_generator = yes
 		}
 	}
 	ai_resource_production = {
@@ -273,28 +234,7 @@ district_mining = {
 		NOT = {
 			has_modifier = slave_colony
 		}
-		NOR = {
-			num_free_districts = {
-				type = district_ad_open_pit_ore_deposits
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_under_water_deposits
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_orbital_deposits
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_high_quality_deposits
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_low_quality_deposits
-				value > 0
-			}
-		}
+		is_ad_free_mining = yes
 	}
 	conversion_ratio = 1
 	convert_to = {
@@ -539,28 +479,7 @@ district_farming = {
 		NOT = {
 			has_modifier = slave_colony
 		}
-		NOR = {
-			num_free_districts = {
-				type = district_ad_shed_cultivation_land
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_in_water_ecosystem
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_mycorrhizal_communities
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_large_scale_grazing_land
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_large_scale_agricultural_land
-				value > 0
-			}
-		}
+		is_ad_free_farming = yes
 	}
 	conversion_ratio = 1
 	convert_to = {
@@ -819,24 +738,7 @@ district_generator_uncapped = {
 		NOT = {
 			has_modifier = resort_colony
 		}
-		NOR = {
-			num_free_districts = {
-				type = district_ad_solar_power_generation
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_geothermal_electric_power_generation
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_tidal_current_generation
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_natural_nuclear_power_generation
-				value > 0
-			}
-		}
+		is_ad_free_generator = yes
 	}
 	conversion_ratio = 1
 	convert_to = {
@@ -1004,28 +906,7 @@ district_mining_uncapped = {
 		NOT = {
 			has_modifier = resort_colony
 		}
-		NOR = {
-			num_free_districts = {
-				type = district_ad_open_pit_ore_deposits
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_under_water_deposits
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_orbital_deposits
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_high_quality_deposits
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_low_quality_deposits
-				value > 0
-			}
-		}
+		is_ad_free_mining = yes
 	}
 	conversion_ratio = 1
 	convert_to = {
@@ -1189,28 +1070,7 @@ district_farming_uncapped = {
 		NOT = {
 			has_modifier = resort_colony
 		}
-		NOR = {
-			num_free_districts = {
-				type = district_ad_shed_cultivation_land
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_in_water_ecosystem
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_mycorrhizal_communities
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_large_scale_grazing_land
-				value > 0
-			}
-			num_free_districts = {
-				type = district_ad_large_scale_agricultural_land
-				value > 0
-			}
-		}
+		is_ad_free_farming = yes
 	}
 	conversion_ratio = 1
 	convert_to = {

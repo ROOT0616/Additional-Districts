@@ -62,6 +62,130 @@ do_is_ringworld = {
 	uses_district_set = ring_world
 }
 
+is_ad_free_generator = {
+	if = {
+		limit = {
+			owner = {
+				is_ai = yes
+			}
+		}
+		AND = {
+			num_free_districts = {
+				type = district_ad_solar_power_generation
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_geothermal_electric_power_generation
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_tidal_current_generation
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_natural_nuclear_power_generation
+				value = 0
+			}
+		}
+	}
+}
+
+is_ad_free_mining = {
+	if = {
+		limit = {
+			owner = {
+				is_ai = yes
+			}
+		}
+		AND = {
+			num_free_districts = {
+				type = district_ad_open_pit_ore_deposits
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_under_water_deposits
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_orbital_deposits
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_high_quality_deposits
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_low_quality_deposits
+				value = 0
+			}
+		}
+	}
+}
+
+is_ad_free_farming = {
+	if = {
+		limit = {
+			owner = {
+				is_ai = yes
+			}
+		}
+		AND = {
+			num_free_districts = {
+				type = district_ad_shed_cultivation_land
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_in_water_ecosystem
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_mycorrhizal_communities
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_large_scale_grazing_land
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_large_scale_agricultural_land
+				value = 0
+			}
+		}
+	}
+}
+
+is_ad_free_city = {
+	if = {
+		limit = {
+			owner = {
+				is_ai = yes
+			}
+		}
+		AND = {
+			num_free_districts = {
+				type = district_ad_archaeological_cities
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_sky_cities
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_water_cities
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_under_water_cities
+				value = 0
+			}
+			num_free_districts = {
+				type = district_ad_underground_cities
+				value = 0
+			}
+		}
+	}
+}
+
 #######################
 #####    鉱物    ######
 #######################
