@@ -100,8 +100,31 @@ decision_ad_large_scale_air_area_construction = {
 	ai_weight = {
 		weight = 0.5
 		modifier = {
-			factor = 1.25
-			# has_ethic = ethic_materialist
+			factor = 10
+			owner = {
+				AND = {
+					has_country_resource = {
+						type = alloys
+						amount > 500
+					}
+					has_country_resource = {
+						type = minerals
+						amount > 1000
+					}
+					has_country_resource = {
+						type = exotic_gases
+						amount > 100
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 10
+			free_housing < 5
+		}
+		modifier = {
+			factor = 5
+			free_housing < 0
 		}
 	}
 }
@@ -143,7 +166,30 @@ decision_ad_large_scale_water_area_construction = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		factor = 0.5
+		modifier = {
+			factor = 10
+			owner = {
+				AND = {
+					has_country_resource = {
+						type = alloys
+						amount > 500
+					}
+					has_country_resource = {
+						type = minerals
+						amount > 1000
+					}
+				}
+			}
+		}
+		modifier = {
+			weight = 8
+			free_housing < 5
+		}
+		modifier = {
+			factor = 5
+			free_housing < 0
+		}
 	}
 }
 
@@ -185,6 +231,29 @@ decision_ad_large_scale_underground_area_construction = {
 	}
 	ai_weight = {
 		weight = 0.5
+		modifier = {
+			factor = 10
+			owner = {
+				AND = {
+					has_country_resource = {
+						type = minerals
+						amount > 500
+					}
+					has_country_resource = {
+						type = alloys
+						amount > 1000
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 6
+			free_housing < 5
+		}
+		modifier = {
+			factor = 5
+			free_housing < 0
+		}
 	}
 }
 
@@ -228,7 +297,31 @@ decision_ad_solar_power_generation = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = worker
+						is_pop_category = simple_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_solar_power_generation = yes
+					num_districts = {
+						type = district_ad_solar_power_generation
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -344,7 +437,31 @@ decision_ad_government_district = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_government_district = yes
+					num_districts = {
+						type = district_ad_government_district
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -395,7 +512,7 @@ decision_ad_undo_government_district = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -467,7 +584,31 @@ decision_ad_university_district = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_university_district = yes
+					num_districts = {
+						type = district_ad_university_district
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -518,7 +659,7 @@ decision_ad_undo_university_district = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -558,7 +699,13 @@ decision_ad_residential_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				count > 40
+			}
+		}
 	}
 }
 
@@ -609,7 +756,7 @@ decision_ad_undo_residential_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -681,7 +828,31 @@ decision_ad_shipbuilding_arsenal = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_shipbuilding_arsenal = yes
+					num_districts = {
+						type = district_ad_shipbuilding_arsenal
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -732,7 +903,7 @@ decision_ad_undo_shipbuilding_arsenal = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -804,7 +975,31 @@ decision_ad_communication_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_communication_area = yes
+					num_districts = {
+						type = district_ad_communication_area
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -855,7 +1050,7 @@ decision_ad_undo_communication_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -927,7 +1122,31 @@ decision_ad_tourist_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_tourist_area = yes
+					num_districts = {
+						type = district_ad_tourist_area
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -978,7 +1197,7 @@ decision_ad_undo_tourist_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -1050,7 +1269,31 @@ decision_ad_defense_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_defense_zone = yes
+					num_districts = {
+						type = district_ad_defense_zone
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -1101,7 +1344,7 @@ decision_ad_undo_defense_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -1173,7 +1416,31 @@ decision_ad_conceptual_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_conceptual_zone = yes
+					num_districts = {
+						type = district_ad_conceptual_zone
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -1224,7 +1491,7 @@ decision_ad_undo_conceptual_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -1296,7 +1563,31 @@ decision_ad_special_research_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_special_research_zone = yes
+					num_districts = {
+						type = district_ad_special_research_zone
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -1347,7 +1638,7 @@ decision_ad_undo_special_research_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -1419,7 +1710,31 @@ decision_ad_spaceport_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_spaceport_area = yes
+					num_districts = {
+						type = district_ad_spaceport_area
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -1470,7 +1785,7 @@ decision_ad_undo_spaceport_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
 
@@ -1542,7 +1857,31 @@ decision_ad_orbital_elevator = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+			weight = 4
+			count_owned_pop = {
+				limit = {
+					OR = {
+						is_pop_category = specialist
+						is_pop_category = complex_drone
+					}
+				}
+				count > 20
+			}
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				any_planet_within_border = {
+					has_district_ad_orbital_elevator = yes
+					num_districts = {
+						type = district_ad_orbital_elevator
+						value < 3
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -1593,6 +1932,6 @@ decision_ad_undo_orbital_elevator = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 0
 	}
 }
