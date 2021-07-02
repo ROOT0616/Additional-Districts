@@ -328,6 +328,7 @@ district_industrial = {
 	allow = {
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
+		is_too_much_industrial = no
 	}
 
 	conversion_ratio = 0.5

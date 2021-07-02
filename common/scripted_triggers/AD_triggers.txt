@@ -186,6 +186,36 @@ is_ad_free_city = {
 	}
 }
 
+is_too_much_industrial = {
+	OR = {
+		owner = {
+			has_monthly_income = {
+				resource = consumer_goods
+				value >= 50
+			}
+		}
+		owner = {
+			has_monthly_income = {
+				resource = minerals
+				value <= 50
+			}
+		}
+		if = {
+			limit = { 
+				planet_size < 10
+			}
+			num_districts = {
+				type = district_industrial
+				value >= 6
+			}
+		}
+		num_districts = {
+			type = district_industrial
+			value >= 10
+		}
+	}
+}
+
 #######################
 #####    鉱物    ######
 #######################
@@ -213,10 +243,17 @@ medium_mineral_income = {
 }
 
 large_mineral_income = {
-	owner = {
-		has_monthly_income = {
-			resource = minerals
-			value > 100
+	if = {
+		limit = {
+			owner = {
+				is_ai = yes
+			}
+		}
+		owner = {
+			has_monthly_income = {
+				resource = minerals
+				value > 100
+			}
 		}
 	}
 }
