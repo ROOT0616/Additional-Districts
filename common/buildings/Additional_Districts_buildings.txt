@@ -2235,7 +2235,7 @@ building_ad_slam = {
 	category = amenity
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 		}
 	}
 	planet_modifier = {
@@ -2261,7 +2261,7 @@ building_ad_apart = {
 	category = amenity
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 		}
 	}
 	planet_modifier = {
@@ -2287,7 +2287,7 @@ building_ad_mansion = {
 	category = amenity
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 		}
 	}
 	planet_modifier = {
@@ -2317,7 +2317,7 @@ building_ad_red_light = {
 	category = amenity
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 			NOR = {
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist
@@ -2348,7 +2348,7 @@ building_ad_P_prison = {
 	category = government
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 		}
 	}
 	planet_modifier = {
@@ -2375,7 +2375,7 @@ building_ad_F_camp = {
 	category = government
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 			OR = {
 				has_ethic = ethic_authoritarian
 				has_ethic = ethic_fanatic_authoritarian
@@ -2407,7 +2407,7 @@ building_ad_college = {
 	category = research
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 			OR = {
 				has_ethic = ethic_materialist
 				has_ethic = ethic_fanatic_materialist
@@ -2440,7 +2440,7 @@ building_ad_H_hotel = {
 	category = amenity
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 			OR = {
 				has_ethic = ethic_xenophile
 				has_ethic = ethic_fanatic_xenophile
@@ -2475,7 +2475,7 @@ building_ad_S_broade = {
 	category = amenity
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 		}
 	}
 	planet_modifier = {
@@ -2502,7 +2502,7 @@ building_ad_L_office = {
 	category = government
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 		}
 	}
 	planet_modifier = {
@@ -2528,7 +2528,7 @@ building_ad_AA_base = {
 	category = army
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 		}
 	}
 	planet_modifier = {
@@ -2558,7 +2558,7 @@ building_ad_W_camp = {
 	category = government
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 		}
 	}
 	planet_modifier = {
@@ -2586,7 +2586,7 @@ building_ad_D_Auto = {
 	category = army
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 			OR = {
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist
@@ -2617,7 +2617,7 @@ building_ad_Anti_b_pit = {
 	category = army
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 			OR = {
 				has_ethic = ethic_pacifist
 				has_ethic = ethic_fanatic_pacifist
@@ -2650,7 +2650,7 @@ building_ad_Anti_s_misile = {
 	category = army
 	potential = {
 		owner = {
-			is_regular_empire = yes
+			is_gestalt = no
 		}
 	}
 	planet_modifier = {
