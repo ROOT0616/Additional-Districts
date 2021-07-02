@@ -20,7 +20,7 @@ automate_mining_planet = {
 		district_ad_under_water_deposits
 		district_ad_orbital_deposits
 		district_ad_low_quality_deposits
-		# district_mining
+		district_mining
 	}
 
 	buildings = {

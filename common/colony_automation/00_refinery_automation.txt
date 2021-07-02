@@ -20,7 +20,7 @@ automate_refinery_planet = {
 		district_ad_water_cities
 		district_ad_under_water_cities
 		district_ad_underground_cities
-		# district_city
+		district_city
 	}
 
 

@@ -6,6 +6,15 @@ automate_mining_hive_planet = {
 	}
 
 	prio_districts = {
+		district_ad_ancient_ruins
+		district_ad_ancient_databank
+		district_ad_natural_fortress
+		district_ad_special_tourism_zone
+		district_ad_high_quality_deposits
+		district_ad_open_pit_ore_deposits
+		district_ad_under_water_deposits
+		district_ad_orbital_deposits
+		district_ad_low_quality_deposits
 		district_mining
 	}
 

@@ -10,6 +10,8 @@ automate_research_planet = {
 	}
 
 	prio_districts = {
+		district_ad_university_district
+		district_ad_special_research_zone
 		district_ad_ancient_ruins
 		district_ad_ancient_databank
 		district_ad_natural_fortress
@@ -19,8 +21,8 @@ automate_research_planet = {
 		district_ad_water_cities
 		district_ad_under_water_cities
 		district_ad_underground_cities
-		# district_city
-		# district_industrial
+		district_city
+		district_industrial
 	}
 
 	buildings = {

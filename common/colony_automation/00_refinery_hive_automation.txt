@@ -6,6 +6,15 @@ automate_refinery_hive_planet = {
 	}
 
 	prio_districts = {
+		district_ad_ancient_ruins
+		district_ad_ancient_databank
+		district_ad_natural_fortress
+		district_ad_special_tourism_zone
+		district_ad_archaeological_cities
+		district_ad_sky_cities
+		district_ad_water_cities
+		district_ad_under_water_cities
+		district_ad_underground_cities
 		district_hive
 	}
 

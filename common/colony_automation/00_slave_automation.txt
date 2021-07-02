@@ -28,10 +28,10 @@ automate_slave_planet = {
 		district_ad_mycorrhizal_communities
 		district_ad_large_scale_grazing_land
 		district_ad_large_scale_agricultural_land
-		# district_city
-		# district_generator
-		# district_mining
-		# district_farming
+		district_city
+		district_generator
+		district_mining
+		district_farming
 	}
 
 	buildings = {

@@ -98,7 +98,7 @@ decision_ad_large_scale_air_area_construction = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 50
 		modifier = {
 			factor = 10
 			owner = {
@@ -123,8 +123,8 @@ decision_ad_large_scale_air_area_construction = {
 			free_housing < 5
 		}
 		modifier = {
-			factor = 5
-			free_housing < 0
+			factor = 500
+			free_housing < 1
 		}
 	}
 }
@@ -166,7 +166,7 @@ decision_ad_large_scale_water_area_construction = {
 		}
 	}
 	ai_weight = {
-		factor = 0.5
+		factor = 50
 		modifier = {
 			factor = 10
 			owner = {
@@ -187,8 +187,8 @@ decision_ad_large_scale_water_area_construction = {
 			free_housing < 5
 		}
 		modifier = {
-			factor = 5
-			free_housing < 0
+			factor = 500
+			free_housing < 1
 		}
 	}
 }
@@ -230,7 +230,7 @@ decision_ad_large_scale_underground_area_construction = {
 		}
 	}
 	ai_weight = {
-		weight = 0.5
+		weight = 50
 		modifier = {
 			factor = 10
 			owner = {
@@ -251,8 +251,8 @@ decision_ad_large_scale_underground_area_construction = {
 			free_housing < 5
 		}
 		modifier = {
-			factor = 5
-			free_housing < 0
+			factor = 500
+			free_housing < 1
 		}
 	}
 }
@@ -437,9 +437,9 @@ decision_ad_government_district = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
+			factor = 4
 			count_owned_pop = {
 				limit = {
 					OR = {
@@ -448,6 +448,15 @@ decision_ad_government_district = {
 					}
 				}
 				count > 20
+			}
+		}
+		modifier = {
+			factor = 500
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 		modifier = {
@@ -584,9 +593,9 @@ decision_ad_university_district = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
+			factor = 4
 			count_owned_pop = {
 				limit = {
 					OR = {
@@ -595,6 +604,15 @@ decision_ad_university_district = {
 					}
 				}
 				count > 20
+			}
+		}
+		modifier = {
+			factor = 1000
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 		modifier = {
@@ -699,11 +717,14 @@ decision_ad_residential_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
-			count_owned_pop = {
-				count > 40
+			factor = 400
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 	}
@@ -828,9 +849,9 @@ decision_ad_shipbuilding_arsenal = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
+			factor = 4
 			count_owned_pop = {
 				limit = {
 					OR = {
@@ -839,6 +860,15 @@ decision_ad_shipbuilding_arsenal = {
 					}
 				}
 				count > 20
+			}
+		}
+		modifier = {
+			factor = 1000
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 		modifier = {
@@ -975,9 +1005,9 @@ decision_ad_communication_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
+			factor = 4
 			count_owned_pop = {
 				limit = {
 					OR = {
@@ -986,6 +1016,15 @@ decision_ad_communication_area = {
 					}
 				}
 				count > 20
+			}
+		}
+		modifier = {
+			factor = 600
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 		modifier = {
@@ -1122,9 +1161,9 @@ decision_ad_tourist_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
+			factor = 4
 			count_owned_pop = {
 				limit = {
 					OR = {
@@ -1133,6 +1172,15 @@ decision_ad_tourist_area = {
 					}
 				}
 				count > 20
+			}
+		}
+		modifier = {
+			factor = 600
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 		modifier = {
@@ -1269,9 +1317,9 @@ decision_ad_defense_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
+			factor = 4
 			count_owned_pop = {
 				limit = {
 					OR = {
@@ -1280,6 +1328,15 @@ decision_ad_defense_zone = {
 					}
 				}
 				count > 20
+			}
+		}
+		modifier = {
+			factor = 400
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 		modifier = {
@@ -1416,9 +1473,9 @@ decision_ad_conceptual_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
+			factor = 4
 			count_owned_pop = {
 				limit = {
 					OR = {
@@ -1427,6 +1484,15 @@ decision_ad_conceptual_zone = {
 					}
 				}
 				count > 20
+			}
+		}
+		modifier = {
+			factor = 1000
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 		modifier = {
@@ -1563,9 +1629,9 @@ decision_ad_special_research_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
+			factor = 4
 			count_owned_pop = {
 				limit = {
 					OR = {
@@ -1574,6 +1640,15 @@ decision_ad_special_research_zone = {
 					}
 				}
 				count > 20
+			}
+		}
+		modifier = {
+			factor = 1000
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 		modifier = {
@@ -1710,9 +1785,9 @@ decision_ad_spaceport_area = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
+			factor = 4
 			count_owned_pop = {
 				limit = {
 					OR = {
@@ -1721,6 +1796,15 @@ decision_ad_spaceport_area = {
 					}
 				}
 				count > 20
+			}
+		}
+		modifier = {
+			factor = 1000
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 		modifier = {
@@ -1857,9 +1941,9 @@ decision_ad_orbital_elevator = {
 		}
 	}
 	ai_weight = {
-		weight = 0
+		weight = 50
 		modifier = {
-			weight = 4
+			factor = 4
 			count_owned_pop = {
 				limit = {
 					OR = {
@@ -1868,6 +1952,15 @@ decision_ad_orbital_elevator = {
 					}
 				}
 				count > 20
+			}
+		}
+		modifier = {
+			factor = 400
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount > 5000
+				}
 			}
 		}
 		modifier = {

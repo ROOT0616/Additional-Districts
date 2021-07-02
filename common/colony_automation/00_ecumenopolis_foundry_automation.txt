@@ -11,6 +11,11 @@ automate_ecumenopolis_foundry_planet = {
 
 	prio_districts = {
 		district_arcology_arms_industry
+		district_ad_archaeological_cities
+		district_ad_sky_cities
+		district_ad_water_cities
+		district_ad_under_water_cities
+		district_ad_underground_cities
 	}
 
 	buildings = {

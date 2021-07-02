@@ -20,8 +20,8 @@ automate_bureau_planet = {
 		district_ad_water_cities
 		district_ad_under_water_cities
 		district_ad_underground_cities
-		# district_industrial
-		# district_city
+		district_industrial
+		district_city
 	}
 
 	buildings = {

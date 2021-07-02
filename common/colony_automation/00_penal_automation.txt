@@ -9,10 +9,10 @@ automate_penal_planet = {
 		district_ad_ancient_databank
 		district_ad_natural_fortress
 		district_ad_special_tourism_zone
-		# # district_city
-		# district_generator
-		# district_mining
-		# district_farming
+		district_city
+		district_generator
+		district_mining
+		district_farming
 		district_ad_archaeological_cities
 		district_ad_sky_cities
 		district_ad_water_cities

@@ -290,3 +290,186 @@ large_food_income = {
 		}
 	}
 }
+
+#####################
+#####   惑星   ######
+#####################
+is_ad_ancient = {
+	OR = {
+		is_planet_class = pc_gaia
+		is_planet_class = pc_relic
+		is_planet_class = pc_floating
+		is_planet_class = pc_technoorganic
+		has_modifier = ancient_world
+	}
+	NOT = {
+		OR = {
+			# Real Space New Frontiers Special Subclass Planets
+			has_modifier = algic_seas
+			has_modifier = ash_world
+			has_modifier = atoll_world
+			has_modifier = bog_world
+			has_modifier = boreal_world
+			has_modifier = cold_desert
+			has_modifier = coriolis_world
+			has_modifier = cryokarst_world
+			has_modifier = depleted_world
+			has_modifier = dune_world
+			has_modifier = dust_world
+			has_modifier = forest_world
+			has_modifier = fungal_world
+			has_modifier = geothermal_world
+			has_modifier = glacial_world
+			has_modifier = ice_world
+			has_modifier = jungle_world
+			has_modifier = karstic_world
+			has_modifier = lava_world
+			has_modifier = mediterranean_world
+			has_modifier = melting_world
+			has_modifier = mesa_world
+			has_modifier = mineral_world
+			has_modifier = monsoon_world
+			has_modifier = oasis_world
+			has_modifier = pangea_world
+			has_modifier = panthalassic_world
+			has_modifier = plateau_world
+			has_modifier = poisonous_world
+			has_modifier = primal_world
+			has_modifier = rocky_world
+			has_modifier = salt_world
+			has_modifier = snow_world
+			has_modifier = steppe_world
+			has_modifier = storm_world
+			has_modifier = swamp_world
+			has_modifier = temperate_zone
+			has_modifier = underground_world
+			has_modifier = young_world
+		}
+	}
+}
+
+is_ad_fungal = {
+	OR = {
+		is_planet_class = pc_mushroom
+		has_modifier = fungal_world
+	}
+	NOT = {
+		OR = {
+			# Real Space New Frontiers Special Subclass Planets
+			has_modifier = algic_seas
+			has_modifier = ancient_world
+			has_modifier = ash_world
+			has_modifier = atoll_world
+			has_modifier = bog_world
+			has_modifier = boreal_world
+			has_modifier = cold_desert
+			has_modifier = coriolis_world
+			has_modifier = cryokarst_world
+			has_modifier = depleted_world
+			has_modifier = dune_world
+			has_modifier = dust_world
+			has_modifier = forest_world
+			has_modifier = geothermal_world
+			has_modifier = glacial_world
+			has_modifier = ice_world
+			has_modifier = jungle_world
+			has_modifier = karstic_world
+			has_modifier = lava_world
+			has_modifier = mediterranean_world
+			has_modifier = melting_world
+			has_modifier = mesa_world
+			has_modifier = mineral_world
+			has_modifier = monsoon_world
+			has_modifier = oasis_world
+			has_modifier = pangea_world
+			has_modifier = panthalassic_world
+			has_modifier = plateau_world
+			has_modifier = poisonous_world
+			has_modifier = primal_world
+			has_modifier = rocky_world
+			has_modifier = salt_world
+			has_modifier = snow_world
+			has_modifier = steppe_world
+			has_modifier = storm_world
+			has_modifier = swamp_world
+			has_modifier = temperate_zone
+			has_modifier = underground_world
+			has_modifier = young_world
+		}
+	}
+}
+
+is_ad_planet = {
+	OR = {
+		# Wet
+		is_planet_class = pc_continental		#大陸型惑星
+		is_planet_class = pc_tropical		#熱帯型惑星
+		is_planet_class = pc_ocean		#海洋型惑星
+		is_planet_class = pc_cascadian		#カスカディアン型惑星 
+		is_planet_class = pc_desertislands		#環礁型惑星
+		is_planet_class = pc_subarctic		#亜北極海型惑星
+		is_planet_class = pc_mangrove		#マングローブ型惑星
+		is_planet_class = pc_hajungle		#高地ジャングル型惑星
+		is_planet_class = pc_retinal		#レチナール惑星
+		is_planet_class = pc_forest		#森林惑星
+		is_planet_class = pc_wetswamp		#森林湿地型惑星
+		is_planet_class = pc_lake		#湖沼惑星
+		is_planet_class = pc_tepid		#微温惑星
+		is_planet_class = pc_aquatic		#水生惑星
+		is_planet_class = pc_tidallylocked		#同期自転型惑星
+		is_planet_class = pc_floating		#浮遊島惑星
+		is_planet_class = pc_aquifer		#帯水層型惑星
+		is_planet_class = pc_supercon		#超大陸型惑星
+		is_planet_class = pc_technoorganic		#テクノオーガニック惑星
+		is_planet_class = pc_biolumen		#生物発光惑星
+		is_planet_class = pc_ecocity		#エコアーコロジー
+		is_planet_class = pc_lichen		#苔惑星
+		is_planet_class = pc_primal		#原始惑星
+		is_planet_class = pc_megafloratol		#メガフローラ惑星
+		is_planet_class = pc_milarc		#要塞アーコロジー
+		is_planet_class = pc_karst		#カルスト惑星
+		# Dry
+		is_planet_class = pc_desert		#砂漠型惑星
+		is_planet_class = pc_arid		#乾燥型惑星
+		is_planet_class = pc_savannah		#サバンナ型惑星
+		is_planet_class = pc_steppe		#ステップ型惑星
+		is_planet_class = pc_sandsea		#砂海型惑星
+		is_planet_class = pc_oasis		#オアシス型惑星
+		is_planet_class = pc_mesa		#卓上台地型惑星
+		is_planet_class = pc_hadesert		#高地砂漠型惑星
+		is_planet_class = pc_prairie		#プレーリー型惑星
+		is_planet_class = pc_med		#地中海型惑星
+		is_planet_class = pc_outback		#高湿乾燥型惑星
+		is_planet_class = pc_veld		#ベルト型惑星
+		is_planet_class = pc_semiarid		#半乾燥型惑星
+		is_planet_class = pc_coral		#珊瑚惑星
+		is_planet_class = pc_salt		#塩結晶型惑星
+		# Cold
+		is_planet_class = pc_arctic		#極寒型惑星
+		is_planet_class = pc_tundra		#ツンドラ型惑星
+		is_planet_class = pc_alpine		#高山型惑星
+		is_planet_class = pc_swamp		#沼地型惑星
+		is_planet_class = pc_frozen_desert		#冷凍砂漠型惑星
+		is_planet_class = pc_glacial		#氷河型惑星
+		is_planet_class = pc_boreal		#亜寒帯型惑星
+		is_planet_class = pc_mushroom		#菌糸体惑星
+		is_planet_class = pc_antarctic		#南極型惑星
+		is_planet_class = pc_snow		#氷雪型惑星
+		is_planet_class = pc_highland		#高地型惑星
+		is_planet_class = pc_mud		#泥惑星
+		is_planet_class = pc_aeolian		#風成型惑星
+		is_planet_class = pc_duneforest		#砂丘森型惑星
+		is_planet_class = pc_lanthanide		#ランタノイド型惑星
+		is_planet_class = pc_rogue		#変異惑星
+		is_planet_class = pc_storm		#暴風惑星
+		is_planet_class = pc_glacio		#氷河火山型惑星
+		is_planet_class = pc_geothermal		#地熱北極型惑星
+		is_planet_class = pc_eyeball		#眼球惑星
+		is_planet_class = pc_gaia		#ガイア型惑星
+		is_planet_class = pc_superhabitable		#極上惑星
+		is_planet_class = pc_relic		#遺物惑星
+		is_planet_class = pc_city		#エキュメノポリス
+		is_planet_class = pc_toxic		#有毒惑星
+		is_planet_class = pc_nuked		#死の惑星
+	}
+}

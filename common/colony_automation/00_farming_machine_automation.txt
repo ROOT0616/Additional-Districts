@@ -6,6 +6,15 @@ automate_farming_machine_planet = {
 	}
 
 	prio_districts = {
+		district_ad_ancient_ruins
+		district_ad_ancient_databank
+		district_ad_natural_fortress
+		district_ad_special_tourism_zone
+		district_ad_shed_cultivation_land
+		district_ad_in_water_ecosystem
+		district_ad_large_scale_grazing_land
+		district_ad_large_scale_agricultural_land
+		district_ad_mycorrhizal_communities
 		district_farming
 	}
 

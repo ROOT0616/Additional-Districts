@@ -1,8 +1,4 @@
 namespace = additionaldistricts
-@MicroSpace = 15
-@MicroDeposits = 10
-@SmallSpace = 30
-@SmallDeposits = 15
 ## 	Normal Spawn Event
 event = {
 	## イベントの基本情報
@@ -31,2281 +27,291 @@ event = {
 			id = additionaldistricts.06
 			days = 4
 		}
+		country_event = {
+			id = additionaldistricts.07
+			days = 5
+		}
+		country_event = {
+			id = additionaldistricts.08
+			days = 6
+		}
+		country_event = {
+			id = additionaldistricts.09
+			days = 7
+		}
+		country_event = {
+			id = additionaldistricts.10
+			days = 8
+		}
+		country_event = {
+			id = additionaldistricts.11
+			days = 9
+		}
+		country_event = {
+			id = additionaldistricts.12
+			days = 10
+		}
+		country_event = {
+			id = additionaldistricts.13
+			days = 11
+		}
+		country_event = {
+			id = additionaldistricts.14
+			days = 12
+		}
+		country_event = {
+			id = additionaldistricts.15
+			days = 13
+		}
+		country_event = {
+			id = additionaldistricts.16
+			days = 14
+		}
+		country_event = {
+			id = additionaldistricts.17
+			days = 15
+		}
+		country_event = {
+			id = additionaldistricts.18
+			days = 16
+		}
+		country_event = {
+			id = additionaldistricts.19
+			days = 17
+		}
+		country_event = {
+			id = additionaldistricts.20
+			days = 18
+		}
+		country_event = {
+			id = additionaldistricts.21
+			days = 19
+		}
 	}
 }
 
-# 遺跡都市	空中都市	水上都市	水中都市	地下都市
+# 遺跡都市	
 country_event = {
 	id = additionaldistricts.02
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		# 遺跡都市  district_ad_archaeological_cities 住居*5	発掘者*2	（自然発生）
-		while = {
-			count = @MicroSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						# 	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						# 	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						# 	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_nuked						#死の惑星
-					}
-				}
-				set_planet_flag = do_ad_archaeological_cities
-			}
-		}
-		while = {
-			count = 1
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_archaeological_cities
-				}
-				add_deposit = d_ad_archaeological_cities
-			}
-		}
-		while = {
-			count = @MicroDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_archaeological_cities
-				}
-				add_deposit = d_ad_archaeological_cities
-			}
-		}
-		# 空中都市	住居*30	事務員*2	交易価値	（自然発生）	（技術開発）
-		while = {
-			count = @MicroSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						# 	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						# 	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						is_planet_class = pc_karst						#カルスト惑星
-						# 	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						# is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						# rea
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_nuked						#死の惑星
-					}
-				}
-				set_planet_flag = do_ad_sky_cities
-			}
-		}
-		while = {
-			count = 1
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_sky_cities
-				}
-				add_deposit = d_ad_sky_cities
-			}
-		}
-		while = {
-			count = @MicroDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_sky_cities
-				}
-				add_deposit = d_ad_sky_cities
-			}
-		}
-		# 水上都市  （自然発生）
-		while = {
-			count = @MicroSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						# 	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_karst						#カルスト惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						# 	# Dry
-						# is_planet_class = pc_desert						#砂漠型惑星
-						# is_planet_class = pc_arid						#乾燥型惑星
-						# is_planet_class = pc_savannah						#サバンナ型惑星
-						# is_planet_class = pc_steppe						#ステップ型惑星
-						# is_planet_class = pc_sandsea						#砂海型惑星
-						# is_planet_class = pc_oasis						#オアシス型惑星
-						# is_planet_class = pc_mesa						#卓上台地型惑星
-						# is_planet_class = pc_hadesert						#高地砂漠型惑星
-						# is_planet_class = pc_prairie						#プレーリー型惑星
-						# is_planet_class = pc_med						#地中海型惑星
-						# is_planet_class = pc_outback						#高湿乾燥型惑星
-						# is_planet_class = pc_veld						#ベルト型惑星
-						# is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						# is_planet_class = pc_salt						#塩結晶型惑星
-						# 	# Cold
-						# is_planet_class = pc_arctic						#極寒型惑星
-						# is_planet_class = pc_tundra						#ツンドラ型惑星
-						# is_planet_class = pc_alpine						#高山型惑星
-						# is_planet_class = pc_swamp						#沼地型惑星
-						# is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						# is_planet_class = pc_glacial						#氷河型惑星
-						# is_planet_class = pc_boreal						#亜寒帯型惑星
-						# is_planet_class = pc_mushroom						#菌糸体惑星
-						# is_planet_class = pc_antarctic						#南極型惑星
-						# is_planet_class = pc_snow						#氷雪型惑星
-						# is_planet_class = pc_highland						#高地型惑星
-						# is_planet_class = pc_mud						#泥惑星
-						# is_planet_class = pc_aeolian						#風成型惑星
-						# # is_planet_class = pc_duneforest						#砂丘森型惑星
-						# is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						# is_planet_class = pc_rogue						#変異惑星
-						# is_planet_class = pc_storm						#暴風惑星
-						# is_planet_class = pc_glacio						#氷河火山型惑星
-						# is_planet_class = pc_geothermal						#地熱北極型惑星
-						# is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_nuked						#死の惑星
-					}
-				}
-				set_planet_flag = do_ad_water_cities
-			}
-		}
-		while = {
-			count = 1
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_water_cities
-				}
-				add_deposit = d_ad_water_cities
-			}
-		}
-		while = {
-			count = @MicroDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_water_cities
-				}
-				add_deposit = d_ad_water_cities
-			}
-		}
-		# 水中都市		（自然発生）	（技術開発）
-		while = {
-			count = @MicroSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						# 	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						# 	# Dry
-						# is_planet_class = pc_desert						#砂漠型惑星
-						# is_planet_class = pc_arid						#乾燥型惑星
-						# is_planet_class = pc_savannah						#サバンナ型惑星
-						# is_planet_class = pc_steppe						#ステップ型惑星
-						# is_planet_class = pc_sandsea						#砂海型惑星
-						# is_planet_class = pc_oasis						#オアシス型惑星
-						# is_planet_class = pc_mesa						#卓上台地型惑星
-						# is_planet_class = pc_hadesert						#高地砂漠型惑星
-						# is_planet_class = pc_prairie						#プレーリー型惑星
-						# is_planet_class = pc_med						#地中海型惑星
-						# is_planet_class = pc_outback						#高湿乾燥型惑星
-						# is_planet_class = pc_veld						#ベルト型惑星
-						# is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						# is_planet_class = pc_salt						#塩結晶型惑星
-						is_planet_class = pc_karst						#カルスト惑星
-						# # 	# Cold
-						# is_planet_class = pc_arctic						#極寒型惑星
-						# is_planet_class = pc_tundra						#ツンドラ型惑星
-						# is_planet_class = pc_alpine						#高山型惑星
-						# is_planet_class = pc_swamp						#沼地型惑星
-						# is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						# is_planet_class = pc_glacial						#氷河型惑星
-						# is_planet_class = pc_boreal						#亜寒帯型惑星
-						# is_planet_class = pc_mushroom						#菌糸体惑星
-						# is_planet_class = pc_antarctic						#南極型惑星
-						# is_planet_class = pc_snow						#氷雪型惑星
-						# is_planet_class = pc_highland						#高地型惑星
-						# is_planet_class = pc_mud						#泥惑星
-						# is_planet_class = pc_aeolian						#風成型惑星
-						# is_planet_class = pc_duneforest						#砂丘森型惑星
-						# is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						# is_planet_class = pc_rogue						#変異惑星
-						# is_planet_class = pc_storm						#暴風惑星
-						# is_planet_class = pc_glacio						#氷河火山型惑星
-						# is_planet_class = pc_geothermal						#地熱北極型惑星
-						# is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_nuked						#死の惑星
-					}
-				}
-				set_planet_flag = do_ad_under_water_cities
-			}
-		}
-		while = {
-			count = 1
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_under_water_cities
-				}
-				add_deposit = d_ad_under_water_cities
-			}
-		}
-		while = {
-			count = @MicroDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_under_water_cities
-				}
-				add_deposit = d_ad_under_water_cities
-			}
-		}
-		# 地下都市		（自然発生）	（技術開発）
-		while = {
-			count = @MicroSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						# 	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						# is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						# 	# Dry
-						# is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						# is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						is_planet_class = pc_karst						#カルスト惑星
-						# 	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						# is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						# is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_nuked						#死の惑星
-					}
-				}
-				set_planet_flag = do_ad_underground_cities
-			}
-		}
-		while = {
-			count = 1
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_underground_cities
-				}
-				add_deposit = d_ad_underground_cities
-			}
-		}
-		while = {
-			count = @MicroDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_underground_cities
-				}
-				add_deposit = d_ad_underground_cities
-			}
-		}
+		add_AD_archaeological_cities = yes
 	}
 }
 
-# 地熱発電	潮流発電	天然原子炉発電	
+# 空中都市	
 country_event = {
 	id = additionaldistricts.03
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		# 地熱発電
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						# 	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						# 	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						# 	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
-						# is_planet_class = pc_nuked #死の惑星
-					}
-				}
-				set_planet_flag = do_ad_geothermal_electric_power_generation
-			}
-		}
-		while = {
-			count = 1
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_geothermal_electric_power_generation
-				}
-				add_deposit = d_ad_geothermal_electric_power_generation
-			}
-		}
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_geothermal_electric_power_generation
-				}
-				add_deposit = d_ad_geothermal_electric_power_generation
-			}
-		}
-		# 潮流発電
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						# 	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						# is_planet_class = pc_desert #砂漠型惑星
-						# is_planet_class = pc_arid #乾燥型惑星
-						# is_planet_class = pc_savannah #サバンナ型惑星
-						# is_planet_class = pc_steppe #ステップ型惑星
-						# is_planet_class = pc_sandsea #砂海型惑星
-						# is_planet_class = pc_oasis #オアシス型惑星
-						# is_planet_class = pc_mesa #卓上台地型惑星
-						# is_planet_class = pc_hadesert #高地砂漠型惑星
-						# is_planet_class = pc_prairie #プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						# is_planet_class = pc_outback #高湿乾燥型惑星
-						# is_planet_class = pc_veld #ベルト型惑星
-						# is_planet_class = pc_semiarid #半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						# is_planet_class = pc_salt #塩結晶型惑星
-						#  	# Cold
-						# is_planet_class = pc_arctic #極寒型惑星
-						# is_planet_class = pc_tundra #ツンドラ型惑星
-						# is_planet_class = pc_alpine #高山型惑星
-						# is_planet_class = pc_swamp #沼地型惑星
-						# is_planet_class = pc_frozen_desert #冷凍砂漠型惑星
-						# is_planet_class = pc_glacial #氷河型惑星
-						# is_planet_class = pc_boreal #亜寒帯型惑星
-						# is_planet_class = pc_mushroom #菌糸体惑星
-						# is_planet_class = pc_antarctic #南極型惑星
-						# is_planet_class = pc_snow #氷雪型惑星
-						# is_planet_class = pc_highland #高地型惑星
-						# is_planet_class = pc_mud #泥惑星
-						# is_planet_class = pc_aeolian #風成型惑星
-						# is_planet_class = pc_duneforest #砂丘森型惑星
-						# is_planet_class = pc_lanthanide ランタノイド型惑星
-						# is_planet_class = pc_rogue #変異惑星
-						# is_planet_class = pc_storm #暴風惑星
-						# is_planet_class = pc_glacio #氷河火山型惑星
-						# is_planet_class = pc_geothermal #地熱北極型惑星
-						# is_planet_class = pc_eyeball #眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						# is_planet_class = pc_toxic #有毒惑星
-						# is_planet_class = pc_nuked #死の惑星
-					}
-				}
-				set_planet_flag = do_ad_tidal_current_generation
-			}
-		}
-		while = {
-			count = 1
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_tidal_current_generation
-				}
-				add_deposit = d_ad_tidal_current_generation
-			}
-		}
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_tidal_current_generation
-				}
-				add_deposit = d_ad_tidal_current_generation
-			}
-		}
-		# 天然原子炉発電
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						# is_planet_class = pc_desert #砂漠型惑星
-						# is_planet_class = pc_arid #乾燥型惑星
-						# is_planet_class = pc_savannah #サバンナ型惑星
-						# is_planet_class = pc_steppe #ステップ型惑星
-						# is_planet_class = pc_sandsea #砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						# is_planet_class = pc_mesa #卓上台地型惑星
-						# is_planet_class = pc_hadesert #高地砂漠型惑星
-						# is_planet_class = pc_prairie #プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						# is_planet_class = pc_outback #高湿乾燥型惑星
-						# is_planet_class = pc_veld #ベルト型惑星
-						# is_planet_class = pc_semiarid #半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						# is_planet_class = pc_salt #塩結晶型惑星
-						#  	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
-						is_planet_class = pc_nuked						#死の惑星
-					}
-				}
-				set_planet_flag = do_ad_natural_nuclear_power_generation
-			}
-		}
-		while = {
-			count = 1
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_natural_nuclear_power_generation
-				}
-				add_deposit = d_ad_natural_nuclear_power_generation
-			}
-		}
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_natural_nuclear_power_generation
-				}
-				add_deposit = d_ad_natural_nuclear_power_generation
-			}
-		}
+		add_AD_sky_cities = yes
 	}
 }
 
-# 露天鉱床	水中鉱床	軌道鉱石群	高質鉱床	低質鉱床
+# 水上都市
 country_event = {
 	id = additionaldistricts.04
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		# 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						# is_planet_class = pc_aquatic #水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						# is_planet_class = pc_milarc #要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						#  	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						# is_planet_class = pc_swamp #沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						# is_planet_class = pc_mud #泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
-						is_planet_class = pc_nuked						#死の惑星
-						is_planet_class = pd_shroudwhispers_init
-						is_planet_class = pd_shroudcomposer_init
-						is_planet_class = pd_shroudeater_init
-						is_planet_class = pd_shrouddesire_init
-					}
-				}
-				set_planet_flag = do_ad_open_pit_ore_deposits
-			}
-		}
-		while = {
-			count = 1
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_open_pit_ore_deposits
-				}
-				add_deposit = d_ad_open_pit_ore_deposits
-			}
-		}
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_open_pit_ore_deposits
-				}
-				add_deposit = d_ad_open_pit_ore_deposits
-			}
-		}
-		# 水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						# is_planet_class = pc_desert #砂漠型惑星
-						# is_planet_class = pc_arid #乾燥型惑星
-						# is_planet_class = pc_savannah #サバンナ型惑星
-						# is_planet_class = pc_steppe #ステップ型惑星
-						# is_planet_class = pc_sandsea #砂海型惑星
-						# is_planet_class = pc_oasis #オアシス型惑星
-						# is_planet_class = pc_mesa #卓上台地型惑星
-						# is_planet_class = pc_hadesert #高地砂漠型惑星
-						# is_planet_class = pc_prairie #プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						# is_planet_class = pc_outback #高湿乾燥型惑星
-						# is_planet_class = pc_veld #ベルト型惑星
-						# is_planet_class = pc_semiarid #半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						# is_planet_class = pc_salt #塩結晶型惑星
-						#  	# Cold
-						# is_planet_class = pc_arctic #極寒型惑星
-						# is_planet_class = pc_tundra #ツンドラ型惑星
-						# is_planet_class = pc_alpine #高山型惑星
-						# is_planet_class = pc_swamp #沼地型惑星
-						# is_planet_class = pc_frozen_desert #冷凍砂漠型惑星
-						# is_planet_class = pc_glacial #氷河型惑星
-						# is_planet_class = pc_boreal #亜寒帯型惑星
-						# is_planet_class = pc_mushroom #菌糸体惑星
-						# is_planet_class = pc_antarctic #南極型惑星
-						# is_planet_class = pc_snow #氷雪型惑星
-						# is_planet_class = pc_highland #高地型惑星
-						# is_planet_class = pc_mud #泥惑星
-						# is_planet_class = pc_aeolian #風成型惑星
-						# is_planet_class = pc_duneforest #砂丘森型惑星
-						# is_planet_class = pc_lanthanide ランタノイド型惑星
-						# is_planet_class = pc_rogue #変異惑星
-						# is_planet_class = pc_storm #暴風惑星
-						# is_planet_class = pc_glacio #氷河火山型惑星
-						# is_planet_class = pc_geothermal #地熱北極型惑星
-						# is_planet_class = pc_eyeball #眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						# is_planet_class = pc_toxic #有毒惑星
-						# is_planet_class = pc_nuked #死の惑星
-					}
-				}
-				set_planet_flag = do_ad_under_water_deposits
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_under_water_deposits
-				}
-				add_deposit = d_ad_under_water_deposits
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_under_water_deposits
-				}
-				add_deposit = d_ad_under_water_deposits
-			}
-		}
-		# 軌道鉱石群
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						has_ring = yes
-						has_moon = yes
-					}
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						#  	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
-						is_planet_class = pc_nuked						#死の惑星
-					}
-				}
-				set_planet_flag = do_ad_orbital_deposits
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_orbital_deposits
-				}
-				add_deposit = d_ad_orbital_deposits
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_orbital_deposits
-				}
-				add_deposit = d_ad_orbital_deposits
-			}
-		}
-		# 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						#  	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
-						is_planet_class = pc_nuked						#死の惑星
-						is_planet_class = pd_shroudwhispers_init
-						is_planet_class = pd_shroudcomposer_init
-						is_planet_class = pd_shroudeater_init
-						is_planet_class = pd_shrouddesire_init
-					}
-				}
-				set_planet_flag = do_ad_high_quality_deposits
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_high_quality_deposits
-				}
-				add_deposit = d_ad_high_quality_deposits
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_high_quality_deposits
-				}
-				add_deposit = d_ad_high_quality_deposits
-			}
-		}
-		# 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生）
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						#  	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
-						is_planet_class = pc_nuked						#死の惑星
-						is_planet_class = pd_shroudwhispers_init
-						is_planet_class = pd_shroudcomposer_init
-						is_planet_class = pd_shroudeater_init
-						is_planet_class = pd_shrouddesire_init
-					}
-				}
-				set_planet_flag = do_ad_low_quality_deposits
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_low_quality_deposits
-				}
-				add_deposit = d_ad_low_quality_deposits
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_low_quality_deposits
-				}
-				add_deposit = d_ad_low_quality_deposits
-			}
-		}
+		add_AD_water_cities = yes
 	}
 }
 
-# Normal Spawn Event
+# 水中都市
 country_event = {
 	id = additionaldistricts.05
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		# 棚状耕作地	shed_cultivation_land	（自然発生）
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						# is_planet_class = pc_milarc #要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						# is_planet_class = pc_desert #砂漠型惑星
-						# is_planet_class = pc_arid #乾燥型惑星
-						# is_planet_class = pc_savannah #サバンナ型惑星
-						# is_planet_class = pc_steppe #ステップ型惑星
-						# is_planet_class = pc_sandsea #砂海型惑星
-						# is_planet_class = pc_oasis #オアシス型惑星
-						# is_planet_class = pc_mesa #卓上台地型惑星
-						# is_planet_class = pc_hadesert #高地砂漠型惑星
-						# is_planet_class = pc_prairie #プレーリー型惑星
-						# is_planet_class = pc_med #地中海型惑星
-						# is_planet_class = pc_outback #高湿乾燥型惑星
-						# is_planet_class = pc_veld #ベルト型惑星
-						# is_planet_class = pc_semiarid #半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						# is_planet_class = pc_salt #塩結晶型惑星
-						#  	# Cold
-						# is_planet_class = pc_arctic #極寒型惑星
-						# is_planet_class = pc_tundra #ツンドラ型惑星
-						# is_planet_class = pc_alpine #高山型惑星
-						# is_planet_class = pc_swamp #沼地型惑星
-						# is_planet_class = pc_frozen_desert #冷凍砂漠型惑星
-						# is_planet_class = pc_glacial #氷河型惑星
-						# is_planet_class = pc_boreal #亜寒帯型惑星
-						# is_planet_class = pc_mushroom #菌糸体惑星
-						# is_planet_class = pc_antarctic #南極型惑星
-						# is_planet_class = pc_snow #氷雪型惑星
-						# is_planet_class = pc_highland #高地型惑星
-						# is_planet_class = pc_mud #泥惑星
-						# is_planet_class = pc_aeolian #風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						# is_planet_class = pc_lanthanide ランタノイド型惑星
-						# is_planet_class = pc_rogue #変異惑星
-						# is_planet_class = pc_storm #暴風惑星
-						# is_planet_class = pc_glacio #氷河火山型惑星
-						# is_planet_class = pc_geothermal #地熱北極型惑星
-						# is_planet_class = pc_eyeball #眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						# is_planet_class = pc_relic #遺物惑星
-						# is_planet_class = pc_city #エキュメノポリス
-						# is_planet_class = pc_toxic #有毒惑星
-						# is_planet_class = pc_nuked #死の惑星
-					}
-				}
-				set_planet_flag = do_ad_shed_cultivation_land
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_shed_cultivation_land
-				}
-				add_deposit = d_ad_shed_cultivation_land
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_shed_cultivation_land
-				}
-				add_deposit = d_ad_shed_cultivation_land
-			}
-		}
-		# 水中生態系	in_water_ecosystem	（自然発生）
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						# is_planet_class = pc_milarc #要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						# is_planet_class = pc_desert #砂漠型惑星
-						# is_planet_class = pc_arid #乾燥型惑星
-						# is_planet_class = pc_savannah #サバンナ型惑星
-						# is_planet_class = pc_steppe #ステップ型惑星
-						# is_planet_class = pc_sandsea #砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						# is_planet_class = pc_mesa #卓上台地型惑星
-						# is_planet_class = pc_hadesert #高地砂漠型惑星
-						# is_planet_class = pc_prairie #プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						# is_planet_class = pc_outback #高湿乾燥型惑星
-						# is_planet_class = pc_veld #ベルト型惑星
-						# is_planet_class = pc_semiarid #半乾燥型惑星
-						# is_planet_class = pc_coral #珊瑚惑星
-						# is_planet_class = pc_salt #塩結晶型惑星
-						#  	# Cold
-						# is_planet_class = pc_arctic #極寒型惑星
-						# is_planet_class = pc_tundra #ツンドラ型惑星
-						# is_planet_class = pc_alpine #高山型惑星
-						# is_planet_class = pc_swamp #沼地型惑星
-						# is_planet_class = pc_frozen_desert #冷凍砂漠型惑星
-						# is_planet_class = pc_glacial #氷河型惑星
-						# is_planet_class = pc_boreal #亜寒帯型惑星
-						# is_planet_class = pc_mushroom #菌糸体惑星
-						# is_planet_class = pc_antarctic #南極型惑星
-						# is_planet_class = pc_snow #氷雪型惑星
-						# is_planet_class = pc_highland #高地型惑星
-						# is_planet_class = pc_mud #泥惑星
-						# is_planet_class = pc_aeolian #風成型惑星
-						# is_planet_class = pc_duneforest #砂丘森型惑星
-						# is_planet_class = pc_lanthanide ランタノイド型惑星
-						# is_planet_class = pc_rogue #変異惑星
-						# is_planet_class = pc_storm #暴風惑星
-						# is_planet_class = pc_glacio #氷河火山型惑星
-						# is_planet_class = pc_geothermal #地熱北極型惑星
-						# is_planet_class = pc_eyeball #眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						# is_planet_class = pc_toxic #有毒惑星
-						# is_planet_class = pc_nuked #死の惑星
-					}
-				}
-				set_planet_flag = do_ad_in_water_ecosystem
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_in_water_ecosystem
-				}
-				add_deposit = d_ad_in_water_ecosystem
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_in_water_ecosystem
-				}
-				add_deposit = d_ad_in_water_ecosystem
-			}
-		}
-		# 菌類群生体	mycorrhizal_communities	（自然発生）
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						# is_planet_class = pc_milarc #要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						# is_planet_class = pc_desert #砂漠型惑星
-						# is_planet_class = pc_arid #乾燥型惑星
-						# is_planet_class = pc_savannah #サバンナ型惑星
-						# is_planet_class = pc_steppe #ステップ型惑星
-						# is_planet_class = pc_sandsea #砂海型惑星
-						# is_planet_class = pc_oasis #オアシス型惑星
-						# is_planet_class = pc_mesa #卓上台地型惑星
-						# is_planet_class = pc_hadesert #高地砂漠型惑星
-						# is_planet_class = pc_prairie #プレーリー型惑星
-						# is_planet_class = pc_med #地中海型惑星
-						# is_planet_class = pc_outback #高湿乾燥型惑星
-						# is_planet_class = pc_veld #ベルト型惑星
-						# is_planet_class = pc_semiarid #半乾燥型惑星
-						# is_planet_class = pc_coral #珊瑚惑星
-						# is_planet_class = pc_salt #塩結晶型惑星
-						#  	# Cold
-						# is_planet_class = pc_arctic #極寒型惑星
-						# is_planet_class = pc_tundra #ツンドラ型惑星
-						# is_planet_class = pc_alpine #高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						# is_planet_class = pc_frozen_desert #冷凍砂漠型惑星
-						# is_planet_class = pc_glacial #氷河型惑星
-						# is_planet_class = pc_boreal #亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						# is_planet_class = pc_antarctic #南極型惑星
-						# is_planet_class = pc_snow #氷雪型惑星
-						# is_planet_class = pc_highland #高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						# is_planet_class = pc_aeolian #風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						# is_planet_class = pc_lanthanide ランタノイド型惑星
-						# is_planet_class = pc_rogue #変異惑星
-						# is_planet_class = pc_storm #暴風惑星
-						# is_planet_class = pc_glacio #氷河火山型惑星
-						# is_planet_class = pc_geothermal #地熱北極型惑星
-						# is_planet_class = pc_eyeball #眼球惑星
-						# is_planet_class = pc_gaia #ガイア型惑星
-						# is_planet_class = pc_superhabitable #極上惑星
-						# # is_planet_class = pc_relic #遺物惑星
-						# # is_planet_class = pc_city #エキュメノポリス
-						# # is_planet_class = pc_toxic #有毒惑星
-						# # is_planet_class = pc_nuked #死の惑星
-					}
-				}
-				set_planet_flag = do_ad_mycorrhizal_communities
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_mycorrhizal_communities
-				}
-				add_deposit = d_ad_mycorrhizal_communities
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_mycorrhizal_communities
-				}
-				add_deposit = d_ad_mycorrhizal_communities
-			}
-		}
-		# 大規模牧草地	large_scale_grazing_land	（自然発生）
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						# is_planet_class = pc_tropical #熱帯型惑星
-						# is_planet_class = pc_ocean #海洋型惑星
-						# is_planet_class = pc_cascadian #カスカディアン型惑星 
-						# is_planet_class = pc_desertislands #環礁型惑星
-						# is_planet_class = pc_subarctic #亜北極海型惑星
-						# is_planet_class = pc_mangrove #マングローブ型惑星
-						# is_planet_class = pc_hajungle #高地ジャングル型惑星
-						# is_planet_class = pc_retinal #レチナール惑星
-						# is_planet_class = pc_forest #森林惑星
-						# is_planet_class = pc_wetswamp #森林湿地型惑星
-						# is_planet_class = pc_lake #湖沼惑星
-						# is_planet_class = pc_tepid #微温惑星
-						# is_planet_class = pc_aquatic #水生惑星
-						# is_planet_class = pc_tidallylocked #同期自転型惑星
-						# is_planet_class = pc_floating #浮遊島惑星
-						# is_planet_class = pc_aquifer #帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						# is_planet_class = pc_technoorganic ##テクノオーガニック惑星
-						# is_planet_class = pc_biolumen #生物発光惑星
-						# is_planet_class = pc_ecocity #エコアーコロジー
-						# is_planet_class = pc_lichen #苔惑星
-						# is_planet_class = pc_primal #原始惑星
-						# is_planet_class = pc_megafloratol #メガフローラ惑星
-						# is_planet_class = pc_milarc #要塞アーコロジー
-						# is_planet_class = pc_karst #カルスト惑星
-						#  	# Dry
-						# is_planet_class = pc_desert #砂漠型惑星
-						# is_planet_class = pc_arid #乾燥型惑星
-						# is_planet_class = pc_savannah #サバンナ型惑星
-						# is_planet_class = pc_steppe #ステップ型惑星
-						# is_planet_class = pc_sandsea #砂海型惑星
-						# is_planet_class = pc_oasis #オアシス型惑星
-						# is_planet_class = pc_mesa #卓上台地型惑星
-						# is_planet_class = pc_hadesert #高地砂漠型惑星
-						# is_planet_class = pc_prairie #プレーリー型惑星
-						# is_planet_class = pc_med #地中海型惑星
-						# is_planet_class = pc_outback #高湿乾燥型惑星
-						# is_planet_class = pc_veld #ベルト型惑星
-						# is_planet_class = pc_semiarid #半乾燥型惑星
-						# is_planet_class = pc_coral #珊瑚惑星
-						# is_planet_class = pc_salt #塩結晶型惑星
-						#  	# Cold
-						# is_planet_class = pc_arctic #極寒型惑星
-						# is_planet_class = pc_tundra #ツンドラ型惑星
-						# is_planet_class = pc_alpine #高山型惑星
-						# is_planet_class = pc_swamp #沼地型惑星
-						# is_planet_class = pc_frozen_desert #冷凍砂漠型惑星
-						# is_planet_class = pc_glacial #氷河型惑星
-						# is_planet_class = pc_boreal #亜寒帯型惑星
-						# is_planet_class = pc_mushroom #菌糸体惑星
-						# is_planet_class = pc_antarctic #南極型惑星
-						# is_planet_class = pc_snow #氷雪型惑星
-						# is_planet_class = pc_highland #高地型惑星
-						# is_planet_class = pc_mud #泥惑星
-						# is_planet_class = pc_aeolian #風成型惑星
-						# is_planet_class = pc_duneforest #砂丘森型惑星
-						# is_planet_class = pc_lanthanide ランタノイド型惑星
-						# is_planet_class = pc_rogue #変異惑星
-						# is_planet_class = pc_storm #暴風惑星
-						# is_planet_class = pc_glacio #氷河火山型惑星
-						# is_planet_class = pc_geothermal #地熱北極型惑星
-						# is_planet_class = pc_eyeball #眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						# is_planet_class = pc_relic #遺物惑星
-						# is_planet_class = pc_city #エキュメノポリス
-						# is_planet_class = pc_toxic #有毒惑星
-						# is_planet_class = pc_nuked #死の惑星
-					}
-				}
-				set_planet_flag = do_ad_large_scale_grazing_land
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_large_scale_grazing_land
-				}
-				add_deposit = d_ad_large_scale_grazing_land
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_large_scale_grazing_land
-				}
-				add_deposit = d_ad_large_scale_grazing_land
-			}
-		}
-		# 大自然農業地	large_scale_agricultural_land		（自然発生
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						# is_planet_class = pc_aquatic #水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						# is_planet_class = pc_milarc #要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						# is_planet_class = pc_desert #砂漠型惑星
-						# is_planet_class = pc_arid #乾燥型惑星
-						# is_planet_class = pc_savannah #サバンナ型惑星
-						# is_planet_class = pc_steppe #ステップ型惑星
-						# is_planet_class = pc_sandsea #砂海型惑星
-						# is_planet_class = pc_oasis #オアシス型惑星
-						# is_planet_class = pc_mesa #卓上台地型惑星
-						# is_planet_class = pc_hadesert #高地砂漠型惑星
-						# is_planet_class = pc_prairie #プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						# is_planet_class = pc_outback #高湿乾燥型惑星
-						# is_planet_class = pc_veld #ベルト型惑星
-						# is_planet_class = pc_semiarid #半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						# is_planet_class = pc_salt #塩結晶型惑星
-						#  	# Cold
-						# is_planet_class = pc_arctic #極寒型惑星
-						# is_planet_class = pc_tundra #ツンドラ型惑星
-						# is_planet_class = pc_alpine #高山型惑星
-						# is_planet_class = pc_swamp #沼地型惑星
-						# is_planet_class = pc_frozen_desert #冷凍砂漠型惑星
-						# is_planet_class = pc_glacial #氷河型惑星
-						# is_planet_class = pc_boreal #亜寒帯型惑星
-						# is_planet_class = pc_mushroom #菌糸体惑星
-						# is_planet_class = pc_antarctic #南極型惑星
-						# is_planet_class = pc_snow #氷雪型惑星
-						# is_planet_class = pc_highland #高地型惑星
-						# is_planet_class = pc_mud #泥惑星
-						# is_planet_class = pc_aeolian #風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						# is_planet_class = pc_lanthanide ランタノイド型惑星
-						# is_planet_class = pc_rogue #変異惑星
-						# is_planet_class = pc_storm #暴風惑星
-						# is_planet_class = pc_glacio #氷河火山型惑星
-						# is_planet_class = pc_geothermal #地熱北極型惑星
-						# is_planet_class = pc_eyeball #眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						# is_planet_class = pc_relic #遺物惑星
-						# is_planet_class = pc_city #エキュメノポリス
-						# is_planet_class = pc_toxic #有毒惑星
-						# is_planet_class = pc_nuked #死の惑星
-					}
-				}
-				set_planet_flag = do_ad_large_scale_agricultural_land
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_large_scale_agricultural_land
-				}
-				add_deposit = d_ad_large_scale_agricultural_land
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_large_scale_agricultural_land
-				}
-				add_deposit = d_ad_large_scale_agricultural_land
-			}
-		}
+		add_AD_under_water_cities = yes
 	}
 }
 
-# Normal Spawn Event
+# 地下都市
 country_event = {
 	id = additionaldistricts.06
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		# 古代遺跡群	ancient_ruins	（自然発生）
-		while = {
-			count = @MicroSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						# is_planet_class = pc_primal #原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						# is_planet_class = pc_milarc #要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						#  	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
-						is_planet_class = pc_nuked						#死の惑星
-						is_planet_class = pd_shroudwhispers_init
-						is_planet_class = pd_shroudcomposer_init
-						is_planet_class = pd_shroudeater_init
-						is_planet_class = pd_shrouddesire_init
-					}
-				}
-				set_planet_flag = do_ad_ancient_ruins
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_ancient_ruins
-				}
-				add_deposit = d_ad_ancient_ruins
-			}
-		}
-		while = {
-			count = @MicroDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_ancient_ruins
-				}
-				add_deposit = d_ad_ancient_ruins
-			}
-		}
-		# 古代データバンク	ancient_databank	（自然発生）
-		while = {
-			count = @MicroSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						# is_planet_class = pc_primal #原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						#  	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
-						is_planet_class = pc_nuked						#死の惑星
-						is_planet_class = pd_shroudwhispers_init
-						is_planet_class = pd_shroudcomposer_init
-						is_planet_class = pd_shroudeater_init
-						is_planet_class = pd_shrouddesire_init
-					}
-				}
-				set_planet_flag = do_ad_ancient_databank
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_ancient_databank
-				}
-				add_deposit = d_ad_ancient_databank
-			}
-		}
-		while = {
-			count = @MicroDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_ancient_databank
-				}
-				add_deposit = d_ad_ancient_databank
-			}
-		}
-		# 天然の要塞	natural_fortress	（自然発生）
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						is_planet_class = pc_milarc						#要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						#  	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						is_planet_class = pc_relic						#遺物惑星
-						is_planet_class = pc_city						#エキュメノポリス
-						is_planet_class = pc_toxic						#有毒惑星
-						is_planet_class = pc_nuked						#死の惑星
-					}
-				}
-				set_planet_flag = do_ad_natural_fortress
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_natural_fortress
-				}
-				add_deposit = d_ad_natural_fortress
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_natural_fortress
-				}
-				add_deposit = d_ad_natural_fortress
-			}
-		}
-		# 観光特区	special_tourism_zone	（自然発生）
-		while = {
-			count = @SmallSpace
-			random_galaxy_planet = {
-				limit = {
-					has_building = no
-					OR = {
-						#  	# Wet
-						is_planet_class = pc_continental						#大陸型惑星
-						is_planet_class = pc_tropical						#熱帯型惑星
-						is_planet_class = pc_ocean						#海洋型惑星
-						is_planet_class = pc_cascadian						#カスカディアン型惑星 
-						is_planet_class = pc_desertislands						#環礁型惑星
-						is_planet_class = pc_subarctic						#亜北極海型惑星
-						is_planet_class = pc_mangrove						#マングローブ型惑星
-						is_planet_class = pc_hajungle						#高地ジャングル型惑星
-						is_planet_class = pc_retinal						#レチナール惑星
-						is_planet_class = pc_forest						#森林惑星
-						is_planet_class = pc_wetswamp						#森林湿地型惑星
-						is_planet_class = pc_lake						#湖沼惑星
-						is_planet_class = pc_tepid						#微温惑星
-						is_planet_class = pc_aquatic						#水生惑星
-						is_planet_class = pc_tidallylocked						#同期自転型惑星
-						is_planet_class = pc_floating						#浮遊島惑星
-						is_planet_class = pc_aquifer						#帯水層型惑星
-						is_planet_class = pc_supercon						#超大陸型惑星
-						is_planet_class = pc_technoorganic						##テクノオーガニック惑星
-						is_planet_class = pc_biolumen						#生物発光惑星
-						is_planet_class = pc_ecocity						#エコアーコロジー
-						is_planet_class = pc_lichen						#苔惑星
-						is_planet_class = pc_primal						#原始惑星
-						is_planet_class = pc_megafloratol						#メガフローラ惑星
-						# is_planet_class = pc_milarc #要塞アーコロジー
-						is_planet_class = pc_karst						#カルスト惑星
-						#  	# Dry
-						is_planet_class = pc_desert						#砂漠型惑星
-						is_planet_class = pc_arid						#乾燥型惑星
-						is_planet_class = pc_savannah						#サバンナ型惑星
-						is_planet_class = pc_steppe						#ステップ型惑星
-						is_planet_class = pc_sandsea						#砂海型惑星
-						is_planet_class = pc_oasis						#オアシス型惑星
-						is_planet_class = pc_mesa						#卓上台地型惑星
-						is_planet_class = pc_hadesert						#高地砂漠型惑星
-						is_planet_class = pc_prairie						#プレーリー型惑星
-						is_planet_class = pc_med						#地中海型惑星
-						is_planet_class = pc_outback						#高湿乾燥型惑星
-						is_planet_class = pc_veld						#ベルト型惑星
-						is_planet_class = pc_semiarid						#半乾燥型惑星
-						is_planet_class = pc_coral						#珊瑚惑星
-						is_planet_class = pc_salt						#塩結晶型惑星
-						#  	# Cold
-						is_planet_class = pc_arctic						#極寒型惑星
-						is_planet_class = pc_tundra						#ツンドラ型惑星
-						is_planet_class = pc_alpine						#高山型惑星
-						is_planet_class = pc_swamp						#沼地型惑星
-						is_planet_class = pc_frozen_desert						#冷凍砂漠型惑星
-						is_planet_class = pc_glacial						#氷河型惑星
-						is_planet_class = pc_boreal						#亜寒帯型惑星
-						is_planet_class = pc_mushroom						#菌糸体惑星
-						is_planet_class = pc_antarctic						#南極型惑星
-						is_planet_class = pc_snow						#氷雪型惑星
-						is_planet_class = pc_highland						#高地型惑星
-						is_planet_class = pc_mud						#泥惑星
-						is_planet_class = pc_aeolian						#風成型惑星
-						is_planet_class = pc_duneforest						#砂丘森型惑星
-						is_planet_class = pc_lanthanide						#ランタノイド型惑星
-						is_planet_class = pc_rogue						#変異惑星
-						is_planet_class = pc_storm						#暴風惑星
-						is_planet_class = pc_glacio						#氷河火山型惑星
-						is_planet_class = pc_geothermal						#地熱北極型惑星
-						is_planet_class = pc_eyeball						#眼球惑星
-						is_planet_class = pc_gaia						#ガイア型惑星
-						is_planet_class = pc_superhabitable						#極上惑星
-						# is_planet_class = pc_relic #遺物惑星
-						# is_planet_class = pc_city #エキュメノポリス
-						# is_planet_class = pc_toxic #有毒惑星
-						# is_planet_class = pc_nuked #死の惑星
-					}
-				}
-				set_planet_flag = do_ad_special_tourism_zone
-			}
-		}
-		while = {
-			count = 2
-			every_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_special_tourism_zone
-				}
-				add_deposit = d_ad_special_tourism_zone
-			}
-		}
-		while = {
-			count = @SmallDeposits
-			random_galaxy_planet = {
-				limit = {
-					has_planet_flag = do_ad_special_tourism_zone
-				}
-				add_deposit = d_ad_special_tourism_zone
-			}
-		}
+		add_AD_underground_cities = yes
+	}
+}
+
+# 地熱発電	
+country_event = {
+	id = additionaldistricts.07
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_geothermal_electric_power_generation = yes
+	}
+}
+
+# 潮流発電
+country_event = {
+	id = additionaldistricts.08
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_tidal_current_generation = yes
+	}
+}
+
+# 天然原子炉発電	
+country_event = {
+	id = additionaldistricts.09
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_natural_nuclear_power_generation = yes
+	}
+}
+
+# 露天鉱床
+country_event = {
+	id = additionaldistricts.10
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_open_pit_ore_deposits = yes
+	}
+}
+
+# 水中鉱床
+country_event = {
+	id = additionaldistricts.11
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_under_water_deposits = yes
+	}
+}
+
+# 軌道鉱石群
+country_event = {
+	id = additionaldistricts.12
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_orbital_deposits = yes
+	}
+}
+
+# 軌道鉱石群	高質鉱床	低質鉱床
+country_event = {
+	id = additionaldistricts.13
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_quality_deposits = yes
+	}
+}
+
+# 棚状耕作地
+country_event = {
+	id = additionaldistricts.14
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_shed_cultivation_land = yes
+	}
+}
+
+# 水中生態系
+country_event = {
+	id = additionaldistricts.15
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_in_water_ecosystem = yes
+	}
+}
+
+# 菌類群生体
+country_event = {
+	id = additionaldistricts.16
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_mycorrhizal_communities = yes
+	}
+}
+
+# 大規模牧草地 大自然農業地
+country_event = {
+	id = additionaldistricts.17
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_large_scale_land = yes
+	}
+}
+
+# 古代遺跡群
+country_event = {
+	id = additionaldistricts.18
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_ancient_ruins = yes
+	}
+}
+
+# 古代データバンク
+country_event = {
+	id = additionaldistricts.19
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_ancient_databank = yes
+	}
+}
+
+# 天然の要塞
+country_event = {
+	id = additionaldistricts.20
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_natural_fortress = yes
+	}
+}
+
+# 観光特区
+country_event = {
+	id = additionaldistricts.21
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		add_AD_special_tourism_zone = yes
 	}
 }
 
 country_event = {
-	id = additionaldistricts.07
+	id = additionaldistricts.1000
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {

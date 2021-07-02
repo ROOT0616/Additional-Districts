@@ -15,7 +15,7 @@ automate_generator_planet = {
 		district_ad_geothermal_electric_power_generation
 		district_ad_tidal_current_generation
 		district_ad_natural_nuclear_power_generation
-		# district_generator
+		district_generator
 	}
 
 	buildings = {

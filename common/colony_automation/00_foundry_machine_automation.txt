@@ -6,6 +6,10 @@ automate_foundry_machine_planet = {
 	}
 
 	prio_districts = {
+		district_ad_ancient_ruins
+		district_ad_ancient_databank
+		district_ad_natural_fortress
+		district_ad_special_tourism_zone
 		district_industrial
 	}
 

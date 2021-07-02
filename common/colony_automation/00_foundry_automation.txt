@@ -15,7 +15,7 @@ automate_foundry_planet = {
 		district_ad_ancient_databank
 		district_ad_natural_fortress
 		district_ad_special_tourism_zone
-		# district_industrial
+		district_industrial
 	}
 
 	buildings = {
