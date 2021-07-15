@@ -765,6 +765,12 @@
  building_ad_Anti_s_misile:0 "対宙ミサイル施設"
  building_ad_Anti_s_misile_desc:0 "軌道上に展開する敵艦隊を攻撃する施設"
 
+ building_ad_rban_area_control_area:0 "市街地調整地域"
+ building_ad_rban_area_control_area_desc:0 "産業や企業を誘致するために設定された地域"
+
+ building_ad_industrial_adjustment_area:0 "惑星規模産業調整地域"
+ building_ad_industrial_adjustment_area_desc:0 "産業や企業を誘致するために設定された地域"
+
  building_ad_social_welfare_service_corporation:0 "社会福祉法人"
  building_ad_social_welfare_service_corporation_desc:0 "社会の弱者に対して福祉サービスを提供する税制優遇のある法人"
 

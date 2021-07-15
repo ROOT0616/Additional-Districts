@@ -2672,6 +2672,67 @@ building_ad_Anti_s_misile = {
 	}
 }
 
+# 市街地調整地域	rban_area_control_area	（鉱物300・維持費エネルギー1）（事務員+2、企業建築物スロット+2）
+# （産業や企業を誘致するために設定された地域）
+building_ad_rban_area_control_area = {
+	base_buildtime = @b1_time
+	category = amenity
+	planet_modifier = {
+		planet_max_branch_office_buildings_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		job_clerk_add = 2
+	}
+	upgrades = {
+		"building_ad_industrial_adjustment_area"
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+}
+
+# アップグレード
+# 惑星規模産業調整地域	industrial_adjustment_area	（鉱物500・維持費エネルギー3）（事務員+4、企業建築物スロット+4）
+# （産業や企業を誘致するために設定された地域）
+building_ad_industrial_adjustment_area = {
+	base_buildtime = @b1_time
+	category = amenity
+	planet_modifier = {
+		planet_max_branch_office_buildings_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		job_clerk_add = 4
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+}
+# （惑星規模で産業や企業を誘致するために設定された地域）
+
 # ※企業用
 # 1.社会福祉法人	social_welfare_service_corporation	（社会の弱者に対して福祉サービスを提供する税制優遇のある法人）
 # 企業国家の外交発言力+5%。惑星の幸福度+5%。医療従事者+1、サービス職+3
@@ -2700,6 +2761,9 @@ building_ad_social_welfare_service_corporation = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		upkeep = {
 			energy = 2
 		}
@@ -2734,6 +2798,9 @@ building_ad_law_firm = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		produces = {
 			unity = 10
 		}
@@ -2770,6 +2837,9 @@ building_ad_highly_organic_farm = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		produces = {
 			food = 5
 			consumer_goods = 5
@@ -2809,6 +2879,9 @@ building_ad_interplanetary_press = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		produces = {
 			unity = 10
 		}
@@ -2846,6 +2919,9 @@ building_ad_innovative_corp = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		upkeep = {
 			energy = 2
 		}
@@ -2880,6 +2956,9 @@ building_ad_savings_bank = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		produces = {
 			energy = 10
 		}
@@ -2918,6 +2997,9 @@ building_ad_planet_shipyard = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		upkeep = {
 			energy = 2
 		}
@@ -2951,6 +3033,9 @@ building_ad_planet_factory = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		produces = {
 			consumer_goods = 20
 		}
@@ -2989,6 +3074,9 @@ building_ad_galaxy_passenger_transport_co = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		upkeep = {
 			energy = 2
 		}
@@ -3022,6 +3110,9 @@ building_ad_planetary_construction_union = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		produces = {
 			minerals = 10
 		}
@@ -3060,6 +3151,9 @@ building_ad_small_space_port = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		upkeep = {
 			energy = 2
 		}
@@ -3093,6 +3187,9 @@ building_ad_corporate_academy = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		produces = {
 			physics_research = 5
 			society_research = 5
@@ -3133,6 +3230,9 @@ building_ad_private_prison = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		produces = {
 			energy = 10
 			minerals = 20
@@ -3171,6 +3271,9 @@ building_ad_private_waste_disposal_facilities = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
 		produces = {
 			energy = 10
 			consumer_goods = 10
@@ -3183,3 +3286,4 @@ building_ad_private_waste_disposal_facilities = {
 		factor = 1
 	}
 }
+
