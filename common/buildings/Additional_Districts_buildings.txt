@@ -2677,6 +2677,14 @@ building_ad_Anti_s_misile = {
 building_ad_rban_area_control_area = {
 	base_buildtime = @b1_time
 	category = amenity
+	base_cap_amount = 3
+	potential = {
+		owner = {
+			NOT = {
+				has_authority = auth_corporate
+			}
+		}
+	}
 	planet_modifier = {
 		planet_max_branch_office_buildings_add = 2
 	}
@@ -2701,6 +2709,13 @@ building_ad_rban_area_control_area = {
 			energy = 1
 		}
 	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 10
+			has_branch_office = yes
+		}
+	}
 }
 
 # アップグレード
@@ -2709,6 +2724,15 @@ building_ad_rban_area_control_area = {
 building_ad_industrial_adjustment_area = {
 	base_buildtime = @b1_time
 	category = amenity
+	base_cap_amount = 3
+	can_build = no
+	potential = {
+		owner = {
+			NOT = {
+				has_authority = auth_corporate
+			}
+		}
+	}
 	planet_modifier = {
 		planet_max_branch_office_buildings_add = 4
 	}
@@ -2731,10 +2755,9 @@ building_ad_industrial_adjustment_area = {
 		}
 	}
 }
-# （惑星規模で産業や企業を誘致するために設定された地域）
 
 # ※企業用
-# 1.社会福祉法人	social_welfare_service_corporation	（社会の弱者に対して福祉サービスを提供する税制優遇のある法人）
+# 1.c	social_welfare_service_corporation	（社会の弱者に対して福祉サービスを提供する税制優遇のある法人）
 # 企業国家の外交発言力+5%。惑星の幸福度+5%。医療従事者+1、サービス職+3
 building_ad_social_welfare_service_corporation = {
 	base_buildtime = @b1_time
@@ -2743,12 +2766,6 @@ building_ad_social_welfare_service_corporation = {
 		has_branch_office = yes
 		branch_office_owner = {
 			is_criminal_syndicate = no
-		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
 		}
 	}
 	country_modifier = {
@@ -2782,12 +2799,6 @@ building_ad_law_firm = {
 		has_branch_office = yes
 		branch_office_owner = {
 			is_criminal_syndicate = no
-		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
 		}
 	}
 	planet_modifier = {
@@ -2823,12 +2834,6 @@ building_ad_highly_organic_farm = {
 		branch_office_owner = {
 			is_criminal_syndicate = no
 		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
-		}
 	}
 	planet_modifier = {
 		planet_amenities_add = 10
@@ -2862,12 +2867,6 @@ building_ad_interplanetary_press = {
 		has_branch_office = yes
 		branch_office_owner = {
 			is_criminal_syndicate = no
-		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
 		}
 	}
 	planet_modifier = {
@@ -2904,12 +2903,6 @@ building_ad_innovative_corp = {
 		branch_office_owner = {
 			is_criminal_syndicate = no
 		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
-		}
 	}
 	planet_modifier = {
 		branch_office_value_mult = 0.1
@@ -2940,12 +2933,6 @@ building_ad_savings_bank = {
 		has_branch_office = yes
 		branch_office_owner = {
 			is_criminal_syndicate = no
-		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
 		}
 	}
 	planet_modifier = {
@@ -2981,12 +2968,6 @@ building_ad_planet_shipyard = {
 		branch_office_owner = {
 			is_criminal_syndicate = no
 		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
-		}
 	}
 	country_modifier = {
 		starbase_shipyard_build_speed_mult = 0.05
@@ -3018,12 +2999,6 @@ building_ad_planet_factory = {
 		has_branch_office = yes
 		branch_office_owner = {
 			is_criminal_syndicate = no
-		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
 		}
 	}
 	planet_modifier = {
@@ -3058,12 +3033,6 @@ building_ad_galaxy_passenger_transport_co = {
 		branch_office_owner = {
 			is_criminal_syndicate = no
 		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
-		}
 	}
 	planet_modifier = {
 		branch_office_value_mult = 0.25
@@ -3095,12 +3064,6 @@ building_ad_planetary_construction_union = {
 		has_branch_office = yes
 		branch_office_owner = {
 			is_criminal_syndicate = no
-		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
 		}
 	}
 	planet_modifier = {
@@ -3136,12 +3099,6 @@ building_ad_small_space_port = {
 		branch_office_owner = {
 			is_criminal_syndicate = no
 		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
-		}
 	}
 	planet_modifier = {
 		branch_office_value_mult = 0.5
@@ -3173,12 +3130,6 @@ building_ad_corporate_academy = {
 		has_branch_office = yes
 		branch_office_owner = {
 			is_criminal_syndicate = no
-		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
 		}
 	}
 	planet_modifier = {
@@ -3214,12 +3165,6 @@ building_ad_private_prison = {
 		has_branch_office = yes
 		branch_office_owner = {
 			is_criminal_syndicate = no
-		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
 		}
 	}
 	planet_modifier = {
@@ -3257,12 +3202,6 @@ building_ad_private_waste_disposal_facilities = {
 		branch_office_owner = {
 			is_criminal_syndicate = no
 		}
-		is_artificial = no
-		NOR = {
-			is_planet_class = pc_hive
-			is_planet_class = pc_machine
-			is_planet_class = pc_city
-		}
 	}
 	planet_modifier = {
 		planet_amenities_add = -10
@@ -3286,4 +3225,3 @@ building_ad_private_waste_disposal_facilities = {
 		factor = 1
 	}
 }
-
