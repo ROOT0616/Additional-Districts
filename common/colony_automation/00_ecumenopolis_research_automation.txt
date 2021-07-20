@@ -157,5 +157,13 @@ automate_ecumenopolis_research_planet = {
 				num_buildings = { type = building_research_lab_1 value < 6 }
 			}
 		}
+		
+		19 = {
+			building = building_ad_rban_area_control_area
+		}
+		
+		20 = {
+			building = building_ad_industrial_adjustment_area
+		}
 	}
 }

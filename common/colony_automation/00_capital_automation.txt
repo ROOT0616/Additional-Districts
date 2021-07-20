@@ -436,5 +436,12 @@ automate_capital_planet = {
 		48 = {
 			building = building_gas_extractors
 		}
+		49 = {
+			building = building_ad_rban_area_control_area
+		}
+		
+		50 = {
+			building = building_ad_industrial_adjustment_area
+		}
 	}
 }

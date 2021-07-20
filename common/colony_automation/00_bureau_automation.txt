@@ -147,5 +147,13 @@ automate_bureau_planet = {
 				num_buildings = { type = building_bureaucratic_1 value < 8 }
 			}
 		}
+		
+		17 = {
+			building = building_ad_rban_area_control_area
+		}
+		
+		18 = {
+			building = building_ad_industrial_adjustment_area
+		}
 	}
 }

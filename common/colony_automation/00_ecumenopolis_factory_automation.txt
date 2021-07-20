@@ -139,5 +139,13 @@ automate_ecumenopolis_factory_planet = {
 				}
 			}
 		}
+		
+		19 = {
+			building = building_ad_rban_area_control_area
+		}
+		
+		20 = {
+			building = building_ad_industrial_adjustment_area
+		}
 	}
 }

@@ -143,5 +143,13 @@ automate_farming_planet = {
 				num_buildings = { type = building_chemical_plant value = 0 }
 			}
 		}
+		
+		17 = {
+			building = building_ad_rban_area_control_area
+		}
+		
+		18 = {
+			building = building_ad_industrial_adjustment_area
+		}
 	}
 }

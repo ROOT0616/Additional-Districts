@@ -139,5 +139,13 @@ automate_factory_planet = {
 				num_buildings = { type = building_chemical_plant value = 0 }
 			}
 		}
+
+		18 = {
+			building = building_ad_rban_area_control_area
+		}
+		
+		19 = {
+			building = building_ad_industrial_adjustment_area
+		}
 	}
 }

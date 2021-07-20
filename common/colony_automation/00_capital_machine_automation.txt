@@ -158,5 +158,13 @@ automate_capital_machine_planet = {
 				always = yes
 			}
 		}
+
+		16 = {
+			building = building_ad_rban_area_control_area
+		}
+		
+		17 = {
+			building = building_ad_industrial_adjustment_area
+		}
 	}
 }

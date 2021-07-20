@@ -119,5 +119,13 @@ automate_fortress_planet = {
 				num_buildings = { type = building_stronghold value < 8 }
 			}
 		}
+		
+		13 = {
+			building = building_ad_rban_area_control_area
+		}
+		
+		14 = {
+			building = building_ad_industrial_adjustment_area
+		}
 	}
 }

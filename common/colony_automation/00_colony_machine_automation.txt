@@ -72,6 +72,13 @@ automate_colony_machine_planet = {
 			}
 		}
 
+		7 = {
+			building = building_ad_rban_area_control_area
+		}
+		
+		8 = {
+			building = building_ad_industrial_adjustment_area
+		}
 		# Leave space for when you're a real colony.
 	}
 }

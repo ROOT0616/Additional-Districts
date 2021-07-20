@@ -84,6 +84,14 @@ automate_factory_machine_planet = {
 				num_buildings = { type = building_uplink_node value = 0 }
 			}
 		}
+		
+		10 = {
+			building = building_ad_rban_area_control_area
+		}
+		
+		11 = {
+			building = building_ad_industrial_adjustment_area
+		}
 
 	}
 }
