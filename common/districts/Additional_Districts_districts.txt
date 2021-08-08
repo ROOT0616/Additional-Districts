@@ -14,11 +14,6 @@ district_ad_archaeological_cities = {
 		}
 	}
 	potential = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
-		}
 		has_planet_flag = do_ad_archaeological_cities
 	}
 	allow = {
@@ -177,11 +172,6 @@ district_ad_sky_cities = {
 		}
 	}
 	potential = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
-		}
 		has_planet_flag = do_ad_sky_cities
 	}
 	allow = {
@@ -345,11 +335,6 @@ district_ad_water_cities = {
 		}
 	}
 	potential = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
-		}
 		has_planet_flag = do_ad_water_cities
 	}
 	allow = {
@@ -519,11 +504,6 @@ district_ad_under_water_cities = {
 		}
 	}
 	potential = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
-		}
 		has_planet_flag = do_ad_under_water_cities
 	}
 	allow = {
@@ -673,11 +653,6 @@ district_ad_underground_cities = {
 		}
 	}
 	potential = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
-		}
 		has_planet_flag = do_ad_underground_cities
 	}
 	allow = {
