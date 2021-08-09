@@ -1,12 +1,12 @@
-# 大規模地区開発計画	mixed_use_development_plan	 Tire4
+# 大規模地区開発計画	mixed_use_development_plan	 Tire1
 mixed_use_development_plan = {
-	cost = @tier2cost2
+	cost = @tier1cost2
 	area = society
 	tier = 1
 	category = {
 		new_worlds
 	}
-	weight = @tier2weight2
+	weight = @tier1weight2
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -75,18 +75,18 @@ mixed_use_development_plan = {
 	}
 }
 
-# 大規模水中建設技術	Large_scale_in_water_construction_technology	 Tire4
+# 大規模水中建設技術	Large_scale_in_water_construction_technology	 Tire1
 large_scale_in_water_construction_technology = {
-	cost = @tier4cost3
+	cost = @tier2cost3
 	area = society
-	tier = 1
+	tier = 2
 	category = {
 		new_worlds
 	}
 	prerequisites = {
 		"mixed_use_development_plan"
 	}
-	weight = @tier4weight3
+	weight = @tier2weight3
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -155,18 +155,18 @@ large_scale_in_water_construction_technology = {
 	}
 }
 
-# 大規模空中建設技術	large_scale_air_construction_technology	 Tire4
+# 大規模空中建設技術	large_scale_air_construction_technology	 Tire1
 large_scale_air_construction_technology = {
-	cost = @tier4cost3
+	cost = @tier2cost3
 	area = society
-	tier = 1
+	tier = 2
 	category = {
 		new_worlds
 	}
 	prerequisites = {
 		"mixed_use_development_plan"
 	}
-	weight = @tier4weight3
+	weight = @tier2weight3
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
@@ -235,18 +235,18 @@ large_scale_air_construction_technology = {
 	}
 }
 
-# 大規模地中建設技術	large_scale_ground_construction_technology	 Tire4
+# 大規模地中建設技術	large_scale_ground_construction_technology	 Tire1
 large_scale_ground_construction_technology = {
-	cost = @tier4cost3
+	cost = @tier2cost3
 	area = society
-	tier = 1
+	tier = 2
 	category = {
 		new_worlds
 	}
 	prerequisites = {
 		"mixed_use_development_plan"
 	}
-	weight = @tier4weight3
+	weight = @tier2weight3
 	weight_modifier = {
 		modifier = {
 			factor = 1.25

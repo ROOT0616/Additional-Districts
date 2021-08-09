@@ -31,13 +31,12 @@ economic_plansはAIが鉱石無視してあほみたいに消費財を作るの�
 # __<font color="Lime">  　完成  </font>__
 ## __☆ 技術__
 
-| 技術 | Tire | cost | weight | effect  |
-|:------|:------|:------|:------|:------|
-
-大規模地区開発計画  2次区域  
-大規模水中建設技術  水中都市  
-大規模空中建設技術  空中都市  
-大規模地中建設技術  地下都市  
+| 技術 | area | Tire | cost | weight | effect  |
+|:------|:------|:------|:------|:------|:------|
+| 大規模地区開発計画 | society | 1 | @tier1cost2 | @tier1weight2 | 2次区域 |
+| 大規模水中建設技術 | society | 2 | @tier2cost3 | @tier2weight3 | 水中都市 |
+| 大規模空中建設技術 | society | 2 | @tier2cost3 | @tier2weight3 | 空中都市 |
+| 大規模地中建設技術 | society | 2 | @tier2cost3 | @tier2weight3 | 地下都市 |
 
 ## __☆ 地区__
 ### __〇 都市区域追加__
