@@ -3434,7 +3434,7 @@ ad_journalist = {
 		specialist_job_check_trigger = yes
 	}
 	country_modifier = {
-		pop_cat_worker_political_power = -10
+		pop_cat_worker_political_power = -0.1
 	}
 	planet_modifier = {
 		planet_amenities_add = 2
