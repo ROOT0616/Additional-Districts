@@ -2569,7 +2569,7 @@ building_ad_W_camp = {
 		job_clerk_add = 1
 		job_ad_servicer_add = 3
 		pop_happiness = 0.05
-		pc_habitat_habitability = -0.05
+		pop_environment_tolerance = -0.05
 	}
 	resources = {
 		category = planet_buildings
