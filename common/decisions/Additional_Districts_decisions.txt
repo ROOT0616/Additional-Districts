@@ -129,6 +129,43 @@ decision_ad_large_scale_air_area_construction = {
 	}
 }
 
+decision_ad_undo_large_scale_air_area_construction = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 1000
+			alloys = 500
+			exotic_gases = 100
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+		has_planet_flag = do_ad_sky_cities
+	}
+	prerequisites = {
+		large_scale_air_construction_technology
+	}
+	allow = {
+		has_planet_flag = do_ad_sky_cities
+	}
+	effect = {
+		while = {
+			count = 2
+			remove_deposit = d_ad_sky_cities
+		}
+		hidden_effect = {
+			remove_planet_flag = do_ad_sky_cities
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
 #大規模水中地区建設 large_scale_water_area_construction 
 decision_ad_large_scale_water_area_construction = {
 	owned_planets_only = yes
@@ -193,6 +230,42 @@ decision_ad_large_scale_water_area_construction = {
 	}
 }
 
+decision_ad_undo_large_scale_water_area_construction = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 1000
+			alloys = 500
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+		has_planet_flag = do_ad_under_water_cities
+	}
+	prerequisites = {
+		large_scale_in_water_construction_technology
+	}
+	allow = {
+		has_planet_flag = do_ad_under_water_cities
+	}
+	effect = {
+		while = {
+			count = 5
+			remove_deposit = d_ad_under_water_cities
+		}
+		hidden_effect = {
+			remove_planet_flag = do_ad_under_water_cities
+		}
+	}
+	ai_weight = {
+		factor = 0
+	}
+}
+
 #大規模地下地区建設 large_scale_underground_area_construction 
 decision_ad_large_scale_underground_area_construction = {
 	owned_planets_only = yes
@@ -254,6 +327,42 @@ decision_ad_large_scale_underground_area_construction = {
 			factor = 500
 			free_housing < 1
 		}
+	}
+}
+
+decision_ad_undo_large_scale_underground_area_construction = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 500
+			alloys = 1000
+		}
+	}
+	potential = {
+		NOT = {
+			has_planet_flag = do_ad_undo_display
+		}
+		has_planet_flag = do_ad_underground_cities
+	}
+	prerequisites = {
+		large_scale_ground_construction_technology
+	}
+	allow = {
+		has_planet_flag = do_ad_underground_cities
+	}
+	effect = {
+		while = {
+			count = 5
+			remove_deposit = d_ad_underground_cities
+		}
+		hidden_effect = {
+			remove_planet_flag = do_ad_underground_cities
+		}
+	}
+	ai_weight = {
+		weight = 0
 	}
 }
 
