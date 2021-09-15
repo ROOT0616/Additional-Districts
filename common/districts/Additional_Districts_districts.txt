@@ -3473,7 +3473,6 @@ district_ad_government_district = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -3502,7 +3501,6 @@ district_ad_government_district = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
@@ -3618,7 +3616,6 @@ district_ad_university_district = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -3647,7 +3644,6 @@ district_ad_university_district = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
@@ -3755,7 +3751,6 @@ district_ad_residential_area = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -3782,7 +3777,6 @@ district_ad_residential_area = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
@@ -3894,7 +3888,6 @@ district_ad_shipbuilding_arsenal = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -3921,7 +3914,6 @@ district_ad_shipbuilding_arsenal = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
@@ -4033,7 +4025,6 @@ district_ad_communication_area = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -4060,7 +4051,6 @@ district_ad_communication_area = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
@@ -4172,7 +4162,6 @@ district_ad_tourist_area = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -4199,7 +4188,6 @@ district_ad_tourist_area = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
@@ -4315,7 +4303,6 @@ district_ad_defense_zone = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -4346,7 +4333,6 @@ district_ad_defense_zone = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
@@ -4463,7 +4449,6 @@ district_ad_conceptual_zone = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -4491,7 +4476,6 @@ district_ad_conceptual_zone = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
@@ -4605,7 +4589,6 @@ district_ad_special_research_zone = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -4633,7 +4616,6 @@ district_ad_special_research_zone = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
@@ -4746,7 +4728,6 @@ district_ad_spaceport_area = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -4773,7 +4754,6 @@ district_ad_spaceport_area = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
@@ -4890,7 +4870,6 @@ district_ad_orbital_elevator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_arcology_planet = yes
 		}
 		modifier = {
@@ -4919,7 +4898,6 @@ district_ad_orbital_elevator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			is_regular_empire = yes
 			do_is_ringworld = yes
 		}
 		modifier = {
