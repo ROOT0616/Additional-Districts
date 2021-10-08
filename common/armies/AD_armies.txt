@@ -1,0 +1,32 @@
+# 債務者
+debtor_army = {
+	damage = 1
+	health = 1
+	morale = 0.75
+	morale_damage = 0.75
+	collateral_damage = 1.5
+	war_exhaustion = 0.5
+	time = 60
+	icon = GFX_army_type_slave
+	resources = {
+		category = armies
+		cost = {
+			minerals = 50
+		}
+		upkeep = {
+			energy = 0.5
+		}
+	}
+	allow = {
+		has_building = building_slave_processing
+	}
+	potential = {
+		any_species_pop = {
+			is_pop_category = slave
+			is_same_species = from
+		}
+		owner = {
+			has_building = building_empire_undergraund
+		}
+	}
+}

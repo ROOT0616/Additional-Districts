@@ -1,6 +1,10 @@
 #######################
 #####    区域    ######
 #######################
+has_district_ad_solar_power_generation = {
+	has_planet_flag = decision_ad_solar_power_generation
+}
+
 has_district_ad_government_district = {
 	has_planet_flag = do_ad_government_district
 }

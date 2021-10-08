@@ -13,11 +13,20 @@
  decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
  decision_ad_large_scale_air_area_construction_desc:0 "地上だけではなく空中に浮かぶ都市を築き上げる計画を実行する。"
 
+ decision_ad_undo_large_scale_air_area_construction:0 "大規模空中地区撤去"
+ decision_ad_undo_large_scale_air_area_construction_desc:0 ""
+
  decision_ad_large_scale_water_area_construction:0 "大規模水中地区建設"
  decision_ad_large_scale_water_area_construction_desc:0 "地上だけではなく水中に都市を築き上げる計画を実行する。"
 
+ decision_ad_undo_large_scale_water_area_construction:0 "大規模水中地区撤去"
+ decision_ad_undo_large_scale_water_area_construction_desc:0 ""
+
  decision_ad_large_scale_underground_area_construction:0 "大規模地下地区建設"
  decision_ad_large_scale_underground_area_construction_desc:0 "地上だけではなく地中に都市を築き上げる計画を実行する。"
+
+ decision_ad_undo_large_scale_underground_area_construction:0 "大規模地下地区撤去"
+ decision_ad_undo_large_scale_underground_area_construction_desc:0 ""
 
  decision_ad_solar_power_generation:0 "区画整備：太陽光発電地区"
  decision_ad_solar_power_generation_desc:0 "惑星に大規模な太陽光パネルを整備し、惑星の反射光を増やす。"
@@ -110,6 +119,11 @@
 #######################
 #####    仕事    ######
 #######################
+
+ job_ad_clerk_drone:0 "雑務ドローン"
+ job_ad_clerk_drone_plural:0 "雑務ドローン"
+ job_ad_clerk_drone_desc:0 ""
+ mod_job_ad_clerk_drone_add:0 "雑務ドローンの職業枠"
 
  job_ad_excavator:0 "発掘者"
  job_ad_excavator_plural:0 "発掘者"
@@ -219,7 +233,7 @@
  job_ad_dairy_farmer_drone:0 "酪農家"
  job_ad_dairy_farmer_drone_plural:0 "酪農家"
  job_ad_dairy_farmer_drone_desc:0 "主に肉類や乳製品、卵などのタンパク源を生産する労働者"
- mod_job_ad_dairy_farmer__droneadd:0 "酪農家の職業枠"
+ mod_job_ad_dairy_farmer_drone_add:0 "酪農家の職業枠"
 
  job_ad_large_scale_farmer:0 "大規模農家"
  job_ad_large_scale_farmer_plural:0 "大規模農家"
@@ -812,6 +826,64 @@
 
  building_ad_private_waste_disposal_facilities:0 "民間廃棄物処理施設"
  building_ad_private_waste_disposal_facilities_desc:0 "民間企業が惑星政府の委託を受けて運営する廃棄物処理施設"
+
+ building_slave_shop:0 "種族市場"
+ building_slave_shop_desc:0 "労働力確保のため非合法な取引が行われる市場"
+
+ building_empire_undergraund:0 "地下帝国"
+ building_empire_undergraund_desc:0 "賭博で負けた者が永遠に借金返済のために働かされる民間強制収容所"
+
+ building_preasure_land:0 "プレジャーランド"
+ building_preasure_land_desc:0 "非合法な労働により観光客や富裕層へ性風俗を提供する施設"
+
+ building_yakuza_office:0 "組事務所"
+ building_yakuza_office_desc:0 "犯罪国家の行政的事務所であり、「なぜか」暴力的な労働者が多くいる"
+
+ building_yakuza_constructioncorp:0 "土建屋"
+ building_yakuza_constructioncorp_desc:0 "荒々しい作業員が多くいる建築業者で、不動産も取り扱っている"
+
+ building_yakuza_estate:0 "地上げ屋"
+ building_yakuza_estate_desc:0 "土地の再開発の際に活躍する敏腕不動産屋"
+
+ building_pirate_broad:0 "海賊放送局"
+ building_pirate_broad_desc:0 "正規の放送ではなく、非合法回線に乗せて報道や放送を行う非合法業者"
+
+ building_black_ushi:0 "闇金融業者"
+ building_black_ushi_desc:0 "どのような人にも非合法高利率で融資を行う慈善事業者"
+
+ building_f_rank_universities:0 "Fランク大学"
+ building_f_rank_universities_desc:0 "意図的に低い教育を行いつつ、大学特権で研究成果を参照する高等教育機関"
+
+ building_corp_nazi:0 "排他主義宣伝所"
+ building_corp_nazi_desc:0 "各惑星のマイノリティに呼びかけ、憎悪を煽る思想機関"
+
+ building_so_kai_ya:0 "総会屋"
+ building_so_kai_ya_desc:0 "各惑星の経済を犯罪国家有利に変えていくことを目的にした投資機関"
+
+ building_yakuza_a_pro:0 "893プロダクション"
+ building_yakuza_a_pro_desc:0 "やんちゃなアイドルがみんなのサイフをいただいていきます!"
+
+ building_boryoku_ya:0 "民事事件解決事業所"
+ building_boryoku_ya_desc:0 "裁判なんて野蛮な......ここは穏便に暴力で......"
+
+ building_hinkon_bussiness:0 "生活困窮者支援法人"
+ building_hinkon_bussiness_desc:0 "生活困窮者への福祉を経済に還元する"
+
+ building_ura_factry:0 "偽造製品生産工場"
+ building_ura_factry_desc:0 "ﾊﾊｯ!"
+
+ building_buki_factry:0 "武器密造工場"
+ building_buki_factry_desc:0 "武器を安く安定的に供給する工場"
+
+ building_zosen_factry:0 "非合法造船所"
+ building_zosen_factry_desc:0 "船舶の許可証は高額なので、許可証なしで入手すればよいのではないか"
+
+#######################
+#####    陸軍    ######
+#######################
+
+ debtor_army:0 "債務者"
+ debtor_army_desc:0 ""
 
 #######################
 #####    ○○○○    ######

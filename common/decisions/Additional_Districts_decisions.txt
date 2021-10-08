@@ -203,7 +203,7 @@ decision_ad_large_scale_water_area_construction = {
 		}
 	}
 	ai_weight = {
-		factor = 50
+		weight = 50
 		modifier = {
 			factor = 10
 			owner = {
@@ -262,7 +262,7 @@ decision_ad_undo_large_scale_water_area_construction = {
 		}
 	}
 	ai_weight = {
-		factor = 0
+		weight = 0
 	}
 }
 
@@ -369,7 +369,6 @@ decision_ad_undo_large_scale_underground_area_construction = {
 ##############################
 #####    発電区域追加    ######
 ##############################
-# 太陽光発電	solar_power_generation	技術者*5	（技術開発）
 # 太陽光発電	solar_power_generation	技術者*5	（技術開発）
 decision_ad_solar_power_generation = {
 	owned_planets_only = yes
