@@ -54,9 +54,7 @@ ad_water_farmer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_farmers
 		produces = {
@@ -208,9 +206,7 @@ ad_water_farmer_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_farmers
 		produces = {
@@ -287,9 +283,7 @@ ad_facility_maintainer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	planet_modifier = {
 		planet_amenities_add = 3
 	}
@@ -317,9 +311,7 @@ ad_facility_maintainer_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	planet_modifier = {
 		planet_amenities_add = 3
 	}
@@ -348,9 +340,7 @@ ad_geothermal_technician = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_technician
 		produces = {
@@ -485,9 +475,7 @@ ad_geothermal_technician_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_technician
 		produces = {
@@ -623,9 +611,7 @@ ad_atomic_engineer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_technician
 		produces = {
@@ -763,9 +749,7 @@ ad_atomic_engineer_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_technician
 		produces = {
@@ -904,9 +888,7 @@ ad_underwater_miner = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_miners
 		produces = {
@@ -1030,9 +1012,7 @@ ad_underwater_miner_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_miners
 		produces = {
@@ -1157,9 +1137,7 @@ ad_space_miner = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_miners
 		produces = {
@@ -1283,9 +1261,7 @@ ad_space_miner_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_miners
 		produces = {
@@ -1410,9 +1386,7 @@ ad_efficient_miner = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_miners
 		produces = {
@@ -1533,9 +1507,7 @@ ad_efficient_miner_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_miners
 		produces = {
@@ -1657,9 +1629,7 @@ ad_low_efficiency_miner = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_miners
 		produces = {
@@ -1780,9 +1750,7 @@ ad_low_efficiency_miner_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_miners
 		produces = {
@@ -1904,9 +1872,7 @@ ad_fungus_farmer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_farmers
 		produces = {
@@ -2055,9 +2021,7 @@ ad_fungus_farmer_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_farmers
 		produces = {
@@ -2207,9 +2171,7 @@ ad_dairy_farmer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_farmers
 		produces = {
@@ -2361,9 +2323,7 @@ ad_dairy_farmer_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_farmers
 		produces = {
@@ -2516,9 +2476,7 @@ ad_large_scale_farmer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_farmers
 		produces = {
@@ -2667,9 +2625,7 @@ ad_large_scale_farmer_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_farmers
 		produces = {
@@ -2819,9 +2775,7 @@ ad_servicer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	planet_modifier = {
 		planet_amenities_add = 2
 		pop_happiness = 0.01
@@ -2848,9 +2802,7 @@ ad_forcrd_larbor = {
 		is_sapient = yes
 	}
 
-	possible = {
-		worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 	resources = {
 		category = planet_ad_forcrd_larbor
 		produces = {
@@ -2876,9 +2828,7 @@ ad_clerk_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	planet_modifier = {
 		planet_amenities_add = 2
 		trade_value_add = 4
@@ -2901,9 +2851,7 @@ ad_data_minor = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	country_modifier = {
 		intel_encryption_add = 1
 	}
@@ -2936,9 +2884,7 @@ ad_data_minor_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	country_modifier = {
 		intel_encryption_add = 1
 	}
@@ -2972,9 +2918,7 @@ ad_shipwright = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	country_modifier = {
 		starbase_shipyard_build_speed_mult = 0.05
 		country_naval_cap_add = 2
@@ -3001,9 +2945,7 @@ ad_shipwright_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	country_modifier = {
 		starbase_shipyard_build_speed_mult = 0.05
 		country_naval_cap_add = 2
@@ -3031,9 +2973,7 @@ ad_infrastructure_engineer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	planet_modifier = {
 		# planet_jobs_specialist_produces_mult = 0.05
 		planet_jobs_worker_produces_mult = 0.05
@@ -3059,9 +2999,7 @@ ad_infrastructure_engineer_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	planet_modifier = {
 		# planet_jobs_specialist_produces_mult = 0.05
 		planet_jobs_complex_drone_produces_mult = 0.05
@@ -3089,9 +3027,7 @@ ad_commissioned_officer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	pop_modifier = {
 		pop_defense_armies_add = 5
 	}
@@ -3119,9 +3055,7 @@ ad_commissioned_officer_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	pop_modifier = {
 		pop_defense_armies_add = 5
 	}
@@ -3150,9 +3084,7 @@ ad_entrepreneur = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	planet_modifier = {
 		trade_value_mult = 0.05
 		trade_value_add = 5
@@ -3181,9 +3113,7 @@ ad_entrepreneur_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	planet_modifier = {
 		trade_value_mult = 0.05
 		trade_value_add = 5
@@ -3213,9 +3143,7 @@ ad_spaceport_mechanics = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	country_modifier = {
 		country_naval_cap_add = 6
 	}
@@ -3240,9 +3168,7 @@ ad_spaceport_mechanics_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	country_modifier = {
 		country_naval_cap_add = 6
 	}
@@ -3268,9 +3194,7 @@ ad_professorship = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	planet_modifier = {
 		planet_jobs_specialist_produces_mult = 0.05
 	}
@@ -3295,9 +3219,7 @@ ad_professorship_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	planet_modifier = {
 		planet_jobs_complex_drone_produces_mult = 0.05
 	}
@@ -3323,9 +3245,7 @@ ad_excavator = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	resources = {
 		category = planet_ad_excavator
 		produces = {
@@ -3347,9 +3267,7 @@ ad_excavator_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	resources = {
 		category = planet_ad_excavator
 		produces = {
@@ -3372,9 +3290,7 @@ ad_banker = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	planet_modifier = {
 		planet_amenities_add = 3
 		trade_value_add = 5
@@ -3401,9 +3317,7 @@ ad_lawyer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	planet_modifier = {
 		planet_amenities_add = 1
 		planet_crime_add = -5 
@@ -3430,9 +3344,7 @@ ad_journalist = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	country_modifier = {
 		pop_cat_worker_political_power = -0.1
 	}
@@ -3461,9 +3373,7 @@ ad_librarian = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	resources = {
 		category = planet_researchers
 		produces = {
@@ -3489,9 +3399,7 @@ ad_psp = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	country_modifier = {
 		intel_encryption_add = 1
 	}
@@ -3515,9 +3423,7 @@ ad_general_officer = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		ruler_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_ruler_job
 	pop_modifier = {
 		pop_defense_armies_add = 8
 	}
@@ -3544,9 +3450,7 @@ ad_general_officer_drone = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		drone_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_drone_job
 	pop_modifier = {
 		pop_defense_armies_add = 8
 	}
@@ -3574,9 +3478,7 @@ ad_ministor = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		ruler_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_ruler_job
 	resources = {
 		category = planet_ad_ministor
 		upkeep = {
@@ -3601,9 +3503,7 @@ ad_congressman = {
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-	possible = {
-		ruler_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_ruler_job
 	planet_modifier = {
 		planet_stability_add = 5
 		pop_happiness = 0.05

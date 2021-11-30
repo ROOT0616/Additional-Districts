@@ -59,6 +59,12 @@ building_ad_Palace = {
 			}
 		}
 	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		influence = 1
+	}
 }
 
 # building_ad_CEO  CEOオフィス		安定度+10						側近Job+1			(CEOのためのオフィス。多くの秘書やスタッフが常駐し、快適なCEOライフをサポートしている。)企業のみ	維持:エネ3  			建設:鉱物800、時間550
@@ -122,6 +128,12 @@ building_ad_CEO = {
 				remove_country_flag = build_ad_CEO
 			}
 		}
+	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		influence = 1
 	}
 }
 
@@ -1622,6 +1634,15 @@ building_ad_G_datebank = {
 			}
 		}
 	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		unity = 3
+		physics_research = 2
+		society_research = 2
+		engineering_research = 2
+	}
 }
 
 # building_ad_medicinelab  医薬基盤研究所		Pop成長速度+5%、リーダー寿命+10年			科学総裁+1、医療従事者+4	(国家規模で医療の発展を目指す研究所)
@@ -1687,6 +1708,15 @@ building_ad_medicinelab = {
 			}
 		}
 	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		unity = 3
+		physics_research = 2
+		society_research = 2
+		engineering_research = 2
+	}
 }
 
 # ※惑星に一つ
@@ -1720,6 +1750,15 @@ building_ad_P_datebank = {
 			exotic_gases = 1
 		}
 	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		unity = 3
+		physics_research = 2
+		society_research = 2
+		engineering_research = 2
+	}
 }
 
 # building_ad_E_libraly  帝国図書館			なし						データ司書+2					(君主により国家からの自由を認められた情報を保管する施設。)君主制のみ			維持:エネ3、エキゾガス1		建設:鉱物600、エキゾガス200、合金100、時間650
@@ -1750,6 +1789,15 @@ building_ad_E_libraly = {
 			energy = 3
 			exotic_gases = 1
 		}
+	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		unity = 6
+		physics_research = 4
+		society_research = 4
+		engineering_research = 4
 	}
 }
 
@@ -2102,6 +2150,15 @@ building_ad_university = {
 			exotic_gases = 1
 		}
 	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		unity = 3
+		physics_research = 2
+		society_research = 2
+		engineering_research = 2
+	}
 }
 
 # building_ad_perfectethic  安全思想教育センター		統治志向魅力+20%				官僚+1、公安職員+2、強制労働者+3		(この施設では社会において安全な思想を広めることができる。)権威主義のみ		維持:エネ3、レアクリ1		建設:鉱物600、レアクリ100、合金100、時間650
@@ -2436,6 +2493,15 @@ building_ad_college = {
 			exotic_gases = 1
 		}
 	}
+	ai_resource_production = {
+		trigger = { 
+			always = yes
+		}
+		unity = 1
+		physics_research = 1
+		society_research = 1
+		engineering_research = 1
+	}
 }
 
 # building_ad_H_hotel  高級ホテル		流入魅力+10%、住宅+5、快適度+5%			エンターテイナー+2、サービス職+2		(高所得層やVIPが宿泊する度の種族にとっても快適な宿泊所)受容主義のみ				維持:エネ4、消費財3		建設:鉱物300、合金50、レアクリ100、時間800
@@ -2713,13 +2779,6 @@ building_ad_rban_area_control_area = {
 			energy = 1
 		}
 	}
-	ai_weight = {
-		factor = 1
-		modifier = {
-			factor = 10
-			has_branch_office = yes
-		}
-	}
 }
 
 # アップグレード
@@ -2789,9 +2848,6 @@ building_ad_social_welfare_service_corporation = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 2.行列のできる法律事務所	law_firm	（行列ができるほど凄腕の法律家が在籍する法律事務所）
@@ -2823,9 +2879,6 @@ building_ad_law_firm = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 3.高度有機農園	highly_organic_farm	（オーガニック生産に気を使った高級志向の農園）
@@ -2856,9 +2909,6 @@ building_ad_highly_organic_farm = {
 		upkeep = {
 			energy = 2
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -2892,9 +2942,6 @@ building_ad_interplanetary_press = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 5.イノベーティブコーポ	innovative_corp	（イノベーティブなアイデアでハイパフォーマンスのリザルトにコミットメントするコーポ）
@@ -2922,9 +2969,6 @@ building_ad_innovative_corp = {
 		upkeep = {
 			energy = 2
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -2957,9 +3001,6 @@ building_ad_savings_bank = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 7.惑星造船所	planet_shipyard	（惑星に根差した民間船や軍艦を造る船舶企業）
@@ -2988,9 +3029,6 @@ building_ad_planet_shipyard = {
 		upkeep = {
 			energy = 2
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3022,9 +3060,6 @@ building_ad_planet_factory = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 9.銀河旅客運送社	galaxy_passenger_transport_co	（民間船や惑星内輸送機関を運用し、物と者を運ぶ企業）
@@ -3053,9 +3088,6 @@ building_ad_galaxy_passenger_transport_co = {
 		upkeep = {
 			energy = 2
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3087,9 +3119,6 @@ building_ad_planetary_construction_union = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 11.小規模宇宙港	small_space_port	（惑星につき1つ）（小規模だが堅実な民間船離発着を行う民間宇宙港）
@@ -3105,6 +3134,7 @@ building_ad_small_space_port = {
 		}
 	}
 	planet_modifier = {
+		planet_max_branch_office_buildings_add = 1
 		branch_office_value_mult = 0.5
 		trade_value_mult = 0.2
 		job_ad_spaceport_mechanics_add = 1
@@ -3118,9 +3148,6 @@ building_ad_small_space_port = {
 		upkeep = {
 			energy = 2
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3153,9 +3180,6 @@ building_ad_corporate_academy = {
 		upkeep = {
 			energy = 2
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3190,9 +3214,6 @@ building_ad_private_prison = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 14.民間廃棄物処理施設	private_waste_disposal_facilities	（惑星につき1つ）（民間企業が惑星政府の委託を受けて運営する廃棄物処理施設）
@@ -3225,9 +3246,6 @@ building_ad_private_waste_disposal_facilities = {
 			energy = 2
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 種族市場	slave_shop	（惑星に1つ）				（犯罪度+75:企業移民流入+5%:惑星の移民流出+20%、事務員+2） 
@@ -3257,9 +3275,6 @@ building_slave_shop = {
 		upkeep = {
 			energy = 5
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3291,9 +3306,6 @@ building_empire_undergraund = {
 			energy = 5
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # プレジャーランド	preasure_land	（惑星に1つ）			（犯罪度+30:支社価値+25%、惑星Pop成長率+5%、惑星労働者幸福度-10%、惑星の犯罪度+50%、事務員+2） 
@@ -3323,9 +3335,6 @@ building_preasure_land = {
 		upkeep = {
 			energy = 5
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3358,9 +3367,6 @@ building_yakuza_office = {
 			energy = 5
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 土建屋	yakuza_constructioncorp	（惑星に1つ）		（犯罪度+20:企業建造物slot+3:惑星建造物コスト+30%、事務員+2） 
@@ -3388,9 +3394,6 @@ building_yakuza_constructioncorp = {
 		upkeep = {
 			energy = 5
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3421,9 +3424,6 @@ building_yakuza_estate = {
 		upkeep = {
 			energy = 5
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3456,9 +3456,6 @@ building_pirate_broad = {
 			energy = 5
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 闇金融業者	black_ushi	（惑星に1つ）			（犯罪度+25:支社価値+30%:惑星交易価値+10%、労働者生産量-2%、事務員+2）
@@ -3487,9 +3484,6 @@ building_black_ushi = {
 		upkeep = {
 			energy = 5
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3522,9 +3516,6 @@ building_f_rank_universities = {
 			energy = 5
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 排他主義宣伝所	corp_nazi	（惑星に1つ）			（犯罪度+30:企業帝国統合力+10%:惑星排他主義魅力+20%、安定度-10、事務員+2）
@@ -3556,9 +3547,6 @@ building_corp_nazi = {
 			energy = 5
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 総会屋	so_kai_ya	（惑星に1つ）		（犯罪度+25:支社価値+20%:交易価値の30%を犯罪度に転換する、事務員+2、豪商+1）まだ
@@ -3589,9 +3577,6 @@ building_so_kai_ya = {
 			energy = 5
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 893プロダクション	yakuza_a_pro		(犯罪度+25:企業帝国統合力+5%:エンターテイナーJob+1、志向魅力-10%)
@@ -3621,9 +3606,6 @@ building_yakuza_a_pro = {
 		upkeep = {
 			energy = 5
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3656,9 +3638,6 @@ building_boryoku_ya = {
 			energy = 5
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 生活困窮者支援法人			hinkon_bussiness			(犯罪度+40:支社価値+20:医療従事者Job+1、労働者幸福度-20%)
@@ -3686,9 +3665,6 @@ building_hinkon_bussiness = {
 		upkeep = {
 			energy = 5
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3719,9 +3695,6 @@ building_ura_factry = {
 		upkeep = {
 			energy = 5
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }
 
@@ -3755,9 +3728,6 @@ building_buki_factry = {
 			energy = 5
 		}
 	}
-	ai_weight = {
-		factor = 1
-	}
 }
 
 # 非合法造船所	zosen_factry 		(犯罪度+40:企業帝国造船速度+5%:造船技師Job+1)
@@ -3786,8 +3756,5 @@ building_zosen_factry = {
 		upkeep = {
 			energy = 5
 		}
-	}
-	ai_weight = {
-		factor = 1
 	}
 }

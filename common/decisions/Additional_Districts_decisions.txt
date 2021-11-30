@@ -78,12 +78,6 @@ decision_ad_large_scale_air_area_construction = {
 		large_scale_air_construction_technology
 	}
 	allow = {
-		# owner = {
-		# 	resource_stockpile_compare = {
-		# 		resource = energy
-		# 		value >= 1000
-		# 	}
-		# }
 		NOT = {
 			has_planet_flag = do_ad_sky_cities
 		}

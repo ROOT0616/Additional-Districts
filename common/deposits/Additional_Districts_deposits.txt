@@ -10,7 +10,7 @@
 ##############################
 # 遺跡都市  district_ad_archaeological_cities 住居*5	発掘者*2	（自然発生）
 d_ad_archaeological_cities = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -28,7 +28,7 @@ d_ad_archaeological_cities = {
 
 # 空中都市 sky_cities 住居*30	事務員*2	交易価値	（自然発生）	（技術開発）
 d_ad_sky_cities = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -46,7 +46,7 @@ d_ad_sky_cities = {
 
 # 水上都市	water_cities	住居*20	事務員*2	交易価値	（自然発生）
 d_ad_water_cities = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -64,7 +64,7 @@ d_ad_water_cities = {
 
 # 水中都市	under_water_cities	住居*5	水中農家*2	農作物	（自然発生）	（技術開発）
 d_ad_under_water_cities = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -82,7 +82,7 @@ d_ad_under_water_cities = {
 
 #地下都市 underground_cities	住居*5	施設維持業者*1	鉱物生産	（自然発生）	（技術開発）
 d_ad_underground_cities = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -107,7 +107,7 @@ d_ad_underground_cities = {
 # 天然原子炉発電	natural_nuclear_power_generation	原子技師*2	（技術開発）
 #太陽光発電 solar_power_generation	住居*2	技術者*5	（技術開発）
 d_ad_solar_power_generation = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -125,7 +125,7 @@ d_ad_solar_power_generation = {
 
 #地熱発電 geothermal_electric_power_generation	住居*2 地熱技師*2	（技術開発）
 d_ad_geothermal_electric_power_generation = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -143,7 +143,7 @@ d_ad_geothermal_electric_power_generation = {
 
 #潮流発電 tidal_current_generation	住居*2 技術者*5	（技術開発）
 d_ad_tidal_current_generation = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -161,7 +161,7 @@ d_ad_tidal_current_generation = {
 
 #天然原子炉発電 natural_nuclear_power_generation	住居*2 原子技師*2	（技術開発）
 d_ad_natural_nuclear_power_generation = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -187,7 +187,7 @@ d_ad_natural_nuclear_power_generation = {
 # 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生）
 # 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
 d_ad_open_pit_ore_deposits = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -205,7 +205,7 @@ d_ad_open_pit_ore_deposits = {
 
 # 水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
 d_ad_under_water_deposits = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -223,7 +223,7 @@ d_ad_under_water_deposits = {
 
 # 軌道鉱石群	orbital_deposits	宇宙採掘者*2	（技術開発）
 d_ad_orbital_deposits = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -241,7 +241,7 @@ d_ad_orbital_deposits = {
 
 # 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
 d_ad_high_quality_deposits = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -259,7 +259,7 @@ d_ad_high_quality_deposits = {
 
 # 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生
 d_ad_low_quality_deposits = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -285,7 +285,7 @@ d_ad_low_quality_deposits = {
 # 大自然農業地	large_scale_agricultural_land（技術開発）
 # 棚状耕作地	shed_cultivation_land	（技術開発）
 d_ad_shed_cultivation_land = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -303,7 +303,7 @@ d_ad_shed_cultivation_land = {
 
 # 水中生態系	in_water_ecosystem	（自然発生）
 d_ad_in_water_ecosystem = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -321,7 +321,7 @@ d_ad_in_water_ecosystem = {
 
 # 菌類群生体	mycorrhizal_communities	（自然発生）
 d_ad_mycorrhizal_communities = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -339,7 +339,7 @@ d_ad_mycorrhizal_communities = {
 
 # 大規模牧草地	large_scale_grazing_land	（技術開発）
 d_ad_large_scale_grazing_land = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -357,7 +357,7 @@ d_ad_large_scale_grazing_land = {
 
 # 大自然農業地	large_scale_agricultural_land（技術開発）
 d_ad_large_scale_agricultural_land = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -382,7 +382,7 @@ d_ad_large_scale_agricultural_land = {
 # 観光特区	special_tourism_zone	（自然発生）
 # 古代遺跡群	ancient_ruins	（自然発生）
 d_ad_ancient_ruins = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -400,7 +400,7 @@ d_ad_ancient_ruins = {
 
 # 古代データバンク	ancient_databank	（自然発生）
 d_ad_ancient_databank = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -418,7 +418,7 @@ d_ad_ancient_databank = {
 
 # 天然の要塞	natural_fortress	（自然発生）
 d_ad_natural_fortress = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -436,7 +436,7 @@ d_ad_natural_fortress = {
 
 # 観光特区	special_tourism_zone	（自然発生）
 d_ad_special_tourism_zone = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -468,7 +468,7 @@ d_ad_special_tourism_zone = {
 # 軌道エレベーター orbital_elevator
 # 官庁街 government_district
 d_ad_government_district = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -486,7 +486,7 @@ d_ad_government_district = {
 
 # 大学街 university_district
 d_ad_university_district = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -504,7 +504,7 @@ d_ad_university_district = {
 
 # 住宅街 residential_area
 d_ad_residential_area = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -522,7 +522,7 @@ d_ad_residential_area = {
 
 # 造船工廠 shipbuilding_arsenal
 d_ad_shipbuilding_arsenal = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -540,7 +540,7 @@ d_ad_shipbuilding_arsenal = {
 
 # 通信区域 communication_area
 d_ad_communication_area = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -558,7 +558,7 @@ d_ad_communication_area = {
 
 # 観光区域 tourist_area
 d_ad_tourist_area = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -576,7 +576,7 @@ d_ad_tourist_area = {
 
 # 防衛区域 defense_zone
 d_ad_defense_zone = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -594,7 +594,7 @@ d_ad_defense_zone = {
 
 # 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
 d_ad_conceptual_zone = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -612,7 +612,7 @@ d_ad_conceptual_zone = {
 
 # 研究特区 special_research_zone 	研究者 researchers
 d_ad_special_research_zone = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -630,7 +630,7 @@ d_ad_special_research_zone = {
 
 # 宇宙港区域 spaceport_area
 d_ad_spaceport_area = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes
@@ -648,7 +648,7 @@ d_ad_spaceport_area = {
 
 # 軌道エレベーター orbital_elevator
 d_ad_orbital_elevator = {
-	is_for_colonizeable = yes
+	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = yes
 	should_swap_deposit_on_terraforming = yes

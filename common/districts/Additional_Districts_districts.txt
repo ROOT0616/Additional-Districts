@@ -123,38 +123,11 @@ district_ad_archaeological_cities = {
 			job_clerk_add = 1
 		}
 	}
-	ai_weight = {
-		weight = 100
-		modifier = {
-			factor = 100
-			owner = {
-				has_monthly_income = {
-					resource = minor_artifacts
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			free_housing < 0
-		}
-		modifier = {
-			factor = 100
-			free_housing <= -5
-		}
-		modifier = {
-			factor = 5
-			free_housing <= 5
-		}
-		modifier = {
-			weight = 10000
-			planet = {
-				free_district_slots <= 2
-			}
-		}
-	}
 	ai_resource_production = {
 		minor_artifacts = 10
+		physics_research = 10
+		society_research = 10
+		engineering_research = 10
 		trigger = {
 			always = yes
 		}
@@ -301,23 +274,8 @@ district_ad_sky_cities = {
 		}
 		text = job_maintenance_drone_effect_desc
 	}
-	ai_weight = {
-		weight = 100
-		modifier = {
-			factor = 100
-			free_housing < 0
-		}
-		modifier = {
-			factor = 100
-			free_housing <= -5
-		}
-		modifier = {
-			factor = 5
-			free_housing <= 5
-		}
-	}
 	ai_resource_production = {
-		energy = 5
+		energy = 10
 		trigger = {
 			always = yes
 		}
@@ -464,29 +422,8 @@ district_ad_water_cities = {
 		}
 		text = job_maintenance_drone_effect_desc
 	}
-	ai_weight = {
-		weight = 100
-		modifier = {
-			factor = 100
-			free_housing < 0
-		}
-		modifier = {
-			factor = 100
-			free_housing <= -5
-		}
-		modifier = {
-			factor = 5
-			free_housing <= 5
-		}
-		modifier = {
-			weight = 10000
-			planet = {
-				free_district_slots <= 1
-			}
-		}
-	}
 	ai_resource_production = {
-		energy = 4
+		energy = 8
 		trigger = {
 			always = yes
 		}
@@ -614,30 +551,11 @@ district_ad_under_water_cities = {
 			job_clerk_add = 1
 		}
 	}
-	ai_weight = {
-		weight = 80
-		modifier = {
-			factor = 100
-			free_housing < 0
-		}
-		modifier = {
-			factor = 100
-			free_housing <= -5
-		}
-		modifier = {
-			factor = 5
-			free_housing < 5
-		}
-		modifier = {
-			weight = 10000
-			planet = {
-				free_district_slots <= 1
-			}
-		}
-	}
 	ai_resource_production = {
+		energy = 6
 		food = 5
 		trigger = {
+			always = yes
 		}
 	}
 }
@@ -763,34 +681,8 @@ district_ad_underground_cities = {
 			job_clerk_add = 1
 		}
 	}
-	ai_weight = {
-		weight = 80
-		modifier = {
-			factor = 100
-			free_housing < 0
-		}
-		modifier = {
-			factor = 100
-			free_housing <= -5
-		}
-		modifier = {
-			factor = 5
-			free_housing < 5
-		}
-		modifier = {
-			weight = 10000
-			planet = {
-				free_district_slots <= 1
-			}
-		}
-		modifier = {
-			weight = 10000
-			planet = {
-				free_district_slots <= 1
-			}
-		}
-	}
 	ai_resource_production = {
+		energy = 6
 		minerals = 5
 		trigger = {
 			always = yes
@@ -861,49 +753,6 @@ district_ad_solar_power_generation = {
 			job_technician_drone_add = 5
 		}
 	}
-	ai_weight = {
-		weight = 30
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 20
-				}
-			}
-		}
-		modifier = {
-			weight = 100000
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value > 50
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-	}
 	ai_resource_production = {
 		energy = 24
 		trigger = {
@@ -971,62 +820,10 @@ district_ad_geothermal_electric_power_generation = {
 			job_ad_geothermal_technician_drone_add = 4
 		}
 	}
-	ai_weight = {
-		weight = 60
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 20
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value > 50
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-	}
 	ai_resource_production = {
 		energy = 4
 		trigger = {
 			always = yes
-		}
-	}
-	ai_resource_production = {
-		energy = 24
-		trigger = {
-			OR = {
-				low_energy_income = yes
-				medium_energy_income = yes
-			}
 		}
 	}
 }
@@ -1092,62 +889,10 @@ district_ad_tidal_current_generation = {
 			job_technician_drone_add = 5
 		}
 	}
-	ai_weight = {
-		weight = 1000
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 20
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value > 50
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-	}
 	ai_resource_production = {
-		energy = 12
+		energy = 20
 		trigger = {
 			always = yes
-		}
-	}
-	ai_resource_production = {
-		energy = 16
-		trigger = {
-			OR = {
-				low_energy_income = yes
-				medium_energy_income = yes
-			}
 		}
 	}
 }
@@ -1212,62 +957,10 @@ district_ad_natural_nuclear_power_generation = {
 			job_ad_atomic_engineer_drone_add = 2
 		}
 	}
-	ai_weight = {
-		weight = 55
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 20
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 0.5
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value > 50
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-	}
 	ai_resource_production = {
 		energy = 4
 		trigger = {
 			always = yes
-		}
-	}
-	ai_resource_production = {
-		energy = 16
-		trigger = {
-			OR = {
-				low_energy_income = yes
-				medium_energy_income = yes
-			}
 		}
 	}
 }
@@ -1400,62 +1093,10 @@ district_ad_open_pit_ore_deposits = {
 		}
 		text = job_fe_acolyte_mine_effect_desc
 	}
-	ai_weight = {
-		weight = 60
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 25
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 1000
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-	}
 	ai_resource_production = {
 		minerals = 6
 		trigger = {
 			always = yes
-		}
-	}
-	ai_resource_production = {
-		minerals = 16
-		trigger = {
-			OR = {
-				low_mineral_income = yes
-				medium_mineral_income = yes
-			}
 		}
 	}
 }
@@ -1553,62 +1194,10 @@ district_ad_under_water_deposits = {
 			job_fe_acolyte_mine_add = 2
 		}
 	}
-	ai_weight = {
-		weight = 550
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 25
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 1000
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-	}
 	ai_resource_production = {
-		minerals = 6
+		minerals = 20
 		trigger = {
 			always = yes
-		}
-	}
-	ai_resource_production = {
-		minerals = 16
-		trigger = {
-			OR = {
-				low_mineral_income = yes
-				medium_mineral_income = yes
-			}
 		}
 	}
 }
@@ -1707,62 +1296,10 @@ district_ad_orbital_deposits = {
 			job_fe_acolyte_mine_add = 2
 		}
 	}
-	ai_weight = {
-		weight = 50
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 25
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 1000
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-	}
 	ai_resource_production = {
-		minerals = 6
+		minerals = 20
 		trigger = {
 			always = yes
-		}
-	}
-	ai_resource_production = {
-		minerals = 16
-		trigger = {
-			OR = {
-				low_mineral_income = yes
-				medium_mineral_income = yes
-			}
 		}
 	}
 }
@@ -1858,49 +1395,6 @@ district_ad_high_quality_deposits = {
 		}
 		modifier = {
 			job_fe_acolyte_mine_add = 3
-		}
-	}
-	ai_weight = {
-		weight = 80
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 25
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 1000
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
 		}
 	}
 	ai_resource_production = {
@@ -2011,49 +1505,6 @@ district_ad_low_quality_deposits = {
 		}
 		modifier = {
 			job_fe_acolyte_mine_add = 7
-		}
-	}
-	ai_weight = {
-		weight = 45
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 25
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 100
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 1000
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
 		}
 	}
 	ai_resource_production = {
@@ -2213,49 +1664,6 @@ district_ad_shed_cultivation_land = {
 		}
 		text = job_fe_acolyte_farm_effect_desc
 	}
-	ai_weight = {
-		weight = 6
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 20
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value >= 10
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-	}
 	ai_resource_production = {
 		food = 10
 		trigger = {
@@ -2376,40 +1784,6 @@ district_ad_in_water_ecosystem = {
 		}
 		modifier = {
 			job_fe_acolyte_farm_add = 2
-		}
-	}
-	ai_weight = {
-		weight = 60
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 20
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
 		}
 	}
 	ai_resource_production = {
@@ -2533,49 +1907,6 @@ district_ad_mycorrhizal_communities = {
 			job_fe_acolyte_farm_add = 2
 		}
 	}
-	ai_weight = {
-		weight = 4
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 9
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value >= 10
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-	}
 	ai_resource_production = {
 		food = 1
 		trigger = {
@@ -2686,49 +2017,6 @@ district_ad_large_scale_grazing_land = {
 		}
 		modifier = {
 			job_fe_acolyte_farm_add = 4
-		}
-	}
-	ai_weight = {
-		weight = 6
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 20
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value >= 10
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
 		}
 	}
 	ai_resource_production = {
@@ -2852,49 +2140,6 @@ district_ad_large_scale_agricultural_land = {
 			job_fe_acolyte_farm_add = 4
 		}
 	}
-	ai_weight = {
-		weight = 6
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 10
-				}
-			}
-		}
-		modifier = {
-			factor = 3
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-		modifier = {
-			factor = 20
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < -10
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value >= 10
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			free_housing < 0
-		}
-	}
 	ai_resource_production = {
 		food = 10
 		trigger = {
@@ -2938,7 +2183,7 @@ district_ad_ancient_ruins = {
 			has_modifier = resort_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -2975,17 +2220,11 @@ district_ad_ancient_ruins = {
 			job_ad_excavator_drone_add = 6
 		}
 	}
-	ai_weight = {
-		weight = 15
-		# Let's not go full spam on this.
-		modifier = {
-			factor = 0
-			free_housing >= 5
-			has_unemployed_or_servants = no
-		}
-	}
 	ai_resource_production = {
-		minor_artifacts = 1
+		minor_artifacts = 10
+		physics_research = 8
+		society_research = 8
+		engineering_research = 8
 		trigger = {
 			always = yes
 		}
@@ -3011,7 +2250,7 @@ district_ad_ancient_databank = {
 			has_modifier = resort_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -3048,29 +2287,10 @@ district_ad_ancient_databank = {
 			job_ad_data_minor_drone_add = 4
 		}
 	}
-	ai_weight = {
-		weight = 15
-		# Let's not go full spam on this.
-		modifier = {
-			factor = 0
-			free_housing >= 5
-			has_unemployed_or_servants = no
-		}
-	}
 	ai_resource_production = {
-		physics_research = 1
-		trigger = {
-			always = yes
-		}
-	}
-	ai_resource_production = {
-		society_research = 1
-		trigger = {
-			always = yes
-		}
-	}
-	ai_resource_production = {
-		engineering_research = 1
+		physics_research = 8
+		society_research = 8
+		engineering_research = 8
 		trigger = {
 			always = yes
 		}
@@ -3168,7 +2388,7 @@ district_ad_natural_fortress = {
 			has_modifier = resort_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -3205,15 +2425,6 @@ district_ad_natural_fortress = {
 		}
 		modifier = {
 			job_soldier_drone_add = 4
-		}
-	}
-	ai_weight = {
-		weight = 15
-		# Let's not go full spam on this.
-		modifier = {
-			factor = 0
-			free_housing >= 5
-			has_unemployed_or_servants = no
 		}
 	}
 	ai_resource_production = {
@@ -3315,7 +2526,7 @@ district_ad_special_tourism_zone = {
 			has_modifier = resort_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -3354,17 +2565,9 @@ district_ad_special_tourism_zone = {
 			job_maintenance_drone_add = 4
 		}
 	}
-	ai_weight = {
-		weight = 15
-		# Let's not go full spam on this.
-		modifier = {
-			factor = 0
-			free_housing >= 5
-			has_unemployed_or_servants = no
-		}
-	}
 	ai_resource_production = {
-		unity = 1
+		unity = 2
+		energy = 2
 		trigger = {
 			always = yes
 		}
@@ -3404,7 +2607,7 @@ district_ad_government_district = {
 			has_modifier = slave_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -3514,13 +2717,6 @@ district_ad_government_district = {
 			job_synapse_drone = 8
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -3547,7 +2743,7 @@ district_ad_university_district = {
 			has_modifier = slave_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -3657,15 +2853,10 @@ district_ad_university_district = {
 			job_ad_professorship_drone_add = 4
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
-		energy = 1
+		physics_research = 10
+		society_research = 10
+		engineering_research = 10
 		trigger = {
 			always = yes
 		}
@@ -3684,7 +2875,7 @@ district_ad_residential_area = {
 	allow = {
 		has_deposit = d_ad_residential_area
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -3788,13 +2979,6 @@ district_ad_residential_area = {
 			job_ad_clerk_drone_add = 10
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -3821,7 +3005,7 @@ district_ad_shipbuilding_arsenal = {
 			has_modifier = slave_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -3925,13 +3109,6 @@ district_ad_shipbuilding_arsenal = {
 			job_ad_shipwright_add = 4
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -3958,7 +3135,7 @@ district_ad_communication_area = {
 			has_modifier = slave_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -4062,15 +3239,8 @@ district_ad_communication_area = {
 			job_ad_infrastructure_engineer_drone_add = 4
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
-		energy = 1
+		energy = 2
 		trigger = {
 			always = yes
 		}
@@ -4095,7 +3265,7 @@ district_ad_tourist_area = {
 			has_modifier = slave_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -4199,15 +3369,9 @@ district_ad_tourist_area = {
 			job_maintenance_drone_add = 8
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
-		energy = 1
+		energy = 3
+		unity = 3
 		trigger = {
 			always = yes
 		}
@@ -4232,7 +3396,7 @@ district_ad_defense_zone = {
 			has_modifier = slave_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -4348,13 +3512,6 @@ district_ad_defense_zone = {
 			job_warrior_drone_add = 8
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -4381,7 +3538,7 @@ district_ad_conceptual_zone = {
 			has_modifier = slave_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -4488,15 +3645,9 @@ district_ad_conceptual_zone = {
 			job_ad_entrepreneur_drone_add = 6
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
-		energy = 1
+		energy = 3
+		unity = 3
 		trigger = {
 			always = yes
 		}
@@ -4521,7 +3672,7 @@ district_ad_special_research_zone = {
 			has_modifier = slave_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -4628,15 +3779,11 @@ district_ad_special_research_zone = {
 			job_calculator_add = 14
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
 		energy = 1
+		physics_research = 3
+		society_research = 3
+		engineering_research = 3
 		trigger = {
 			always = yes
 		}
@@ -4661,7 +3808,7 @@ district_ad_spaceport_area = {
 			has_modifier = slave_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -4765,13 +3912,6 @@ district_ad_spaceport_area = {
 			job_ad_spaceport_mechanics_drone_add = 12
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -4798,7 +3938,7 @@ district_ad_orbital_elevator = {
 			has_modifier = slave_colony
 		}
 	}
-	conversion_ratio = 0.75
+	conversion_ratio = 1
 	convert_to = {
 	}
 	resources = {
@@ -4911,15 +4051,8 @@ district_ad_orbital_elevator = {
 			job_ad_shipwright_drone_add = 2
 		}
 	}
-	ai_weight = {
-		weight = 1
-		# modifier = {
-		# 	weight = 3
-		# 		free_jobs < 2
-		# }
-	}
 	ai_resource_production = {
-		energy = 1
+		energy = 5
 		trigger = {
 			always = yes
 		}
