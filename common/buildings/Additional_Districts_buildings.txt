@@ -3759,3 +3759,67 @@ building_zosen_factry = {
 		}
 	}
 }
+
+# 1.銀河競技場(交易価値+10%、統合力+10%)(エンターテイナー+2、事務員+2)
+# (大規模な式典や競技大会を行うための広大な敷地を使用する施設)
+building_ad_galactic_stadium = {
+	base_cap_amount = 1
+	base_buildtime = @b1_time
+	potential = {
+		owner = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			is_gestalt = no
+		}
+	}
+	planet_modifier = {
+		trade_value_mult = 0.1
+		planet_jobs_unity_produces_mult = 0.1
+		job_entertainer_add = 2
+		job_clerk_add = 2
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_entertainer_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
+	}
+}
+
+# 2.公営賭博場(交易価値+20%、犯罪度+30%)(豪商+1、事務員+2)
+# (国家や地方自治体の管理のもとで行われる賭博が行われる歓楽施設)
+building_ad_public_gambling_den = {
+	base_cap_amount = 1
+	base_buildtime = @b1_time
+	potential = {
+		owner = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			is_gestalt = no
+		}
+	}
+	planet_modifier = {
+		trade_value_mult = 0.2
+		planet_crime_mult = 0.3
+		job_merchant_add = 1
+		job_clerk_add = 2
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_merchant_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+		}
+		text = job_clerk_effect_desc
+	}
+}
