@@ -878,6 +878,12 @@
  building_zosen_factry:0 "非合法造船所"
  building_zosen_factry_desc:0 "船舶の許可証は高額なので、許可証なしで入手すればよいのではないか"
 
+ building_ad_galactic_stadium:0 "銀河競技場"
+ building_ad_galactic_stadium_desc:0 "大規模な式典や競技大会を行うための広大な敷地を使用する施設"
+
+ building_ad_public_gambling_den:0 "公営賭博場"
+ building_ad_public_gambling_den_desc:0 "国家や地方自治体の管理のもとで行われる賭博が行われる歓楽施設"
+
 #######################
 #####    陸軍    ######
 #######################
