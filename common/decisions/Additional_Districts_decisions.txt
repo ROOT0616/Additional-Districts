@@ -67,6 +67,10 @@ decision_ad_large_scale_air_area_construction = {
 		}
 	}
 	potential = {
+		NOR = {
+			is_ringworld = yes
+			is_a_habitable_planet_megastructure = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
@@ -172,6 +176,10 @@ decision_ad_large_scale_water_area_construction = {
 		}
 	}
 	potential = {
+		NOR = {
+			is_ringworld = yes
+			is_a_habitable_planet_megastructure = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
@@ -272,6 +280,10 @@ decision_ad_large_scale_underground_area_construction = {
 		}
 	}
 	potential = {
+		NOR = {
+			is_ringworld = yes
+			is_a_habitable_planet_megastructure = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
@@ -374,6 +386,10 @@ decision_ad_solar_power_generation = {
 		}
 	}
 	potential = {
+		NOR = {
+			is_ringworld = yes
+			is_a_habitable_planet_megastructure = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_undo_display
 		}
