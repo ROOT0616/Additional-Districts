@@ -2821,11 +2821,11 @@ building_ad_industrial_adjustment_area = {
 }
 
 # ※企業用支店
-# 1.c	social_welfare_service_corporation	（社会の弱者に対して福祉サービスを提供する税制優遇のある法人）
+# 1.社会福祉法人	（社会の弱者に対して福祉サービスを提供する税制優遇のある法人）
 # 企業国家の外交発言力+5%。惑星の幸福度+5%。医療従事者+1、サービス職+3
 building_ad_social_welfare_service_corporation = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
@@ -2851,11 +2851,11 @@ building_ad_social_welfare_service_corporation = {
 	}
 }
 
-# 2.行列のできる法律事務所	law_firm	（行列ができるほど凄腕の法律家が在籍する法律事務所）
+# 2.行列のできる法律事務所	（行列ができるほど凄腕の法律家が在籍する法律事務所）
 # 企業国家の統合力+10。惑星の安定度+5、犯罪度-5%。法曹+1、事務員+2
 building_ad_law_firm = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
@@ -2882,11 +2882,11 @@ building_ad_law_firm = {
 	}
 }
 
-# 3.高度有機農園	highly_organic_farm	（オーガニック生産に気を使った高級志向の農園）
+# 3.高度有機農園	（オーガニック生産に気を使った高級志向の農園）
 # 企業国家の食料+5、消費財+5。惑星の快適度+10。酪農家+1、農家+2
 building_ad_highly_organic_farm = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
@@ -2913,11 +2913,11 @@ building_ad_highly_organic_farm = {
 	}
 }
 
-# 4.惑星間通信社	interplanetary_press	（惑星間の通信と報道を行う民間企業）
+# 4.惑星間通信社	（惑星間の通信と報道を行う民間企業）
 # 企業国家の統合力+10、支社の価値+10%。惑星の安定度+5、交易価値+5%。ジャーナリスト+1、事務員+2
 building_ad_interplanetary_press = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
@@ -2945,11 +2945,11 @@ building_ad_interplanetary_press = {
 	}
 }
 
-# 5.イノベーティブコーポ	innovative_corp	（イノベーティブなアイデアでハイパフォーマンスのリザルトにコミットメントするコーポ）
+# 5.イノベーティブコーポ	（イノベーティブなアイデアでハイパフォーマンスのリザルトにコミットメントするコーポ）
 # 企業国家の支社の価値+10%。惑星の交易価値+10。起業家+1、事務員+2
 building_ad_innovative_corp = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
@@ -2973,11 +2973,11 @@ building_ad_innovative_corp = {
 	}
 }
 
-# 6.貯蓄銀行	savings_bank	（市民の貯蓄資産を低利率だが安全に運用する金融機関）
+# 6.貯蓄銀行	（市民の貯蓄資産を低利率だが安全に運用する金融機関）
 # 企業国家のエネルギー+10、支社の価値+5%。惑星の交易価値+5%。銀行家+1、事務員+2
 building_ad_savings_bank = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
@@ -3004,11 +3004,11 @@ building_ad_savings_bank = {
 	}
 }
 
-# 7.惑星造船所	planet_shipyard	（惑星に根差した民間船や軍艦を造る船舶企業）
+# 7.惑星造船所	（惑星に根差した民間船や軍艦を造る船舶企業）
 # 企業国家の造船速度+5%。惑星の合金生産量+5%。造船技師+2
 building_ad_planet_shipyard = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
@@ -3033,11 +3033,11 @@ building_ad_planet_shipyard = {
 	}
 }
 
-# 8.惑星工場	planet_factory	(惑星に根差した民需品を造る企業)
+# 8.惑星工場	(惑星に根差した民需品を造る企業)
 # 企業国家の消費財+20。惑星の消費財生産+5%。職人+1、事務員+2
 building_ad_planet_factory = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
@@ -3063,11 +3063,11 @@ building_ad_planet_factory = {
 	}
 }
 
-# 9.銀河旅客運送社	galaxy_passenger_transport_co	（民間船や惑星内輸送機関を運用し、物と者を運ぶ企業）
+# 9.銀河旅客運送社	（民間船や惑星内輸送機関を運用し、物と者を運ぶ企業）
 # 企業国家の支社価値+25%。惑星の交易価値+10、交易価値+10%。事務員+1、サービス職+2
 building_ad_galaxy_passenger_transport_co = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
@@ -3092,11 +3092,11 @@ building_ad_galaxy_passenger_transport_co = {
 	}
 }
 
-# 10.惑星建設組合	planetary_construction_union	（惑星における建築と建築資材の調達を行う建設企業）
+# 10.惑星建設組合	（惑星における建築と建築資材の調達を行う建設企業）
 # 企業国家の鉱物+10。惑星の区域と建造物建設速度+5%。インフラ技師+1、事務員+2
 building_ad_planetary_construction_union = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
@@ -3122,11 +3122,11 @@ building_ad_planetary_construction_union = {
 	}
 }
 
-# 11.小規模宇宙港	small_space_port	（惑星につき1つ）（小規模だが堅実な民間船離発着を行う民間宇宙港）
+# 11.小規模宇宙港	（惑星につき1つ）（小規模だが堅実な民間船離発着を行う民間宇宙港）
 # 企業国家の支社価値+50%。惑星の交易価値+20%。宇宙港管制官+1、サービス職+2
 building_ad_small_space_port = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -3152,11 +3152,11 @@ building_ad_small_space_port = {
 	}
 }
 
-# 12.企業アカデミー	corporate_academy	（惑星につき1つ）（民間企業が運営する小規模だが高度な人材を輩出する大学）
+# 12.企業アカデミー	（惑星につき1つ）（民間企業が運営する小規模だが高度な人材を輩出する大学）
 # 企業国家の研究力+5ずつ。惑星の社会学+10。教授職+1、研究者+1
 building_ad_corporate_academy = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -3184,11 +3184,11 @@ building_ad_corporate_academy = {
 	}
 }
 
-# 13.民間刑務所	private_prison	（惑星につき1つ）（民間企業が惑星政府の委託を受けて治安のために運営する刑務所）
+# 13.民間刑務所	（惑星につき1つ）（民間企業が惑星政府の委託を受けて治安のために運営する刑務所）
 # 企業国家のエネルギー+10、鉱物+20。惑星の幸福度-5%、犯罪度-10。法務執行官+1、強制労働者+3
 building_ad_private_prison = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -3217,11 +3217,11 @@ building_ad_private_prison = {
 	}
 }
 
-# 14.民間廃棄物処理施設	private_waste_disposal_facilities	（惑星につき1つ）（民間企業が惑星政府の委託を受けて運営する廃棄物処理施設）
+# 14.民間廃棄物処理施設	（惑星につき1つ）（民間企業が惑星政府の委託を受けて運営する廃棄物処理施設）
 # 企業国家のエネルギー+10、消費財+10。惑星の快適度-10、居住性+5%。サービス職+2
 building_ad_private_waste_disposal_facilities = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
@@ -3249,15 +3249,15 @@ building_ad_private_waste_disposal_facilities = {
 	}
 }
 
-# 種族市場	slave_shop	（惑星に1つ）				（犯罪度+75:企業移民流入+5%:惑星の移民流出+20%、事務員+2） 
+# 種族市場	（惑星に1つ）				（犯罪度+75:企業移民流入+5%:惑星の移民流出+20%、事務員+2） 
 building_slave_shop = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3279,15 +3279,15 @@ building_slave_shop = {
 	}
 }
 
-# 地下帝国	empire_undergraund	（惑星に1つ）		（犯罪度+75:企業帝国は陸軍「債務者」を10まで製造可能:惑星の移民流出+10%、豪商+1、事務員+2、兵士+1、強制労働者+10）
+# 地下帝国	（惑星に1つ）		（犯罪度+75:企業帝国は陸軍「債務者」を10まで製造可能:惑星の移民流出+10%、豪商+1、事務員+2、兵士+1、強制労働者+10）
 building_empire_undergraund = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3309,15 +3309,15 @@ building_empire_undergraund = {
 	}
 }
 
-# プレジャーランド	preasure_land	（惑星に1つ）			（犯罪度+30:支社価値+25%、惑星Pop成長率+5%、惑星労働者幸福度-10%、惑星の犯罪度+50%、事務員+2） 
+# プレジャーランド	（惑星に1つ）			（犯罪度+30:支社価値+25%、惑星Pop成長率+5%、惑星労働者幸福度-10%、惑星の犯罪度+50%、事務員+2） 
 building_preasure_land = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3339,15 +3339,15 @@ building_preasure_land = {
 	}
 }
 
-# 組事務所	yakuza_office	（惑星に1つ）		（犯罪度+50:企業建造物slot+1:法務執行官の維持費+50%、惑星の犯罪度+25%、事務員+2、兵士+1)
+# 組事務所	（惑星に1つ）		（犯罪度+50:企業建造物slot+1:法務執行官の維持費+50%、惑星の犯罪度+25%、事務員+2、兵士+1)
 building_yakuza_office = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3370,15 +3370,15 @@ building_yakuza_office = {
 	}
 }
 
-# 土建屋	yakuza_constructioncorp	（惑星に1つ）		（犯罪度+20:企業建造物slot+3:惑星建造物コスト+30%、事務員+2） 
+# 土建屋	（惑星に1つ）		（犯罪度+20:企業建造物slot+3:惑星建造物コスト+30%、事務員+2） 
 building_yakuza_constructioncorp = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3398,15 +3398,15 @@ building_yakuza_constructioncorp = {
 	}
 }
 
-# 地上げ屋	yakuza_estate	（惑星に1つ）					（犯罪度+30:企業建造物slot+3:惑星建造物コスト+20%、事務員+2） 
+# 地上げ屋	（惑星に1つ）					（犯罪度+30:企業建造物slot+3:惑星建造物コスト+20%、事務員+2） 
 building_yakuza_estate = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3428,15 +3428,15 @@ building_yakuza_estate = {
 	}
 }
 
-# 海賊放送局	pirate_broad	（惑星に1つ）		（犯罪度+40:企業帝国統合力+10%:志向魅力-30%、暗号力-1、事務員+2） 
+# 海賊放送局	（惑星に1つ）		（犯罪度+40:企業帝国統合力+10%:志向魅力-30%、暗号力-1、事務員+2） 
 building_pirate_broad = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3459,15 +3459,15 @@ building_pirate_broad = {
 	}
 }
 
-# 闇金融業者	black_ushi	（惑星に1つ）			（犯罪度+25:支社価値+30%:惑星交易価値+10%、労働者生産量-2%、事務員+2）
+# 闇金融業者	（惑星に1つ）			（犯罪度+25:支社価値+30%:惑星交易価値+10%、労働者生産量-2%、事務員+2）
 building_black_ushi = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3488,15 +3488,15 @@ building_black_ushi = {
 	}
 }
 
-# Fランク大学	f_rank_universities	（惑星に1つ）	（犯罪度+25:企業帝国研究力+5%:惑星専門家出力-2%、事務員+2） 
+# Fランク大学	（惑星に1つ）	（犯罪度+25:企業帝国研究力+5%:惑星専門家出力-2%、事務員+2） 
 building_f_rank_universities = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3519,15 +3519,15 @@ building_f_rank_universities = {
 	}
 }
 
-# 排他主義宣伝所	corp_nazi	（惑星に1つ）			（犯罪度+30:企業帝国統合力+10%:惑星排他主義魅力+20%、安定度-10、事務員+2）
+# 排他主義宣伝所	（惑星に1つ）			（犯罪度+30:企業帝国統合力+10%:惑星排他主義魅力+20%、安定度-10、事務員+2）
 building_corp_nazi = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3550,15 +3550,15 @@ building_corp_nazi = {
 	}
 }
 
-# 総会屋	so_kai_ya	（惑星に1つ）		（犯罪度+25:支社価値+20%:交易価値の30%を犯罪度に転換する、事務員+2、豪商+1）まだ
+# 総会屋	（惑星に1つ）		（犯罪度+25:支社価値+20%:交易価値の30%を犯罪度に転換する、事務員+2、豪商+1）まだ
 building_so_kai_ya = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3583,12 +3583,12 @@ building_so_kai_ya = {
 # 893プロダクション	yakuza_a_pro		(犯罪度+25:企業帝国統合力+5%:エンターテイナーJob+1、志向魅力-10%)
 building_yakuza_a_pro = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3613,12 +3613,12 @@ building_yakuza_a_pro = {
 # 民事事件解決事業所		boryoku_ya		(犯罪度+50:支社価値+10%、支社価値+10:安定度+5、統治者幸福度+5%)
 building_boryoku_ya = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3644,12 +3644,12 @@ building_boryoku_ya = {
 # 生活困窮者支援法人			hinkon_bussiness			(犯罪度+40:支社価値+20:医療従事者Job+1、労働者幸福度-20%)
 building_hinkon_bussiness = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3672,12 +3672,12 @@ building_hinkon_bussiness = {
 # 偽造製品生産工場					ura_factry				(犯罪度+50:企業帝国消費財+10:職人Job+1、惑星消費財生産量+5%)
 building_ura_factry = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3702,12 +3702,12 @@ building_ura_factry = {
 # 武器密造工場		buki_factry					(犯罪度+50:企業帝国合金+10:合金技師Job+1、惑星合金生産+5%)
 building_buki_factry = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3734,12 +3734,12 @@ building_buki_factry = {
 # 非合法造船所	zosen_factry 		(犯罪度+40:企業帝国造船速度+5%:造船技師Job+1)
 building_zosen_factry = {
 	base_buildtime = @b1_time
-	branch_office_building = yes
+	owner_type = corporate
 	base_cap_amount = 1
 	potential = {
 		has_branch_office = yes
 		branch_office_owner = {
-			has_civic = civic_criminal_heritage
+			is_criminal_syndicate = yes
 		}
 	}
 	planet_modifier = {
@@ -3790,6 +3790,15 @@ building_ad_galactic_stadium = {
 		}
 		text = job_clerk_effect_desc
 	}
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = 1500
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
 }
 
 # 2.公営賭博場(交易価値+20%、犯罪度+30%)(豪商+1、事務員+2)
@@ -3821,5 +3830,14 @@ building_ad_public_gambling_den = {
 			exists = owner
 		}
 		text = job_clerk_effect_desc
+	}
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 2
+		}
 	}
 }
