@@ -68,7 +68,7 @@ district_ad_archaeological_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_public_works
+				has_active_tradition = tr_prosperity_public_works
 			}
 		}
 		modifier = {
@@ -116,7 +116,7 @@ district_ad_archaeological_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+				has_active_tradition = tr_prosperity_interstellar_franchising
 			}
 		}
 		modifier = {
@@ -201,7 +201,7 @@ district_ad_sky_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_public_works
+				has_active_tradition = tr_prosperity_public_works
 			}
 		}
 		modifier = {
@@ -249,7 +249,7 @@ district_ad_sky_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+				has_active_tradition = tr_prosperity_interstellar_franchising
 			}
 		}
 		modifier = {
@@ -349,7 +349,7 @@ district_ad_water_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_public_works
+				has_active_tradition = tr_prosperity_public_works
 			}
 		}
 		modifier = {
@@ -397,7 +397,7 @@ district_ad_water_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+				has_active_tradition = tr_prosperity_interstellar_franchising
 			}
 		}
 		modifier = {
@@ -496,7 +496,7 @@ district_ad_under_water_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_public_works
+				has_active_tradition = tr_prosperity_public_works
 			}
 		}
 		modifier = {
@@ -544,7 +544,7 @@ district_ad_under_water_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+				has_active_tradition = tr_prosperity_interstellar_franchising
 			}
 		}
 		modifier = {
@@ -626,7 +626,7 @@ district_ad_underground_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_public_works
+				has_active_tradition = tr_prosperity_public_works
 			}
 		}
 		modifier = {
@@ -674,7 +674,7 @@ district_ad_underground_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				has_non_swapped_tradition = tr_prosperity_interstellar_franchising
+				has_active_tradition = tr_prosperity_interstellar_franchising
 			}
 		}
 		modifier = {
@@ -2578,7 +2578,7 @@ district_ad_special_tourism_zone = {
 #####    その他区域追加    ######
 ################################
 # 後で設置可能（1-5つまで設置可能）
-# 官庁街    建物1	住居2    行政官1    官僚4
+# 官庁街    建物1	住居2    政治家1    官僚4
 # 大学街    建物1	住居5   教授職2 科学者2
 # 住宅街    建物1	住居10       事務員5
 # 造船工廠    建物1	住居2    造船技師4
@@ -2589,7 +2589,7 @@ district_ad_special_tourism_zone = {
 # 研究特区    建物1	住居2    科学総裁1  研究者5
 # 宇宙港区域    建物1	住居2    宇宙港整備員3
 # 軌道エレベーター    建物1	住居2    快適度    5    交易価値    5    幸福度    5  宇宙港整備員1、造船技師1
-# 官庁街 government_district	建物1	住居2    行政官1    官僚4
+# 官庁街 government_district	建物1	住居2    政治家1    官僚4
 district_ad_government_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2645,7 +2645,7 @@ district_ad_government_district = {
 			}
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 			job_bureaucrat_add = 4
 		}
 	}
@@ -2675,7 +2675,7 @@ district_ad_government_district = {
 			do_is_arcology_planet = yes
 		}
 		modifier = {
-			job_administrator_add = 1
+			job_politician_add = 1
 			job_bureaucrat_add = 2
 		}
 	}
@@ -2703,7 +2703,7 @@ district_ad_government_district = {
 			do_is_ringworld = yes
 		}
 		modifier = {
-			job_administrator_add = 2
+			job_politician_add = 2
 			job_bureaucrat_add = 8
 		}
 	}

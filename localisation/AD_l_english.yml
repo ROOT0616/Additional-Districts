@@ -1,0 +1,893 @@
+﻿l_english:
+
+##############################
+#####    ディシジョン    ######
+##############################
+
+ decision_ad_town_display:0 "City  |  Display"
+ decision_ad_town_display_desc:0 ""
+
+ decision_ad_undo_town_display:0 "City  |  Hidden"
+ decision_ad_undo_town_display_desc:0 ""
+
+ decision_ad_large_scale_air_area_construction:0 "Construct Large Aerial Area"
+ decision_ad_large_scale_air_area_construction_desc:0 "Implement the plan to build a floating city not only on the ground but also in the air."
+
+ decision_ad_undo_large_scale_air_area_construction:0 "Withdrawal of Large Aerial Area"
+ decision_ad_undo_large_scale_air_area_construction_desc:0 ""
+
+ decision_ad_large_scale_water_area_construction:0 "Construct Large Underwater Area"
+ decision_ad_large_scale_water_area_construction_desc:0 "Implement the plan to build cities underwater as well as on the ground."
+
+ decision_ad_undo_large_scale_water_area_construction:0 "Withdrawal of Large Underwater Area"
+ decision_ad_undo_large_scale_water_area_construction_desc:0 ""
+
+ decision_ad_large_scale_underground_area_construction:0 "Construct Large Underground Area"
+ decision_ad_large_scale_underground_area_construction_desc:0 "Implement plans to build cities not only above ground but also below ground."
+
+ decision_ad_undo_large_scale_underground_area_construction:0 "Withdrawal of Large Underground Area"
+ decision_ad_undo_large_scale_underground_area_construction_desc:0 ""
+
+ decision_ad_solar_power_generation:0 "Infrastructure | Solar Power District"
+ decision_ad_solar_power_generation_desc:0 "Maintain large scale solar panels on the planet to increase the amount of light reflected from the planet."
+
+ decision_ad_government_district:0 "Infrastructure | Government District"
+ decision_ad_government_district_desc:0 "Implement the plan to develop a large governmental area."
+
+ decision_ad_university_district:0 "Infrastructure | University District"
+ decision_ad_university_district_desc:0 "Implement the plan to develop a large university town."
+
+ decision_ad_residential_area:0 "Infrastructure | Residential Area"
+ decision_ad_residential_area_desc:0 "Implement the plan to develop a large Residential Area."
+
+ decision_ad_shipbuilding_arsenal:0 "Infrastructure | Shipyard"
+ decision_ad_shipbuilding_arsenal_desc:0 "The plan to build a large shipbuilding arsenal will be implemented."
+
+ decision_ad_communication_area:0 "Infrastructure | Communication Area"
+ decision_ad_communication_area_desc:0 "Implement plans to build a large communications base."
+
+ decision_ad_tourist_area:0 "Infrastructure | Tourist Area"
+ decision_ad_tourist_area_desc:0 "Implement the plan to develop a large special tourism zone."
+
+ decision_ad_defense_zone:0 "Infrastructure | Defence Area"
+ decision_ad_defense_zone_desc:0 "We will implement plans to develop a large defence base."
+
+ decision_ad_conceptual_zone:0 "Infrastructure | Conceptual Zone"
+ decision_ad_conceptual_zone_desc:0 "Implement the plan to develop a large special financial zone."
+
+ decision_ad_special_research_zone:0 "Infrastructure | Special Research Zone"
+ decision_ad_special_research_zone_desc:0 "Implement the plan to develop a large special research zone."
+
+ decision_ad_spaceport_area:0 "Infrastructure | Spaceport Area"
+ decision_ad_spaceport_area_desc:0 "Implement plans to develop a large spaceport."
+
+ decision_ad_orbital_elevator:0 "Infrastructure | Orbital Lift"
+ decision_ad_orbital_elevator_desc:0 "Implement the plan to build an orbital lift."
+
+ decision_ad_undo_solar_power_generation:0 "Street Deletion | Solar Power District"
+ decision_ad_undo_solar_power_generation_desc:0 "The reflected light is annoying. The removal of the solar panels begins."
+
+ decision_ad_undo_government_district:0 "Street Deletion | Government District"
+ decision_ad_undo_government_district_desc:0 "Let's cut the civil service!  Start removing plots."
+
+ decision_ad_undo_university_district:0 "Street Deletion | University District"
+ decision_ad_undo_university_district_desc:0 "Long live the mongrelism!  Start removing the plots."
+
+ decision_ad_undo_residential_area:0 "Street Deletion | Residential Area"
+ decision_ad_undo_residential_area_desc:0 "There is no home for the poor. Start removing the plots."
+
+ decision_ad_undo_shipbuilding_arsenal:0 "Street Deletion | Shipyard"
+ decision_ad_undo_shipbuilding_arsenal_desc:0 "Unprofitable factories should be abolished. The demolition of the plots should be started."
+
+ decision_ad_undo_communication_area:0 "Street Deletion | Communication Area"
+ decision_ad_undo_communication_area_desc:0 "Powerful radio waves may cause health problems. Start clearing the area."
+
+ decision_ad_undo_tourist_area:0 "Street Deletion | Tourist Area"
+ decision_ad_undo_tourist_area_desc:0 "Tourists may attract crime. Start removing the plots."
+
+ decision_ad_undo_defense_zone:0 "Street Deletion | Defence Area"
+ decision_ad_undo_defense_zone_desc:0 "This area is targeted because of the army. We will start removing the plots."
+
+ decision_ad_undo_conceptual_zone:0 "Street Deletion | Conceptual Zone"
+ decision_ad_undo_conceptual_zone_desc:0 "Those who work without sweat are unhealthy. The removal of the plots will begin."
+
+ decision_ad_undo_special_research_zone:0 "Street Deletion | Special Research Zone"
+ decision_ad_undo_special_research_zone_desc:0 "We must move our hands more than our heads. Start removing the plots."
+
+ decision_ad_undo_spaceport_area:0 "Street Deletion | Spaceport Area"
+ decision_ad_undo_spaceport_area_desc:0 "Severe noise problems caused by the spaceport. Start to remove the compartments."
+
+ decision_ad_undo_orbital_elevator:0 "Street Deletion | Orbital Lift"
+ decision_ad_undo_orbital_elevator_desc:0 "What will you do if it falls?  Start removing the plots."
+
+#######################
+#####    技術    ######
+#######################
+
+ mixed_use_development_plan:0 "Large-Scale District Development Plan"
+ mixed_use_development_plan_desc:0 "Planning the construction of a distinctive district from scratch."
+
+ large_scale_in_water_construction_technology:0 "Large-Scale Underwater Construction Technology"
+ large_scale_in_water_construction_technology_desc:0 "Urban planning with a focus on underwater architecture."
+
+ large_scale_air_construction_technology:0 "Large Scale Aerial Construction Technology"
+ large_scale_air_construction_technology_desc:0 "Planning for cities in the air."
+
+ large_scale_ground_construction_technology:0 "Large Scale Ground Construction Technology"
+ large_scale_ground_construction_technology_desc:0 "Plans are drawn up for a large scale city built underground."
+
+#######################
+#####    仕事    ######
+#######################
+
+ job_ad_clerk_drone:0 "clerk drone"
+ job_ad_clerk_drone_plural:0 "clerk drone"
+ job_ad_clerk_drone_desc:0 ""
+ mod_job_ad_clerk_drone_add:0 "$job_ad_clerk_drone$ Jobs"
+
+ job_ad_excavator:0 "Excavator"
+ job_ad_excavator_plural:0 "Excavator"
+ job_ad_excavator_desc:0 "Archaeologist, explorer or other researcher of ancient sites"
+ mod_job_ad_excavator_add:0 "$job_ad_excavator$ Jobs"
+
+ job_ad_excavator_drone:0 "Excavator"
+ job_ad_excavator_drone_plural:0 "Excavator"
+ job_ad_excavator_drone_desc:0 "Archaeologist, explorer or other researcher of ancient sites"
+ mod_job_ad_excavator_drone_add:0 "$job_ad_excavator$ Jobs"
+
+ job_ad_water_farmer:0 "Underwater Farmer"
+ job_ad_water_farmer_plural:0 "Underwater Farmer"
+ job_ad_water_farmer_desc:0 "Farmer who produces and manages seaweed and other edible aquatic organisms"
+ mod_job_ad_water_farmer_add:0 "$job_ad_water_farmer$ Jobs"
+
+ job_ad_water_farmer_drone:0 "Underwater Farmer"
+ job_ad_water_farmer_drone_plural:0 "Underwater Farmer"
+ job_ad_water_farmer_drone_desc:0 "Farmer who produces and manages seaweed and other edible aquatic organisms"
+ mod_job_ad_water_farmer_drone_add:0 "$job_ad_water_farmer$ Jobs"
+
+ job_ad_facility_maintainer:0 "Facility Maintainer"
+ job_ad_facility_maintainer_plural:0 "Facility Maintainer"
+ job_ad_facility_maintainer_desc:0 "Engineer for maintenance and expansion of facilities and cities"
+ mod_job_ad_facility_maintainer_add:0 "$job_ad_facility_maintainer$ Jobs"
+
+ job_ad_facility_maintainer_drone:0 "Facility Maintainer"
+ job_ad_facility_maintainer_drone_plural:0 "Facility Maintainer"
+ job_ad_facility_maintainer_drone_desc:0 "Engineer for maintenance and expansion of facilities and cities"
+ mod_job_ad_facility_maintainer_drone_add:0 "$job_ad_facility_maintainer$ Jobs"
+
+ job_ad_geothermal_technician:0 "Geothermal Engineer"
+ job_ad_geothermal_technician_plural:0 "Geothermal Engineer"
+ job_ad_geothermal_technician_desc:0 "Engineer who manipulates geothermal energy and converts it into energy."
+ mod_job_ad_geothermal_technician_add:0 "$job_ad_geothermal_technician$ Jobs"
+
+ job_ad_geothermal_technician_drone:0 "Geothermal Engineer"
+ job_ad_geothermal_technician_drone_plural:0 "Geothermal Engineer"
+ job_ad_geothermal_technician_drone_desc:0 "Engineer who manipulates geothermal energy and converts it into energy."
+ mod_job_ad_geothermal_technician_drone_add:0 "$job_ad_geothermal_technician$ Jobs"
+
+ job_ad_atomic_engineer:0 "Atomic Engineer"
+ job_ad_atomic_engineer_plural:0 "Atomic Engineer"
+ job_ad_atomic_engineer_desc:0 "Engineer who stabilises natural nuclear reactors and converts them into energy"
+ mod_job_ad_atomic_engineer_add:0 "$job_ad_atomic_engineer$ Jobs"
+
+ job_ad_atomic_engineer_drone:0 "Atomic Engineer"
+ job_ad_atomic_engineer_drone_plural:0 "Atomic Engineer"
+ job_ad_atomic_engineer_drone_desc:0 "Engineer who stabilises natural nuclear reactors and converts them into energy"
+ mod_job_ad_atomic_engineer_drone_add:0 "$job_ad_atomic_engineer$ Jobs"
+
+ job_ad_underwater_miner:0 "Underwater Miner"
+ job_ad_underwater_miner_plural:0 "Underwater Miner"
+ job_ad_underwater_miner_desc:0 "Engineer who mines in dense veins produced under high pressure"
+ mod_job_ad_underwater_miner_add:0 "$job_ad_underwater_miner$ Jobs"
+
+ job_ad_underwater_miner_drone:0 "Underwater Miner"
+ job_ad_underwater_miner_drone_plural:0 "Underwater Miner"
+ job_ad_underwater_miner_drone_desc:0 "Engineer who mines in dense veins produced under high pressure"
+ mod_job_ad_underwater_miner_drone_add:0 "$job_ad_underwater_miner$ Jobs"
+
+ job_ad_space_miner:0 "Space Miner"
+ job_ad_space_miner_plural:0 "Space Miner"
+ job_ad_space_miner_desc:0 "Engineer who extracts minerals found in orbit"
+ mod_job_ad_space_miner_add:0 "$job_ad_space_miner$ Jobs"
+
+ job_ad_space_miner_drone:0 "Space Miner"
+ job_ad_space_miner_drone_plural:0 "Space Miner"
+ job_ad_space_miner_drone_desc:0 "Engineer who extracts minerals found in orbit"
+ mod_job_ad_space_miner_drone_add:0 "$job_ad_space_miner$ Jobs"
+
+ job_ad_efficient_miner:0 "Efficient Miner"
+ job_ad_efficient_miner_plural:0 "Efficient Miner"
+ job_ad_efficient_miner_desc:0 "Worker trained to mine high quality ore with as little waste as possible"
+ mod_job_ad_efficient_miner_add:0 "$job_ad_efficient_miner$ Jobs"
+
+ job_ad_efficient_miner_drone:0 "Efficient Miner"
+ job_ad_efficient_miner_drone_plural:0 "Efficient Miner"
+ job_ad_efficient_miner_drone_desc:0 "Worker trained to mine high quality ore with as little waste as possible"
+ mod_job_ad_efficient_miner_drone_add:0 "$job_ad_efficient_miner$ Jobs"
+
+ job_ad_low_efficiency_miner:0 "Low Efficiency Miner"
+ job_ad_low_efficiency_miner_plural:0 "Low Efficiency Miner"
+ job_ad_low_efficiency_miner_desc:0 "Worker trained to mine large quantities of low-quality ore."
+ mod_job_ad_low_efficiency_miner_add:0 "$job_ad_low_efficiency_miner$ Jobs"
+
+ job_ad_low_efficiency_miner_drone:0 "Low Efficiency Miner"
+ job_ad_low_efficiency_miner_drone_plural:0 "Low Efficiency Miner"
+ job_ad_low_efficiency_miner_drone_desc:0 "Worker trained to mine large quantities of low-quality ore."
+ mod_job_ad_low_efficiency_miner_drone_add:0 "$job_ad_low_efficiency_miner$ Jobs"
+
+ job_ad_fungus_farmer:0 "Fungus Farmer"
+ job_ad_fungus_farmer_plural:0 "Fungus Farmer"
+ job_ad_fungus_farmer_desc:0 "Worker producing mushrooms, pungent edible fungi, etc."
+ mod_job_ad_fungus_farmer_add:0 "$job_ad_fungus_farmer$ Jobs"
+
+ job_ad_fungus_farmer_drone:0 "Fungus Farmer"
+ job_ad_fungus_farmer_drone_plural:0 "Fungus Farmer"
+ job_ad_fungus_farmer_drone_desc:0 "Worker producing mushrooms, pungent edible fungi, etc."
+ mod_job_ad_fungus_farmer_drone_add:0 "$job_ad_fungus_farmer$ Jobs"
+
+ job_ad_dairy_farmer:0 "Dairy Farmer"
+ job_ad_dairy_farmer_plural:0 "Dairy Farmer"
+ job_ad_dairy_farmer_desc:0 "Workers who produce mainly meat, dairy products, eggs and other sources of protein."
+ mod_job_ad_dairy_farmer_add:0 "$job_ad_dairy_farmer$ Jobs"
+
+ job_ad_dairy_farmer_drone:0 "Dairy Farmer"
+ job_ad_dairy_farmer_drone_plural:0 "Dairy Farmer"
+ job_ad_dairy_farmer_drone_desc:0 "Workers who produce mainly meat, dairy products, eggs and other sources of protein."
+ mod_job_ad_dairy_farmer_drone_add:0 "$job_ad_dairy_farmer$ Jobs"
+
+ job_ad_large_scale_farmer:0 "Large Scale Farmer"
+ job_ad_large_scale_farmer_plural:0 "Large Scale Farmer"
+ job_ad_large_scale_farmer_desc:0 "Large scale plantation farmer with cheap mass settlement"
+ mod_job_ad_large_scale_farmer_add:0 "$job_ad_large_scale_farmer$ Jobs"
+
+ job_ad_large_scale_farmer_drone:0 "Large Scale Farmer"
+ job_ad_large_scale_farmer_drone_plural:0 "Large Scale Farmer"
+ job_ad_large_scale_farmer_drone_desc:0 "Large scale plantation farmer with cheap mass settlement"
+ mod_job_ad_large_scale_farmer_drone_add:0 "$job_ad_large_scale_farmer$ Jobs"
+
+ job_ad_professorship:0 "Professorship"
+ job_ad_professorship_plural:0 "Professorship"
+ job_ad_professorship_desc:0 "Expert who teaches intellectual workers and does research himself"
+ mod_job_ad_professorship_add:0 "$job_ad_professorship$ Jobs"
+
+ job_ad_professorship_drone:0 "Professorship"
+ job_ad_professorship_drone_plural:0 "Professorship"
+ job_ad_professorship_drone_desc:0 "Expert who teaches intellectual workers and does research himself"
+ mod_job_ad_professorship_drone_add:0 "$job_ad_professorship$ Jobs"
+
+ job_ad_data_minor:0 "Data Minor"
+ job_ad_data_minor_plural:0 "Data Minor"
+ job_ad_data_minor_desc:0 "Expert in exploring past knowledge, new insights and rediscovering the past."
+ mod_job_ad_data_minor_add:0 "$job_ad_data_minor$ Jobs"
+
+ job_ad_data_minor_drone:0 "Data Minor"
+ job_ad_data_minor_drone_plural:0 "Data Minor"
+ job_ad_data_minor_drone_desc:0 "Expert in exploring past knowledge, new insights and rediscovering the past."
+ mod_job_ad_data_minor_drone_add:0 "$job_ad_data_minor$ Jobs"
+
+ job_ad_shipwright:0 "Shipwright"
+ job_ad_shipwright_plural:0 "Shipwright"
+ job_ad_shipwright_desc:0 "Specialist in the construction of military and civilian ships."
+ mod_job_ad_shipwright_add:0 "$job_ad_shipwright$ Jobs"
+
+ job_ad_shipwright_drone:0 "Shipwright"
+ job_ad_shipwright_drone_plural:0 "Shipwright"
+ job_ad_shipwright_drone_desc:0 "Specialist in the construction of military and civilian ships."
+ mod_job_ad_shipwright_drone_add:0 "$job_ad_shipwright$ Jobs"
+
+ job_ad_infrastructure_engineer:0 "Infrastructure Engineer"
+ job_ad_infrastructure_engineer_plural:0 "Infrastructure Engineer"
+ job_ad_infrastructure_engineer_desc:0 "Engineer who develops and expands the infrastructure, mainly in terms of telecommunications."
+ mod_job_ad_infrastructure_engineer_add:0 "$job_ad_infrastructure_engineer$ Jobs"
+
+ job_ad_infrastructure_engineer_drone:0 "Infrastructure Engineer"
+ job_ad_infrastructure_engineer_drone_plural:0 "Infrastructure Engineer"
+ job_ad_infrastructure_engineer_drone_desc:0 "Engineer who develops and expands the infrastructure, mainly in terms of telecommunications."
+ mod_job_ad_infrastructure_engineer_drone_add:0 "$job_ad_infrastructure_engineer$ Jobs"
+
+ job_ad_commissioned_officer:0 "Commissioned Officer"
+ job_ad_commissioned_officer_plural:0 "Commissioned Officer"
+ job_ad_commissioned_officer_desc:0 "middle management position in the armed forces performing administrative, operational, command and other functions"
+ mod_job_ad_commissioned_officer_add:0 "$job_ad_commissioned_officer$ Jobs"
+ mod_job_ad_commissioned_officer_per_pop:0 "§G+1§! $job_ad_commissioned_officer$ Job per $VALUE$ Pops"
+ mod_job_ad_commissioned_officer_per_pop_short:0 "\n§G+1§! £mod_job_ad_commissioned_officer_add£ per $VALUE$ £pop£"
+
+ job_ad_commissioned_officer_drone:0 "Commissioned Officer"
+ job_ad_commissioned_officer_drone_plural:0 "Commissioned Officer"
+ job_ad_commissioned_officer_drone_desc:0 "middle management position in the armed forces performing administrative, operational, command and other functions"
+ mod_job_ad_commissioned_officer_drone_add:0 "$job_ad_commissioned_officer$ Jobs"
+
+ job_ad_general_officer:0 "General Officer"
+ job_ad_general_officer_plural:0 "General Officer"
+ job_ad_general_officer_desc:0 "The highest officer in the military leadership and command."
+ mod_job_ad_general_officer_add:0 "$job_ad_general_officer$ Jobs"
+
+ job_ad_general_officer_drone:0 "General Officer"
+ job_ad_general_officer_drone_plural:0 "General Officer"
+ job_ad_general_officer_drone_desc:0 "The highest officer in the military leadership and command."
+ mod_job_ad_general_officer_drone_add:0 "$job_ad_general_officer$ Jobs"
+
+ job_ad_entrepreneur:0 "Entrepreneur"
+ job_ad_entrepreneur_plural:0 "Entrepreneur"
+ job_ad_entrepreneur_desc:0 "Economic pioneer who opens up new markets and starts new businesses."
+ mod_job_ad_entrepreneur_add:0 "$job_ad_entrepreneur$ Jobs"
+
+ job_ad_entrepreneur_drone:0 "Entrepreneur"
+ job_ad_entrepreneur_drone_plural:0 "Entrepreneur"
+ job_ad_entrepreneur_drone_desc:0 "Economic pioneer who opens up new markets and starts new businesses."
+ mod_job_ad_entrepreneur_drone_add:0 "$job_ad_entrepreneur$ Jobs"
+
+ job_ad_spaceport_mechanics:0 "Spaceport Control Officer"
+ job_ad_spaceport_mechanics_plural:0 "Spaceport Control Officer"
+ job_ad_spaceport_mechanics_desc:0 "Specialist operator who manages and controls a spaceport."
+ mod_job_ad_spaceport_mechanics_add:0 "$job_ad_spaceport_mechanics$ Jobs"
+
+ job_ad_spaceport_mechanics_drone:0 "Spaceport Control Officer"
+ job_ad_spaceport_mechanics_drone_plural:0 "Spaceport Control Officer"
+ job_ad_spaceport_mechanics_drone_desc:0 "Specialist operator who manages and controls a spaceport."
+ mod_job_ad_spaceport_mechanics_drone_add:0 "$job_ad_spaceport_mechanics$ Jobs"
+
+ job_ad_servicer:0 "Service Occupation"
+ job_ad_servicer_plural:0 "Service Occupation"
+ job_ad_servicer_desc:0 "Service providers called essential workers, such as nursing, cleaning, driving and transport."
+ mod_job_ad_servicer_add:0 "$job_ad_servicer$ Jobs"
+ mod_job_ad_servicer_per_pop:0 "§G+1§! $job_ad_servicer$ Job per $VALUE$ Pops"
+ mod_job_ad_servicer_per_pop_short:0 "\n§G+1§! £mod_job_ad_servicer_add£ per $VALUE$ £pop£"
+
+ job_ad_forcrd_larbor:0 "Forced Labourer"
+ job_ad_forcrd_larbor_plural:0 "Forced Labourer"
+ job_ad_forcrd_larbor_desc:0 "Citizenship holders forced to work for a variety of reasons, regardless of their intentions."
+ mod_job_ad_forcrd_larbor_add:0 "$job_ad_forcrd_larbor$ Jobs"
+ mod_job_ad_forcrd_larbor_per_pop:0 "§G+1§! $job_ad_forcrd_larbor$ Job per $VALUE$ Pops"
+ mod_job_ad_forcrd_larbor_per_pop_short:0 "\n§G+1§! £mod_job_ad_forcrd_larbor_add£ per $VALUE$ £pop£"
+
+ job_ad_banker:0 "Banker"
+ job_ad_banker_plural:0 "Banker"
+ job_ad_banker_desc:0 "A financial expert, specializing in investments, yields, etc."
+ mod_job_ad_banker_add:0 "$job_ad_banker$ Jobs"
+
+ job_ad_lawyer:0 "Lawyer"
+ job_ad_lawyer_plural:0 "Lawyer"
+ job_ad_lawyer_desc:0 "A professional with a thorough knowledge of law, politics and society. This includes a wide range of positions such as lawyers, judicial scriveners and prosecutors."
+ mod_job_ad_lawyer_add:0 "$job_ad_lawyer$ Jobs"
+
+ job_ad_journalist:0 "Journalist"
+ job_ad_journalist_plural:0 "Journalist"
+ job_ad_journalist_desc:0 "A professional who gathers the truth (which they believe, or would have us believe) and has a great influence on the public."
+ mod_job_ad_journalist_add:0 "$job_ad_journalist$ Jobs"
+
+ job_ad_librarian:0 "Data Librarian"
+ job_ad_librarian_plural:0 "Data Librarian"
+ job_ad_librarian_desc:0 "Keeper of knowledge who stores and manages tangible and intangible information media and information itself."
+ mod_job_ad_librarian_add:0 "$job_ad_librarian$ Jobs"
+
+ job_ad_psp:0 "Public Security Officer"
+ job_ad_psp_plural:0 "Public Security Officer"
+ job_ad_psp_desc:0 "A security official who monitors and exposes spies, violent groups and terrorists in the interests of national security."
+ mod_job_ad_psp_add:0 "$job_ad_psp$ Jobs"
+
+ job_ad_ministor:0 "Aides"
+ job_ad_ministor_plural:0 "Aides"
+ job_ad_ministor_desc:0 "Ministers, aides, chamberlains and think-tank staff who support the country's top brass because of their knowledge, background and loyalty."
+ mod_job_ad_ministor_add:0 "$job_ad_ministor$ Jobs"
+
+ job_ad_congressman:0 "Advocate"
+ job_ad_congressman_plural:0 "Advocate"
+ job_ad_congressman_desc:0 "People who represent the views of society and citizens, such as elected representatives, high-profile social activists and retired heroic military personnel, and who strongly lobby the government."
+ mod_job_ad_congressman_add:0 "$job_ad_congressman$ Jobs"
+
+#######################
+#####    区域    ######
+#######################
+
+ district_ad_archaeological_cities:0 "Archaeological City"
+ district_ad_archaeological_cities_plural:0 "Archaeological City"
+ district_ad_archaeological_cities_desc:0 ""
+
+ mod_district_ad_archaeological_cities_max:0 "Max $district_ad_archaeological_cities$"
+ district_ad_sky_cities:0 "Aerial City"
+ district_ad_sky_cities_plural:0 "Aerial City"
+ district_ad_sky_cities_desc:0 "Urban area floating in the air. The right to sunshine is managed."
+ mod_district_ad_sky_cities_max:0 "Max $district_ad_sky_cities$"
+ district_ad_water_cities:0 "Water City"
+ district_ad_water_cities_plural:0 "Water City"
+ district_ad_water_cities_desc:0 "Urban area built on the water"
+ mod_district_ad_water_cities_max:0 "Max $district_ad_water_cities$"
+ district_ad_under_water_cities:0 "Underwater City"
+ district_ad_under_water_cities_plural:0 "Underwater City"
+ district_ad_under_water_cities_desc:0 "An underwater city where every day is an aquarium"
+ mod_district_ad_under_water_cities_max:0 "Max $district_ad_under_water_cities$"
+ district_ad_underground_cities:0 "Underground City"
+ district_ad_underground_cities_plural:0 "Underground City"
+ district_ad_underground_cities_desc:0 "A megacity built not only above but also below ground"
+ mod_district_ad_underground_cities_max:0 "Max $district_ad_underground_cities$"
+
+ district_ad_solar_power_generation:0 "Solar Power District"
+ district_ad_solar_power_generation_plural:0 "Solar Power District"
+ district_ad_solar_power_generation_desc:0 "Power generation district with solar panels on the planet"
+ mod_district_ad_solar_power_generation_max:0 "Max $district_ad_solar_power_generation$"
+ district_ad_geothermal_electric_power_generation:0 "Geothermal Power Generation"
+ district_ad_geothermal_electric_power_generation_plural:0 "Geothermal Power Generation"
+ district_ad_geothermal_electric_power_generation_desc:0 "Districts that use geothermal energy to generate electricity"
+ mod_district_ad_geothermal_electric_power_generation_max:0 "Max $district_ad_geothermal_electric_power_generation$"
+ district_ad_tidal_current_generation:0 "Tidal Current Generation"
+ district_ad_tidal_current_generation_plural:0 "Tidal Current Generation"
+ district_ad_tidal_current_generation_desc:0 "Power generation district using tides and currents"
+ mod_district_ad_tidal_current_generation_max:0 "Max $district_ad_tidal_current_generation$"
+ district_ad_natural_nuclear_power_generation:0 "Natural Nuclear Reactor Power Generation"
+ district_ad_natural_nuclear_power_generation_plural:0 "Natural Nuclear Reactor Power Generation"
+ district_ad_natural_nuclear_power_generation_desc:0 "The area is rich in natural resources such as uranium and contains a lot of water, making it a natural nuclear reactor. The topography of the area can be used to generate low-cost electricity."
+ mod_district_ad_natural_nuclear_power_generation_max:0 "Max $district_ad_natural_nuclear_power_generation$"
+
+ district_ad_open_pit_ore_deposits:0 "Open Pit Deposits"
+ district_ad_open_pit_ore_deposits_plural:0 "Open Pit Deposits"
+ district_ad_open_pit_ore_deposits_desc:0 "Areas where large quantities of minerals are exposed on the surface of the earth"
+ mod_district_ad_open_pit_ore_deposits_max:0 "Max $district_ad_open_pit_ore_deposits$"
+ district_ad_under_water_deposits:0 "Underwater Deposits"
+ district_ad_under_water_deposits_plural:0 "Underwater Deposits"
+ district_ad_under_water_deposits_desc:0 "Areas of high density mineralisation have been identified in the water due to the high pressure."
+ mod_district_ad_under_water_deposits_max:0 "Max $district_ad_under_water_deposits$"
+ district_ad_orbital_deposits:0 "Orbital Ore Group"
+ district_ad_orbital_deposits_plural:0 "Orbital Ore Group"
+ district_ad_orbital_deposits_desc:0 "There are many useful ores in planetary orbit, and effective mining is expected."
+ mod_district_ad_orbital_deposits_max:0 "Max $district_ad_orbital_deposits$"
+ district_ad_high_quality_deposits:0 "High Quality Ore Deposits"
+ district_ad_high_quality_deposits_plural:0 "High Quality Ore Deposits"
+ district_ad_high_quality_deposits_desc:0 "Areas where more useful and effective ores can be mined than ordinary ores"
+ mod_district_ad_high_quality_deposits_max:0 "Max $district_ad_high_quality_deposits$"
+ district_ad_low_quality_deposits:0 "Low-Quality Deposits"
+ district_ad_low_quality_deposits_plural:0 "Low-Quality Deposits"
+ district_ad_low_quality_deposits_desc:0 "Areas of lower quality than ordinary ores, but where large quantities can be mined"
+ mod_district_ad_low_quality_deposits_max:0 "Max $district_ad_low_quality_deposits$"
+
+ district_ad_shed_cultivation_land:0 "Terraced Arable Land"
+ district_ad_shed_cultivation_land_plural:0 "Terraced Arable Land"
+ district_ad_shed_cultivation_land_desc:0 "Areas where the topography of the land has made it more efficient and productive to farm on the shelf."
+ mod_district_ad_shed_cultivation_land_max:0 "Max $district_ad_shed_cultivation_land$"
+ district_ad_in_water_ecosystem:0 "Underwater Ecosystems"
+ district_ad_in_water_ecosystem_plural:0 "Underwater Ecosystems"
+ district_ad_in_water_ecosystem_desc:0 "Waters rich in large kelp spreads and moderately nutrient-rich ecosystems"
+ mod_district_ad_in_water_ecosystem_max:0 "Max $district_ad_in_water_ecosystem$"
+ district_ad_mycorrhizal_communities:0 "Fungi Group Organisms"
+ district_ad_mycorrhizal_communities_plural:0 "Fungi Group Organisms"
+ district_ad_mycorrhizal_communities_desc:0 "An area with colonies of fungi endemic to the planet. Some of the fungi appear to be edible."
+ mod_district_ad_mycorrhizal_communities_max:0 "Max $district_ad_mycorrhizal_communities$"
+ district_ad_large_scale_grazing_land:0 "Large-Scale Pastures"
+ district_ad_large_scale_grazing_land_plural:0 "Large-Scale Pastures"
+ district_ad_large_scale_grazing_land_desc:0 "Large scale pasture making use of the rich grasslands of the planet"
+ mod_district_ad_large_scale_grazing_land_max:0 "Max $district_ad_large_scale_grazing_land$"
+ district_ad_large_scale_agricultural_land:0 "Natural Agricultural Land"
+ district_ad_large_scale_agricultural_land_plural:0 "Natural Agricultural Land"
+ district_ad_large_scale_agricultural_land_desc:0 "Natural farming areas where no artificial agriculture is practised and where fruits and other produce are gathered naturally."
+ mod_district_ad_large_scale_agricultural_land_max:0 "Max $district_ad_large_scale_agricultural_land$"
+
+ district_ad_ancient_ruins:0 "Ancient Monuments"
+ district_ad_ancient_ruins_plural:0 "Ancient Monuments"
+ district_ad_ancient_ruins_desc:0 "Areas of the planet where the remains of ancient civilisations and their way of life can still be seen."
+ mod_district_ad_ancient_ruins_max:0 "Max $district_ad_ancient_ruins$"
+ district_ad_ancient_databank:0 "Ancient Data Bank"
+ district_ad_ancient_databank_plural:0 "Ancient Data Bank"
+ district_ad_ancient_databank_desc:0 "A partly damaged but generally well preserved repository of information on ancient civilisations"
+ mod_district_ad_ancient_databank_max:0 "Max $district_ad_ancient_databank$"
+ district_ad_natural_fortress:0 "Natural Fortress"
+ district_ad_natural_fortress_plural:0 "Natural Fortress"
+ district_ad_natural_fortress_desc:0 "Fortified terrain protected by robust terrain and natural magnetic fields, suitable for military bases"
+ mod_district_ad_natural_fortress_max:0 "Max $district_ad_natural_fortress$"
+ district_ad_special_tourism_zone:0 "Nature Observation Zone"
+ district_ad_special_tourism_zone_plural:0 "Nature Observation Zone"
+ district_ad_special_tourism_zone_desc:0 "A district of pleasant sandy beaches and a protected natural environment"
+ mod_district_ad_special_tourism_zone_max:0 "Max $district_ad_special_tourism_zone$"
+
+ district_ad_government_district:0 "Government District"
+ district_ad_government_district_plural:0 "Government District"
+ district_ad_government_district_desc:0 "An office district with a series of government offices and official data banks."
+ mod_district_ad_government_district_max:0 "Max $district_ad_government_district$"
+ district_ad_university_district:0 "University District"
+ district_ad_university_district_plural:0 "University District"
+ district_ad_university_district_desc:0 "A residential and shopping area with a university and a vocational school."
+ mod_district_ad_university_district_max:0 "Max $district_ad_university_district$"
+ district_ad_residential_area:0 "Residential Area"
+ district_ad_residential_area_plural:0 "Residential Area"
+ district_ad_residential_area_desc:0 "Districts with detached houses and low-rise flat blocks, not condominiums."
+ mod_district_ad_residential_area_max:0 "Max $district_ad_residential_area$"
+ district_ad_shipbuilding_arsenal:0 "Shipyard"
+ district_ad_shipbuilding_arsenal_plural:0 "Shipyard"
+ district_ad_shipbuilding_arsenal_desc:0 "A district of docks and factories for the construction of military and civilian ships"
+ mod_district_ad_shipbuilding_arsenal_max:0 "Max $district_ad_shipbuilding_arsenal$"
+ district_ad_communication_area:0 "Communication Area"
+ district_ad_communication_area_plural:0 "Communication Area"
+ district_ad_communication_area_desc:0 "The nerve centre of society with its data banks and relay stations"
+ mod_district_ad_communication_area_max:0 "Max $district_ad_communication_area$"
+ district_ad_tourist_area:0 "Tourist Area"
+ district_ad_tourist_area_plural:0 "Tourist Area"
+ district_ad_tourist_area_desc:0 "A district of entertainment districts and theme parks"
+ mod_district_ad_tourist_area_max:0 "Max $district_ad_tourist_area$"
+ district_ad_defense_zone:0 "Defence Area"
+ district_ad_defense_zone_plural:0 "Defence Area"
+ district_ad_defense_zone_desc:0 "District of army bases, Space Command, barracks, etc."
+ mod_district_ad_defense_zone_max:0 "Max $district_ad_defense_zone$"
+ district_ad_conceptual_zone:0 "Special Concept Zone"
+ district_ad_conceptual_zone_plural:0 "Special Concept Zone"
+ district_ad_conceptual_zone_desc:0 "An innovative and forward-thinking district with few economic regulations"
+ mod_district_ad_conceptual_zone_max:0 "Max $district_ad_conceptual_zone$"
+ district_ad_special_research_zone:0 "Special Research Zone"
+ district_ad_special_research_zone_plural:0 "Special Research Zone"
+ district_ad_special_research_zone_desc:0 "A garden of knowledge and enquiry with a series of laboratories and academic data banks"
+ mod_district_ad_special_research_zone_max:0 "Max $district_ad_special_research_zone$"
+ district_ad_spaceport_area:0 "Spaceport Area"
+ district_ad_spaceport_area_plural:0 "Spaceport Area"
+ district_ad_spaceport_area_desc:0 "Takeoff and landing sites for spacecraft taking off and landing directly on the planet"
+ mod_district_ad_spaceport_area_max:0 "Max $district_ad_spaceport_area$"
+ district_ad_orbital_elevator:0 "Orbital Lift"
+ district_ad_orbital_elevator_plural:0 "Orbital Lift"
+ district_ad_orbital_elevator_desc:0 "Orbital base fixed with wires leading to planetary orbit"
+ mod_district_ad_orbital_elevator_max:0 "Max $district_ad_orbital_elevator$"
+
+#######################
+#####    地区    ######
+#######################
+
+ d_ad_archaeological_cities:0 "Remains on a planetary scale"
+ d_ad_archaeological_cities_desc:0 "Large, well-preserved remains on this planet."
+ d_ad_sky_cities:0 "Large aerial islands"
+ d_ad_sky_cities_desc:0 "A large amount of Rapyutanium (Rapyutaniumu) has been found on this planet, with continent-sized islands floating in the air."
+ d_ad_water_cities:0 "High density oceans"
+ d_ad_water_cities_desc:0 "The planet's oceans are extremely dense and objects float easily."
+ d_ad_under_water_cities:0 "Stable seabed"
+ d_ad_under_water_cities_desc:0 "The oceans of this planet have a stable seabed, making them suitable for the construction of underwater structures."
+ d_ad_underground_cities:0 "Large underground cavities"
+ d_ad_underground_cities_desc:0 "The planet has large, stable underground cavities, suitable for the construction of underground buildings."
+
+ d_ad_solar_power_generation:0 "Planet-scale solar panels"
+ d_ad_solar_power_generation_desc:0 "Solar panels spread over the surface of the planet. Don't worry about the waste."
+ d_ad_geothermal_electric_power_generation:0 "Geothermal stagnation area"
+ d_ad_geothermal_electric_power_generation_desc:0 "There are many magma pools near this planet, so geothermal heat is likely to stagnate."
+ d_ad_tidal_current_generation:0 "Violent tidal currents"
+ d_ad_tidal_current_generation_desc:0 "The currents on this planet are extremely violent, swirling everywhere."
+ d_ad_natural_nuclear_power_generation:0 "natural nuclear reactor"
+ d_ad_natural_nuclear_power_generation_desc:0 "The planet has an abundance of water and radioactive materials such as uranium, and a natural nuclear reactor where slow fission occurs."
+
+ d_ad_open_pit_ore_deposits:0 "Open Pit Deposits"
+ d_ad_open_pit_ore_deposits_desc:0 "Areas where large amounts of minerals are exposed on the surface of the earth."
+ d_ad_under_water_deposits:0 "Underwater Deposits"
+ d_ad_under_water_deposits_desc:0 "Areas where high density mineral deposits have been identified in water due to high pressure."
+ d_ad_orbital_deposits:0 "Orbital ore bodies"
+ d_ad_orbital_deposits_desc:0 "Rich ore bodies in planetary orbit."
+ d_ad_high_quality_deposits:0 "high quality deposits"
+ d_ad_high_quality_deposits_desc:0 "Areas where ores more useful and effective than the common ores can be mined."
+ d_ad_low_quality_deposits:0 "Low-Quality Deposits"
+ d_ad_low_quality_deposits_desc:0 "Areas of lower quality than common ores, but where large quantities can be mined because of the abundance of mineral-bearing rocks."
+
+ d_ad_shed_cultivation_land:0 "Shelf-like black soil"
+ d_ad_shed_cultivation_land_desc:0 "This planet has a high nitrogen content land on the shelf, although there are many differences in elevation."
+ d_ad_in_water_ecosystem:0 "Planetary-scale marine forests"
+ d_ad_in_water_ecosystem_desc:0 "The planet has a large scale forest of seaweed growing under the sea."
+ d_ad_mycorrhizal_communities:0 "Mycorrhizal forests"
+ d_ad_mycorrhizal_communities_desc:0 "On this planet there is a forest composed entirely of fungi, which is gradually spreading."
+ d_ad_large_scale_grazing_land:0 "A pleasant meadow"
+ d_ad_large_scale_grazing_land_desc:0 "The planet has pleasant grasslands that any species that prefers continental planets will find comfortable."
+ d_ad_large_scale_agricultural_land:0 "Natural orchard"
+ d_ad_large_scale_agricultural_land_desc:0 "The planet is dotted with forests of native fruit trees all over the planet."
+
+ d_ad_ancient_ruins:0 "A group of ancient ruins"
+ d_ad_ancient_ruins_desc:0 "The planet contains the remains of ancient civilizations and their way of life."
+ d_ad_ancient_databank:0 "Ancient databank"
+ d_ad_ancient_databank_desc:0 "This planet contains a collection of information on ancient civilizations that is partially damaged but remains in generally good condition."
+ d_ad_natural_fortress:0 "Natural fortress terrain"
+ d_ad_natural_fortress_desc:0 "The planet contains fortress terrain protected by robust terrain and a natural magnetic field."
+ d_ad_special_tourism_zone:0 "Magnificent nature"
+ d_ad_special_tourism_zone_desc:0 "The planet is dotted with beautiful sandy beaches, well-formed forests and mortared mountains."
+
+ d_ad_government_district:0 "Government office district"
+ d_ad_government_district_desc:0 "Office district with a series of government offices and official data banks."
+ d_ad_university_district:0 "University District"
+ d_ad_university_district_desc:0 "A district with residential and shopping areas around universities and colleges."
+ d_ad_residential_area:0 "Residential Area"
+ d_ad_residential_area_desc:0 "District with detached houses and low-rise apartment buildings, not flats."
+ d_ad_shipbuilding_arsenal:0 "Shipbuilding arsenal"
+ d_ad_shipbuilding_arsenal_desc:0 "District with docks and factories for building military and civilian ships."
+ d_ad_communication_area:0 "Communication Area"
+ d_ad_communication_area_desc:0 "Nerve centre area in society where data banks and relay stations are concentrated."
+ d_ad_tourist_area:0 "Tourist Area"
+ d_ad_tourist_area_desc:0 "Area of entertainment and theme parks."
+ d_ad_defense_zone:0 "Defence zone"
+ d_ad_defense_zone_desc:0 "District with army bases, space command, barracks, etc."
+ d_ad_conceptual_zone:0 "Special Conceptual Zone"
+ d_ad_conceptual_zone_desc:0 "A district with few economic regulations, rich in innovation and anticipation."
+ d_ad_special_research_zone:0 "Special research zone"
+ d_ad_special_research_zone_desc:0 "A garden of knowledge and enquiry with a series of laboratories and academic data banks."
+ d_ad_spaceport_area:0 "Spaceport Area"
+ d_ad_spaceport_area_desc:0 "A take-off and landing area for spacecraft that take off and land directly on the planet."
+ d_ad_orbital_elevator:0 "Orbital Lift"
+ d_ad_orbital_elevator_desc:0 "Orbital base anchored by wires leading to planetary orbit."
+
+#######################
+#####    建物    ######
+#######################
+
+ building_ad_Palace:0 "Palace"
+ building_ad_Palace_desc:0 "A palace where the head of state or monarch lives and holds office. Their entourage and staff greatly influence the running of the state."
+
+ building_ad_CEO:0 "The CEO's Office"
+ building_ad_CEO_desc:0 "The office for the CEO. A number of secretaries and staff are on hand to help make the CEO's life comfortable."
+
+ building_ad_M_def:0 "Ministry of Defence"
+ building_ad_M_def_desc:0 "A government office staffed by numerous high-ranking officials and clerks. The government agency responsible for overseeing public safety and welfare."
+
+ building_ad_O_def:0 "Administrative security headquarters"
+ building_ad_O_def_desc:0 "A conglomerate's central enterprise, staffed by a large number of elites and workers. The company supervises the security guards and the corporate army."
+
+ building_ad_M_dom:0 "Ministry of the Interior"
+ building_ad_M_dom_desc:0 "A government office staffed by numerous high-ranking bureaucrats and clerks. The government agency responsible for overseeing public safety and welfare."
+
+ building_ad_O_dom:0 "Labour Management Headquarters"
+ building_ad_O_dom_desc:0 "The central company of a conglomerate where a large number of elites and workers work. The company responsible for the welfare and internal discipline of its employees."
+
+ building_ad_M_dip:0 "Ministry of Foreign Affairs "
+ building_ad_M_dip_desc:0 "A government office staffed by a large number of high-ranking bureaucrats and clerks. The government office responsible for diplomacy and the administration of the vassal states."
+
+ building_ad_O_dip:0 "Foreign Trade Headquarters"
+ building_ad_O_dip_desc:0 "The central enterprise of a conglomerate, staffed by a large number of elites and workers. An enterprise that negotiates with the outside world to pursue the interests of the company."
+
+ building_ad_M_inf:0 "Ministry of Information"
+ building_ad_M_inf_desc:0 "A government office staffed by a number of high-ranking bureaucrats and clerks. The government agency responsible for the operation of intelligence and domestic communications."
+
+ building_ad_O_inf:0 "Information Security Headquarters"
+ building_ad_O_inf_desc:0 "A conglomerate's central enterprise, staffed by a large number of elites and workers. Company responsible for information security and external intelligence gathering."
+
+ building_ad_M_tra:0 "Ministry of Transport"
+ building_ad_M_tra_desc:0 "A government office staffed by a large number of high-ranking bureaucrats and clerks. The government agency that supports the economy in terms of transport and distribution."
+
+ building_ad_O_tra:0 "Distribution and Transport Headquarters"
+ building_ad_O_tra_desc:0 "The central company of a conglomerate, where a large number of elites and workers work."
+
+ building_ad_M_ind:0 "Ministry of Industry"
+ building_ad_M_ind_desc:0 "A government office staffed by a large number of high-ranking bureaucrats and clerks. The government office responsible for production and licensing."
+
+ building_ad_O_ind:0 "Manufacturing and Engineering Headquarters"
+ building_ad_O_ind_desc:0 "The central company of a conglomerate, staffed by a large number of elites and workers."
+
+ building_ad_E_cap:0 "The Capitol"
+ building_ad_E_cap_desc:0 "A facility for members of parliament who influence the government as a legislative body, but without authority."
+
+ building_ad_C_cap:0 "General Meeting Hall for Shareholders"
+ building_ad_C_cap_desc:0 "The central enterprise of the conglomerate, where a large number of elites and workers work."
+
+ building_ad_E_court:0 "Imperial Court"
+ building_ad_E_court_desc:0 "An institution where the watchdogs who protect the security and justice of the state meet."
+
+ building_ad_C_court:0 "Headquarters Inquest Chamber"
+ building_ad_C_court_desc:0 "A facility where employees and others who have committed crimes against a company are tried and sanctioned."
+
+ building_ad_E_bank:0 "Central Reserve Bank"
+ building_ad_E_bank_desc:0 "A special bank that supervises the financial affairs of a nation."
+
+ building_ad_O_bank:0 "Corporate Asset Management Headquarters"
+ building_ad_O_bank_desc:0 "Company for the management and administration of the claims and assets held by the company."
+
+ building_ad_E_mil:0 "General Staff Headquarters"
+ building_ad_E_mil_desc:0 "The government agency that directs the military and makes various plans."
+
+ building_ad_C_mil:0 "Headquarters for Corporate Security Operations"
+ building_ad_C_mil_desc:0 "The department which controls and orders the fleet and army which the company has."
+
+ building_ad_broad:0 "Central Broadcasting Station"
+ building_ad_broad_desc:0 "The organ which explains the position of the state and propagates it to the people."
+
+ building_ad_G_datebank:0 "Imperial Records Depository"
+ building_ad_G_datebank_desc:0 "Databank for important records of the state and of civilization."
+
+ building_ad_medicinelab:0 "Pharmaceutical Research Institute"
+ building_ad_medicinelab_desc:0 "An institute dedicated to the development of medicine on a national scale."
+
+ building_ad_P_datebank:0 "Planetary Data Bank"
+ building_ad_P_datebank_desc:0 "A facility established on each planet to store a variety of information."
+
+ building_ad_E_libraly:0 "Imperial Library"
+ building_ad_E_libraly_desc:0 "A facility for the storage of information granted freedom from the state by the monarch."
+
+ building_ad_welness:0 "Labour welfare Centre"
+ building_ad_welness_desc:0 "A government office that deals with the welfare of citizens, including unemployment and care."
+
+ building_ad_P_Police:0 "Public Security Department"
+ building_ad_P_Police_desc:0 "A government office that monitors dangerous people and ideas on each planet and aims to prevent outbursts."
+
+ building_ad_labor:0 "Voluntary Labour Inspectorate"
+ building_ad_labor_desc:0 "A government office to supervise people who offer to work for free on a 'voluntary' basis and to make sure that they meet their quotas."
+
+ building_ad_Co_bank:0 "Colonial Development Bank"
+ building_ad_Co_bank_desc:0 "A public financial institution that supports the development of each planet and provides low-interest loans."
+
+ building_ad_inobate:0 "Innovation Centre"
+ building_ad_inobate_desc:0 "A facility that supports a wide range of ideas and helps people to start their own businesses and obtain patents."
+
+ building_ad_P_HQ:0 "Regional Military Headquarters"
+ building_ad_P_HQ_desc:0 "A command centre that commands the armies and fleets stationed on each planet."
+
+ building_ad_O_imp:0 "Border Control Station"
+ building_ad_O_imp_desc:0 "A government office that inspects and checks goods, immigrants, etc., entering a planet to prevent fraud and overflow."
+
+ building_ad_O_imm:0 "Immigration Promotion Bureau"
+ building_ad_O_imm_desc:0 "An office that promotes and supports immigration from a planet."
+
+ building_ad_O_exp:0 "Bureau of Border Control"
+ building_ad_O_exp_desc:0 "A government office that inspects and checks goods, immigrants, etc. exported from a planet to prevent fraud and excessive outflow."
+
+ building_ad_presidential:0 "Presidential Office"
+ building_ad_presidential_desc:0 "An office for people who work with advanced knowledge and ideas."
+
+ building_ad_telecommu:0 "Transport and Communications Control Office"
+ building_ad_telecommu_desc:0 "An office that controls interplanetary communications and transportation aspects."
+
+ building_ad_university:0 "General University"
+ building_ad_university_desc:0 "An institution of higher learning that educates future professionals and conducts a variety of research."
+
+ building_ad_perfectethic:0 "Safety Thought Education Centre"
+ building_ad_perfectethic_desc:0 "This facility allows the spread of safe thought in society."
+
+ building_ad_diversity:0 "Centre for Social Diversity"
+ building_ad_diversity_desc:0 "Those who are excluded from society should not exist, and this institution is designed to spread diversity education."
+
+ building_ad_judgement:0 "Interethnic Tribunal"
+ building_ad_judgement_desc:0 "An institution that exists to maintain a noble society by judging different races and compatriots who identify with different races."
+
+ building_ad_P_broad:0 "Broadcasting Station"
+ building_ad_P_broad_desc:0 "An institution responsible for reporting and broadcasting on each planet."
+
+ building_ad_slam:0 "Slum"
+ building_ad_slam_desc:0 "An unsanitary and crime-ridden area inhabited by low-income people."
+
+ building_ad_apart:0 "Large High-Rise Residential Buildings"
+ building_ad_apart_desc:0 "A high-rise residential building that is well maintained and secure, and functions as a town in its own right."
+
+ building_ad_mansion:0 "Exclusive Residential Area"
+ building_ad_mansion_desc:0 "A spacious Residential Area for the wealthy."
+
+ building_ad_red_light:0 "Entertainment District"
+ building_ad_red_light_desc:0 "An entertainment district with bars, cinemas, betting shops and brothels."
+
+ building_ad_P_prison:0 "Prison"
+ building_ad_P_prison_desc:0 "A place where criminals can be housed and dirt can be collected on the fringes of society."
+
+ building_ad_F_camp:0 "Concentration Camp"
+ building_ad_F_camp_desc:0 "To make those who are disadvantageous to society produce as little benefit as possible."
+
+ building_ad_college:0 "Technical College"
+ building_ad_college_desc:0 "An educational institution that produces professionals and workers with knowledge in a particular area of specialization."
+
+ building_ad_H_hotel:0 "Luxury Hotel"
+ building_ad_H_hotel_desc:0 "Comfortable accommodation for high-income people and VIPs of the degree race."
+
+ building_ad_S_broade:0 "News Station"
+ building_ad_S_broade_desc:0 "A news station in everyone's town."
+
+ building_ad_L_office:0 "Law Office"
+ building_ad_L_office_desc:0 "A place to consult for legal procedures and to solve problems."
+
+ building_ad_AA_base:0 "Artillery Air Force Base"
+ building_ad_AA_base_desc:0 "A base for rapid deployment to a planet to attack enemy land forces."
+
+ building_ad_W_camp:0 "Waste Disposal Facility"
+ building_ad_W_camp_desc:0 "A facility for accumulating and processing waste throughout the empire."
+
+ building_ad_D_Auto:0 "Automatic Defence Facility"
+ building_ad_D_Auto_desc:0 "A group of turrets and missile silos that automatically destroy enemy land forces."
+
+ building_ad_Anti_b_pit:0 "Anti-Bomb Shelter"
+ building_ad_Anti_b_pit_desc:0 "A facility to protect civilians against bombing and land warfare."
+
+ building_ad_Anti_s_misile:0 "Anti-Space Missile Facility"
+ building_ad_Anti_s_misile_desc:0 "Facility to attack enemy fleet deployed in orbit."
+
+ building_ad_rban_area_control_area:0 "Urban Area Control Area"
+ building_ad_rban_area_control_area_desc:0 "An area set aside to attract industries and businesses."
+
+ building_ad_industrial_adjustment_area:0 "Industrial Adjustment Area"
+ building_ad_industrial_adjustment_area_desc:0 "An area set aside to attract industries and businesses."
+
+ building_ad_social_welfare_service_corporation:0 "Social Welfare Service Corporation"
+ building_ad_social_welfare_service_corporation_desc:0 "Tax-advantaged corporations that provide welfare services to the vulnerable members of society."
+
+ building_ad_law_firm:0 "Law Firm with a Procession"
+ building_ad_law_firm_desc:0 "A law firm with a queue of amazing lawyers.(The original story is from a Japanese TV program)"
+
+ building_ad_highly_organic_farm:0 "Highly Organic Farm"
+ building_ad_highly_organic_farm_desc:0 "A high-end farm that cares about organic production."
+
+ building_ad_interplanetary_press:0 "Interplanetary News Service"
+ building_ad_interplanetary_press_desc:0 "A private company that provides interplanetary communications and news coverage."
+
+ building_ad_innovative_corp:0 "Innovative Corp."
+ building_ad_innovative_corp_desc:0 "Corporations that commit to high performance results with innovative ideas."
+
+ building_ad_savings_bank:0 "Savings Bank"
+ building_ad_savings_bank_desc:0 "Financial institutions that invest citizens' savings assets at low but safe interest rates."
+
+ building_ad_planet_shipyard:0 "Planet Shipyard"
+ building_ad_planet_shipyard_desc:0 "A shipping company that builds civilian ships and warships with planetary roots."
+
+ building_ad_planet_factory:0 "Planet Factory"
+ building_ad_planet_factory_desc:0 "A company that builds civilian products rooted in the planet."
+
+ building_ad_galaxy_passenger_transport_co:0 "Galactic Passenger Transport Company"
+ building_ad_galaxy_passenger_transport_co_desc:0 "Companies that operate civilian ships and intra-planetary transportation systems to transport goods and people."
+
+ building_ad_planetary_construction_union:0 "Planetary Construction Union"
+ building_ad_planetary_construction_union_desc:0 "Construction companies for building and procurement of building materials on the planet."
+
+ building_ad_small_space_port:0 "Small-Scale Cosmic Port"
+ building_ad_small_space_port_desc:0 "A private spaceport with a small but steady commercial ship take-off and landing."
+
+ building_ad_corporate_academy:0 "Corporate Academy"
+ building_ad_corporate_academy_desc:0 "A small but highly skilled university run by a private company."
+
+ building_ad_private_prison:0 "Private Prison"
+ building_ad_private_prison_desc:0 "A prison run by a private company on behalf of the planetary government for public safety."
+
+ building_ad_private_waste_disposal_facilities:0 "Private Waste Disposal Facilities"
+ building_ad_private_waste_disposal_facilities_desc:0 "A waste treatment facility operated by a private company on behalf of the planetary government."
+
+ building_slave_shop:0 "Slave Shop"
+ building_slave_shop_desc:0 "A market where illegal trade takes place to secure labour"
+
+ building_empire_undergraund:0 "Underground Empire"
+ building_empire_undergraund_desc:0 "A private concentration camp where gambling losers are forced to work forever to pay off their debts."
+
+ building_preasure_land:0 "Pleasure Land"
+ building_preasure_land_desc:0 "An establishment that provides sex services to tourists and wealthy people through illegal work."
+
+ building_yakuza_office:0 "Yakuza Office"
+ building_yakuza_office_desc:0 "An administrative office of a criminal state, with 'somehow' many violent workers."
+
+ building_yakuza_constructioncorp:0 "Yakuza Constructioncorp"
+ building_yakuza_constructioncorp_desc:0 "A building contractor with many rough workers, also dealing in real estate."
+
+ building_yakuza_estate:0 "Yakuza Estate"
+ building_yakuza_estate_desc:0 "An astute real estate agent who is active in the redevelopment of land."
+
+ building_pirate_broad:0 "Pirate Broadcaster"
+ building_pirate_broad_desc:0 "Illegal operators who report and broadcast on illegal lines rather than legitimate broadcasts."
+
+ building_black_ushi:0 "Black Marketers"
+ building_black_ushi_desc:0 "A charity that gives loans to any person at illegal high interest rates."
+
+ building_f_rank_universities:0 "F-rank Universities"
+ building_f_rank_universities_desc:0 "Institutions of higher education that provide deliberately low education but refer research results for university privileges."
+
+ building_corp_nazi:0 "Exclusivist Propaganda Centre"
+ building_corp_nazi_desc:0 "An ideological institution that calls on the minorities of each planet to incite hatred."
+
+ building_so_kai_ya:0 "General Assembly"
+ building_so_kai_ya_desc:0 "An investment agency that aims to change the economy of each planet in favor of the criminal state."
+
+ building_yakuza_a_pro:0 "893 Production"
+ building_yakuza_a_pro_desc:0 "A naughty idol takes your wallet!"
+
+ building_boryoku_ya:0 "Civil Case Solution Office"
+ building_boryoku_ya_desc:0 "Trial is barbaric ...... This is a place for calm and violence......"
+
+ building_hinkon_bussiness:0 "Corporation for the support of the needy"
+ building_hinkon_bussiness_desc:0 "We give welfare to the needy back to the economy."
+
+ building_ura_factry:0 "Factory producing counterfeit products"
+ building_ura_factry_desc:0 "Ha ha!"
+
+ building_buki_factry:0 "Weapons smuggling factory"
+ building_buki_factry_desc:0 "Factory for cheap and stable supply of weapons."
+
+ building_zosen_factry:0 "Illegal Shipyard"
+ building_zosen_factry_desc:0 "Ship permits are expensive, so why not just get them without a permit?"
+
+#######################
+#####    陸軍    ######
+#######################
+
+ debtor_army:0 "debtor"
+ debtor_army_desc:0 ""
+
+#######################
+#####    ○○○○    ######
+#######################
+
+# :0 ""
+# _desc:0 ""

@@ -137,7 +137,7 @@ building_ad_CEO = {
 	}
 }
 
-# building_ad_M_def  国防省			宇宙軍許容量+30、地上軍士気+10				行政官+1、将校+1、官僚+1	(多数の高級官僚や事務員が務める役所。軍政面での国軍支援を行う官庁。)企業以外				維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+# building_ad_M_def  国防省			宇宙軍許容量+30、地上軍士気+10				政治家+1、将校+1、官僚+1	(多数の高級官僚や事務員が務める役所。軍政面での国軍支援を行う官庁。)企業以外				維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
 building_ad_M_def = {
 	base_buildtime = 550
 	base_cap_amount = 1
@@ -152,7 +152,7 @@ building_ad_M_def = {
 		}
 	}
 	planet_modifier = {
-		job_administrator_add = 1
+		job_politician_add = 1
 		job_ad_commissioned_officer_add = 1
 		job_bureaucrat_add = 1
 	}
@@ -278,7 +278,7 @@ building_ad_O_def = {
 	}
 }
 
-# building_ad_M_dom  内務省			帝国の犯罪度-10%、各惑星幸福度+10%			行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。治安や福祉の監督を行う官庁。)企業以外				維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+# building_ad_M_dom  内務省			帝国の犯罪度-10%、各惑星幸福度+10%			政治家+1、官僚+2		(多数の高級官僚や事務員が務める役所。治安や福祉の監督を行う官庁。)企業以外				維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
 building_ad_M_dom = {
 	base_buildtime = 550
 	base_cap_amount = 1
@@ -293,7 +293,7 @@ building_ad_M_dom = {
 		}
 	}
 	planet_modifier = {
-		job_administrator_add = 1
+		job_politician_add = 1
 		job_bureaucrat_add = 2
 	}
 	country_modifier = {
@@ -417,7 +417,7 @@ building_ad_O_dom = {
 	}
 }
 
-# building_ad_M_dip  外務省			外交発言力+10%、使節+1					行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。外交や属国の管理を行う官庁。)企業以外				維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+# building_ad_M_dip  外務省			外交発言力+10%、使節+1					政治家+1、官僚+2		(多数の高級官僚や事務員が務める役所。外交や属国の管理を行う官庁。)企業以外				維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
 building_ad_M_dip = {
 	base_buildtime = 550
 	base_cap_amount = 1
@@ -432,7 +432,7 @@ building_ad_M_dip = {
 		}
 	}
 	planet_modifier = {
-		job_administrator_add = 1
+		job_politician_add = 1
 		job_bureaucrat_add = 2
 	}
 	country_modifier = {
@@ -562,7 +562,7 @@ building_ad_O_dip = {
 	}
 }
 
-# building_ad_M_inf  情報省			解読力+5、暗号力+10					行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。諜報や国内通信の運用を行う官庁。)企業以外			維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+# building_ad_M_inf  情報省			解読力+5、暗号力+10					政治家+1、官僚+2		(多数の高級官僚や事務員が務める役所。諜報や国内通信の運用を行う官庁。)企業以外			維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
 building_ad_M_inf = {
 	base_buildtime = 550
 	base_cap_amount = 1
@@ -577,7 +577,7 @@ building_ad_M_inf = {
 		}
 	}
 	planet_modifier = {
-		job_administrator_add = 1
+		job_politician_add = 1
 		job_bureaucrat_add = 2
 	}
 	country_modifier = {
@@ -700,7 +700,7 @@ building_ad_O_inf = {
 	}
 }
 
-# building_ad_M_tra  運輸省			交易保護値+3、交易価値+10%				行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。輸送や流通面から経済を支援する官庁。)企業以外			維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
+# building_ad_M_tra  運輸省			交易保護値+3、交易価値+10%				政治家+1、官僚+2		(多数の高級官僚や事務員が務める役所。輸送や流通面から経済を支援する官庁。)企業以外			維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
 building_ad_M_tra = {
 	base_buildtime = 550
 	base_cap_amount = 1
@@ -715,7 +715,7 @@ building_ad_M_tra = {
 		}
 	}
 	planet_modifier = {
-		job_administrator_add = 1
+		job_politician_add = 1
 		job_bureaucrat_add = 2
 	}
 	country_modifier = {
@@ -844,7 +844,7 @@ building_ad_O_tra = {
 	}
 }
 
-# building_ad_M_ind  産業省			労働者生産量+5%						行政官+1、官僚+2		(多数の高級官僚や事務員が務める役所。生産や許認可を行う官庁。)企業以外				維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+# building_ad_M_ind  産業省			労働者生産量+5%						政治家+1、官僚+2		(多数の高級官僚や事務員が務める役所。生産や許認可を行う官庁。)企業以外				維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
 building_ad_M_ind = {
 	base_buildtime = 550
 	base_cap_amount = 1
@@ -859,7 +859,7 @@ building_ad_M_ind = {
 		}
 	}
 	planet_modifier = {
-		job_administrator_add = 1
+		job_politician_add = 1
 		job_bureaucrat_add = 2
 	}
 	country_modifier = {
@@ -1099,7 +1099,7 @@ building_ad_C_cap = {
 	}
 }
 
-# building_ad_E_court  帝国裁判所		犯罪度-20、安定度+10					行政官+1、法曹+2		(国家の治安や司法を守る番人が集う施設。)企業以外							維持:エネ3			建設:鉱物900、時間500
+# building_ad_E_court  帝国裁判所		犯罪度-20、安定度+10					政治家+1、法曹+2		(国家の治安や司法を守る番人が集う施設。)企業以外							維持:エネ3			建設:鉱物900、時間500
 building_ad_E_court = {
 	base_buildtime = 500
 	base_cap_amount = 1
@@ -1118,7 +1118,7 @@ building_ad_E_court = {
 	}
 	planet_modifier = {
 		planet_stability_add = 10
-		job_administrator_add = 1
+		job_politician_add = 1
 		job_ad_lawyer_add = 2
 	}
 	resources = {
@@ -1233,7 +1233,7 @@ building_ad_C_court = {
 	}
 }
 
-# building_ad_E_bank  中央準備銀行		エネルギー算出+10%					行政官+1、銀行家+2		(国家の金融を監督する特殊な銀行。)企業以外
+# building_ad_E_bank  中央準備銀行		エネルギー算出+10%					政治家+1、銀行家+2		(国家の金融を監督する特殊な銀行。)企業以外
 # 							維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
 building_ad_E_bank = {
 	base_buildtime = 550
@@ -1249,7 +1249,7 @@ building_ad_E_bank = {
 		}
 	}
 	planet_modifier = {
-		job_administrator_add = 1
+		job_politician_add = 1
 		job_ad_banker_add = 2
 	}
 	country_modifier = {
