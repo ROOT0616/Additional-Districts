@@ -2,12 +2,10 @@
 add_AD_archaeological_cities = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			is_ad_ancient = yes
 		}
 		random_list = {
 			50 = {
-				set_planet_flag = do_ad_archaeological_cities
 				random_list = {
 					5 = {
 						while = {
@@ -51,16 +49,10 @@ add_AD_archaeological_cities = {
 add_AD_sky_cities = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
-			OR = {
-				is_wet = yes
-				is_dry = yes
-				is_cold = yes
-			}
+			is_ad_planet = yes
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_sky_cities
 				random_list = {
 					5 = {
 						while = {
@@ -104,15 +96,13 @@ add_AD_sky_cities = {
 add_AD_water_cities = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
-				is_cold = yes
-				is_wet = yes
+				is_ad_wet = yes
+				is_ad_cold = yes
 			}
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_water_cities
 				random_list = {
 					5 = {
 						while = {
@@ -156,14 +146,13 @@ add_AD_water_cities = {
 add_AD_under_water_cities = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				is_wet = yes
+				is_ad_wet = yes
 			}
 		}
 		random_list = {
 			25 = {
-				set_planet_flag = do_ad_under_water_cities
 				random_list = {
 					5 = {
 						while = {
@@ -207,16 +196,10 @@ add_AD_under_water_cities = {
 add_AD_underground_cities = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
-			OR = {
-				is_wet = yes
-				is_dry = yes
-				is_cold = yes
-			}
+			is_ad_planet = yes
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_underground_cities
 				random_list = {
 					5 = {
 						while = {
@@ -260,16 +243,15 @@ add_AD_underground_cities = {
 add_AD_geothermal_electric_power_generation = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				is_wet = yes
-				is_wet = yes
 				is_dry = yes
+				is_ad_wet = yes
+				is_ad_dry = yes
 			}
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_geothermal_electric_power_generation
 				random_list = {
 					20 = {
 						while = {
@@ -301,14 +283,13 @@ add_AD_geothermal_electric_power_generation = {
 add_AD_tidal_current_generation = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				is_wet = yes
+				is_ad_wet = yes
 			}
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_tidal_current_generation
 				random_list = {
 					20 = {
 						while = {
@@ -340,83 +321,10 @@ add_AD_tidal_current_generation = {
 add_AD_natural_nuclear_power_generation = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
-			OR = {
-				#  	# Wet
-				is_planet_class = pc_continental				#大陸型惑星
-				is_planet_class = pc_tropical				#熱帯型惑星
-				is_planet_class = pc_ocean				#海洋型惑星
-				is_planet_class = pc_cascadian				#カスカディアン型惑星 
-				is_planet_class = pc_desertislands				#環礁型惑星
-				is_planet_class = pc_subarctic				#亜北極海型惑星
-				is_planet_class = pc_mangrove				#マングローブ型惑星
-				is_planet_class = pc_hajungle				#高地ジャングル型惑星
-				is_planet_class = pc_retinal				#レチナール惑星
-				is_planet_class = pc_forest				#森林惑星
-				is_planet_class = pc_wetswamp				#森林湿地型惑星
-				is_planet_class = pc_lake				#湖沼惑星
-				is_planet_class = pc_tepid				#微温惑星
-				is_planet_class = pc_aquatic				#水生惑星
-				is_planet_class = pc_tidallylocked				#同期自転型惑星
-				is_planet_class = pc_floating				#浮遊島惑星
-				is_planet_class = pc_aquifer				#帯水層型惑星
-				is_planet_class = pc_supercon				#超大陸型惑星
-				is_planet_class = pc_technoorganic				##テクノオーガニック惑星
-				is_planet_class = pc_biolumen				#生物発光惑星
-				is_planet_class = pc_ecocity				#エコアーコロジー
-				is_planet_class = pc_lichen				#苔惑星
-				is_planet_class = pc_primal				#原始惑星
-				is_planet_class = pc_megafloratol				#メガフローラ惑星
-				is_planet_class = pc_milarc				#要塞アーコロジー
-				is_planet_class = pc_karst				#カルスト惑星
-				#  	# Dry
-				# is_planet_class = pc_desert #砂漠型惑星
-				# is_planet_class = pc_arid #乾燥型惑星
-				# is_planet_class = pc_savannah #サバンナ型惑星
-				# is_planet_class = pc_steppe #ステップ型惑星
-				# is_planet_class = pc_sandsea #砂海型惑星
-				is_planet_class = pc_oasis				#オアシス型惑星
-				# is_planet_class = pc_mesa #卓上台地型惑星
-				# is_planet_class = pc_hadesert #高地砂漠型惑星
-				# is_planet_class = pc_prairie #プレーリー型惑星
-				is_planet_class = pc_med				#地中海型惑星
-				# is_planet_class = pc_outback #高湿乾燥型惑星
-				# is_planet_class = pc_veld #ベルト型惑星
-				# is_planet_class = pc_semiarid #半乾燥型惑星
-				is_planet_class = pc_coral				#珊瑚惑星
-				# is_planet_class = pc_salt #塩結晶型惑星
-				#  	# Cold
-				is_planet_class = pc_arctic				#極寒型惑星
-				is_planet_class = pc_tundra				#ツンドラ型惑星
-				is_planet_class = pc_alpine				#高山型惑星
-				is_planet_class = pc_swamp				#沼地型惑星
-				is_planet_class = pc_frozen_desert				#冷凍砂漠型惑星
-				is_planet_class = pc_glacial				#氷河型惑星
-				is_planet_class = pc_boreal				#亜寒帯型惑星
-				is_planet_class = pc_mushroom				#菌糸体惑星
-				is_planet_class = pc_antarctic				#南極型惑星
-				is_planet_class = pc_snow				#氷雪型惑星
-				is_planet_class = pc_highland				#高地型惑星
-				is_planet_class = pc_mud				#泥惑星
-				is_planet_class = pc_aeolian				#風成型惑星
-				is_planet_class = pc_duneforest				#砂丘森型惑星
-				is_planet_class = pc_lanthanide				#ランタノイド型惑星
-				is_planet_class = pc_rogue				#変異惑星
-				is_planet_class = pc_storm				#暴風惑星
-				is_planet_class = pc_glacio				#氷河火山型惑星
-				is_planet_class = pc_geothermal				#地熱北極型惑星
-				is_planet_class = pc_eyeball				#眼球惑星
-				is_planet_class = pc_gaia				#ガイア型惑星
-				is_planet_class = pc_superhabitable				#極上惑星
-				is_planet_class = pc_relic				#遺物惑星
-				is_planet_class = pc_city				#エキュメノポリス
-				is_planet_class = pc_toxic				#有毒惑星
-				is_planet_class = pc_nuked				#死の惑星
-			}
+			is_ad_planet = yes
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_natural_nuclear_power_generation
 				random_list = {
 					20 = {
 						while = {
@@ -448,7 +356,6 @@ add_AD_natural_nuclear_power_generation = {
 add_AD_open_pit_ore_deposits = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				#  	# Wet
 				is_planet_class = pc_continental				#大陸型惑星
@@ -528,7 +435,6 @@ add_AD_open_pit_ore_deposits = {
 		}
 		random_list = {
 			15 = {
-				set_planet_flag = do_ad_open_pit_ore_deposits
 				random_list = {
 					20 = {
 						while = {
@@ -560,7 +466,6 @@ add_AD_open_pit_ore_deposits = {
 add_AD_under_water_deposits = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				#  	# Wet
 				is_planet_class = pc_continental				#大陸型惑星
@@ -636,7 +541,6 @@ add_AD_under_water_deposits = {
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_under_water_deposits
 				random_list = {
 					20 = {
 						while = {
@@ -668,7 +572,6 @@ add_AD_under_water_deposits = {
 add_AD_orbital_deposits = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				has_ring = yes
 				has_moon = yes
@@ -676,7 +579,6 @@ add_AD_orbital_deposits = {
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_orbital_deposits
 				random_list = {
 					20 = {
 						while = {
@@ -708,7 +610,6 @@ add_AD_orbital_deposits = {
 add_AD_quality_deposits = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				#  	# Wet
 				is_planet_class = pc_continental				#大陸型惑星
@@ -789,7 +690,6 @@ add_AD_quality_deposits = {
 		random_list = {
 			# 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
 			10 = {
-				set_planet_flag = do_ad_high_quality_deposits
 				random_list = {
 					20 = {
 						while = {
@@ -813,7 +713,6 @@ add_AD_quality_deposits = {
 			}
 			# 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生）
 			15 = {
-				set_planet_flag = do_ad_low_quality_deposits
 				random_list = {
 					20 = {
 						while = {
@@ -845,7 +744,6 @@ add_AD_quality_deposits = {
 add_AD_shed_cultivation_land = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				#  	# Wet
 				is_planet_class = pc_continental				#大陸型惑星
@@ -921,7 +819,6 @@ add_AD_shed_cultivation_land = {
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_shed_cultivation_land
 				random_list = {
 					20 = {
 						while = {
@@ -953,7 +850,6 @@ add_AD_shed_cultivation_land = {
 add_AD_in_water_ecosystem = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				#  	# Wet
 				is_planet_class = pc_continental				#大陸型惑星
@@ -1029,7 +925,6 @@ add_AD_in_water_ecosystem = {
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_in_water_ecosystem
 				random_list = {
 					20 = {
 						while = {
@@ -1061,12 +956,10 @@ add_AD_in_water_ecosystem = {
 add_AD_mycorrhizal_communities = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			is_ad_fungal = yes
 		}
 		random_list = {
 			60 = {
-				set_planet_flag = do_ad_mycorrhizal_communities
 				random_list = {
 					20 = {
 						while = {
@@ -1094,11 +987,10 @@ add_AD_mycorrhizal_communities = {
 	}
 }
 
-# 大規模牧草地	large_scale_grazing_land	（自然発生）# 	large_scale_agricultural_land		（自然発生
+# 大規模牧草地	large_scale_grazing_land	（自然発生）
 add_AD_large_scale_land = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				#  	# Wet
 				is_planet_class = pc_continental				#大陸型惑星
@@ -1174,7 +1066,6 @@ add_AD_large_scale_land = {
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_large_scale_grazing_land
 				random_list = {
 					20 = {
 						while = {
@@ -1197,7 +1088,6 @@ add_AD_large_scale_land = {
 				}
 			}
 			10 = {
-				set_planet_flag = do_ad_large_scale_agricultural_land
 				random_list = {
 					20 = {
 						while = {
@@ -1220,7 +1110,6 @@ add_AD_large_scale_land = {
 				}
 			}
 			5 = {
-				set_planet_flag = do_ad_large_scale_agricultural_land
 				random_list = {
 					20 = {
 						while = {
@@ -1241,7 +1130,6 @@ add_AD_large_scale_land = {
 						}
 					}
 				}
-				set_planet_flag = do_ad_large_scale_grazing_land
 				random_list = {
 					20 = {
 						while = {
@@ -1273,12 +1161,10 @@ add_AD_large_scale_land = {
 add_AD_ancient_ruins = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			is_ad_ancient = yes
 		}
 		random_list = {
 			50 = {
-				set_planet_flag = do_ad_ancient_ruins
 				random_list = {
 					20 = {
 						while = {
@@ -1310,12 +1196,10 @@ add_AD_ancient_ruins = {
 add_AD_ancient_databank = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			is_ad_ancient = yes
 		}
 		random_list = {
 			50 = {
-				set_planet_flag = do_ad_ancient_databank
 				random_list = {
 					20 = {
 						while = {
@@ -1347,7 +1231,6 @@ add_AD_ancient_databank = {
 add_AD_natural_fortress = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				is_wet = yes
 				is_cold = yes
@@ -1356,7 +1239,6 @@ add_AD_natural_fortress = {
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_natural_fortress
 				random_list = {
 					20 = {
 						while = {
@@ -1388,7 +1270,6 @@ add_AD_natural_fortress = {
 add_AD_special_tourism_zone = {
 	every_galaxy_planet = {
 		limit = {
-			has_building = no
 			OR = {
 				is_wet = yes
 				is_cold = yes
@@ -1397,7 +1278,6 @@ add_AD_special_tourism_zone = {
 		}
 		random_list = {
 			10 = {
-				set_planet_flag = do_ad_special_tourism_zone
 				random_list = {
 					20 = {
 						while = {

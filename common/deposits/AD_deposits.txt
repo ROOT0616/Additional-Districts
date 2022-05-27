@@ -18,9 +18,6 @@ d_ad_archaeological_cities = {
 	planet_modifier = {
 		district_ad_archaeological_cities_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_archaeological_cities
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -35,9 +32,6 @@ d_ad_sky_cities = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_sky_cities_max = 1
-	}
-	potential = {
-		has_planet_flag = do_ad_sky_cities
 	}
 	drop_weight = {
 		weight = @low
@@ -54,9 +48,6 @@ d_ad_water_cities = {
 	planet_modifier = {
 		district_ad_water_cities_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_water_cities
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -72,9 +63,6 @@ d_ad_under_water_cities = {
 	planet_modifier = {
 		district_ad_under_water_cities_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_under_water_cities
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -89,9 +77,6 @@ d_ad_underground_cities = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_underground_cities_max = 1
-	}
-	potential = {
-		has_planet_flag = do_ad_underground_cities
 	}
 	drop_weight = {
 		weight = @low
@@ -115,9 +100,6 @@ d_ad_solar_power_generation = {
 	planet_modifier = {
 		district_ad_solar_power_generation_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_solar_power_generation
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -132,9 +114,6 @@ d_ad_geothermal_electric_power_generation = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_geothermal_electric_power_generation_max = 1
-	}
-	potential = {
-		has_planet_flag = do_ad_geothermal_electric_power_generation
 	}
 	drop_weight = {
 		weight = @low
@@ -151,9 +130,6 @@ d_ad_tidal_current_generation = {
 	planet_modifier = {
 		district_ad_tidal_current_generation_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_tidal_current_generation
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -168,9 +144,6 @@ d_ad_natural_nuclear_power_generation = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_natural_nuclear_power_generation_max = 1
-	}
-	potential = {
-		has_planet_flag = do_ad_natural_nuclear_power_generation
 	}
 	drop_weight = {
 		weight = @low
@@ -195,9 +168,6 @@ d_ad_open_pit_ore_deposits = {
 	planet_modifier = {
 		district_ad_open_pit_ore_deposits_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_open_pit_ore_deposits
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -212,9 +182,6 @@ d_ad_under_water_deposits = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_under_water_deposits_max = 1
-	}
-	potential = {
-		has_planet_flag = do_ad_under_water_deposits
 	}
 	drop_weight = {
 		weight = @low
@@ -231,9 +198,6 @@ d_ad_orbital_deposits = {
 	planet_modifier = {
 		district_ad_orbital_deposits_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_orbital_deposits
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -249,9 +213,6 @@ d_ad_high_quality_deposits = {
 	planet_modifier = {
 		district_ad_high_quality_deposits_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_high_quality_deposits
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -266,9 +227,6 @@ d_ad_low_quality_deposits = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_low_quality_deposits_max = 1
-	}
-	potential = {
-		has_planet_flag = do_ad_low_quality_deposits
 	}
 	drop_weight = {
 		weight = @low
@@ -293,9 +251,6 @@ d_ad_shed_cultivation_land = {
 	planet_modifier = {
 		district_ad_shed_cultivation_land_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_shed_cultivation_land
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -310,9 +265,6 @@ d_ad_in_water_ecosystem = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_in_water_ecosystem_max = 1
-	}
-	potential = {
-		has_planet_flag = do_ad_in_water_ecosystem
 	}
 	drop_weight = {
 		weight = @low
@@ -329,9 +281,6 @@ d_ad_mycorrhizal_communities = {
 	planet_modifier = {
 		district_ad_mycorrhizal_communities_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_mycorrhizal_communities
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -347,9 +296,6 @@ d_ad_large_scale_grazing_land = {
 	planet_modifier = {
 		district_ad_large_scale_grazing_land_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_large_scale_grazing_land
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -364,9 +310,6 @@ d_ad_large_scale_agricultural_land = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_large_scale_agricultural_land_max = 1
-	}
-	potential = {
-		has_planet_flag = do_ad_large_scale_agricultural_land
 	}
 	drop_weight = {
 		weight = @low
@@ -390,9 +333,6 @@ d_ad_ancient_ruins = {
 	planet_modifier = {
 		district_ad_ancient_ruins_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_ancient_ruins
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -407,9 +347,6 @@ d_ad_ancient_databank = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_ancient_databank_max = 1
-	}
-	potential = {
-		has_planet_flag = do_ad_ancient_databank
 	}
 	drop_weight = {
 		weight = @low
@@ -426,9 +363,6 @@ d_ad_natural_fortress = {
 	planet_modifier = {
 		district_ad_natural_fortress_max = 1
 	}
-	potential = {
-		has_planet_flag = do_ad_natural_fortress
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -443,9 +377,6 @@ d_ad_special_tourism_zone = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_special_tourism_zone_max = 1
-	}
-	potential = {
-		has_planet_flag = do_ad_special_tourism_zone
 	}
 	drop_weight = {
 		weight = @low
@@ -476,9 +407,6 @@ d_ad_government_district = {
 	planet_modifier = {
 		district_ad_government_district_max = 5
 	}
-	potential = {
-		has_planet_flag = do_ad_government_district
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -493,9 +421,6 @@ d_ad_university_district = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_university_district_max = 5
-	}
-	potential = {
-		has_planet_flag = do_ad_university_district
 	}
 	drop_weight = {
 		weight = @low
@@ -512,9 +437,6 @@ d_ad_residential_area = {
 	planet_modifier = {
 		district_ad_residential_area_max = 5
 	}
-	potential = {
-		has_planet_flag = do_ad_special_tourism_zone
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -529,9 +451,6 @@ d_ad_shipbuilding_arsenal = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_shipbuilding_arsenal_max = 5
-	}
-	potential = {
-		has_planet_flag = do_ad_shipbuilding_arsenal
 	}
 	drop_weight = {
 		weight = @low
@@ -548,9 +467,6 @@ d_ad_communication_area = {
 	planet_modifier = {
 		district_ad_communication_area_max = 5
 	}
-	potential = {
-		has_planet_flag = do_ad_communication_area
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -565,9 +481,6 @@ d_ad_tourist_area = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_tourist_area_max = 5
-	}
-	potential = {
-		has_planet_flag = do_ad_tourist_area
 	}
 	drop_weight = {
 		weight = @low
@@ -584,9 +497,6 @@ d_ad_defense_zone = {
 	planet_modifier = {
 		district_ad_defense_zone_max = 5
 	}
-	potential = {
-		has_planet_flag = do_ad_defense_zone
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -601,9 +511,6 @@ d_ad_conceptual_zone = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_conceptual_zone_max = 5
-	}
-	potential = {
-		has_planet_flag = do_ad_conceptual_zone
 	}
 	drop_weight = {
 		weight = @low
@@ -620,9 +527,6 @@ d_ad_special_research_zone = {
 	planet_modifier = {
 		district_ad_special_research_zone_max = 5
 	}
-	potential = {
-		has_planet_flag = do_ad_special_research_zone
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -638,9 +542,6 @@ d_ad_spaceport_area = {
 	planet_modifier = {
 		district_ad_spaceport_area_max = 5
 	}
-	potential = {
-		has_planet_flag = do_ad_spaceport_area
-	}
 	drop_weight = {
 		weight = @low
 	}
@@ -655,9 +556,6 @@ d_ad_orbital_elevator = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_orbital_elevator_max = 5
-	}
-	potential = {
-		has_planet_flag = do_ad_orbital_elevator
 	}
 	drop_weight = {
 		weight = @low

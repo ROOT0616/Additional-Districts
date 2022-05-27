@@ -13,9 +13,6 @@ district_ad_archaeological_cities = {
 			uses_district_set = machine_world
 		}
 	}
-	potential = {
-		has_planet_flag = do_ad_archaeological_cities
-	}
 	allow = {
 		has_deposit = d_ad_archaeological_cities
 		NOT = {
@@ -143,9 +140,6 @@ district_ad_sky_cities = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_sky_cities
 	}
 	allow = {
 		has_deposit = d_ad_sky_cities
@@ -292,9 +286,6 @@ district_ad_water_cities = {
 			uses_district_set = machine_world
 		}
 	}
-	potential = {
-		has_planet_flag = do_ad_water_cities
-	}
 	allow = {
 		has_deposit = d_ad_water_cities
 		NOT = {
@@ -440,9 +431,6 @@ district_ad_under_water_cities = {
 			uses_district_set = machine_world
 		}
 	}
-	potential = {
-		has_planet_flag = do_ad_under_water_cities
-	}
 	allow = {
 		has_deposit = d_ad_under_water_cities
 		NOT = {
@@ -569,9 +557,6 @@ district_ad_underground_cities = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_underground_cities
 	}
 	allow = {
 		has_deposit = d_ad_underground_cities
@@ -703,9 +688,6 @@ district_ad_solar_power_generation = {
 	show_on_uncolonized = {
 		has_district_ad_solar_power_generation = yes
 	}
-	potential = {
-		has_planet_flag = do_ad_solar_power_generation
-	}
 	allow = {
 		has_deposit = d_ad_solar_power_generation
 		NOT = {
@@ -771,9 +753,6 @@ district_ad_geothermal_electric_power_generation = {
 			uses_district_set = machine_world
 		}
 	}
-	potential = {
-		has_planet_flag = do_ad_geothermal_electric_power_generation
-	}
 	allow = {
 		has_deposit = d_ad_geothermal_electric_power_generation
 		NOT = {
@@ -837,9 +816,6 @@ district_ad_tidal_current_generation = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_tidal_current_generation
 	}
 	allow = {
 		has_deposit = d_ad_tidal_current_generation
@@ -906,9 +882,6 @@ district_ad_natural_nuclear_power_generation = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_natural_nuclear_power_generation
 	}
 	allow = {
 		has_deposit = d_ad_natural_nuclear_power_generation
@@ -982,9 +955,6 @@ district_ad_open_pit_ore_deposits = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_open_pit_ore_deposits
 	}
 	allow = {
 		has_deposit = d_ad_open_pit_ore_deposits
@@ -1111,9 +1081,6 @@ district_ad_under_water_deposits = {
 			uses_district_set = machine_world
 		}
 	}
-	potential = {
-		has_planet_flag = do_ad_under_water_deposits
-	}
 	allow = {
 		has_deposit = d_ad_under_water_deposits
 		NOT = {
@@ -1211,9 +1178,6 @@ district_ad_orbital_deposits = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_orbital_deposits
 	}
 	allow = {
 		has_deposit = d_ad_orbital_deposits
@@ -1313,9 +1277,6 @@ district_ad_high_quality_deposits = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_high_quality_deposits
 	}
 	allow = {
 		has_deposit = d_ad_high_quality_deposits
@@ -1423,9 +1384,6 @@ district_ad_low_quality_deposits = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_low_quality_deposits
 	}
 	allow = {
 		has_deposit = d_ad_low_quality_deposits
@@ -1541,9 +1499,6 @@ district_ad_shed_cultivation_land = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_shed_cultivation_land
 	}
 	allow = {
 		has_deposit = d_ad_shed_cultivation_land
@@ -1691,9 +1646,6 @@ district_ad_in_water_ecosystem = {
 			uses_district_set = machine_world
 		}
 	}
-	potential = {
-		has_planet_flag = do_ad_in_water_ecosystem
-	}
 	allow = {
 		has_deposit = d_ad_in_water_ecosystem
 		NOT = {
@@ -1813,9 +1765,6 @@ district_ad_mycorrhizal_communities = {
 			uses_district_set = machine_world
 		}
 	}
-	potential = {
-		has_planet_flag = do_ad_mycorrhizal_communities
-	}
 	allow = {
 		has_deposit = d_ad_mycorrhizal_communities
 		NOT = {
@@ -1924,9 +1873,6 @@ district_ad_large_scale_grazing_land = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_large_scale_grazing_land
 	}
 	allow = {
 		has_deposit = d_ad_large_scale_grazing_land
@@ -2045,9 +1991,6 @@ district_ad_large_scale_agricultural_land = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		has_planet_flag = do_ad_large_scale_agricultural_land
 	}
 	allow = {
 		has_deposit = d_ad_large_scale_agricultural_land
@@ -2174,9 +2117,6 @@ district_ad_ancient_ruins = {
 			uses_district_set = machine_world
 		}
 	}
-	potential = {
-		has_planet_flag = do_ad_ancient_ruins
-	}
 	allow = {
 		has_deposit = d_ad_ancient_ruins
 		NOT = {
@@ -2241,9 +2181,6 @@ district_ad_ancient_databank = {
 			uses_district_set = machine_world
 		}
 	}
-	potential = {
-		has_planet_flag = do_ad_ancient_databank
-	}
 	allow = {
 		has_deposit = d_ad_ancient_databank
 		NOT = {
@@ -2307,81 +2244,6 @@ district_ad_natural_fortress = {
 			uses_district_set = machine_world
 		}
 	}
-	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
-		has_planet_flag = do_ad_natural_fortress
-	}
 	allow = {
 		has_deposit = d_ad_natural_fortress
 		NOT = {
@@ -2444,81 +2306,6 @@ district_ad_special_tourism_zone = {
 			uses_district_set = hive_world
 			uses_district_set = machine_world
 		}
-	}
-	potential = {
-		OR = {
-			#  	# Wet
-			is_planet_class = pc_continental			#大陸型惑星
-			is_planet_class = pc_tropical			#熱帯型惑星
-			is_planet_class = pc_ocean			#海洋型惑星
-			is_planet_class = pc_cascadian			#カスカディアン型惑星 
-			is_planet_class = pc_desertislands			#環礁型惑星
-			is_planet_class = pc_subarctic			#亜北極海型惑星
-			is_planet_class = pc_mangrove			#マングローブ型惑星
-			is_planet_class = pc_hajungle			#高地ジャングル型惑星
-			is_planet_class = pc_retinal			#レチナール惑星
-			is_planet_class = pc_forest			#森林惑星
-			is_planet_class = pc_wetswamp			#森林湿地型惑星
-			is_planet_class = pc_lake			#湖沼惑星
-			is_planet_class = pc_tepid			#微温惑星
-			is_planet_class = pc_aquatic			#水生惑星
-			is_planet_class = pc_tidallylocked			#同期自転型惑星
-			is_planet_class = pc_floating			#浮遊島惑星
-			is_planet_class = pc_aquifer			#帯水層型惑星
-			is_planet_class = pc_supercon			#超大陸型惑星
-			is_planet_class = pc_technoorganic			##テクノオーガニック惑星
-			is_planet_class = pc_biolumen			#生物発光惑星
-			is_planet_class = pc_ecocity			#エコアーコロジー
-			is_planet_class = pc_lichen			#苔惑星
-			is_planet_class = pc_primal			#原始惑星
-			is_planet_class = pc_megafloratol			#メガフローラ惑星
-			is_planet_class = pc_milarc			#要塞アーコロジー
-			is_planet_class = pc_karst			#カルスト惑星
-			#  	# Dry
-			is_planet_class = pc_desert			#砂漠型惑星
-			is_planet_class = pc_arid			#乾燥型惑星
-			is_planet_class = pc_savannah			#サバンナ型惑星
-			is_planet_class = pc_steppe			#ステップ型惑星
-			is_planet_class = pc_sandsea			#砂海型惑星
-			is_planet_class = pc_oasis			#オアシス型惑星
-			is_planet_class = pc_mesa			#卓上台地型惑星
-			is_planet_class = pc_hadesert			#高地砂漠型惑星
-			is_planet_class = pc_prairie			#プレーリー型惑星
-			is_planet_class = pc_med			#地中海型惑星
-			is_planet_class = pc_outback			#高湿乾燥型惑星
-			is_planet_class = pc_veld			#ベルト型惑星
-			is_planet_class = pc_semiarid			#半乾燥型惑星
-			is_planet_class = pc_coral			#珊瑚惑星
-			is_planet_class = pc_salt			#塩結晶型惑星
-			#  	# Cold
-			is_planet_class = pc_arctic			#極寒型惑星
-			is_planet_class = pc_tundra			#ツンドラ型惑星
-			is_planet_class = pc_alpine			#高山型惑星
-			is_planet_class = pc_swamp			#沼地型惑星
-			is_planet_class = pc_frozen_desert			#冷凍砂漠型惑星
-			is_planet_class = pc_glacial			#氷河型惑星
-			is_planet_class = pc_boreal			#亜寒帯型惑星
-			is_planet_class = pc_mushroom			#菌糸体惑星
-			is_planet_class = pc_antarctic			#南極型惑星
-			is_planet_class = pc_snow			#氷雪型惑星
-			is_planet_class = pc_highland			#高地型惑星
-			is_planet_class = pc_mud			#泥惑星
-			is_planet_class = pc_aeolian			#風成型惑星
-			is_planet_class = pc_duneforest			#砂丘森型惑星
-			is_planet_class = pc_lanthanide			#ランタノイド型惑星
-			is_planet_class = pc_rogue			#変異惑星
-			is_planet_class = pc_storm			#暴風惑星
-			is_planet_class = pc_glacio			#氷河火山型惑星
-			is_planet_class = pc_geothermal			#地熱北極型惑星
-			is_planet_class = pc_eyeball			#眼球惑星
-			is_planet_class = pc_gaia			#ガイア型惑星
-			is_planet_class = pc_superhabitable			#極上惑星
-			is_planet_class = pc_relic			#遺物惑星
-			is_planet_class = pc_city			#エキュメノポリス
-			is_planet_class = pc_toxic			#有毒惑星
-			is_planet_class = pc_nuked			#死の惑星
-		}
-		has_planet_flag = do_ad_special_tourism_zone
 	}
 	allow = {
 		has_deposit = d_ad_special_tourism_zone
@@ -2594,9 +2381,6 @@ district_ad_government_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
 		has_district_ad_government_district = yes
-	}
-	potential = {
-		has_planet_flag = do_ad_government_district
 	}
 	allow = {
 		has_deposit = d_ad_government_district
@@ -2730,9 +2514,6 @@ district_ad_university_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
 		has_district_ad_university_district = yes
-	}
-	potential = {
-		has_planet_flag = do_ad_university_district
 	}
 	allow = {
 		has_deposit = d_ad_university_district
@@ -2869,9 +2650,6 @@ district_ad_residential_area = {
 	show_on_uncolonized = {
 		has_district_ad_residential_area = yes
 	}
-	potential = {
-		has_planet_flag = do_ad_residential_area
-	}
 	allow = {
 		has_deposit = d_ad_residential_area
 	}
@@ -2992,9 +2770,6 @@ district_ad_shipbuilding_arsenal = {
 	base_buildtime = 240
 	show_on_uncolonized = {
 		has_district_ad_shipbuilding_arsenal = yes
-	}
-	potential = {
-		has_planet_flag = do_ad_shipbuilding_arsenal
 	}
 	allow = {
 		has_deposit = d_ad_shipbuilding_arsenal
@@ -3123,9 +2898,6 @@ district_ad_communication_area = {
 	show_on_uncolonized = {
 		has_district_ad_communication_area = yes
 	}
-	potential = {
-		has_planet_flag = do_ad_communication_area
-	}
 	allow = {
 		has_deposit = d_ad_communication_area
 		NOT = {
@@ -3252,9 +3024,6 @@ district_ad_tourist_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
 		has_district_ad_tourist_area = yes
-	}
-	potential = {
-		has_planet_flag = do_ad_tourist_area
 	}
 	allow = {
 		has_deposit = d_ad_tourist_area
@@ -3383,9 +3152,6 @@ district_ad_defense_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
 		has_district_ad_defense_zone = yes
-	}
-	potential = {
-		has_planet_flag = do_ad_defense_zone
 	}
 	allow = {
 		has_deposit = d_ad_defense_zone
@@ -3526,9 +3292,6 @@ district_ad_conceptual_zone = {
 	show_on_uncolonized = {
 		has_district_ad_conceptual_zone = yes
 	}
-	potential = {
-		has_planet_flag = do_ad_conceptual_zone
-	}
 	allow = {
 		has_deposit = d_ad_conceptual_zone
 		NOT = {
@@ -3659,9 +3422,6 @@ district_ad_special_research_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
 		has_district_ad_special_research_zone = yes
-	}
-	potential = {
-		has_planet_flag = do_ad_special_research_zone
 	}
 	allow = {
 		has_deposit = d_ad_special_research_zone
@@ -3796,9 +3556,6 @@ district_ad_spaceport_area = {
 	show_on_uncolonized = {
 		has_district_ad_spaceport_area = yes
 	}
-	potential = {
-		has_planet_flag = do_ad_spaceport_area
-	}
 	allow = {
 		has_deposit = d_ad_spaceport_area
 		NOT = {
@@ -3925,9 +3682,6 @@ district_ad_orbital_elevator = {
 	base_buildtime = 240
 	show_on_uncolonized = {
 		has_district_ad_orbital_elevator = yes
-	}
-	potential = {
-		has_planet_flag = do_ad_orbital_elevator
 	}
 	allow = {
 		has_deposit = d_ad_orbital_elevator
