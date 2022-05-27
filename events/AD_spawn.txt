@@ -341,6 +341,7 @@ country_event = {
 			has_country_flag = build_ad_broad
 			has_country_flag = build_ad_G_datebank
 			has_country_flag = build_ad_medicinelab
+			has_country_flag = build_ad_cathedral_of_the_sky
 		}
 	}
 	immediate = {
@@ -742,6 +743,22 @@ country_event = {
 					remove_country_flag = build_ad_medicinelab
 				}
 				remove_planet_flag = build_planet_ad_medicinelab
+			}
+		}
+		every_owned_planet = {
+			limit = {
+				has_planet_flag = build_planet_ad_cathedral_of_the_sky
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_building = building_ad_cathedral_of_the_sky
+					}
+				}
+				owner = {
+					remove_country_flag = build_ad_cathedral_of_the_sky
+				}
+				remove_planet_flag = build_planet_ad_cathedral_of_the_sky
 			}
 		}
 	}
