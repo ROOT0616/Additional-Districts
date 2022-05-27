@@ -680,6 +680,9 @@
  building_ad_medicinelab:0 "Pharmaceutical Research Institute"
  building_ad_medicinelab_desc:0 "An institute dedicated to the development of medicine on a national scale."
 
+ building_ad_cathedral_of_the_sky:0 "Cathedral in the sky"
+ building_ad_cathedral_of_the_sky_desc:0 "Great temple of the heavens, give us a place to lead our people and pray for their happiness. Blessed be the empire."
+
  building_ad_P_datebank:0 "Planetary Data Bank"
  building_ad_P_datebank_desc:0 "A facility established on each planet to store a variety of information."
 

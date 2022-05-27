@@ -680,6 +680,9 @@
  building_ad_medicinelab:0 "医薬基盤研究所"
  building_ad_medicinelab_desc:0 "国家規模で医療の発展を目指す研究所"
 
+ building_ad_cathedral_of_the_sky:0 "天空大聖堂"
+ building_ad_cathedral_of_the_sky_desc:0 "天にも昇る大いなる神殿は、民を導き幸福を祈る場を与えん。帝国に祝福を。"
+
  building_ad_P_datebank:0 "惑星データバンク"
  building_ad_P_datebank_desc:0 "各惑星に設けられたさまざまな情報を保管する施設。"
 
