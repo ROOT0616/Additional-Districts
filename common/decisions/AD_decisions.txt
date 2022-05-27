@@ -75,6 +75,9 @@ decision_ad_large_scale_air_area_construction = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
+			has_deposit = d_ad_sky_cities
+		}
+		NOT = {
 			has_planet_flag = do_ad_sky_cities
 		}
 	}
@@ -184,6 +187,9 @@ decision_ad_large_scale_water_area_construction = {
 			has_planet_flag = do_ad_undo_display
 		}
 		NOT = {
+			has_deposit = d_ad_under_water_cities
+		}
+		NOT = {
 			has_planet_flag = do_ad_under_water_cities
 		}
 	}
@@ -286,6 +292,9 @@ decision_ad_large_scale_underground_area_construction = {
 		}
 		NOT = {
 			has_planet_flag = do_ad_undo_display
+		}
+		NOT = {
+			has_deposit = d_ad_underground_cities
 		}
 		NOT = {
 			has_planet_flag = do_ad_underground_cities
