@@ -7,11 +7,17 @@
 district_ad_archaeological_cities = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_archaeological_cities
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_archaeological_cities
 	}
 	allow = {
 		has_deposit = d_ad_archaeological_cities
@@ -135,11 +141,17 @@ district_ad_archaeological_cities = {
 district_ad_sky_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_sky_cities
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_sky_cities
 	}
 	allow = {
 		has_deposit = d_ad_sky_cities
@@ -280,11 +292,17 @@ district_ad_sky_cities = {
 district_ad_water_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_water_cities
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_water_cities
 	}
 	allow = {
 		has_deposit = d_ad_water_cities
@@ -425,11 +443,17 @@ district_ad_water_cities = {
 district_ad_under_water_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_under_water_cities
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_under_water_cities
 	}
 	allow = {
 		has_deposit = d_ad_under_water_cities
@@ -552,11 +576,17 @@ district_ad_under_water_cities = {
 district_ad_underground_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_underground_cities
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_underground_cities
 	}
 	allow = {
 		has_deposit = d_ad_underground_cities
@@ -688,6 +718,9 @@ district_ad_solar_power_generation = {
 	show_on_uncolonized = {
 		has_district_ad_solar_power_generation = yes
 	}
+	potential = {
+		has_deposit = d_ad_solar_power_generation
+	}
 	allow = {
 		has_deposit = d_ad_solar_power_generation
 		NOT = {
@@ -747,11 +780,17 @@ district_ad_solar_power_generation = {
 district_ad_geothermal_electric_power_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_geothermal_electric_power_generation
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_geothermal_electric_power_generation
 	}
 	allow = {
 		has_deposit = d_ad_geothermal_electric_power_generation
@@ -811,11 +850,17 @@ district_ad_geothermal_electric_power_generation = {
 district_ad_tidal_current_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_tidal_current_generation
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_tidal_current_generation
 	}
 	allow = {
 		has_deposit = d_ad_tidal_current_generation
@@ -877,11 +922,17 @@ district_ad_tidal_current_generation = {
 district_ad_natural_nuclear_power_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_natural_nuclear_power_generation
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_natural_nuclear_power_generation
 	}
 	allow = {
 		has_deposit = d_ad_natural_nuclear_power_generation
@@ -950,11 +1001,17 @@ district_ad_natural_nuclear_power_generation = {
 district_ad_open_pit_ore_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_open_pit_ore_deposits
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_open_pit_ore_deposits
 	}
 	allow = {
 		has_deposit = d_ad_open_pit_ore_deposits
@@ -1075,11 +1132,17 @@ district_ad_open_pit_ore_deposits = {
 district_ad_under_water_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_under_water_deposits
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_under_water_deposits
 	}
 	allow = {
 		has_deposit = d_ad_under_water_deposits
@@ -1173,11 +1236,17 @@ district_ad_under_water_deposits = {
 district_ad_orbital_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_orbital_deposits
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_orbital_deposits
 	}
 	allow = {
 		has_deposit = d_ad_orbital_deposits
@@ -1272,11 +1341,17 @@ district_ad_orbital_deposits = {
 district_ad_high_quality_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_high_quality_deposits
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_high_quality_deposits
 	}
 	allow = {
 		has_deposit = d_ad_high_quality_deposits
@@ -1379,11 +1454,17 @@ district_ad_high_quality_deposits = {
 district_ad_low_quality_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_low_quality_deposits
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_low_quality_deposits
 	}
 	allow = {
 		has_deposit = d_ad_low_quality_deposits
@@ -1494,11 +1575,17 @@ district_ad_low_quality_deposits = {
 district_ad_shed_cultivation_land = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_shed_cultivation_land
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_shed_cultivation_land
 	}
 	allow = {
 		has_deposit = d_ad_shed_cultivation_land
@@ -1640,11 +1727,17 @@ district_ad_shed_cultivation_land = {
 district_ad_in_water_ecosystem = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_in_water_ecosystem
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_in_water_ecosystem
 	}
 	allow = {
 		has_deposit = d_ad_in_water_ecosystem
@@ -1759,11 +1852,17 @@ district_ad_in_water_ecosystem = {
 district_ad_mycorrhizal_communities = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_mycorrhizal_communities
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_mycorrhizal_communities
 	}
 	allow = {
 		has_deposit = d_ad_mycorrhizal_communities
@@ -1868,11 +1967,17 @@ district_ad_mycorrhizal_communities = {
 district_ad_large_scale_grazing_land = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_large_scale_grazing_land
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_large_scale_grazing_land
 	}
 	allow = {
 		has_deposit = d_ad_large_scale_grazing_land
@@ -1986,11 +2091,17 @@ district_ad_large_scale_grazing_land = {
 district_ad_large_scale_agricultural_land = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_large_scale_agricultural_land
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_large_scale_agricultural_land
 	}
 	allow = {
 		has_deposit = d_ad_large_scale_agricultural_land
@@ -2111,11 +2222,17 @@ district_ad_large_scale_agricultural_land = {
 district_ad_ancient_ruins = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_ancient_ruins
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_ancient_ruins
 	}
 	allow = {
 		has_deposit = d_ad_ancient_ruins
@@ -2175,11 +2292,17 @@ district_ad_ancient_ruins = {
 district_ad_ancient_databank = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_ancient_databank
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_ancient_databank
 	}
 	allow = {
 		has_deposit = d_ad_ancient_databank
@@ -2238,11 +2361,17 @@ district_ad_ancient_databank = {
 district_ad_natural_fortress = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_natural_fortress
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_natural_fortress
 	}
 	allow = {
 		has_deposit = d_ad_natural_fortress
@@ -2301,11 +2430,17 @@ district_ad_natural_fortress = {
 district_ad_special_tourism_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		OR = {
-			uses_district_set = standard
-			uses_district_set = hive_world
-			uses_district_set = machine_world
+		AND = {
+			has_deposit = d_ad_special_tourism_zone
+			OR = {
+				uses_district_set = standard
+				uses_district_set = hive_world
+				uses_district_set = machine_world
+			}
 		}
+	}
+	potential = {
+		has_deposit = d_ad_special_tourism_zone
 	}
 	allow = {
 		has_deposit = d_ad_special_tourism_zone
@@ -2380,6 +2515,9 @@ district_ad_special_tourism_zone = {
 district_ad_government_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
+		has_district_ad_government_district = yes
+	}
+	potential = {
 		has_district_ad_government_district = yes
 	}
 	allow = {
@@ -2513,6 +2651,9 @@ district_ad_government_district = {
 district_ad_university_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
+		has_district_ad_university_district = yes
+	}
+	potential = {
 		has_district_ad_university_district = yes
 	}
 	allow = {
@@ -2650,6 +2791,9 @@ district_ad_residential_area = {
 	show_on_uncolonized = {
 		has_district_ad_residential_area = yes
 	}
+	potential = {
+		has_district_ad_residential_area = yes
+	}
 	allow = {
 		has_deposit = d_ad_residential_area
 	}
@@ -2769,6 +2913,9 @@ district_ad_residential_area = {
 district_ad_shipbuilding_arsenal = {
 	base_buildtime = 240
 	show_on_uncolonized = {
+		has_district_ad_shipbuilding_arsenal = yes
+	}
+	potential = {
 		has_district_ad_shipbuilding_arsenal = yes
 	}
 	allow = {
@@ -2898,6 +3045,9 @@ district_ad_communication_area = {
 	show_on_uncolonized = {
 		has_district_ad_communication_area = yes
 	}
+	potential = {
+		has_district_ad_communication_area = yes
+	}
 	allow = {
 		has_deposit = d_ad_communication_area
 		NOT = {
@@ -3023,6 +3173,9 @@ district_ad_communication_area = {
 district_ad_tourist_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
+		has_district_ad_tourist_area = yes
+	}
+	potential = {
 		has_district_ad_tourist_area = yes
 	}
 	allow = {
@@ -3151,6 +3304,9 @@ district_ad_tourist_area = {
 district_ad_defense_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
+		has_district_ad_defense_zone = yes
+	}
+	potential = {
 		has_district_ad_defense_zone = yes
 	}
 	allow = {
@@ -3292,6 +3448,9 @@ district_ad_conceptual_zone = {
 	show_on_uncolonized = {
 		has_district_ad_conceptual_zone = yes
 	}
+	potential = {
+		has_district_ad_conceptual_zone = yes
+	}
 	allow = {
 		has_deposit = d_ad_conceptual_zone
 		NOT = {
@@ -3421,6 +3580,9 @@ district_ad_conceptual_zone = {
 district_ad_special_research_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
+		has_district_ad_special_research_zone = yes
+	}
+	potential = {
 		has_district_ad_special_research_zone = yes
 	}
 	allow = {
@@ -3556,6 +3718,9 @@ district_ad_spaceport_area = {
 	show_on_uncolonized = {
 		has_district_ad_spaceport_area = yes
 	}
+	potential = {
+		has_district_ad_spaceport_area = yes
+	}
 	allow = {
 		has_deposit = d_ad_spaceport_area
 		NOT = {
@@ -3564,6 +3729,9 @@ district_ad_spaceport_area = {
 		NOT = {
 			has_modifier = slave_colony
 		}
+	}
+	potential = {
+		has_district_ad_government_district = yes
 	}
 	conversion_ratio = 1
 	convert_to = {
@@ -3681,6 +3849,9 @@ district_ad_spaceport_area = {
 district_ad_orbital_elevator = {
 	base_buildtime = 240
 	show_on_uncolonized = {
+		has_district_ad_orbital_elevator = yes
+	}
+	potential = {
 		has_district_ad_orbital_elevator = yes
 	}
 	allow = {
