@@ -49,7 +49,7 @@ district_ad_archaeological_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				is_gestalt = yes
+				is_gestalt = no
 			}
 		}
 		modifier = {
