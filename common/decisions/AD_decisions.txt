@@ -722,6 +722,10 @@ decision_ad_university_district = {
 	ai_weight = {
 		weight = 50
 		modifier = {
+			factor = 100
+			has_designation = col_research
+		}
+		modifier = {
 			factor = 4
 			count_owned_pop = {
 				limit = {
@@ -743,7 +747,7 @@ decision_ad_university_district = {
 			}
 		}
 		modifier = {
-			factor = 0
+			factor = 0.1
 			owner = {
 				any_planet_within_border = {
 					has_district_ad_university_district = yes
@@ -846,7 +850,11 @@ decision_ad_residential_area = {
 	ai_weight = {
 		weight = 50
 		modifier = {
-			factor = 400
+			factor = 100
+			has_designation = col_city
+		}
+		modifier = {
+			factor = 100
 			owner = {
 				has_country_resource = {
 					type = minerals
@@ -1376,7 +1384,7 @@ decision_ad_undo_tourist_area = {
 	}
 }
 
-# 防衛区域 defense_zone
+# 防衛区域 
 decision_ad_defense_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -1757,6 +1765,10 @@ decision_ad_special_research_zone = {
 	}
 	ai_weight = {
 		weight = 50
+		modifier = {
+			factor = 100
+			has_designation = col_research
+		}
 		modifier = {
 			factor = 4
 			count_owned_pop = {

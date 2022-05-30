@@ -115,7 +115,7 @@ ad_water_farmer = {
 
 		# low income modifier
 		modifier = {
-			factor = 1.2
+			factor = 5
 
 			OR = {
 				is_unemployed = yes
@@ -244,7 +244,7 @@ ad_facility_maintainer = {
 		planet_amenities_add = 3
 	}
 	resources = {
-		category = planet_ad_facility_maintainer
+		category = planet_miners
 		produces = {
 			minerals = 5
 		}
@@ -260,7 +260,6 @@ ad_facility_maintainer = {
 ad_facility_maintainer_drone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
 	clothes_texture_index = 3
 	possible_pre_triggers = {
 		has_owner = yes
@@ -272,7 +271,7 @@ ad_facility_maintainer_drone = {
 		planet_amenities_add = 3
 	}
 	resources = {
-		category = planet_ad_facility_maintainer
+		category = planet_miners
 		produces = {
 			minerals = 5
 		}
@@ -397,7 +396,7 @@ ad_geothermal_technician = {
 
 		# low income modifier
 		modifier = {
-			factor = 1.2
+			factor = 2
 
 			OR = {
 				is_unemployed = yes
@@ -671,7 +670,7 @@ ad_atomic_engineer = {
 
 		# low income modifier
 		modifier = {
-			factor = 1.2
+			factor = 2
 
 			OR = {
 				is_unemployed = yes
@@ -1183,7 +1182,7 @@ ad_space_miner = {
 
 		# low income modifier
 		modifier = {
-			factor = 1.1
+			factor = 5
 
 			OR = {
 				is_unemployed = yes
@@ -1307,7 +1306,7 @@ ad_space_miner_drone = {
 
 		# low income modifier
 		modifier = {
-			factor = 1.1
+			factor = 3
 
 			OR = {
 				is_unemployed = yes
@@ -1331,7 +1330,7 @@ ad_space_miner_drone = {
 	}
 }
 
-# 効率的採掘者    鉱石    8
+# 効率的採掘者    鉱石    10
 ad_efficient_miner = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -1429,7 +1428,7 @@ ad_efficient_miner = {
 
 		# low income modifier
 		modifier = {
-			factor = 1.1
+			factor = 2
 
 			OR = {
 				is_unemployed = yes
@@ -2760,7 +2759,7 @@ ad_forcrd_larbor = {
 
 	possible_precalc = can_fill_worker_job
 	resources = {
-		category = planet_ad_forcrd_larbor
+		category = planet_jobs_productive
 		produces = {
 			food = 1
 			minerals = 1
@@ -3162,6 +3161,20 @@ ad_professorship = {
 	}
 	weight = {
 		weight = @specialist_job_weight
+		modifier = {
+			factor = 10
+			OR = {
+				is_unemployed = yes
+				has_job = farmer
+			}
+			exists = planet
+			from = {
+				num_assigned_jobs = {
+					job = researcher
+					value > 4
+				}
+			}
+		}
 	}
 }
 
@@ -3203,13 +3216,28 @@ ad_excavator = {
 	}
 	possible_precalc = can_fill_specialist_job
 	resources = {
-		category = planet_ad_excavator
+		category = planet_jobs_productive
 		produces = {
 			minor_artifacts = 0.5
 		}
 	}
 	weight = {
 		weight = @specialist_job_weight
+		# low income modifier
+		modifier = {
+			factor = 4
+			OR = {
+				is_unemployed = yes
+				has_job = farmer
+			}
+			exists = planet
+			owner = {
+				has_monthly_income = {
+					resource = minor_artifacts
+					value < 5
+				}
+			}
+		}
 	}
 }
 
@@ -3225,7 +3253,7 @@ ad_excavator_drone = {
 	}
 	possible_precalc = can_fill_drone_job
 	resources = {
-		category = planet_ad_excavator
+		category = planet_jobs_productive
 		produces = {
 			minor_artifacts = 0.5
 		}
@@ -3252,7 +3280,7 @@ ad_banker = {
 		trade_value_add = 5
 	}
 	resources = {
-		category = planet_ad_banker
+		category = planet_jobs_productive
 		produces = {
 			energy = 5
 		}
@@ -3308,7 +3336,7 @@ ad_journalist = {
 		planet_amenities_add = 2
 	}
 	resources = {
-		category = planet_ad_journalist
+		category = planet_culture_workers
 		produces = {
 			unity = 3
 		}
@@ -3436,7 +3464,7 @@ ad_ministor = {
 	}
 	possible_precalc = can_fill_ruler_job
 	resources = {
-		category = planet_ad_ministor
+		category = planet_politicians
 		upkeep = {
 			consumer_goods = 3
 		}
@@ -3465,7 +3493,7 @@ ad_congressman = {
 		pop_happiness = 0.05
 	}
 	resources = {
-		category = planet_ad_congressman
+		category = planet_politicians
 		upkeep = {
 			consumer_goods = 3
 		}

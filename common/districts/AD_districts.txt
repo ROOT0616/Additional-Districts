@@ -127,10 +127,11 @@ district_ad_archaeological_cities = {
 		}
 	}
 	ai_resource_production = {
-		minor_artifacts = 10
-		physics_research = 10
-		society_research = 10
-		engineering_research = 10
+		minor_artifacts = 100
+		unity = 100
+		physics_research = 100
+		society_research = 100
+		engineering_research = 100
 		trigger = {
 			always = yes
 		}
@@ -281,7 +282,8 @@ district_ad_sky_cities = {
 		text = job_maintenance_drone_effect_desc
 	}
 	ai_resource_production = {
-		energy = 10
+		energy = 1000
+		unity = 100
 		trigger = {
 			always = yes
 		}
@@ -432,7 +434,8 @@ district_ad_water_cities = {
 		text = job_maintenance_drone_effect_desc
 	}
 	ai_resource_production = {
-		energy = 8
+		energy = 800
+		unity = 100
 		trigger = {
 			always = yes
 		}
@@ -564,8 +567,9 @@ district_ad_under_water_cities = {
 		}
 	}
 	ai_resource_production = {
-		energy = 6
-		food = 5
+		unity = 100
+		energy = 600
+		food = 500
 		trigger = {
 			always = yes
 		}
@@ -697,8 +701,9 @@ district_ad_underground_cities = {
 		}
 	}
 	ai_resource_production = {
-		energy = 6
-		minerals = 5
+		unity = 100
+		energy = 600
+		minerals = 50
 		trigger = {
 			always = yes
 		}
@@ -1225,7 +1230,7 @@ district_ad_under_water_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 20
+		minerals = 20000
 		trigger = {
 			always = yes
 		}
@@ -1330,7 +1335,7 @@ district_ad_orbital_deposits = {
 		}
 	}
 	ai_resource_production = {
-		minerals = 20
+		minerals = 2000
 		trigger = {
 			always = yes
 		}
@@ -1832,13 +1837,13 @@ district_ad_in_water_ecosystem = {
 		}
 	}
 	ai_resource_production = {
-		food = 10
+		food = 100
 		trigger = {
 			always = yes
 		}
 	}
 	ai_resource_production = {
-		food = 14
+		food = 1000
 		trigger = {
 			OR = {
 				low_food_income = yes
@@ -2776,9 +2781,10 @@ district_ad_university_district = {
 		}
 	}
 	ai_resource_production = {
-		physics_research = 10
-		society_research = 10
-		engineering_research = 10
+		unity = 10
+		physics_research = 100
+		society_research = 100
+		engineering_research = 100
 		trigger = {
 			always = yes
 		}
