@@ -60,11 +60,39 @@ district_ad_archaeological_cities = {
 		potential = {
 			exists = owner
 			owner = {
+				is_gestalt = no
+				is_ai = yes
+			}
+			free_district_slots > 0
+			num_housing <= 2
+		}
+		modifier = {
+			job_clerk_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_ad_excavator_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_ai = yes
+			}
+			free_district_slots > 0
+			free_housing <= 2
+		}
+		modifier = {
+			job_maintenance_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -197,11 +225,39 @@ district_ad_sky_cities = {
 		potential = {
 			exists = owner
 			owner = {
+				is_gestalt = no
+				is_ai = yes
+			}
+			free_district_slots > 0
+			num_housing <= 2
+		}
+		modifier = {
+			job_clerk_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_ai = yes
+			}
+			free_district_slots > 0
+			free_housing <= 2
+		}
+		modifier = {
+			job_maintenance_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -349,11 +405,39 @@ district_ad_water_cities = {
 		potential = {
 			exists = owner
 			owner = {
+				is_gestalt = no
+				is_ai = yes
+			}
+			free_district_slots > 0
+			num_housing <= 2
+		}
+		modifier = {
+			job_clerk_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_ai = yes
+			}
+			free_district_slots > 0
+			free_housing <= 2
+		}
+		modifier = {
+			job_maintenance_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -500,11 +584,39 @@ district_ad_under_water_cities = {
 		potential = {
 			exists = owner
 			owner = {
+				is_gestalt = no
+				is_ai = yes
+			}
+			free_district_slots > 0
+			num_housing <= 2
+		}
+		modifier = {
+			job_clerk_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_ad_water_farmer_drone_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_ai = yes
+			}
+			free_district_slots > 0
+			free_housing <= 2
+		}
+		modifier = {
+			job_maintenance_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -634,11 +746,39 @@ district_ad_underground_cities = {
 		potential = {
 			exists = owner
 			owner = {
+				is_gestalt = no
+				is_ai = yes
+			}
+			free_district_slots > 0
+			num_housing <= 2
+		}
+		modifier = {
+			job_clerk_add = 4
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_ad_facility_maintainer_drone_add = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_ai = yes
+			}
+			free_district_slots > 0
+			free_housing <= 2
+		}
+		modifier = {
+			job_maintenance_drone_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -2710,6 +2850,25 @@ district_ad_university_district = {
 		modifier = {
 			job_ad_professorship_add = 2
 			job_researcher_add = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_ai = yes
+			}
+			free_district_slots > 0
+			has_district_ad_university_district = yes
+			num_districts = {
+				type = district_ad_university_district
+				value = 0
+			}
+		}
+		modifier = {
+			trade_value_add = 100
+			planet_amenities_add = 100
 		}
 	}
 	triggered_planet_modifier = {
