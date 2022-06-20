@@ -4,100 +4,100 @@
 #####    ディシジョン    ######
 ##############################
 
- decision_ad_town_display:0 "街：表示"
+ decision_ad_town_display:0 "AD 街：表示"
  decision_ad_town_display_desc:0 ""
 
- decision_ad_undo_town_display:0 "街：非表示"
+ decision_ad_undo_town_display:0 "AD 街：非表示"
  decision_ad_undo_town_display_desc:0 ""
 
- decision_ad_large_scale_air_area_construction:0 "大規模空中地区建設"
+ decision_ad_large_scale_air_area_construction:0 "AD 大規模空中地区建設"
  decision_ad_large_scale_air_area_construction_desc:0 "地上だけではなく空中に浮かぶ都市を築き上げる計画を実行する。"
 
- decision_ad_undo_large_scale_air_area_construction:0 "大規模空中地区撤去"
+ decision_ad_undo_large_scale_air_area_construction:0 "AD 大規模空中地区撤去"
  decision_ad_undo_large_scale_air_area_construction_desc:0 ""
 
- decision_ad_large_scale_water_area_construction:0 "大規模水中地区建設"
+ decision_ad_large_scale_water_area_construction:0 "AD 大規模水中地区建設"
  decision_ad_large_scale_water_area_construction_desc:0 "地上だけではなく水中に都市を築き上げる計画を実行する。"
 
- decision_ad_undo_large_scale_water_area_construction:0 "大規模水中地区撤去"
+ decision_ad_undo_large_scale_water_area_construction:0 "AD 大規模水中地区撤去"
  decision_ad_undo_large_scale_water_area_construction_desc:0 ""
 
- decision_ad_large_scale_underground_area_construction:0 "大規模地下地区建設"
+ decision_ad_large_scale_underground_area_construction:0 "AD 大規模地下地区建設"
  decision_ad_large_scale_underground_area_construction_desc:0 "地上だけではなく地中に都市を築き上げる計画を実行する。"
 
- decision_ad_undo_large_scale_underground_area_construction:0 "大規模地下地区撤去"
+ decision_ad_undo_large_scale_underground_area_construction:0 "AD 大規模地下地区撤去"
  decision_ad_undo_large_scale_underground_area_construction_desc:0 ""
 
- decision_ad_solar_power_generation:0 "区画整備：太陽光発電地区"
+ decision_ad_solar_power_generation:0 "AD 区画整備：太陽光発電地区"
  decision_ad_solar_power_generation_desc:0 "惑星に大規模な太陽光パネルを整備し、惑星の反射光を増やす。"
 
- decision_ad_government_district:0 "街整備：官庁街"
+ decision_ad_government_district:0 "AD 街整備：官庁街"
  decision_ad_government_district_desc:0 "大規模な官庁街を整備する計画を実行する。"
 
- decision_ad_university_district:0 "街整備：大学街"
+ decision_ad_university_district:0 "AD 街整備：大学街"
  decision_ad_university_district_desc:0 "大規模な大学街を整備する計画を実行する。"
 
- decision_ad_residential_area:0 "街整備：住宅街"
+ decision_ad_residential_area:0 "AD 街整備：住宅街"
  decision_ad_residential_area_desc:0 "大規模な住宅街を整備する計画を実行する。"
 
- decision_ad_shipbuilding_arsenal:0 "街整備：造船工廠"
+ decision_ad_shipbuilding_arsenal:0 "AD 街整備：造船工廠"
  decision_ad_shipbuilding_arsenal_desc:0 "大規模な造船工廠を整備する計画を実行する。"
 
- decision_ad_communication_area:0 "街整備：通信区域"
+ decision_ad_communication_area:0 "AD 街整備：通信区域"
  decision_ad_communication_area_desc:0 "大規模な通信基地を整備する計画を実行する。"
 
- decision_ad_tourist_area:0 "街整備：観光区域"
+ decision_ad_tourist_area:0 "AD 街整備：観光区域"
  decision_ad_tourist_area_desc:0 "大規模な観光特区を整備する計画を実行する。"
 
- decision_ad_defense_zone:0 "街整備：防衛区域"
+ decision_ad_defense_zone:0 "AD 街整備：防衛区域"
  decision_ad_defense_zone_desc:0 "大規模な防衛基地を整備する計画を実行する。"
 
- decision_ad_conceptual_zone:0 "街整備：構想特区"
+ decision_ad_conceptual_zone:0 "AD 街整備：構想特区"
  decision_ad_conceptual_zone_desc:0 "大規模な金融特区を整備する計画を実行する。"
 
- decision_ad_special_research_zone:0 "街整備：研究特区"
+ decision_ad_special_research_zone:0 "AD 街整備：研究特区"
  decision_ad_special_research_zone_desc:0 "大規模な研究特区を整備する計画を実行する。"
 
- decision_ad_spaceport_area:0 "街整備：宇宙港区域"
+ decision_ad_spaceport_area:0 "AD 街整備：宇宙港区域"
  decision_ad_spaceport_area_desc:0 "大規模な宇宙港を整備する計画を実行する。"
 
- decision_ad_orbital_elevator:0 "街整理：軌道エレベーター"
+ decision_ad_orbital_elevator:0 "AD 街整理：軌道エレベーター"
  decision_ad_orbital_elevator_desc:0 "軌道エレベーターを整備する計画を実行する。"
 
- decision_ad_undo_solar_power_generation:0 "区画削除：太陽光発電地区"
+ decision_ad_undo_solar_power_generation:0 "AD 区画削除：太陽光発電地区"
  decision_ad_undo_solar_power_generation_desc:0 "反射光がうっとうしい。太陽光パネルの撤去を開始する。"
 
- decision_ad_undo_government_district:0 "街削除：官庁街"
+ decision_ad_undo_government_district:0 "AD 街削除：官庁街"
  decision_ad_undo_government_district_desc:0 "公務員を削減しよう！  区画の撤去を開始する。"
 
- decision_ad_undo_university_district:0 "街削除：大学街"
+ decision_ad_undo_university_district:0 "AD 街削除：大学街"
  decision_ad_undo_university_district_desc:0 "蒙昧主義万歳！  区画の撤去を開始する。"
 
- decision_ad_undo_residential_area:0 "街削除：住宅街"
+ decision_ad_undo_residential_area:0 "AD 街削除：住宅街"
  decision_ad_undo_residential_area_desc:0 "貧乏人に住む家はない。区画の撤去を開始する。"
 
- decision_ad_undo_shipbuilding_arsenal:0 "街削除：造船工廠"
+ decision_ad_undo_shipbuilding_arsenal:0 "AD 街削除：造船工廠"
  decision_ad_undo_shipbuilding_arsenal_desc:0 "不採算工場は廃止すべきだ。区画の撤去を開始する。"
 
- decision_ad_undo_communication_area:0 "街削除：通信区域"
+ decision_ad_undo_communication_area:0 "AD 街削除：通信区域"
  decision_ad_undo_communication_area_desc:0 "強力な電波は健康問題を引き起こすかもしれない。区画の撤去を開始する。"
 
- decision_ad_undo_tourist_area:0 "街削除：観光区域"
+ decision_ad_undo_tourist_area:0 "AD 街削除：観光区域"
  decision_ad_undo_tourist_area_desc:0 "観光客は犯罪を誘引するかもしれない。区画の撤去を開始する。"
 
- decision_ad_undo_defense_zone:0 "街削除：防衛区域"
+ decision_ad_undo_defense_zone:0 "AD 街削除：防衛区域"
  decision_ad_undo_defense_zone_desc:0 "軍があるからこの地域は狙われるのである。区画の撤去を開始する。"
 
- decision_ad_undo_conceptual_zone:0 "街削除：構想特区"
+ decision_ad_undo_conceptual_zone:0 "AD 街削除：構想特区"
  decision_ad_undo_conceptual_zone_desc:0 "汗水流さず働く人々は不健全である。区画の撤去を開始する。"
 
- decision_ad_undo_special_research_zone:0 "街削除：研究特区"
+ decision_ad_undo_special_research_zone:0 "AD 街削除：研究特区"
  decision_ad_undo_special_research_zone_desc:0 "頭よりも手を動かすべきだ。区画の撤去を開始する。"
 
- decision_ad_undo_spaceport_area:0 "街削除：宇宙港区域"
+ decision_ad_undo_spaceport_area:0 "AD 街削除：宇宙港区域"
  decision_ad_undo_spaceport_area_desc:0 "宇宙港による騒音問題が激しい。区画の撤去を開始する。"
 
- decision_ad_undo_orbital_elevator:0 "街削除：軌道エレベーター"
+ decision_ad_undo_orbital_elevator:0 "AD 街削除：軌道エレベーター"
  decision_ad_undo_orbital_elevator_desc:0 "もし倒れたらどうするというのかね？  区画の撤去を開始する。"
 
 #######################
