@@ -3104,8 +3104,12 @@ ad_spaceport_mechanics = {
 	}
 	resources = {
 		category = planet_technician
+		produces = {
+			engineering_research = 2
+		}
 		upkeep = {
 			consumer_goods = 2
+			alloys = 1
 		}
 	}
 	weight = {
@@ -3219,6 +3223,9 @@ ad_excavator = {
 		category = planet_jobs_productive
 		produces = {
 			minor_artifacts = 0.5
+		}
+		upkeep = {
+			consumer_goods = 5
 		}
 	}
 	weight = {

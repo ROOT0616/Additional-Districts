@@ -154,6 +154,15 @@ district_ad_archaeological_cities = {
 			job_clerk_add = 1
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		text = job_ad_excavator_effect_desc
+	}
 	ai_resource_production = {
 		minor_artifacts = 100
 		unity = 100
@@ -678,6 +687,15 @@ district_ad_under_water_cities = {
 			job_clerk_add = 1
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		text = job_ad_water_farmer_effect_desc
+	}
 	ai_resource_production = {
 		unity = 100
 		energy = 600
@@ -840,6 +858,15 @@ district_ad_underground_cities = {
 			job_clerk_add = 1
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		text = job_ad_facility_maintainer_effect_desc
+	}
 	ai_resource_production = {
 		unity = 100
 		energy = 600
@@ -913,6 +940,23 @@ district_ad_solar_power_generation = {
 			job_technician_drone_add = 5
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_technician_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_technician_effect_desc
+	}
 	ai_resource_production = {
 		energy = 24
 		trigger = {
@@ -982,6 +1026,23 @@ district_ad_geothermal_electric_power_generation = {
 		modifier = {
 			job_ad_geothermal_technician_drone_add = 4
 		}
+	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_technician_drone_effect_desc
+	# }
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_geothermal_technician_effect_desc
 	}
 	ai_resource_production = {
 		energy = 4
@@ -1055,6 +1116,23 @@ district_ad_tidal_current_generation = {
 			job_technician_drone_add = 5
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_technician_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_technician_effect_desc
+	}
 	ai_resource_production = {
 		energy = 20
 		trigger = {
@@ -1125,6 +1203,23 @@ district_ad_natural_nuclear_power_generation = {
 		modifier = {
 			job_ad_atomic_engineer_drone_add = 2
 		}
+	}
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = yes }
+	# 	}
+	# 	text = job_technician_drone_effect_desc
+	# }
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_atomic_engineer_effect_desc
 	}
 	ai_resource_production = {
 		energy = 4
@@ -1369,6 +1464,16 @@ district_ad_under_water_deposits = {
 			job_fe_acolyte_mine_add = 2
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_underwater_miner_effect_desc
+	}
 	ai_resource_production = {
 		minerals = 20000
 		trigger = {
@@ -1474,6 +1579,16 @@ district_ad_orbital_deposits = {
 			job_fe_acolyte_mine_add = 2
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_space_miner_effect_desc
+	}
 	ai_resource_production = {
 		minerals = 2000
 		trigger = {
@@ -1577,6 +1692,16 @@ district_ad_high_quality_deposits = {
 		modifier = {
 			job_fe_acolyte_mine_add = 3
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_efficient_miner_effect_desc
 	}
 	ai_resource_production = {
 		minerals = 10
@@ -1690,6 +1815,16 @@ district_ad_low_quality_deposits = {
 		modifier = {
 			job_fe_acolyte_mine_add = 7
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_low_efficiency_miner_effect_desc
 	}
 	ai_resource_production = {
 		minerals = 4
@@ -1976,6 +2111,16 @@ district_ad_in_water_ecosystem = {
 			job_fe_acolyte_farm_add = 2
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_water_farmer_effect_desc
+	}
 	ai_resource_production = {
 		food = 100
 		trigger = {
@@ -2100,6 +2245,16 @@ district_ad_mycorrhizal_communities = {
 			job_fe_acolyte_farm_add = 2
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_fungus_farmer_effect_desc
+	}
 	ai_resource_production = {
 		food = 1
 		trigger = {
@@ -2214,6 +2369,16 @@ district_ad_large_scale_grazing_land = {
 		modifier = {
 			job_fe_acolyte_farm_add = 4
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_dairy_farmer_effect_desc
 	}
 	ai_resource_production = {
 		food = 10
@@ -2339,6 +2504,16 @@ district_ad_large_scale_agricultural_land = {
 			job_fe_acolyte_farm_add = 4
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_large_scale_farmer_effect_desc
+	}
 	ai_resource_production = {
 		food = 10
 		trigger = {
@@ -2422,6 +2597,16 @@ district_ad_ancient_ruins = {
 			job_ad_excavator_drone_add = 6
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_large_scale_farmer_effect_desc
+	}
 	ai_resource_production = {
 		minor_artifacts = 10
 		physics_research = 8
@@ -2492,6 +2677,16 @@ district_ad_ancient_databank = {
 			job_ad_data_minor_drone_add = 4
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_data_minor_effect_desc
+	}
 	ai_resource_production = {
 		physics_research = 8
 		society_research = 8
@@ -2549,8 +2744,8 @@ district_ad_natural_fortress = {
 			}
 		}
 		modifier = {
-		job_soldier_add = 4
-	}
+			job_soldier_add = 4
+		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -2560,8 +2755,27 @@ district_ad_natural_fortress = {
 			}
 		}
 		modifier = {
-			job_soldier_drone_add = 4
+			job_warrior_drone_add = 4
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_warrior_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_soldier_effect_desc
 	}
 	ai_resource_production = {
 		unity = 1
@@ -2618,7 +2832,7 @@ district_ad_special_tourism_zone = {
 			}
 		}
 		modifier = {
-		job_entertainer_add = 4
+			job_entertainer_add = 4
 		}
 	}
 	triggered_planet_modifier = {
@@ -2631,6 +2845,25 @@ district_ad_special_tourism_zone = {
 		modifier = {
 			job_maintenance_drone_add = 4
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_entertainer_effect_desc
 	}
 	ai_resource_production = {
 		unity = 2
@@ -2790,6 +3023,26 @@ district_ad_government_district = {
 			job_maintenance_drone_add = 2
 			job_synapse_drone = 8
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_bureaucrat_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_politician_effect_desc
 	}
 	ai_resource_production = {
 		energy = 1
@@ -2953,6 +3206,26 @@ district_ad_university_district = {
 			job_ad_professorship_drone_add = 4
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_professorship_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_researcher_effect_desc
+	}
 	ai_resource_production = {
 		unity = 10
 		physics_research = 100
@@ -3086,6 +3359,16 @@ district_ad_residential_area = {
 		modifier = {
 			job_ad_clerk_drone_add = 10
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_clerk_effect_desc
 	}
 	ai_resource_production = {
 		energy = 1
@@ -3224,6 +3507,16 @@ district_ad_shipbuilding_arsenal = {
 			job_ad_shipwright_add = 4
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_shipwright_effect_desc
+	}
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -3361,6 +3654,16 @@ district_ad_communication_area = {
 			job_ad_infrastructure_engineer_drone_add = 4
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_infrastructure_engineer_effect_desc
+	}
 	ai_resource_production = {
 		energy = 2
 		trigger = {
@@ -3497,6 +3800,25 @@ district_ad_tourist_area = {
 		modifier = {
 			job_maintenance_drone_add = 8
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_entertainer_effect_desc
 	}
 	ai_resource_production = {
 		energy = 3
@@ -3648,6 +3970,36 @@ district_ad_defense_zone = {
 			job_warrior_drone_add = 8
 		}
 	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_general_officer_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_commissioned_officer_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_soldier_effect_desc
+	}
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -3787,6 +4139,26 @@ district_ad_conceptual_zone = {
 		modifier = {
 			job_ad_entrepreneur_drone_add = 6
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_merchant_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_entrepreneur_effect_desc
 	}
 	ai_resource_production = {
 		energy = 3
@@ -3928,6 +4300,26 @@ district_ad_special_research_zone = {
 		modifier = {
 			job_calculator_add = 14
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_head_researcher_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_researcher_effect_desc
 	}
 	ai_resource_production = {
 		energy = 1
@@ -4071,6 +4463,16 @@ district_ad_spaceport_area = {
 		modifier = {
 			job_ad_spaceport_mechanics_drone_add = 12
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_spaceport_mechanics_effect_desc
 	}
 	ai_resource_production = {
 		energy = 1
@@ -4217,6 +4619,26 @@ district_ad_orbital_elevator = {
 			job_ad_spaceport_mechanics_drone_add = 2
 			job_ad_shipwright_drone_add = 2
 		}
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_spaceport_mechanics_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_ad_shipwright_effect_desc
 	}
 	ai_resource_production = {
 		energy = 5

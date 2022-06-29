@@ -101,7 +101,7 @@ d_ad_solar_power_generation = {
 		district_ad_solar_power_generation_max = 1
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -408,7 +408,7 @@ d_ad_government_district = {
 		district_ad_government_district_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -423,7 +423,7 @@ d_ad_university_district = {
 		district_ad_university_district_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -438,7 +438,7 @@ d_ad_residential_area = {
 		district_ad_residential_area_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -453,7 +453,7 @@ d_ad_shipbuilding_arsenal = {
 		district_ad_shipbuilding_arsenal_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -468,7 +468,7 @@ d_ad_communication_area = {
 		district_ad_communication_area_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -483,7 +483,7 @@ d_ad_tourist_area = {
 		district_ad_tourist_area_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -498,7 +498,7 @@ d_ad_defense_zone = {
 		district_ad_defense_zone_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -513,7 +513,7 @@ d_ad_conceptual_zone = {
 		district_ad_conceptual_zone_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -528,7 +528,7 @@ d_ad_special_research_zone = {
 		district_ad_special_research_zone_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -543,7 +543,7 @@ d_ad_spaceport_area = {
 		district_ad_spaceport_area_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 
@@ -558,6 +558,6 @@ d_ad_orbital_elevator = {
 		district_ad_orbital_elevator_max = 5
 	}
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
