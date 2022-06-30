@@ -2719,7 +2719,7 @@ ad_large_scale_farmer_drone = {
 	}
 }
 
-# ad_servicer  サービス職    快適度+2、幸福度+1%            (介護、清掃、運転代行、運送など、エッセンシャルワーカーと呼ばれるサービス提供者)
+# サービス職    快適度+2、幸福度+1%            (介護、清掃、運転代行、運送など、エッセンシャルワーカーと呼ばれるサービス提供者)
 ad_servicer = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -2740,7 +2740,7 @@ ad_servicer = {
 	}
 }
 
-# ad_forcrd_larbor  強制労働者    食料、鉱物+1ずつ、消費財+0.1        (本人の意図とは関係なく、様々な要因で強制的に労働させられる市民権保持者)
+# 強制労働者    食料、鉱物+1ずつ、消費財+0.1        (本人の意図とは関係なく、様々な要因で強制的に労働させられる市民権保持者)
 ad_forcrd_larbor = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -3270,7 +3270,7 @@ ad_excavator_drone = {
 	}
 }
 
-# ad_banker  銀行家        快適度+3、交易価値+5、エネルギー+5    (金融の専門家で、投資や利回りなどの専門家。)
+# 銀行家        快適度+3、交易価値+5、エネルギー+5    (金融の専門家で、投資や利回りなどの専門家。)
 ad_banker = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -3297,7 +3297,7 @@ ad_banker = {
 	}
 }
 
-# ad_lawyer  法曹        快適度+1、社会学+2、犯罪度-5        (法や政治、社会に熟知した専門家。弁護士や司法書士、検察官など幅広い役職を含める。)
+# 法曹        快適度+1、社会学+2、犯罪度-5        (法や政治、社会に熟知した専門家。弁護士や司法書士、検察官など幅広い役職を含める。)
 ad_lawyer = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -3324,7 +3324,7 @@ ad_lawyer = {
 	}
 }
 
-# ad_journalist  ジャーナリスト    労働者政治力-10%、快適度+2、統合力+3    (（彼らが信じた、もしくは信じさせたい）真実を集め、民衆に大きな影響を与える専門家。)
+# ジャーナリスト    労働者政治力-10%、快適度+2、統合力+3    (（彼らが信じた、もしくは信じさせたい）真実を集め、民衆に大きな影響を与える専門家。)
 ad_journalist = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -3353,7 +3353,7 @@ ad_journalist = {
 	}
 }
 
-# ad_librarian  データ司書    統合力+3、研究力+2ずつ            (有形、無形の情報媒体や情報自体を保管し、管理する知識の番人。)
+# データ司書    統合力+3、研究力+2ずつ            (有形、無形の情報媒体や情報自体を保管し、管理する知識の番人。)
 ad_librarian = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -3379,7 +3379,7 @@ ad_librarian = {
 	}
 }
 
-# ad_PSP  公安職員    暗号力+1、犯罪度-15、安定度+1        (国家の安全のために、スパイや暴力的団体、テロリストを監視し、摘発する治安職員。)
+# 公安職員    暗号力+1、犯罪度-15、安定度+1        (国家の安全のために、スパイや暴力的団体、テロリストを監視し、摘発する治安職員。)
 ad_psp = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
@@ -3459,7 +3459,7 @@ ad_general_officer_drone = {
 	}
 }
 
-# ad_ministor  側近        消費財消費3    影響力+1        (知識や経歴、忠実さからこの国の頂点を支える、閣僚や補佐官、侍従やシンクタンク職員。)
+# 側近        消費財消費3    影響力+1        (知識や経歴、忠実さからこの国の頂点を支える、閣僚や補佐官、侍従やシンクタンク職員。)
 ad_ministor = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER
@@ -3484,7 +3484,7 @@ ad_ministor = {
 	}
 }
 
-# ad_congressman  代弁者        消費財消費3    安定度+5、幸福度+5%    (選挙で選ばれた議員や、高名な社会活動家、退役した英雄的軍人など社会や市民の意見を代表し、政府に強い働きかけを行う人々。)
+# 代弁者        消費財消費3    安定度+5、幸福度+5%    (選挙で選ばれた議員や、高名な社会活動家、退役した英雄的軍人など社会や市民の意見を代表し、政府に強い働きかけを行う人々。)
 ad_congressman = {
 	category = ruler
 	condition_string = RULER_JOB_TRIGGER

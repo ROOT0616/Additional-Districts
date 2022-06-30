@@ -19,6 +19,7 @@ decision_ad_undo_town_display = {
 		}
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_town_display_effects
 		hidden_effect = {
 			set_planet_flag = do_ad_undo_display
 		}
@@ -42,6 +43,7 @@ decision_ad_town_display = {
 		has_planet_flag = do_ad_undo_display
 	}
 	effect = {
+		custom_tooltip = decision_ad_town_display_effects
 		hidden_effect = {
 			remove_planet_flag = do_ad_undo_display
 		}
@@ -87,11 +89,12 @@ decision_ad_large_scale_air_area_construction = {
 		}
 	}
 	effect = {
-		while = {
-			count = 2
-			add_deposit = d_ad_sky_cities
-		}
+		custom_tooltip = decision_ad_large_scale_air_area_construction_effects
 		hidden_effect = {
+			while = {
+				count = 2
+				add_deposit = d_ad_sky_cities
+			}
 			set_planet_flag = do_ad_sky_cities
 		}
 	}
@@ -151,6 +154,7 @@ decision_ad_undo_large_scale_air_area_construction = {
 		has_planet_flag = do_ad_sky_cities
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_large_scale_air_area_construction_effects
 		while = {
 			count = 2
 			remove_deposit = d_ad_sky_cities
@@ -196,11 +200,12 @@ decision_ad_large_scale_water_area_construction = {
 		}
 	}
 	effect = {
-		while = {
-			count = 5
-			add_deposit = d_ad_under_water_cities
-		}
+		custom_tooltip = decision_ad_large_scale_water_area_construction_effects
 		hidden_effect = {
+			while = {
+				count = 5
+				add_deposit = d_ad_under_water_cities
+			}
 			set_planet_flag = do_ad_under_water_cities
 		}
 	}
@@ -255,6 +260,7 @@ decision_ad_undo_large_scale_water_area_construction = {
 		has_planet_flag = do_ad_under_water_cities
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_large_scale_water_area_construction_effects
 		while = {
 			count = 5
 			remove_deposit = d_ad_under_water_cities
@@ -300,11 +306,12 @@ decision_ad_large_scale_underground_area_construction = {
 		}
 	}
 	effect = {
-		while = {
-			count = 5
-			add_deposit = d_ad_underground_cities
-		}
+		custom_tooltip = decision_ad_large_scale_underground_area_construction_effects
 		hidden_effect = {
+			while = {
+				count = 5
+				add_deposit = d_ad_underground_cities
+			}
 			set_planet_flag = do_ad_underground_cities
 		}
 	}
@@ -359,6 +366,7 @@ decision_ad_undo_large_scale_underground_area_construction = {
 		has_planet_flag = do_ad_underground_cities
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_large_scale_underground_area_construction_effects
 		while = {
 			count = 5
 			remove_deposit = d_ad_underground_cities
@@ -403,11 +411,12 @@ decision_ad_solar_power_generation = {
 		}
 	}
 	effect = {
-		while = {
-			count = 5
-			add_deposit = d_ad_solar_power_generation
-		}
+		custom_tooltip = decision_ad_solar_power_generation_effects
 		hidden_effect = {
+			while = {
+				count = 5
+				add_deposit = d_ad_solar_power_generation
+			}
 			set_planet_flag = do_ad_solar_power_generation
 		}
 	}
@@ -457,6 +466,7 @@ decision_ad_undo_solar_power_generation = {
 		has_planet_flag = do_ad_solar_power_generation
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_solar_power_generation_effects
 		while = {
 			count = 5
 			remove_deposit = d_ad_solar_power_generation
@@ -473,18 +483,18 @@ decision_ad_undo_solar_power_generation = {
 ################################
 #####    その他区域追加    ######
 ################################
-# 官庁街 government_district
-# 大学街 university_district
-# 住宅街 residential_area
-# 造船工廠 shipbuilding_arsenal
-# 通信区域 communication_area
-# 観光区域 tourist_area
-# 防衛区域 defense_zone
-# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
-# 研究特区 special_research_zone 	研究者 researchers
-# 宇宙港区域 spaceport_area
-# 軌道エレベーター orbital_elevator
-# 官庁街 government_district	
+# 官庁街
+# 大学街
+# 住宅街
+# 造船工廠
+# 通信区域
+# 観光区域
+# 防衛区域
+# 構想特区 起業家 （研究力とか交易価値？）
+# 研究特区 	研究者
+# 宇宙港区域
+# 軌道エレベーター
+# 官庁街	
 decision_ad_government_district = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -514,8 +524,9 @@ decision_ad_government_district = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_government_district
+		custom_tooltip = decision_ad_government_district_effects
 		hidden_effect = {
+			add_deposit = d_ad_government_district
 			set_planet_flag = do_ad_government_district
 			if = {
 				limit = {
@@ -606,6 +617,7 @@ decision_ad_undo_government_district = {
 		has_planet_flag = do_ad_government_district
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_government_district_effects
 		remove_deposit = d_ad_government_district
 		hidden_effect = {
 			remove_planet_flag = do_ad_government_district
@@ -670,8 +682,9 @@ decision_ad_university_district = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_university_district
+		custom_tooltip = decision_ad_university_district_effects
 		hidden_effect = {
+			add_deposit = d_ad_university_district
 			set_planet_flag = do_ad_university_district
 			if = {
 				limit = {
@@ -766,6 +779,7 @@ decision_ad_undo_university_district = {
 		has_planet_flag = do_ad_university_district
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_university_district_effects
 		remove_deposit = d_ad_university_district
 		hidden_effect = {
 			remove_planet_flag = do_ad_university_district
@@ -830,8 +844,9 @@ decision_ad_residential_area = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_residential_area
+		custom_tooltip = decision_ad_residential_area_effects
 		hidden_effect = {
+			add_deposit = d_ad_residential_area
 			set_planet_flag = do_ad_residential_area
 		}
 	}
@@ -870,6 +885,7 @@ decision_ad_undo_residential_area = {
 		has_planet_flag = do_ad_residential_area
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_residential_area_effects
 		remove_deposit = d_ad_residential_area
 		hidden_effect = {
 			remove_planet_flag = do_ad_residential_area
@@ -934,8 +950,9 @@ decision_ad_shipbuilding_arsenal = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_shipbuilding_arsenal
+		custom_tooltip = decision_ad_shipbuilding_arsenal_effects
 		hidden_effect = {
+			add_deposit = d_ad_shipbuilding_arsenal
 			set_planet_flag = do_ad_shipbuilding_arsenal
 			if = {
 				limit = {
@@ -1026,6 +1043,7 @@ decision_ad_undo_shipbuilding_arsenal = {
 		has_planet_flag = do_ad_shipbuilding_arsenal
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_shipbuilding_arsenal_effects
 		remove_deposit = d_ad_shipbuilding_arsenal
 		hidden_effect = {
 			remove_planet_flag = do_ad_shipbuilding_arsenal
@@ -1090,8 +1108,9 @@ decision_ad_communication_area = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_communication_area
+		custom_tooltip = decision_ad_communication_area_effects
 		hidden_effect = {
+			add_deposit = d_ad_communication_area
 			set_planet_flag = do_ad_communication_area
 			if = {
 				limit = {
@@ -1182,6 +1201,7 @@ decision_ad_undo_communication_area = {
 		has_planet_flag = do_ad_communication_area
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_communication_area_effects
 		remove_deposit = d_ad_communication_area
 		hidden_effect = {
 			remove_planet_flag = do_ad_communication_area
@@ -1246,8 +1266,9 @@ decision_ad_tourist_area = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_tourist_area
+		custom_tooltip = decision_ad_tourist_area_effects
 		hidden_effect = {
+			add_deposit = d_ad_tourist_area
 			set_planet_flag = do_ad_tourist_area
 			if = {
 				limit = {
@@ -1338,6 +1359,7 @@ decision_ad_undo_tourist_area = {
 		has_planet_flag = do_ad_tourist_area
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_tourist_area_effects
 		remove_deposit = d_ad_tourist_area
 		hidden_effect = {
 			remove_planet_flag = do_ad_tourist_area
@@ -1402,8 +1424,9 @@ decision_ad_defense_zone = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_defense_zone
+		custom_tooltip = decision_ad_defense_zone_effects
 		hidden_effect = {
+			add_deposit = d_ad_defense_zone
 			set_planet_flag = do_ad_defense_zone
 			if = {
 				limit = {
@@ -1494,6 +1517,7 @@ decision_ad_undo_defense_zone = {
 		has_planet_flag = do_ad_defense_zone
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_defense_zone_effects
 		remove_deposit = d_ad_defense_zone
 		hidden_effect = {
 			remove_planet_flag = do_ad_defense_zone
@@ -1558,8 +1582,9 @@ decision_ad_conceptual_zone = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_conceptual_zone
+		custom_tooltip = decision_ad_conceptual_zone_effects
 		hidden_effect = {
+			add_deposit = d_ad_conceptual_zone
 			set_planet_flag = do_ad_conceptual_zone
 			if = {
 				limit = {
@@ -1650,6 +1675,7 @@ decision_ad_undo_conceptual_zone = {
 		has_planet_flag = do_ad_conceptual_zone
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_conceptual_zone_effects
 		remove_deposit = d_ad_conceptual_zone
 		hidden_effect = {
 			remove_planet_flag = do_ad_conceptual_zone
@@ -1714,8 +1740,9 @@ decision_ad_special_research_zone = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_special_research_zone
+		custom_tooltip = decision_ad_special_research_zone_effects
 		hidden_effect = {
+			add_deposit = d_ad_special_research_zone
 			set_planet_flag = do_ad_special_research_zone
 			if = {
 				limit = {
@@ -1810,6 +1837,7 @@ decision_ad_undo_special_research_zone = {
 		has_planet_flag = do_ad_special_research_zone
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_special_research_zone_effects
 		remove_deposit = d_ad_special_research_zone
 		hidden_effect = {
 			remove_planet_flag = do_ad_special_research_zone
@@ -1874,8 +1902,9 @@ decision_ad_spaceport_area = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_spaceport_area
+		custom_tooltip = decision_ad_spaceport_area_effects
 		hidden_effect = {
+			add_deposit = d_ad_spaceport_area
 			set_planet_flag = do_ad_spaceport_area
 			if = {
 				limit = {
@@ -1966,6 +1995,7 @@ decision_ad_undo_spaceport_area = {
 		has_planet_flag = do_ad_spaceport_area
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_spaceport_area_effects
 		remove_deposit = d_ad_spaceport_area
 		hidden_effect = {
 			remove_planet_flag = do_ad_spaceport_area
@@ -2030,8 +2060,9 @@ decision_ad_orbital_elevator = {
 		}
 	}
 	effect = {
-		add_deposit = d_ad_orbital_elevator
+		custom_tooltip = decision_ad_orbital_elevator_effects
 		hidden_effect = {
+			add_deposit = d_ad_orbital_elevator
 			set_planet_flag = do_ad_orbital_elevator
 			if = {
 				limit = {
@@ -2122,6 +2153,7 @@ decision_ad_undo_orbital_elevator = {
 		has_planet_flag = do_ad_orbital_elevator
 	}
 	effect = {
+		custom_tooltip = decision_ad_undo_orbital_elevator_effects
 		remove_deposit = d_ad_orbital_elevator
 		hidden_effect = {
 			remove_planet_flag = do_ad_orbital_elevator

@@ -3,7 +3,7 @@
 ##############################
 #####    都市区域追加    ######
 ##############################
-# 遺跡都市  archaeological_cities 住居*5	発掘者*2	（自然発生）
+# 遺跡都市 住居*5	発掘者*2	（自然発生）
 district_ad_archaeological_cities = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -175,7 +175,7 @@ district_ad_archaeological_cities = {
 	}
 }
 
-# 空中都市  sky_cities  住居*30 	事務員*2	交易価値	（自然発生）	（技術開発）
+# 空中都市  住居*30 	事務員*2	交易価値	（自然発生）	（技術開発）
 district_ad_sky_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
@@ -355,7 +355,7 @@ district_ad_sky_cities = {
 	}
 }
 
-#水上都市 water_cities	住居*20	事務員*2	交易価値	（自然発生）（技術開発）
+# 水上都市	住居*20	事務員*2	交易価値	（自然発生）（技術開発）
 district_ad_water_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
@@ -535,7 +535,7 @@ district_ad_water_cities = {
 	}
 }
 
-#水中都市 under_water_cities	住居*5	水中農家*2	農作物	（自然発生）	（技術開発）
+# 水中都市	住居*5	水中農家*2	農作物	（自然発生）	（技術開発）
 district_ad_under_water_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
@@ -706,7 +706,7 @@ district_ad_under_water_cities = {
 	}
 }
 
-#地下都市 underground_cities	住居*5	施設維持業者*1	鉱物生産	（自然発生）	（技術開発）
+# 地下都市	住居*5	施設維持業者*1	鉱物生産	（自然発生）	（技術開発）
 district_ad_underground_cities = {
 	base_buildtime = 480
 	show_on_uncolonized = {
@@ -884,7 +884,7 @@ district_ad_underground_cities = {
 # 地熱発電	地熱技師*2（自然発生）
 # 潮流発電	技術者*5（自然発生）
 # 天然原子炉発電	原子技師*2（自然発生）
-#太陽光発電	solar_power_generation	住居*2	技術者*5	（技術開発）
+# 太陽光発電	住居*2	技術者*5	（技術開発）
 district_ad_solar_power_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -965,7 +965,7 @@ district_ad_solar_power_generation = {
 	}
 }
 
-#地熱発電 geothermal_electric_power_generation	住居*2 地熱技師*2	（自然発生）
+# 地熱発電	住居*2 地熱技師*2	（自然発生）
 district_ad_geothermal_electric_power_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -1052,7 +1052,7 @@ district_ad_geothermal_electric_power_generation = {
 	}
 }
 
-#潮流発電 tidal_current_generation	住居*2 技術者*5	（自然発生）
+# 潮流発電	住居*2 技術者*5	（自然発生）
 district_ad_tidal_current_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -1141,7 +1141,7 @@ district_ad_tidal_current_generation = {
 	}
 }
 
-#天然原子炉発電 natural_nuclear_power_generation	住居*2 原子技師*2	（自然発生）
+# 天然原子炉発電	住居*2 原子技師*2	（自然発生）
 district_ad_natural_nuclear_power_generation = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -1232,12 +1232,12 @@ district_ad_natural_nuclear_power_generation = {
 ##############################
 #####    鉱物区域追加    ######
 ##############################	
-# 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
-# 水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
-# 軌道鉱石群	orbital_deposits	宇宙採掘者*2（自然発生）
-# 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
-# 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生）
-# 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
+# 露天鉱床	採掘者*5	（自然発生）
+# 水中鉱床	水中採掘者*2	（自然発生）
+# 軌道鉱石群	宇宙採掘者*2（自然発生）
+# 高質鉱床	効率的採掘者*3	（自然発生）
+# 低質鉱床	低効率採掘者*7	（自然発生）
+# 露天鉱床	採掘者*5	（自然発生）
 district_ad_open_pit_ore_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -1368,7 +1368,7 @@ district_ad_open_pit_ore_deposits = {
 	}
 }
 
-#水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
+#水中鉱床	水中採掘者*2	（自然発生）
 district_ad_under_water_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -1482,7 +1482,7 @@ district_ad_under_water_deposits = {
 	}
 }
 
-#軌道鉱石群	orbital_deposits	宇宙採掘者*2	（自然発生）
+# 軌道鉱石群	宇宙採掘者*2	（自然発生）
 district_ad_orbital_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -1597,7 +1597,7 @@ district_ad_orbital_deposits = {
 	}
 }
 
-# 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
+# 高質鉱床	効率的採掘者*3	（自然発生）
 district_ad_high_quality_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -1720,7 +1720,7 @@ district_ad_high_quality_deposits = {
 	}
 }
 
-# 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生）
+# 低質鉱床	低効率採掘者*7	（自然発生）
 district_ad_low_quality_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -1846,12 +1846,12 @@ district_ad_low_quality_deposits = {
 ##############################
 #####    農業区域追加    ######
 ##############################
-# 棚状耕作地	shed_cultivation_land	（自然発生）
-# 水中生態系	in_water_ecosystem	（自然発生）
-# 菌類群生体	mycorrhizal_communities	（自然発生）
-# 大規模牧草地	large_scale_grazing_land	（自然発生）
-# 大自然農業地	large_scale_agricultural_land		（自然発生）
-# 棚状耕作地	shed_cultivation_land	農家*5	（自然発生）
+# 棚状耕作地	（自然発生）
+# 水中生態系	（自然発生）
+# 菌類群生体	（自然発生）
+# 大規模牧草地	（自然発生）
+# 大自然農業地		（自然発生）
+# 棚状耕作地	農家*5	（自然発生）
 district_ad_shed_cultivation_land = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2003,7 +2003,7 @@ district_ad_shed_cultivation_land = {
 	}
 }
 
-# 水中生態系	in_water_ecosystem	水中農家*2（自然発生）
+# 水中生態系	水中農家*2（自然発生）
 district_ad_in_water_ecosystem = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2138,7 +2138,7 @@ district_ad_in_water_ecosystem = {
 	}
 }
 
-# 菌類群生体	mycorrhizal_communities	菌農家*2（自然発生）
+# 菌類群生体	菌農家*2（自然発生）
 district_ad_mycorrhizal_communities = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2263,7 +2263,7 @@ district_ad_mycorrhizal_communities = {
 	}
 }
 
-# 大規模牧草地	large_scale_grazing_land 酪農家*4	（自然発生）
+# 大規模牧草地 酪農家*4	（自然発生）
 district_ad_large_scale_grazing_land = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2397,7 +2397,7 @@ district_ad_large_scale_grazing_land = {
 	}
 }
 
-# 大自然農業地	large_scale_agricultural_land	大規模農家*4	（自然発生）
+# 大自然農業地	大規模農家*4	（自然発生）
 district_ad_large_scale_agricultural_land = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2534,11 +2534,11 @@ district_ad_large_scale_agricultural_land = {
 ################################
 #####    その他区域追加    ######
 ################################
-# 古代遺跡群	ancient_ruins	（自然発生）
-# 古代データバンク	ancient_databank	（自然発生）
-# 天然の要塞	natural_fortress	（自然発生）
-# 観光特区	special_tourism_zone	（自然発生）
-# 古代遺跡群	ancient_ruins	発掘者*6 （自然発生）
+# 古代遺跡群	（自然発生）
+# 古代データバンク	（自然発生）
+# 天然の要塞	（自然発生）
+# 観光特区	（自然発生）
+# 古代遺跡群	発掘者*6 （自然発生）
 district_ad_ancient_ruins = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2618,7 +2618,7 @@ district_ad_ancient_ruins = {
 	}
 }
 
-# 古代データバンク	ancient_databank	データマイナー*4（自然発生）
+# 古代データバンク	データマイナー*4（自然発生）
 district_ad_ancient_databank = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2697,7 +2697,7 @@ district_ad_ancient_databank = {
 	}
 }
 
-# 天然の要塞	natural_fortress	兵士*４ （自然発生）爆撃耐性高
+# 天然の要塞	兵士*４ （自然発生）爆撃耐性高
 district_ad_natural_fortress = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2785,7 +2785,7 @@ district_ad_natural_fortress = {
 	}
 }
 
-# 観光特区	special_tourism_zone	住居*2 エンターテイナー*4 交易価値+5 快適度+5 （自然発生）
+# 観光特区	住居*2 エンターテイナー*4 交易価値+5 快適度+5 （自然発生）
 district_ad_special_tourism_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2889,7 +2889,7 @@ district_ad_special_tourism_zone = {
 # 研究特区    建物1	住居2    科学総裁1  研究者5
 # 宇宙港区域    建物1	住居2    宇宙港整備員3
 # 軌道エレベーター    建物1	住居2    快適度    5    交易価値    5    幸福度    5  宇宙港整備員1、造船技師1
-# 官庁街 government_district	建物1	住居2    政治家1    官僚4
+# 官庁街	建物1	住居2    政治家1    官僚4
 district_ad_government_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -3052,7 +3052,7 @@ district_ad_government_district = {
 	}
 }
 
-# 大学街 university_district	建物1	住居5   教授職2 科学者2
+# 大学街	建物1	住居5   教授職2 科学者2
 district_ad_university_district = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -3237,7 +3237,7 @@ district_ad_university_district = {
 	}
 }
 
-# 住宅街 residential_area	建物1	住居10       事務員5
+# 住宅街	建物1	住居10       事務員5
 district_ad_residential_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -3378,7 +3378,7 @@ district_ad_residential_area = {
 	}
 }
 
-# 造船工廠 shipbuilding_arsenal	建物1	住居2    造船技師4
+# 造船工廠	建物1	住居2    造船技師4
 district_ad_shipbuilding_arsenal = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -3525,7 +3525,7 @@ district_ad_shipbuilding_arsenal = {
 	}
 }
 
-# 通信区域 communication_area	建物1	住居2    インフラ技師2
+# 通信区域	建物1	住居2    インフラ技師2
 district_ad_communication_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -3672,7 +3672,7 @@ district_ad_communication_area = {
 	}
 }
 
-# 観光区域 tourist_area	建物1	住居3    エンターテイナー４
+# 観光区域	建物1	住居3    エンターテイナー４
 district_ad_tourist_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -3829,7 +3829,7 @@ district_ad_tourist_area = {
 	}
 }
 
-# 防衛区域 defense_zone	建物1	住居3    将官1  将校2  兵士4
+# 防衛区域	建物1	住居3    将官1  将校2  兵士4
 district_ad_defense_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -4008,7 +4008,7 @@ district_ad_defense_zone = {
 	}
 }
 
-# 構想特区 conceptual_zone	建物1	住居2    豪商1    起業家3
+# 構想特区	建物1	住居2    豪商1    起業家3
 district_ad_conceptual_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -4169,7 +4169,7 @@ district_ad_conceptual_zone = {
 	}
 }
 
-# 研究特区 special_research_zone 	建物1	住居2    科学総裁1  研究者5
+# 研究特区 	建物1	住居2    科学総裁1  研究者5
 district_ad_special_research_zone = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -4332,7 +4332,7 @@ district_ad_special_research_zone = {
 	}
 }
 
-# 宇宙港区域 spaceport_area	建物1	住居2    宇宙港整備員3
+# 宇宙港区域	建物1	住居2    宇宙港整備員3
 district_ad_spaceport_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -4482,7 +4482,7 @@ district_ad_spaceport_area = {
 	}
 }
 
-# 軌道エレベーター orbital_elevator 	建物1	住居2    快適度    5    交易価値    5    幸福度    5  宇宙港整備員1、造船技師1
+# 軌道エレベーター 	建物1	住居2    快適度    5    交易価値    5    幸福度    5  宇宙港整備員1、造船技師1
 district_ad_orbital_elevator = {
 	base_buildtime = 240
 	show_on_uncolonized = {
