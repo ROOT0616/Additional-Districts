@@ -21,10 +21,21 @@ debtor_army = {
 		has_building = building_slave_processing
 	}
 	potential = {
-		any_species_pop = {
-			is_pop_category = slave
-			is_same_species = from
+		owner = {
+			any_owned_pop = {
+				is_pop_category = slave
+				is_same_species = from
+			}
 		}
-		has_building = building_empire_undergraund
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+			}
+		}
+		planet = {
+			has_building = building_empire_undergraund
+		}
 	}
 }
