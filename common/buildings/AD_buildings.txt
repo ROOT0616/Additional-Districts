@@ -2681,11 +2681,13 @@ building_ad_AA_base = {
 			is_gestalt = no
 		}
 	}
+	country_modifier = {
+		army_defense_damage_mult = 0.1
+		army_defense_morale_mult = 0.1
+	}
 	planet_modifier = {
 		job_ad_commissioned_officer_add = 1
 		job_soldier_add = 2
-		army_defense_damage_mult = 0.1
-		army_defense_morale_mult = 0.1
 	}
 	resources = {
 		category = planet_buildings
@@ -2743,7 +2745,7 @@ building_ad_D_Auto = {
 			}
 		}
 	}
-	planet_modifier = {
+	country_modifier = {
 		army_defense_damage_mult = 0.3
 	}
 	resources = {
@@ -2774,9 +2776,11 @@ building_ad_Anti_b_pit = {
 			}
 		}
 	}
+	country_modifier = {
+		army_defense_health_mult = 0.1
+	}
 	planet_modifier = {
 		job_soldier_add = 1
-		army_defense_health_mult = 0.1
 		planet_orbital_bombardment_damage = -0.2
 	}
 	resources = {
@@ -3603,10 +3607,10 @@ building_pirate_broad = {
 	planet_modifier = {
 		planet_crime_add = 40
 		pop_government_ethic_attraction = -0.3
-		intel_encryption_add = -1
 		job_clerk_add = 2
 	}
 	country_modifier = {
+		intel_encryption_add = -1
 		country_unity_produces_mult = 0.1
 	}
 	resources = {

@@ -148,25 +148,9 @@
  large_scale_ground_construction_technology:0 "大規模地中建設技術"
  large_scale_ground_construction_technology_desc:0 "地中に大規模な都市を建築する計画を立案する。"
 
-#######################
-#####    仕事    ######
-#######################
-
- job_ad_clerk_drone:0 "雑務ドローン"
- job_ad_clerk_drone_plural:0 "雑務ドローン"
- job_ad_clerk_drone_desc:0 ""
- mod_job_ad_clerk_drone_add:0 "雑務ドローンの職業枠"
-
- job_ad_excavator:0 "発掘者"
- job_ad_excavator_plural:0 "発掘者"
- job_ad_excavator_desc:0 "考古学者や探検家などの古代遺跡の研究者"
- job_ad_excavator_effect_desc:0 "£job_ad_excavator£ $job_ad_excavator_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minor_artifacts£ §Y$minor_artifacts$§!を産出する"
- mod_job_ad_excavator_add:0 "発掘者の職業枠"
-
- job_ad_excavator_drone:0 "発掘者"
- job_ad_excavator_drone_plural:0 "発掘者"
- job_ad_excavator_drone_desc:0 "考古学者や探検家などの古代遺跡の研究者"
- mod_job_ad_excavator_drone_add:0 "発掘者の職業枠"
+#########################
+#####    労働者    ######
+#########################
 
  job_ad_water_farmer:0 "水中農家"
  job_ad_water_farmer_plural:0 "水中農家"
@@ -174,21 +158,11 @@
  job_ad_water_farmer_effect_desc:0 "£job_ad_water_farmer£ $job_ad_water_farmer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £food£ §Y$food$§!を産出する"
  mod_job_ad_water_farmer_add:0 "水中農家の職業枠"
 
- job_ad_water_farmer_drone:0 "水中農家"
- job_ad_water_farmer_drone_plural:0 "水中農家"
- job_ad_water_farmer_drone_desc:0 "海藻や食用水生生物の生産、管理を行う農家"
- mod_job_ad_water_farmer_drone_add:0 "水中農家の職業枠"
-
  job_ad_facility_maintainer:0 "施設維持業者"
  job_ad_facility_maintainer_plural:0 "施設維持業者"
  job_ad_facility_maintainer_desc:0 "施設や都市を整備、拡充するための技術者"
  job_ad_facility_maintainer_effect_desc:0 "£job_ad_facility_maintainer£ $job_ad_facility_maintainer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出し、 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!増加させる"
  mod_job_ad_facility_maintainer_add:0 "施設維持業者の職業枠"
-
- job_ad_facility_maintainer_drone:0 "施設維持業者"
- job_ad_facility_maintainer_drone_plural:0 "施設維持業者"
- job_ad_facility_maintainer_drone_desc:0 "施設や都市を整備、拡充するための技術者"
- mod_job_ad_facility_maintainer_drone_add:0 "施設維持業者の職業枠"
 
  job_ad_geothermal_technician:0 "地熱技師"
  job_ad_geothermal_technician_plural:0 "地熱技師"
@@ -196,21 +170,11 @@
  job_ad_geothermal_technician_effect_desc:0 "£job_ad_geothermal_technician£ $job_ad_geothermal_technician_plural$は、 £energy£ §Y$energy$§!を産出する"
  mod_job_ad_geothermal_technician_add:0 "地熱技師の職業枠"
 
- job_ad_geothermal_technician_drone:0 "地熱技師"
- job_ad_geothermal_technician_drone_plural:0 "地熱技師"
- job_ad_geothermal_technician_drone_desc:0 "地熱を操り、エネルギーに変換させる技術者"
- mod_job_ad_geothermal_technician_drone_add:0 "地熱技師の職業枠"
-
  job_ad_atomic_engineer:0 "原子技師"
  job_ad_atomic_engineer_plural:0 "原子技師"
  job_ad_atomic_engineer_desc:0 "天然原子炉を安定化させ、エネルギーに変換する技術者"
  job_ad_atomic_engineer_effect_desc:0 "£job_ad_atomic_engineer£ $job_ad_atomic_engineer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £energy£ §Y$energy$§!を産出する"
  mod_job_ad_atomic_engineer_add:0 "原子技師の職業枠"
-
- job_ad_atomic_engineer_drone:0 "原子技師"
- job_ad_atomic_engineer_drone_plural:0 "原子技師"
- job_ad_atomic_engineer_drone_desc:0 "天然原子炉を安定化させ、エネルギーに変換する技術者"
- mod_job_ad_atomic_engineer_drone_add:0 "原子技師の職業枠"
 
  job_ad_underwater_miner:0 "水中採掘者"
  job_ad_underwater_miner_plural:0 "水中採掘者"
@@ -218,32 +182,11 @@
  job_ad_underwater_miner_effect_desc:0 "£job_ad_underwater_miner£ $job_ad_underwater_miner_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出する"
  mod_job_ad_underwater_miner_add:0 "水中採掘者の職業枠"
 
- job_ad_underwater_miner_drone:0 "水中採掘者"
- job_ad_underwater_miner_drone_plural:0 "水中採掘者"
- job_ad_underwater_miner_drone_desc:0 "高圧力下で生成される高密度鉱脈で採掘を行う技術者"
- mod_job_ad_underwater_miner_drone_add:0 "水中採掘者の職業枠"
-
  job_ad_space_miner:0 "宇宙採掘者"
  job_ad_space_miner_plural:0 "宇宙採掘者"
  job_ad_space_miner_desc:0 "軌道上に存在する鉱物を採取する技術者"
  job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出する"
  mod_job_ad_space_miner_add:0 "宇宙採掘者の職業枠"
-
- job_ad_space_miner_drone:0 "宇宙採掘者"
- job_ad_space_miner_drone_plural:0 "宇宙採掘者"
- job_ad_space_miner_drone_desc:0 "軌道上に存在する鉱物を採取する技術者"
- mod_job_ad_space_miner_drone_add:0 "宇宙採掘者の職業枠"
-
- job_ad_efficient_miner:0 "効率的採掘者"
- job_ad_efficient_miner_plural:0 "効率的採掘者"
- job_ad_efficient_miner_desc:0 "高質の鉱石を、廃棄物をできるだけ少なく採掘できるよう訓練された労働者"
- job_ad_efficient_miner_effect_desc:0 "£job_ad_efficient_miner£ $job_ad_efficient_miner_plural$は、 £minerals£ §Y$minerals$§!を産出する"
- mod_job_ad_efficient_miner_add:0 "効率的採掘者の職業枠"
-
- job_ad_efficient_miner_drone:0 "効率的採掘者"
- job_ad_efficient_miner_drone_plural:0 "効率的採掘者"
- job_ad_efficient_miner_drone_desc:0 "高質の鉱石を、廃棄物をできるだけ少なく採掘できるよう訓練された労働者"
- mod_job_ad_efficient_miner_drone_add:0 "効率的採掘者の職業枠"
 
  job_ad_low_efficiency_miner:0 "低効率採掘者"
  job_ad_low_efficiency_miner_plural:0 "低効率採掘者"
@@ -251,21 +194,11 @@
  job_ad_low_efficiency_miner_effect_desc:0 "£job_ad_low_efficiency_miner£ $job_ad_low_efficiency_miner_plural$は、 £minerals£ §Y$minerals$§!を産出する"
  mod_job_ad_low_efficiency_miner_add:0 "低効率採掘者の職業枠"
 
- job_ad_low_efficiency_miner_drone:0 "低効率採掘者"
- job_ad_low_efficiency_miner_drone_plural:0 "低効率採掘者"
- job_ad_low_efficiency_miner_drone_desc:0 "大量の低質鉱石を採掘できるよう訓練された労働者"
- mod_job_ad_low_efficiency_miner_drone_add:0 "低効率採掘者の職業枠"
-
  job_ad_fungus_farmer:0 "菌農家"
  job_ad_fungus_farmer_plural:0 "菌農家"
  job_ad_fungus_farmer_desc:0 "キノコや刺激性食用菌類などを生産する労働者"
  job_ad_fungus_farmer_effect_desc:0 "£job_ad_fungus_farmer£ $job_ad_fungus_farmer_plural$は、 £food£ §Y$food$§!を産出する"
  mod_job_ad_fungus_farmer_add:0 "菌農家の職業枠"
-
- job_ad_fungus_farmer_drone:0 "菌農家"
- job_ad_fungus_farmer_drone_plural:0 "菌農家"
- job_ad_fungus_farmer_drone_desc:0 "キノコや刺激性食用菌類などを生産する労働者"
- mod_job_ad_fungus_farmer_drone_add:0 "菌農家の職業枠"
 
  job_ad_dairy_farmer:0 "酪農家"
  job_ad_dairy_farmer_plural:0 "酪農家"
@@ -273,111 +206,11 @@
  job_ad_dairy_farmer_effect_desc:0 "£ad_dairy_farmer£ $ad_dairy_farmer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £food£ §Y$food$§!を産出する"
  mod_job_ad_dairy_farmer_add:0 "酪農家の職業枠"
 
- job_ad_dairy_farmer_drone:0 "酪農家"
- job_ad_dairy_farmer_drone_plural:0 "酪農家"
- job_ad_dairy_farmer_drone_desc:0 "主に肉類や乳製品、卵などのタンパク源を生産する労働者"
- mod_job_ad_dairy_farmer_drone_add:0 "酪農家の職業枠"
-
  job_ad_large_scale_farmer:0 "大規模農家"
  job_ad_large_scale_farmer_plural:0 "大規模農家"
  job_ad_large_scale_farmer_desc:0 "大規模プランテーションで安価な大量精算を行う農家"
  job_ad_large_scale_farmer_effect_desc:0 "£job_ad_large_scale_farmer£ $job_ad_large_scale_farmer_plural$は、 £food£ §Y$food$§!を産出する"
  mod_job_ad_large_scale_farmer_add:0 "大規模農家の職業枠"
-
- job_ad_large_scale_farmer_drone:0 "大規模農家"
- job_ad_large_scale_farmer_drone_plural:0 "大規模農家"
- job_ad_large_scale_farmer_drone_desc:0 "大規模プランテーションで安価な大量精算を行う農家"
- mod_job_ad_large_scale_farmer_drone_add:0 "大規模農家の職業枠"
-
- job_ad_professorship:0 "教授職"
- job_ad_professorship_plural:0 "教授職"
- job_ad_professorship_desc:0 "知的労働者に教育を行い、自身も研究を行う専門家"
- job_ad_professorship_effect_desc:0 "£job_ad_professorship£ $job_ad_professorship_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_planet_jobs_specialist_produces_mult£ §Y$mod_planet_jobs_specialist_produces_mult$§!を増加させる"
- mod_job_ad_professorship_add:0 "教授職の職業枠"
-
- job_ad_professorship_drone:0 "教授職"
- job_ad_professorship_drone_plural:0 "教授職"
- job_ad_professorship_drone_desc:0 "知的労働者に教育を行い、自身も研究を行う専門家"
- mod_job_ad_professorship_drone_add:0 "教授職の職業枠"
-
- job_ad_data_minor:0 "データマイナー"
- job_ad_data_minor_plural:0 "データマイナー"
- job_ad_data_minor_desc:0 "過去の知識を探り、新たな知見や過去の再発見を行う専門家"
- job_ad_data_minor_effect_desc:0 "£job_ad_data_minor£ $job_ad_data_minor_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £unity£ §Y$unity$§!と £physics£ £society£ £engineering£ §Y研究力§!を産出し、 £mod_planet_researchers_produces_mult£ §Y$mod_planet_researchers_produces_mult$§!を増加させる"
- mod_job_ad_data_minor_add:0 "データマイナーの職業枠"
-
- job_ad_data_minor_drone:0 "データマイナー"
- job_ad_data_minor_drone_plural:0 "データマイナー"
- job_ad_data_minor_drone_desc:0 "過去の知識を探り、新たな知見や過去の再発見を行う専門家"
- mod_job_ad_data_minor_drone_add:0 "データマイナーの職業枠"
-
- job_ad_shipwright:0 "造船技師"
- job_ad_shipwright_plural:0 "造船技師"
- job_ad_shipwright_desc:0 "軍用艦艇、民間船の建造を行う専門家"
- job_ad_shipwright_effect_desc:0 "£job_ad_shipwright£ $job_ad_shipwright_plural$は、 £consumer_goods£ §Y$consumer_goods$§!と £alloys£ §Y$alloys$§!を消費して £mod_starbase_shipyard_build_speed_mult£ §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§!と £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を産出する"
- mod_job_ad_shipwright_add:0 "造船技師の職業枠"
-
- job_ad_shipwright_drone:0 "造船技師"
- job_ad_shipwright_drone_plural:0 "造船技師"
- job_ad_shipwright_drone_desc:0 "軍用艦艇、民間船の建造を行う専門家"
- mod_job_ad_shipwright_drone_add:0 "造船技師の職業枠"
-
- job_ad_infrastructure_engineer:0 "インフラ技師"
- job_ad_infrastructure_engineer_plural:0 "インフラ技師"
- job_ad_infrastructure_engineer_desc:0 "主に通信面でのインフラを整備、拡充を行う技術者"
- job_ad_infrastructure_engineer_effect_desc:0 "£job_ad_infrastructure_engineer£ $job_ad_infrastructure_engineer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_planet_jobs_worker_produces_mult£ §Y$mod_planet_jobs_worker_produces_mult$§!を産出する"
- mod_job_ad_infrastructure_engineer_add:0 "インフラ技師の職業枠"
-
- job_ad_infrastructure_engineer_drone:0 "インフラ技師"
- job_ad_infrastructure_engineer_drone_plural:0 "インフラ技師"
- job_ad_infrastructure_engineer_drone_desc:0 "主に通信面でのインフラを整備、拡充を行う技術者"
- mod_job_ad_infrastructure_engineer_drone_add:0 "インフラ技師の職業枠"
-
- job_ad_commissioned_officer:0 "将校"
- job_ad_commissioned_officer_plural:0 "将校"
- job_ad_commissioned_officer_desc:0 "軍において管理、運用、指揮等を行う中間管理職"
- job_ad_commissioned_officer_effect_desc:0 "£job_ad_commissioned_officer£ $job_ad_commissioned_officer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して  £defense_army£ §Y$defense_army$§!を編成し、 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
- mod_job_ad_commissioned_officer_add:0 "将校の職業枠"
- mod_job_ad_commissioned_officer_per_pop:0 "$VALUE$ POP につき$job_ad_commissioned_officer$の職業枠§G+1§!"
- mod_job_ad_commissioned_officer_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ad_commissioned_officer_add£ §G+1§!"
-
- job_ad_commissioned_officer_drone:0 "将校"
- job_ad_commissioned_officer_drone_plural:0 "将校"
- job_ad_commissioned_officer_drone_desc:0 "軍において管理、運用、指揮等を行う中間管理職"
- mod_job_ad_commissioned_officer_drone_add:0 "将校の職業枠"
-
- job_ad_general_officer:0 "将官"
- job_ad_general_officer_plural:0 "将官"
- job_ad_general_officer_desc:0 "軍の指導的立場で、指揮をとる最高幹部"
- job_ad_general_officer_effect_desc:0 "£job_ad_general_officer£ $job_ad_general_officer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して  £defense_army£ §Y$defense_army$§!を編成し、 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
- mod_job_ad_general_officer_add:0 "将官の職業枠"
-
- job_ad_general_officer_drone:0 "将官"
- job_ad_general_officer_drone_plural:0 "将官"
- job_ad_general_officer_drone_desc:0 "軍の指導的立場で、指揮をとる最高幹部"
- mod_job_ad_general_officer_drone_add:0 "将官の職業枠"
-
- job_ad_entrepreneur:0 "起業家"
- job_ad_entrepreneur_plural:0 "起業家"
- job_ad_entrepreneur_desc:0 "新たな市場を開拓し、新たな事業を始める経済面の開拓者"
- job_ad_entrepreneur_effect_desc:0 "£job_ad_entrepreneur£ $job_ad_entrepreneur_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_trade_value_add£ §Y$TRADE_VALUE$§!、£society£ §Y$society_research$§!を産出し、£mod_trade_value_add£ §Y$TRADE_VALUE$§!を増加させる"
- mod_job_ad_entrepreneur_add:0 "起業家の職業枠"
-
- job_ad_entrepreneur_drone:0 "起業家"
- job_ad_entrepreneur_drone_plural:0 "起業家"
- job_ad_entrepreneur_drone_desc:0 "新たな市場を開拓し、新たな事業を始める経済面の開拓者"
- mod_job_ad_entrepreneur_drone_add:0 "起業家の職業枠"
-
- job_ad_spaceport_mechanics:0 "宇宙港管制官"
- job_ad_spaceport_mechanics_plural:0 "宇宙港管制官"
- job_ad_spaceport_mechanics_desc:0 "宇宙港を管理し、管制を行う専門的オペレーター"
- job_ad_spaceport_mechanics_effect_desc:0 "£job_ad_spaceport_mechanics£ $job_ad_spaceport_mechanics_plural$は、 £consumer_goods£ §Y$consumer_goods$§! £alloys£ §Y$alloys$§!を消費して £engineering£ §Y$engineering_research$§!を産出し、£mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
- mod_job_ad_spaceport_mechanics_add:0 "宇宙港整備員の職業枠"
-
- job_ad_spaceport_mechanics_drone:0 "宇宙港管制官"
- job_ad_spaceport_mechanics_drone_plural:0 "宇宙港管制官"
- job_ad_spaceport_mechanics_drone_desc:0 "宇宙港を管理し、管制を行う専門的オペレーター"
- mod_job_ad_spaceport_mechanics_drone_add:0 "宇宙港整備員の職業枠"
 
  job_ad_servicer:0 "サービス職"
  job_ad_servicer_plural:0 "サービス職"
@@ -394,6 +227,66 @@
  mod_job_ad_forcrd_larbor_add:0 "強制労働者の職業枠"
  mod_job_ad_forcrd_larbor_per_pop:0 "$VALUE$ POP につき$job_ad_forcrd_larbor$の職業枠§G+1§!"
  mod_job_ad_forcrd_larbor_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ad_forcrd_larbor_add£ §G+1§!"
+
+#########################
+#####    専門職    ######
+#########################
+
+ job_ad_efficient_miner:0 "効率的採掘者"
+ job_ad_efficient_miner_plural:0 "効率的採掘者"
+ job_ad_efficient_miner_desc:0 "高質の鉱石を、廃棄物をできるだけ少なく採掘できるよう訓練された労働者"
+ job_ad_efficient_miner_effect_desc:0 "£job_ad_efficient_miner£ $job_ad_efficient_miner_plural$は、 £minerals£ §Y$minerals$§!を産出する"
+ mod_job_ad_efficient_miner_add:0 "効率的採掘者の職業枠"
+
+ job_ad_data_minor:0 "データマイナー"
+ job_ad_data_minor_plural:0 "データマイナー"
+ job_ad_data_minor_desc:0 "過去の知識を探り、新たな知見や過去の再発見を行う専門家"
+ job_ad_data_minor_effect_desc:0 "£job_ad_data_minor£ $job_ad_data_minor_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £unity£ §Y$unity$§!と £physics£ £society£ £engineering£ §Y研究力§!を産出し、 £mod_planet_researchers_produces_mult£ §Y$mod_planet_researchers_produces_mult$§!を増加させる"
+ mod_job_ad_data_minor_add:0 "データマイナーの職業枠"
+
+ job_ad_shipwright:0 "造船技師"
+ job_ad_shipwright_plural:0 "造船技師"
+ job_ad_shipwright_desc:0 "軍用艦艇、民間船の建造を行う専門家"
+ job_ad_shipwright_effect_desc:0 "£job_ad_shipwright£ $job_ad_shipwright_plural$は、 £consumer_goods£ §Y$consumer_goods$§!と £alloys£ §Y$alloys$§!を消費して £mod_starbase_shipyard_build_speed_mult£ §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§!と £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を産出する"
+ mod_job_ad_shipwright_add:0 "造船技師の職業枠"
+
+ job_ad_infrastructure_engineer:0 "インフラ技師"
+ job_ad_infrastructure_engineer_plural:0 "インフラ技師"
+ job_ad_infrastructure_engineer_desc:0 "主に通信面でのインフラを整備、拡充を行う技術者"
+ job_ad_infrastructure_engineer_effect_desc:0 "£job_ad_infrastructure_engineer£ $job_ad_infrastructure_engineer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_planet_jobs_worker_produces_mult£ §Y$mod_planet_jobs_worker_produces_mult$§!を産出する"
+ mod_job_ad_infrastructure_engineer_add:0 "インフラ技師の職業枠"
+
+ job_ad_commissioned_officer:0 "将校"
+ job_ad_commissioned_officer_plural:0 "将校"
+ job_ad_commissioned_officer_desc:0 "軍において管理、運用、指揮等を行う中間管理職"
+ job_ad_commissioned_officer_effect_desc:0 "£job_ad_commissioned_officer£ $job_ad_commissioned_officer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して  £defense_army£ §Y$defense_army$§!を編成し、 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
+ mod_job_ad_commissioned_officer_add:0 "将校の職業枠"
+ mod_job_ad_commissioned_officer_per_pop:0 "$VALUE$ POP につき$job_ad_commissioned_officer$の職業枠§G+1§!"
+ mod_job_ad_commissioned_officer_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ad_commissioned_officer_add£ §G+1§!"
+
+ job_ad_entrepreneur:0 "起業家"
+ job_ad_entrepreneur_plural:0 "起業家"
+ job_ad_entrepreneur_desc:0 "新たな市場を開拓し、新たな事業を始める経済面の開拓者"
+ job_ad_entrepreneur_effect_desc:0 "£job_ad_entrepreneur£ $job_ad_entrepreneur_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_trade_value_add£ §Y$TRADE_VALUE$§!、£society£ §Y$society_research$§!を産出し、£mod_trade_value_add£ §Y$TRADE_VALUE$§!を増加させる"
+ mod_job_ad_entrepreneur_add:0 "起業家の職業枠"
+
+ job_ad_spaceport_mechanics:0 "宇宙港管制官"
+ job_ad_spaceport_mechanics_plural:0 "宇宙港管制官"
+ job_ad_spaceport_mechanics_desc:0 "宇宙港を管理し、管制を行う専門的オペレーター"
+ job_ad_spaceport_mechanics_effect_desc:0 "£job_ad_spaceport_mechanics£ $job_ad_spaceport_mechanics_plural$は、 £consumer_goods£ §Y$consumer_goods$§! £alloys£ §Y$alloys$§!を消費して £engineering£ §Y$engineering_research$§!を産出し、£mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
+ mod_job_ad_spaceport_mechanics_add:0 "宇宙港整備員の職業枠"
+
+ job_ad_professorship:0 "教授職"
+ job_ad_professorship_plural:0 "教授職"
+ job_ad_professorship_desc:0 "知的労働者に教育を行い、自身も研究を行う専門家"
+ job_ad_professorship_effect_desc:0 "£job_ad_professorship£ $job_ad_professorship_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_planet_jobs_specialist_produces_mult£ §Y$mod_planet_jobs_specialist_produces_mult$§!を増加させる"
+ mod_job_ad_professorship_add:0 "教授職の職業枠"
+
+ job_ad_excavator:0 "発掘者"
+ job_ad_excavator_plural:0 "発掘者"
+ job_ad_excavator_desc:0 "考古学者や探検家などの古代遺跡の研究者"
+ job_ad_excavator_effect_desc:0 "£job_ad_excavator£ $job_ad_excavator_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minor_artifacts£ §Y$minor_artifacts$§!を産出する"
+ mod_job_ad_excavator_add:0 "発掘者の職業枠"
 
  job_ad_banker:0 "銀行家"
  job_ad_banker_plural:0 "銀行家"
@@ -425,6 +318,16 @@
  job_ad_psp_effect_desc:0 "£job_ad_psp£ $job_ad_psp_plural$は、 £mod_intel_encryption_add£ §Y$intel_encryption_add$§!を産出し、 £crime£ §Y$PLANET_CRIME_TITLE$§!を減らし、  £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!を増加させる"
  mod_job_ad_psp_add:0 "公安職員の職業枠"
 
+#########################
+#####    統治者    ######
+#########################
+
+ job_ad_general_officer:0 "将官"
+ job_ad_general_officer_plural:0 "将官"
+ job_ad_general_officer_desc:0 "軍の指導的立場で、指揮をとる最高幹部"
+ job_ad_general_officer_effect_desc:0 "£job_ad_general_officer£ $job_ad_general_officer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して  £defense_army£ §Y$defense_army$§!を編成し、 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
+ mod_job_ad_general_officer_add:0 "将官の職業枠"
+
  job_ad_ministor:0 "側近"
  job_ad_ministor_plural:0 "側近"
  job_ad_ministor_desc:0 "知識や経歴、忠実さからこの国の頂点を支える、閣僚や補佐官、侍従やシンクタンク職員。"
@@ -436,6 +339,119 @@
  job_ad_congressman_desc:0 "選挙で選ばれた議員や、高名な社会活動家、退役した英雄的軍人など社会や市民の意見を代表し、政府に強い働きかけを行う人々。"
  job_ad_congressman_effect_desc:0 "£job_ad_congressman£ $job_ad_congressman_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_pop_happiness£ §Y$MOD_POP_HAPPINESS$§!、 £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!を増加させる"
  mod_job_ad_congressman_add:0 "代弁者の職業枠"
+
+##############################
+#####    雑役ドローン    ######
+##############################
+
+ job_ad_clerk_drone:0 "雑務ドローン"
+ job_ad_clerk_drone_plural:0 "雑務ドローン"
+ job_ad_clerk_drone_desc:0 ""
+ mod_job_ad_clerk_drone_add:0 "雑務ドローンの職業枠"
+
+ job_ad_water_farmer_drone:0 "水中農家"
+ job_ad_water_farmer_drone_plural:0 "水中農家"
+ job_ad_water_farmer_drone_desc:0 "海藻や食用水生生物の生産、管理を行う農家"
+ mod_job_ad_water_farmer_drone_add:0 "水中農家の職業枠"
+
+ job_ad_facility_maintainer_drone:0 "施設維持業者"
+ job_ad_facility_maintainer_drone_plural:0 "施設維持業者"
+ job_ad_facility_maintainer_drone_desc:0 "施設や都市を整備、拡充するための技術者"
+ mod_job_ad_facility_maintainer_drone_add:0 "施設維持業者の職業枠"
+
+ job_ad_geothermal_technician_drone:0 "地熱技師"
+ job_ad_geothermal_technician_drone_plural:0 "地熱技師"
+ job_ad_geothermal_technician_drone_desc:0 "地熱を操り、エネルギーに変換させる技術者"
+ mod_job_ad_geothermal_technician_drone_add:0 "地熱技師の職業枠"
+
+ job_ad_atomic_engineer_drone:0 "原子技師"
+ job_ad_atomic_engineer_drone_plural:0 "原子技師"
+ job_ad_atomic_engineer_drone_desc:0 "天然原子炉を安定化させ、エネルギーに変換する技術者"
+ mod_job_ad_atomic_engineer_drone_add:0 "原子技師の職業枠"
+
+ job_ad_underwater_miner_drone:0 "水中採掘者"
+ job_ad_underwater_miner_drone_plural:0 "水中採掘者"
+ job_ad_underwater_miner_drone_desc:0 "高圧力下で生成される高密度鉱脈で採掘を行う技術者"
+ mod_job_ad_underwater_miner_drone_add:0 "水中採掘者の職業枠"
+
+ job_ad_space_miner_drone:0 "宇宙採掘者"
+ job_ad_space_miner_drone_plural:0 "宇宙採掘者"
+ job_ad_space_miner_drone_desc:0 "軌道上に存在する鉱物を採取する技術者"
+ mod_job_ad_space_miner_drone_add:0 "宇宙採掘者の職業枠"
+
+ job_ad_low_efficiency_miner_drone:0 "低効率採掘者"
+ job_ad_low_efficiency_miner_drone_plural:0 "低効率採掘者"
+ job_ad_low_efficiency_miner_drone_desc:0 "大量の低質鉱石を採掘できるよう訓練された労働者"
+ mod_job_ad_low_efficiency_miner_drone_add:0 "低効率採掘者の職業枠"
+
+ job_ad_fungus_farmer_drone:0 "菌農家"
+ job_ad_fungus_farmer_drone_plural:0 "菌農家"
+ job_ad_fungus_farmer_drone_desc:0 "キノコや刺激性食用菌類などを生産する労働者"
+ mod_job_ad_fungus_farmer_drone_add:0 "菌農家の職業枠"
+
+ job_ad_dairy_farmer_drone:0 "酪農家"
+ job_ad_dairy_farmer_drone_plural:0 "酪農家"
+ job_ad_dairy_farmer_drone_desc:0 "主に肉類や乳製品、卵などのタンパク源を生産する労働者"
+ mod_job_ad_dairy_farmer_drone_add:0 "酪農家の職業枠"
+
+ job_ad_large_scale_farmer_drone:0 "大規模農家"
+ job_ad_large_scale_farmer_drone_plural:0 "大規模農家"
+ job_ad_large_scale_farmer_drone_desc:0 "大規模プランテーションで安価な大量精算を行う農家"
+ mod_job_ad_large_scale_farmer_drone_add:0 "大規模農家の職業枠"
+
+##############################
+#####    複雑ドローン    ######
+##############################
+
+ job_ad_efficient_miner_drone:0 "効率的採掘者"
+ job_ad_efficient_miner_drone_plural:0 "効率的採掘者"
+ job_ad_efficient_miner_drone_desc:0 "高質の鉱石を、廃棄物をできるだけ少なく採掘できるよう訓練された労働者"
+ mod_job_ad_efficient_miner_drone_add:0 "効率的採掘者の職業枠"
+
+ job_ad_excavator_drone:0 "発掘者"
+ job_ad_excavator_drone_plural:0 "発掘者"
+ job_ad_excavator_drone_desc:0 "考古学者や探検家などの古代遺跡の研究者"
+ mod_job_ad_excavator_drone_add:0 "発掘者の職業枠"
+
+ job_ad_professorship_drone:0 "教授職"
+ job_ad_professorship_drone_plural:0 "教授職"
+ job_ad_professorship_drone_desc:0 "知的労働者に教育を行い、自身も研究を行う専門家"
+ mod_job_ad_professorship_drone_add:0 "教授職の職業枠"
+
+ job_ad_data_minor_drone:0 "データマイナー"
+ job_ad_data_minor_drone_plural:0 "データマイナー"
+ job_ad_data_minor_drone_desc:0 "過去の知識を探り、新たな知見や過去の再発見を行う専門家"
+ mod_job_ad_data_minor_drone_add:0 "データマイナーの職業枠"
+
+ job_ad_shipwright_drone:0 "造船技師"
+ job_ad_shipwright_drone_plural:0 "造船技師"
+ job_ad_shipwright_drone_desc:0 "軍用艦艇、民間船の建造を行う専門家"
+ mod_job_ad_shipwright_drone_add:0 "造船技師の職業枠"
+
+ job_ad_infrastructure_engineer_drone:0 "インフラ技師"
+ job_ad_infrastructure_engineer_drone_plural:0 "インフラ技師"
+ job_ad_infrastructure_engineer_drone_desc:0 "主に通信面でのインフラを整備、拡充を行う技術者"
+ mod_job_ad_infrastructure_engineer_drone_add:0 "インフラ技師の職業枠"
+
+ job_ad_commissioned_officer_drone:0 "将校"
+ job_ad_commissioned_officer_drone_plural:0 "将校"
+ job_ad_commissioned_officer_drone_desc:0 "軍において管理、運用、指揮等を行う中間管理職"
+ mod_job_ad_commissioned_officer_drone_add:0 "将校の職業枠"
+
+ job_ad_entrepreneur_drone:0 "起業家"
+ job_ad_entrepreneur_drone_plural:0 "起業家"
+ job_ad_entrepreneur_drone_desc:0 "新たな市場を開拓し、新たな事業を始める経済面の開拓者"
+ mod_job_ad_entrepreneur_drone_add:0 "起業家の職業枠"
+
+ job_ad_spaceport_mechanics_drone:0 "宇宙港管制官"
+ job_ad_spaceport_mechanics_drone_plural:0 "宇宙港管制官"
+ job_ad_spaceport_mechanics_drone_desc:0 "宇宙港を管理し、管制を行う専門的オペレーター"
+ mod_job_ad_spaceport_mechanics_drone_add:0 "宇宙港整備員の職業枠"
+
+ job_ad_general_officer_drone:0 "将官"
+ job_ad_general_officer_drone_plural:0 "将官"
+ job_ad_general_officer_drone_desc:0 "軍の指導的立場で、指揮をとる最高幹部"
+ mod_job_ad_general_officer_drone_add:0 "将官の職業枠"
 
 #######################
 #####    区域    ######

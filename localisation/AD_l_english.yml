@@ -6,99 +6,131 @@
 
  decision_ad_town_display:0 "City  |  Display"
  decision_ad_town_display_desc:0 ""
+ decision_ad_town_display_effects:0 ""
 
  decision_ad_undo_town_display:0 "City  |  Hidden"
  decision_ad_undo_town_display_desc:0 ""
+ decision_ad_undo_town_display_effects:0 ""
 
  decision_ad_large_scale_air_area_construction:0 "Construct Large Aerial Area"
- decision_ad_large_scale_air_area_construction_desc:0 "Implement the plan to build a floating city not only on the ground but also in the air."
+ decision_ad_large_scale_air_area_construction_desc:0 "Implement the plan to build a floating city not only on the ground but also in the air."truction_desc:0 "地上だけではなく空中に浮かぶ都市を築き上げる計画を実行する。"
+ decision_ad_large_scale_air_area_construction_effects:0 "§Y空中都市§!を2区域建設可能にする\n空中都市は£job_clerk£ 事務員の職業枠と£mod_trade_value_add£ 交易価値を生む\n$job_clerk_effect_desc$"
 
  decision_ad_undo_large_scale_air_area_construction:0 "Withdrawal of Large Aerial Area"
  decision_ad_undo_large_scale_air_area_construction_desc:0 ""
+ decision_ad_undo_large_scale_air_area_construction_effects:0 ""
 
  decision_ad_large_scale_water_area_construction:0 "Construct Large Underwater Area"
  decision_ad_large_scale_water_area_construction_desc:0 "Implement the plan to build cities underwater as well as on the ground."
+ decision_ad_large_scale_water_area_construction_effects:0 "§Y水中都市§!を5区域建設可能にする\n水中都市は£job_ad_water_farmer£ 水中農家の職業枠を生む\n$job_ad_water_farmer_effect_desc$"
 
  decision_ad_undo_large_scale_water_area_construction:0 "Withdrawal of Large Underwater Area"
  decision_ad_undo_large_scale_water_area_construction_desc:0 ""
+ decision_ad_undo_large_scale_water_area_construction_effects:0 ""
 
  decision_ad_large_scale_underground_area_construction:0 "Construct Large Underground Area"
  decision_ad_large_scale_underground_area_construction_desc:0 "Implement plans to build cities not only above ground but also below ground."
+ decision_ad_large_scale_underground_area_construction_effects:0 "§Y地下都市§!を5区域建設可能にする\n地下都市は£job_ad_facility_maintainer£ 施設維持業者の職業枠を生む\n$job_ad_facility_maintainer_effect_desc$"
 
  decision_ad_undo_large_scale_underground_area_construction:0 "Withdrawal of Large Underground Area"
  decision_ad_undo_large_scale_underground_area_construction_desc:0 ""
+ decision_ad_undo_large_scale_underground_area_construction_effects:0 ""
 
  decision_ad_solar_power_generation:0 "Infrastructure | Solar Power District"
  decision_ad_solar_power_generation_desc:0 "Maintain large scale solar panels on the planet to increase the amount of light reflected from the planet."
+ decision_ad_solar_power_generation_effects:0 "§Y太陽光発電§!を5区域建設可能にする\n太陽光発電は£job_technician£ 技術者の職業枠を生む\n$job_technician_effect_desc$"
 
  decision_ad_government_district:0 "Infrastructure | Government District"
  decision_ad_government_district_desc:0 "Implement the plan to develop a large governmental area."
+ decision_ad_government_district_effects:0 "§Y官庁街§!を5区域建設可能にする\n官庁街は£job_politician£ 政治家と£job_bureaucrat£ 官僚の職業枠を生む\n$job_politician_effect_desc$\n$job_bureaucrat_effect_desc$"
 
  decision_ad_university_district:0 "Infrastructure | University District"
  decision_ad_university_district_desc:0 "Implement the plan to develop a large university town."
+ decision_ad_university_district_effects:0 "§Y大学街§!を5区域建設可能にする\n大学街は£job_ad_professorship£ 教授職と£job_researcher£ 科学者の職業枠を生む\n$job_ad_professorship_effect_desc$\n$job_researcher_effect_desc$"
 
  decision_ad_residential_area:0 "Infrastructure | Residential Area"
  decision_ad_residential_area_desc:0 "Implement the plan to develop a large Residential Area."
+ decision_ad_residential_area_effects:0 "§Y住宅街§!を5区域建設可能にする\n住宅街は£job_clerk£ 事務員の職業枠を生む\n$job_clerk_effect_desc$"
 
  decision_ad_shipbuilding_arsenal:0 "Infrastructure | Shipyard"
  decision_ad_shipbuilding_arsenal_desc:0 "The plan to build a large shipbuilding arsenal will be implemented."
+ decision_ad_shipbuilding_arsenal_effects:0 "§Y造船工廠§!を5区域建設可能にする\n造船工廠は£job_ad_shipwright£ 造船技師の職業枠を生む\n$job_ad_shipwright_effect_desc$"
 
  decision_ad_communication_area:0 "Infrastructure | Communication Area"
  decision_ad_communication_area_desc:0 "Implement plans to build a large communications base."
+ decision_ad_communication_area_effects:0 "§Y§!を5区域建設可能にする\n通信区域は£job_ad_infrastructure_engineer£ インフラ技師の職業枠を生む\n$job_ad_infrastructure_engineer_effect_desc$"
 
  decision_ad_tourist_area:0 "Infrastructure | Tourist Area"
  decision_ad_tourist_area_desc:0 "Implement the plan to develop a large special tourism zone."
+ decision_ad_tourist_area_effects:0 "§Y通信区域§!を5区域建設可能にする\n観光区域は£job_entertainer£ エンターテイナーの職業枠を生む\n$job_entertainer_effect_desc$"
 
  decision_ad_defense_zone:0 "Infrastructure | Defence Area"
  decision_ad_defense_zone_desc:0 "We will implement plans to develop a large defence base."
+ decision_ad_defense_zone_effects:0 "§Y防衛区域§!を5区域建設可能にする\n防衛区域は£job_ad_general_officer£ 将官、£job_ad_commissioned_officer£ 将校、£job_soldier£ 兵士の職業枠を生む\n$job_ad_general_officer_effect_desc$\n$job_ad_commissioned_officer_effect_desc$\n$job_soldier_effect_desc$"
 
  decision_ad_conceptual_zone:0 "Infrastructure | Conceptual Zone"
  decision_ad_conceptual_zone_desc:0 "Implement the plan to develop a large special financial zone."
+ decision_ad_conceptual_zone_effects:0 "§Y構想特区§!を5区域建設可能にする\n構想特区は£job_merchant£ 豪商と£job_ad_entrepreneur£ 起業家の職業枠を生む\n$job_merchant_effect_desc$\n$job_ad_entrepreneur_effect_desc$"
 
  decision_ad_special_research_zone:0 "Infrastructure | Special Research Zone"
  decision_ad_special_research_zone_desc:0 "Implement the plan to develop a large special research zone."
+ decision_ad_special_research_zone_effects:0 "§Y研究特区§!を5区域建設可能にする\n研究特区は£job_head_researcher£ 科学総裁と£job_researcher£ 研究者の職業枠を生む\n$job_head_researcher_effect_desc$\n$job_researcher_effect_desc$"
 
  decision_ad_spaceport_area:0 "Infrastructure | Spaceport Area"
  decision_ad_spaceport_area_desc:0 "Implement plans to develop a large spaceport."
+ decision_ad_spaceport_area_effects:0 "§Y宇宙港区域§!を5区域建設可能にする\n宇宙港区域は£job_ad_spaceport_mechanics£ 宇宙港整備員の職業枠を生む\n$job_ad_spaceport_mechanics_effect_desc$"
 
  decision_ad_orbital_elevator:0 "Infrastructure | Orbital Lift"
  decision_ad_orbital_elevator_desc:0 "Implement the plan to build an orbital lift."
+ decision_ad_orbital_elevator_effects:0 "§Y軌道エレベーター§!を5区域建設可能にする\n軌道エレベーターは£job_ad_spaceport_mechanics£ 宇宙港整備員と£job_ad_shipwright£ 造船技師の職業枠、£mod_planet_amenities_add£ 快適度、£mod_trade_value_add£ 交易価値、£mod_pop_happiness£ 幸福度を生む\n$job_ad_spaceport_mechanics_effect_desc$\n$job_ad_shipwright_effect_desc$"
 
  decision_ad_undo_solar_power_generation:0 "Street Deletion | Solar Power District"
  decision_ad_undo_solar_power_generation_desc:0 "The reflected light is annoying. The removal of the solar panels begins."
+ decision_ad_undo_solar_power_generation_effects:0 ""
 
  decision_ad_undo_government_district:0 "Street Deletion | Government District"
  decision_ad_undo_government_district_desc:0 "Let's cut the civil service!  Start removing plots."
+ decision_ad_undo_government_district_effects:0 ""
 
  decision_ad_undo_university_district:0 "Street Deletion | University District"
  decision_ad_undo_university_district_desc:0 "Long live the mongrelism!  Start removing the plots."
+ decision_ad_undo_university_district_effects:0 ""
 
  decision_ad_undo_residential_area:0 "Street Deletion | Residential Area"
  decision_ad_undo_residential_area_desc:0 "There is no home for the poor. Start removing the plots."
+ decision_ad_undo_residential_area_effects:0 ""
 
  decision_ad_undo_shipbuilding_arsenal:0 "Street Deletion | Shipyard"
  decision_ad_undo_shipbuilding_arsenal_desc:0 "Unprofitable factories should be abolished. The demolition of the plots should be started."
+ decision_ad_undo_shipbuilding_arsenal_effects:0 ""
 
  decision_ad_undo_communication_area:0 "Street Deletion | Communication Area"
  decision_ad_undo_communication_area_desc:0 "Powerful radio waves may cause health problems. Start clearing the area."
+ decision_ad_undo_communication_area_effects:0 ""
 
  decision_ad_undo_tourist_area:0 "Street Deletion | Tourist Area"
  decision_ad_undo_tourist_area_desc:0 "Tourists may attract crime. Start removing the plots."
+ decision_ad_undo_tourist_area_effects:0 ""
 
  decision_ad_undo_defense_zone:0 "Street Deletion | Defence Area"
  decision_ad_undo_defense_zone_desc:0 "This area is targeted because of the army. We will start removing the plots."
+ decision_ad_undo_defense_zone_effects:0 ""
 
  decision_ad_undo_conceptual_zone:0 "Street Deletion | Conceptual Zone"
  decision_ad_undo_conceptual_zone_desc:0 "Those who work without sweat are unhealthy. The removal of the plots will begin."
+ decision_ad_undo_conceptual_zone_effects:0 ""
 
  decision_ad_undo_special_research_zone:0 "Street Deletion | Special Research Zone"
  decision_ad_undo_special_research_zone_desc:0 "We must move our hands more than our heads. Start removing the plots."
+ decision_ad_undo_special_research_zone_effects:0 ""
 
  decision_ad_undo_spaceport_area:0 "Street Deletion | Spaceport Area"
  decision_ad_undo_spaceport_area_desc:0 "Severe noise problems caused by the spaceport. Start to remove the compartments."
+ decision_ad_undo_spaceport_area_effects:0 ""
 
  decision_ad_undo_orbital_elevator:0 "Street Deletion | Orbital Lift"
  decision_ad_undo_orbital_elevator_desc:0 "What will you do if it falls?  Start removing the plots."
+ decision_ad_undo_orbital_elevator_effects:0 ""
 
 #######################
 #####    技術    ######
@@ -116,220 +148,74 @@
  large_scale_ground_construction_technology:0 "Large Scale Ground Construction Technology"
  large_scale_ground_construction_technology_desc:0 "Plans are drawn up for a large scale city built underground."
 
-#######################
-#####    仕事    ######
-#######################
-
- job_ad_clerk_drone:0 "clerk drone"
- job_ad_clerk_drone_plural:0 "clerk drone"
- job_ad_clerk_drone_desc:0 ""
- mod_job_ad_clerk_drone_add:0 "$job_ad_clerk_drone$ Jobs"
-
- job_ad_excavator:0 "Excavator"
- job_ad_excavator_plural:0 "Excavator"
- job_ad_excavator_desc:0 "Archaeologist, explorer or other researcher of ancient sites"
- mod_job_ad_excavator_add:0 "$job_ad_excavator$ Jobs"
-
- job_ad_excavator_drone:0 "Excavator"
- job_ad_excavator_drone_plural:0 "Excavator"
- job_ad_excavator_drone_desc:0 "Archaeologist, explorer or other researcher of ancient sites"
- mod_job_ad_excavator_drone_add:0 "$job_ad_excavator$ Jobs"
+#########################
+#####    労働者    ######
+#########################
 
  job_ad_water_farmer:0 "Underwater Farmer"
  job_ad_water_farmer_plural:0 "Underwater Farmer"
  job_ad_water_farmer_desc:0 "Farmer who produces and manages seaweed and other edible aquatic organisms"
+ job_ad_water_farmer_effect_desc:0 "£job_ad_water_farmer£ $job_ad_water_farmer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £food£ §Y$food$§!を産出する"
  mod_job_ad_water_farmer_add:0 "$job_ad_water_farmer$ Jobs"
-
- job_ad_water_farmer_drone:0 "Underwater Farmer"
- job_ad_water_farmer_drone_plural:0 "Underwater Farmer"
- job_ad_water_farmer_drone_desc:0 "Farmer who produces and manages seaweed and other edible aquatic organisms"
- mod_job_ad_water_farmer_drone_add:0 "$job_ad_water_farmer$ Jobs"
 
  job_ad_facility_maintainer:0 "Facility Maintainer"
  job_ad_facility_maintainer_plural:0 "Facility Maintainer"
  job_ad_facility_maintainer_desc:0 "Engineer for maintenance and expansion of facilities and cities"
+ job_ad_facility_maintainer_effect_desc:0 "£job_ad_facility_maintainer£ $job_ad_facility_maintainer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出し、 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!増加させる"
  mod_job_ad_facility_maintainer_add:0 "$job_ad_facility_maintainer$ Jobs"
-
- job_ad_facility_maintainer_drone:0 "Facility Maintainer"
- job_ad_facility_maintainer_drone_plural:0 "Facility Maintainer"
- job_ad_facility_maintainer_drone_desc:0 "Engineer for maintenance and expansion of facilities and cities"
- mod_job_ad_facility_maintainer_drone_add:0 "$job_ad_facility_maintainer$ Jobs"
 
  job_ad_geothermal_technician:0 "Geothermal Engineer"
  job_ad_geothermal_technician_plural:0 "Geothermal Engineer"
  job_ad_geothermal_technician_desc:0 "Engineer who manipulates geothermal energy and converts it into energy."
+ job_ad_geothermal_technician_effect_desc:0 "£job_ad_geothermal_technician£ $job_ad_geothermal_technician_plural$は、 £energy£ §Y$energy$§!を産出する"
  mod_job_ad_geothermal_technician_add:0 "$job_ad_geothermal_technician$ Jobs"
-
- job_ad_geothermal_technician_drone:0 "Geothermal Engineer"
- job_ad_geothermal_technician_drone_plural:0 "Geothermal Engineer"
- job_ad_geothermal_technician_drone_desc:0 "Engineer who manipulates geothermal energy and converts it into energy."
- mod_job_ad_geothermal_technician_drone_add:0 "$job_ad_geothermal_technician$ Jobs"
 
  job_ad_atomic_engineer:0 "Atomic Engineer"
  job_ad_atomic_engineer_plural:0 "Atomic Engineer"
  job_ad_atomic_engineer_desc:0 "Engineer who stabilises natural nuclear reactors and converts them into energy"
+ job_ad_atomic_engineer_effect_desc:0 "£job_ad_atomic_engineer£ $job_ad_atomic_engineer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £energy£ §Y$energy$§!を産出する"
  mod_job_ad_atomic_engineer_add:0 "$job_ad_atomic_engineer$ Jobs"
-
- job_ad_atomic_engineer_drone:0 "Atomic Engineer"
- job_ad_atomic_engineer_drone_plural:0 "Atomic Engineer"
- job_ad_atomic_engineer_drone_desc:0 "Engineer who stabilises natural nuclear reactors and converts them into energy"
- mod_job_ad_atomic_engineer_drone_add:0 "$job_ad_atomic_engineer$ Jobs"
 
  job_ad_underwater_miner:0 "Underwater Miner"
  job_ad_underwater_miner_plural:0 "Underwater Miner"
  job_ad_underwater_miner_desc:0 "Engineer who mines in dense veins produced under high pressure"
+ job_ad_underwater_miner_effect_desc:0 "£job_ad_underwater_miner£ $job_ad_underwater_miner_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出する"
  mod_job_ad_underwater_miner_add:0 "$job_ad_underwater_miner$ Jobs"
-
- job_ad_underwater_miner_drone:0 "Underwater Miner"
- job_ad_underwater_miner_drone_plural:0 "Underwater Miner"
- job_ad_underwater_miner_drone_desc:0 "Engineer who mines in dense veins produced under high pressure"
- mod_job_ad_underwater_miner_drone_add:0 "$job_ad_underwater_miner$ Jobs"
 
  job_ad_space_miner:0 "Space Miner"
  job_ad_space_miner_plural:0 "Space Miner"
  job_ad_space_miner_desc:0 "Engineer who extracts minerals found in orbit"
+ job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出する"
  mod_job_ad_space_miner_add:0 "$job_ad_space_miner$ Jobs"
-
- job_ad_space_miner_drone:0 "Space Miner"
- job_ad_space_miner_drone_plural:0 "Space Miner"
- job_ad_space_miner_drone_desc:0 "Engineer who extracts minerals found in orbit"
- mod_job_ad_space_miner_drone_add:0 "$job_ad_space_miner$ Jobs"
-
- job_ad_efficient_miner:0 "Efficient Miner"
- job_ad_efficient_miner_plural:0 "Efficient Miner"
- job_ad_efficient_miner_desc:0 "Worker trained to mine high quality ore with as little waste as possible"
- mod_job_ad_efficient_miner_add:0 "$job_ad_efficient_miner$ Jobs"
-
- job_ad_efficient_miner_drone:0 "Efficient Miner"
- job_ad_efficient_miner_drone_plural:0 "Efficient Miner"
- job_ad_efficient_miner_drone_desc:0 "Worker trained to mine high quality ore with as little waste as possible"
- mod_job_ad_efficient_miner_drone_add:0 "$job_ad_efficient_miner$ Jobs"
 
  job_ad_low_efficiency_miner:0 "Low Efficiency Miner"
  job_ad_low_efficiency_miner_plural:0 "Low Efficiency Miner"
  job_ad_low_efficiency_miner_desc:0 "Worker trained to mine large quantities of low-quality ore."
+ job_ad_low_efficiency_miner_effect_desc:0 "£job_ad_low_efficiency_miner£ $job_ad_low_efficiency_miner_plural$は、 £minerals£ §Y$minerals$§!を産出する"
  mod_job_ad_low_efficiency_miner_add:0 "$job_ad_low_efficiency_miner$ Jobs"
-
- job_ad_low_efficiency_miner_drone:0 "Low Efficiency Miner"
- job_ad_low_efficiency_miner_drone_plural:0 "Low Efficiency Miner"
- job_ad_low_efficiency_miner_drone_desc:0 "Worker trained to mine large quantities of low-quality ore."
- mod_job_ad_low_efficiency_miner_drone_add:0 "$job_ad_low_efficiency_miner$ Jobs"
 
  job_ad_fungus_farmer:0 "Fungus Farmer"
  job_ad_fungus_farmer_plural:0 "Fungus Farmer"
  job_ad_fungus_farmer_desc:0 "Worker producing mushrooms, pungent edible fungi, etc."
+ job_ad_fungus_farmer_effect_desc:0 "£job_ad_fungus_farmer£ $job_ad_fungus_farmer_plural$は、 £food£ §Y$food$§!を産出する"
  mod_job_ad_fungus_farmer_add:0 "$job_ad_fungus_farmer$ Jobs"
-
- job_ad_fungus_farmer_drone:0 "Fungus Farmer"
- job_ad_fungus_farmer_drone_plural:0 "Fungus Farmer"
- job_ad_fungus_farmer_drone_desc:0 "Worker producing mushrooms, pungent edible fungi, etc."
- mod_job_ad_fungus_farmer_drone_add:0 "$job_ad_fungus_farmer$ Jobs"
 
  job_ad_dairy_farmer:0 "Dairy Farmer"
  job_ad_dairy_farmer_plural:0 "Dairy Farmer"
  job_ad_dairy_farmer_desc:0 "Workers who produce mainly meat, dairy products, eggs and other sources of protein."
+ job_ad_dairy_farmer_effect_desc:0 "£ad_dairy_farmer£ $ad_dairy_farmer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £food£ §Y$food$§!を産出する"
  mod_job_ad_dairy_farmer_add:0 "$job_ad_dairy_farmer$ Jobs"
-
- job_ad_dairy_farmer_drone:0 "Dairy Farmer"
- job_ad_dairy_farmer_drone_plural:0 "Dairy Farmer"
- job_ad_dairy_farmer_drone_desc:0 "Workers who produce mainly meat, dairy products, eggs and other sources of protein."
- mod_job_ad_dairy_farmer_drone_add:0 "$job_ad_dairy_farmer$ Jobs"
 
  job_ad_large_scale_farmer:0 "Large Scale Farmer"
  job_ad_large_scale_farmer_plural:0 "Large Scale Farmer"
  job_ad_large_scale_farmer_desc:0 "Large scale plantation farmer with cheap mass settlement"
+ job_ad_large_scale_farmer_effect_desc:0 "£job_ad_large_scale_farmer£ $job_ad_large_scale_farmer_plural$は、 £food£ §Y$food$§!を産出する"
  mod_job_ad_large_scale_farmer_add:0 "$job_ad_large_scale_farmer$ Jobs"
-
- job_ad_large_scale_farmer_drone:0 "Large Scale Farmer"
- job_ad_large_scale_farmer_drone_plural:0 "Large Scale Farmer"
- job_ad_large_scale_farmer_drone_desc:0 "Large scale plantation farmer with cheap mass settlement"
- mod_job_ad_large_scale_farmer_drone_add:0 "$job_ad_large_scale_farmer$ Jobs"
-
- job_ad_professorship:0 "Professorship"
- job_ad_professorship_plural:0 "Professorship"
- job_ad_professorship_desc:0 "Expert who teaches intellectual workers and does research himself"
- mod_job_ad_professorship_add:0 "$job_ad_professorship$ Jobs"
-
- job_ad_professorship_drone:0 "Professorship"
- job_ad_professorship_drone_plural:0 "Professorship"
- job_ad_professorship_drone_desc:0 "Expert who teaches intellectual workers and does research himself"
- mod_job_ad_professorship_drone_add:0 "$job_ad_professorship$ Jobs"
-
- job_ad_data_minor:0 "Data Minor"
- job_ad_data_minor_plural:0 "Data Minor"
- job_ad_data_minor_desc:0 "Expert in exploring past knowledge, new insights and rediscovering the past."
- mod_job_ad_data_minor_add:0 "$job_ad_data_minor$ Jobs"
-
- job_ad_data_minor_drone:0 "Data Minor"
- job_ad_data_minor_drone_plural:0 "Data Minor"
- job_ad_data_minor_drone_desc:0 "Expert in exploring past knowledge, new insights and rediscovering the past."
- mod_job_ad_data_minor_drone_add:0 "$job_ad_data_minor$ Jobs"
-
- job_ad_shipwright:0 "Shipwright"
- job_ad_shipwright_plural:0 "Shipwright"
- job_ad_shipwright_desc:0 "Specialist in the construction of military and civilian ships."
- mod_job_ad_shipwright_add:0 "$job_ad_shipwright$ Jobs"
-
- job_ad_shipwright_drone:0 "Shipwright"
- job_ad_shipwright_drone_plural:0 "Shipwright"
- job_ad_shipwright_drone_desc:0 "Specialist in the construction of military and civilian ships."
- mod_job_ad_shipwright_drone_add:0 "$job_ad_shipwright$ Jobs"
-
- job_ad_infrastructure_engineer:0 "Infrastructure Engineer"
- job_ad_infrastructure_engineer_plural:0 "Infrastructure Engineer"
- job_ad_infrastructure_engineer_desc:0 "Engineer who develops and expands the infrastructure, mainly in terms of telecommunications."
- mod_job_ad_infrastructure_engineer_add:0 "$job_ad_infrastructure_engineer$ Jobs"
-
- job_ad_infrastructure_engineer_drone:0 "Infrastructure Engineer"
- job_ad_infrastructure_engineer_drone_plural:0 "Infrastructure Engineer"
- job_ad_infrastructure_engineer_drone_desc:0 "Engineer who develops and expands the infrastructure, mainly in terms of telecommunications."
- mod_job_ad_infrastructure_engineer_drone_add:0 "$job_ad_infrastructure_engineer$ Jobs"
-
- job_ad_commissioned_officer:0 "Commissioned Officer"
- job_ad_commissioned_officer_plural:0 "Commissioned Officer"
- job_ad_commissioned_officer_desc:0 "middle management position in the armed forces performing administrative, operational, command and other functions"
- mod_job_ad_commissioned_officer_add:0 "$job_ad_commissioned_officer$ Jobs"
- mod_job_ad_commissioned_officer_per_pop:0 "§G+1§! $job_ad_commissioned_officer$ Job per $VALUE$ Pops"
- mod_job_ad_commissioned_officer_per_pop_short:0 "\n§G+1§! £mod_job_ad_commissioned_officer_add£ per $VALUE$ £pop£"
-
- job_ad_commissioned_officer_drone:0 "Commissioned Officer"
- job_ad_commissioned_officer_drone_plural:0 "Commissioned Officer"
- job_ad_commissioned_officer_drone_desc:0 "middle management position in the armed forces performing administrative, operational, command and other functions"
- mod_job_ad_commissioned_officer_drone_add:0 "$job_ad_commissioned_officer$ Jobs"
-
- job_ad_general_officer:0 "General Officer"
- job_ad_general_officer_plural:0 "General Officer"
- job_ad_general_officer_desc:0 "The highest officer in the military leadership and command."
- mod_job_ad_general_officer_add:0 "$job_ad_general_officer$ Jobs"
-
- job_ad_general_officer_drone:0 "General Officer"
- job_ad_general_officer_drone_plural:0 "General Officer"
- job_ad_general_officer_drone_desc:0 "The highest officer in the military leadership and command."
- mod_job_ad_general_officer_drone_add:0 "$job_ad_general_officer$ Jobs"
-
- job_ad_entrepreneur:0 "Entrepreneur"
- job_ad_entrepreneur_plural:0 "Entrepreneur"
- job_ad_entrepreneur_desc:0 "Economic pioneer who opens up new markets and starts new businesses."
- mod_job_ad_entrepreneur_add:0 "$job_ad_entrepreneur$ Jobs"
-
- job_ad_entrepreneur_drone:0 "Entrepreneur"
- job_ad_entrepreneur_drone_plural:0 "Entrepreneur"
- job_ad_entrepreneur_drone_desc:0 "Economic pioneer who opens up new markets and starts new businesses."
- mod_job_ad_entrepreneur_drone_add:0 "$job_ad_entrepreneur$ Jobs"
-
- job_ad_spaceport_mechanics:0 "Spaceport Control Officer"
- job_ad_spaceport_mechanics_plural:0 "Spaceport Control Officer"
- job_ad_spaceport_mechanics_desc:0 "Specialist operator who manages and controls a spaceport."
- mod_job_ad_spaceport_mechanics_add:0 "$job_ad_spaceport_mechanics$ Jobs"
-
- job_ad_spaceport_mechanics_drone:0 "Spaceport Control Officer"
- job_ad_spaceport_mechanics_drone_plural:0 "Spaceport Control Officer"
- job_ad_spaceport_mechanics_drone_desc:0 "Specialist operator who manages and controls a spaceport."
- mod_job_ad_spaceport_mechanics_drone_add:0 "$job_ad_spaceport_mechanics$ Jobs"
 
  job_ad_servicer:0 "Service Occupation"
  job_ad_servicer_plural:0 "Service Occupation"
  job_ad_servicer_desc:0 "Service providers called essential workers, such as nursing, cleaning, driving and transport."
+ job_ad_servicer_effect_desc:0 "£job_ad_servicer£ $job_ad_servicer_plural$は、 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!、 £mod_pop_happiness£ §Y$MOD_POP_HAPPINESS$§!を増加させる"
  mod_job_ad_servicer_add:0 "$job_ad_servicer$ Jobs"
  mod_job_ad_servicer_per_pop:0 "§G+1§! $job_ad_servicer$ Job per $VALUE$ Pops"
  mod_job_ad_servicer_per_pop_short:0 "\n§G+1§! £mod_job_ad_servicer_add£ per $VALUE$ £pop£"
@@ -337,44 +223,235 @@
  job_ad_forcrd_larbor:0 "Forced Labourer"
  job_ad_forcrd_larbor_plural:0 "Forced Labourer"
  job_ad_forcrd_larbor_desc:0 "Citizenship holders forced to work for a variety of reasons, regardless of their intentions."
+ job_ad_forcrd_larbor_effect_desc:0 "£ad_forcrd_larbor£ $ad_forcrd_larbor_plural$は、 £food£ §Y$food$§!、 £minerals£ §Y$minerals$§!、 £consumer_goods£ §Y$consumer_goods$§!を産出する"
  mod_job_ad_forcrd_larbor_add:0 "$job_ad_forcrd_larbor$ Jobs"
  mod_job_ad_forcrd_larbor_per_pop:0 "§G+1§! $job_ad_forcrd_larbor$ Job per $VALUE$ Pops"
  mod_job_ad_forcrd_larbor_per_pop_short:0 "\n§G+1§! £mod_job_ad_forcrd_larbor_add£ per $VALUE$ £pop£"
 
+#########################
+#####    専門職    ######
+#########################
+
+ job_ad_efficient_miner:0 "Efficient Miner"
+ job_ad_efficient_miner_plural:0 "Efficient Miner"
+ job_ad_efficient_miner_desc:0 "Worker trained to mine high quality ore with as little waste as possible"
+ job_ad_efficient_miner_effect_desc:0 "£job_ad_efficient_miner£ $job_ad_efficient_miner_plural$は、 £minerals£ §Y$minerals$§!を産出する"
+ mod_job_ad_efficient_miner_add:0 "$job_ad_efficient_miner$ Jobs"
+
+ job_ad_data_minor:0 "Data Minor"
+ job_ad_data_minor_plural:0 "Data Minor"
+ job_ad_data_minor_desc:0 "Expert in exploring past knowledge, new insights and rediscovering the past."
+ job_ad_data_minor_effect_desc:0 "£job_ad_data_minor£ $job_ad_data_minor_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £unity£ §Y$unity$§!と £physics£ £society£ £engineering£ §Y研究力§!を産出し、 £mod_planet_researchers_produces_mult£ §Y$mod_planet_researchers_produces_mult$§!を増加させる"
+ mod_job_ad_data_minor_add:0 "$job_ad_data_minor$ Jobs"
+
+ job_ad_shipwright:0 "Shipwright"
+ job_ad_shipwright_plural:0 "Shipwright"
+ job_ad_shipwright_desc:0 "Specialist in the construction of military and civilian ships."
+ job_ad_shipwright_effect_desc:0 "£job_ad_shipwright£ $job_ad_shipwright_plural$は、 £consumer_goods£ §Y$consumer_goods$§!と £alloys£ §Y$alloys$§!を消費して £mod_starbase_shipyard_build_speed_mult£ §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§!と £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を産出する"
+ mod_job_ad_shipwright_add:0 "$job_ad_shipwright$ Jobs"
+
+ job_ad_infrastructure_engineer:0 "Infrastructure Engineer"
+ job_ad_infrastructure_engineer_plural:0 "Infrastructure Engineer"
+ job_ad_infrastructure_engineer_desc:0 "Engineer who develops and expands the infrastructure, mainly in terms of telecommunications."
+ job_ad_infrastructure_engineer_effect_desc:0 "£job_ad_infrastructure_engineer£ $job_ad_infrastructure_engineer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_planet_jobs_worker_produces_mult£ §Y$mod_planet_jobs_worker_produces_mult$§!を産出する"
+ mod_job_ad_infrastructure_engineer_add:0 "$job_ad_infrastructure_engineer$ Jobs"
+
+ job_ad_commissioned_officer:0 "Commissioned Officer"
+ job_ad_commissioned_officer_plural:0 "Commissioned Officer"
+ job_ad_commissioned_officer_desc:0 "middle management position in the armed forces performing administrative, operational, command and other functions"
+ job_ad_commissioned_officer_effect_desc:0 "£job_ad_commissioned_officer£ $job_ad_commissioned_officer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して  £defense_army£ §Y$defense_army$§!を編成し、 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
+ mod_job_ad_commissioned_officer_add:0 "$job_ad_commissioned_officer$ Jobs"
+ mod_job_ad_commissioned_officer_per_pop:0 "§G+1§! $job_ad_commissioned_officer$ Job per $VALUE$ Pops"
+ mod_job_ad_commissioned_officer_per_pop_short:0 "\n§G+1§! £mod_job_ad_commissioned_officer_add£ per $VALUE$ £pop£"
+
+ job_ad_entrepreneur:0 "Entrepreneur"
+ job_ad_entrepreneur_plural:0 "Entrepreneur"
+ job_ad_entrepreneur_desc:0 "Economic pioneer who opens up new markets and starts new businesses."
+ job_ad_entrepreneur_effect_desc:0 "£job_ad_entrepreneur£ $job_ad_entrepreneur_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_trade_value_add£ §Y$TRADE_VALUE$§!、£society£ §Y$society_research$§!を産出し、£mod_trade_value_add£ §Y$TRADE_VALUE$§!を増加させる"
+ mod_job_ad_entrepreneur_add:0 "$job_ad_entrepreneur$ Jobs"
+
+ job_ad_spaceport_mechanics:0 "Spaceport Control Officer"
+ job_ad_spaceport_mechanics_plural:0 "Spaceport Control Officer"
+ job_ad_spaceport_mechanics_desc:0 "Specialist operator who manages and controls a spaceport."
+ job_ad_spaceport_mechanics_effect_desc:0 "£job_ad_spaceport_mechanics£ $job_ad_spaceport_mechanics_plural$は、 £consumer_goods£ §Y$consumer_goods$§! £alloys£ §Y$alloys$§!を消費して £engineering£ §Y$engineering_research$§!を産出し、£mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
+ mod_job_ad_spaceport_mechanics_add:0 "$job_ad_spaceport_mechanics$ Jobs"
+
+ job_ad_professorship:0 "Professorship"
+ job_ad_professorship_plural:0 "Professorship"
+ job_ad_professorship_desc:0 "Expert who teaches intellectual workers and does research himself"
+ job_ad_professorship_effect_desc:0 "£job_ad_professorship£ $job_ad_professorship_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_planet_jobs_specialist_produces_mult£ §Y$mod_planet_jobs_specialist_produces_mult$§!を増加させる"
+ mod_job_ad_professorship_add:0 "$job_ad_professorship$ Jobs"
+
+ job_ad_excavator:0 "Excavator"
+ job_ad_excavator_plural:0 "Excavator"
+ job_ad_excavator_desc:0 "Archaeologist, explorer or other researcher of ancient sites"
+ job_ad_excavator_effect_desc:0 "£job_ad_excavator£ $job_ad_excavator_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minor_artifacts£ §Y$minor_artifacts$§!を産出する"
+ mod_job_ad_excavator_add:0 "$job_ad_excavator$ Jobs"
+
  job_ad_banker:0 "Banker"
  job_ad_banker_plural:0 "Banker"
  job_ad_banker_desc:0 "A financial expert, specializing in investments, yields, etc."
+ job_ad_banker_effect_desc:0 "£job_ad_banker£ $job_ad_banker_plural$は、 £energy£ §Y$energy$§!と £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!を産出し、 £mod_trade_value_add£ §Y$TRADE_VALUE$§!を増加させる"
  mod_job_ad_banker_add:0 "$job_ad_banker$ Jobs"
 
  job_ad_lawyer:0 "Lawyer"
  job_ad_lawyer_plural:0 "Lawyer"
  job_ad_lawyer_desc:0 "A professional with a thorough knowledge of law, politics and society. This includes a wide range of positions such as lawyers, judicial scriveners and prosecutors."
+ job_ad_lawyer_effect_desc:0 "£job_ad_lawyer£ $job_ad_lawyer_plural$は £society£ §Y$society_research$§!を産出し、 £crime£ §Y$PLANET_CRIME_TITLE$§!を減らし、  £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!を増加させる"
  mod_job_ad_lawyer_add:0 "$job_ad_lawyer$ Jobs"
 
  job_ad_journalist:0 "Journalist"
  job_ad_journalist_plural:0 "Journalist"
  job_ad_journalist_desc:0 "A professional who gathers the truth (which they believe, or would have us believe) and has a great influence on the public."
+ job_ad_journalist_effect_desc:0 "££ $_plural$は、 ££ §Y$$§!を消費して £unity£ §Y$unity$§!と £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!を産出し、 £mod_pop_cat_worker_political_power£ §Y$mod_pop_cat_worker_political_power$§!を増加させる"
  mod_job_ad_journalist_add:0 "$job_ad_journalist$ Jobs"
 
  job_ad_librarian:0 "Data Librarian"
  job_ad_librarian_plural:0 "Data Librarian"
  job_ad_librarian_desc:0 "Keeper of knowledge who stores and manages tangible and intangible information media and information itself."
+ job_ad_librarian_effect_desc:0 "£job_ad_librarian£ $job_ad_librarian_plural$は、  £unity£ §Y$unity$§!と £physics£ £society£ £engineering£ §Y研究力§!を産出する"
  mod_job_ad_librarian_add:0 "$job_ad_librarian$ Jobs"
 
  job_ad_psp:0 "Public Security Officer"
  job_ad_psp_plural:0 "Public Security Officer"
  job_ad_psp_desc:0 "A security official who monitors and exposes spies, violent groups and terrorists in the interests of national security."
+ job_ad_psp_effect_desc:0 "£job_ad_psp£ $job_ad_psp_plural$は、 £mod_intel_encryption_add£ §Y$intel_encryption_add$§!を産出し、 £crime£ §Y$PLANET_CRIME_TITLE$§!を減らし、  £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!を増加させる"
  mod_job_ad_psp_add:0 "$job_ad_psp$ Jobs"
+
+#########################
+#####    統治者    ######
+#########################
+
+ job_ad_general_officer:0 "General Officer"
+ job_ad_general_officer_plural:0 "General Officer"
+ job_ad_general_officer_desc:0 "The highest officer in the military leadership and command."
+ job_ad_general_officer_effect_desc:0 "£job_ad_general_officer£ $job_ad_general_officer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して  £defense_army£ §Y$defense_army$§!を編成し、 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
+ mod_job_ad_general_officer_add:0 "$job_ad_general_officer$ Jobs"
 
  job_ad_ministor:0 "Aides"
  job_ad_ministor_plural:0 "Aides"
  job_ad_ministor_desc:0 "Ministers, aides, chamberlains and think-tank staff who support the country's top brass because of their knowledge, background and loyalty."
+ job_ad_ministor_effect_desc:0 "£job_ad_ministor£ $job_ad_ministor_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £influence£ §Y$influence$§!を産出する"
  mod_job_ad_ministor_add:0 "$job_ad_ministor$ Jobs"
 
  job_ad_congressman:0 "Advocate"
  job_ad_congressman_plural:0 "Advocate"
  job_ad_congressman_desc:0 "People who represent the views of society and citizens, such as elected representatives, high-profile social activists and retired heroic military personnel, and who strongly lobby the government."
+ job_ad_congressman_effect_desc:0 "£job_ad_congressman£ $job_ad_congressman_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_pop_happiness£ §Y$MOD_POP_HAPPINESS$§!、 £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!を増加させる"
  mod_job_ad_congressman_add:0 "$job_ad_congressman$ Jobs"
+
+##############################
+#####    雑役ドローン    ######
+##############################
+
+ job_ad_clerk_drone:0 "clerk drone"
+ job_ad_clerk_drone_plural:0 "clerk drone"
+ job_ad_clerk_drone_desc:0 ""
+ mod_job_ad_clerk_drone_add:0 "$job_ad_clerk_drone$ Jobs"
+
+ job_ad_water_farmer_drone:0 "Underwater Farmer"
+ job_ad_water_farmer_drone_plural:0 "Underwater Farmer"
+ job_ad_water_farmer_drone_desc:0 "Farmer who produces and manages seaweed and other edible aquatic organisms"
+ mod_job_ad_water_farmer_drone_add:0 "$job_ad_water_farmer$ Jobs"
+
+ job_ad_facility_maintainer_drone:0 "Facility Maintainer"
+ job_ad_facility_maintainer_drone_plural:0 "Facility Maintainer"
+ job_ad_facility_maintainer_drone_desc:0 "Engineer for maintenance and expansion of facilities and cities"
+ mod_job_ad_facility_maintainer_drone_add:0 "$job_ad_facility_maintainer$ Jobs"
+
+ job_ad_geothermal_technician_drone:0 "Geothermal Engineer"
+ job_ad_geothermal_technician_drone_plural:0 "Geothermal Engineer"
+ job_ad_geothermal_technician_drone_desc:0 "Engineer who manipulates geothermal energy and converts it into energy."
+ mod_job_ad_geothermal_technician_drone_add:0 "$job_ad_geothermal_technician$ Jobs"
+
+ job_ad_atomic_engineer_drone:0 "Atomic Engineer"
+ job_ad_atomic_engineer_drone_plural:0 "Atomic Engineer"
+ job_ad_atomic_engineer_drone_desc:0 "Engineer who stabilises natural nuclear reactors and converts them into energy"
+ mod_job_ad_atomic_engineer_drone_add:0 "$job_ad_atomic_engineer$ Jobs"
+
+ job_ad_underwater_miner_drone:0 "Underwater Miner"
+ job_ad_underwater_miner_drone_plural:0 "Underwater Miner"
+ job_ad_underwater_miner_drone_desc:0 "Engineer who mines in dense veins produced under high pressure"
+ mod_job_ad_underwater_miner_drone_add:0 "$job_ad_underwater_miner$ Jobs"
+
+ job_ad_space_miner_drone:0 "Space Miner"
+ job_ad_space_miner_drone_plural:0 "Space Miner"
+ job_ad_space_miner_drone_desc:0 "Engineer who extracts minerals found in orbit"
+ mod_job_ad_space_miner_drone_add:0 "$job_ad_space_miner$ Jobs"
+
+ job_ad_low_efficiency_miner_drone:0 "Low Efficiency Miner"
+ job_ad_low_efficiency_miner_drone_plural:0 "Low Efficiency Miner"
+ job_ad_low_efficiency_miner_drone_desc:0 "Worker trained to mine large quantities of low-quality ore."
+ mod_job_ad_low_efficiency_miner_drone_add:0 "$job_ad_low_efficiency_miner$ Jobs"
+
+ job_ad_fungus_farmer_drone:0 "Fungus Farmer"
+ job_ad_fungus_farmer_drone_plural:0 "Fungus Farmer"
+ job_ad_fungus_farmer_drone_desc:0 "Worker producing mushrooms, pungent edible fungi, etc."
+ mod_job_ad_fungus_farmer_drone_add:0 "$job_ad_fungus_farmer$ Jobs"
+
+ job_ad_dairy_farmer_drone:0 "Dairy Farmer"
+ job_ad_dairy_farmer_drone_plural:0 "Dairy Farmer"
+ job_ad_dairy_farmer_drone_desc:0 "Workers who produce mainly meat, dairy products, eggs and other sources of protein."
+ mod_job_ad_dairy_farmer_drone_add:0 "$job_ad_dairy_farmer$ Jobs"
+
+ job_ad_large_scale_farmer_drone:0 "Large Scale Farmer"
+ job_ad_large_scale_farmer_drone_plural:0 "Large Scale Farmer"
+ job_ad_large_scale_farmer_drone_desc:0 "Large scale plantation farmer with cheap mass settlement"
+ mod_job_ad_large_scale_farmer_drone_add:0 "$job_ad_large_scale_farmer$ Jobs"
+
+##############################
+#####    複雑ドローン    ######
+##############################
+
+ job_ad_efficient_miner_drone:0 "Efficient Miner"
+ job_ad_efficient_miner_drone_plural:0 "Efficient Miner"
+ job_ad_efficient_miner_drone_desc:0 "Worker trained to mine high quality ore with as little waste as possible"
+ mod_job_ad_efficient_miner_drone_add:0 "$job_ad_efficient_miner$ Jobs"
+
+ job_ad_excavator_drone:0 "Excavator"
+ job_ad_excavator_drone_plural:0 "Excavator"
+ job_ad_excavator_drone_desc:0 "Archaeologist, explorer or other researcher of ancient sites"
+ mod_job_ad_excavator_drone_add:0 "$job_ad_excavator$ Jobs"
+
+ job_ad_professorship_drone:0 "Professorship"
+ job_ad_professorship_drone_plural:0 "Professorship"
+ job_ad_professorship_drone_desc:0 "Expert who teaches intellectual workers and does research himself"
+ mod_job_ad_professorship_drone_add:0 "$job_ad_professorship$ Jobs"
+
+ job_ad_data_minor_drone:0 "Data Minor"
+ job_ad_data_minor_drone_plural:0 "Data Minor"
+ job_ad_data_minor_drone_desc:0 "Expert in exploring past knowledge, new insights and rediscovering the past."
+ mod_job_ad_data_minor_drone_add:0 "$job_ad_data_minor$ Jobs"
+
+ job_ad_shipwright_drone:0 "Shipwright"
+ job_ad_shipwright_drone_plural:0 "Shipwright"
+ job_ad_shipwright_drone_desc:0 "Specialist in the construction of military and civilian ships."
+ mod_job_ad_shipwright_drone_add:0 "$job_ad_shipwright$ Jobs"
+
+ job_ad_infrastructure_engineer_drone:0 "Infrastructure Engineer"
+ job_ad_infrastructure_engineer_drone_plural:0 "Infrastructure Engineer"
+ job_ad_infrastructure_engineer_drone_desc:0 "Engineer who develops and expands the infrastructure, mainly in terms of telecommunications."
+ mod_job_ad_infrastructure_engineer_drone_add:0 "$job_ad_infrastructure_engineer$ Jobs"
+
+ job_ad_commissioned_officer_drone:0 "Commissioned Officer"
+ job_ad_commissioned_officer_drone_plural:0 "Commissioned Officer"
+ job_ad_commissioned_officer_drone_desc:0 "middle management position in the armed forces performing administrative, operational, command and other functions"
+ mod_job_ad_commissioned_officer_drone_add:0 "$job_ad_commissioned_officer$ Jobs"
+
+ job_ad_entrepreneur_drone:0 "Entrepreneur"
+ job_ad_entrepreneur_drone_plural:0 "Entrepreneur"
+ job_ad_entrepreneur_drone_desc:0 "Economic pioneer who opens up new markets and starts new businesses."
+ mod_job_ad_entrepreneur_drone_add:0 "$job_ad_entrepreneur$ Jobs"
+
+ job_ad_spaceport_mechanics_drone:0 "Spaceport Control Officer"
+ job_ad_spaceport_mechanics_drone_plural:0 "Spaceport Control Officer"
+ job_ad_spaceport_mechanics_drone_desc:0 "Specialist operator who manages and controls a spaceport."
+ mod_job_ad_spaceport_mechanics_drone_add:0 "$job_ad_spaceport_mechanics$ Jobs"
+
+ job_ad_general_officer_drone:0 "General Officer"
+ job_ad_general_officer_drone_plural:0 "General Officer"
+ job_ad_general_officer_drone_desc:0 "The highest officer in the military leadership and command."
+ mod_job_ad_general_officer_drone_add:0 "$job_ad_general_officer$ Jobs"
 
 #######################
 #####    区域    ######
@@ -880,6 +957,12 @@
 
  building_zosen_factry:0 "Illegal Shipyard"
  building_zosen_factry_desc:0 "Ship permits are expensive, so why not just get them without a permit?"
+
+ building_ad_galactic_stadium:0 "Galactic Stadium"
+ building_ad_galactic_stadium_desc:0 "Facilities that use large areas of land for large-scale ceremonies and athletic competitions"
+
+ building_ad_public_gambling_den:0 "Public Gambling Den"
+ building_ad_public_gambling_den_desc:0 "Entertainment facilities where gambling is conducted under the control of state or local authorities."
 
 #######################
 #####    陸軍    ######
