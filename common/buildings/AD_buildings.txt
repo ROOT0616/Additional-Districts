@@ -2880,7 +2880,7 @@ building_ad_public_gambling_den = {
 	}
 }
 
-# building_ad_Anti_s_misile  対宙ミサイル施設	軌道上の艦隊に与ダメージ			将校+1、兵士+1					(軌道上に展開する敵艦隊を攻撃する施設)							維持:エネ2、合金2、揮発粉1		建設:鉱物300、合金200、揮発粉200、時間450
+# 対宙ミサイル施設	軌道上の艦隊に与ダメージ			将校+1、兵士+1					(軌道上に展開する敵艦隊を攻撃する施設)							維持:エネ2、合金2、揮発粉1		建設:鉱物300、合金200、揮発粉200、時間450
 building_ad_Anti_s_misile = {
 	base_buildtime = 450
 	category = army
@@ -2907,6 +2907,115 @@ building_ad_Anti_s_misile = {
 		}
 	}
 }
+
+# ロボット製造プラント
+building_ad_robot_assembly_plant = {
+	base_buildtime = @b1_time
+	base_cap_amount = 1
+
+	category = pop_assembly
+
+	potential = {
+		exists = owner
+		OR = {
+			owner = { is_ai = no }
+			NOT = { exists = assembling_species }
+			assembling_species = { is_robotic_species = yes }
+		}
+		owner = {
+			is_regular_empire = yes
+			NOT = { has_policy_flag = robots_outlawed }
+			OR = {
+				is_ai = no
+				NOT = { has_ascension_perk = ap_engineered_evolution }
+				is_materialist = yes
+			}
+			has_ascension_perk = ap_synthetic_evolution
+		}
+		NOT = { has_modifier = slave_colony }
+	}
+
+	convert_to = {
+		building_machine_assembly_plant
+	}
+
+	allow = {
+		hidden_trigger = {
+			OR = {
+				owner = { is_ai = no }
+				NAND = {
+					free_district_slots = 0
+					free_building_slots <= 1
+					free_housing <= 0
+					free_jobs <= 0
+				}
+			}
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = {
+				OR = {
+					is_regular_empire = no
+					has_policy_flag = robots_outlawed
+				}
+			}
+			has_modifier = slave_colony
+			AND = {
+				owner = { is_ai = yes }
+				free_district_slots = 0
+				free_building_slots = 0
+				free_housing <= 0
+				free_jobs <= 0
+			}
+			owner = {
+				is_ai = yes
+				has_ascension_perk = ap_engineered_evolution
+				is_materialist = no
+			}
+		}
+	}
+
+	planet_modifier = {
+		pop_assembly_speed = 0.1
+		planet_pop_assembly_mult = 0.1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+
+	triggered_desc = {
+		text = job_roboticist_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			OR = {
+				has_building = building_clone_vats
+				has_building = building_clone_army_clone_vat
+				has_building = building_posthumous_employment_center
+				AND = {
+					exists = assembling_species
+					assembling_species = { is_organic_species = yes }
+				}
+			}
+		}
+		text = tooltip_organic_and_artificial_assembly_warning
+	}
+
+	prerequisites = {
+		"tech_robotic_workers"
+	}
+}
+
 
 # 市街地調整地域	rban_area_control_area	（鉱物300・維持費エネルギー1）（事務員+2、企業建築物スロット+2）
 # （産業や企業を誘致するために設定された地域）

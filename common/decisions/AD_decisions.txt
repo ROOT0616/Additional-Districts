@@ -723,8 +723,13 @@ decision_ad_university_district = {
 	ai_weight = {
 		weight = 50
 		modifier = {
-			factor = 100
-			has_designation = col_research
+			factor = 1000
+			OR = {
+				has_designation = col_research
+				has_designation = col_habitat_research
+				has_designation = col_ring_research
+				has_designation = col_ecu_research
+			}
 		}
 		modifier = {
 			factor = 4
@@ -1781,8 +1786,13 @@ decision_ad_special_research_zone = {
 	ai_weight = {
 		weight = 50
 		modifier = {
-			factor = 100
-			has_designation = col_research
+			factor = 1000
+			OR = {
+				has_designation = col_research
+				has_designation = col_habitat_research
+				has_designation = col_ring_research
+				has_designation = col_ecu_research
+			}
 		}
 		modifier = {
 			factor = 4
@@ -1806,7 +1816,7 @@ decision_ad_special_research_zone = {
 			}
 		}
 		modifier = {
-			factor = 0
+			factor = 0.1
 			owner = {
 				any_planet_within_border = {
 					has_district_ad_special_research_zone = yes

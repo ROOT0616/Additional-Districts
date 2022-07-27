@@ -2605,7 +2605,7 @@ district_ad_ancient_ruins = {
 				is_fallen_empire_spiritualist = no
 			}
 		}
-		text = job_ad_large_scale_farmer_effect_desc
+		text = job_ad_excavator_effect_desc
 	}
 	ai_resource_production = {
 		minor_artifacts = 10
