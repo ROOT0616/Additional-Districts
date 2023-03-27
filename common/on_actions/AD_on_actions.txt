@@ -6,8 +6,8 @@ on_press_begin = {
 }
 
 # this = country
-on_monthly_pulse_country = {
-	events = {
-		additionaldistricts.1000
-	}
-}
+# on_monthly_pulse_country = {
+# 	events = {
+# 		# additionaldistricts.1000
+# 	}
+# }

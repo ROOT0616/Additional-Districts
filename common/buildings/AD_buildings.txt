@@ -13,12 +13,22 @@ building_ad_Palace = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_Palace
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		planet_stability_add = 10
@@ -44,32 +54,14 @@ building_ad_Palace = {
 				set_country_flag = build_ad_Palace
 			}
 		}
-		planet = {
-			set_planet_flag = build_planet_ad_Palace
-		}
 	}
 	on_destroy = {
 		owner = {
 			remove_country_flag = build_ad_Palace
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_Palace
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_Palace
-				}
-				remove_country_flag = build_ad_Palace
-			}
-		}
-	}
 	ai_resource_production = {
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 		influence = 1
@@ -90,14 +82,20 @@ building_ad_CEO = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_CEO
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_ad_CEO
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		planet_stability_add = 10
@@ -130,23 +128,8 @@ building_ad_CEO = {
 			remove_country_flag = build_ad_CEO
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_CEO
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_CEO
-				}
-				remove_country_flag = build_ad_CEO
-			}
-		}
-	}
 	ai_resource_production = {
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 		influence = 1
@@ -167,12 +150,22 @@ building_ad_M_def = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_M_def
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -212,21 +205,6 @@ building_ad_M_def = {
 			remove_country_flag = build_ad_M_def
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_M_def
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_M_def
-				}
-				remove_country_flag = build_ad_M_def
-			}
-		}
-	}
 }
 
 # building_ad_O_def  管理警備本部		宇宙軍許容量+10、地上軍士気+5、艦隊建造速度+10		役員+1、将校+1、管理職+1	(多数のエリートや労働者が働く財閥の中枢企業。警備員や企業軍を監督する企業。)企業のみ			維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
@@ -243,14 +221,20 @@ building_ad_O_def = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_M_def
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_planet_ad_O_def
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -291,21 +275,6 @@ building_ad_O_def = {
 			remove_country_flag = build_ad_O_def
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_M_def
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_M_def
-				}
-				remove_country_flag = build_ad_M_def
-			}
-		}
-	}
 }
 
 # building_ad_M_dom  内務省			帝国の犯罪度-10%、各惑星幸福度+10%			政治家+1、官僚+2		(多数の高級官僚や事務員が務める役所。治安や福祉の監督を行う官庁。)企業以外				維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
@@ -322,12 +291,22 @@ building_ad_M_dom = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_M_dom
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -366,21 +345,6 @@ building_ad_M_dom = {
 			remove_country_flag = build_ad_M_dom
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_M_dom
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_M_dom
-				}
-				remove_country_flag = build_ad_M_dom
-			}
-		}
-	}
 }
 
 # building_ad_O_dom  労務管理本部		帝国の犯罪度-10%、各惑星幸福度+5%、リーダー経験値+10%	役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。社員の福祉や内部規律を担当する企業。)企業のみ		維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
@@ -397,14 +361,20 @@ building_ad_O_dom = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_O_dom
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_ad_O_dom
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -444,21 +414,6 @@ building_ad_O_dom = {
 			remove_country_flag = build_ad_O_dom
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_O_dom
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_O_dom
-				}
-				remove_country_flag = build_ad_O_dom
-			}
-		}
-	}
 }
 
 # building_ad_M_dip  外務省			外交発言力+10%、使節+1					政治家+1、官僚+2		(多数の高級官僚や事務員が務める役所。外交や属国の管理を行う官庁。)企業以外				維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
@@ -475,12 +430,22 @@ building_ad_M_dip = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_M_dip
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -519,21 +484,6 @@ building_ad_M_dip = {
 			remove_country_flag = build_ad_M_dip
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_M_dip
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_M_dip
-				}
-				remove_country_flag = build_ad_M_dip
-			}
-		}
-	}
 }
 
 # building_ad_O_dip  外商本部		支社価値+10%、使節+1、交易価値+10%			役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。外部と交渉し、企業の利益を追求する企業。)企業のみ	維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
@@ -550,14 +500,20 @@ building_ad_O_dip = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_O_dip
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_ad_O_dip
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -597,21 +553,6 @@ building_ad_O_dip = {
 			remove_country_flag = build_ad_O_dip
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_O_dip
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_O_dip
-				}
-				remove_country_flag = build_ad_O_dip
-			}
-		}
-	}
 	ai_resource_production = {
 		energy = 8
 		trigger = {
@@ -634,12 +575,22 @@ building_ad_M_inf = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_M_inf
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -678,21 +629,6 @@ building_ad_M_inf = {
 			remove_country_flag = build_ad_M_inf
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_M_inf
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_M_inf
-				}
-				remove_country_flag = build_ad_M_inf
-			}
-		}
-	}
 }
 
 # building_ad_O_inf  情報セキュリティー本部	解読力+10、暗号力+5					役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。情報保全と外部情報収集を行う企業)企業のみ		維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
@@ -709,14 +645,20 @@ building_ad_O_inf = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_O_inf
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_ad_O_inf
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -755,21 +697,6 @@ building_ad_O_inf = {
 			remove_country_flag = build_ad_O_inf
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_O_inf
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_O_inf
-				}
-				remove_country_flag = build_ad_O_inf
-			}
-		}
-	}
 }
 
 # building_ad_M_tra  運輸省			交易保護値+3、交易価値+10%				政治家+1、官僚+2		(多数の高級官僚や事務員が務める役所。輸送や流通面から経済を支援する官庁。)企業以外			維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
@@ -786,12 +713,22 @@ building_ad_M_tra = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_M_tra
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -823,21 +760,6 @@ building_ad_M_tra = {
 			remove_country_flag = build_ad_M_tra
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_M_tra
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_M_tra
-				}
-				remove_country_flag = build_ad_M_tra
-			}
-		}
-	}
 	ai_resource_production = {
 		energy = 8
 		trigger = {
@@ -860,14 +782,20 @@ building_ad_O_tra = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_O_tra
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_ad_O_tra
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -907,21 +835,6 @@ building_ad_O_tra = {
 			remove_country_flag = build_ad_O_tra
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_O_tra
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_O_tra
-				}
-				remove_country_flag = build_ad_O_tra
-			}
-		}
-	}
 	ai_resource_production = {
 		energy = 8
 		trigger = {
@@ -944,12 +857,22 @@ building_ad_M_ind = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_M_ind
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -980,21 +903,6 @@ building_ad_M_ind = {
 			remove_country_flag = build_ad_M_ind
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_M_ind
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_M_ind
-				}
-				remove_country_flag = build_ad_M_ind
-			}
-		}
-	}
 }
 
 # building_ad_O_ind  製造技術本部		研究力+5%						役員+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。)企業のみ						維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
@@ -1011,14 +919,20 @@ building_ad_O_ind = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_O_ind
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_ad_O_ind
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -1056,21 +970,6 @@ building_ad_O_ind = {
 			remove_country_flag = build_ad_O_ind
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_O_ind
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_O_ind
-				}
-				remove_country_flag = build_ad_O_ind
-			}
-		}
-	}
 }
 
 # building_ad_E_cap  議事堂			なし							代弁者+1、官僚+2		(権限はともかく立法機関として政府に影響を与える議員のための施設。)企業以外				維持:エネ3			建設:鉱物900、時間500
@@ -1087,12 +986,22 @@ building_ad_E_cap = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_E_cap
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_ad_congressman_add = 1
@@ -1125,21 +1034,6 @@ building_ad_E_cap = {
 			remove_country_flag = build_ad_E_cap
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_E_cap
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_E_cap
-				}
-				remove_country_flag = build_ad_E_cap
-			}
-		}
-	}
 }
 
 # building_ad_C_cap  株主総会議場		なし							代弁者+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。)企業のみ						維持:エネ3			建設:鉱物900、時間500
@@ -1156,14 +1050,20 @@ building_ad_C_cap = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_C_cap
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_ad_C_cap
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_ad_congressman_add = 1
@@ -1196,21 +1096,6 @@ building_ad_C_cap = {
 			remove_country_flag = build_ad_C_cap
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_C_cap
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_C_cap
-				}
-				remove_country_flag = build_ad_C_cap
-			}
-		}
-	}
 }
 
 # building_ad_E_court  帝国裁判所		犯罪度-20、安定度+10					政治家+1、法曹+2		(国家の治安や司法を守る番人が集う施設。)企業以外							維持:エネ3			建設:鉱物900、時間500
@@ -1227,12 +1112,22 @@ building_ad_E_court = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_E_court
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	country_modifier = {
 		planet_crime_add = -20
@@ -1269,21 +1164,6 @@ building_ad_E_court = {
 			remove_country_flag = build_ad_E_court
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_E_court
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_E_court
-				}
-				remove_country_flag = build_ad_E_court
-			}
-		}
-	}
 }
 
 # building_ad_C_court  本社査問会議場		犯罪度-20、安定度+10					役員+1、法曹+2			(企業に対して罪を犯した社員などを裁き、制裁を加える施設。)企業のみ					維持:エネ3			建設:鉱物900、時間500
@@ -1300,14 +1180,20 @@ building_ad_C_court = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_C_court
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_ad_C_court
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	country_modifier = {
 		planet_crime_add = -20
@@ -1344,21 +1230,6 @@ building_ad_C_court = {
 			remove_country_flag = build_ad_C_court
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_C_court
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_C_court
-				}
-				remove_country_flag = build_ad_C_court
-			}
-		}
-	}
 }
 
 # building_ad_E_bank  中央準備銀行		エネルギー算出+10%					政治家+1、銀行家+2		(国家の金融を監督する特殊な銀行。)企業以外
@@ -1376,12 +1247,22 @@ building_ad_E_bank = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_E_bank
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -1424,22 +1305,6 @@ building_ad_E_bank = {
 			set_country_flag = build_ad_E_bank
 		}
 	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_E_bank
-				}
-				remove_country_flag = build_ad_E_bank
-			}
-		}
-	}
-	ai_resource_production = {
-		energy = 8
-		trigger = {
-			always = yes
-		}
-	}
 }
 
 # building_ad_O_bank  企業資産管理本部	エネルギー算出+10%、交易価値+5%				役員+1、銀行家+2		(企業の有する債権や資産を管理運用するための企業。)企業のみ						維持:エネ5、レアクリ1		建設:鉱物800、レアクリ100、時間550
@@ -1456,14 +1321,20 @@ building_ad_O_bank = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_O_bank
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_ad_O_bank
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -1495,21 +1366,6 @@ building_ad_O_bank = {
 			remove_country_flag = build_ad_O_bank
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_O_bank
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_O_bank
-				}
-				remove_country_flag = build_ad_O_bank
-			}
-		}
-	}
 	ai_resource_production = {
 		energy = 8
 		trigger = {
@@ -1532,12 +1388,22 @@ building_ad_E_mil = {
 					is_country_type = primitive
 				}
 			}
-			NOR = {
+			NOT = {
 				has_authority = auth_corporate
+			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
 				has_country_flag = build_ad_E_mil
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_ad_general_officer_add = 1
@@ -1569,21 +1435,6 @@ building_ad_E_mil = {
 			remove_country_flag = build_ad_E_mil
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_E_mil
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_E_mil
-				}
-				remove_country_flag = build_ad_E_mil
-			}
-		}
-	}
 }
 
 # building_ad_C_mil  企業警備作戦本部	宇宙軍移動速度+5%、射程+5%				将官+1、将校+2			(企業の有する艦隊や陸軍を統括し、命令を行う部署。)企業のみ						維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
@@ -1600,14 +1451,20 @@ building_ad_C_mil = {
 					is_country_type = primitive
 				}
 			}
-			AND = {
-				has_authority = auth_corporate
-				NOT = {
-					has_country_flag = build_ad_C_mil
-				}
+			has_authority = auth_corporate
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
+			NOT = {
+				has_country_flag = build_ad_C_mil
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_ad_general_officer_add = 1
@@ -1646,21 +1503,6 @@ building_ad_C_mil = {
 			remove_country_flag = build_ad_C_mil
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_C_mil
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_C_mil
-				}
-				remove_country_flag = build_ad_C_mil
-			}
-		}
-	}
 }
 
 # building_ad_broad  中央放送局		統治志向魅力+15%					代弁者+1、ジャーナリスト+2	(国家の立場を説明し、民衆に宣伝を行う機関。)								維持:エネ3、レアクリ1		建設:鉱物800、レアクリ100、時間550
@@ -1677,11 +1519,19 @@ building_ad_broad = {
 					is_country_type = primitive
 				}
 			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
 			NOT = {
 				has_country_flag = build_ad_broad
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_ad_congressman_add = 1
@@ -1719,21 +1569,6 @@ building_ad_broad = {
 			remove_country_flag = build_ad_broad
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_broad
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_broad
-				}
-				remove_country_flag = build_ad_broad
-			}
-		}
-	}
 }
 
 # building_ad_G_datebank  帝国記録保管庫		なし							科学総裁+1、データ司書+2	(国家の重要な記録や文明の記録を行うデータバンク)							維持:エネ3、エキゾガス2		建設:鉱物700、エキゾガス200、時間550
@@ -1750,11 +1585,19 @@ building_ad_G_datebank = {
 					is_country_type = primitive
 				}
 			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
 			NOT = {
 				has_country_flag = build_ad_G_datebank
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_head_researcher_add = 1
@@ -1789,23 +1632,8 @@ building_ad_G_datebank = {
 			remove_country_flag = build_ad_G_datebank
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_G_datebank
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_G_datebank
-				}
-				remove_country_flag = build_ad_G_datebank
-			}
-		}
-	}
 	ai_resource_production = {
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 		unity = 3
@@ -1829,11 +1657,19 @@ building_ad_medicinelab = {
 					is_country_type = primitive
 				}
 			}
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
 			NOT = {
 				has_country_flag = build_ad_medicinelab
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_head_researcher_add = 1
@@ -1870,23 +1706,8 @@ building_ad_medicinelab = {
 			remove_country_flag = build_ad_medicinelab
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_medicinelab
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_medicinelab
-				}
-				remove_country_flag = build_ad_medicinelab
-			}
-		}
-	}
 	ai_resource_production = {
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 		unity = 3
@@ -1914,11 +1735,19 @@ building_ad_cathedral_of_the_sky = {
 				}
 			}
 			is_materialist = no
+		}
+		NOT = {
+			has_modifier = slave_colony
+		}
+	}
+	empire_limit = {
+		base = 1
+		modifier = {
+			factor = 2
 			NOT = {
 				has_country_flag = build_ad_cathedral_of_the_sky
 			}
 		}
-		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		planet_stability_add = 10
@@ -1962,23 +1791,8 @@ building_ad_cathedral_of_the_sky = {
 			remove_country_flag = build_ad_cathedral_of_the_sky
 		}
 	}
-	on_queued = {
-		owner = {
-			set_country_flag = build_ad_cathedral_of_the_sky
-		}
-	}
-	on_unqueued = {
-		owner = {
-			if = {
-				limit = {
-					has_country_flag = build_ad_cathedral_of_the_sky
-				}
-				remove_country_flag = build_ad_cathedral_of_the_sky
-			}
-		}
-	}
 	ai_resource_production = {
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 		unity = 3
@@ -2017,7 +1831,7 @@ building_ad_P_datebank = {
 		}
 	}
 	ai_resource_production = {
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 		unity = 3
@@ -2057,7 +1871,7 @@ building_ad_E_libraly = {
 		}
 	}
 	ai_resource_production = {
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 		unity = 6
@@ -2417,7 +2231,7 @@ building_ad_university = {
 		}
 	}
 	ai_resource_production = {
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 		unity = 3
@@ -2760,7 +2574,7 @@ building_ad_college = {
 		}
 	}
 	ai_resource_production = {
-		trigger = { 
+		trigger = {
 			always = yes
 		}
 		unity = 1
@@ -2993,7 +2807,9 @@ building_ad_galactic_stadium = {
 	potential = {
 		owner = {
 			exists = owner
-			owner = { is_regular_empire = yes }
+			owner = {
+				is_regular_empire = yes
+			}
 			is_gestalt = no
 		}
 	}
@@ -3034,7 +2850,9 @@ building_ad_public_gambling_den = {
 	potential = {
 		owner = {
 			exists = owner
-			owner = { is_regular_empire = yes }
+			owner = {
+				is_regular_empire = yes
+			}
 			is_gestalt = no
 		}
 	}
@@ -3099,37 +2917,47 @@ building_ad_Anti_s_misile = {
 building_ad_robot_assembly_plant = {
 	base_buildtime = @b1_time
 	base_cap_amount = 1
-
 	category = pop_assembly
-
 	potential = {
 		exists = owner
 		OR = {
-			owner = { is_ai = no }
-			NOT = { exists = assembling_species }
-			assembling_species = { is_robotic_species = yes }
+			owner = {
+				is_ai = no
+			}
+			NOT = {
+				exists = assembling_species
+			}
+			assembling_species = {
+				is_robotic_species = yes
+			}
 		}
 		owner = {
 			is_regular_empire = yes
-			NOT = { has_policy_flag = robots_outlawed }
+			NOT = {
+				has_policy_flag = robots_outlawed
+			}
 			OR = {
 				is_ai = no
-				NOT = { has_ascension_perk = ap_engineered_evolution }
+				NOT = {
+					has_ascension_perk = ap_engineered_evolution
+				}
 				is_materialist = yes
 			}
 			has_ascension_perk = ap_synthetic_evolution
 		}
-		NOT = { has_modifier = slave_colony }
+		NOT = {
+			has_modifier = slave_colony
+		}
 	}
-
 	convert_to = {
 		building_machine_assembly_plant
 	}
-
 	allow = {
 		hidden_trigger = {
 			OR = {
-				owner = { is_ai = no }
+				owner = {
+					is_ai = no
+				}
 				NAND = {
 					free_district_slots = 0
 					free_building_slots <= 1
@@ -3139,7 +2967,6 @@ building_ad_robot_assembly_plant = {
 			}
 		}
 	}
-
 	destroy_trigger = {
 		exists = owner
 		OR = {
@@ -3151,7 +2978,9 @@ building_ad_robot_assembly_plant = {
 			}
 			has_modifier = slave_colony
 			AND = {
-				owner = { is_ai = yes }
+				owner = {
+					is_ai = yes
+				}
 				free_district_slots = 0
 				free_building_slots = 0
 				free_housing <= 0
@@ -3164,12 +2993,10 @@ building_ad_robot_assembly_plant = {
 			}
 		}
 	}
-
 	planet_modifier = {
 		pop_assembly_speed = 0.1
 		planet_pop_assembly_mult = 0.1
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -3179,7 +3006,6 @@ building_ad_robot_assembly_plant = {
 			energy = @b3_upkeep
 		}
 	}
-
 	triggered_desc = {
 		text = job_roboticist_effect_desc
 	}
@@ -3191,18 +3017,18 @@ building_ad_robot_assembly_plant = {
 				has_building = building_posthumous_employment_center
 				AND = {
 					exists = assembling_species
-					assembling_species = { is_organic_species = yes }
+					assembling_species = {
+						is_organic_species = yes
+					}
 				}
 			}
 		}
 		text = tooltip_organic_and_artificial_assembly_warning
 	}
-
 	prerequisites = {
 		"tech_robotic_workers"
 	}
 }
-
 
 # 市街地調整地域	rban_area_control_area	（鉱物300・維持費エネルギー1）（事務員+2、企業建築物スロット+2）
 # （産業や企業を誘致するために設定された地域）
@@ -3242,7 +3068,6 @@ building_ad_robot_assembly_plant = {
 # 		}
 # 	}
 # }
-
 # アップグレード
 # 惑星規模産業調整地域	industrial_adjustment_area	（鉱物500・維持費エネルギー3）（事務員+4、企業建築物スロット+4）
 # （産業や企業を誘致するために設定された地域）
@@ -3280,7 +3105,6 @@ building_ad_robot_assembly_plant = {
 # 		}
 # 	}
 # }
-
 # ※企業用支店
 # 1.社会福祉法人	（社会の弱者に対して福祉サービスを提供する税制優遇のある法人）
 # 企業国家の外交発言力+5%。惑星の幸福度+5%。医療従事者+1、サービス職+3
