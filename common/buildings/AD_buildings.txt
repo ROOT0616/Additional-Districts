@@ -6,12 +6,19 @@ building_ad_Palace = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_Palace
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		planet_stability_add = 10
@@ -37,7 +44,9 @@ building_ad_Palace = {
 				set_country_flag = build_ad_Palace
 			}
 		}
-		set_planet_flag = build_planet_ad_Palace
+		planet = {
+			set_planet_flag = build_planet_ad_Palace
+		}
 	}
 	on_destroy = {
 		owner = {
@@ -74,7 +83,13 @@ building_ad_CEO = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -82,6 +97,7 @@ building_ad_CEO = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		planet_stability_add = 10
@@ -144,12 +160,19 @@ building_ad_M_def = {
 	category = army
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_M_def
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -213,7 +236,13 @@ building_ad_O_def = {
 	category = army
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -221,6 +250,7 @@ building_ad_O_def = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -285,12 +315,19 @@ building_ad_M_dom = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_M_dom
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -353,7 +390,13 @@ building_ad_O_dom = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -361,6 +404,7 @@ building_ad_O_dom = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -424,12 +468,19 @@ building_ad_M_dip = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_M_dip
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -492,7 +543,13 @@ building_ad_O_dip = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -500,6 +557,7 @@ building_ad_O_dip = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -569,12 +627,19 @@ building_ad_M_inf = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_M_inf
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -637,7 +702,13 @@ building_ad_O_inf = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -645,6 +716,7 @@ building_ad_O_inf = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -707,12 +779,19 @@ building_ad_M_tra = {
 	category = trade
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_M_tra
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -774,7 +853,13 @@ building_ad_O_tra = {
 	base_cap_amount = 1
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -782,6 +867,7 @@ building_ad_O_tra = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -851,12 +937,19 @@ building_ad_M_ind = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_M_ind
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -911,7 +1004,13 @@ building_ad_O_ind = {
 	category = research
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -919,6 +1018,7 @@ building_ad_O_ind = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -980,12 +1080,19 @@ building_ad_E_cap = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_E_cap
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_ad_congressman_add = 1
@@ -1042,7 +1149,13 @@ building_ad_C_cap = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -1050,6 +1163,7 @@ building_ad_C_cap = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_ad_congressman_add = 1
@@ -1106,12 +1220,19 @@ building_ad_E_court = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_E_court
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	country_modifier = {
 		planet_crime_add = -20
@@ -1172,7 +1293,13 @@ building_ad_C_court = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -1180,6 +1307,7 @@ building_ad_C_court = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	country_modifier = {
 		planet_crime_add = -20
@@ -1241,12 +1369,19 @@ building_ad_E_bank = {
 	category = trade
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_E_bank
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -1314,7 +1449,13 @@ building_ad_O_bank = {
 	category = trade
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -1322,6 +1463,7 @@ building_ad_O_bank = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -1383,12 +1525,19 @@ building_ad_E_mil = {
 	category = army
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOR = {
 				has_authority = auth_corporate
 				has_country_flag = build_ad_E_mil
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_ad_general_officer_add = 1
@@ -1444,7 +1593,13 @@ building_ad_C_mil = {
 	category = army
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			AND = {
 				has_authority = auth_corporate
 				NOT = {
@@ -1452,6 +1607,7 @@ building_ad_C_mil = {
 				}
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_ad_general_officer_add = 1
@@ -1514,11 +1670,18 @@ building_ad_broad = {
 	category = government
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOT = {
 				has_country_flag = build_ad_broad
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_ad_congressman_add = 1
@@ -1580,11 +1743,18 @@ building_ad_G_datebank = {
 	base_cap_amount = 1
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOT = {
 				has_country_flag = build_ad_G_datebank
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_head_researcher_add = 1
@@ -1652,11 +1822,18 @@ building_ad_medicinelab = {
 	category = amenity
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			NOT = {
 				has_country_flag = build_ad_medicinelab
 			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		job_head_researcher_add = 1
@@ -1729,9 +1906,19 @@ building_ad_cathedral_of_the_sky = {
 	category = unity
 	potential = {
 		owner = {
-			is_gestalt = no
+			OR = {
+				is_regular_empire = yes
+				AND = {
+					has_origin = origin_fear_of_the_dark
+					is_country_type = primitive
+				}
+			}
 			is_materialist = no
+			NOT = {
+				has_country_flag = build_ad_cathedral_of_the_sky
+			}
 		}
+		NOT = { has_modifier = slave_colony }
 	}
 	planet_modifier = {
 		planet_stability_add = 10
@@ -3019,80 +3206,80 @@ building_ad_robot_assembly_plant = {
 
 # 市街地調整地域	rban_area_control_area	（鉱物300・維持費エネルギー1）（事務員+2、企業建築物スロット+2）
 # （産業や企業を誘致するために設定された地域）
-building_ad_rban_area_control_area = {
-	base_buildtime = @b1_time
-	category = amenity
-	base_cap_amount = 1
-	potential = {
-		owner = {
-			NOT = {
-				has_authority = auth_corporate
-			}
-		}
-	}
-	planet_modifier = {
-		planet_max_branch_office_buildings_add = 2
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-		}
-		job_clerk_add = 2
-	}
-	upgrades = {
-		"building_ad_industrial_adjustment_area"
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = 300
-		}
-		upkeep = {
-			energy = 1
-		}
-	}
-}
+# building_ad_rban_area_control_area = {
+# 	base_buildtime = @b1_time
+# 	category = amenity
+# 	base_cap_amount = 1
+# 	potential = {
+# 		owner = {
+# 			NOT = {
+# 				has_authority = auth_corporate
+# 			}
+# 		}
+# 	}
+# 	planet_modifier = {
+# 		planet_max_branch_office_buildings_add = 2
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				is_gestalt = no
+# 			}
+# 		}
+# 		job_clerk_add = 2
+# 	}
+# 	upgrades = {
+# 		"building_ad_industrial_adjustment_area"
+# 	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			minerals = 300
+# 		}
+# 		upkeep = {
+# 			energy = 1
+# 		}
+# 	}
+# }
 
 # アップグレード
 # 惑星規模産業調整地域	industrial_adjustment_area	（鉱物500・維持費エネルギー3）（事務員+4、企業建築物スロット+4）
 # （産業や企業を誘致するために設定された地域）
-building_ad_industrial_adjustment_area = {
-	base_buildtime = @b1_time
-	category = amenity
-	# base_cap_amount = 1
-	can_build = no
-	potential = {
-		owner = {
-			NOT = {
-				has_authority = auth_corporate
-			}
-		}
-	}
-	planet_modifier = {
-		planet_max_branch_office_buildings_add = 4
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-		}
-		job_clerk_add = 4
-	}
-	resources = {
-		category = planet_buildings
-		cost = {
-			minerals = 500
-		}
-		upkeep = {
-			energy = 3
-		}
-	}
-}
+# building_ad_industrial_adjustment_area = {
+# 	base_buildtime = @b1_time
+# 	category = amenity
+# 	# base_cap_amount = 1
+# 	can_build = no
+# 	potential = {
+# 		owner = {
+# 			NOT = {
+# 				has_authority = auth_corporate
+# 			}
+# 		}
+# 	}
+# 	planet_modifier = {
+# 		planet_max_branch_office_buildings_add = 4
+# 	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = {
+# 				is_gestalt = no
+# 			}
+# 		}
+# 		job_clerk_add = 4
+# 	}
+# 	resources = {
+# 		category = planet_buildings
+# 		cost = {
+# 			minerals = 500
+# 		}
+# 		upkeep = {
+# 			energy = 3
+# 		}
+# 	}
+# }
 
 # ※企業用支店
 # 1.社会福祉法人	（社会の弱者に対して福祉サービスを提供する税制優遇のある法人）

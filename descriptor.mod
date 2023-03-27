@@ -1,9 +1,9 @@
-version="1.23.9"
+version="1.24.0"
 tags={
 	"Gameplay"
 	"Diplomacy"
 	"Overhaul"
 }
 name="Additional Districts And Buildings"
-supported_version="3.4.*"
+supported_version="3.7.*"
 remote_file_id="2461143784"
