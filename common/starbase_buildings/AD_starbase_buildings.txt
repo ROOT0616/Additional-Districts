@@ -1,0 +1,341 @@
+Station_control_room= {
+    icon = "GFX_spaceport_module_Station_control_room"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 200
+        }
+
+        upkeep = {
+            energy = 10
+        }
+    }
+
+}
+
+Station_commercial_mall= {
+    icon = "GFX_spaceport_module_Station_commercial_mall"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 200
+        }
+
+        upkeep = {
+            consumer_goods = 3
+        }
+    }
+
+
+}
+
+Munitions_headquarters= {
+    icon = "GFX_spaceport_module_Munitions_headquarters"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 200
+        }
+
+        upkeep = {
+            energy = 10
+        }
+    }
+
+}
+
+Private_secter_headquarters= {
+    icon = "GFX_spaceport_module_Private_secter_headquarters"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 200
+        }
+
+        upkeep = {
+            energy = 10
+        }
+    }
+
+
+}
+
+Sub_station_control_room= {
+    icon = "GFX_spaceport_module_Sub_station_control_room"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 300
+        }
+
+        upkeep = {
+            energy = 20
+        }
+    }
+
+    station_modifier = {
+		starbase_defense_platform_capacity_add = 10
+	}
+
+}
+
+Microgravity_research_division= {
+    icon = "GFX_spaceport_module_Microgravity_research_division"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 200
+        }
+
+        upkeep = {
+            energy = 10
+        }
+    }
+
+}
+
+Microgravity_training_center= {
+    icon = "GFX_spaceport_module_Microgravity_training_center"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 200
+        }
+
+        upkeep = {
+            energy = 5
+        }
+    }
+
+    army_modifier = {
+		army_starting_experience_add = 100
+	}
+
+    orbit_modifier = {
+        planet_army_build_speed_mult = 0.1
+    }
+
+}
+
+Low_gravity_medical_center= {
+    icon = "GFX_spaceport_module_Low_gravity_medical_center"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 200
+        }
+
+        upkeep = {
+            consumer_goods = 5
+            energy = 1
+        }
+    }
+
+    country_modifier = {
+        pop_growth_speed = 0.01
+        leader_age = 5
+    }
+
+}
+
+Station_foreign_intelligence_office= {
+    icon = "GFX_spaceport_module_Station_foreign_intelligence_office"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 200
+        }
+
+        upkeep = {
+            energy = 5
+            influence = 0.5
+        }
+    }
+
+    country_modifier = {
+        intel_decryption_add = 5
+    }
+
+}
+
+Station_ICT_office= {
+    icon = "GFX_spaceport_module_Station_ICT_office"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 200
+        }
+
+        upkeep = {
+            energy = 5
+            unity = 5
+        }
+    }
+
+    country_modifier = {
+        intel_encryption_add = 2
+    }
+
+}
+
+Transportation_control_division= {
+    icon = "GFX_spaceport_module_Transportation_control_division"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 300
+        }
+
+        upkeep = {
+            energy = 10
+        }
+    }
+
+    orbit_modifier = {
+        ship_speed_mult = 0.2
+    }
+
+}
+
+Communication_control_division= {
+    icon = "GFX_spaceport_module_Communication_control_division"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 300
+        }
+
+        upkeep = {
+            energy = 10
+        }
+    }
+
+    orbit_modifier = {
+        ship_cloaking_detection_add = 2
+    }
+
+}
+
+Fleet_base_command_center= {
+    icon = "GFX_spaceport_module_Fleet_base_command_center"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 500
+        }
+
+        upkeep = {
+            energy = 30
+            consumer_goods = 10
+        }
+    }
+    country_modifier = {
+        country_command_limit_add = 10
+        ships_upkeep_mult = -0.05
+        country_naval_cap_add = 10
+    }
+
+
+}
+
+Station_defense_command_center= {
+    icon = "GFX_spaceport_module_Station_defense_command_center"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 500
+        }
+
+        upkeep = {
+            energy = 10
+        }
+    }
+
+
+    ship_modifier = {
+        shipclass_starbase_hull_mult = 0.25
+        ship_shield_mult = 0.20
+        ship_armor_mult = 0.5
+    }
+
+}
+
+Station_control_command_center= {
+    icon = "GFX_spaceport_module_Station_control_command_center"
+    construction_days = 360
+
+    initial = yes
+
+    resources = {
+        category = starbase_buildings
+        cost = {
+            alloys = 500
+        }
+
+        upkeep = {
+            energy = 10
+        }
+    }
+
+    ship_modifier = {
+        ships_upkeep_mult = -0.1
+        ship_orbit_upkeep_mult =-0.2
+    }
+
+}
