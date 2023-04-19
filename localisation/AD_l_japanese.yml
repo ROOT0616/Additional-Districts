@@ -972,6 +972,90 @@
  debtor_army_desc:0 ""
 
 #######################
+#####  星系基地  ######
+#######################
+ sm_ad_dry_dock:0 "大規模ドック"
+ sm_ad_dry_dock_desc:0 "通常のものよりも大型で効率化された造船所" 
+
+ sm_ad_repair_bot_base:0 "修理ボット基地"
+ sm_ad_repair_bot_base_desc:0 "小型機械を利用した艦隊修理用の機械群"      
+
+ sm_ad_construction_bot_base:0 "建造ボット基地"
+ sm_ad_construction_bot_base_desc:0 "小型機械を利用した建造用の機械群"    
+
+ sm_ad_great_naval_port:0 "軍港"
+ sm_ad_great_naval_port_desc:0 "通常のものよりも大型で効率化された停泊所" 
+
+ sm_ad_great_trade_port:0 "交易港"
+ sm_ad_great_trade_port_desc:0 "通常のものよりも大型で効率化された交易拠点"
+
+ sm_ad_communications_hub:0 "通信ハブセンター"
+ sm_ad_communications_hub_desc:0 "帝国各地へ通信網を広げるステーション基地"
+
+ sm_ad_computer_hub:0 "低重力コンピュータハブ"
+ sm_ad_computer_hub_desc:0 "低重力を利用した研究用のコンピュータ基地"
+
+ sm_ad_exploration_base:0 "小惑星探査基地"
+ sm_ad_exploration_base_desc:0 "小惑星を探査し、有用な資源を回収する基地"
+
+ sm_ad_munitions_arsenal:0 "低重力軍需工廠"
+ sm_ad_munitions_arsenal_desc:0 "低重力を利用した軍需用の工場"
+
+ sm_ad_private_secter_arsenal:0 "低重力民需工廠"
+ sm_ad_private_secter_arsenal_desc:0 "低重力を利用した民需用の工場"
+
+ sm_ad_space_guard_base:0 "星間警備管区基地"
+ sm_ad_space_guard_base_desc:0 "星系を警備し、海賊を抑制する低強度軍基地"
+
+ sm_ad_protective_bulkhead:0 "防御隔壁"
+ sm_ad_protective_bulkhead_desc:0 "ステーションの強度を高め、耐久力を向上させる壁"
+
+ sm_ad_station_control_room:0 "ステーション管制室"
+ sm_ad_station_control_room_desc:0 "ステーションに入港する軍事艦隊を制御する部署" 
+
+ sm_ad_station_commercial_mall:0 "ステーション商業モール"
+ sm_ad_station_commercial_mall_desc:0 "税関の外で商取引を行える魅力的な商業施設" 
+
+ sm_ad_munitions_headquarters:0 "ステーション軍需本部"
+ sm_ad_munitions_headquarters_desc:0 "ステーションの軍需工場を統括する施設" 
+
+ sm_ad_private_secter_headquarters:0 "ステーション民需本部"
+ sm_ad_private_secter_headquarters_desc:0 "ステーションの民需工場を統括する施設" 
+
+ sm_ad_sub_station_control_room:0 "サブステーション管制室"
+ sm_ad_sub_station_control_room_desc:0 "小型ステーションを統括する管制部署" 
+
+ sm_ad_microgravity_research_division:0 "無重力研究本部"
+ sm_ad_microgravity_research_division_desc:0 "無重力を活用した画期的な研究施設" 
+
+ sm_ad_microgravity_training_center:0 "無重力訓練施設"
+ sm_ad_microgravity_training_center_desc:0 "無重力を活用した画期的な軍事訓練施設" 
+
+ sm_ad_low_gravity_medical_center:0 "低重力医療センター"
+ sm_ad_low_gravity_medical_center_desc:0 "低重力を活用した身体活性化医療を提供する病院"      
+
+ sm_ad_station_foreign_intelligence_office:0 "対外諜報室"
+ sm_ad_station_foreign_intelligence_office_desc:0 "人里離れた所で良からぬことをたくらむ部署" 
+
+ sm_ad_station_ict_office:0 "内国防諜室"
+ sm_ad_station_ict_office_desc:0 "人里離れた所で良からぬ者を探す部署" 
+
+ sm_ad_transportation_control_division:0 "星系運輸管制本部"
+ sm_ad_transportation_control_division_desc:0 "星系内部における交通管制を行う部署" 
+
+ sm_ad_communication_control_division:0 "星系通信管制本部"
+ sm_ad_communication_control_division_desc:0 "星系内部における通信管制を行う部署"
+
+ sm_ad_fleet_base_command_center:0 "艦隊基地司令部"
+ sm_ad_fleet_base_command_center_desc:0 "星系に駐留する艦隊を統御する常設司令部"
+
+ sm_ad_station_defense_command_center:0 "ステーション防衛司令部"
+ sm_ad_station_defense_command_center_desc:0 "星系基地を防御し、生存性を確保する司令部"
+
+ sm_ad_station_control_command_center:0 "ステーション管理司令部"
+ sm_ad_station_control_command_center_desc:0 "ステーションの事務作業を統括し、管理業務を行う部署"  
+
+#######################
 #####    ○○○○    ######
 #######################
 

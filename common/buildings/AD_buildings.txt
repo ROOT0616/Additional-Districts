@@ -23,12 +23,6 @@ building_ad_Palace = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_Palace
-			}
-		}
 	}
 	planet_modifier = {
 		planet_stability_add = 10
@@ -90,12 +84,6 @@ building_ad_CEO = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_CEO
-			}
-		}
 	}
 	planet_modifier = {
 		planet_stability_add = 10
@@ -160,12 +148,6 @@ building_ad_M_def = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_M_def
-			}
-		}
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -229,12 +211,6 @@ building_ad_O_def = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_planet_ad_O_def
-			}
-		}
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -301,12 +277,6 @@ building_ad_M_dom = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_M_dom
-			}
-		}
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -369,12 +339,6 @@ building_ad_O_dom = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_O_dom
-			}
-		}
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -440,12 +404,6 @@ building_ad_M_dip = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_M_dip
-			}
-		}
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -508,12 +466,6 @@ building_ad_O_dip = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_O_dip
-			}
-		}
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -585,12 +537,6 @@ building_ad_M_inf = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_M_inf
-			}
-		}
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -653,12 +599,6 @@ building_ad_O_inf = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_O_inf
-			}
-		}
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -723,12 +663,6 @@ building_ad_M_tra = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_M_tra
-			}
-		}
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -790,12 +724,6 @@ building_ad_O_tra = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_O_tra
-			}
-		}
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -867,12 +795,6 @@ building_ad_M_ind = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_M_ind
-			}
-		}
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -927,12 +849,6 @@ building_ad_O_ind = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_O_ind
-			}
-		}
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -996,12 +912,6 @@ building_ad_E_cap = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_E_cap
-			}
-		}
 	}
 	planet_modifier = {
 		job_ad_congressman_add = 1
@@ -1058,12 +968,6 @@ building_ad_C_cap = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_C_cap
-			}
-		}
 	}
 	planet_modifier = {
 		job_ad_congressman_add = 1
@@ -1122,12 +1026,6 @@ building_ad_E_court = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_E_court
-			}
-		}
 	}
 	country_modifier = {
 		planet_crime_add = -20
@@ -1188,12 +1086,6 @@ building_ad_C_court = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_C_court
-			}
-		}
 	}
 	country_modifier = {
 		planet_crime_add = -20
@@ -1257,12 +1149,6 @@ building_ad_E_bank = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_E_bank
-			}
-		}
 	}
 	planet_modifier = {
 		job_politician_add = 1
@@ -1329,12 +1215,6 @@ building_ad_O_bank = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_O_bank
-			}
-		}
 	}
 	planet_modifier = {
 		job_executive_add = 1
@@ -1398,12 +1278,6 @@ building_ad_E_mil = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_E_mil
-			}
-		}
 	}
 	planet_modifier = {
 		job_ad_general_officer_add = 1
@@ -1459,12 +1333,6 @@ building_ad_C_mil = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_C_mil
-			}
-		}
 	}
 	planet_modifier = {
 		job_ad_general_officer_add = 1
@@ -1526,12 +1394,6 @@ building_ad_broad = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_broad
-			}
-		}
 	}
 	planet_modifier = {
 		job_ad_congressman_add = 1
@@ -1592,12 +1454,6 @@ building_ad_G_datebank = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_G_datebank
-			}
-		}
 	}
 	planet_modifier = {
 		job_head_researcher_add = 1
@@ -1664,12 +1520,6 @@ building_ad_medicinelab = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_medicinelab
-			}
-		}
 	}
 	planet_modifier = {
 		job_head_researcher_add = 1
@@ -1742,12 +1592,6 @@ building_ad_cathedral_of_the_sky = {
 	}
 	empire_limit = {
 		base = 1
-		modifier = {
-			factor = 2
-			NOT = {
-				has_country_flag = build_ad_cathedral_of_the_sky
-			}
-		}
 	}
 	planet_modifier = {
 		planet_stability_add = 10
@@ -2910,6 +2754,12 @@ building_ad_Anti_s_misile = {
 			alloys = 2
 			volatile_motes = 1
 		}
+	}
+	on_built = {
+		set_planet_flag = building_ad_Anti_s_misile_planet_flag
+	}
+	on_destroy = {
+		remove_planet_flag = building_ad_Anti_s_misile_planet_flag
 	}
 }
 

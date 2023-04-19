@@ -11,3 +11,12 @@ on_press_begin = {
 # 		# additionaldistricts.1000
 # 	}
 # }
+
+# Planet has taken damage from orbital bombardment - Damage is applied daily
+# This = Planet
+# From = Bombarder
+on_planet_bombarded = {
+	events = {
+		additionaldistricts.100
+	}
+}

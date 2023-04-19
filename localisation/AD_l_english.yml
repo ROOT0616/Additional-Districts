@@ -972,6 +972,90 @@
  debtor_army_desc:0 ""
 
 #######################
+#####  星系基地  ######
+#######################
+ sm_ad_dry_dock:0 "Dry Dock"
+ sm_ad_dry_dock_desc:0 "Larger and more efficient shipyards than usual" 
+
+ sm_ad_repair_bot_base:0 "Repair Bot Base"
+ sm_ad_repair_bot_base_desc:0 "A fleet of small machines for fleet repair"      
+
+ sm_ad_construction_bot_base:0 "Built Bot Base"
+ sm_ad_construction_bot_base_desc:0 "A group of machines for construction using small machines"    
+
+ sm_ad_great_naval_port:0 "Great Naval Port"
+ sm_ad_great_naval_port_desc:0 "Larger and more efficient anchorage than usual" 
+
+ sm_ad_great_trade_port:0 "Great Trade Port"
+ sm_ad_great_trade_port_desc:0 "Larger and more efficient trading posts than usual"
+
+ sm_ad_communications_hub:0 "Communication Hub"
+ sm_ad_communications_hub_desc:0 "Station bases that expand communication networks throughout the empire"
+
+ sm_ad_computer_hub:0 "Low Gravity Computer Hub"
+ sm_ad_computer_hub_desc:0 "Computer base for research using low gravity"
+
+ sm_ad_exploration_base:0 "Asteroid Exploration Base"
+ sm_ad_exploration_base_desc:0 "Base to explore asteroids and recover useful resources"
+
+ sm_ad_munitions_arsenal:0 "Low Gravity Military Factory"
+ sm_ad_munitions_arsenal_desc:0 "Military factory using low gravity"
+
+ sm_ad_private_secter_arsenal:0 "Low Gravity Civil Needs Factory"
+ sm_ad_private_secter_arsenal_desc:0 "Factory for private demand using low gravity"
+
+ sm_ad_space_guard_base:0 "Interstellar Police District Base"
+ sm_ad_space_guard_base_desc:0 "Low intensity military base to guard the star system and suppress pirates"
+
+ sm_ad_protective_bulkhead:0 "Protective Bulkhead"
+ sm_ad_protective_bulkhead_desc:0 "Walls that increase station strength and durability"
+
+ sm_ad_station_control_room:0 "Station Control Room"
+ sm_ad_station_control_room_desc:0 "Department that controls the military fleet entering the station." 
+
+ sm_ad_station_commercial_mall:0 "Station Commercial Mall"
+ sm_ad_station_commercial_mall_desc:0 "Attractive commercial facilities to conduct business transactions outside of customs" 
+
+ sm_ad_munitions_headquarters:0 "Station Munitions Headquarters"
+ sm_ad_munitions_headquarters_desc:0 "Facility overseeing the station's munitions plants." 
+
+ sm_ad_private_secter_headquarters:0 "Station Civilian Demand Headquarters"
+ sm_ad_private_secter_headquarters_desc:0 "Facility overseeing the station's civilian plants." 
+
+ sm_ad_sub_station_control_room:0 "Substation Control Room"
+ sm_ad_sub_station_control_room_desc:0 "Control department overseeing small stations" 
+
+ sm_ad_microgravity_research_division:0 "Gravity Free Research Headquarters"
+ sm_ad_microgravity_research_division_desc:0 "Innovative research facility utilizing weightlessness" 
+
+ sm_ad_microgravity_training_center:0 "Zero-Gravity Training Facility"
+ sm_ad_microgravity_training_center_desc:0 "Innovative military training facility utilizing zero gravity" 
+
+ sm_ad_low_gravity_medical_center:0 "Low Gravity Medical Center"
+ sm_ad_low_gravity_medical_center_desc:0 "Hospitals offering physical activation medicine utilizing low gravity"      
+
+ sm_ad_station_foreign_intelligence_office:0 "Foreign Intelligence Office"
+ sm_ad_station_foreign_intelligence_office_desc:0 "Department that plans to do bad things in the middle of nowhere" 
+
+ sm_ad_station_ict_office:0 "Internal Defense Spy Room"
+ sm_ad_station_ict_office_desc:0 "Department looking for good people in the middle of nowhere." 
+
+ sm_ad_transportation_control_division:0 "Galactic Transportation Control Headquarters"
+ sm_ad_transportation_control_division_desc:0 "Department responsible for traffic control inside the star system" 
+
+ sm_ad_communication_control_division:0 "Star System Communication Control Headquarters"
+ sm_ad_communication_control_division_desc:0 "Department in charge of communication control inside the star system"
+
+ sm_ad_fleet_base_command_center:0 "Fleet Base Command"
+ sm_ad_fleet_base_command_center_desc:0 "Permanent command center to control the fleet stationed in the system"
+
+ sm_ad_station_defense_command_center:0 "Station Defense Command"
+ sm_ad_station_defense_command_center_desc:0 "Command center to defend the star system base and ensure its survivability."
+
+ sm_ad_station_control_command_center:0 "Station Management Command Center"
+ sm_ad_station_control_command_center_desc:0 "Department that oversees and manages the station's administrative operations."  
+
+#######################
 #####    ○○○○    ######
 #######################
 

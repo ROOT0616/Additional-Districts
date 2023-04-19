@@ -1,0 +1,94 @@
+namespace = additionaldistricts
+
+# 対宙ミサイル施設	軌道上の艦隊に与ダメージ
+planet_event = {
+	id = additionaldistricts.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_planet_flag = building_ad_Anti_s_misile_planet_flag
+	}
+	immediate = {
+		random_list = {
+			1 = {
+				planet_event = {
+					id = additionaldistricts.101
+				}
+			}
+			1 = {
+				# planet_event = {
+				# 	id = additionaldistricts.102
+				# }
+			}
+			1 = {
+				# planet_event = {
+				# 	id = additionaldistricts.103
+				# }
+			}
+			1 = {
+				# planet_event = {
+				# 	id = additionaldistricts.104
+				# }
+			}
+			1 = {
+				# planet_event = {
+				# 	id = additionaldistricts.105
+				# }
+			}
+		}
+	}
+}
+
+# 対宙ミサイル施設	コルベット
+planet_event = {
+	id = additionaldistricts.101
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_planet_flag = building_ad_Anti_s_misile_planet_flag
+	}
+	immediate = {
+		# fleet_event = {
+		# 	id = achievement.4
+		# }
+		random_list = {
+			16 = {
+				random_fleet_in_orbit = {
+					limit = {
+						is_ship_size = corvette
+					}
+					destroy_fleet = this
+				}
+			}
+			8 = {
+				random_fleet_in_orbit = {
+					limit = {
+						is_ship_size = destroyer
+					}
+					destroy_fleet = this
+				}
+			}
+			4 = {
+				random_fleet_in_orbit = {
+					limit = {
+						is_ship_size = cruiser
+					}
+					destroy_fleet = this
+				}
+			}
+			2 = {
+				random_fleet_in_orbit = {
+					limit = {
+						is_ship_size = battleship
+					}
+					destroy_fleet = this
+				}
+			}
+			1 = {
+				random_fleet_in_orbit = {
+					destroy_fleet = this
+				}
+			}
+		}
+	}
+}
