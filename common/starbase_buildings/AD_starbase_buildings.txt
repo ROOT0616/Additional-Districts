@@ -1,5 +1,5 @@
-Station_control_room= {
-    icon = "GFX_spaceport_module_Station_control_room"
+ad_station_control_room= {
+    icon = "GFX_spaceport_module_ad_station_control_room"
     construction_days = 360
 
     initial = yes
@@ -17,8 +17,8 @@ Station_control_room= {
 
 }
 
-Station_commercial_mall= {
-    icon = "GFX_spaceport_module_Station_commercial_mall"
+ad_station_commercial_mall= {
+    icon = "GFX_spaceport_module_ad_station_commercial_mall"
     construction_days = 360
 
     initial = yes
@@ -37,8 +37,8 @@ Station_commercial_mall= {
 
 }
 
-Munitions_headquarters= {
-    icon = "GFX_spaceport_module_Munitions_headquarters"
+ad_munitions_headquarters= {
+    icon = "GFX_spaceport_module_ad_munitions_headquarters"
     construction_days = 360
 
     initial = yes
@@ -56,8 +56,8 @@ Munitions_headquarters= {
 
 }
 
-Private_secter_headquarters= {
-    icon = "GFX_spaceport_module_Private_secter_headquarters"
+ad_private_secter_headquarters= {
+    icon = "GFX_spaceport_module_ad_private_secter_headquarters"
     construction_days = 360
 
     initial = yes
@@ -76,8 +76,8 @@ Private_secter_headquarters= {
 
 }
 
-Sub_station_control_room= {
-    icon = "GFX_spaceport_module_Sub_station_control_room"
+ad_sub_station_control_room= {
+    icon = "GFX_spaceport_module_ad_sub_station_control_room"
     construction_days = 360
 
     initial = yes
@@ -99,8 +99,8 @@ Sub_station_control_room= {
 
 }
 
-Microgravity_research_division= {
-    icon = "GFX_spaceport_module_Microgravity_research_division"
+ad_microgravity_research_division= {
+    icon = "GFX_spaceport_module_ad_microgravity_research_division"
     construction_days = 360
 
     initial = yes
@@ -118,8 +118,8 @@ Microgravity_research_division= {
 
 }
 
-Microgravity_training_center= {
-    icon = "GFX_spaceport_module_Microgravity_training_center"
+ad_microgravity_training_center= {
+    icon = "GFX_spaceport_module_ad_microgravity_training_center"
     construction_days = 360
 
     initial = yes
@@ -145,8 +145,8 @@ Microgravity_training_center= {
 
 }
 
-Low_gravity_medical_center= {
-    icon = "GFX_spaceport_module_Low_gravity_medical_center"
+ad_low_gravity_medical_center= {
+    icon = "GFX_spaceport_module_ad_low_gravity_medical_center"
     construction_days = 360
 
     initial = yes
@@ -170,8 +170,8 @@ Low_gravity_medical_center= {
 
 }
 
-Station_foreign_intelligence_office= {
-    icon = "GFX_spaceport_module_Station_foreign_intelligence_office"
+ad_station_foreign_intelligence_office= {
+    icon = "GFX_spaceport_module_ad_station_foreign_intelligence_office"
     construction_days = 360
 
     initial = yes
@@ -194,8 +194,8 @@ Station_foreign_intelligence_office= {
 
 }
 
-Station_ICT_office= {
-    icon = "GFX_spaceport_module_Station_ICT_office"
+ad_station_ict_office= {
+    icon = "GFX_spaceport_module_ad_station_ict_office"
     construction_days = 360
 
     initial = yes
@@ -218,8 +218,8 @@ Station_ICT_office= {
 
 }
 
-Transportation_control_division= {
-    icon = "GFX_spaceport_module_Transportation_control_division"
+ad_transportation_control_division= {
+    icon = "GFX_spaceport_module_ad_transportation_control_division"
     construction_days = 360
 
     initial = yes
@@ -241,8 +241,8 @@ Transportation_control_division= {
 
 }
 
-Communication_control_division= {
-    icon = "GFX_spaceport_module_Communication_control_division"
+ad_communication_control_division= {
+    icon = "GFX_spaceport_module_ad_communication_control_division"
     construction_days = 360
 
     initial = yes
@@ -264,8 +264,8 @@ Communication_control_division= {
 
 }
 
-Fleet_base_command_center= {
-    icon = "GFX_spaceport_module_Fleet_base_command_center"
+ad_fleet_base_command_center= {
+    icon = "GFX_spaceport_module_ad_fleet_base_command_center"
     construction_days = 360
 
     initial = yes
@@ -290,8 +290,8 @@ Fleet_base_command_center= {
 
 }
 
-Station_defense_command_center= {
-    icon = "GFX_spaceport_module_Station_defense_command_center"
+ad_station_defense_command_center= {
+    icon = "GFX_spaceport_module_ad_station_defense_command_center"
     construction_days = 360
 
     initial = yes
@@ -316,8 +316,8 @@ Station_defense_command_center= {
 
 }
 
-Station_control_command_center= {
-    icon = "GFX_spaceport_module_Station_control_command_center"
+ad_station_control_command_center= {
+    icon = "GFX_spaceport_module_ad_station_control_command_center"
     construction_days = 360
 
     initial = yes

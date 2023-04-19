@@ -1,5 +1,5 @@
-Dry_dock= {
-    icon = "GFX_spaceport_module_Dry_dock"
+ad_dry_dock= {
+    icon = "GFX_spaceport_module_ad_dry_dock"
     construction_days = 360
 
     initial = yes
@@ -22,8 +22,8 @@ Dry_dock= {
 
 }
 
-Repair_bot_base= {
-    icon = "GFX_spaceport_module_Repair_bot_base"
+ad_repair_bot_base= {
+    icon = "GFX_spaceport_module_ad_repair_bot_base"
     construction_days = 180
 
     initial = yes
@@ -45,8 +45,8 @@ Repair_bot_base= {
     }
 }
 
-Construction_bot_base= {
-    icon = "GFX_spaceport_module_Construction_bot_base"
+ad_construction_bot_base= {
+    icon = "GFX_spaceport_module_ad_construction_bot_base"
     construction_days = 180
 
     initial = yes
@@ -73,8 +73,8 @@ Construction_bot_base= {
     }
 }
 
-Great_naval_port= {
-    icon = "GFX_spaceport_module_Great_naval_port"
+ad_great_naval_port= {
+    icon = "GFX_spaceport_module_ad_great_naval_port"
     construction_days = 360
 
     initial = yes
@@ -99,8 +99,8 @@ Great_naval_port= {
 
 }
 
-Great_trade_port= {
-    icon = "GFX_spaceport_module_Great_trade_port"
+ad_great_trade_port= {
+    icon = "GFX_spaceport_module_ad_great_trade_port"
     construction_days = 360
 
     initial = yes
@@ -122,8 +122,8 @@ Great_trade_port= {
 
 }
 
-Communications_hub= {
-    icon = "GFX_spaceport_module_Communications_hub"
+ad_communications_hub= {
+    icon = "GFX_spaceport_module_ad_communications_hub"
     construction_days = 180
 
     initial = yes
@@ -147,7 +147,7 @@ Communications_hub= {
             trigger = {
                 exists = starbase
                 starbase = {
-                    has_starbase_building = Communication_control_division
+                    has_starbase_building = ad_communication_control_division
                 }
             }
             unity = 3
@@ -155,8 +155,8 @@ Communications_hub= {
     }
 }
 
-Computer_hub= {
-    icon = "GFX_spaceport_module_Computer_hub"
+ad_computer_hub= {
+    icon = "GFX_spaceport_module_ad_computer_hub"
     construction_days = 360
 
     initial = yes
@@ -180,7 +180,7 @@ Computer_hub= {
             trigger = {
                 exists = starbase
                 starbase = {
-                    has_starbase_building = Microgravity_research_division
+                    has_starbase_building = ad_microgravity_research_division
                 }
             }
             physics_research = 3
@@ -193,8 +193,8 @@ Computer_hub= {
 
 }
 
-Exploration_base= {
-    icon = "GFX_spaceport_module_Exploration_base"
+ad_exploration_base= {
+    icon = "GFX_spaceport_module_ad_exploration_base"
     construction_days = 180
 
     initial = yes
@@ -217,8 +217,8 @@ Exploration_base= {
 
 }
 
-Munitions_arsenal= {
-    icon = "GFX_spaceport_module_Munitions_arsenal"
+ad_munitions_arsenal= {
+    icon = "GFX_spaceport_module_ad_munitions_arsenal"
     construction_days = 360
 
     initial = yes
@@ -237,7 +237,7 @@ Munitions_arsenal= {
             trigger = {
                 exists = starbase
                 starbase = {
-                    has_starbase_building = Munitions_headquarters
+                    has_starbase_building = ad_munitions_headquarters
                 }
             }
             minerals = 7.5
@@ -252,7 +252,7 @@ Munitions_arsenal= {
             trigger = {
                 exists = starbase
                 starbase = {
-                    has_starbase_building = Munitions_headquarters
+                    has_starbase_building = ad_munitions_headquarters
                 }
             }
             alloys = 3
@@ -260,8 +260,8 @@ Munitions_arsenal= {
     }
 }
 
-Private_secter_arsenal= {
-    icon = "GFX_spaceport_module_Private_secter_arsenal"
+ad_private_secter_arsenal= {
+    icon = "GFX_spaceport_module_ad_private_secter_arsenal"
     construction_days = 360
 
     initial = yes
@@ -280,7 +280,7 @@ Private_secter_arsenal= {
             trigger = {
                 exists = starbase
                 starbase = {
-                    has_starbase_building = Munitions_headquarters
+                    has_starbase_building = ad_munitions_headquarters
                 }
             }
             minerals = 7.5
@@ -295,7 +295,7 @@ Private_secter_arsenal= {
             trigger = {
                 exists = starbase
                 starbase = {
-                    has_starbase_building = Private_secter_headquarters
+                    has_starbase_building = ad_private_secter_headquarters
                 }
             }
             consumer_goods = 3
@@ -303,8 +303,8 @@ Private_secter_arsenal= {
     }
 }
 
-Space_guard_base= {
-    icon = "GFX_spaceport_module_Space_guard_base"
+ad_space_guard_base= {
+    icon = "GFX_spaceport_module_ad_space_guard_base"
     construction_days = 360
 
     initial = yes
@@ -325,8 +325,8 @@ Space_guard_base= {
 
 }
 
-Protective_bulkhead= {
-    icon = "GFX_spaceport_module_Protective_bulkhead"
+ad_protective_bulkhead= {
+    icon = "GFX_spaceport_module_ad_protective_bulkhead"
     construction_days = 360
 
     initial = yes
