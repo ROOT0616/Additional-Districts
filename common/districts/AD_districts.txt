@@ -4368,9 +4368,6 @@ district_ad_spaceport_area = {
 			has_modifier = slave_colony
 		}
 	}
-	potential = {
-		has_district_ad_government_district = yes
-	}
 	conversion_ratio = 1
 	convert_to = {
 	}
