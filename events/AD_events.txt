@@ -1,4 +1,558 @@
 namespace = additionaldistricts
+# 区画整備
+planet_event = {
+	id = additionaldistricts.1
+	title = additionaldistricts.1.name
+	desc = additionaldistricts.1.desc
+	picture = GFX_evt_fleet_neutral
+	is_triggered_only = yes
+	# 官庁街	
+	option = {
+		name = additionaldistricts.1.a
+		custom_tooltip = decision_ad_government_district_effects
+		allow = {
+			NOT = {
+				has_deposit = d_ad_government_district
+			}
+			NOT = {
+				has_planet_flag = do_ad_4
+			}
+			NOT = {
+				has_modifier = resort_colony
+			}
+			NOT = {
+				has_modifier = slave_colony
+			}
+		}
+		hidden_effect = {
+			add_deposit = d_ad_government_district
+			set_planet_flag = do_ad_government_district
+			if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
+		}
+	}
+	# 官庁街の削除
+	option = {
+		name = additionaldistricts.1.b
+		custom_tooltip = decision_ad_undo_government_district_effects
+		allow = {
+			has_deposit = d_ad_government_district
+		}
+		hidden_effect = {
+			remove_deposit = d_ad_government_district
+			remove_planet_flag = do_ad_government_district
+			if = {
+				limit = {
+					has_planet_flag = do_ad_4
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_3
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_2
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_1
+				}
+				remove_planet_flag = do_ad_1
+			}
+		}
+	}
+	# 大学街 
+	option = {
+		name = additionaldistricts.1.c
+		custom_tooltip = decision_ad_university_district_effects
+		allow = {
+			NOT = {
+				has_deposit = d_ad_university_district
+			}
+			NOT = {
+				has_planet_flag = do_ad_4
+			}
+			NOT = {
+				has_modifier = resort_colony
+			}
+			NOT = {
+				has_modifier = slave_colony
+			}
+		}
+		hidden_effect = {
+			add_deposit = d_ad_university_district
+			set_planet_flag = do_ad_university_district
+			if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
+		}
+	}
+	# 大学街の削除
+	option = {
+		name = additionaldistricts.1.d
+		custom_tooltip = decision_ad_undo_university_district_effects
+		allow = {
+			has_deposit = d_ad_university_district
+		}
+		hidden_effect = {
+			remove_deposit = d_ad_university_district
+			remove_planet_flag = do_ad_university_district
+			if = {
+				limit = {
+					has_planet_flag = do_ad_4
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_3
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_2
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_1
+				}
+				remove_planet_flag = do_ad_1
+			}
+		}
+	}
+	# 住宅街
+	option = {
+		name = additionaldistricts.1.e
+		custom_tooltip = decision_ad_residential_area_effects
+		allow = {
+			NOT = {
+				has_deposit = d_ad_residential_area
+			}
+			NOT = {
+				has_planet_flag = do_ad_4
+			}
+			NOT = {
+				has_modifier = resort_colony
+			}
+			NOT = {
+				has_modifier = slave_colony
+			}
+		}
+		hidden_effect = {
+			add_deposit = d_ad_residential_area
+			set_planet_flag = do_ad_residential_area
+			if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
+		}
+	}
+	# 住宅街の削除
+	option = {
+		name = additionaldistricts.1.f
+		custom_tooltip = decision_ad_undo_residential_area_effects
+		allow = {
+			has_deposit = d_ad_residential_area
+		}
+		hidden_effect = {
+			remove_deposit = d_ad_residential_area
+			remove_planet_flag = do_ad_residential_area
+			if = {
+				limit = {
+					has_planet_flag = do_ad_4
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_3
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_2
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_1
+				}
+				remove_planet_flag = do_ad_1
+			}
+		}
+	}
+	# 造船工廠
+	option = {
+		name = additionaldistricts.1.g
+		custom_tooltip = decision_ad_shipbuilding_arsenal_effects
+		allow = {
+			NOT = {
+				has_deposit = d_ad_shipbuilding_arsenal
+			}
+			NOT = {
+				has_planet_flag = do_ad_4
+			}
+			NOT = {
+				has_modifier = resort_colony
+			}
+			NOT = {
+				has_modifier = slave_colony
+			}
+		}
+		hidden_effect = {
+			add_deposit = d_ad_shipbuilding_arsenal
+			set_planet_flag = do_ad_shipbuilding_arsenal
+			if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
+		}
+	}
+	# 造船工廠の削除
+	option = {
+		name = additionaldistricts.1.h
+		custom_tooltip = decision_ad_undo_shipbuilding_arsenal_effects
+		allow = {
+			has_deposit = d_ad_shipbuilding_arsenal
+		}
+		hidden_effect = {
+			remove_deposit = d_ad_shipbuilding_arsenal
+			remove_planet_flag = do_ad_shipbuilding_arsenal
+			if = {
+				limit = {
+					has_planet_flag = do_ad_4
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_3
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_2
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_1
+				}
+				remove_planet_flag = do_ad_1
+			}
+		}
+	}
+	# 通信区域
+	option = {
+		name = additionaldistricts.1.i
+		custom_tooltip = decision_ad_communication_area_effects
+		allow = {
+			NOT = {
+				has_deposit = d_ad_communication_area
+			}
+			NOT = {
+				has_planet_flag = do_ad_4
+			}
+			NOT = {
+				has_modifier = resort_colony
+			}
+			NOT = {
+				has_modifier = slave_colony
+			}
+		}
+		hidden_effect = {
+			add_deposit = d_ad_communication_area
+			set_planet_flag = do_ad_communication_area
+			if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
+		}
+	}
+	# 通信区域の削除
+	option = {
+		name = additionaldistricts.1.j
+		custom_tooltip = decision_ad_undo_communication_area_effects
+		allow = {
+			has_deposit = d_ad_communication_area
+		}
+		hidden_effect = {
+			remove_deposit = d_ad_communication_area
+			remove_planet_flag = do_ad_communication_area
+			if = {
+				limit = {
+					has_planet_flag = do_ad_4
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_3
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_2
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_1
+				}
+				remove_planet_flag = do_ad_1
+			}
+		}
+	}
+	# 観光区域
+	option = {
+		name = additionaldistricts.1.i
+		custom_tooltip = decision_ad_communication_area_effects
+		allow = {
+			NOT = {
+				has_deposit = d_ad_communication_area
+			}
+			NOT = {
+				has_planet_flag = do_ad_4
+			}
+			NOT = {
+				has_modifier = resort_colony
+			}
+			NOT = {
+				has_modifier = slave_colony
+			}
+		}
+		hidden_effect = {
+			add_deposit = d_ad_communication_area
+			set_planet_flag = do_ad_communication_area
+			if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_1
+					}
+				}
+				set_planet_flag = do_ad_1
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_2
+					}
+				}
+				set_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_3
+					}
+				}
+				set_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_planet_flag = do_ad_4
+					}
+				}
+				set_planet_flag = do_ad_4
+			}
+		}
+	}
+	# 観光区域の削除
+	option = {
+		name = additionaldistricts.1.j
+		custom_tooltip = decision_ad_undo_communication_area_effects
+		allow = {
+			has_deposit = d_ad_communication_area
+		}
+		hidden_effect = {
+			remove_deposit = d_ad_communication_area
+			remove_planet_flag = do_ad_communication_area
+			if = {
+				limit = {
+					has_planet_flag = do_ad_4
+				}
+				remove_planet_flag = do_ad_4
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_3
+				}
+				remove_planet_flag = do_ad_3
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_2
+				}
+				remove_planet_flag = do_ad_2
+			}
+			else_if = {
+				limit = {
+					has_planet_flag = do_ad_1
+				}
+				remove_planet_flag = do_ad_1
+			}
+		}
+	}
+}
 
 # 対宙ミサイル施設	軌道上の艦隊に与ダメージ
 planet_event = {
