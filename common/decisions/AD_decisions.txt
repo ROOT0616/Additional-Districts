@@ -1399,7 +1399,7 @@ decision_ad_undo_tourist_area = {
 	}
 }
 
-# 防衛区域 
+# 防衛区域
 decision_ad_defense_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
