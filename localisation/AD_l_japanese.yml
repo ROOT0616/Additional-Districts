@@ -132,6 +132,12 @@
  decision_ad_undo_orbital_elevator_desc:0 "もし倒れたらどうするというのかね？  区画の撤去を開始する。"
  decision_ad_undo_orbital_elevator_effects:0 ""
 
+ decision_ad_district:0 "AD 地区整備委員会の開催"
+ decision_ad_district_desc:0 "Additional Districts And Buildings で追加された地区を惑星に追加・削除するため、惑星の地区整備委員会を開催する。"
+
+ decision_ad_large_scale_district:0 "AD 都市区域開発委員会の開催"
+ decision_ad_large_scale_district_desc:0 "Additional Districts And Buildings で追加された都市区域を惑星に追加・削除するため、惑星の都市区域開発委員会を開催する。"
+
 #######################
 #####    技術    ######
 #######################
@@ -182,12 +188,6 @@
  job_ad_underwater_miner_effect_desc:0 "£job_ad_underwater_miner£ $job_ad_underwater_miner_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出する"
  mod_job_ad_underwater_miner_add:0 "水中採掘者の職業枠"
 
- job_ad_space_miner:0 "宇宙採掘者"
- job_ad_space_miner_plural:0 "宇宙採掘者"
- job_ad_space_miner_desc:0 "軌道上に存在する鉱物を採取する技術者"
- job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出する"
- mod_job_ad_space_miner_add:0 "宇宙採掘者の職業枠"
-
  job_ad_low_efficiency_miner:0 "低効率採掘者"
  job_ad_low_efficiency_miner_plural:0 "低効率採掘者"
  job_ad_low_efficiency_miner_desc:0 "大量の低質鉱石を採掘できるよう訓練された労働者"
@@ -228,15 +228,21 @@
  mod_job_ad_forcrd_larbor_per_pop:0 "$VALUE$ POP につき$job_ad_forcrd_larbor$の職業枠§G+1§!"
  mod_job_ad_forcrd_larbor_per_pop_short:0 "\n$VALUE$ £pop£ につき £mod_job_ad_forcrd_larbor_add£ §G+1§!"
 
-#########################
-#####    専門職    ######
-#########################
-
  job_ad_efficient_miner:0 "効率的採掘者"
  job_ad_efficient_miner_plural:0 "効率的採掘者"
  job_ad_efficient_miner_desc:0 "高質の鉱石を、廃棄物をできるだけ少なく採掘できるよう訓練された労働者"
  job_ad_efficient_miner_effect_desc:0 "£job_ad_efficient_miner£ $job_ad_efficient_miner_plural$は、 £minerals£ §Y$minerals$§!を産出する"
  mod_job_ad_efficient_miner_add:0 "効率的採掘者の職業枠"
+
+#########################
+#####    専門職    ######
+#########################
+
+ job_ad_space_miner:0 "軌道鉱物学者"
+ job_ad_space_miner_plural:0 "軌道鉱物学者"
+ job_ad_space_miner_desc:0 "軌道上に存在する鉱物を採取する技術者"
+ job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出する"
+ mod_job_ad_space_miner_add:0 "軌道鉱物学者の職業枠"
 
  job_ad_data_minor:0 "データマイナー"
  job_ad_data_minor_plural:0 "データマイナー"
@@ -374,11 +380,6 @@
  job_ad_underwater_miner_drone_desc:0 "高圧力下で生成される高密度鉱脈で採掘を行う技術者"
  mod_job_ad_underwater_miner_drone_add:0 "水中採掘者の職業枠"
 
- job_ad_space_miner_drone:0 "宇宙採掘者"
- job_ad_space_miner_drone_plural:0 "宇宙採掘者"
- job_ad_space_miner_drone_desc:0 "軌道上に存在する鉱物を採取する技術者"
- mod_job_ad_space_miner_drone_add:0 "宇宙採掘者の職業枠"
-
  job_ad_low_efficiency_miner_drone:0 "低効率採掘者"
  job_ad_low_efficiency_miner_drone_plural:0 "低効率採掘者"
  job_ad_low_efficiency_miner_drone_desc:0 "大量の低質鉱石を採掘できるよう訓練された労働者"
@@ -399,14 +400,19 @@
  job_ad_large_scale_farmer_drone_desc:0 "大規模プランテーションで安価な大量精算を行う農家"
  mod_job_ad_large_scale_farmer_drone_add:0 "大規模農家の職業枠"
 
-##############################
-#####    複雑ドローン    ######
-##############################
-
  job_ad_efficient_miner_drone:0 "効率的採掘者"
  job_ad_efficient_miner_drone_plural:0 "効率的採掘者"
  job_ad_efficient_miner_drone_desc:0 "高質の鉱石を、廃棄物をできるだけ少なく採掘できるよう訓練された労働者"
  mod_job_ad_efficient_miner_drone_add:0 "効率的採掘者の職業枠"
+
+##############################
+#####    複雑ドローン    ######
+##############################
+
+ job_ad_space_miner_drone:0 "軌道鉱物学者"
+ job_ad_space_miner_drone_plural:0 "軌道鉱物学者"
+ job_ad_space_miner_drone_desc:0 "軌道上に存在する鉱物を採取する技術者"
+ mod_job_ad_space_miner_drone_add:0 "軌道鉱物学者の職業枠"
 
  job_ad_excavator_drone:0 "発掘者"
  job_ad_excavator_drone_plural:0 "発掘者"
@@ -1054,6 +1060,46 @@
 
  sm_ad_station_control_command_center:0 "ステーション管理司令部"
  sm_ad_station_control_command_center_desc:0 "ステーションの事務作業を統括し、管理業務を行う部署"  
+
+##########################
+#####    イベント    ######
+##########################
+
+ additionaldistricts.1.name:0 "地区整備委員会の開催"
+ additionaldistricts.1.desc:0 "ここは地区整備委員会\nAdditional Districts And Buildingsで追加された区域を追加削除する選択肢があります。\n下記の区域を選択すると建造枠に追加、もしくは削除できます。\n\n注意！　区域数が多くなりすぎると表示されなくなる可能性があります。"
+ additionaldistricts.1.a:0 "官庁街の追加"
+ additionaldistricts.1.b:0 "官庁街の削除"
+ additionaldistricts.1.c:0 "大学街の追加"
+ additionaldistricts.1.d:0 "大学街の削除"
+ additionaldistricts.1.e:0 "住宅街の追加"
+ additionaldistricts.1.f:0 "住宅街の削除"
+ additionaldistricts.1.g:0 "造船工廠の追加"
+ additionaldistricts.1.h:0 "造船工廠の削除"
+ additionaldistricts.1.i:0 "通信区域の追加"
+ additionaldistricts.1.j:0 "通信区域の削除"
+ additionaldistricts.1.k:0 "観光区域の追加"
+ additionaldistricts.1.l:0 "観光区域の削除"
+ additionaldistricts.1.m:0 "防衛区域の追加"
+ additionaldistricts.1.n:0 "防衛区域の削除"
+ additionaldistricts.1.o:0 "構想特区の追加"
+ additionaldistricts.1.p:0 "構想特区の削除"
+ additionaldistricts.1.q:0 "研究特区の追加"
+ additionaldistricts.1.r:0 "研究特区の削除"
+ additionaldistricts.1.s:0 "宇宙港区域の追加"
+ additionaldistricts.1.t:0 "宇宙港区域の削除"
+ additionaldistricts.1.u:0 "軌道エレベーターの追加"
+ additionaldistricts.1.v:0 "軌道エレベーターの削除"
+
+ additionaldistricts.2.name:0 "都市区域開発の開催"
+ additionaldistricts.2.desc:0 "ここは都市区域開発委員会\nAdditional Districts And Buildingsで追加された区域を追加削除する選択肢があります。\n下記の区域を選択すると建造枠に追加、もしくは削除できます。\n\n注意！　区域数が多くなりすぎると表示されなくなる可能性があります。"
+ additionaldistricts.2.a:0 "空中都市の追加"
+ additionaldistricts.2.b:0 "空中都市の削除"
+ additionaldistricts.2.c:0 "水中都市の追加"
+ additionaldistricts.2.d:0 "水中都市の削除"
+ additionaldistricts.2.e:0 "地下都市の追加"
+ additionaldistricts.2.f:0 "地下都市の削除"
+ additionaldistricts.2.g:0 "太陽光発電の追加"
+ additionaldistricts.2.h:0 "太陽光発電の削除"
 
 #######################
 #####    ○○○○    ######

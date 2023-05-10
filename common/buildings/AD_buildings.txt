@@ -888,7 +888,7 @@ building_ad_O_ind = {
 	}
 }
 
-# building_ad_E_cap  議事堂			なし							代弁者+1、官僚+2		(権限はともかく立法機関として政府に影響を与える議員のための施設。)企業以外				維持:エネ3			建設:鉱物900、時間500
+# building_ad_E_cap  議事堂			なし							政治家+1、官僚+2		(権限はともかく立法機関として政府に影響を与える議員のための施設。)企業以外				維持:エネ3			建設:鉱物900、時間500
 building_ad_E_cap = {
 	base_buildtime = 500
 	base_cap_amount = 1
@@ -914,7 +914,7 @@ building_ad_E_cap = {
 		base = 1
 	}
 	planet_modifier = {
-		job_ad_congressman_add = 1
+		job_politician_add = 1
 		job_bureaucrat_add = 2
 	}
 	resources = {
@@ -946,7 +946,7 @@ building_ad_E_cap = {
 	}
 }
 
-# building_ad_C_cap  株主総会議場		なし							代弁者+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。)企業のみ						維持:エネ3			建設:鉱物900、時間500
+# building_ad_C_cap  株主総会議場		なし							政治家+1、管理職+2		(多数のエリートや労働者が働く財閥の中枢企業。)企業のみ						維持:エネ3			建設:鉱物900、時間500
 building_ad_C_cap = {
 	base_buildtime = 500
 	base_cap_amount = 1
@@ -970,7 +970,7 @@ building_ad_C_cap = {
 		base = 1
 	}
 	planet_modifier = {
-		job_ad_congressman_add = 1
+		job_politician_add = 1
 		job_manager_add = 2
 	}
 	resources = {
@@ -1373,7 +1373,7 @@ building_ad_C_mil = {
 	}
 }
 
-# building_ad_broad  中央放送局		統治志向魅力+15%					代弁者+1、ジャーナリスト+2	(国家の立場を説明し、民衆に宣伝を行う機関。)								維持:エネ3、レアクリ1		建設:鉱物800、レアクリ100、時間550
+# building_ad_broad  中央放送局		統治志向魅力+15%					政治家+1、ジャーナリスト+2	(国家の立場を説明し、民衆に宣伝を行う機関。)								維持:エネ3、レアクリ1		建設:鉱物800、レアクリ100、時間550
 building_ad_broad = {
 	base_buildtime = 550
 	base_cap_amount = 1
@@ -1396,7 +1396,7 @@ building_ad_broad = {
 		base = 1
 	}
 	planet_modifier = {
-		job_ad_congressman_add = 1
+		job_politician_add = 1
 		job_ad_journalist_add = 2
 	}
 	country_modifier = {
@@ -2526,11 +2526,9 @@ building_ad_AA_base = {
 			is_gestalt = no
 		}
 	}
-	country_modifier = {
+	planet_modifier = {
 		army_defense_damage_mult = 0.1
 		army_defense_morale_mult = 0.1
-	}
-	planet_modifier = {
 		job_ad_commissioned_officer_add = 1
 		job_soldier_add = 2
 	}
@@ -2955,6 +2953,7 @@ building_ad_robot_assembly_plant = {
 # 		}
 # 	}
 # }
+
 # ※企業用支店
 # 1.社会福祉法人	（社会の弱者に対して福祉サービスを提供する税制優遇のある法人）
 # 企業国家の外交発言力+5%。惑星の幸福度+5%。医療従事者+1、サービス職+3
