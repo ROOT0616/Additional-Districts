@@ -10,6 +10,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.a
 		custom_tooltip = decision_ad_government_district_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_government_district
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_government_district
@@ -65,7 +71,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.b
 		custom_tooltip = decision_ad_undo_government_district_effects
-		allow = {
+		trigger = {
 			has_deposit = d_ad_government_district
 		}
 		hidden_effect = {
@@ -101,6 +107,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.c
 		custom_tooltip = decision_ad_university_district_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_university_district
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_university_district
@@ -156,7 +168,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.d
 		custom_tooltip = decision_ad_undo_university_district_effects
-		allow = {
+		trigger = {
 			has_deposit = d_ad_university_district
 		}
 		hidden_effect = {
@@ -192,6 +204,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.e
 		custom_tooltip = decision_ad_residential_area_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_residential_area
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_residential_area
@@ -247,7 +265,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.f
 		custom_tooltip = decision_ad_undo_residential_area_effects
-		allow = {
+		trigger = {
 			has_deposit = d_ad_residential_area
 		}
 		hidden_effect = {
@@ -283,6 +301,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.g
 		custom_tooltip = decision_ad_shipbuilding_arsenal_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_shipbuilding_arsenal
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_shipbuilding_arsenal
@@ -338,7 +362,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.h
 		custom_tooltip = decision_ad_undo_shipbuilding_arsenal_effects
-		allow = {
+		trigger = {
 			has_deposit = d_ad_shipbuilding_arsenal
 		}
 		hidden_effect = {
@@ -374,6 +398,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.i
 		custom_tooltip = decision_ad_communication_area_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_communication_area
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_communication_area
@@ -429,7 +459,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.j
 		custom_tooltip = decision_ad_undo_communication_area_effects
-		allow = {
+		trigger = {
 			has_deposit = d_ad_communication_area
 		}
 		hidden_effect = {
@@ -465,6 +495,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.k
 		custom_tooltip = decision_ad_tourist_area_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_tourist_area
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_tourist_area
@@ -520,7 +556,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.l
 		custom_tooltip = decision_ad_undo_communication_area_effects
-		allow = {
+		trigger = {
 			has_deposit = d_ad_tourist_area
 		}
 		hidden_effect = {
@@ -556,6 +592,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.n
 		custom_tooltip = decision_ad_defense_zone_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_defense_zone
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_defense_zone
@@ -611,7 +653,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.m
 		custom_tooltip = decision_ad_undo_communication_area_effects
-		allow = {
+		trigger = {
 			has_deposit = d_ad_defense_zone
 		}
 		hidden_effect = {
@@ -647,6 +689,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.o
 		custom_tooltip = decision_ad_conceptual_zone_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_conceptual_zone
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_conceptual_zone
@@ -702,7 +750,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.p
 		custom_tooltip = decision_ad_undo_communication_area_effects
-		allow = {
+		trigger = {
 			has_deposit = d_ad_conceptual_zone
 		}
 		hidden_effect = {
@@ -738,6 +786,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.q
 		custom_tooltip = decision_ad_special_research_zone_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_special_research_zone
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_special_research_zone
@@ -793,7 +847,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.r
 		custom_tooltip = decision_ad_undo_communication_area_effects
-		allow = {
+		trigger = {
 			has_deposit = d_ad_special_research_zone
 		}
 		hidden_effect = {
@@ -829,6 +883,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.s
 		custom_tooltip = decision_ad_spaceport_area_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_spaceport_area
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_spaceport_area
@@ -884,7 +944,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.t
 		custom_tooltip = decision_ad_undo_communication_area_effects
-		allow = {
+		trigger = {
 			has_deposit = d_ad_spaceport_area
 		}
 		hidden_effect = {
@@ -920,6 +980,12 @@ planet_event = {
 	option = {
 		name = additionaldistricts.1.u
 		custom_tooltip = decision_ad_orbital_elevator_effects
+		trigger = {
+			NOR = {
+				has_deposit = d_ad_orbital_elevator
+				has_planet_flag = do_ad_4
+			}
+		}
 		allow = {
 			NOT = {
 				has_deposit = d_ad_orbital_elevator

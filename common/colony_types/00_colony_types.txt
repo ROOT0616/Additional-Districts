@@ -1,5 +1,7 @@
 #root = planet
 
+@stickiness = 10
+@stickiness_low = 5
 @small_planet_threshold = 18
 @free_districts_verylow_threshold = 3
 @free_districts_low_threshold = 5
@@ -19,6 +21,7 @@ col_default = {
 		has_upgraded_capital = no
 		is_special_colony_type = no
 		num_sapient_pops < 5
+		is_capital = no
 	}
 
 	planet_modifier = {
@@ -28,8 +31,15 @@ col_default = {
 		planet_resettlement_unemployed_destination_mult = 0.25
 	}
 
+	triggered_planet_modifier = {
+		potential = { uses_district_set = ring_world }
+		pop_growth_speed = 0.1
+		planet_pop_assembly_mult = 0.1
+		planet_pop_assembly_organic_mult = 0.1
+	}
+
 	weight_modifier = {
-		base = 10
+		base = 100
 	}
 }
 
@@ -43,6 +53,7 @@ col_default_machine = {
 		has_upgraded_capital = no
 		is_special_colony_type = no
 		num_sapient_pops < 5 # Non-sapient machines are included
+		is_capital = no
 	}
 
 	planet_modifier = {
@@ -51,8 +62,15 @@ col_default_machine = {
 		planet_resettlement_unemployed_destination_mult = 0.25
 	}
 
+	triggered_planet_modifier = {
+		potential = { uses_district_set = ring_world }
+		pop_growth_speed = 0.1
+		planet_pop_assembly_mult = 0.1
+		planet_pop_assembly_organic_mult = 0.1
+	}
+
 	weight_modifier = {
-		base = 10
+		base = 100
 	}
 }
 
@@ -69,6 +87,7 @@ col_city = {
 			uses_district_set = habitat
 		}
 		is_special_colony_type = no
+		is_capital = no
 	}
 
 	planet_modifier = {
@@ -149,7 +168,7 @@ col_city = {
 			}
 		}
 		modifier = {
-			add = 2
+			add = @stickiness
 			has_designation = col_city
 		}
 		modifier = {
@@ -180,6 +199,21 @@ col_city = {
 				num_free_districts = { type = district_ad_residential_area value < @built_districts_low_threshold }
 			}
 		}
+		complex_trigger_modifier = {
+			trigger = num_districts
+			parameters = {
+				type = district_city
+			}
+			mode = add
+		}
+		complex_trigger_modifier = {
+			trigger = num_assigned_jobs
+			parameters = {
+				job = merchant # merchant jobs act as a pretty decent proxy for "this is a trade planet"
+			}
+			mode = add
+			mult = 2
+		}
 	}
 }
 
@@ -195,6 +229,7 @@ col_mining = {
 			uses_district_set = habitat
 		}
 		is_special_colony_type = no
+		is_capital = no
 	}
 
 	planet_modifier = {
@@ -314,8 +349,31 @@ col_mining = {
 			num_free_districts = { type = district_hive value <= @small_planet_threshold }
 		}
 		modifier = {
-			add = 2
+			add = @stickiness
 			has_designation = col_mining
+		}
+		complex_trigger_modifier = {
+			trigger = num_districts
+			parameters = {
+				type = district_mining
+			}
+			mode = add
+			mult = 2
+		}
+		complex_trigger_modifier = {
+			trigger = num_districts
+			parameters = {
+				type = district_mining_uncapped
+			}
+			mode = add
+			mult = 2
+		}
+		complex_trigger_modifier = {
+			trigger = num_free_districts
+			parameters = {
+				type = district_mining
+			}
+			mode = add
 		}
 		modifier = {
 			add = 5
@@ -325,23 +383,22 @@ col_mining = {
 				has_modifier = ultra_rich
 				has_modifier = extensive_moon_system
 				has_modifier = asteroid_impacts
+				has_modifier = carbon_world
 			}
 		}
 		modifier = {
-			add = 5
-			num_districts = { type = district_mining value >= @built_districts_medium_threshold }
-		}
-		modifier = {
-			factor = 0
-			num_districts = { type = district_mining value = 0 }
+			add = -10
+			has_modifier = mineral_poor
 		}
 		modifier = {
 			factor = 0
 			exists = sector
 			sector = {
 				has_any_sector_focus = yes
-				not = { has_sector_focus = "production" }
-				not = { has_sector_focus = "balanced" }
+				NOR = {
+					has_sector_focus = "production"
+					has_sector_focus = "balanced"
+				}
 			}
 		}
 	}
@@ -361,6 +418,7 @@ col_farming = {
 			uses_district_set = machine_world
 		}
 		is_special_colony_type = no
+		is_capital = no
 	}
 
 	planet_modifier = {
@@ -481,32 +539,53 @@ col_farming = {
 			num_free_districts = { type = district_hive value <= @small_planet_threshold }
 		}
 		modifier = {
-			add = 2
+			add = @stickiness
 			has_designation = col_farming
+		}
+		complex_trigger_modifier = {
+			trigger = num_districts
+			parameters = {
+				type = district_farming
+			}
+			mode = add
+			mult = 2
+		}
+		complex_trigger_modifier = {
+			trigger = num_districts
+			parameters = {
+				type = district_farming_uncapped
+			}
+			mode = add
+			mult = 2
+		}
+		complex_trigger_modifier = {
+			trigger = num_free_districts
+			parameters = {
+				type = district_farming
+			}
+			mode = add
 		}
 		modifier = {
 			add = 5
 			has_modifier = lush_planet
 		}
 		modifier = {
-			factor = 0.1
-			has_modifier = bleak_planet
-		}
-		modifier = {
-			add = 5
-			num_districts = { type = district_farming value >= @built_districts_medium_threshold }
-		}
-		modifier = {
-			factor = 0
-			num_districts = { type = district_farming value = 0 }
+			add = -10
+			OR = {
+				has_modifier = bleak_planet
+				has_modifier = unbalanced_ecosystem
+				has_modifier = irradiated_planet
+			}
 		}
 		modifier = {
 			factor = 0
 			exists = sector
 			sector = {
 				has_any_sector_focus = yes
-				not = { has_sector_focus = "production" }
-				not = { has_sector_focus = "balanced" }
+				NOR = {
+					has_sector_focus = "production"
+					has_sector_focus = "balanced"
+				}
 			}
 		}
 	}
@@ -524,6 +603,7 @@ col_generator = {
 			uses_district_set = habitat
 		}
 		is_special_colony_type = no
+		is_capital = no
 	}
 
 	planet_modifier = {
@@ -655,20 +735,18 @@ col_generator = {
 			}
 		}
 		modifier = {
-			add = 5
-				num_districts = { type = district_generator value >= @built_districts_medium_threshold }
-		}
-		modifier = {
-			factor = 0
-			num_districts = { type = district_generator value = 0 }
+			add = -10
+			has_modifier = energy_poor
 		}
 		modifier = {
 			factor = 0
 			exists = sector
 			sector = {
 				has_any_sector_focus = yes
-				not = { has_sector_focus = "production" }
-				not = { has_sector_focus = "balanced" }
+				NOR = {
+					has_sector_focus = "production"
+					has_sector_focus = "balanced"
+				}
 			}
 		}
 	}
