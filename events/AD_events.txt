@@ -4,7 +4,7 @@ planet_event = {
 	id = additionaldistricts.1
 	title = additionaldistricts.1.name
 	desc = additionaldistricts.1.desc
-	picture = GFX_evt_fleet_neutral
+	picture = GFX_evt_ad_district
 	is_triggered_only = yes
 	# 官庁街	
 	option = {
@@ -67,6 +67,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 官庁街の削除
 	option = {
@@ -111,6 +114,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_1
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.1
 		}
 	}
 	# 大学街 
@@ -174,6 +180,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 大学街の削除
 	option = {
@@ -218,6 +227,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_1
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.1
 		}
 	}
 	# 住宅街
@@ -281,6 +293,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 住宅街の削除
 	option = {
@@ -325,6 +340,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_1
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.1
 		}
 	}
 	# 造船工廠
@@ -388,6 +406,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 造船工廠の削除
 	option = {
@@ -432,6 +453,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_1
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.1
 		}
 	}
 	# 通信区域
@@ -495,6 +519,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 通信区域の削除
 	option = {
@@ -539,6 +566,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_1
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.1
 		}
 	}
 	# 観光区域
@@ -602,6 +632,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 観光区域の削除
 	option = {
@@ -646,6 +679,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_1
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.1
 		}
 	}
 	# 防衛区域
@@ -709,6 +745,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 防衛区域の削除
 	option = {
@@ -753,6 +792,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_1
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.1
 		}
 	}
 	# 構想特区
@@ -816,6 +858,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 構想特区の削除
 	option = {
@@ -860,6 +905,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_1
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.1
 		}
 	}
 	# 研究特区
@@ -923,6 +971,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 研究特区の削除
 	option = {
@@ -967,6 +1018,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_1
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.1
 		}
 	}
 	# 宇宙港区域
@@ -1030,6 +1084,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 宇宙港区域の削除
 	option = {
@@ -1074,6 +1131,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_1
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.1
 		}
 	}
 	# 軌道エレベーター
@@ -1137,6 +1197,9 @@ planet_event = {
 				set_planet_flag = do_ad_4
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	# 軌道エレベーターの削除
 	option = {
@@ -1182,6 +1245,9 @@ planet_event = {
 				remove_planet_flag = do_ad_1
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.1
+		}
 	}
 	option = {
 		name = CLOSE
@@ -1193,7 +1259,7 @@ planet_event = {
 	id = additionaldistricts.2
 	title = additionaldistricts.2.name
 	desc = additionaldistricts.2.desc
-	picture = GFX_evt_fleet_neutral
+	picture = GFX_evt_ad_large_scale_district
 	is_triggered_only = yes
 	# 空中都市
 	option = {
@@ -1237,6 +1303,9 @@ planet_event = {
 				add_deposit = d_ad_sky_cities
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.2
+		}
 	}
 	# 空中都市の削除
 	option = {
@@ -1270,6 +1339,9 @@ planet_event = {
 				count = 2
 				remove_deposit = d_ad_sky_cities
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.2
 		}
 	}
 	# 水中都市
@@ -1349,6 +1421,9 @@ planet_event = {
 				set_planet_flag = do_ad_water_cities_5
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.2
+		}
 	}
 	# 水中都市の削除
 	option = {
@@ -1396,6 +1471,9 @@ planet_event = {
 				}
 				remove_planet_flag = do_ad_water_cities_6
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.2
 		}
 	}
 	# 地下都市
@@ -1474,6 +1552,9 @@ planet_event = {
 				set_planet_flag = do_ad_underground_cities_5
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.2
+		}
 	}
 	# 地下都市の削除
 	option = {
@@ -1522,6 +1603,9 @@ planet_event = {
 				remove_planet_flag = do_ad_underground_cities_6
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.2
+		}
 	}
 	# 太陽光発電
 	option = {
@@ -1555,6 +1639,9 @@ planet_event = {
 				add_deposit = d_ad_solar_power_generation
 			}
 		}
+		planet_event = {
+			id = additionaldistricts.2
+		}
 	}
 	# 太陽光発電の削除
 	option = {
@@ -1578,6 +1665,9 @@ planet_event = {
 				count = 5
 				remove_deposit = d_ad_solar_power_generation
 			}
+		}
+		planet_event = {
+			id = additionaldistricts.2
 		}
 	}
 	option = {
