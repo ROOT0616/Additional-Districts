@@ -1234,7 +1234,7 @@ district_ad_natural_nuclear_power_generation = {
 ##############################	
 # 露天鉱床	採掘者*5	（自然発生）
 # 水中鉱床	水中採掘者*2	（自然発生）
-# 軌道鉱石群	宇宙採掘者*2（自然発生）
+# 軌道鉱石群	軌道鉱物学者*1（自然発生）
 # 高質鉱床	効率的採掘者*3	（自然発生）
 # 低質鉱床	低効率採掘者*7	（自然発生）
 # 露天鉱床	採掘者*5	（自然発生）
@@ -1482,7 +1482,7 @@ district_ad_under_water_deposits = {
 	}
 }
 
-# 軌道鉱石群	宇宙採掘者*2	（自然発生）
+# 軌道鉱石群	軌道鉱物学者*1	（自然発生）
 district_ad_orbital_deposits = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -1519,19 +1519,7 @@ district_ad_orbital_deposits = {
 		}
 	}
 	planet_modifier = {
-		planet_housing_add = 2
 		planet_max_districts_add = 1
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_valid_civic = civic_agrarian_idyll
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-		}
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -1541,7 +1529,7 @@ district_ad_orbital_deposits = {
 			}
 		}
 		modifier = {
-			job_ad_space_miner_drone_add = 2
+			job_ad_space_miner_drone_add = 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -1552,7 +1540,7 @@ district_ad_orbital_deposits = {
 			}
 		}
 		modifier = {
-			job_ad_space_miner_drone_add = 2
+			job_ad_space_miner_drone_add = 1
 			planet_housing_add = 1
 		}
 	}
@@ -1565,7 +1553,7 @@ district_ad_orbital_deposits = {
 			}
 		}
 		modifier = {
-			job_ad_space_miner_add = 2
+			job_ad_space_miner_add = 1
 		}
 	}
 	triggered_planet_modifier = {
@@ -1576,7 +1564,7 @@ district_ad_orbital_deposits = {
 			}
 		}
 		modifier = {
-			job_fe_acolyte_mine_add = 2
+			job_fe_acolyte_mine_add = 1
 		}
 	}
 	triggered_desc = {

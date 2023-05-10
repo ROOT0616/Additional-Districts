@@ -1,57 +1,3 @@
-##########################################
-#####    2次区域追加の表示と非表示    ######
-##########################################
-#2次街追加の非表示	undo_town_display
-decision_ad_undo_town_display = {
-	owned_planets_only = yes
-	enactment_time = 0
-	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
-	}
-	prerequisites = {
-		large_scale_air_construction_technology
-	}
-	allow = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
-	}
-	effect = {
-		custom_tooltip = decision_ad_undo_town_display_effects
-		hidden_effect = {
-			set_planet_flag = do_ad_undo_display
-		}
-	}
-	ai_weight = {
-		weight = 0
-	}
-}
-
-#2次街追加の表示	town_display
-decision_ad_town_display = {
-	owned_planets_only = yes
-	enactment_time = 0
-	potential = {
-		has_planet_flag = do_ad_undo_display
-	}
-	prerequisites = {
-		large_scale_air_construction_technology
-	}
-	allow = {
-		has_planet_flag = do_ad_undo_display
-	}
-	effect = {
-		custom_tooltip = decision_ad_town_display_effects
-		hidden_effect = {
-			remove_planet_flag = do_ad_undo_display
-		}
-	}
-	ai_weight = {
-		weight = 0
-	}
-}
 
 ##############################
 #####    都市区域追加    ######
@@ -70,9 +16,7 @@ decision_ad_large_scale_air_area_construction = {
 	}
 	potential = {
 		habitable_planet = yes
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_deposit = d_ad_sky_cities
 		}
@@ -142,9 +86,7 @@ decision_ad_undo_large_scale_air_area_construction = {
 		}
 	}
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_sky_cities
 	}
 	prerequisites = {
@@ -181,9 +123,7 @@ decision_ad_large_scale_water_area_construction = {
 	}
 	potential = {
 		habitable_planet = yes
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_deposit = d_ad_under_water_cities
 		}
@@ -248,9 +188,7 @@ decision_ad_undo_large_scale_water_area_construction = {
 		}
 	}
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_under_water_cities
 	}
 	prerequisites = {
@@ -287,9 +225,7 @@ decision_ad_large_scale_underground_area_construction = {
 	}
 	potential = {
 		habitable_planet = yes
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_deposit = d_ad_underground_cities
 		}
@@ -354,9 +290,7 @@ decision_ad_undo_large_scale_underground_area_construction = {
 		}
 	}
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_underground_cities
 	}
 	prerequisites = {
@@ -395,9 +329,7 @@ decision_ad_solar_power_generation = {
 	}
 	potential = {
 		habitable_planet = yes
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_solar_power_generation
 		}
@@ -508,9 +440,7 @@ decision_ad_government_district = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_government_district
 		}
@@ -605,9 +535,7 @@ decision_ad_undo_government_district = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_government_district
 	}
 	prerequisites = {
@@ -666,9 +594,7 @@ decision_ad_university_district = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_university_district
 		}
@@ -772,9 +698,7 @@ decision_ad_undo_university_district = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_university_district
 	}
 	prerequisites = {
@@ -833,9 +757,7 @@ decision_ad_residential_area = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_residential_area
 		}
@@ -878,9 +800,7 @@ decision_ad_undo_residential_area = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_residential_area
 	}
 	prerequisites = {
@@ -939,9 +859,7 @@ decision_ad_shipbuilding_arsenal = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_shipbuilding_arsenal
 		}
@@ -1036,9 +954,7 @@ decision_ad_undo_shipbuilding_arsenal = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_shipbuilding_arsenal
 	}
 	prerequisites = {
@@ -1097,9 +1013,7 @@ decision_ad_communication_area = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_communication_area
 		}
@@ -1194,9 +1108,7 @@ decision_ad_undo_communication_area = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_communication_area
 	}
 	prerequisites = {
@@ -1255,9 +1167,7 @@ decision_ad_tourist_area = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_tourist_area
 		}
@@ -1352,9 +1262,7 @@ decision_ad_undo_tourist_area = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_tourist_area
 	}
 	prerequisites = {
@@ -1413,9 +1321,7 @@ decision_ad_defense_zone = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_defense_zone
 		}
@@ -1510,9 +1416,7 @@ decision_ad_undo_defense_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_defense_zone
 	}
 	prerequisites = {
@@ -1571,9 +1475,7 @@ decision_ad_conceptual_zone = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_conceptual_zone
 		}
@@ -1668,9 +1570,7 @@ decision_ad_undo_conceptual_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_conceptual_zone
 	}
 	prerequisites = {
@@ -1729,9 +1629,7 @@ decision_ad_special_research_zone = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_special_research_zone
 		}
@@ -1835,9 +1733,7 @@ decision_ad_undo_special_research_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_special_research_zone
 	}
 	prerequisites = {
@@ -1896,9 +1792,7 @@ decision_ad_spaceport_area = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_spaceport_area
 		}
@@ -1993,9 +1887,7 @@ decision_ad_undo_spaceport_area = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_spaceport_area
 	}
 	prerequisites = {
@@ -2054,9 +1946,7 @@ decision_ad_orbital_elevator = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		NOT = {
 			has_planet_flag = do_ad_orbital_elevator
 		}
@@ -2151,9 +2041,7 @@ decision_ad_undo_orbital_elevator = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undo_display
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_orbital_elevator
 	}
 	prerequisites = {
@@ -2199,7 +2087,7 @@ decision_ad_undo_orbital_elevator = {
 }
 
 # 区画整備
-decision_ad_government_district = {
+decision_ad_district = {
 	owned_planets_only = yes
 	enactment_time = 0
 	resources = {
@@ -2214,49 +2102,40 @@ decision_ad_government_district = {
 		mixed_use_development_plan
 	}
 	effect = {
-		custom_tooltip = decision_ad_government_district_effects
 		hidden_effect = {
-			add_deposit = d_ad_government_district
-			set_planet_flag = do_ad_government_district
 			planet_event = {
-				id = action.21
+				id = additionaldistricts.1
 			}
 		}
 	}
 	ai_weight = {
-		weight = 50
-		modifier = {
-			factor = 4
-			count_owned_pop = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 20
+		weight = 0
+	}
+}
+
+# 都市区域追加
+decision_ad_large_scale_district = {
+	owned_planets_only = yes
+	enactment_time = 0
+	resources = {
+		category = decisions
+	}
+	potential = {
+		OR = {
+			has_technology = large_scale_air_construction_technology
+			has_technology = large_scale_in_water_construction_technology
+			has_technology = large_scale_ground_construction_technology
+			has_technology = mixed_use_development_plan
+		}
+	}
+	effect = {
+		hidden_effect = {
+			planet_event = {
+				id = additionaldistricts.2
 			}
 		}
-		modifier = {
-			factor = 500
-			owner = {
-				has_country_resource = {
-					type = minerals
-					amount > 5000
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			owner = {
-				any_planet_within_border = {
-					has_district_ad_government_district = yes
-					num_districts = {
-						type = district_ad_government_district
-						value < 3
-					}
-				}
-			}
-		}
+	}
+	ai_weight = {
+		weight = 0
 	}
 }

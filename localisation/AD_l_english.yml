@@ -1055,6 +1055,46 @@
  sm_ad_station_control_command_center:0 "Station Management Command Center"
  sm_ad_station_control_command_center_desc:0 "Department that oversees and manages the station's administrative operations."  
 
+##########################
+#####    イベント    ######
+##########################
+
+ additionaldistricts.1.name:0 "plot maintenance"
+ additionaldistricts.1.desc:0 ""
+ additionaldistricts.1.a:0 "government office district"
+ additionaldistricts.1.b:0 "Deletion of government district"
+ additionaldistricts.1.c:0 "University Street"
+ additionaldistricts.1.d:0 "Delete University Town"
+ additionaldistricts.1.e:0 "Residential Streets"
+ additionaldistricts.1.f:0 "Delete residential streets"
+ additionaldistricts.1.g:0 "Shipbuilding Arsenal"
+ additionaldistricts.1.h:0 "Delete shipbuilding arsenal"
+ additionaldistricts.1.i:0 "Communication zones"
+ additionaldistricts.1.j:0 "Deletion of communication areas"
+ additionaldistricts.1.k:0 "Tourist areas"
+ additionaldistricts.1.l:0 "Delete tourist areas"
+ additionaldistricts.1.m:0 "defense areas"
+ additionaldistricts.1.n:0 "Delete defense zones"
+ additionaldistricts.1.o:0 "Conceptual special zones"
+ additionaldistricts.1.p:0 "Delete conceptual special zones"
+ additionaldistricts.1.q:0 "Special research zones"
+ additionaldistricts.1.r:0 "Delete special research zones"
+ additionaldistricts.1.s:0 "Spaceport zones"
+ additionaldistricts.1.t:0 "Delete spaceport zone"
+ additionaldistricts.1.u:0 "Orbital elevator"
+ additionaldistricts.1.v:0 "delete orbital elevator"
+
+ additionaldistricts.1.name:0 "additional urban areas"
+ additionaldistricts.1.desc:0 ""
+ additionaldistricts.1.a:0 "aerial city"
+ additionaldistricts.1.b:0 "delete aerial city"
+ additionaldistricts.1.c:0 "cities in the water"
+ additionaldistricts.1.d:0 "Deletion of cities on water"
+ additionaldistricts.1.e:0 "Underground cities"
+ additionaldistricts.1.f:0 "Delete underground cities"
+ additionaldistricts.1.g:0 "Solar power"
+ additionaldistricts.1.h:0 "Delete solar power"
+
 #######################
 #####    ○○○○    ######
 #######################
