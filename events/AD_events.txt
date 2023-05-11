@@ -17,9 +17,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -79,9 +81,11 @@ planet_event = {
 			has_deposit = d_ad_government_district
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -130,9 +134,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -192,9 +198,11 @@ planet_event = {
 			has_deposit = d_ad_university_district
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -243,9 +251,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -305,9 +315,11 @@ planet_event = {
 			has_deposit = d_ad_residential_area
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -356,9 +368,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -418,9 +432,11 @@ planet_event = {
 			has_deposit = d_ad_shipbuilding_arsenal
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -469,9 +485,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -531,9 +549,11 @@ planet_event = {
 			has_deposit = d_ad_communication_area
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -582,9 +602,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -644,9 +666,11 @@ planet_event = {
 			has_deposit = d_ad_tourist_area
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -695,9 +719,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -757,9 +783,11 @@ planet_event = {
 			has_deposit = d_ad_defense_zone
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -808,9 +836,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -870,9 +900,11 @@ planet_event = {
 			has_deposit = d_ad_conceptual_zone
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -921,9 +953,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -983,9 +1017,11 @@ planet_event = {
 			has_deposit = d_ad_special_research_zone
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -1034,9 +1070,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -1096,9 +1134,11 @@ planet_event = {
 			has_deposit = d_ad_spaceport_area
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -1147,9 +1187,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -1209,9 +1251,11 @@ planet_event = {
 			has_deposit = d_ad_orbital_elevator
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -1273,17 +1317,19 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = alloys
-				value >= 500
-			}
-			resource_stockpile_compare = {
-				resource = exotic_gases
-				value >= 100
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 1000
+				}
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 500
+				}
+				resource_stockpile_compare = {
+					resource = exotic_gases
+					value >= 100
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -1316,17 +1362,19 @@ planet_event = {
 			has_deposit = d_ad_sky_cities
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = alloys
-				value >= 500
-			}
-			resource_stockpile_compare = {
-				resource = exotic_gases
-				value >= 100
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 1000
+				}
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 500
+				}
+				resource_stockpile_compare = {
+					resource = exotic_gases
+					value >= 100
+				}
 			}
 		}
 		add_resource = {
@@ -1357,13 +1405,15 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = alloys
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 1000
+				}
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -1437,13 +1487,15 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 1000
-			}
-			resource_stockpile_compare = {
-				resource = alloys
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 1000
+				}
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 500
+				}
 			}
 		}
 		add_resource = {
@@ -1488,13 +1540,15 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
-			}
-			resource_stockpile_compare = {
-				resource = alloys
-				value >= 1000
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 1000
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -1568,13 +1622,15 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
-			}
-			resource_stockpile_compare = {
-				resource = alloys
-				value >= 1000
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
+				resource_stockpile_compare = {
+					resource = alloys
+					value >= 1000
+				}
 			}
 		}
 		add_resource = {
@@ -1619,9 +1675,11 @@ planet_event = {
 			}
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 			NOT = {
 				has_modifier = resort_colony
@@ -1652,9 +1710,11 @@ planet_event = {
 			has_deposit = d_ad_solar_power_generation
 		}
 		allow = {
-			resource_stockpile_compare = {
-				resource = minerals
-				value >= 500
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 500
+				}
 			}
 		}
 		add_resource = {

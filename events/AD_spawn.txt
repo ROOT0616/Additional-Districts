@@ -309,4 +309,3 @@ country_event = {
 		add_AD_special_tourism_zone = yes
 	}
 }
-

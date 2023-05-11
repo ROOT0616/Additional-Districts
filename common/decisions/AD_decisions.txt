@@ -2122,10 +2122,12 @@ decision_ad_large_scale_district = {
 	}
 	potential = {
 		OR = {
-			has_technology = large_scale_air_construction_technology
-			has_technology = large_scale_in_water_construction_technology
-			has_technology = large_scale_ground_construction_technology
-			has_technology = mixed_use_development_plan
+			owner = {
+				has_technology = large_scale_air_construction_technology
+				has_technology = large_scale_in_water_construction_technology
+				has_technology = large_scale_ground_construction_technology
+				has_technology = mixed_use_development_plan
+			}
 		}
 	}
 	effect = {
