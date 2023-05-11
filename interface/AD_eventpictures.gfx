@@ -1,11 +1,5 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_evt_ad_district"
-		texturefile = "gfx/event_pictures/evt_ad_district.dds"
-		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes
-	}
-	spriteType = {
 		name = "GFX_evt_ad_large_scale_district"
 		texturefile = "gfx/event_pictures/evt_ad_large_scale_district.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"

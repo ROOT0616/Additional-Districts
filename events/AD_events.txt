@@ -4,7 +4,7 @@ planet_event = {
 	id = additionaldistricts.1
 	title = additionaldistricts.1.name
 	desc = additionaldistricts.1.desc
-	picture = GFX_evt_ad_district
+	picture = GFX_evt_ad_large_scale_district
 	is_triggered_only = yes
 	# 官庁街	
 	option = {
