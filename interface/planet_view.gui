@@ -47,7 +47,8 @@ guiTypes = {
 	containerWindowType = {
 		name = "planet_view"
 		orientation = upper_left
-		size = { width = 850 height = 680 }
+		size = { width = 850 height = 870 }
+		# size = { width = 850 height = 680 }
 		moveable = yes
 		position = { x = 300 y = 200 }
 		clipping = no
@@ -71,7 +72,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "planet_view_bg"
-			size = { width = 850 height = 640 }
+			size = { width = 850 height = 830 }
+			# size = { width = 850 height = 640 }
 			position = { x = 0 y = 0 }
 
 			background = {
@@ -875,27 +877,21 @@ guiTypes = {
 					}
 				}
 			}
-
-
 			containerWindowType = {
 				name = "colonizable_planet_window"
-
-
 			#<------------------------ PLANET FEATURES / DEPOSITS --------------------------->
 			# Planet Features
 			containerWindowType = {
 				name = "deposits_summary_window"
-				size = { width = 150 height = 90 }
-				position = { x = 415 y = 95 }
-
+				size = { width = 130 height = 90 }
+				position = { x = 435 y = 95 }
 				background = {
 					name = "background"
 					spriteType = "GFX_dark_area_cut"
 				}
-
 				buttonType = {
 					name = "deposits_button"
-					position = { x = 5 y = -3 }
+					position = { x = -5 y = -3 }
 					spriteType = "GFX_standard_button_116_34"
 					buttonFont = "cg_16b"
 					text = "FEATURES"
@@ -910,7 +906,7 @@ guiTypes = {
 				containerWindowType = {
 					name = "blocker_deposits_window"
 					size = { width = 100 height = 30 }
-					position = { x = 30 y = 55 }
+					position = { x = 20 y = 55 }
 					iconType = {
 						name = "blocker_deposit_frame"
 						spriteType = "GFX_blocker_icon"
@@ -935,7 +931,7 @@ guiTypes = {
 				containerWindowType = {
 					name = "rare_deposits_window"
 					size = { width = 90 height = 30 }
-					position = { x = 80 y = 55 }
+					position = { x = 75 y = 55 }
 
 					iconType = {
 						name = "blocker_deposit_frame"
@@ -963,7 +959,7 @@ guiTypes = {
 					### Districts Container Window
 					containerWindowType = {
 						name = "districts_window_background"
-						size = { width = 170 height = 360 }
+						size = { width = 165 height = 570 }
 						position = { x = 10 y = 50 }
 						background = {
 							position = { x = 0 y = 0 }
@@ -981,37 +977,11 @@ guiTypes = {
 							format = left
 							orientation = upper_left
 						}
-						# containerWindowType = {
-						# 	name = "available_districts_window_bg"
-						# 	size = { width = 75 height = 30 }
-						# 	position = { x = 5 y = 5 }
-						# 	background = {
-						# 		name = "district_background"
-						# 		spriteType = "GFX_dark_area_cut"
-						# 	}
-						# }
-						# containerWindowType = {
-						# 	name = "districts_title"
-						# 	size = { width = 350 height = 220 }
-						# 	position = { x = 25 y = 5 }
-						# 	instantTextBoxType = {
-						# 		name = "districts_text"
-						# 		font = "malgun_goth_24"
-						# 		position = { x = 0 y = 0 }
-						# 		text = "DISTRICTS_TITLE"
-						# 		maxWidth = 200
-						# 		maxHeight = 20
-						# 		fixedSize = yes
-						# 		format = left
-						# 		orientation = upper_left
-						# 		alwaysTransparent = no
-						# 	}
-						# }
 					}
 					### Districts Container Window
 					containerWindowType = {
 						name = "districts_window"
-						size = { width = 165 height = 310 }
+						size = { width = 165 height = 520 }
 						position = { x = 10 y = 90 }
 						verticalScrollbar = "right_vertical_slider"
 						background = {
@@ -1090,8 +1060,8 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "terraforming_panel"
-				size = { width = 150 height = 40 }
-				position = { x = 415 y = 50 }
+				size = { width = 130 height = 40 }
+				position = { x = 435 y = 50 }
 
 				background = {
 						name = "terraforming_background"
@@ -1106,7 +1076,7 @@ guiTypes = {
 
 				buttonType = {
 					name = "terraform_button"
-					position = { x = 5 y = -9 }
+					position = { x = -5 y = -9 }
 					spriteType = "GFX_standard_button_116_34"
 					buttonFont = "cg_16b"
 					text = "TERRAFORM_TITLE"
@@ -1129,7 +1099,7 @@ guiTypes = {
 
 				buttonType = {
 					name = "button"
-					position = { x = 5 y = -5 }
+					position = { x = -5 y = -5 }
 					spriteType = "GFX_standard_button_116_34"
 					buttonFont = "cg_16b"
 					text = "VIEW_SITE"
@@ -1170,8 +1140,9 @@ guiTypes = {
 				# Planetary Resources
 				containerWindowType = {
 					name = "planetary_resources"
-					size = { width = 150 height = 180 }
-					position = { x = 415 y = 250 }
+					size = { width = 130 height = 370 }
+					# size = { width = 130 height = 180 }
+					position = { x = 435 y = 250 }
 
 					background = {
 						name = "output_background"
@@ -1193,10 +1164,10 @@ guiTypes = {
 					instantTextBoxType={
 						name = "planetary_production_output_amount"
 						font = "cg_16b"
-						position = { x = 18  y = 26 }
+						position = { x = 13  y = 31 }
 						text = "" # produced resources set in code
 						maxWidth = 110
-						maxHeight = 70
+						maxHeight = 120
 						format = center
 						scrollbartype = "standardtext_slider_small"
 					}
@@ -1205,7 +1176,7 @@ guiTypes = {
 						name = "planetary_consumption_output_title"
 						font = "cg_16b"
 						text = "PLANETARY_DEFICIT"
-						position = { x = 0 y = 100 }
+						position = { x = 0 y = 170 }
 						maxWidth = 150
 						maxHeight = 20
 						fixedSize = yes
@@ -1215,10 +1186,10 @@ guiTypes = {
 					instantTextBoxType={
 						name = "planetary_consumption_output_amount"
 						font = "cg_16b"
-						position = { x = 18 y = 120 }
+						position = { x = 13 y = 195 }
 						text = "" # consumed resources set in code
 						maxWidth = 110
-						maxHeight = 50
+						maxHeight = 100
 						format = center
 						scrollbartype = "standardtext_slider_small"
 					}
@@ -1227,8 +1198,8 @@ guiTypes = {
 				# Trade value
 				containerWindowType = {
 					name = "trade_value_window"
-					size = { width = 150 height = 48 }
-					position = { x = 415 y = 192 }
+					size = { width = 130 height = 48 }
+					position = { x = 435 y = 192 }
 
 					background = {
 						name = "background"
@@ -1238,13 +1209,13 @@ guiTypes = {
 					iconType = {
 						name = "trade_value_icon"
 						spriteType = "GFX_planetview_trade_value"
-						position = { x=45 y= 8 }
+						position = { x=35 y= 8 }
 					}
 
 					instantTextBoxType = {
 						name = "trade_value_amount"
 						font = "malgun_goth_24"
-						position = { x = 70 y = 12 }
+						position = { x = 60 y = 12 }
 						text = "5"
 						maxWidth = 50
 						maxHeight = 20
@@ -1260,9 +1231,8 @@ guiTypes = {
 				# Buildings
 				containerWindowType = {
 					name = "title_buildings"
-					size = { width = 220 height = 360 }
-					position = { x = 185 y = 50 }
-					verticalScrollbar = "right_vertical_slider"
+					size = { width = 250 height = 570 }
+					position = { x = 180 y = 50 }
 					background = {
 							position = { x = 0 y = 0 }
 							name = "buildings_box_background"
@@ -1282,13 +1252,13 @@ guiTypes = {
 				}
 				gridBoxType = {
 					name = "buildings_box"
-					position = { x = 205 y = 100 }
-					size = { width = 200 height = 205 }
+					position = { x = 190 y = 100 }
+					size = { width = 205 height = 325 }
 					format = "UPPER_LEFT"
-					slotsize = { width = 60 height = 60 }
+					slotsize = { width = 57 height = 57 }
 					add_horizontal = yes
-					max_slots_horizontal = 3
-					max_slots_vertical = 4
+					max_slots_horizontal = 4
+					max_slots_vertical = 9
 				}
 
 				#<--------------------- Designation --------------------------->
@@ -1486,7 +1456,7 @@ guiTypes = {
 				# Build Queue
 				containerWindowType = {
 					name = "build_queue"
-					size = { width = 270 height = 210 }
+					size = { width = 270 height = 400 }
 					position = { x = 569 y = 220 }
 
 					background = {
@@ -1511,7 +1481,8 @@ guiTypes = {
 						name = "build_queue"
 						position = { x = 6 y = 40 }
 						orientation = upper_left
-						size = { x = 260 y = 160 }
+						size = { x = 260 y = 280 }
+						# size = { x = 260 y = 160 }
 						borderSize = { x = 0 y = 0 }
 						scrollbartype = "standardlistbox_slider"
 					}
@@ -1529,7 +1500,8 @@ guiTypes = {
 			#Jobs Art BG Box  ------ 5 px all around for art pading
 			containerWindowType = {
 				name = "Jobs_BG"
-				size = {width = 553 height = 389}
+				size = {width = 553 height = 579}
+				# size = {width = 553 height = 389}
 				position = { x = 5 y = 45 }
 
 				background = {
@@ -1597,7 +1569,8 @@ guiTypes = {
 				name = "pop_categories_list"
 				position = { x = 20 y = 100 }
 				background = ""
-				size = { x = 526 y = 326 }
+				size = { x = 526 y = 516 }
+				# size = { x = 526 y = 326 }
 				scrollbarType = "standardlistbox_slider"
 				borderSize = { x = 0 y = 0 }
 				orientation = "UPPER_LEFT"
@@ -2403,7 +2376,8 @@ guiTypes = {
 				#Armies Art BG Box  ------ 5 px all around for art pading
 				containerWindowType = {
 					name = "Armies_BG"
-					size = {width = 350 height = 390}
+					size = {width = 350 height = 580}
+					# size = {width = 350 height = 390}
 					position = { x = 5 y = 45 }
 
 					background = {
@@ -2549,7 +2523,8 @@ guiTypes = {
 				#Armies List
 				containerWindowType = {
 					name = "planet_armies"
-					size = { width = 320 height = 250 }
+					size = { width = 320 height = 440 }
+					# size = { width = 320 height = 250 }
 					position = { x = 20 y = 170 }
 
 					background = {
@@ -2573,7 +2548,8 @@ guiTypes = {
 					smoothListBoxType = {
 						name = "armies_list"
 						position = { x = 4 y = 5 }
-						size = { x = 312.5 y = 240 }
+						size = { x = 312.5 y = 430 }
+						# size = { x = 312.5 y = 240 }
 						spacing = 4
 						scrollbartype = "standardlistbox_slider"
 						autohide_scrollbar = yes
@@ -2627,7 +2603,8 @@ guiTypes = {
 				# Army Build Queue
 				containerWindowType = {
 					name = "army_build_queue"
-					size = { width = 270 height = 229 }
+					size = { width = 270 height = 419 }
+					# size = { width = 270 height = 229 }
 					position = { x = 569 y = 200 }
 
 					background = {
@@ -2652,7 +2629,8 @@ guiTypes = {
 						name = "build_queue"
 						position = { x = 7 y = 4 }
 						orientation = upper_left
-						size = { x = 260 y = 220 }
+						size = { x = 260 y = 410 }
+						# size = { x = 260 y = 220 }
 						borderSize = { x = 0 y = 0 }
 						scrollbartype = "standardlistbox_slider"
 					}

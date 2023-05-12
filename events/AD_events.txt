@@ -1310,7 +1310,9 @@ planet_event = {
 		name = additionaldistricts.2.a
 		custom_tooltip = decision_ad_large_scale_air_area_construction_effects
 		trigger = {
-			has_technology = large_scale_air_construction_technology
+			owner = {
+				has_technology = large_scale_air_construction_technology
+			}
 			habitable_planet = yes
 			NOT = {
 				has_deposit = d_ad_sky_cities
@@ -1358,7 +1360,9 @@ planet_event = {
 		name = additionaldistricts.2.b
 		custom_tooltip = decision_ad_undo_large_scale_air_area_construction_effects
 		trigger = {
-			has_technology = large_scale_air_construction_technology
+			owner = {
+				has_technology = large_scale_air_construction_technology
+			}
 			has_deposit = d_ad_sky_cities
 		}
 		allow = {
@@ -1397,7 +1401,9 @@ planet_event = {
 		name = additionaldistricts.2.c
 		custom_tooltip = decision_ad_large_scale_water_area_construction_effects
 		trigger = {
-			has_technology = large_scale_in_water_construction_technology
+			owner = {
+				has_technology = large_scale_in_water_construction_technology
+			}
 			habitable_planet = yes
 			NOR = {
 				has_planet_flag = do_ad_water_cities_5
@@ -1480,7 +1486,9 @@ planet_event = {
 		name = additionaldistricts.2.d
 		custom_tooltip = decision_ad_undo_university_district_effects
 		trigger = {
-			has_technology = large_scale_in_water_construction_technology
+			owner = {
+				has_technology = large_scale_in_water_construction_technology
+			}
 			OR = {
 				has_planet_flag = do_ad_water_cities_5
 				has_planet_flag = do_ad_water_cities_6
@@ -1533,7 +1541,9 @@ planet_event = {
 		name = additionaldistricts.2.e
 		custom_tooltip = decision_ad_large_scale_underground_area_construction_effects
 		trigger = {
-			has_technology = large_scale_ground_construction_technology
+			owner = {
+				has_technology = large_scale_ground_construction_technology
+			}
 			NOR = {
 				has_planet_flag = do_ad_underground_cities_5
 				has_planet_flag = do_ad_underground_cities_6
@@ -1615,7 +1625,9 @@ planet_event = {
 		name = additionaldistricts.2.f
 		custom_tooltip = decision_ad_undo_large_scale_underground_area_construction_effects
 		trigger = {
-			has_technology = large_scale_ground_construction_technology
+			owner = {
+				has_technology = large_scale_ground_construction_technology
+			}
 			OR = {
 				has_planet_flag = do_ad_underground_cities_5
 				has_planet_flag = do_ad_underground_cities_6
@@ -1668,8 +1680,10 @@ planet_event = {
 		name = additionaldistricts.2.g
 		custom_tooltip = decision_ad_solar_power_generation_effects
 		trigger = {
+			owner = {
+				has_technology = mixed_use_development_plan
+			}
 			habitable_planet = yes
-			has_technology = mixed_use_development_plan
 			NOT = {
 				has_deposit = d_ad_solar_power_generation
 			}
@@ -1706,7 +1720,9 @@ planet_event = {
 		name = additionaldistricts.2.h
 		custom_tooltip = decision_ad_undo_solar_power_generation_effects
 		trigger = {
-			has_technology = mixed_use_development_plan
+			owner = {
+				has_technology = mixed_use_development_plan
+			}
 			has_deposit = d_ad_solar_power_generation
 		}
 		allow = {
