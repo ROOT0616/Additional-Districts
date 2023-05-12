@@ -962,50 +962,83 @@ guiTypes = {
 
 					### Districts Container Window
 					containerWindowType = {
-						name = "districts_window"
-						size = { width = 140 height = 360 }
+						name = "districts_window_background"
+						size = { width = 170 height = 360 }
 						position = { x = 10 y = 50 }
-						verticalScrollbar = "right_vertical_slider"
 						background = {
 							position = { x = 0 y = 0 }
 							name = "districts_window_background"
 							spriteType = "GFX_dark_area_cut"
 						}
-						containerWindowType = {
-							name = "districts_title"
-							size = { width = 350 height = 220 }
-							position = { x = 16 y = -2 }
-							instantTextBoxType = {
-								name = "districts_text"
-								font = "malgun_goth_24"
-								position = { x = 6 y = 12 }
-								text = "DISTRICTS_TITLE"
-								maxWidth = 200
-								maxHeight = 20
-								fixedSize = yes
-								format = left
-								orientation = upper_left
-								alwaysTransparent = no
-							}
+						instantTextBoxType = {
+							name = "districts_text"
+							font = "malgun_goth_24"
+							position = { x = 22 y = 12 }
+							text = "DISTRICTS_TITLE"
+							maxWidth = 205
+							maxHeight = 20
+							fixedSize = yes
+							format = left
+							orientation = upper_left
 						}
-						containerWindowType = {
-							name = "available_districts_window_bg"
-							size = { width = 140 height = 60 }
-							position = { x = 10 y = 7 }
-							background = {
-								name = "district_background"
-								spriteType = "GFX_dark_area_cut"
-							}
+						# containerWindowType = {
+						# 	name = "available_districts_window_bg"
+						# 	size = { width = 75 height = 30 }
+						# 	position = { x = 5 y = 5 }
+						# 	background = {
+						# 		name = "district_background"
+						# 		spriteType = "GFX_dark_area_cut"
+						# 	}
+						# }
+						# containerWindowType = {
+						# 	name = "districts_title"
+						# 	size = { width = 350 height = 220 }
+						# 	position = { x = 25 y = 5 }
+						# 	instantTextBoxType = {
+						# 		name = "districts_text"
+						# 		font = "malgun_goth_24"
+						# 		position = { x = 0 y = 0 }
+						# 		text = "DISTRICTS_TITLE"
+						# 		maxWidth = 200
+						# 		maxHeight = 20
+						# 		fixedSize = yes
+						# 		format = left
+						# 		orientation = upper_left
+						# 		alwaysTransparent = no
+						# 	}
+						# }
+					}
+					### Districts Container Window
+					containerWindowType = {
+						name = "districts_window"
+						size = { width = 165 height = 310 }
+						position = { x = 10 y = 90 }
+						verticalScrollbar = "right_vertical_slider"
+						background = {
+							position = { x = 0 y = 0 }
+							name = "districts_window_background"
+							spriteType = "GFX_invisible"
+						}
+						# Districts Buttons
+						gridBoxType = {
+							name = "districts_grid_box"
+							position = { x = 10 y = 20 }
+							size = { width = 160 height = 2000 }
+							format = "UPPER_LEFT"
+							slotsize = { width = 70 height = 140 }
+							add_horizontal = yes
+							max_slots_horizontal = 2
+							max_slots_vertical = 12
 						}
 						# Districts num
 						containerWindowType = {
 							name = "planet_num_districts"
-							size = { width = 70 height = 45 }
-							position = { x = -10 y = 10 }
+							size = { width = 150 height = 45 }
+							position = { x = 125 y = 2 }
 							instantTextBoxType={
 								name = "planet_districts_amount"
 								font = "cg_16b"
-								position = { x = 30 y = 13 }
+								position = { x = 0 y = 0 }
 								text = "10"
 								maxWidth = 30
 								maxHeight = 40
@@ -1013,26 +1046,15 @@ guiTypes = {
 								format = center
 							}
 						}
-						# Districts Buttons
-						gridBoxType = {
-							name = "districts_grid_box"
-							position = { x = 50 y = 70 }
-							size = { width = 160 height = 1000 }
-							format = "UPPER_LEFT"
-							slotsize = { width = 150 height = 120 }
-							add_horizontal = yes
-							max_slots_horizontal = 1
-							max_slots_vertical = 12
-						}
 						# Available District Cubes Container
 						containerWindowType = {
 							name = "available_districts_window"
-							size = { width = 250 height = 45 }
-							position = { x = -10 y = 30 }
+							size = { width = 130 height = 45 }
+							position = { x = 0 y = 0 }
 							gridBoxType = {
 								name = "available_districts_grid_box"
-								size = { width = 100 height = 20 }
-								position = { x = 0 y = 16 }
+								size = { width = 130 height = 20 }
+								position = { x = 0 y = 0 }
 								format = "UPPER_RIGHT"
 								slotsize = { width = 10 height = 10 }
 								max_slots_horizontal = 20
@@ -1238,8 +1260,8 @@ guiTypes = {
 				# Buildings
 				containerWindowType = {
 					name = "title_buildings"
-					size = { width = 240 height = 360 }
-					position = { x = 165 y = 50 }
+					size = { width = 220 height = 360 }
+					position = { x = 185 y = 50 }
 					verticalScrollbar = "right_vertical_slider"
 					background = {
 							position = { x = 0 y = 0 }
@@ -1260,10 +1282,10 @@ guiTypes = {
 				}
 				gridBoxType = {
 					name = "buildings_box"
-					position = { x = 190 y = 100 }
-					size = { width = 180 height = 205 }
+					position = { x = 205 y = 100 }
+					size = { width = 200 height = 205 }
 					format = "UPPER_LEFT"
-					slotsize = { width = 65 height = 65 }
+					slotsize = { width = 60 height = 60 }
 					add_horizontal = yes
 					max_slots_horizontal = 3
 					max_slots_vertical = 4
