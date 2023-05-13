@@ -2102,7 +2102,6 @@ decision_ad_district = {
 				id = additionaldistricts.1
 			}
 		}
-		
 	}
 	ai_weight = {
 		weight = 0
