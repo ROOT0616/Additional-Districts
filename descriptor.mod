@@ -1,4 +1,7 @@
-version="1.25.6"
+version="1.25.9"
+dependencies={
+	"Gigastructural Engineering & More (3.8)"
+}
 tags={
 	"Gameplay"
 	"Diplomacy"

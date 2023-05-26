@@ -815,6 +815,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "uncolonizable_planet_window"
+				# position = { x = 220 y = 45 }
 				position = { x = 0 y = 45 }
 				size = { width = 600 height = 320 }
 
@@ -831,6 +832,7 @@ guiTypes = {
 					instantTextBoxType = {
 						name = "planet_desc"
 						font = "cg_16b"
+						# position = { x = 70 y = 10 }
 						position = { x = 10 y = 10 }
 						text = "blah blah blah"
 						maxWidth = 380
@@ -1036,7 +1038,8 @@ guiTypes = {
 
 				containerWindowType = {
 					name = "planet_desc_window"
-					position = { x = 10  y = 250 }
+					position = { x = 180  y = 250 }
+					# position = { x = 10  y = 250 }
 					size = { width = 555 height = 180 }
 
 					background = {

@@ -23,9 +23,9 @@ decision_ad_large_scale_air_area_construction = {
 		NOT = {
 			has_planet_flag = do_ad_sky_cities
 		}
-	}
-	prerequisites = {
-		large_scale_air_construction_technology
+		owner = {
+			has_technology = large_scale_air_construction_technology
+		}
 	}
 	allow = {
 		NOT = {
@@ -88,9 +88,9 @@ decision_ad_undo_large_scale_air_area_construction = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_sky_cities
-	}
-	prerequisites = {
-		large_scale_air_construction_technology
+		owner = {
+			has_technology = large_scale_air_construction_technology
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_sky_cities
@@ -130,9 +130,9 @@ decision_ad_large_scale_water_area_construction = {
 		NOT = {
 			has_planet_flag = do_ad_under_water_cities
 		}
-	}
-	prerequisites = {
-		large_scale_in_water_construction_technology
+		owner = {
+			has_technology = large_scale_in_water_construction_technology
+		}
 	}
 	allow = {
 		NOT = {
@@ -190,9 +190,9 @@ decision_ad_undo_large_scale_water_area_construction = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_under_water_cities
-	}
-	prerequisites = {
-		large_scale_in_water_construction_technology
+		owner = {
+			has_technology = large_scale_in_water_construction_technology
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_under_water_cities
@@ -232,9 +232,9 @@ decision_ad_large_scale_underground_area_construction = {
 		NOT = {
 			has_planet_flag = do_ad_underground_cities
 		}
-	}
-	prerequisites = {
-		large_scale_ground_construction_technology
+		owner = {
+			has_technology = large_scale_ground_construction_technology
+		}
 	}
 	allow = {
 		NOT = {
@@ -292,9 +292,9 @@ decision_ad_undo_large_scale_underground_area_construction = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_underground_cities
-	}
-	prerequisites = {
-		large_scale_ground_construction_technology
+		owner = {
+			has_technology = large_scale_ground_construction_technology
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_underground_cities
@@ -333,9 +333,9 @@ decision_ad_solar_power_generation = {
 		NOT = {
 			has_planet_flag = do_ad_solar_power_generation
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -386,13 +386,11 @@ decision_ad_undo_solar_power_generation = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		NOT = {
-			has_planet_flag = do_ad_undisplay
-		}
+		is_ai = yes
 		has_planet_flag = do_ad_solar_power_generation
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_solar_power_generation
@@ -444,9 +442,9 @@ decision_ad_government_district = {
 		NOT = {
 			has_planet_flag = do_ad_government_district
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -537,9 +535,9 @@ decision_ad_undo_government_district = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_government_district
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_government_district
@@ -598,9 +596,9 @@ decision_ad_university_district = {
 		NOT = {
 			has_planet_flag = do_ad_university_district
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -700,9 +698,9 @@ decision_ad_undo_university_district = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_university_district
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_university_district
@@ -761,9 +759,9 @@ decision_ad_residential_area = {
 		NOT = {
 			has_planet_flag = do_ad_residential_area
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -802,9 +800,9 @@ decision_ad_undo_residential_area = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_residential_area
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_residential_area
@@ -863,9 +861,9 @@ decision_ad_shipbuilding_arsenal = {
 		NOT = {
 			has_planet_flag = do_ad_shipbuilding_arsenal
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -956,9 +954,9 @@ decision_ad_undo_shipbuilding_arsenal = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_shipbuilding_arsenal
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_shipbuilding_arsenal
@@ -1017,9 +1015,9 @@ decision_ad_communication_area = {
 		NOT = {
 			has_planet_flag = do_ad_communication_area
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -1110,9 +1108,9 @@ decision_ad_undo_communication_area = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_communication_area
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_communication_area
@@ -1171,9 +1169,9 @@ decision_ad_tourist_area = {
 		NOT = {
 			has_planet_flag = do_ad_tourist_area
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -1264,9 +1262,9 @@ decision_ad_undo_tourist_area = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_tourist_area
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_tourist_area
@@ -1325,9 +1323,9 @@ decision_ad_defense_zone = {
 		NOT = {
 			has_planet_flag = do_ad_defense_zone
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -1418,9 +1416,9 @@ decision_ad_undo_defense_zone = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_defense_zone
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_defense_zone
@@ -1479,9 +1477,9 @@ decision_ad_conceptual_zone = {
 		NOT = {
 			has_planet_flag = do_ad_conceptual_zone
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -1572,9 +1570,9 @@ decision_ad_undo_conceptual_zone = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_conceptual_zone
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_conceptual_zone
@@ -1633,9 +1631,9 @@ decision_ad_special_research_zone = {
 		NOT = {
 			has_planet_flag = do_ad_special_research_zone
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -1735,9 +1733,9 @@ decision_ad_undo_special_research_zone = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_special_research_zone
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_special_research_zone
@@ -1796,9 +1794,9 @@ decision_ad_spaceport_area = {
 		NOT = {
 			has_planet_flag = do_ad_spaceport_area
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -1889,9 +1887,9 @@ decision_ad_undo_spaceport_area = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_spaceport_area
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_spaceport_area
@@ -1950,9 +1948,9 @@ decision_ad_orbital_elevator = {
 		NOT = {
 			has_planet_flag = do_ad_orbital_elevator
 		}
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		NOT = {
@@ -2043,9 +2041,9 @@ decision_ad_undo_orbital_elevator = {
 	potential = {
 		is_ai = yes
 		has_planet_flag = do_ad_orbital_elevator
-	}
-	prerequisites = {
-		mixed_use_development_plan
+		owner = {
+			has_technology = mixed_use_development_plan
+		}
 	}
 	allow = {
 		has_planet_flag = do_ad_orbital_elevator
@@ -2097,6 +2095,7 @@ decision_ad_district = {
 		mixed_use_development_plan
 	}
 	effect = {
+		custom_tooltip = decision_ad_district_desc
 		hidden_effect = {
 			planet_event = {
 				id = additionaldistricts.1
@@ -2126,6 +2125,7 @@ decision_ad_large_scale_district = {
 		}
 	}
 	effect = {
+		custom_tooltip = decision_ad_large_scale_district_desc
 		hidden_effect = {
 			planet_event = {
 				id = additionaldistricts.2
