@@ -132,6 +132,12 @@
  decision_ad_undo_orbital_elevator_desc:0 "What will you do if it falls?  Start removing the plots."
  decision_ad_undo_orbital_elevator_effects:0 ""
 
+ decision_ad_district:0 "AD District Maintenance Committee Meetings"
+ decision_ad_district_desc:0 "A Planet District Maintenance Committee will be convened to add and remove districts added in Additional Districts And Buildings to the Planet."
+
+ decision_ad_large_scale_district:0 "AD Urban Area Development Committee Meetings"
+ decision_ad_large_scale_district_desc:0 "Convene an Urban Area Development Committee for the planet to add or remove urban areas added in Additional Districts And Buildings to the planet."
+
 #######################
 #####    技術    ######
 #######################
@@ -155,67 +161,61 @@
  job_ad_water_farmer:0 "Underwater Farmer"
  job_ad_water_farmer_plural:0 "Underwater Farmer"
  job_ad_water_farmer_desc:0 "Farmer who produces and manages seaweed and other edible aquatic organisms"
- job_ad_water_farmer_effect_desc:0 "£job_ad_water_farmer£ $job_ad_water_farmer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £food£ §Y$food$§!を産出する"
+ job_ad_water_farmer_effect_desc:0 "£job_ad_water_farmer£ $job_ad_water_farmer_plural$ consumes £consumer_goods£ §Y$consumer_goods$§! to produce £food£ §Y$food$§!"
  mod_job_ad_water_farmer_add:0 "$job_ad_water_farmer$ Jobs"
 
  job_ad_facility_maintainer:0 "Facility Maintainer"
  job_ad_facility_maintainer_plural:0 "Facility Maintainer"
  job_ad_facility_maintainer_desc:0 "Engineer for maintenance and expansion of facilities and cities"
- job_ad_facility_maintainer_effect_desc:0 "£job_ad_facility_maintainer£ $job_ad_facility_maintainer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出し、 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!増加させる"
+ job_ad_facility_maintainer_effect_desc:0 "£job_ad_facility_maintainer£ $job_ad_facility_maintainer_plural$ consumes £consumer_goods£ §Y$consumer_goods$§! to produce £minerals£ §Y$minerals$§!, and increase £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
  mod_job_ad_facility_maintainer_add:0 "$job_ad_facility_maintainer$ Jobs"
 
  job_ad_geothermal_technician:0 "Geothermal Engineer"
  job_ad_geothermal_technician_plural:0 "Geothermal Engineer"
  job_ad_geothermal_technician_desc:0 "Engineer who manipulates geothermal energy and converts it into energy."
- job_ad_geothermal_technician_effect_desc:0 "£job_ad_geothermal_technician£ $job_ad_geothermal_technician_plural$は、 £energy£ §Y$energy$§!を産出する"
+ job_ad_geothermal_technician_effect_desc:0 "£job_ad_geothermal_technician£ $job_ad_geothermal_technician_plural$ produces £energy£ §Y$energy$§!"
  mod_job_ad_geothermal_technician_add:0 "$job_ad_geothermal_technician$ Jobs"
 
  job_ad_atomic_engineer:0 "Atomic Engineer"
  job_ad_atomic_engineer_plural:0 "Atomic Engineer"
  job_ad_atomic_engineer_desc:0 "Engineer who stabilises natural nuclear reactors and converts them into energy"
- job_ad_atomic_engineer_effect_desc:0 "£job_ad_atomic_engineer£ $job_ad_atomic_engineer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £energy£ §Y$energy$§!を産出する"
+ job_ad_atomic_engineer_effect_desc:0 "£job_ad_atomic_engineer£ $job_ad_atomic_engineer_plural$ consumes £consumer_goods£ §Y$consumer_goods$§! to produce £energy£ §Y$energy$§!"
  mod_job_ad_atomic_engineer_add:0 "$job_ad_atomic_engineer$ Jobs"
 
  job_ad_underwater_miner:0 "Underwater Miner"
  job_ad_underwater_miner_plural:0 "Underwater Miner"
  job_ad_underwater_miner_desc:0 "Engineer who mines in dense veins produced under high pressure"
- job_ad_underwater_miner_effect_desc:0 "£job_ad_underwater_miner£ $job_ad_underwater_miner_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出する"
+ job_ad_underwater_miner_effect_desc:0 "£job_ad_underwater_miner£ $job_ad_underwater_miner_plural$ consumes £consumer_goods£ §Y$consumer_goods$§! to produce £minerals£ §Y$minerals$§!"
  mod_job_ad_underwater_miner_add:0 "$job_ad_underwater_miner$ Jobs"
-
- job_ad_space_miner:0 "Space Miner"
- job_ad_space_miner_plural:0 "Space Miner"
- job_ad_space_miner_desc:0 "Engineer who extracts minerals found in orbit"
- job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minerals£ §Y$minerals$§!を産出する"
- mod_job_ad_space_miner_add:0 "$job_ad_space_miner$ Jobs"
 
  job_ad_low_efficiency_miner:0 "Low Efficiency Miner"
  job_ad_low_efficiency_miner_plural:0 "Low Efficiency Miner"
  job_ad_low_efficiency_miner_desc:0 "Worker trained to mine large quantities of low-quality ore."
- job_ad_low_efficiency_miner_effect_desc:0 "£job_ad_low_efficiency_miner£ $job_ad_low_efficiency_miner_plural$は、 £minerals£ §Y$minerals$§!を産出する"
+ job_ad_low_efficiency_miner_effect_desc:0 "£job_ad_low_efficiency_miner£ $job_ad_low_efficiency_miner_plural$ produces £minerals£ §Y$minerals$§!"
  mod_job_ad_low_efficiency_miner_add:0 "$job_ad_low_efficiency_miner$ Jobs"
 
  job_ad_fungus_farmer:0 "Fungus Farmer"
  job_ad_fungus_farmer_plural:0 "Fungus Farmer"
  job_ad_fungus_farmer_desc:0 "Worker producing mushrooms, pungent edible fungi, etc."
- job_ad_fungus_farmer_effect_desc:0 "£job_ad_fungus_farmer£ $job_ad_fungus_farmer_plural$は、 £food£ §Y$food$§!を産出する"
+ job_ad_fungus_farmer_effect_desc:0 "£job_ad_fungus_farmer£ $job_ad_fungus_farmer_plural$ produces £food£ §Y$food$§!"
  mod_job_ad_fungus_farmer_add:0 "$job_ad_fungus_farmer$ Jobs"
 
  job_ad_dairy_farmer:0 "Dairy Farmer"
  job_ad_dairy_farmer_plural:0 "Dairy Farmer"
  job_ad_dairy_farmer_desc:0 "Workers who produce mainly meat, dairy products, eggs and other sources of protein."
- job_ad_dairy_farmer_effect_desc:0 "£ad_dairy_farmer£ $ad_dairy_farmer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £food£ §Y$food$§!を産出する"
+ job_ad_dairy_farmer_effect_desc:0 "£ad_dairy_farmer£ $ad_dairy_farmer_plural$ consumes £consumer_goods£ §Y$consumer_goods$§! to produce £food£ §Y$food$§!"
  mod_job_ad_dairy_farmer_add:0 "$job_ad_dairy_farmer$ Jobs"
 
  job_ad_large_scale_farmer:0 "Large Scale Farmer"
  job_ad_large_scale_farmer_plural:0 "Large Scale Farmer"
  job_ad_large_scale_farmer_desc:0 "Large scale plantation farmer with cheap mass settlement"
- job_ad_large_scale_farmer_effect_desc:0 "£job_ad_large_scale_farmer£ $job_ad_large_scale_farmer_plural$は、 £food£ §Y$food$§!を産出する"
+ job_ad_large_scale_farmer_effect_desc:0 "£job_ad_large_scale_farmer£ $job_ad_large_scale_farmer_plural$ produces £food£ §Y$food$§!"
  mod_job_ad_large_scale_farmer_add:0 "$job_ad_large_scale_farmer$ Jobs"
 
  job_ad_servicer:0 "Service Occupation"
  job_ad_servicer_plural:0 "Service Occupation"
  job_ad_servicer_desc:0 "Service providers called essential workers, such as nursing, cleaning, driving and transport."
- job_ad_servicer_effect_desc:0 "£job_ad_servicer£ $job_ad_servicer_plural$は、 £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!、 £mod_pop_happiness£ §Y$MOD_POP_HAPPINESS$§!を増加させる"
+ job_ad_servicer_effect_desc:0 "£job_ad_servicer£ $job_ad_servicer_plural$ increases £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, £mod_pop_happiness£ §Y$MOD_POP_HAPPINESS$§!"
  mod_job_ad_servicer_add:0 "$job_ad_servicer$ Jobs"
  mod_job_ad_servicer_per_pop:0 "§G+1§! $job_ad_servicer$ Job per $VALUE$ Pops"
  mod_job_ad_servicer_per_pop_short:0 "\n§G+1§! £mod_job_ad_servicer_add£ per $VALUE$ £pop£"
@@ -223,43 +223,49 @@
  job_ad_forcrd_larbor:0 "Forced Labourer"
  job_ad_forcrd_larbor_plural:0 "Forced Labourer"
  job_ad_forcrd_larbor_desc:0 "Citizenship holders forced to work for a variety of reasons, regardless of their intentions."
- job_ad_forcrd_larbor_effect_desc:0 "£ad_forcrd_larbor£ $ad_forcrd_larbor_plural$は、 £food£ §Y$food$§!、 £minerals£ §Y$minerals$§!、 £consumer_goods£ §Y$consumer_goods$§!を産出する"
+ job_ad_forcrd_larbor_effect_desc:0 "£ad_forcrd_larbor£ $ad_forcrd_larbor_plural$ produces £food£ §Y$food$§!, £minerals£ §Y$minerals$§!, £consumer_goods£ §Y$consumer_goods$§!"
  mod_job_ad_forcrd_larbor_add:0 "$job_ad_forcrd_larbor$ Jobs"
  mod_job_ad_forcrd_larbor_per_pop:0 "§G+1§! $job_ad_forcrd_larbor$ Job per $VALUE$ Pops"
  mod_job_ad_forcrd_larbor_per_pop_short:0 "\n§G+1§! £mod_job_ad_forcrd_larbor_add£ per $VALUE$ £pop£"
+
+ job_ad_efficient_miner:0 "Efficient Miner"
+ job_ad_efficient_miner_plural:0 "Efficient Miner"
+ job_ad_efficient_miner_desc:0 "Worker trained to mine high quality ore with as little waste as possible"
+job_ad_efficient_miner_effect_desc:0 "£job_ad_efficient_miner£ $job_ad_efficient_miner_plural$ produces £minerals£ §Y$minerals$§!"
+ mod_job_ad_efficient_miner_add:0 "$job_ad_efficient_miner$ Jobs"
 
 #########################
 #####    専門職    ######
 #########################
 
- job_ad_efficient_miner:0 "Efficient Miner"
- job_ad_efficient_miner_plural:0 "Efficient Miner"
- job_ad_efficient_miner_desc:0 "Worker trained to mine high quality ore with as little waste as possible"
- job_ad_efficient_miner_effect_desc:0 "£job_ad_efficient_miner£ $job_ad_efficient_miner_plural$は、 £minerals£ §Y$minerals$§!を産出する"
- mod_job_ad_efficient_miner_add:0 "$job_ad_efficient_miner$ Jobs"
+ job_ad_space_miner:0 "Orbital Mineralogist"
+ job_ad_space_miner_plural:0 "Orbital Mineralogist"
+ job_ad_space_miner_desc:0 "Engineers extracting minerals present in orbit."
+job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to produce £minerals£ §Y$minerals$§! and £engineering£ §YEngineering§!"
+ mod_job_ad_space_miner_add:0 "$job_ad_space_miner$ Jobs"
 
  job_ad_data_minor:0 "Data Minor"
  job_ad_data_minor_plural:0 "Data Minor"
  job_ad_data_minor_desc:0 "Expert in exploring past knowledge, new insights and rediscovering the past."
- job_ad_data_minor_effect_desc:0 "£job_ad_data_minor£ $job_ad_data_minor_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £unity£ §Y$unity$§!と £physics£ £society£ £engineering£ §Y研究力§!を産出し、 £mod_planet_researchers_produces_mult£ §Y$mod_planet_researchers_produces_mult$§!を増加させる"
+ job_ad_data_minor_effect_desc:0 "£job_ad_data_minor£ $job_ad_data_minor_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to produce £unity£ §Y$unity$§! and £physics£ £society£ £engineering£ §YResearch§!, increasing £mod_planet_researchers_produces_mult£ §Y$mod_planet_researchers_produces_mult$§!"
  mod_job_ad_data_minor_add:0 "$job_ad_data_minor$ Jobs"
 
  job_ad_shipwright:0 "Shipwright"
  job_ad_shipwright_plural:0 "Shipwright"
  job_ad_shipwright_desc:0 "Specialist in the construction of military and civilian ships."
- job_ad_shipwright_effect_desc:0 "£job_ad_shipwright£ $job_ad_shipwright_plural$は、 £consumer_goods£ §Y$consumer_goods$§!と £alloys£ §Y$alloys$§!を消費して £mod_starbase_shipyard_build_speed_mult£ §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§!と £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を産出する"
+ job_ad_shipwright_effect_desc:0 "£job_ad_shipwright£ $job_ad_shipwright_plural$ consume £consumer_goods£ §Y$consumer_goods$§! and £alloys£ §Y$alloys$§! to produce £mod_starbase_shipyard_build_speed_mult£ §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§! and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
  mod_job_ad_shipwright_add:0 "$job_ad_shipwright$ Jobs"
 
  job_ad_infrastructure_engineer:0 "Infrastructure Engineer"
  job_ad_infrastructure_engineer_plural:0 "Infrastructure Engineer"
  job_ad_infrastructure_engineer_desc:0 "Engineer who develops and expands the infrastructure, mainly in terms of telecommunications."
- job_ad_infrastructure_engineer_effect_desc:0 "£job_ad_infrastructure_engineer£ $job_ad_infrastructure_engineer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_planet_jobs_worker_produces_mult£ §Y$mod_planet_jobs_worker_produces_mult$§!を産出する"
+ job_ad_infrastructure_engineer_effect_desc:0 "£job_ad_infrastructure_engineer£ $job_ad_infrastructure_engineer_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to produce £mod_planet_jobs_worker_produces_mult£ §Y$mod_planet_jobs_worker_produces_mult$§!"
  mod_job_ad_infrastructure_engineer_add:0 "$job_ad_infrastructure_engineer$ Jobs"
 
  job_ad_commissioned_officer:0 "Commissioned Officer"
  job_ad_commissioned_officer_plural:0 "Commissioned Officer"
  job_ad_commissioned_officer_desc:0 "middle management position in the armed forces performing administrative, operational, command and other functions"
- job_ad_commissioned_officer_effect_desc:0 "£job_ad_commissioned_officer£ $job_ad_commissioned_officer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して  £defense_army£ §Y$defense_army$§!を編成し、 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
+ job_ad_commissioned_officer_effect_desc:0 "£job_ad_commissioned_officer£ $job_ad_commissioned_officer_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to form a £defense_army£ §Y$defense_army$§!, increasing £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
  mod_job_ad_commissioned_officer_add:0 "$job_ad_commissioned_officer$ Jobs"
  mod_job_ad_commissioned_officer_per_pop:0 "§G+1§! $job_ad_commissioned_officer$ Job per $VALUE$ Pops"
  mod_job_ad_commissioned_officer_per_pop_short:0 "\n§G+1§! £mod_job_ad_commissioned_officer_add£ per $VALUE$ £pop£"
@@ -267,55 +273,55 @@
  job_ad_entrepreneur:0 "Entrepreneur"
  job_ad_entrepreneur_plural:0 "Entrepreneur"
  job_ad_entrepreneur_desc:0 "Economic pioneer who opens up new markets and starts new businesses."
- job_ad_entrepreneur_effect_desc:0 "£job_ad_entrepreneur£ $job_ad_entrepreneur_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_trade_value_add£ §Y$TRADE_VALUE$§!、£society£ §Y$society_research$§!を産出し、£mod_trade_value_add£ §Y$TRADE_VALUE$§!を増加させる"
+ job_ad_entrepreneur_effect_desc:0 "£job_ad_entrepreneur£ $job_ad_entrepreneur_plural$ consume £consumer_goods£ §Y$consumer_goods$§! and produce £mod_trade_value_add£ §Y$TRADE_VALUE$§!, £society£ §Y$society_research$§!, increasing £mod_trade_value_add£ §Y$TRADE_VALUE$§!"
  mod_job_ad_entrepreneur_add:0 "$job_ad_entrepreneur$ Jobs"
 
  job_ad_spaceport_mechanics:0 "Spaceport Control Officer"
  job_ad_spaceport_mechanics_plural:0 "Spaceport Control Officer"
  job_ad_spaceport_mechanics_desc:0 "Specialist operator who manages and controls a spaceport."
- job_ad_spaceport_mechanics_effect_desc:0 "£job_ad_spaceport_mechanics£ $job_ad_spaceport_mechanics_plural$は、 £consumer_goods£ §Y$consumer_goods$§! £alloys£ §Y$alloys$§!を消費して £engineering£ §Y$engineering_research$§!を産出し、£mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
+ job_ad_spaceport_mechanics_effect_desc:0 "£job_ad_spaceport_mechanics£ $job_ad_spaceport_mechanics_plural$ consume £consumer_goods£ §Y$consumer_goods$§! £alloys£ §Y$alloys$§! and produce £engineering£ §Y$engineering_research$§!, increasing £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
  mod_job_ad_spaceport_mechanics_add:0 "$job_ad_spaceport_mechanics$ Jobs"
 
  job_ad_professorship:0 "Professorship"
  job_ad_professorship_plural:0 "Professorship"
  job_ad_professorship_desc:0 "Expert who teaches intellectual workers and does research himself"
- job_ad_professorship_effect_desc:0 "£job_ad_professorship£ $job_ad_professorship_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_planet_jobs_specialist_produces_mult£ §Y$mod_planet_jobs_specialist_produces_mult$§!を増加させる"
+ job_ad_professorship_effect_desc:0 "£job_ad_professorship£ $job_ad_professorship_plural$ consume £consumer_goods£ §Y$consumer_goods$§! and increase £mod_planet_jobs_specialist_produces_mult£ §Y$mod_planet_jobs_specialist_produces_mult$§!"
  mod_job_ad_professorship_add:0 "$job_ad_professorship$ Jobs"
 
  job_ad_excavator:0 "Excavator"
  job_ad_excavator_plural:0 "Excavator"
  job_ad_excavator_desc:0 "Archaeologist, explorer or other researcher of ancient sites"
- job_ad_excavator_effect_desc:0 "£job_ad_excavator£ $job_ad_excavator_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £minor_artifacts£ §Y$minor_artifacts$§!を産出する"
+ job_ad_excavator_effect_desc:0 "£job_ad_excavator£ $job_ad_excavator_plural$ consume £consumer_goods£ §Y$consumer_goods$§! and produce £minor_artifacts£ §Y$minor_artifacts$§!"
  mod_job_ad_excavator_add:0 "$job_ad_excavator$ Jobs"
 
  job_ad_banker:0 "Banker"
  job_ad_banker_plural:0 "Banker"
  job_ad_banker_desc:0 "A financial expert, specializing in investments, yields, etc."
- job_ad_banker_effect_desc:0 "£job_ad_banker£ $job_ad_banker_plural$は、 £energy£ §Y$energy$§!と £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!を産出し、 £mod_trade_value_add£ §Y$TRADE_VALUE$§!を増加させる"
+ job_ad_banker_effect_desc:0 "£job_ad_banker£ $job_ad_banker_plural$ produce £energy£ §Y$energy$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, increasing £mod_trade_value_add£ §Y$TRADE_VALUE$§!"
  mod_job_ad_banker_add:0 "$job_ad_banker$ Jobs"
 
  job_ad_lawyer:0 "Lawyer"
  job_ad_lawyer_plural:0 "Lawyer"
  job_ad_lawyer_desc:0 "A professional with a thorough knowledge of law, politics and society. This includes a wide range of positions such as lawyers, judicial scriveners and prosecutors."
- job_ad_lawyer_effect_desc:0 "£job_ad_lawyer£ $job_ad_lawyer_plural$は £society£ §Y$society_research$§!を産出し、 £crime£ §Y$PLANET_CRIME_TITLE$§!を減らし、  £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!を増加させる"
+ job_ad_lawyer_effect_desc:0 "£job_ad_lawyer£ $job_ad_lawyer_plural$ produce £society£ §Y$society_research$§!, reduce £crime£ §Y$PLANET_CRIME_TITLE$§!, and increase £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!"
  mod_job_ad_lawyer_add:0 "$job_ad_lawyer$ Jobs"
 
  job_ad_journalist:0 "Journalist"
  job_ad_journalist_plural:0 "Journalist"
  job_ad_journalist_desc:0 "A professional who gathers the truth (which they believe, or would have us believe) and has a great influence on the public."
- job_ad_journalist_effect_desc:0 "££ $_plural$は、 ££ §Y$$§!を消費して £unity£ §Y$unity$§!と £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!を産出し、 £mod_pop_cat_worker_political_power£ §Y$mod_pop_cat_worker_political_power$§!を増加させる"
+ job_ad_journalist_effect_desc:0 "£job_ad_journalist£ $job_ad_journalist_plural$ consume £consumer_goods£ §Y$consumer_goods$§! and produce £unity£ §Y$unity$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, increasing £mod_pop_cat_worker_political_power£ §Y$mod_pop_cat_worker_political_power$§!"
  mod_job_ad_journalist_add:0 "$job_ad_journalist$ Jobs"
 
  job_ad_librarian:0 "Data Librarian"
  job_ad_librarian_plural:0 "Data Librarian"
  job_ad_librarian_desc:0 "Keeper of knowledge who stores and manages tangible and intangible information media and information itself."
- job_ad_librarian_effect_desc:0 "£job_ad_librarian£ $job_ad_librarian_plural$は、  £unity£ §Y$unity$§!と £physics£ £society£ £engineering£ §Y研究力§!を産出する"
+ job_ad_librarian_effect_desc:0 "£job_ad_librarian£ $job_ad_librarian_plural$ produce £unity£ §Y$unity$§! and £physics£ £society£ £engineering£ §YResearch Points§!"
  mod_job_ad_librarian_add:0 "$job_ad_librarian$ Jobs"
 
  job_ad_psp:0 "Public Security Officer"
  job_ad_psp_plural:0 "Public Security Officer"
  job_ad_psp_desc:0 "A security official who monitors and exposes spies, violent groups and terrorists in the interests of national security."
- job_ad_psp_effect_desc:0 "£job_ad_psp£ $job_ad_psp_plural$は、 £mod_intel_encryption_add£ §Y$intel_encryption_add$§!を産出し、 £crime£ §Y$PLANET_CRIME_TITLE$§!を減らし、  £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!を増加させる"
+ job_ad_psp_effect_desc:0 "£job_ad_psp£ $job_ad_psp_plural$ produce £mod_intel_encryption_add£ §Y$intel_encryption_add$§!, reduce £crime£ §Y$PLANET_CRIME_TITLE$§!, and increase £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!"
  mod_job_ad_psp_add:0 "$job_ad_psp$ Jobs"
 
 #########################
@@ -325,19 +331,19 @@
  job_ad_general_officer:0 "General Officer"
  job_ad_general_officer_plural:0 "General Officer"
  job_ad_general_officer_desc:0 "The highest officer in the military leadership and command."
- job_ad_general_officer_effect_desc:0 "£job_ad_general_officer£ $job_ad_general_officer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して  £defense_army£ §Y$defense_army$§!を編成し、 £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
+ job_ad_general_officer_effect_desc:0 "£job_ad_general_officer£ $job_ad_general_officer_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to form £defense_army£ §Y$defense_army$§!, and increase £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
  mod_job_ad_general_officer_add:0 "$job_ad_general_officer$ Jobs"
 
  job_ad_ministor:0 "Aides"
  job_ad_ministor_plural:0 "Aides"
  job_ad_ministor_desc:0 "Ministers, aides, chamberlains and think-tank staff who support the country's top brass because of their knowledge, background and loyalty."
- job_ad_ministor_effect_desc:0 "£job_ad_ministor£ $job_ad_ministor_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £influence£ §Y$influence$§!を産出する"
+ job_ad_ministor_effect_desc:0 "£job_ad_ministor£ $job_ad_ministor_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to produce £influence£ §Y$influence$§!"
  mod_job_ad_ministor_add:0 "$job_ad_ministor$ Jobs"
 
  job_ad_congressman:0 "Advocate"
  job_ad_congressman_plural:0 "Advocate"
  job_ad_congressman_desc:0 "People who represent the views of society and citizens, such as elected representatives, high-profile social activists and retired heroic military personnel, and who strongly lobby the government."
- job_ad_congressman_effect_desc:0 "£job_ad_congressman£ $job_ad_congressman_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_pop_happiness£ §Y$MOD_POP_HAPPINESS$§!、 £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!を増加させる"
+ job_ad_congressman_effect_desc:0 "£job_ad_congressman£ $job_ad_congressman_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to increase £mod_pop_happiness£ §Y$MOD_POP_HAPPINESS$§! and £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!"
  mod_job_ad_congressman_add:0 "$job_ad_congressman$ Jobs"
 
 ##############################
@@ -374,11 +380,6 @@
  job_ad_underwater_miner_drone_desc:0 "Engineer who mines in dense veins produced under high pressure"
  mod_job_ad_underwater_miner_drone_add:0 "$job_ad_underwater_miner$ Jobs"
 
- job_ad_space_miner_drone:0 "Space Miner"
- job_ad_space_miner_drone_plural:0 "Space Miner"
- job_ad_space_miner_drone_desc:0 "Engineer who extracts minerals found in orbit"
- mod_job_ad_space_miner_drone_add:0 "$job_ad_space_miner$ Jobs"
-
  job_ad_low_efficiency_miner_drone:0 "Low Efficiency Miner"
  job_ad_low_efficiency_miner_drone_plural:0 "Low Efficiency Miner"
  job_ad_low_efficiency_miner_drone_desc:0 "Worker trained to mine large quantities of low-quality ore."
@@ -399,14 +400,19 @@
  job_ad_large_scale_farmer_drone_desc:0 "Large scale plantation farmer with cheap mass settlement"
  mod_job_ad_large_scale_farmer_drone_add:0 "$job_ad_large_scale_farmer$ Jobs"
 
-##############################
-#####    複雑ドローン    ######
-##############################
-
  job_ad_efficient_miner_drone:0 "Efficient Miner"
  job_ad_efficient_miner_drone_plural:0 "Efficient Miner"
  job_ad_efficient_miner_drone_desc:0 "Worker trained to mine high quality ore with as little waste as possible"
  mod_job_ad_efficient_miner_drone_add:0 "$job_ad_efficient_miner$ Jobs"
+
+##############################
+#####    複雑ドローン    ######
+##############################
+
+ job_ad_space_miner_drone:0 "Orbital Mineralogist"
+ job_ad_space_miner_drone_plural:0 "Orbital Mineralogist"
+ job_ad_space_miner_drone_desc:0 "Engineers extracting minerals present in orbit."
+ mod_job_ad_space_miner_drone_add:0 "$job_ad_space_miner_drone$ Jobs"
 
  job_ad_excavator_drone:0 "Excavator"
  job_ad_excavator_drone_plural:0 "Excavator"
@@ -974,6 +980,7 @@
 #######################
 #####  星系基地  ######
 #######################
+
  sm_ad_dry_dock:0 "Dry Dock"
  sm_ad_dry_dock_desc:0 "Larger and more efficient shipyards than usual" 
 
@@ -1060,40 +1067,40 @@
 ##########################
 
  additionaldistricts.1.name:0 "plot maintenance"
- additionaldistricts.1.desc:0 ""
- additionaldistricts.1.a:0 "government office district"
- additionaldistricts.1.b:0 "Deletion of government district"
- additionaldistricts.1.c:0 "University Street"
- additionaldistricts.1.d:0 "Delete University Town"
- additionaldistricts.1.e:0 "Residential Streets"
- additionaldistricts.1.f:0 "Delete residential streets"
- additionaldistricts.1.g:0 "Shipbuilding Arsenal"
- additionaldistricts.1.h:0 "Delete shipbuilding arsenal"
- additionaldistricts.1.i:0 "Communication zones"
- additionaldistricts.1.j:0 "Deletion of communication areas"
- additionaldistricts.1.k:0 "Tourist areas"
- additionaldistricts.1.l:0 "Delete tourist areas"
- additionaldistricts.1.m:0 "defense areas"
- additionaldistricts.1.n:0 "Delete defense zones"
- additionaldistricts.1.o:0 "Conceptual special zones"
- additionaldistricts.1.p:0 "Delete conceptual special zones"
- additionaldistricts.1.q:0 "Special research zones"
- additionaldistricts.1.r:0 "Delete special research zones"
- additionaldistricts.1.s:0 "Spaceport zones"
- additionaldistricts.1.t:0 "Delete spaceport zone"
- additionaldistricts.1.u:0 "Orbital elevator"
- additionaldistricts.1.v:0 "delete orbital elevator"
+ additionaldistricts.1.desc:0 "Here is the District Development Committee\nYou have the option to add or delete additional districts in Additional Districts And Buildings.\nSelect the following areas to add to or remove from the building frame.\n\nCaution!　If the number of zones becomes too large, it may not be displayed."
+ additionaldistricts.1.a:0 "Add $district_ad_government_district$"
+ additionaldistricts.1.b:0 "Delete $district_ad_government_district$"
+ additionaldistricts.1.c:0 "Add $district_ad_university_district$"
+ additionaldistricts.1.d:0 "Delete $district_ad_university_district$"
+ additionaldistricts.1.e:0 "Add $district_ad_residential_area$"
+ additionaldistricts.1.f:0 "Delete $district_ad_residential_area$"
+ additionaldistricts.1.g:0 "Add $district_ad_shipbuilding_arsenal$"
+ additionaldistricts.1.h:0 "Delete $district_ad_shipbuilding_arsenal$"
+ additionaldistricts.1.i:0 "Add $district_ad_communication_area$"
+ additionaldistricts.1.j:0 "Delete $district_ad_communication_area$"
+ additionaldistricts.1.k:0 "Add $district_ad_tourist_area$"
+ additionaldistricts.1.l:0 "Delete $district_ad_tourist_area$"
+ additionaldistricts.1.m:0 "Add $district_ad_defense_zone$"
+ additionaldistricts.1.n:0 "Delete $district_ad_defense_zone$"
+ additionaldistricts.1.o:0 "Add $district_ad_conceptual_zone$"
+ additionaldistricts.1.p:0 "Delete $district_ad_conceptual_zone$"
+ additionaldistricts.1.q:0 "Add $district_ad_special_research_zone$"
+ additionaldistricts.1.r:0 "Delete $district_ad_special_research_zone$"
+ additionaldistricts.1.s:0 "Add $district_ad_spaceport_area$"
+ additionaldistricts.1.t:0 "Delete $district_ad_spaceport_area$"
+ additionaldistricts.1.u:0 "Add $district_ad_orbital_elevator$"
+ additionaldistricts.1.v:0 "Delete $district_ad_orbital_elevator$"
 
- additionaldistricts.1.name:0 "additional urban areas"
- additionaldistricts.1.desc:0 ""
- additionaldistricts.1.a:0 "aerial city"
- additionaldistricts.1.b:0 "delete aerial city"
- additionaldistricts.1.c:0 "cities in the water"
- additionaldistricts.1.d:0 "Deletion of cities on water"
- additionaldistricts.1.e:0 "Underground cities"
- additionaldistricts.1.f:0 "Delete underground cities"
- additionaldistricts.1.g:0 "Solar power"
- additionaldistricts.1.h:0 "Delete solar power"
+ additionaldistricts.2.name:0 "additional urban areas"
+ additionaldistricts.2.desc:0 "Here is the Urban Area Development Commission\nYou have the option to add or delete additional districts in Additional Districts And Buildings.\nSelect the following areas to add to or remove from the building frame.\n\nCaution!　If the number of zones becomes too large, it may not be displayed."
+ additionaldistricts.2.a:0 "Add $district_ad_sky_cities$"
+ additionaldistricts.2.b:0 "Delete $district_ad_sky_cities$"
+ additionaldistricts.2.c:0 "Add $district_ad_under_water_cities$"
+ additionaldistricts.2.d:0 "Delete $district_ad_under_water_cities$"
+ additionaldistricts.2.e:0 "Add $district_ad_underground_cities$"
+ additionaldistricts.2.f:0 "Delete $district_ad_underground_cities$"
+ additionaldistricts.2.g:0 "Add $district_ad_solar_power_generation$"
+ additionaldistricts.2.h:0 "Delete $district_ad_solar_power_generation$"
 
 #######################
 #####    ○○○○    ######
