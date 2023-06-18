@@ -1,349 +1,305 @@
-ad_dry_dock= {
-    icon = "GFX_spaceport_module_ad_dry_dock"
-    construction_days = 360
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 500
-        }
-
-        upkeep = {
-            energy = 5
-        }
-    }
-
-  
-    station_modifier = {
+# 大規模ドック(Dry_dock)			合金500	360	エネルギー5		(通常のものよりも大型で効率化された造船所)	星系基地補正:造船所容量+3
+ad_dry_dock = {
+	icon = "GFX_spaceport_module_ad_dry_dock"
+	construction_days = 360
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 500
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	station_modifier = {
 		starbase_shipyard_capacity_add = 3
 	}
-
 }
 
-ad_repair_bot_base= {
-    icon = "GFX_spaceport_module_ad_repair_bot_base"
-    construction_days = 180
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 200
-        }
-
-        upkeep = {
-            energy = 3
-        }
-    }
-
-    orbit_modifier = {
-        ship_repair_hull_mult = 0.1
-        ship_repair_armor_mult = 0.1
-    }
+# 修理ボット基地(Repair_bot_base)		合金200	180	エネルギー3		(小型機械を利用した艦隊修理用の機械群)		軌道補正:停泊中艦船の船体修理速度+10%,停泊中艦船の装甲修理速度+10%
+ad_repair_bot_base = {
+	icon = "GFX_spaceport_module_ad_repair_bot_base"
+	construction_days = 180
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	orbit_modifier = {
+		ship_repair_hull_mult = 0.1
+		ship_repair_armor_mult = 0.1
+	}
 }
 
-ad_construction_bot_base= {
-    icon = "GFX_spaceport_module_ad_construction_bot_base"
-    construction_days = 180
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 200
-        }
-
-        upkeep = {
-            energy = 3
-        }
-    }
-
-    orbit_modifier = {
-        ship_build_speed_mult = 0.1
-        starbase_upgrade_speed_mult = 0.1
-    }
-    station_modifier = {
-        starbase_upgrade_speed_mult = 0.1
-        starbase_building_build_speed_mult = 0.1
-        starbase_module_build_speed_mult = 0.1
-    }
+# 建造ボット基地(Construction_bot_base)	合金200	180	エネルギー3		(小型機械を利用した建造用の機械群)		星系基地補正:造船速度+10%,星系基地建造速度+10%
+ad_construction_bot_base = {
+	icon = "GFX_spaceport_module_ad_construction_bot_base"
+	construction_days = 180
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	station_modifier = {
+		ship_build_speed_mult = 0.1
+		starbase_upgrade_speed_mult = 0.1
+		starbase_building_build_speed_mult = 0.1
+		starbase_module_build_speed_mult = 0.1
+	}
 }
 
-ad_great_naval_port= {
-    icon = "GFX_spaceport_module_ad_great_naval_port"
-    construction_days = 360
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 500
-        }
-
-        upkeep = {
-            energy = 5
-        }
-    }
-
-    country_modifier = {
-        country_naval_cap_add = 15
-    }
-    triggered_country_modifier = {
-        country_naval_cap_add = 5
-    }
-
+# 軍港(Great_naval_port)			合金500	360	エネルギー5		(通常のものよりも大型で効率化された停泊所)	帝国基地補正:宇宙軍許容量+15
+ad_great_naval_port = {
+	icon = "GFX_spaceport_module_ad_great_naval_port"
+	construction_days = 360
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 500
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	country_modifier = {
+		country_naval_cap_add = 15
+	}
+	triggered_country_modifier = {
+		potential = {
+			has_starbase_building = ad_station_control_room
+		}
+		country_naval_cap_add = 5
+	}
 }
 
-ad_great_trade_port= {
-    icon = "GFX_spaceport_module_ad_great_trade_port"
-    construction_days = 360
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 500
-        }
-
-        upkeep = {
-            energy = 5
-        }
-    }
-    station_modifier = {
-        starbase_trade_protection_add = 30
-        starbase_trade_collection_range_add = 2
-    }
-
+# 交易港(Great_trade_port)		合金500	360	エネルギー5		(通常のものよりも大型で効率化された交易拠点)	星系基地補正:収集範囲+2,交易保護値+3
+ad_great_trade_port = {
+	icon = "GFX_spaceport_module_ad_great_trade_port"
+	construction_days = 360
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 500
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	station_modifier = {
+		starbase_trade_collection_range_add = 2
+		starbase_trade_protection_add = 3
+	}
+	triggered_country_modifier = {
+		potential = {
+			has_starbase_building = ad_station_commercial_mall
+		}
+    trade_value_add = 10
+	}
 }
 
-ad_communications_hub= {
-    icon = "GFX_spaceport_module_ad_communications_hub"
-    construction_days = 180
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 200
-        }
-
-        upkeep = {
-            energy = 3
-        }
-    
-
-        produces = {
-            unity = 3
-        }
-
-        produces = {
-            trigger = {
-                exists = starbase
-                starbase = {
-                    has_starbase_building = ad_communication_control_division
-                }
-            }
-            unity = 3
-        }
-    }
+# 通信ハブセンター(Communications_hub)	合金200	180	エネルギー3		(帝国各地へ通信網を広げるステーション基地)	産出:統合力+2
+ad_communications_hub = {
+	icon = "GFX_spaceport_module_ad_communications_hub"
+	construction_days = 180
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+		}
+		upkeep = {
+			energy = 3
+		}
+		produces = {
+			unity = 3
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+				starbase = {
+					has_starbase_building = ad_communication_control_division
+				}
+			}
+			unity = 3
+		}
+	}
 }
 
-ad_computer_hub= {
-    icon = "GFX_spaceport_module_ad_computer_hub"
-    construction_days = 360
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 300
-        }
-
-        upkeep = {
-            energy = 3
-        }
-        produces = {
-            physics_research = 3
-            society_research = 3
-            engineering_research = 3
-        }
-    
-        produces = {
-            trigger = {
-                exists = starbase
-                starbase = {
-                    has_starbase_building = ad_microgravity_research_division
-                }
-            }
-            physics_research = 3
-            society_research = 3
-            engineering_research = 3
-        }
-    }
-
-    
-
+# 低重力コンピュータハブ(Computer_hub)	合金300	360	エネルギー3		(低重力を利用した研究用のコンピュータ基地)	産出:各研究力+2
+ad_computer_hub = {
+	icon = "GFX_spaceport_module_ad_computer_hub"
+	construction_days = 360
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 300
+		}
+		upkeep = {
+			energy = 3
+		}
+		produces = {
+			physics_research = 3
+			society_research = 3
+			engineering_research = 3
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+				starbase = {
+					has_starbase_building = ad_microgravity_research_division
+				}
+			}
+			physics_research = 3
+			society_research = 3
+			engineering_research = 3
+		}
+	}
 }
 
-ad_exploration_base= {
-    icon = "GFX_spaceport_module_ad_exploration_base"
-    construction_days = 180
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 100
-        }
-
-        upkeep = {
-            energy = 2
-        }
-        produces = {
-            minerals = 2
-        }
-    }
-
-    
-
+# 小惑星探査基地(Exploration_base)	合金100	180	エネルギー2		(小惑星を探査し、有用な資源を回収する基地)	産出:鉱物+2
+ad_exploration_base = {
+	icon = "GFX_spaceport_module_ad_exploration_base"
+	construction_days = 180
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+		upkeep = {
+			energy = 2
+		}
+		produces = {
+			minerals = 2
+		}
+	}
 }
 
-ad_munitions_arsenal= {
-    icon = "GFX_spaceport_module_ad_munitions_arsenal"
-    construction_days = 360
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 200
-        }
-
-        upkeep = {
-            energy = 5
-            minerals = 5
-        }
-        upkeep = {
-            trigger = {
-                exists = starbase
-                starbase = {
-                    has_starbase_building = ad_munitions_headquarters
-                }
-            }
-            minerals = 7.5
-        }
-    
-
-        produces = {
-            alloys = 2
-        }
-
-        produces = {
-            trigger = {
-                exists = starbase
-                starbase = {
-                    has_starbase_building = ad_munitions_headquarters
-                }
-            }
-            alloys = 3
-        }
-    }
+# 低重力軍需工廠(Munitions_arsenal)	合金200	360	エネルギー5,鉱物5	(低重力を利用した軍需用の工場)			産出:合金+2
+ad_munitions_arsenal = {
+	icon = "GFX_spaceport_module_ad_munitions_arsenal"
+	construction_days = 360
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+		}
+		upkeep = {
+			energy = 5
+			minerals = 5
+		}
+		upkeep = {
+			trigger = {
+				exists = starbase
+				starbase = {
+					has_starbase_building = ad_munitions_headquarters
+				}
+			}
+			minerals = 7.5
+		}
+		produces = {
+			alloys = 2
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+				starbase = {
+					has_starbase_building = ad_munitions_headquarters
+				}
+			}
+			alloys = 3
+		}
+	}
 }
 
-ad_private_secter_arsenal= {
-    icon = "GFX_spaceport_module_ad_private_secter_arsenal"
-    construction_days = 360
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 100
-        }
-
-        upkeep = {
-            energy = 5
-            minerals = 5
-        }
-        upkeep = {
-            trigger = {
-                exists = starbase
-                starbase = {
-                    has_starbase_building = ad_munitions_headquarters
-                }
-            }
-            minerals = 7.5
-        }
-    
-
-        produces = {
-            consumer_goods = 2
-        }
-
-        produces = {
-            trigger = {
-                exists = starbase
-                starbase = {
-                    has_starbase_building = ad_private_secter_headquarters
-                }
-            }
-            consumer_goods = 3
-        }
-    }
+# 低重力民需工廠(Private_secter_arsenal)	合金100	360	エネルギー5,鉱物5	(低重力を利用した民需用の工場)			産出:消費財+2
+ad_private_secter_arsenal = {
+	icon = "GFX_spaceport_module_ad_private_secter_arsenal"
+	construction_days = 360
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+		}
+		upkeep = {
+			energy = 5
+			minerals = 5
+		}
+		upkeep = {
+			trigger = {
+				exists = starbase
+				starbase = {
+					has_starbase_building = ad_munitions_headquarters
+				}
+			}
+			minerals = 7.5
+		}
+		produces = {
+			consumer_goods = 2
+		}
+		produces = {
+			trigger = {
+				exists = starbase
+				starbase = {
+					has_starbase_building = ad_private_secter_headquarters
+				}
+			}
+			consumer_goods = 3
+		}
+	}
 }
 
-ad_space_guard_base= {
-    icon = "GFX_spaceport_module_ad_space_guard_base"
-    construction_days = 360
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 300
-        }
-
-        upkeep = {
-            energy = 5
-        }
-    }
-    station_modifier = {
-        starbase_trade_protection_add = 50
-    }
-
+# 星間警備管区基地(Space_guard_base)	合金300	360	エネルギー5		(星系を警備し、海賊を抑制する低強度軍基地)	星系基地補正:交易保護値+5
+ad_space_guard_base = {
+	icon = "GFX_spaceport_module_ad_space_guard_base"
+	construction_days = 360
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 300
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	station_modifier = {
+		starbase_trade_protection_add = 5
+	}
 }
 
-ad_protective_bulkhead= {
-    icon = "GFX_spaceport_module_ad_protective_bulkhead"
-    construction_days = 360
-
-    initial = yes
-
-    resources = {
-        category = starbase_buildings
-        cost = {
-            alloys = 300
-        }
-
-        upkeep = {
-            minerals = 2
-        }
-    }
-    station_modifier = {
-        shipclass_starbase_hull_mult = 0.1
-
-    }
+# 防御隔壁(Protective_bulkhead)		合金300	360	鉱物2			(ステーションの強度を高め、耐久力を向上させる壁)星系基地補正:星系基地船体値+10%、星系基地装甲HP+10%
+ad_protective_bulkhead = {
+	icon = "GFX_spaceport_module_ad_protective_bulkhead"
+	construction_days = 360
+	initial = yes
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 300
+		}
+		upkeep = {
+			minerals = 2
+		}
+	}
+	station_modifier = {
+    ship_hull_mult = 0.1
+    ship_armor_mult = 0.1
+	}
 }
-

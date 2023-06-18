@@ -1019,21 +1019,26 @@
 
  sm_ad_station_control_room:0 "ステーション管制室"
  sm_ad_station_control_room_desc:0 "ステーションに入港する軍事艦隊を制御する部署" 
+ ad_station_control_room_custom_tooltip:0 "軍港：§G+5§! §Y宇宙軍許容量§!" 
 
  sm_ad_station_commercial_mall:0 "ステーション商業モール"
  sm_ad_station_commercial_mall_desc:0 "税関の外で商取引を行える魅力的な商業施設" 
+ ad_station_commercial_mall_custom_tooltip:0 "交易港1つごとに§G10§! £trade_value£ §Y$TRADE_VALUE$§!を産出する\n\n" 
 
  sm_ad_munitions_headquarters:0 "ステーション軍需本部"
  sm_ad_munitions_headquarters_desc:0 "ステーションの軍需工場を統括する施設" 
+ ad_munitions_headquarters_custom_tooltip:0 "低重力軍需工廠1つごとに§G3§! £alloys£ §Y$alloys$§!を産出する\n\n" 
 
  sm_ad_private_secter_headquarters:0 "ステーション民需本部"
  sm_ad_private_secter_headquarters_desc:0 "ステーションの民需工場を統括する施設" 
+ ad_private_secter_headquarters_custom_tooltip:0 "低重力民需工廠1つごとに§G3§! £consumer_goods£ §Y$consumer_goods$§!を産出する\n\n" 
 
  sm_ad_sub_station_control_room:0 "サブステーション管制室"
  sm_ad_sub_station_control_room_desc:0 "小型ステーションを統括する管制部署" 
 
  sm_ad_microgravity_research_division:0 "無重力研究本部"
  sm_ad_microgravity_research_division_desc:0 "無重力を活用した画期的な研究施設" 
+ ad_microgravity_research_division_custom_tooltip:0 "低重力コンピュータハブ1つごとに§G3§! 各研究力を産出する\n\n" 
 
  sm_ad_microgravity_training_center:0 "無重力訓練施設"
  sm_ad_microgravity_training_center_desc:0 "無重力を活用した画期的な軍事訓練施設" 
@@ -1052,6 +1057,7 @@
 
  sm_ad_communication_control_division:0 "星系通信管制本部"
  sm_ad_communication_control_division_desc:0 "星系内部における通信管制を行う部署"
+ ad_communication_control_division_custom_tooltip:0 "通信ハブセンター1つごとに§G3§! £unity£ §Y$unity$§!を産出する\n\n" 
 
  sm_ad_fleet_base_command_center:0 "艦隊基地司令部"
  sm_ad_fleet_base_command_center_desc:0 "星系に駐留する艦隊を統御する常設司令部"

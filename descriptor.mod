@@ -1,4 +1,4 @@
-version="1.25.10"
+version="1.25.11"
 dependencies={
 	"Gigastructural Engineering & More (3.8)"
 }
