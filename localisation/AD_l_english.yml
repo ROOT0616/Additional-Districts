@@ -1019,21 +1019,31 @@ job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plu
 
  sm_ad_station_control_room:0 "Station Control Room"
  sm_ad_station_control_room_desc:0 "Department that controls the military fleet entering the station." 
+ ad_station_control_room_custom_tooltip:0 "$sm_ad_great_naval_port$: §G+5§! §YNaval Capacity§!"
+ requires_ad_great_naval_port:0 "§RRequires §Y$sm_ad_great_naval_port$§!.§!"
 
  sm_ad_station_commercial_mall:0 "Station Commercial Mall"
  sm_ad_station_commercial_mall_desc:0 "Attractive commercial facilities to conduct business transactions outside of customs" 
+ ad_station_commercial_mall_custom_tooltip:0 "Produces §G10§! £trade_value£§Y$TRADE_VALUE$§! for each $sm_ad_great_trade_port$\n\n" 
+ requires_ad_great_trade_port:0 "§RRequires §Y$sm_ad_great_trade_port$§!.§!"
 
  sm_ad_munitions_headquarters:0 "Station Munitions Headquarters"
  sm_ad_munitions_headquarters_desc:0 "Facility overseeing the station's munitions plants." 
+ ad_munitions_headquarters_custom_tooltip:0 "Produces §G3§! £alloys£ §Y$alloys$§! for each $sm_ad_munitions_arsenal$\n\n" 
+ requires_ad_munitions_arsenal:0 "§RRequires §Y$sm_ad_munitions_arsenal$§!.§!"
 
  sm_ad_private_secter_headquarters:0 "Station Civilian Demand Headquarters"
  sm_ad_private_secter_headquarters_desc:0 "Facility overseeing the station's civilian plants." 
+ ad_private_secter_headquarters_custom_tooltip:0 "Produces §G3§! £consumer_goods£ §Y$consumer_goods$§! for each $sm_ad_private_secter_arsenal$\n\n" 
+ requires_ad_private_secter_arsenal:0 "§RRequires §Y$sm_ad_private_secter_arsenal$§!.§!"
 
  sm_ad_sub_station_control_room:0 "Substation Control Room"
  sm_ad_sub_station_control_room_desc:0 "Control department overseeing small stations" 
 
  sm_ad_microgravity_research_division:0 "Gravity Free Research Headquarters"
  sm_ad_microgravity_research_division_desc:0 "Innovative research facility utilizing weightlessness" 
+ ad_microgravity_research_division_custom_tooltip:0 "Produces §G3§! each §Yresearch§! for each $sm_ad_private_secter_arsenal$\n\n" 
+ requires_ad_computer_hub:0 "§RRequires §Y$sm_ad_private_secter_arsenal$§!.§!"
 
  sm_ad_microgravity_training_center:0 "Zero-Gravity Training Facility"
  sm_ad_microgravity_training_center_desc:0 "Innovative military training facility utilizing zero gravity" 
@@ -1052,6 +1062,7 @@ job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plu
 
  sm_ad_communication_control_division:0 "Star System Communication Control Headquarters"
  sm_ad_communication_control_division_desc:0 "Department in charge of communication control inside the star system"
+ ad_communication_control_division_custom_tooltip:0 "Produces §G3§! £unity£ §Y$unity$§! for each $sm_ad_communications_hub$\n\n" 
 
  sm_ad_fleet_base_command_center:0 "Fleet Base Command"
  sm_ad_fleet_base_command_center_desc:0 "Permanent command center to control the fleet stationed in the system"
@@ -1067,7 +1078,7 @@ job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plu
 ##########################
 
  additionaldistricts.1.name:0 "plot maintenance"
- additionaldistricts.1.desc:0 "Here is the District Development Committee\nYou have the option to add or delete additional districts in Additional Districts And Buildings.\nSelect the following areas to add to or remove from the building frame.\n\nCaution!　If the number of zones becomes too large, it may not be displayed."
+ additionaldistricts.1.desc:0 "Here is the District Development Committee\nYou have the option to add or delete additional districts in Additional Districts And Buildings.\nSelect the following areas to add to or remove from the building frame.\n\nCaution!  If the number of zones becomes too large, it may not be displayed."
  additionaldistricts.1.a:0 "Add $district_ad_government_district$"
  additionaldistricts.1.b:0 "Delete $district_ad_government_district$"
  additionaldistricts.1.c:0 "Add $district_ad_university_district$"
