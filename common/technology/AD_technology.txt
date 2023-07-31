@@ -9,6 +9,10 @@ mixed_use_development_plan = {
 	weight = @tier1weight2
 	weight_modifier = {
 		modifier = {
+			factor = 0
+			is_gestalt = yes
+		}
+		modifier = {
 			factor = 1.25
 			has_ethic = ethic_materialist
 		}
@@ -82,9 +86,6 @@ large_scale_in_water_construction_technology = {
 	tier = 2
 	category = {
 		new_worlds
-	}
-	prerequisites = {
-		"mixed_use_development_plan"
 	}
 	weight = @tier2weight3
 	weight_modifier = {
@@ -163,9 +164,6 @@ large_scale_air_construction_technology = {
 	category = {
 		new_worlds
 	}
-	prerequisites = {
-		"mixed_use_development_plan"
-	}
 	weight = @tier2weight3
 	weight_modifier = {
 		modifier = {
@@ -242,9 +240,6 @@ large_scale_ground_construction_technology = {
 	tier = 2
 	category = {
 		new_worlds
-	}
-	prerequisites = {
-		"mixed_use_development_plan"
 	}
 	weight = @tier2weight3
 	weight_modifier = {

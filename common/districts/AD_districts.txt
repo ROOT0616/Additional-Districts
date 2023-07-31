@@ -56,7 +56,7 @@ district_ad_archaeological_cities = {
 			job_ad_excavator_add = 2
 		}
 	}
-	triggered_planet_modifier = {
+	triggered_planet_modifier = {	
 		potential = {
 			exists = owner
 			owner = {
@@ -2685,7 +2685,7 @@ district_ad_ancient_databank = {
 	}
 }
 
-# 天然の要塞	兵士*４ （自然発生）爆撃耐性高
+# 天然の要塞	将校+1 兵士*４ （自然発生）爆撃耐性高
 district_ad_natural_fortress = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -2732,6 +2732,7 @@ district_ad_natural_fortress = {
 			}
 		}
 		modifier = {
+			job_ad_commissioned_officer_add = 1
 			job_soldier_add = 4
 		}
 	}
@@ -2743,7 +2744,7 @@ district_ad_natural_fortress = {
 			}
 		}
 		modifier = {
-			job_warrior_drone_add = 4
+			job_warrior_drone_add = 10
 		}
 	}
 	triggered_desc = {
@@ -2875,8 +2876,8 @@ district_ad_special_tourism_zone = {
 # 防衛区域    建物1	住居3    将官1  将校2  兵士4
 # 構想特区    建物1	住居2    豪商1    起業家3
 # 研究特区    建物1	住居2    科学総裁1  研究者5
-# 宇宙港区域    建物1	住居2    宇宙港整備員3
-# 軌道エレベーター    建物1	住居2    快適度    5    交易価値    5    幸福度    5  宇宙港整備員1、造船技師1
+# 宇宙港区域    建物1	住居2    宇宙港管制官3
+# 軌道エレベーター    建物1	住居2    快適度    5    交易価値    5    幸福度    5  宇宙港管制官1、造船技師1
 # 官庁街	建物1	住居2    政治家1    官僚4
 district_ad_government_district = {
 	base_buildtime = 240
@@ -3439,7 +3440,7 @@ district_ad_shipbuilding_arsenal = {
 			}
 		}
 		modifier = {
-			job_ad_shipwright_drone_add = 2
+			job_ad_shipwright_drone_add = 4
 		}
 	}
 	### Arcology Planets
@@ -4078,7 +4079,7 @@ district_ad_conceptual_zone = {
 			}
 		}
 		modifier = {
-			job_ad_entrepreneur_drone_add = 3
+			job_ad_entrepreneur_drone_add = 4
 		}
 	}
 	### Arcology Planets
@@ -4338,7 +4339,7 @@ district_ad_special_research_zone = {
 	}
 }
 
-# 宇宙港区域	建物1	住居2    宇宙港整備員3
+# 宇宙港区域	建物1	住居2    宇宙港管制官6
 district_ad_spaceport_area = {
 	base_buildtime = 240
 	show_on_uncolonized = {
@@ -4487,7 +4488,7 @@ district_ad_spaceport_area = {
 	}
 }
 
-# 軌道エレベーター 	建物1	住居2    快適度    5    交易価値    5    幸福度    5  宇宙港整備員1、造船技師1
+# 軌道エレベーター 	建物1	住居2    快適度    5    交易価値    5    幸福度    5  宇宙港管制官1、造船技師1
 district_ad_orbital_elevator = {
 	base_buildtime = 240
 	show_on_uncolonized = {

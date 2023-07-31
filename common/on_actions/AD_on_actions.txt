@@ -20,3 +20,11 @@ on_planet_bombarded = {
 		additionaldistricts.100
 	}
 }
+
+#From = Planet/Starbase/Megastructure scope
+#This = Fleet scope
+on_fleet_enter_orbit = {
+	events = {
+		additionaldistricts.100
+	}
+}

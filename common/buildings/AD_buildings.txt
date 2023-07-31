@@ -771,7 +771,7 @@ building_ad_O_tra = {
 	}
 }
 
-# building_ad_M_ind  産業省			労働者生産量+5%						政治家+1、官僚+2		(多数の高級官僚や事務員が務める役所。生産や許認可を行う官庁。)企業以外				維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
+# building_ad_M_ind  産業省			労働者POPの資源産出+5%						政治家+1、官僚+2		(多数の高級官僚や事務員が務める役所。生産や許認可を行う官庁。)企業以外				維持:エネ5、エキゾガス1		建設:鉱物800、エキゾガス100、時間550
 building_ad_M_ind = {
 	base_buildtime = 550
 	base_cap_amount = 1
@@ -1254,7 +1254,7 @@ building_ad_O_bank = {
 	}
 }
 
-# building_ad_E_mil  参謀本部		宇宙軍移動速度+5%、射程+5%				将官+1、将校+2			(軍を指揮し、さまざまな計画を立案する官庁。)企業以外						維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+# building_ad_E_mil  参謀本部		亜光速移動速度+5%、艦船武器射程+5%				将官+1、将校+2			(軍を指揮し、さまざまな計画を立案する官庁。)企業以外						維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
 building_ad_E_mil = {
 	base_buildtime = 550
 	base_cap_amount = 1
@@ -1311,7 +1311,7 @@ building_ad_E_mil = {
 	}
 }
 
-# building_ad_C_mil  企業警備作戦本部	宇宙軍移動速度+5%、射程+5%				将官+1、将校+2			(企業の有する艦隊や陸軍を統括し、命令を行う部署。)企業のみ						維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
+# building_ad_C_mil  企業警備作戦本部	亜光速移動速度+5%、艦船武器射程+5%				将官+1、将校+2			(企業の有する艦隊や陸軍を統括し、命令を行う部署。)企業のみ						維持:エネ5、揮発粉1		建設:鉱物800、揮発粉100、時間550
 building_ad_C_mil = {
 	base_buildtime = 550
 	base_cap_amount = 1
@@ -2764,6 +2764,7 @@ building_ad_Anti_s_misile = {
 # ロボット製造プラント
 building_ad_robot_assembly_plant = {
 	base_buildtime = @b1_time
+	icon = building_robot_assembly_plant
 	base_cap_amount = 1
 	category = pop_assembly
 	potential = {
@@ -2842,7 +2843,6 @@ building_ad_robot_assembly_plant = {
 		}
 	}
 	planet_modifier = {
-		pop_assembly_speed = 0.1
 		planet_pop_assembly_mult = 0.1
 	}
 	resources = {
@@ -3593,7 +3593,7 @@ building_pirate_broad = {
 	}
 }
 
-# 闇金融業者	（惑星に1つ）			（犯罪度+25:支社価値+30%:惑星交易価値+10%、労働者生産量-2%、事務員+2）
+# 闇金融業者	（惑星に1つ）			（犯罪度+25:支社価値+30%:惑星交易価値+10%、労働者POPの資源産出-2%、事務員+2）
 building_black_ushi = {
 	base_buildtime = @b1_time
 	owner_type = corporate
@@ -3622,7 +3622,7 @@ building_black_ushi = {
 	}
 }
 
-# Fランク大学	（惑星に1つ）	（犯罪度+25:企業帝国研究力+5%:惑星専門家出力-2%、事務員+2） 
+# Fランク大学	（惑星に1つ）	（犯罪度+25:企業帝国研究力+5%:惑星専門家POPの資源産出-2%、事務員+2） 
 building_f_rank_universities = {
 	base_buildtime = @b1_time
 	owner_type = corporate

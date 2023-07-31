@@ -12,8 +12,8 @@
 d_ad_archaeological_cities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_archaeological_cities_max = 1
@@ -27,8 +27,8 @@ d_ad_archaeological_cities = {
 d_ad_sky_cities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_sky_cities_max = 1
@@ -42,8 +42,8 @@ d_ad_sky_cities = {
 d_ad_water_cities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_water_cities_max = 1
@@ -57,8 +57,8 @@ d_ad_water_cities = {
 d_ad_under_water_cities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_under_water_cities_max = 1
@@ -72,8 +72,8 @@ d_ad_under_water_cities = {
 d_ad_underground_cities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_underground_cities_max = 1
@@ -94,8 +94,8 @@ d_ad_underground_cities = {
 d_ad_solar_power_generation = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_solar_power_generation_max = 1
@@ -109,12 +109,34 @@ d_ad_solar_power_generation = {
 d_ad_geothermal_electric_power_generation = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_geothermal_electric_power_generation_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_geothermal_electric_power_generation_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_generator_max = 2
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_geothermal_electric_power_generation_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -124,12 +146,35 @@ d_ad_geothermal_electric_power_generation = {
 d_ad_tidal_current_generation = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_tidal_current_generation_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_tidal_current_generation_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_generator_max = 2
+			planet_max_districts_add = 1
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_tidal_current_generation_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -139,12 +184,34 @@ d_ad_tidal_current_generation = {
 d_ad_natural_nuclear_power_generation = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_natural_nuclear_power_generation_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_natural_nuclear_power_generation_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_generator_max = 2
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_natural_nuclear_power_generation_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -162,12 +229,34 @@ d_ad_natural_nuclear_power_generation = {
 d_ad_open_pit_ore_deposits = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_open_pit_ore_deposits_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_open_pit_ore_deposits_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_mining_max = 2
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_open_pit_ore_deposits_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -177,12 +266,35 @@ d_ad_open_pit_ore_deposits = {
 d_ad_under_water_deposits = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_under_water_deposits_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_under_water_deposits_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_mining_max = 2
+			planet_max_districts_add = 1
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_under_water_deposits_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -192,12 +304,35 @@ d_ad_under_water_deposits = {
 d_ad_orbital_deposits = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_orbital_deposits_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_orbital_deposits_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_mining_max = 2
+			planet_max_districts_add = 1
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_orbital_deposits_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -207,12 +342,34 @@ d_ad_orbital_deposits = {
 d_ad_high_quality_deposits = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_high_quality_deposits_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_high_quality_deposits_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_mining_max = 4
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_high_quality_deposits_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -222,12 +379,34 @@ d_ad_high_quality_deposits = {
 d_ad_low_quality_deposits = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_low_quality_deposits_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_low_quality_deposits_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_mining_max = 1
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_low_quality_deposits_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -245,12 +424,34 @@ d_ad_low_quality_deposits = {
 d_ad_shed_cultivation_land = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_shed_cultivation_land_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_shed_cultivation_land_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_farming_max = 2
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_shed_cultivation_land_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -260,12 +461,35 @@ d_ad_shed_cultivation_land = {
 d_ad_in_water_ecosystem = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_in_water_ecosystem_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_in_water_ecosystem_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_farming_max = 2
+			planet_max_districts_add = 1
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_in_water_ecosystem_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -275,12 +499,34 @@ d_ad_in_water_ecosystem = {
 d_ad_mycorrhizal_communities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_mycorrhizal_communities_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_mycorrhizal_communities_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_farming_max = 2
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_mycorrhizal_communities_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -290,12 +536,34 @@ d_ad_mycorrhizal_communities = {
 d_ad_large_scale_grazing_land = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_large_scale_grazing_land_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_large_scale_grazing_land_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_farming_max = 4
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_large_scale_grazing_land_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -305,12 +573,34 @@ d_ad_large_scale_grazing_land = {
 d_ad_large_scale_agricultural_land = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
-	planet_modifier = {
-		district_ad_large_scale_agricultural_land_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			district_ad_large_scale_agricultural_land_max = 1
+		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			district_farming_max = 4
+		}
+	}
+	# planet_modifier = {
+	# 	district_ad_large_scale_agricultural_land_max = 1
+	# }
 	drop_weight = {
 		weight = @low
 	}
@@ -327,8 +617,8 @@ d_ad_large_scale_agricultural_land = {
 d_ad_ancient_ruins = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_ancient_ruins_max = 1
@@ -342,8 +632,8 @@ d_ad_ancient_ruins = {
 d_ad_ancient_databank = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_ancient_databank_max = 1
@@ -357,8 +647,8 @@ d_ad_ancient_databank = {
 d_ad_natural_fortress = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_natural_fortress_max = 1
@@ -372,8 +662,8 @@ d_ad_natural_fortress = {
 d_ad_special_tourism_zone = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_special_tourism_zone_max = 1
@@ -401,8 +691,8 @@ d_ad_special_tourism_zone = {
 d_ad_government_district = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_government_district_max = 5
@@ -416,8 +706,8 @@ d_ad_government_district = {
 d_ad_university_district = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_university_district_max = 5
@@ -431,8 +721,8 @@ d_ad_university_district = {
 d_ad_residential_area = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_residential_area_max = 5
@@ -446,8 +736,8 @@ d_ad_residential_area = {
 d_ad_shipbuilding_arsenal = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_shipbuilding_arsenal_max = 5
@@ -461,8 +751,8 @@ d_ad_shipbuilding_arsenal = {
 d_ad_communication_area = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_communication_area_max = 5
@@ -476,8 +766,8 @@ d_ad_communication_area = {
 d_ad_tourist_area = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_tourist_area_max = 5
@@ -491,8 +781,8 @@ d_ad_tourist_area = {
 d_ad_defense_zone = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_defense_zone_max = 5
@@ -506,8 +796,8 @@ d_ad_defense_zone = {
 d_ad_conceptual_zone = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_conceptual_zone_max = 5
@@ -521,8 +811,8 @@ d_ad_conceptual_zone = {
 d_ad_special_research_zone = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_special_research_zone_max = 5
@@ -536,8 +826,8 @@ d_ad_special_research_zone = {
 d_ad_spaceport_area = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_spaceport_area_max = 5
@@ -551,8 +841,8 @@ d_ad_spaceport_area = {
 d_ad_orbital_elevator = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	use_weights_for_terraforming_swap_types = yes
-	should_swap_deposit_on_terraforming = yes
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_orbital_elevator_max = 5

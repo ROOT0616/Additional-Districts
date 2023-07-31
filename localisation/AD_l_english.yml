@@ -78,11 +78,11 @@
 
  decision_ad_spaceport_area:0 "Infrastructure | Spaceport Area"
  decision_ad_spaceport_area_desc:0 "Implement plans to develop a large spaceport."
- decision_ad_spaceport_area_effects:0 "§Y宇宙港区域§!を5区域建設可能にする\n宇宙港区域は£job_ad_spaceport_mechanics£ 宇宙港整備員の職業枠を生む\n$job_ad_spaceport_mechanics_effect_desc$"
+ decision_ad_spaceport_area_effects:0 "§Y宇宙港区域§!を5区域建設可能にする\n宇宙港区域は£job_ad_spaceport_mechanics£ 宇宙港管制官の職業枠を生む\n$job_ad_spaceport_mechanics_effect_desc$"
 
  decision_ad_orbital_elevator:0 "Infrastructure | Orbital Lift"
  decision_ad_orbital_elevator_desc:0 "Implement the plan to build an orbital lift."
- decision_ad_orbital_elevator_effects:0 "§Y軌道エレベーター§!を5区域建設可能にする\n軌道エレベーターは£job_ad_spaceport_mechanics£ 宇宙港整備員と£job_ad_shipwright£ 造船技師の職業枠、£mod_planet_amenities_add£ 快適度、£mod_trade_value_add£ 交易価値、£mod_pop_happiness£ 幸福度を生む\n$job_ad_spaceport_mechanics_effect_desc$\n$job_ad_shipwright_effect_desc$"
+ decision_ad_orbital_elevator_effects:0 "§Y軌道エレベーター§!を5区域建設可能にする\n軌道エレベーターは£job_ad_spaceport_mechanics£ 宇宙港管制官と£job_ad_shipwright£ 造船技師の職業枠、£mod_planet_amenities_add£ 快適度、£mod_trade_value_add£ 交易価値、£mod_pop_happiness£ 幸福度を生む\n$job_ad_spaceport_mechanics_effect_desc$\n$job_ad_shipwright_effect_desc$"
 
  decision_ad_undo_solar_power_generation:0 "Street Deletion | Solar Power District"
  decision_ad_undo_solar_power_generation_desc:0 "The reflected light is annoying. The removal of the solar panels begins."
@@ -864,6 +864,9 @@ job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plu
 
  building_ad_Anti_s_misile:0 "Anti-Space Missile Facility"
  building_ad_Anti_s_misile_desc:0 "Facility to attack enemy fleet deployed in orbit."
+
+ building_ad_robot_assembly_plant:0 "Robot Assembly Accelerator Plants"
+ building_ad_robot_assembly_plant_desc:0 "A production line assembly plant where new units are constructed."
 
  building_ad_rban_area_control_area:0 "Urban Area Control Area"
  building_ad_rban_area_control_area_desc:0 "An area set aside to attract industries and businesses."

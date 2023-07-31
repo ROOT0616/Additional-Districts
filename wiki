@@ -19,213 +19,255 @@ TITLE:Additional Districts And Buildings
 *追加される地区建物一覧
 
 **都市区域
-|~区域 |~住居 |~効果 |~生成 |
-| 遺跡都市 |CENTER: 5 | 発掘者1 | 自然発生 |
-| 空中都市 |CENTER: 30 | 事務員5 区域+1 | 自然発生 技術開発 |
-| 水上都市 |CENTER: 20 | 事務員4 区域+1 | 自然発生 技術開発 |
-| 水中都市 |CENTER: 5 | 水中農家2 区域+1 | 自然発生 技術開発 |
-| 地中都市 |CENTER: 5 | 施設維持業者1 区域+1 | 自然発生 技術開発 |
+|~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |~生成 |
+| 遺跡都市 |CENTER: 5 | 発掘者+2 | 発掘ドローン+2 | 建造物スロット+1 | 自然発生 |
+| 空中都市 |CENTER: 30 | 事務員+2 | メンテナンスドローン+2 | &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値&br;最大区域数+1&br;建造物スロット+3 | 自然発生 技術開発 |
+| 水上都市 |CENTER: 20 | 事務員+2 | メンテナンスドローン+2 | &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値&br;最大区域数+1&br;建造物スロット+2 | 自然発生 技術開発 |
+| 水中都市 |CENTER: 5 | 水中農家+2 | 水中農業ドローン+2 | 最大区域数+1&br;建造物スロット+1 | 自然発生 技術開発 |
+| 地中都市 |CENTER: 5 | 施設維持業者+1 | 施設維持業者ドローン+1 | 最大区域数+1&br;建造物スロット+1 | 自然発生 技術開発 |
 
 **発電区域
-|~区域 |~住居 |~効果 |~生成 |
-| 太陽光発電 |CENTER: 2 | 技術者5 | 技術開発 |
-| 地熱発電 |CENTER: 2 | 地熱技師2 | 自然発生 |
-| 潮流発電 |CENTER: 2 | 技術者5  区域+1 | 自然発生 |
-| 天然原子炉発電 |CENTER: 2 | 原子力技師2 | 自然発生 |
+|~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |~生成 |
+| 太陽光発電 |CENTER: 2 | 技術者+5 | 技術ドローン+5 |  | 技術開発 |
+| 地熱発電 |CENTER: 2 | 地熱技師+2 | 最大 発電区域+2 |  | 自然発生 |
+| 潮流発電 |CENTER: 2 | 技術者+5 | 最大 発電区域+2 | 最大区域数+1 | 自然発生 |
+| 天然原子炉発電 |CENTER: 2 | 原子力技師+2 | 最大 発電区域+2 |  | 自然発生 |
 
 **鉱物区域
-|~区域 |~住居 |~効果 |~生成 |
-| 露天鉱床 |CENTER:  2 | 採掘者6 | 自然発生 |
-| 水中鉱床 |CENTER:  2 | 水中採掘者2 区域+1 | 自然発生 |
-| 軌道鉱石群 |CENTER:  0 | 宇宙採掘者2  区域+1  | 自然発生 月か輪がある |
-| 高質鉱床 |CENTER:  2 | 効率的採掘者4 | 自然発生 |
-| 低質鉱床 |CENTER:  2 | 低効率採掘者5 | 自然発生 |
+|~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |~生成 |
+| 露天鉱床 |CENTER:  2 | 鉱山労働者+6 | 最大 鉱業区域+2 |  | 自然発生 |
+| 水中鉱床 |CENTER:  2 | 水中採掘者+2 | 最大 鉱業区域+2 | 最大区域数+1 | 自然発生 |
+| 軌道鉱石群 |CENTER:  0 | 軌道鉱物学者+1  | 最大 鉱業区域+2 | 最大区域数+1 | 自然発生 月か輪がある |
+| 高質鉱床 |CENTER:  2 | 効率的鉱山労働者+3 | 最大 鉱業区域+4 |  | 自然発生 |
+| 低質鉱床 |CENTER:  2 | 低効率鉱山労働者+7 | 最大 鉱業区域+1 |  | 自然発生 |
 
 **農業区域
-| 区域 | 住居 | 効果 | 生成
-| 棚状耕作地 |CENTER:  2 | 農民3 | 自然発生 |
-| 水中生態系 |CENTER:  2 | 水中農家2 | 自然発生 |
-| 菌類群生体 |CENTER:  2 | 菌農家2 | 自然発生 |
-| 大規模牧草地 |CENTER:  2 | 酪農家3 | 自然発生 |
-| 大自然農業地 |CENTER:  2 | 大規模農家3 | 自然発生 |
+|~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |~生成 |
+| 棚状耕作地 |CENTER:  2 | 農民+5 | 最大 農業区域+2 |  | 自然発生 |
+| 水中生態系 |CENTER:  2 | 水中農家+2 | 最大 農業区域+2 |  | 自然発生 |
+| 菌類群生体 |CENTER:  2 | 菌農家+2 | 最大 農業区域+2 |  | 自然発生 |
+| 大規模牧草地 |CENTER:  2 | 酪農家+3 | 最大 農業区域+4 |  | 自然発生 |
+| 大自然農業地 |CENTER:  2 | 大規模農家+3 | 最大 農業区域+4 |  | 自然発生 |
 
 **その他区域
-|~区域 |~住居 |~効果 |~生成 |
-| 古代遺跡群 | 2 | 発掘者2 | 自然発生 |
-| 古代データバンク | 2 | データマイナー2 | 自然発生 |
-| 天然の要塞 | 2 | 将校1  兵士4 爆撃耐性高 | 自然発生 |
+|~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |~生成 |
+| 古代遺跡群 | 2 | 発掘者+6 | 発掘ドローン+6 |  | 自然発生 |
+| 古代データバンク | 2 | データマイナー+4 | データマイナードローン+4 |  | 自然発生 |
+| 天然の要塞 | 2 | 将校+1&br;兵士+4 | 戦士ドローン+10 | 軌道爆撃ダメージ-10% | 自然発生 |
+| 観光特区 | 2 | エンターテイナー+4 | メンテナンスドローン+4 | &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+5&br;&ref(icons/Amenities.png,nolink,16x16,快適度);快適度+5 | 自然発生 |
 
 **大規模地区開発計画
-|~区域 |~住居 |~効果 |
-| 官庁街 |CENTER: 2 | 政治家1 官僚4 | 
-| 大学街 |CENTER: 5 | 教授職2 科学者2 | 
-| 住宅街 |CENTER: 10 | 事務員5 | 
-| 造船工廠 |CENTER: 2 | 造船技師4 | 
-| 通信区域 |CENTER: 2 | インフラ技師2 | 
-| 観光区域 |CENTER: 3 | エンターテイナー４ | 
-| 防衛区域 |CENTER: 3 | 将官1 将校2 兵士4 | 
-| 構想特区 |CENTER: 2 | 豪商1 起業家3 | 
-| 研究特区 |CENTER: 2 | 科学総裁1 研究者5 | 
-| 宇宙港区域 |CENTER: 2 | 宇宙港整備員3 | 
-| 軌道エレベーター |CENTER: 2 | 快適度5 交易価値5 幸福度5 宇宙港整備員1 造船技師1 |
+|~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |
+| 官庁街 |CENTER: 2 | 政治家+1&br;官僚+4 | シナプスドローン+4&br;メンテナンスドローン+1 |-|
+| 大学街 |CENTER: 5 | 教授職+2&br;科学者+2 | 教授職ドローン+2&br;計算機器+2 |-|
+| 住宅街 |CENTER: 10 | 事務員+5 | 雑務ドローン+5 |-|
+| 造船工廠 |CENTER: 2 | 造船技師+4 | 造船技術ドローン+4 |-|
+| 通信区域 |CENTER: 2 | インフラ技師+2 | インフラ技術ドローン+2 |-|
+| 観光区域 |CENTER: 3 | エンターテイナー+4 | メンテナンスドローン+4 |-|
+| 防衛区域 |CENTER: 3 | 将官+1&br;将校+2&br;兵士+4 | 将官ドローン+1&br;将校ドローン+2&br;戦士ドローン+4 |-|
+| 構想特区 |CENTER: 2 | 豪商+1&br;起業家+3 | 起業ドローン+4 |-|
+| 研究特区 |CENTER: 2 | 科学総裁+1&br;研究者+5 | 計算機器+6 |-|
+| 宇宙港区域 |CENTER: 2 | 宇宙港管制官+6 | 宇宙港管制官ドローン+6 |-|
+| 軌道エレベーター |CENTER: 2 | 宇宙港管制官+1&br;造船技師+1 | 宇宙港管制官ドローン+1&br;造船技術ドローン+1 | &ref(icons/Amenities.png,nolink,16x16,快適度);快適度5&br;&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値5&br;&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度5 |
 
 #br
 *建物
 **帝国に1つ
 |~建物 |~条件 |~コスト |~維持費 |~建造時間&ref(icons/Time.png,nolink,16x16,日数); |~効果 |
-| 宮殿 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);1000 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 550 | 安定度+10	側近Job+1 |
-| CEOオフィス | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);800 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 550 | 安定度+10	側近Job+1 |
-| 国防省 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 宇宙軍許容量+30 地上軍士気+10	政治家+1 将校+1 官僚+1 |
-| 管理警備本部 | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 宇宙軍許容量+10 地上軍士気+5 艦隊建造速度+10	役員+1 将校+1 管理職+1 |
-| 内務省 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | 帝国の犯罪度-10% 各惑星幸福度+10%	政治家+1 官僚+2 |
-| 労務管理本部 | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | 帝国の犯罪度-10% 各惑星幸福度+5% リーダー経験値+10%	役員+1 管理職+2 |
-| 外務省 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 外交発言力+10% 使節+1	政治家+1 官僚+2 |
-| 外商本部 | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 支社価値+10% 使節+1 交易価値+10%	役員+1 管理職+2 |
-| 情報省 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 550 | 解読力+5 暗号力+10	政治家+1 官僚+2 |
-| 情報セキュリティー本部 | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 550 | 解読力+10 暗号力+5	役員+1 管理職+2 |
-| 運輸省 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | 交易保護値+3 交易価値+10%	政治家+1 官僚+2 |
-| 流通搬送本部 | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | 交易保護値+5 交易価値+10% 支社価値+10%	役員+1 管理職+2 |
-| 産業省 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 550 | 労働者生産量+5%	政治家+1 官僚+2 |
-| 製造技術本部 | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 550 | 研究力+5%	役員+1 管理職+2 |
-| 議事堂 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);900 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 500 | 代弁者+1 官僚+2 |
-| 株主総会議場 | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);900 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 500 | 代弁者+1 管理職+2 |
-| 帝国裁判所 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);900 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 500 | 犯罪度-20 安定度+10	政治家+1 法曹+2 |
-| 本社査問会議場 | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);900 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 500 | 犯罪度-20 安定度+10	役員+1 法曹+2 |
-| 中央準備銀行 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 |	エネルギー算出+10%	政治家+1 銀行家+2 |
-| 企業資産管理本部 | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 |	エネルギー算出+10% 交易価値+5%	役員+1 銀行家+2 |
-| 参謀本部 | 企業以外 |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 宇宙軍移動速度+5% 射程+5%	将官+1 将校+2 |
-| 企業警備作戦本部 | 企業のみ |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 宇宙軍移動速度+5% 射程+5%	将官+1 将校+2 |
-| 中央放送局 |  |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | 統治志向魅力+15%	代弁者+1 ジャーナリスト+2 |
-| 帝国記録保管庫 |  |	&ref(icons/Minerals.png,nolink,鉱物);700 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);2 | 550 | 科学総裁+1 データ司書+2 |
-| 医薬基盤研究所 |  |	&ref(icons/Minerals.png,nolink,鉱物);1000 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 | 550 | Pop成長速度+5% リーダー寿命+10年	科学総裁+1 医療従事者+4 |
+| 宮殿 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);1000 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 550 | &ref(icons/Stability.png,nolink,16x16,安定度);安定度+10&br;側近Job+1 |
+| CEOオフィス | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);800 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 550 | &ref(icons/Stability.png,nolink,16x16,安定度);安定度+10&br;側近Job+1 |
+| 国防省 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量+30&br;地上軍士気+10&br;政治家+1&br;将校+1&br;官僚+1 |
+| 管理警備本部 | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量+10&br;地上軍士気+5&br;艦隊建造速度+10&br;役員+1&br;将校+1&br;管理職+1 |
+| 内務省 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | 帝国の&ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-10%&br;各惑星&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+10%&br;政治家+1&br;官僚+2 |
+| 労務管理本部 | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | 帝国の&ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-10%&br;各惑星&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+5%&br;リーダー経験値+10%&br;役員+1&br;管理職+2 |
+| 外務省 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 外交発言力+10%&br;使節+1&br;政治家+1&br;官僚+2 |
+| 外商本部 | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 支社価値+10%&br;使節+1&br;&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+10%&br;役員+1&br;管理職+2 |
+| 情報省 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 550 | 解読力+5&br;暗号力+10&br;政治家+1&br;官僚+2 |
+| 情報セキュリティー本部 | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 550 | 解読力+10&br;暗号力+5&br;役員+1&br;管理職+2 |
+| 運輸省 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | 交易保護値+3&br;&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+10%&br;政治家+1&br;官僚+2 |
+| 流通搬送本部 | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | 交易保護値+5&br;&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+10%&br;支社価値+10%&br;役員+1&br;管理職+2 |
+| 産業省 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 550 | &ref(icons/Pop_cat_worker.png,nolink,16x16,労働者);労働者POPの資源産出+5%&br;政治家+1&br;官僚+2 |
+| 製造技術本部 | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 550 | 研究力+5%&br;役員+1&br;管理職+2 |
+| 議事堂 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);900 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 500 | 代弁者+1&br;官僚+2 |
+| 株主総会議場 | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);900 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 500 | 代弁者+1&br;管理職+2 |
+| 帝国裁判所 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);900 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 500 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-20&br;&ref(icons/Stability.png,nolink,16x16,安定度);安定度+10&br;政治家+1&br;法曹+2 |
+| 本社査問会議場 | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);900 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 500 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-20&br;&ref(icons/Stability.png,nolink,16x16,安定度);安定度+10&br;役員+1&br;法曹+2 |
+| 中央準備銀行 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | エネルギー算出+10%&br; 政治家+1&br;銀行家+2 |
+| 企業資産管理本部 | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | エネルギー算出+10%&br;&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+5%&br;役員+1&br;銀行家+2 |
+| 参謀本部 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 亜光速移動速度+5%&br;艦船武器射程+5%&br;将官+1&br;将校+2 |
+| 企業警備作戦本部 | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 亜光速移動速度+5%&br;艦船武器射程+5%&br;将官+1&br;将校+2 |
+| 中央放送局 |  | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | 統治志向魅力+15%&br;代弁者+1&br;ジャーナリスト+2 |
+| 帝国記録保管庫 |  | &ref(icons/Minerals.png,nolink,鉱物);700 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);2 | 550 | 科学総裁+1&br;データ司書+2 |
+| 医薬基盤研究所 |  | &ref(icons/Minerals.png,nolink,鉱物);1000 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 | 550 | &ref(icons/Mod_pop_growth_req.png,nolink,16x16,POP成長速度);Pop成長速度+5%&br;リーダー寿命+10年&br;科学総裁+1&br;医療従事者+4 |
 
 **惑星に一つ
 |~建物 |~条件 |~コスト |~維持費 |~建造時間&ref(icons/Time.png,nolink,16x16,日数); |~効果 |
-| 惑星データバンク | 物質主義 |	&ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Alloys.png,nolink,合金);100 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 650 | データ司書+1 研究者+1 |
-| 帝国図書館 | 君主制 |	&ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 &ref(icons/Alloys.png,nolink,合金);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 650 | データ司書+2 |
-| 労働福祉センター |  |	&ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Consumer_Goods.png,nolink,消費財);2 | 500 | 20Popあたりにサービス職+1	官僚+1 事務員+2 サービス職+4 |
-| 公安局 |  |	&ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 600 | 暗号力+5 30Popあたりに法務執行官+1	官僚+1 法務執行官+2 公安職員+2 |
-| 任意労働監督署 | 権威主義 |	&ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 600 | 20Popあたりに強制労働者+1	官僚+1 強制労働者+10 |
-| 開発植民銀行 |  |	&ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 600 | 30Popあたりに開拓者+1	銀行家+2 |
-| イノベーションセンター | 平等主義 |	&ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 600 | 20Popあたりに事務員+1	役員+1 起業家+2 管理職+2 事務員+5 |
-| 管区軍司令部 |  |	&ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 600 | 将官+1 将校+2 |
-| 入境管理局 |  |	&ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 600 | 流入魅力+30%	官僚+1 事務員+3 |
-| 移民推進局 |  |	&ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 600 | 流出圧力+50%	官僚+1 事務員+3 |
-| 出境管理局 |  |	&ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 600 | 流出圧力-30%	官僚+1 事務員+3 |
-| プレジデンシャルオフィス |  |	&ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 600 | 20Popあたりに事務員+1	役員+2 管理職+2 法曹+2 事務員+5 |
-| 運輸通信管制局 |  |	&ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);200 &ref(icons/Alloys.png,nolink,合金);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);2 | 650 | 官僚+1 インフラ技師+2 |
-| 総合大学 |  |	&ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 &ref(icons/Alloys.png,nolink,合金);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);2 | 650 | 科学総裁+1 教授職+2 研究者+2 文化人+2 |
-| 安全思想教育センター | 権威主義 |	&ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 &ref(icons/Alloys.png,nolink,合金);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 650 | 統治志向魅力+20%	官僚+1 公安職員+2 強制労働者+3 |
-| &ref(icons/Society_Research.png,nolink,社会学);多様性センター | 受容主義 |	&ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 &ref(icons/Alloys.png,nolink,合金);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 650 | 受容志向魅力+20%	官僚+1 文化人+3 |
-| 異民族審判所 | 排他主義 |	&ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 &ref(icons/Alloys.png,nolink,合金);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 650 | 犯罪度-20%	官僚+1 文化人+1 法曹+2 |
-| 放送局 | 650 |	&ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 &ref(icons/Alloys.png,nolink,合金);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 |  | 安定度+5 幸福度+5%	ジャーナリスト+2 文化人+1 |
+| 惑星データバンク | 物質主義 | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Alloys.png,nolink,合金);100 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 650 | データ司書+1&br;研究者+1 |
+| 帝国図書館 | 君主制 | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 650 | データ司書+2 |
+| 労働福祉センター |  | &ref(icons/Minerals.png,nolink,鉱物);800 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Consumer_Goods.png,nolink,消費財);2 | 500 | 20Popあたりにサービス職+1&br;官僚+1&br;事務員+2&br;サービス職+4 |
+| 公安局 |  | &ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 600 | 暗号力+5&br;30Popあたりに法務執行官+1&br;官僚+1&br;法務執行官+2&br;公安職員+2 |
+| 任意労働監督署 | 権威主義 | &ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 600 | 20Popあたりに強制労働者+1&br;官僚+1&br;強制労働者+10 |
+| 開発植民銀行 |  | &ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 600 | 30Popあたりに開拓者+1&br;銀行家+2 |
+| イノベーションセンター | 平等主義 | &ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 600 | 20Popあたりに事務員+1&br;役員+1&br;起業家+2&br;管理職+2&br;事務員+5 |
+| 管区軍司令部 |  | &ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 600 | 将官+1&br;将校+2 |
+| 入境管理局 |  | &ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 600 | 流入魅力+30%&br;官僚+1&br;事務員+3 |
+| 移民推進局 |  | &ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 600 | 流出圧力+50%&br;官僚+1&br;事務員+3 |
+| 出境管理局 |  | &ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 600 | 流出圧力-30%&br;官僚+1&br;事務員+3 |
+| プレジデンシャルオフィス |  | &ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 600 | 20Popあたりに事務員+1&br;役員+2&br;管理職+2&br;法曹+2&br;事務員+5 |
+| 運輸通信管制局 |  | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);200 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);2 | 650 | 官僚+1&br;インフラ技師+2 |
+| 総合大学 |  | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);2 | 650 | 科学総裁+1&br;教授職+2&br;研究者+2&br;文化人+2 |
+| 安全思想教育センター | 権威主義 | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 650 | 統治志向魅力+20%&br;官僚+1&br;公安職員+2&br;強制労働者+3 |
+| 社会多様性センター | 受容主義 | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 650 | 受容志向魅力+20%&br;官僚+1&br;文化人+3 |
+| 異民族審判所 | 排他主義 | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 650 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-20%&br;官僚+1&br;文化人+1&br;法曹+2 |
+| 放送局 |  | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 650 | &ref(icons/Stability.png,nolink,16x16,安定度);安定度+5&br;&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+5%&br;ジャーナリスト+2&br;文化人+1 |
 
 **個数限定なし
 |~建物 |~条件 |~コスト |~維持費 |~建造時間&ref(icons/Time.png,nolink,16x16,日数); |~効果 |
-| スラム |  |	&ref(icons/Minerals.png,nolink,鉱物);300 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 | 100 | 労働者幸福度-10% 住宅+30	サービス職+1 事務員+2 |
-| 大規模高層住宅 |  |	&ref(icons/Minerals.png,nolink,鉱物);700 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);6 &ref(icons/Consumer_Goods.png,nolink,消費財);1 | 500 | 住宅+20	サービス職+3 事務員+3 |
-| 高級住宅街 |  |	&ref(icons/Minerals.png,nolink,鉱物);400 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);50 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);4 &ref(icons/Consumer_Goods.png,nolink,消費財);2 | 700 | 住宅+10 統治者幸福度+20% 快適度+5%	サービス職+3 事務員+3 法務執行官+1 |
-| 歓楽街 | 精神主義以外 |	&ref(icons/Minerals.png,nolink,鉱物);600 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);6 &ref(icons/Consumer_Goods.png,nolink,消費財);2 | 500 | 労働者幸福度+5% 快適度+5%	エンターテイナー+4 文化人+1 |
-| 刑務所 |  |	&ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Alloys.png,nolink,合金);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Alloys.png,nolink,合金);1 | 500 | 犯罪度-5%	法務執行官+2 法曹+1 |
-| 強制収容所 | 権威主義 |	&ref(icons/Minerals.png,nolink,鉱物);600 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Alloys.png,nolink,合金);1 | 500 | 犯罪度-10% 統治志向魅力+10% 幸福度-5%	官僚+1 法務執行官+2 強制労働者+10 |
-| 専門学校 | 物質主義 |	&ref(icons/Minerals.png,nolink,鉱物);400 &ref(icons/Alloys.png,nolink,合金);100 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 650 | 研究者+1 法曹+1 医療従事者+1 文化人+1 |
-| 高級ホテル | 受容主義 |	&ref(icons/Minerals.png,nolink,鉱物);300 &ref(icons/Alloys.png,nolink,合金);50 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);4 &ref(icons/Consumer_Goods.png,nolink,消費財);3 | 800 | 流入魅力+10% 住宅+5 快適度+5%	エンターテイナー+2 サービス職+2 |
-| 報道ステーション |  |	&ref(icons/Minerals.png,nolink,鉱物);500 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);50 &ref(icons/Alloys.png,nolink,合金);50 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | ジャーナリスト+1 事務員+2 |
-| 法律事務所 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);50 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 法曹+1 事務員+2 |
-| 砲兵空軍基地 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 &ref(icons/Alloys.png,nolink,合金);200 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Alloys.png,nolink,合金);2 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 防衛軍与ダメージ+10% 防衛軍指揮ダメージ+10%	将校+1 兵士+2 |
-| 廃棄物処理施設 |  |	&ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 600 | 居住性-5% 幸福度+5%	事務員+1 サービス職+3 |
-| 自動防衛設備 | 軍国主義 |	&ref(icons/Minerals.png,nolink,鉱物);400 &ref(icons/Alloys.png,nolink,合金);50 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 &ref(icons/Alloys.png,nolink,合金);2 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 300 | 防衛軍与ダメージ+30% |
-| 対爆壕 | 平和主義 |	&ref(icons/Minerals.png,nolink,鉱物);400 &ref(icons/Alloys.png,nolink,合金);100 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 |  &ref(icons/Alloys.png,nolink,合金);1 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 100 | 惑星の荒廃度-20% 防衛軍耐久度+10%	兵士+1 |
-| 対宙ミサイル施設 |  |	&ref(icons/Minerals.png,nolink,鉱物);300 &ref(icons/Alloys.png,nolink,合金);200 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Alloys.png,nolink,合金);2 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 450 | (軌道上の艦隊に与ダメージ)	将校+1 兵士+1 |
-| 市街地調整地域 |  |	&ref(icons/Minerals.png,nolink,鉱物);300 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 | 360 | 事務員+2 企業建築物スロット+2 |
-| 惑星規模産業調整地域 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 360 | 事務員+4 企業建築物スロット+4 |
+| スラム |  | &ref(icons/Minerals.png,nolink,鉱物);300 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 | 100 | 労働者&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度-10%&br;&ref(icons/Housing.png,nolink,16x16,住居);住宅+30&br;サービス職+1&br;事務員+2 |
+| 大規模高層住宅 |  | &ref(icons/Minerals.png,nolink,鉱物);700 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);6 &ref(icons/Consumer_Goods.png,nolink,消費財);1 | 500 | &ref(icons/Housing.png,nolink,16x16,住居);住宅+20&br;サービス職+3&br;事務員+3 |
+| 高級住宅街 |  | &ref(icons/Minerals.png,nolink,鉱物);400 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);50 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);4 &ref(icons/Consumer_Goods.png,nolink,消費財);2 | 700 | &ref(icons/Housing.png,nolink,16x16,住居);住宅+10&br;統治者&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+20%&br;&ref(icons/Amenities.png,nolink,16x16,快適度);快適度+5%&br;サービス職+3&br;事務員+3&br;法務執行官+1 |
+| 歓楽街 | 精神主義以外 | &ref(icons/Minerals.png,nolink,鉱物);600 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);6 &ref(icons/Consumer_Goods.png,nolink,消費財);2 | 500 | 労働者&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+5%&br;&ref(icons/Amenities.png,nolink,16x16,快適度);快適度+5%&br;エンターテイナー+4&br;文化人+1 |
+| 刑務所 |  | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Alloys.png,nolink,合金);1 | 500 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-5%&br;法務執行官+2&br;法曹+1 |
+| 強制収容所 | 権威主義 | &ref(icons/Minerals.png,nolink,鉱物);600 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Alloys.png,nolink,合金);1 | 500 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-10%&br;統治志向魅力+10%&br;&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度-5%&br;官僚+1&br;法務執行官+2&br;強制労働者+10 |
+| 専門学校 | 物質主義 | &ref(icons/Minerals.png,nolink,鉱物);400 &ref(icons/Alloys.png,nolink,合金);100 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 650 | 研究者+1&br;法曹+1&br;医療従事者+1&br;文化人+1 |
+| 高級ホテル | 受容主義 | &ref(icons/Minerals.png,nolink,鉱物);300 &ref(icons/Alloys.png,nolink,合金);50 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);4 &ref(icons/Consumer_Goods.png,nolink,消費財);3 | 800 | 流入魅力+10%&br;&ref(icons/Housing.png,nolink,16x16,住居);住宅+5&br;&ref(icons/Amenities.png,nolink,16x16,快適度);快適度+5%&br;エンターテイナー+2&br;サービス職+2 |
+| 報道ステーション |  | &ref(icons/Minerals.png,nolink,鉱物);500 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);50 &ref(icons/Alloys.png,nolink,合金);50 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 550 | ジャーナリスト+1&br;事務員+2 |
+| 法律事務所 |  | &ref(icons/Minerals.png,nolink,鉱物);500 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);50 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 法曹+1&br;事務員+2 |
+| 砲兵空軍基地 |  | &ref(icons/Minerals.png,nolink,鉱物);500 &ref(icons/Alloys.png,nolink,合金);200 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Alloys.png,nolink,合金);2 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 550 | 防衛軍与ダメージ+10%&br;防衛軍指揮ダメージ+10%&br;将校+1&br;兵士+2 |
+| 廃棄物処理施設 |  | &ref(icons/Minerals.png,nolink,鉱物);900 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 600 | &ref(icons/colonizability_high.png,nolink,16x16,居住性-高);居住性-5%&br;&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+5%&br;事務員+1&br;サービス職+3 |
+| 自動防衛設備 | 軍国主義 | &ref(icons/Minerals.png,nolink,鉱物);400 &ref(icons/Alloys.png,nolink,合金);50 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 &ref(icons/Alloys.png,nolink,合金);2 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 300 | 防衛軍与ダメージ+30% |
+| 対爆壕 | 平和主義 | &ref(icons/Minerals.png,nolink,鉱物);400 &ref(icons/Alloys.png,nolink,合金);100 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);100 |  &ref(icons/Alloys.png,nolink,合金);1 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 100 | 惑星の荒廃度-20%&br;防衛軍耐久度+10%&br;兵士+1 |
+| 対宙ミサイル施設 |  | &ref(icons/Minerals.png,nolink,鉱物);300 &ref(icons/Alloys.png,nolink,合金);200 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 &ref(icons/Alloys.png,nolink,合金);2 &ref(icons/Volatile_Motes.png,nolink,揮発性粉末);1 | 450 | (軌道上の艦隊に与ダメージ)&br;将校+1&br;兵士+1 |
+// | 市街地調整地域 |  | &ref(icons/Minerals.png,nolink,鉱物);300 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 | 360 | 事務員+2&br;企業建築物スロット+2 |
+// | 惑星規模産業調整地域 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 360 | 事務員+4&br;企業建築物スロット+4 |
 
 **企業用
 
 |~建物 |~条件 |~コスト |~維持費 |~建造時間&ref(icons/Time.png,nolink,16x16,日数); |~効果 |
-| &ref(icons/Society_Research.png,nolink,社会学);福祉法人 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の外交発言力+5%。惑星の幸福度+5%。医療従事者+1 サービス職+3 |
-| 行列のできる法律事務所 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の統合力+10。惑星の安定度+5 犯罪度-5%。法曹+1 事務員+2 |
-| 高度有機農園 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の食料+5 消費財+5。惑星の快適度+10。酪農家+1 農家+2 |
-| 惑星間通信社 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の統合力+10 支社の価値+10%。惑星の安定度+5 交易価値+5%。ジャーナリスト+1 事務員+2 |
-| イノベーティブコーポ |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の支社の価値+10%。惑星の交易価値+10。起業家+1 事務員+2 |
-| 貯蓄銀行 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家のエネルギー+10 支社の価値+5%。惑星の交易価値+5%。銀行家+1 事務員+2 |
-| 惑星造船所 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の造船速度+5%。惑星の合金生産量+5%。造船技師+2 |
-| 惑星工場 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の消費財+20。惑星の消費財生産+5%。職人+1 事務員+2 |
-| 銀河旅客運送社 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の支社価値+25%。惑星の交易価値+10 交易価値+10%。事務員+1 サービス職+2 |
-| 惑星建設組合 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の鉱物+10。惑星の区域と建造物建設速度+5%。インフラ技師+1 事務員+2 |
-| 小規模宇宙港 | 惑星につき1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業建築物slot+1。企業国家の支社価値+50%。惑星の交易価値+20%。宇宙港管制官+1 サービス職+2 |
-| 企業アカデミー | 惑星につき1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の研究力+5ずつ。惑星の社会学+10。教授職+1 研究者+1 |
-| 民間刑務所 | 惑星につき1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家のエネルギー+10	鉱物+20。惑星の幸福度-5% 犯罪度-10。法務執行官+1 強制労働者+3 |
-| 民間廃棄物処理施設 | 惑星につき1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家のエネルギー+10 消費財+10。惑星の快適度-10 居住性+5%。サービス職+2 |
-| 種族市場 | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+75:企業移民流入+5%:惑星の移民流出+20%、事務員+2 |
-| 地下帝国 | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+75:企業帝国は陸軍「債務者」を10まで製造可能:惑星の移民流出+10%、豪商+1、事務員+2、兵士+1、強制労働者+10 |
-| プレジャーランド | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+30:支社価値+25%、惑星Pop成長率+5%、惑星労働者幸福度-10%、惑星の犯罪度+50%、事務員+2 |
-| 組事務所 | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+50:企業建造物slot+1:法務執行官の維持費+50%、惑星の犯罪度+25%、事務員+2、兵士+1 |
-| 土建屋 | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+20:企業建造物slot+3:惑星建造物コスト+30%、事務員+2 |
-| 地上げ屋 | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+30:企業建造物slot+3:惑星建造物コスト+20%、事務員+2 |
-| 海賊放送局 | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+40:企業帝国統合力+10%:志向魅力-30%、暗号力-1、事務員+2 |
-| 闇金融業者 | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+25:支社価値+30%:惑星交易価値+10%、労働者生産量-2%、事務員+2 |
-| Fランク大学 | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+25:企業帝国研究力+5%:惑星専門家出力-2%、事務員+2 |
-| 排他主義宣伝所 | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+30:企業帝国統合力+10%:惑星排他主義魅力+20%、安定度-10、事務員+2 |
-| 総会屋 | 惑星に1つ |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+25:支社価値+20%:交易価値の30%を犯罪度に転換する、事務員+2、豪商+1 |
-| 893プロダクション |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+25:企業帝国統合力+5%:エンターテイナーJob+1、志向魅力-10% |
-| 民事事件解決事業所 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+50:支社価値+10%、支社価値+10:安定度+5、統治者幸福度+5% |
-| 生活困窮者支援法人 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+40:支社価値+20:医療従事者Job+1、労働者幸福度-20% |
-| 偽造製品生産工場 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+50:企業帝国消費財+10:職人Job+1、惑星消費財生産量+5% |
-| 武器密造工場 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+50:企業帝国合金+10:合金技師Job+1、惑星合金生産+5% |
-| 非合法造船所 |  |	&ref(icons/Minerals.png,nolink,鉱物);500 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 犯罪度+40:企業帝国造船速度+5%:造船技師Job+1 |
+| 社会福祉法人 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の外交発言力+5%。惑星の&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+5%&br;医療従事者+1 サービス職+3 |
+| 行列のできる法律事務所 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の統合力+10。惑星の&ref(icons/Stability.png,nolink,16x16,安定度);安定度+5 &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-5%。法曹+1 事務員+2 |
+| 高度有機農園 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の食料+5 消費財+5。惑星の&ref(icons/Amenities.png,nolink,16x16,快適度);快適度+10。酪農家+1 農家+2 |
+| 惑星間通信社 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の統合力+10 支社の価値+10%。惑星の&ref(icons/Stability.png,nolink,16x16,安定度);安定度+5 &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+5%。ジャーナリスト+1 事務員+2 |
+| イノベーティブコーポ |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の支社の価値+10%。惑星の&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+10。起業家+1 事務員+2 |
+| 貯蓄銀行 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家のエネルギー+10 支社の価値+5%。惑星の&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+5%。銀行家+1 事務員+2 |
+| 惑星造船所 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の造船速度+5%。惑星の合金生産量+5%。造船技師+2 |
+| 惑星工場 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の消費財+20。惑星の消費財生産+5%。職人+1 事務員+2 |
+| 銀河旅客運送社 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の支社価値+25%。惑星の&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+10 &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+10%。事務員+1 サービス職+2 |
+| 惑星建設組合 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の鉱物+10。惑星の区域と建造物建設速度+5%。インフラ技師+1 事務員+2 |
+| 小規模宇宙港 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業建築物slot+1。企業国家の支社価値+50%。惑星の&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+20%。宇宙港管制官+1 サービス職+2 |
+| 企業アカデミー | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の研究力+5ずつ。惑星の社会学+10。教授職+1 研究者+1 |
+| 民間刑務所 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家のエネルギー+10 鉱物+20。惑星の&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度-5% &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-10。法務執行官+1 強制労働者+3 |
+| 民間廃棄物処理施設 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家のエネルギー+10 消費財+10。惑星の&ref(icons/Amenities.png,nolink,16x16,快適度);快適度-10 &ref(icons/colonizability_high.png,nolink,16x16,居住性-高);居住性+5%。サービス職+2 |
+| 種族市場 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+75:企業移民流入+5%:惑星の移民流出+20%、事務員+2 |
+| 地下帝国 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+75:企業帝国は陸軍「債務者」を10まで製造可能:惑星の移民流出+10%、豪商+1、事務員+2、兵士+1、強制労働者+10 |
+| プレジャーランド | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+30:支社価値+25%、惑星Pop成長率+5%、惑星労働者&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度-10%、惑星の&ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+50%、事務員+2 |
+| 組事務所 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+50:企業建造物slot+1:法務執行官の維持費+50%、惑星の&ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+25%、事務員+2、兵士+1 |
+| 土建屋 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+20:企業建造物slot+3:惑星建造物コスト+30%、事務員+2 |
+| 地上げ屋 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+30:企業建造物slot+3:惑星建造物コスト+20%、事務員+2 |
+| 海賊放送局 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+40:企業帝国統合力+10%:志向魅力-30%、暗号力-1、事務員+2 |
+| 闇金融業者 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+25:支社価値+30%:惑星&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+10%、&ref(icons/Pop_cat_worker.png,nolink,16x16,労働者);労働者POPの資源産出-2%、事務員+2 |
+| Fランク大学 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+25:企業帝国研究力+5%:惑星&ref(icons/Pop_cat_specialist.png,nolink,16x16,専門家);専門家POPの資源産出-2%、事務員+2 |
+| 排他主義宣伝所 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+30:企業帝国統合力+10%:惑星排他主義魅力+20%、&ref(icons/Stability.png,nolink,16x16,安定度);安定度-10、事務員+2 |
+| 総会屋 | 惑星に1つ | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+25:支社価値+20%:&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値の30%を&ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率に転換する、事務員+2、豪商+1 |
+| 893プロダクション |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+25:企業帝国統合力+5%:エンターテイナーJob+1、志向魅力-10% |
+| 民事事件解決事業所 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+50:支社価値+10%、支社価値+10:&ref(icons/Stability.png,nolink,16x16,安定度);安定度+5、統治者&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+5% |
+| 生活困窮者支援法人 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+40:支社価値+20:医療従事者Job+1、労働者&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度-20% |
+| 偽造製品生産工場 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+50:企業帝国消費財+10:職人Job+1、惑星消費財生産量+5% |
+| 武器密造工場 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+50:企業帝国合金+10:合金技師Job+1、惑星合金生産+5% |
+| 非合法造船所 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率+40:企業帝国造船速度+5%:造船技師Job+1 |
 
 
 #br
 *職業
-**労働者
+**&ref(icons/Pop_cat_worker.png,nolink,16x16,労働者);労働者
 |~職業 |~生産 |~維持費 |~効果  |
-| 水中農家 | &ref(icons/Food.png,nolink,食料);6 | &ref(icons/Consumer_Goods.png,nolink,消費財);1 |   |
-| 施設維持業者 | &ref(icons/Minerals.png,nolink,鉱物);5 | &ref(icons/Consumer_Goods.png,nolink,消費財);1 | 快適度3 |
-| 地熱技師 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);6 |  |   |
-| 原子技師 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);8 | &ref(icons/Consumer_Goods.png,nolink,消費財);2 |   |
-| 水中採掘者 | &ref(icons/Minerals.png,nolink,鉱物);5 | &ref(icons/Consumer_Goods.png,nolink,消費財);1 |   |
-| 宇宙採掘者 | &ref(icons/Minerals.png,nolink,鉱物);6 | &ref(icons/Consumer_Goods.png,nolink,消費財);2 |   |
-| 効率的採掘者 | &ref(icons/Minerals.png,nolink,鉱物);8 |   |  |
-| 低効率採掘者 | &ref(icons/Minerals.png,nolink,鉱物);3 |   |  |
-| 低効率採掘者 | &ref(icons/Minerals.png,nolink,鉱物);3 |   |  |
-| 菌農家 | &ref(icons/Food.png,nolink,食料);5 |   |  |
+| 水中農家 | &ref(icons/Food.png,nolink,食料);6 | &ref(icons/Consumer_Goods.png,nolink,消費財);1 |  |
+| 施設維持業者 | &ref(icons/Minerals.png,nolink,鉱物);5 | &ref(icons/Consumer_Goods.png,nolink,消費財);1 | &ref(icons/Amenities.png,nolink,16x16,快適度);快適度3 |
+| 地熱技師 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);6 |  |  |
+| 原子技師 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);8 | &ref(icons/Consumer_Goods.png,nolink,消費財);2 |  |
+| 水中採掘者 | &ref(icons/Minerals.png,nolink,鉱物);5 | &ref(icons/Consumer_Goods.png,nolink,消費財);1 |  |
+| 宇宙採掘者 | &ref(icons/Minerals.png,nolink,鉱物);6 | &ref(icons/Consumer_Goods.png,nolink,消費財);2 |  |
+| 効率的採掘者 | &ref(icons/Minerals.png,nolink,鉱物);8 |  |  |
+| 低効率採掘者 | &ref(icons/Minerals.png,nolink,鉱物);3 |  |  |
+| 菌農家 | &ref(icons/Food.png,nolink,食料);5 |  |  |
 | 酪農家 | &ref(icons/Food.png,nolink,食料);8 | &ref(icons/Consumer_Goods.png,nolink,消費財);1 |  |
-| 大規模農家 | &ref(icons/Food.png,nolink,食料);6 |   |  |
-| サービス職 |  |  | 快適度2 幸福度+1% |
-| 強制労働者 | &ref(icons/Food.png,nolink,食料);1	&ref(icons/Minerals.png,nolink,鉱物);1 &ref(icons/Consumer_Goods.png,nolink,消費財);0.1 |  |   |
+| 大規模農家 | &ref(icons/Food.png,nolink,食料);6 |  |  |
+| サービス職 |  |  | &ref(icons/Amenities.png,nolink,16x16,快適度);快適度2 &ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+1% |
+| 強制労働者 | &ref(icons/Food.png,nolink,食料);1 &ref(icons/Minerals.png,nolink,鉱物);1 &ref(icons/Consumer_Goods.png,nolink,消費財);0.1 |  |  |
 
 
-**専門家
+**&ref(icons/Pop_cat_specialist.png,nolink,16x16,専門家);専門家
+|~職業 |~生産|~維持費 |~効果|
+| 軌道鉱物学者 | &ref(icons/Minerals.png,nolink,鉱物);6 &ref(icons/Engineering_Research.png,nolink,工学);2 |  |  |
+| データマイナー | &ref(icons/Physics_Research.png,nolink,物理学);2 &ref(icons/Society_Research.png,nolink,社会学);2 &ref(icons/Engineering_Research.png,nolink,工学);2 | &ref(icons/Consumer_Goods.png,nolink,消費財);5 | 暗号力1 &ref(icons/Pop_cat_specialist.png,nolink,16x16,専門家);研究者の資源産出5% |
+| 造船技師 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);3  &ref(icons/Alloys.png,nolink,合金);2 | 造船速度5% &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量2 |
+| インフラ技師 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);3 | &ref(icons/Pop_cat_worker.png,nolink,16x16,労働者);労働者POPの資源産出5% |
+| 将校 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);3 | &ref(icons/Army_defense.png,nolink,16x16,防衛軍);防衛軍5 &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量10 |
+| 起業家 | &ref(icons/Society_Research.png,nolink,社会学);2 | &ref(icons/Consumer_Goods.png,nolink,消費財);3 | &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値5% &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値5 |
+| 宇宙港管制官 | &ref(icons/Engineering_Research.png,nolink,工学);3 | &ref(icons/Consumer_Goods.png,nolink,消費財);2 &ref(icons/Alloys.png,nolink,合金);1 | &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量10 |
+| 教授職 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);5 | &ref(icons/Pop_cat_specialist.png,nolink,16x16,専門家);専門家POPの資源産出5% |
+| 発掘者 | &ref(icons/minor_artifacts.png,nolink,出土品);0.5 | &ref(icons/Consumer_Goods.png,nolink,消費財);5 |  |
+| 銀行家 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 |  | &ref(icons/Amenities.png,nolink,16x16,快適度);快適度+3 &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+5 |
+| 法曹 | &ref(icons/Society_Research.png,nolink,社会学);2 |  | &ref(icons/Amenities.png,nolink,16x16,快適度);快適度+1 &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-5 |
+| ジャーナリスト | &ref(icons/Unity.png,nolink,統合力);3 |  | &ref(icons/Pop_cat_worker.png,nolink,16x16,労働者);労働者の政治力-10% &ref(icons/Amenities.png,nolink,16x16,快適度);快適度+2 |
+| データ司書 | &ref(icons/Physics_Research.png,nolink,物理学);2 &ref(icons/Society_Research.png,nolink,社会学);2 &ref(icons/Engineering_Research.png,nolink,工学);2 &ref(icons/Unity.png,nolink,統合力);3 |  |  |
+| 公安職員 |  |  | 暗号力+1 &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-15 &ref(icons/Stability.png,nolink,16x16,安定度);安定度+1 |
+
+**&ref(icons/Pop_cat_ruler.png,nolink,16x16,統治者);統治者
+|~職業 |~生産|~維持費 |~効果|
+| 将官 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);4 | &ref(icons/Army_defense.png,nolink,16x16,防衛軍);防衛軍8 &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量16  | 
+| 側近 | &ref(icons/Influence.png,nolink,影響力);1 | &ref(icons/Consumer_Goods.png,nolink,消費財);3 |  |
+| 代弁者 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);3 | &ref(icons/Stability.png,nolink,16x16,安定度);安定度+5 &ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+5% |
+
+**&ref(icons/Pop_cat_simple_drone.png,nolink,16x16,雑役ドローン);雑役ドローン
 |~職業 |~生産 |~維持費 |~効果  |
-| データマイナー | &ref(icons/Physics_Research.png,nolink,物理学);2 &ref(icons/Society_Research.png,nolink,社会学);2 &ref(icons/Engineering_Research.png,nolink,工学);2 | &ref(icons/Consumer_Goods.png,nolink,消費財);5 | 科学者出力0.05 |
-| 造船技師 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);3  &ref(icons/Alloys.png,nolink,合金);2 | 造船速度0.05 宇宙軍許容量2 |
-| インフラ技師 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);3 | 労働者出力0.05 |
-| 将校 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);3 | 防衛軍5    宇宙軍許容量10 |
-| 起業家 | &ref(icons/Society_Research.png,nolink,社会学);研究2 | &ref(icons/Consumer_Goods.png,nolink,消費財);3 | 交易価値0.05 交易価値5 |
-| 宇宙港管制官 | &ref(icons/Engineering_Research.png,nolink,工学);3 | &ref(icons/Consumer_Goods.png,nolink,消費財);2   &ref(icons/Alloys.png,nolink,合金);1 | 宇宙軍許容量10 |
-| 教授職 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);5 | 専門家出力*0.05 |
-| 発掘者 | &ref(icons/minor_artifacts.png,nolink,出土品);0.5 | &ref(icons/Consumer_Goods.png,nolink,消費財);5 |   |
-| 銀行家 |	&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);ー+5 |  | 快適度+3 交易価値+5 |
-| 法曹 | &ref(icons/Society_Research.png,nolink,社会学);学+2 |  | 快適度+1 犯罪度-5 |
-| ジャーナリスト | &ref(icons/Unity.png,nolink,統合力);+3 |  | 労働者政治力-10% 快適度+2 |
-| データ司書 | &ref(icons/Physics_Research.png,nolink,物理学);2 &ref(icons/Society_Research.png,nolink,社会学);2 &ref(icons/Engineering_Research.png,nolink,工学);2 &ref(icons/Unity.png,nolink,統合力);+3 |  |   |
-| 公安職員 |  |  | 暗号力+1 犯罪度-15 安定度+1 |
+| 雑務ドローン |  |  | &ref(icons/Amenities.png,nolink,16x16,快適度);快適度2 &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値4 |
+| 水中農業ドローン | &ref(icons/Food.png,nolink,食料);6 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 |  |
+| 施設維持業者ドローン | &ref(icons/Minerals.png,nolink,鉱物);5 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 | &ref(icons/Amenities.png,nolink,16x16,快適度);快適度3 |
+| 地熱技術ドローン | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);6 |  |  |
+| 原子技術ドローン | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);8 | &ref(icons/Minerals.png,nolink,鉱物);2 |  |
+| 水中採掘ドローン | &ref(icons/Minerals.png,nolink,鉱物);5 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 |  |
+| 効率的採掘ドローン | &ref(icons/Minerals.png,nolink,鉱物);10 |  |  |
+| 低効率採掘ドローン | &ref(icons/Minerals.png,nolink,鉱物);3 |  |  |
+| 菌農業ドローン | &ref(icons/Food.png,nolink,食料);5 |  |  |
+| 酪農業ドローン | &ref(icons/Food.png,nolink,食料);8 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 |  |
+| 大規模農家ドローン | &ref(icons/Food.png,nolink,食料);6 |  |  |
 
-**統治者
+**&ref(icons/Pop_cat_complex_drone.png,nolink,16x16,複雑ドローン);複雑ドローン
 |~職業 |~生産 |~維持費 |~効果  |
-| 将官 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);4 | 防衛軍8 宇宙軍許容量16  | 
-| 側近 | &ref(icons/Influence.png,nolink,影響力);1 | &ref(icons/Consumer_Goods.png,nolink,消費財);3 |   |
-| 代弁者 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);3 | 安定度+5 幸福度+5% |
+| 軌道鉱物学ドローン | &ref(icons/Minerals.png,nolink,鉱物);6 &ref(icons/Engineering_Research.png,nolink,工学);2 |  |  |
+| データマイナードローン | &ref(icons/Physics_Research.png,nolink,物理学);2 &ref(icons/Society_Research.png,nolink,社会学);2 &ref(icons/Engineering_Research.png,nolink,工学);2 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 | &ref(icons/Pop_cat_specialist.png,nolink,16x16,専門家);研究者の資源産出5% |
+| 造船技術ドローン |  | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3  &ref(icons/Alloys.png,nolink,合金);2 | 造船速度5% &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量2 |
+| インフラ技術ドローン |  | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | &ref(icons/Pop_cat_simple_drone.png,nolink,16x16,雑役ドローン);雑役ドローンの資源産出5% |
+| 将校ドローン |  | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | &ref(icons/Army_defense.png,nolink,16x16,防衛軍);防衛軍5 &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量10 |
+| 起業ドローン | &ref(icons/Society_Research.png,nolink,社会学);4 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値5% &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値5 |
+| 宇宙港管制官ドローン | &ref(icons/Engineering_Research.png,nolink,工学);3 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2  &ref(icons/Alloys.png,nolink,合金);1 | &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量10 |
+| 教授職ドローン |  | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 | &ref(icons/Pop_cat_complex_drone.png,nolink,16x16,複雑ドローン);複雑ドローンの資源産出5% |
+| 発掘ドローン | &ref(icons/minor_artifacts.png,nolink,出土品);0.5 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 |  |
+| 将官ドローン |  | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);4 | &ref(icons/Army_defense.png,nolink,16x16,防衛軍);防衛軍8 &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量16  |
+#br
+*星系基地
+**モジュール
+||RIGHT:|RIGHT:|RIGHT:|||c
+|名称|>|CENTER:建造コスト|CENTER:維持費&br;&ref(icons/Energy_Credits.png,nolink);|効果|条件|h
+|~|CENTER:&ref(icons/Alloys.png,nolink,合金);|CENTER:CENTER:&ref(icons/Time.png,nolink,時間);|~|~|~|h
+|||||||
 
 #br
+**建造物
+||RIGHT:|RIGHT:|RIGHT:|||c
+|名称|>|CENTER:建造コスト|CENTER:維持費&br;&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);|効果|条件|h
+|~|CENTER:&ref(icons/Alloys.png,nolink,合金);|CENTER:&ref(icons/Time.png,nolink,時間);|~|~|~|h
+|||||||
+#br
+
 *追加される技術一覧
 
-|~技術 |~カテゴリー |~Tire |~コスト |~効果  |
-| 大規模地区開発計画 |CENTER: &ref(icons/New_Worlds.png,nolink); | 1 | 2500 | 2次区域の開発可能 |
-| 大規模水中建設技術 |CENTER: &ref(icons/New_Worlds.png,nolink); | 2 | 6000 | 水中都市の開発可能 |
-| 大規模空中建設技術 |CENTER: &ref(icons/New_Worlds.png,nolink); | 2 | 6000 | 空中都市の開発可能 |
-| 大規模地中建設技術 |CENTER: &ref(icons/New_Worlds.png,nolink); | 2 | 6000 | 地下都市の開発可能 |
+|~技術 |~カテゴリー |~Tire |~コスト |~効果 |~条件 |
+| 大規模地区開発計画 |CENTER: &ref(icons/New_Worlds.png,nolink); | 1 | 2500 | 2次区域の開発可能 |通常帝国のみ|
+| 大規模水中建設技術 |CENTER: &ref(icons/New_Worlds.png,nolink); | 2 | 6000 | 水中都市の開発可能 |-|
+| 大規模空中建設技術 |CENTER: &ref(icons/New_Worlds.png,nolink); | 2 | 6000 | 空中都市の開発可能 |-|
+| 大規模地中建設技術 |CENTER: &ref(icons/New_Worlds.png,nolink); | 2 | 6000 | 地下都市の開発可能 |-|
 
 *コメント
 #pcomment(./コメント,10,reply)

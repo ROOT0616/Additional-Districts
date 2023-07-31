@@ -1757,88 +1757,45 @@ planet_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		has_planet_flag = building_ad_Anti_s_misile_planet_flag
-	}
-	immediate = {
-		random_list = {
-			1 = {
-				planet_event = {
-					id = additionaldistricts.101
-				}
-			}
-			1 = {
-				# planet_event = {
-				# 	id = additionaldistricts.102
-				# }
-			}
-			1 = {
-				# planet_event = {
-				# 	id = additionaldistricts.103
-				# }
-			}
-			1 = {
-				# planet_event = {
-				# 	id = additionaldistricts.104
-				# }
-			}
-			1 = {
-				# planet_event = {
-				# 	id = additionaldistricts.105
-				# }
-			}
+		this = {
+			has_building = building_ad_Anti_s_misile
 		}
-	}
-}
-
-# 対宙ミサイル施設	コルベット
-planet_event = {
-	id = additionaldistricts.101
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		has_planet_flag = building_ad_Anti_s_misile_planet_flag
+		from = {
+			is_hostile_to = root.owner
+		}
+		# has_planet_flag = building_ad_Anti_s_misile_planet_flag
 	}
 	immediate = {
-		# fleet_event = {
-		# 	id = achievement.4
-		# }
 		random_list = {
-			16 = {
-				random_fleet_in_orbit = {
-					limit = {
-						is_ship_size = corvette
+			90 = {
+				random_list = {
+					20 = {
+						from = {
+							while = {
+								count = 20
+								random_controlled_ship = {
+									limit = {
+										exists = orbit
+										orbit = {
+											is_same_value = THIS
+										}
+									}
+									reduce_hp_percent = 33
+								}
+							}
+						}
 					}
-					destroy_fleet = this
+					# 20 = {
+					# 	from = {
+					# 		reduce_hp_percent = 33
+					# 	}
+					# }
 				}
 			}
 			8 = {
-				random_fleet_in_orbit = {
-					limit = {
-						is_ship_size = destroyer
-					}
-					destroy_fleet = this
-				}
-			}
-			4 = {
-				random_fleet_in_orbit = {
-					limit = {
-						is_ship_size = cruiser
-					}
-					destroy_fleet = this
-				}
 			}
 			2 = {
-				random_fleet_in_orbit = {
-					limit = {
-						is_ship_size = battleship
-					}
-					destroy_fleet = this
-				}
-			}
-			1 = {
-				random_fleet_in_orbit = {
-					destroy_fleet = this
-				}
+				destroy_fleet = from
 			}
 		}
 	}
