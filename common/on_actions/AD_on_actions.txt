@@ -25,6 +25,6 @@ on_planet_bombarded = {
 #This = Fleet scope
 on_fleet_enter_orbit = {
 	events = {
-		additionaldistricts.100
+		# additionaldistricts.100
 	}
 }

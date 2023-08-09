@@ -1760,43 +1760,32 @@ planet_event = {
 		this = {
 			has_building = building_ad_Anti_s_misile
 		}
-		from = {
-			is_hostile_to = root.owner
-		}
-		# has_planet_flag = building_ad_Anti_s_misile_planet_flag
 	}
 	immediate = {
 		random_list = {
-			90 = {
-				random_list = {
-					20 = {
-						from = {
-							while = {
-								count = 20
-								random_controlled_ship = {
-									limit = {
-										exists = orbit
-										orbit = {
-											is_same_value = THIS
-										}
-									}
-									reduce_hp_percent = 33
-								}
-							}
+			1 =  {
+				create_fleet = {
+					name = "Planet Defense"
+					settings = {
+						spawn_debris = no
+					}
+					effect = {
+						set_owner = root.owner
+						create_ship = {
+							design = "NAME_NGM_planet_defence"
+							name = "Planet Defense"
+						}
+						set_location = {
+							target = root
+							distance = 0
 						}
 					}
-					# 20 = {
-					# 	from = {
-					# 		reduce_hp_percent = 33
-					# 	}
-					# }
+				}
+				modifier = {
+					factor = value:num_active_buildings|BUILDING|building_ad_Anti_s_misile|
 				}
 			}
-			8 = {
-			}
-			2 = {
-				destroy_fleet = from
-			}
+			99 = {}
 		}
 	}
 }

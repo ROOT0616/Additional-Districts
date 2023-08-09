@@ -152,7 +152,7 @@ ad_microgravity_research_division = {
 	}
 }
 
-# 無重力訓練施設(Microgravity_training_center)		合金200	360	エネルギー5		(無重力を活用した画期的な軍事訓練施設)			帝国補正:陸軍初期経験値+100,陸軍製造速度+10%
+# 無重力訓練施設(Microgravity_training_center)		合金200	360	エネルギー5		(無重力を活用した画期的な軍事訓練施設)			帝国補正:陸軍初期経験値+100,地上軍編成速度+10%
 ad_microgravity_training_center = {
 	icon = "GFX_spaceport_module_ad_microgravity_training_center"
 	construction_days = 360

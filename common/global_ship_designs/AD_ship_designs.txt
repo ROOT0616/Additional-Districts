@@ -1,0 +1,35 @@
+
+ship_design = {
+	name = "NAME_NGM_planet_defence"
+	ship_size = military_station_small_fallen_empire
+	section = {
+		template = "station_generic_01_key"
+		slot = "mid"
+
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "POINT_DEFENCE_3"
+		}
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_PLASMA_3"
+		}
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_PLASMA_3"
+		}
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_PLASMA_3"
+		}
+	}
+	required_component="SENSOR_2"
+}

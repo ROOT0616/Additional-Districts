@@ -2,23 +2,33 @@ TITLE:Additional Districts And Buildings
 |~MOD名|Additional Districts And Buildings  |
 |~作成者|Root,shoruru314159,ウッディ中佐|
 |~配布場所|[[Additional Districts And Buildings>Workshop:2461143784]]|
-|~対応バージョン|3.7.x|
+|~対応バージョン|3.8.x|
 |BGCOLOR(#FAFAFA):#contents|
 #accordion(更新情報,*,close){{
-更新: 2023年3月27日 22時09分
+更新日: 2023年8月9日 16時59分
+
+2023/08/09 対宙ミサイル施設のシステム変更
+2023/07/31 ゲシュタルト意識の区域のシステム変更
+2023/05/26 星系基地拡張をパージ
+2023/05/13 モジュール（ステーション）(4×3)(星系港4)(星系軍港6)(星系要塞8)(シタデル12)
+　　　　　　 建築物（ステーション）(4×2)(星系港3)(星系軍港4)(星系要塞6)(シタデル8)
+　　　　　 　建造物表示数 36
+　　　　　　 の表示数をそれぞれ上記に変更
+2023/05/12 UIMod無しで地区を表示すように修正
+2023/05/10 3.8pachに対応
 -
 }}
-*概要
+*概要 [#j78448c3]
 様々な効果を有する地区と、中央省庁を中心にした複数の建物とのバリエーションを追加するMODです。
-
-**互換性
-
-
+UI改変無し版
+[[Additional Districts And Buildings (No UI Fix)>Workshop:2977686224]]
+**互換性 [#xa35fa0b]
+https://steamcommunity.com/sharedfiles/filedetails/?id=2975085612
 
 #br
-*追加される地区建物一覧
+*追加される地区建物一覧 [#b8f13f49]
 
-**都市区域
+**都市区域 [#f26e966c]
 |~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |~生成 |
 | 遺跡都市 |CENTER: 5 | 発掘者+2 | 発掘ドローン+2 | 建造物スロット+1 | 自然発生 |
 | 空中都市 |CENTER: 30 | 事務員+2 | メンテナンスドローン+2 | &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値&br;最大区域数+1&br;建造物スロット+3 | 自然発生 技術開発 |
@@ -26,14 +36,14 @@ TITLE:Additional Districts And Buildings
 | 水中都市 |CENTER: 5 | 水中農家+2 | 水中農業ドローン+2 | 最大区域数+1&br;建造物スロット+1 | 自然発生 技術開発 |
 | 地中都市 |CENTER: 5 | 施設維持業者+1 | 施設維持業者ドローン+1 | 最大区域数+1&br;建造物スロット+1 | 自然発生 技術開発 |
 
-**発電区域
+**発電区域 [#h3020662]
 |~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |~生成 |
 | 太陽光発電 |CENTER: 2 | 技術者+5 | 技術ドローン+5 |  | 技術開発 |
 | 地熱発電 |CENTER: 2 | 地熱技師+2 | 最大 発電区域+2 |  | 自然発生 |
 | 潮流発電 |CENTER: 2 | 技術者+5 | 最大 発電区域+2 | 最大区域数+1 | 自然発生 |
 | 天然原子炉発電 |CENTER: 2 | 原子力技師+2 | 最大 発電区域+2 |  | 自然発生 |
 
-**鉱物区域
+**鉱物区域 [#zc06acfb]
 |~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |~生成 |
 | 露天鉱床 |CENTER:  2 | 鉱山労働者+6 | 最大 鉱業区域+2 |  | 自然発生 |
 | 水中鉱床 |CENTER:  2 | 水中採掘者+2 | 最大 鉱業区域+2 | 最大区域数+1 | 自然発生 |
@@ -41,7 +51,7 @@ TITLE:Additional Districts And Buildings
 | 高質鉱床 |CENTER:  2 | 効率的鉱山労働者+3 | 最大 鉱業区域+4 |  | 自然発生 |
 | 低質鉱床 |CENTER:  2 | 低効率鉱山労働者+7 | 最大 鉱業区域+1 |  | 自然発生 |
 
-**農業区域
+**農業区域 [#r8f08dac]
 |~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |~生成 |
 | 棚状耕作地 |CENTER:  2 | 農民+5 | 最大 農業区域+2 |  | 自然発生 |
 | 水中生態系 |CENTER:  2 | 水中農家+2 | 最大 農業区域+2 |  | 自然発生 |
@@ -49,14 +59,14 @@ TITLE:Additional Districts And Buildings
 | 大規模牧草地 |CENTER:  2 | 酪農家+3 | 最大 農業区域+4 |  | 自然発生 |
 | 大自然農業地 |CENTER:  2 | 大規模農家+3 | 最大 農業区域+4 |  | 自然発生 |
 
-**その他区域
+**その他区域 [#f24bda25]
 |~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |~生成 |
 | 古代遺跡群 | 2 | 発掘者+6 | 発掘ドローン+6 |  | 自然発生 |
 | 古代データバンク | 2 | データマイナー+4 | データマイナードローン+4 |  | 自然発生 |
 | 天然の要塞 | 2 | 将校+1&br;兵士+4 | 戦士ドローン+10 | 軌道爆撃ダメージ-10% | 自然発生 |
 | 観光特区 | 2 | エンターテイナー+4 | メンテナンスドローン+4 | &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値+5&br;&ref(icons/Amenities.png,nolink,16x16,快適度);快適度+5 | 自然発生 |
 
-**大規模地区開発計画
+**大規模地区開発計画 [#m7f65856]
 |~区域 |~住居 |~通常帝国効果 |~ゲシュタルト意識効果 |~共通効果 |
 | 官庁街 |CENTER: 2 | 政治家+1&br;官僚+4 | シナプスドローン+4&br;メンテナンスドローン+1 |-|
 | 大学街 |CENTER: 5 | 教授職+2&br;科学者+2 | 教授職ドローン+2&br;計算機器+2 |-|
@@ -71,8 +81,8 @@ TITLE:Additional Districts And Buildings
 | 軌道エレベーター |CENTER: 2 | 宇宙港管制官+1&br;造船技師+1 | 宇宙港管制官ドローン+1&br;造船技術ドローン+1 | &ref(icons/Amenities.png,nolink,16x16,快適度);快適度5&br;&ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値5&br;&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度5 |
 
 #br
-*建物
-**帝国に1つ
+*建物 [#h1002a67]
+**帝国に1つ [#s5530d12]
 |~建物 |~条件 |~コスト |~維持費 |~建造時間&ref(icons/Time.png,nolink,16x16,日数); |~効果 |
 | 宮殿 | 企業以外 | &ref(icons/Minerals.png,nolink,鉱物);1000 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 550 | &ref(icons/Stability.png,nolink,16x16,安定度);安定度+10&br;側近Job+1 |
 | CEOオフィス | 企業のみ | &ref(icons/Minerals.png,nolink,鉱物);800 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 550 | &ref(icons/Stability.png,nolink,16x16,安定度);安定度+10&br;側近Job+1 |
@@ -100,7 +110,7 @@ TITLE:Additional Districts And Buildings
 | 帝国記録保管庫 |  | &ref(icons/Minerals.png,nolink,鉱物);700 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);2 | 550 | 科学総裁+1&br;データ司書+2 |
 | 医薬基盤研究所 |  | &ref(icons/Minerals.png,nolink,鉱物);1000 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 | 550 | &ref(icons/Mod_pop_growth_req.png,nolink,16x16,POP成長速度);Pop成長速度+5%&br;リーダー寿命+10年&br;科学総裁+1&br;医療従事者+4 |
 
-**惑星に一つ
+**惑星に一つ [#yb9cc2de]
 |~建物 |~条件 |~コスト |~維持費 |~建造時間&ref(icons/Time.png,nolink,16x16,日数); |~効果 |
 | 惑星データバンク | 物質主義 | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Alloys.png,nolink,合金);100 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 650 | データ司書+1&br;研究者+1 |
 | 帝国図書館 | 君主制 | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);200 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Exotic_Gases.png,nolink,エキゾチックガス);1 | 650 | データ司書+2 |
@@ -121,7 +131,7 @@ TITLE:Additional Districts And Buildings
 | 異民族審判所 | 排他主義 | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 650 | &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-20%&br;官僚+1&br;文化人+1&br;法曹+2 |
 | 放送局 |  | &ref(icons/Minerals.png,nolink,鉱物);600 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);100 &ref(icons/Alloys.png,nolink,合金);100 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 &ref(icons/Rare_Crystals.png,nolink,レアクリスタル);1 | 650 | &ref(icons/Stability.png,nolink,16x16,安定度);安定度+5&br;&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+5%&br;ジャーナリスト+2&br;文化人+1 |
 
-**個数限定なし
+**個数限定なし [#l07ccf01]
 |~建物 |~条件 |~コスト |~維持費 |~建造時間&ref(icons/Time.png,nolink,16x16,日数); |~効果 |
 | スラム |  | &ref(icons/Minerals.png,nolink,鉱物);300 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 | 100 | 労働者&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度-10%&br;&ref(icons/Housing.png,nolink,16x16,住居);住宅+30&br;サービス職+1&br;事務員+2 |
 | 大規模高層住宅 |  | &ref(icons/Minerals.png,nolink,鉱物);700 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);6 &ref(icons/Consumer_Goods.png,nolink,消費財);1 | 500 | &ref(icons/Housing.png,nolink,16x16,住居);住宅+20&br;サービス職+3&br;事務員+3 |
@@ -141,7 +151,7 @@ TITLE:Additional Districts And Buildings
 // | 市街地調整地域 |  | &ref(icons/Minerals.png,nolink,鉱物);300 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 | 360 | 事務員+2&br;企業建築物スロット+2 |
 // | 惑星規模産業調整地域 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);3 | 360 | 事務員+4&br;企業建築物スロット+4 |
 
-**企業用
+**企業用 [#nbffc355]
 
 |~建物 |~条件 |~コスト |~維持費 |~建造時間&ref(icons/Time.png,nolink,16x16,日数); |~効果 |
 | 社会福祉法人 |  | &ref(icons/Minerals.png,nolink,鉱物);500 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);2 | 360 | 企業国家の外交発言力+5%。惑星の&ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+5%&br;医療従事者+1 サービス職+3 |
@@ -178,8 +188,8 @@ TITLE:Additional Districts And Buildings
 
 
 #br
-*職業
-**&ref(icons/Pop_cat_worker.png,nolink,16x16,労働者);労働者
+*職業 [#u9b9c582]
+**&ref(icons/Pop_cat_worker.png,nolink,16x16,労働者);労働者 [#c6bb32db]
 |~職業 |~生産 |~維持費 |~効果  |
 | 水中農家 | &ref(icons/Food.png,nolink,食料);6 | &ref(icons/Consumer_Goods.png,nolink,消費財);1 |  |
 | 施設維持業者 | &ref(icons/Minerals.png,nolink,鉱物);5 | &ref(icons/Consumer_Goods.png,nolink,消費財);1 | &ref(icons/Amenities.png,nolink,16x16,快適度);快適度3 |
@@ -196,7 +206,7 @@ TITLE:Additional Districts And Buildings
 | 強制労働者 | &ref(icons/Food.png,nolink,食料);1 &ref(icons/Minerals.png,nolink,鉱物);1 &ref(icons/Consumer_Goods.png,nolink,消費財);0.1 |  |  |
 
 
-**&ref(icons/Pop_cat_specialist.png,nolink,16x16,専門家);専門家
+**&ref(icons/Pop_cat_specialist.png,nolink,16x16,専門家);専門家 [#c0995f79]
 |~職業 |~生産|~維持費 |~効果|
 | 軌道鉱物学者 | &ref(icons/Minerals.png,nolink,鉱物);6 &ref(icons/Engineering_Research.png,nolink,工学);2 |  |  |
 | データマイナー | &ref(icons/Physics_Research.png,nolink,物理学);2 &ref(icons/Society_Research.png,nolink,社会学);2 &ref(icons/Engineering_Research.png,nolink,工学);2 | &ref(icons/Consumer_Goods.png,nolink,消費財);5 | 暗号力1 &ref(icons/Pop_cat_specialist.png,nolink,16x16,専門家);研究者の資源産出5% |
@@ -213,13 +223,13 @@ TITLE:Additional Districts And Buildings
 | データ司書 | &ref(icons/Physics_Research.png,nolink,物理学);2 &ref(icons/Society_Research.png,nolink,社会学);2 &ref(icons/Engineering_Research.png,nolink,工学);2 &ref(icons/Unity.png,nolink,統合力);3 |  |  |
 | 公安職員 |  |  | 暗号力+1 &ref(icons/Pop_cat_criminal.png,nolink,16x16,犯罪);犯罪率-15 &ref(icons/Stability.png,nolink,16x16,安定度);安定度+1 |
 
-**&ref(icons/Pop_cat_ruler.png,nolink,16x16,統治者);統治者
+**&ref(icons/Pop_cat_ruler.png,nolink,16x16,統治者);統治者 [#ae7da689]
 |~職業 |~生産|~維持費 |~効果|
 | 将官 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);4 | &ref(icons/Army_defense.png,nolink,16x16,防衛軍);防衛軍8 &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量16  | 
 | 側近 | &ref(icons/Influence.png,nolink,影響力);1 | &ref(icons/Consumer_Goods.png,nolink,消費財);3 |  |
 | 代弁者 |  | &ref(icons/Consumer_Goods.png,nolink,消費財);3 | &ref(icons/Stability.png,nolink,16x16,安定度);安定度+5 &ref(icons/Mod_pop_happiness.png,nolink,16x16,幸福度);幸福度+5% |
 
-**&ref(icons/Pop_cat_simple_drone.png,nolink,16x16,雑役ドローン);雑役ドローン
+**&ref(icons/Pop_cat_simple_drone.png,nolink,16x16,雑役ドローン);雑役ドローン [#lf8b74ba]
 |~職業 |~生産 |~維持費 |~効果  |
 | 雑務ドローン |  |  | &ref(icons/Amenities.png,nolink,16x16,快適度);快適度2 &ref(icons/Trade_Values.png,nolink,16x16,交易価値);交易価値4 |
 | 水中農業ドローン | &ref(icons/Food.png,nolink,食料);6 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 |  |
@@ -233,7 +243,7 @@ TITLE:Additional Districts And Buildings
 | 酪農業ドローン | &ref(icons/Food.png,nolink,食料);8 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);1 |  |
 | 大規模農家ドローン | &ref(icons/Food.png,nolink,食料);6 |  |  |
 
-**&ref(icons/Pop_cat_complex_drone.png,nolink,16x16,複雑ドローン);複雑ドローン
+**&ref(icons/Pop_cat_complex_drone.png,nolink,16x16,複雑ドローン);複雑ドローン [#x014b0c3]
 |~職業 |~生産 |~維持費 |~効果  |
 | 軌道鉱物学ドローン | &ref(icons/Minerals.png,nolink,鉱物);6 &ref(icons/Engineering_Research.png,nolink,工学);2 |  |  |
 | データマイナードローン | &ref(icons/Physics_Research.png,nolink,物理学);2 &ref(icons/Society_Research.png,nolink,社会学);2 &ref(icons/Engineering_Research.png,nolink,工学);2 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 | &ref(icons/Pop_cat_specialist.png,nolink,16x16,専門家);研究者の資源産出5% |
@@ -246,22 +256,47 @@ TITLE:Additional Districts And Buildings
 | 発掘ドローン | &ref(icons/minor_artifacts.png,nolink,出土品);0.5 | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);5 |  |
 | 将官ドローン |  | &ref(icons/Energy_Credits.png,nolink,エネルギー通貨);4 | &ref(icons/Army_defense.png,nolink,16x16,防衛軍);防衛軍8 &ref(icons/Mod_fleet_size_add.png,nolink,16x16,宇宙軍許容量);宇宙軍許容量16  |
 #br
-*星系基地
-**モジュール
+*星系基地 [#ca2e2e0c]
+**モジュール [#h0580fd7]
 ||RIGHT:|RIGHT:|RIGHT:|||c
 |名称|>|CENTER:建造コスト|CENTER:維持費&br;&ref(icons/Energy_Credits.png,nolink);|効果|条件|h
 |~|CENTER:&ref(icons/Alloys.png,nolink,合金);|CENTER:CENTER:&ref(icons/Time.png,nolink,時間);|~|~|~|h
-|||||||
+|大規模ドック|500|360|5|星系基地補正:造船所容量+3||
+|修理ボット基地|200|180|3|軌道補正:停泊中艦船の船体修理速度+10%,停泊中艦船の装甲修理速度+10%||
+|建造ボット基地|200|180|3|星系基地補正:造船速度+10%,星系基地建造速度+10%||
+|軍港|500|360|5|帝国基地補正:宇宙軍許容量+15||
+|交易港|500|360|5|星系基地補正:収集範囲+2,交易保護値+3||
+|通信ハブセンター|200|180|3|産出:統合力+2||
+|低重力コンピュータハブ|300|360|3|産出:各研究力+2||
+|小惑星探査基地|100|180|2|産出:鉱物+2||
+|低重力軍需工廠|200|360|5&br;&ref(icons/Minerals.png,nolink,鉱物);5|産出:合金+2||
+|低重力民需工廠|100|360|5&br;&ref(icons/Minerals.png,nolink,鉱物);5|産出:消費財+2||
+|星間警備管区基地|300|360|5|星系基地補正:交易保護値+5||
+|防御隔壁|300|360|&ref(icons/Minerals.png,nolink,鉱物);2|星系基地補正:星系基地船体値+10%、星系基地装甲HP+10%||
 
 #br
-**建造物
+**建造物 [#obbd57a0]
 ||RIGHT:|RIGHT:|RIGHT:|||c
 |名称|>|CENTER:建造コスト|CENTER:維持費&br;&ref(icons/Energy_Credits.png,nolink,エネルギー通貨);|効果|条件|h
 |~|CENTER:&ref(icons/Alloys.png,nolink,合金);|CENTER:&ref(icons/Time.png,nolink,時間);|~|~|~|h
-|||||||
+|ステーション管制室|200|360|10|星系基地補正:軍港の宇宙軍許容量+5|軍港がある|
+|ステーション商業モール|200|360|消費財3|星系基地補正:交易港1つごとに10交易価値を算出する|交易港がある|
+|ステーション軍需本部|200|360|10,鉱物10|星系基地補正:低重力軍需工廠1つごとに3合金を算出する|低重力軍需工廠がある|
+|ステーション民需本部|200|360|10,鉱物10|星系基地補正:低重力民需工廠1つごとに3消費財を算出する|低重力民需工廠がある|
+|サブステーション管制室|300|360|20|星系基地補正:防衛プラットフォーム上限+10||
+|無重力研究本部|200|360|10|星系基地補正:低重力コンピュータハブ1つごとに各3研究力を算出する|低重力コンピュータハブがある|
+|無重力訓練施設|200|360|5|帝国補正:陸軍初期経験値+100,地上軍編成速度+10%||
+|低重力医療センター|200|360|1,消費財5|星系内の惑星のPop成長速度+5%,リーダー寿命+1年||
+|対外諜報室|200|360|5,影響力0.5|帝国補正:解読力+5||
+|内国防諜室|200|360|5,統合力5|帝国補正:暗号力+2||
+|星系運輸管制本部|300|360|10|星系基地補正:星系内移動速度+20%||
+|星系通信管制本部|300|360|10|星系基地補正:探知強度+2,通信ハブセンター1つごとに3統合力を算出する||
+|艦隊基地司令部|500|360|30,消費財10|帝国補正:艦隊指揮上限+5,艦隊維持費-1%,宇宙軍許容量+10||
+|ステーション防衛司令部|500|360|10|星系基地補正:ステーション船体値+20%,シールドHP+20%,装甲HP+20%||
+|ステーション管理司令部|500|360|10|星系基地補正:ステーション維持費-10%,停泊中艦船の維持費-20%||
 #br
 
-*追加される技術一覧
+*追加される技術一覧 [#z8bb39a1]
 
 |~技術 |~カテゴリー |~Tire |~コスト |~効果 |~条件 |
 | 大規模地区開発計画 |CENTER: &ref(icons/New_Worlds.png,nolink); | 1 | 2500 | 2次区域の開発可能 |通常帝国のみ|
@@ -269,5 +304,5 @@ TITLE:Additional Districts And Buildings
 | 大規模空中建設技術 |CENTER: &ref(icons/New_Worlds.png,nolink); | 2 | 6000 | 空中都市の開発可能 |-|
 | 大規模地中建設技術 |CENTER: &ref(icons/New_Worlds.png,nolink); | 2 | 6000 | 地下都市の開発可能 |-|
 
-*コメント
+*コメント [#r804bc78]
 #pcomment(./コメント,10,reply)
