@@ -1763,7 +1763,7 @@ planet_event = {
 	}
 	immediate = {
 		random_list = {
-			1 =  {
+			5 =  {
 				create_fleet = {
 					name = "Planet Defense"
 					settings = {
@@ -1785,7 +1785,7 @@ planet_event = {
 					factor = value:num_active_buildings|BUILDING|building_ad_Anti_s_misile|
 				}
 			}
-			99 = {}
+			995 = {}
 		}
 	}
 }

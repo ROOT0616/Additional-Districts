@@ -1,6 +1,6 @@
-version="1.25.14"
+version="1.25.15"
 dependencies={
-	"Gigastructural Engineering & More (3.8)"
+	"Gigastructural Engineering & More (3.10)"
 }
 tags={
 	"Gameplay"
@@ -8,5 +8,5 @@ tags={
 	"Overhaul"
 }
 name="Additional Districts And Buildings"
-supported_version="3.8.*"
+supported_version="3.10.*"
 remote_file_id="2461143784"

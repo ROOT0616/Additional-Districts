@@ -1117,6 +1117,12 @@
  additionaldistricts.2.h:0 "$district_ad_solar_power_generation$の削除"
 
 #######################
+#####    名称    ######
+#######################
+
+ NAME_NGM_planet_defence:0 "$building_ad_Anti_s_misile$"
+
+#######################
 #####    ○○○○    ######
 #######################
 

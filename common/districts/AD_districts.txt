@@ -7,13 +7,11 @@
 district_ad_archaeological_cities = {
 	base_buildtime = 240
 	show_on_uncolonized = {
-		AND = {
-			has_deposit = d_ad_archaeological_cities
-			OR = {
-				uses_district_set = standard
-				uses_district_set = hive_world
-				uses_district_set = machine_world
-			}
+		has_deposit = d_ad_archaeological_cities
+		OR = {
+			uses_district_set = standard
+			uses_district_set = hive_world
+			uses_district_set = machine_world
 		}
 	}
 	potential = {

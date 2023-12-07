@@ -7,28 +7,52 @@ ship_design = {
 		slot = "mid"
 
 		component = {
-			slot = "SMALL_GUN_01"
-			template = "POINT_DEFENCE_3"
-		}
-		component = {
-			slot = "SMALL_GUN_02"
-			template = "SMALL_PLASMA_3"
-		}
-		component = {
-			slot = "SMALL_GUN_03"
-			template = "SMALL_PLASMA_3"
-		}
-		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MISSILE_5"
-		}
-		component = {
-			slot = "MEDIUM_GUN_02"
-			template = "MISSILE_5"
-		}
-		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PLASMA_3"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_07"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_08"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_09"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_10"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_11"
+			template = "MISSILE_5"
+		}
+		component = {
+			slot = "LARGE_GUN_12"
+			template = "MISSILE_5"
 		}
 	}
 	required_component="SENSOR_2"

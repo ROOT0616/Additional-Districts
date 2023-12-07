@@ -231,7 +231,7 @@
  job_ad_efficient_miner:0 "Efficient Miner"
  job_ad_efficient_miner_plural:0 "Efficient Miner"
  job_ad_efficient_miner_desc:0 "Worker trained to mine high quality ore with as little waste as possible"
-job_ad_efficient_miner_effect_desc:0 "£job_ad_efficient_miner£ $job_ad_efficient_miner_plural$ produces £minerals£ §Y$minerals$§!"
+ job_ad_efficient_miner_effect_desc:0 "£job_ad_efficient_miner£ $job_ad_efficient_miner_plural$ produces £minerals£ §Y$minerals$§!"
  mod_job_ad_efficient_miner_add:0 "$job_ad_efficient_miner$ Jobs"
 
 #########################
@@ -241,7 +241,7 @@ job_ad_efficient_miner_effect_desc:0 "£job_ad_efficient_miner£ $job_ad_efficie
  job_ad_space_miner:0 "Orbital Mineralogist"
  job_ad_space_miner_plural:0 "Orbital Mineralogist"
  job_ad_space_miner_desc:0 "Engineers extracting minerals present in orbit."
-job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to produce £minerals£ §Y$minerals$§! and £engineering£ §YEngineering§!"
+ job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to produce £minerals£ §Y$minerals$§! and £engineering£ §YEngineering§!"
  mod_job_ad_space_miner_add:0 "$job_ad_space_miner$ Jobs"
 
  job_ad_data_minor:0 "Data Minor"
@@ -1115,6 +1115,12 @@ job_ad_space_miner_effect_desc:0 "£job_ad_space_miner£ $job_ad_space_miner_plu
  additionaldistricts.2.f:0 "Delete $district_ad_underground_cities$"
  additionaldistricts.2.g:0 "Add $district_ad_solar_power_generation$"
  additionaldistricts.2.h:0 "Delete $district_ad_solar_power_generation$"
+
+#######################
+#####    名称    ######
+#######################
+
+ NAME_NGM_planet_defence:0 "$building_ad_Anti_s_misile$"
 
 #######################
 #####    ○○○○    ######
