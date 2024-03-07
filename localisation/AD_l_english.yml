@@ -1045,8 +1045,8 @@
 
  sm_ad_microgravity_research_division:0 "Gravity Free Research Headquarters"
  sm_ad_microgravity_research_division_desc:0 "Innovative research facility utilizing weightlessness" 
- ad_microgravity_research_division_custom_tooltip:0 "Produces §G3§! each §Yresearch§! for each $sm_ad_private_secter_arsenal$\n\n" 
- requires_ad_computer_hub:0 "§RRequires §Y$sm_ad_private_secter_arsenal$§!.§!"
+ ad_microgravity_research_division_custom_tooltip:0 "Produces §G3§! each §Yresearch§! for each $sm_ad_computer_hub$\n\n" 
+ requires_ad_computer_hub:0 "§RRequires §Y$sm_ad_computer_hub$§!.§!"
 
  sm_ad_microgravity_training_center:0 "Zero-Gravity Training Facility"
  sm_ad_microgravity_training_center_desc:0 "Innovative military training facility utilizing zero gravity" 
