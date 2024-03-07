@@ -1045,8 +1045,8 @@
 
  sm_ad_microgravity_research_division:0 "無重力研究本部"
  sm_ad_microgravity_research_division_desc:0 "無重力を活用した画期的な研究施設" 
- ad_microgravity_research_division_custom_tooltip:0 "$sm_ad_private_secter_arsenal$ 1つごとに§G3§! 各研究力を産出する\n\n" 
- requires_ad_computer_hub:0 "§R§Y$sm_ad_private_secter_arsenal$§!が必要。§!"
+ ad_microgravity_research_division_custom_tooltip:0 "$sm_ad_computer_hub$ 1つごとに§G3§! 各研究力を産出する\n\n" 
+ requires_ad_computer_hub:0 "§R§Y$sm_ad_computer_hub$§!が必要。§!"
 
  sm_ad_microgravity_training_center:0 "無重力訓練施設"
  sm_ad_microgravity_training_center_desc:0 "無重力を活用した画期的な軍事訓練施設" 
