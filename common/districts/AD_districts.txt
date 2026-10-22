@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.5 / Stellaris 4.5.2
 @base_ad_cost = 250
 @base_ad_2cost = 300
 district_ad_archaeological_cities = {
@@ -1389,7 +1389,6 @@ district_ad_open_pit_ore_deposits = {
 			}
 		}
 		modifier = {
-			job_mining_drone_add = 200
 			planet_housing_add = 100
 		}
 	}
@@ -1529,7 +1528,6 @@ district_ad_under_water_deposits = {
 			}
 		}
 		modifier = {
-			job_ad_underwater_miner_drone_add = 200
 			planet_housing_add = 100
 		}
 	}
@@ -1640,7 +1638,6 @@ district_ad_orbital_deposits = {
 			}
 		}
 		modifier = {
-			job_ad_space_miner_drone_add = 100
 			planet_housing_add = 100
 		}
 	}
@@ -1762,7 +1759,6 @@ district_ad_high_quality_deposits = {
 			}
 		}
 		modifier = {
-			job_ad_efficient_miner_drone_add = 200
 			planet_housing_add = 100
 		}
 	}
@@ -1893,7 +1889,6 @@ district_ad_low_quality_deposits = {
 			}
 		}
 		modifier = {
-			job_ad_low_efficiency_miner_drone_add = 200
 			planet_housing_add = 100
 		}
 	}
@@ -2035,7 +2030,6 @@ district_ad_shed_cultivation_land = {
 			}
 		}
 		modifier = {
-			job_agri_drone_add = 200
 			planet_housing_add = 100
 		}
 	}
@@ -2196,7 +2190,6 @@ district_ad_in_water_ecosystem = {
 			}
 		}
 		modifier = {
-			job_ad_water_farmer_drone_add = 200
 			planet_housing_add = 100
 		}
 	}
@@ -2338,7 +2331,6 @@ district_ad_mycorrhizal_communities = {
 			}
 		}
 		modifier = {
-			job_ad_fungus_farmer_drone_add = 200
 			planet_housing_add = 100
 		}
 	}
@@ -2471,7 +2463,6 @@ district_ad_large_scale_grazing_land = {
 			}
 		}
 		modifier = {
-			job_ad_dairy_farmer_drone_add = 200
 			planet_housing_add = 100
 		}
 	}
@@ -2613,7 +2604,6 @@ district_ad_large_scale_agricultural_land = {
 			}
 		}
 		modifier = {
-			job_ad_large_scale_farmer_drone_add = 200
 			planet_housing_add = 100
 		}
 	}

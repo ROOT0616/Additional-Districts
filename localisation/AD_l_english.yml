@@ -247,13 +247,13 @@
  job_ad_data_minor:0 "Data Minor"
  job_ad_data_minor_plural:0 "Data Minor"
  job_ad_data_minor_desc:0 "Expert in exploring past knowledge, new insights and rediscovering the past."
- job_ad_data_minor_effect_desc:0 "£job_ad_data_minor£ $job_ad_data_minor_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to produce £unity£ §Y$unity$§! and £physics£ £society£ £engineering£ §YResearch§!, increasing £mod_planet_researchers_produces_mult£ §Y$mod_planet_researchers_produces_mult$§!"
+ job_ad_data_minor_effect_desc:0 "Per job equivalent: 2 of each research, +1% planetary researcher output and +0.1 empire encryption. Upkeep: 3 consumer goods. No workforce cap."
  mod_job_ad_data_minor_add:0 "$job_ad_data_minor$ Jobs"
 
  job_ad_shipwright:0 "Shipwright"
  job_ad_shipwright_plural:0 "Shipwright"
  job_ad_shipwright_desc:0 "Specialist in the construction of military and civilian ships."
- job_ad_shipwright_effect_desc:0 "Provides 4 engineering research and 1 naval capacity. Employed shipwrights grant monthly shipyard support, capped at 20%. Upkeep: 2 consumer goods and 1 alloy per job equivalent."
+ job_ad_shipwright_effect_desc:0 "Per job equivalent: 4 engineering, 1 naval capacity and +0.25% empire shipyard speed. Upkeep: 2 consumer goods and 1 alloy. Scales with employment without a cap."
  mod_job_ad_shipwright_add:0 "$job_ad_shipwright$ Jobs"
 
  job_ad_infrastructure_engineer:0 "Infrastructure Engineer"
@@ -1157,7 +1157,7 @@
 
  job_ad_professorship_drone_effect_desc:0 "Produces 2 of each research and increases planetary job research output by 1%. Upkeep: 3 energy per job equivalent."
 
- job_ad_shipwright_drone_effect_desc:0 "Provides 4 engineering research and 1 naval capacity. Employed shipwrights grant monthly shipyard support, capped at 20%. Upkeep: 2 energy and 1 alloy per job equivalent."
+ job_ad_shipwright_drone_effect_desc:0 "Per job equivalent: 4 engineering, 1 naval capacity and +0.25% empire shipyard speed. Upkeep: 2 energy and 1 alloy. Scales with employment without a cap."
 
  job_ad_infrastructure_engineer_drone_effect_desc:0 "Produces 2 engineering research and increases simple drone output by 1%. Upkeep: 3 energy per job equivalent."
 
@@ -1178,3 +1178,5 @@
 
 
 
+
+ job_ad_data_minor_drone_effect_desc:0 "Per job equivalent: 2 of each research, +1% planetary researcher output and +0.1 empire encryption. Upkeep: 3 energy. No workforce cap."

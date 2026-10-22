@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.5 / Stellaris 4.5.2
 ad_ng_add_archaeological_cities = {
 	if = {
 		limit = {
@@ -1532,6 +1532,7 @@ ad_ng_generate_planet = {
 			limit = {
 				ad_ng_existing_features = no
 			}
+			set_planet_flag = ad_ng_v5_native_resources
 			random_list = {
 				20 = {
 				}

@@ -101,7 +101,7 @@ def main():
     assert sum(added.values())<=8 and len(added)<=3,(cl,size,added)
     assert p.deposits['d_arid_highlands']==3
     assert not(p.deposits['d_ad_high_quality_deposits'] and p.deposits['d_ad_low_quality_deposits'])
-    assert p.flags=={'unrelated_flag','ad_ng_v3_checked'}
+    assert p.flags=={'unrelated_flag','ad_ng_v3_checked','ad_ng_v5_native_resources'}
     assert len({g for g,phase in p.groups})==len(p.groups)
     for dep,count in added.items():
      assert p.check(T['ad_ng_can_'+dep[5:]]),(cl,dep)
@@ -152,7 +152,7 @@ def main():
  assert first(scheduler,'id')=='additionaldistricts.9004' and first(scheduler,'days')=='1'
  assert first(first(delayed['additionaldistricts.9004'],'immediate'),'ad_ng_generate_planet')=='yes'
  assert first(delayed['additionaldistricts.9003'],'trigger')==first(delayed['additionaldistricts.9004'],'trigger')
- result={'version':'2.1.0-beta.3','engine_test':False,'cases':tests,'reachable_natural_types':len(seen),'rare_rate':total_rare/33000,'secondary_rates':{str(k):v/11000 for k,v in secondaries.items()},'primary_distribution':{k:{g:v/3000 for g,v in d.items()} for k,d in primary.items()},'summary':summary}
+ result={'version':'2.1.0-beta.5','engine_test':False,'cases':tests,'reachable_natural_types':len(seen),'rare_rate':total_rare/33000,'secondary_rates':{str(k):v/11000 for k,v in secondaries.items()},'primary_distribution':{k:{g:v/3000 for g,v in d.items()} for k,d in primary.items()},'summary':summary}
  if a.report:Path(a.report).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
  print(json.dumps({k:v for k,v in result.items() if k not in ('summary','primary_distribution')},ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

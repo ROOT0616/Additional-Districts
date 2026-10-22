@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0-beta.3",
+  "version": "2.1.0-beta.5",
   "engine_test": false,
   "cases": 33063,
   "reachable_natural_types": 22,

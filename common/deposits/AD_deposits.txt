@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.5 / Stellaris 4.5.2
 @high = 16
 @med = 8
 @low = 4
@@ -93,7 +93,16 @@ d_ad_geothermal_electric_power_generation = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_geothermal_electric_power_generation_max_add = 1
@@ -103,6 +112,9 @@ d_ad_geothermal_electric_power_generation = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_generator_max_add = 2
@@ -121,7 +133,16 @@ d_ad_tidal_current_generation = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_tidal_current_generation_max_add = 1
@@ -131,6 +152,9 @@ d_ad_tidal_current_generation = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_generator_max_add = 2
@@ -150,7 +174,16 @@ d_ad_natural_nuclear_power_generation = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_natural_nuclear_power_generation_max_add = 1
@@ -160,6 +193,9 @@ d_ad_natural_nuclear_power_generation = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_generator_max_add = 2
@@ -178,7 +214,16 @@ d_ad_open_pit_ore_deposits = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_open_pit_ore_deposits_max_add = 1
@@ -188,6 +233,9 @@ d_ad_open_pit_ore_deposits = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_mining_max_add = 2
@@ -206,7 +254,16 @@ d_ad_under_water_deposits = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_under_water_deposits_max_add = 1
@@ -216,6 +273,9 @@ d_ad_under_water_deposits = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_mining_max_add = 2
@@ -235,7 +295,16 @@ d_ad_orbital_deposits = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_orbital_deposits_max_add = 1
@@ -245,6 +314,9 @@ d_ad_orbital_deposits = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_mining_max_add = 2
@@ -264,7 +336,16 @@ d_ad_high_quality_deposits = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_high_quality_deposits_max_add = 1
@@ -274,6 +355,9 @@ d_ad_high_quality_deposits = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_mining_max_add = 4
@@ -292,7 +376,16 @@ d_ad_low_quality_deposits = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_low_quality_deposits_max_add = 1
@@ -302,6 +395,9 @@ d_ad_low_quality_deposits = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_mining_max_add = 1
@@ -320,7 +416,16 @@ d_ad_shed_cultivation_land = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_shed_cultivation_land_max_add = 1
@@ -330,6 +435,9 @@ d_ad_shed_cultivation_land = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_farming_max_add = 2
@@ -348,7 +456,16 @@ d_ad_in_water_ecosystem = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_in_water_ecosystem_max_add = 1
@@ -358,6 +475,9 @@ d_ad_in_water_ecosystem = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_farming_max_add = 2
@@ -377,7 +497,16 @@ d_ad_mycorrhizal_communities = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_mycorrhizal_communities_max_add = 1
@@ -387,6 +516,9 @@ d_ad_mycorrhizal_communities = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_farming_max_add = 2
@@ -405,7 +537,16 @@ d_ad_large_scale_grazing_land = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_large_scale_grazing_land_max_add = 1
@@ -415,6 +556,9 @@ d_ad_large_scale_grazing_land = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_farming_max_add = 4
@@ -433,7 +577,16 @@ d_ad_large_scale_agricultural_land = {
 		potential = {
 			exists = owner
 			owner = {
-				is_regular_empire = yes
+				OR = {
+					is_regular_empire = yes
+					is_gestalt = yes
+				}
+			}
+			OR = {
+				owner = {
+					is_regular_empire = yes
+				}
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_ad_large_scale_agricultural_land_max_add = 1
@@ -443,6 +596,9 @@ d_ad_large_scale_agricultural_land = {
 			exists = owner
 			owner = {
 				is_gestalt = yes
+			}
+			NOT = {
+				has_planet_flag = ad_ng_v5_native_resources
 			}
 		}
 		district_farming_max_add = 4

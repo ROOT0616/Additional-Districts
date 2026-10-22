@@ -247,13 +247,13 @@
  job_ad_data_minor:0 "データマイナー"
  job_ad_data_minor_plural:0 "データマイナー"
  job_ad_data_minor_desc:0 "過去の知識を探り、新たな知見や過去の再発見を行う専門家"
- job_ad_data_minor_effect_desc:0 "£job_ad_data_minor£ $job_ad_data_minor_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £unity£ §Y$unity$§!と £physics£ £society£ £engineering£ §Y研究力§!を産出し、 £mod_planet_researchers_produces_mult£ §Y$mod_planet_researchers_produces_mult$§!を増加させる"
+ job_ad_data_minor_effect_desc:0 "各研究2、惑星の研究職産出+1%、帝国の暗号力+0.1。維持費は消費財3（職業相当）。人数による上限はない。"
  mod_job_ad_data_minor_add:0 "データマイナーの職業枠"
 
  job_ad_shipwright:0 "造船技師"
  job_ad_shipwright_plural:0 "造船技師"
  job_ad_shipwright_desc:0 "軍用艦艇、民間船の建造を行う専門家"
- job_ad_shipwright_effect_desc:0 "工学研究4・艦隊許容量1を供給する。就業人数に応じた帝国の造船支援は月次更新で最大20%。維持費は消費財2・合金1（職業相当）。"
+ job_ad_shipwright_effect_desc:0 "工学研究4・艦隊許容量1・帝国の造船速度+0.25%。維持費は消費財2・合金1（職業相当）。就業人数に比例し、上限はない。"
  mod_job_ad_shipwright_add:0 "造船技師の職業枠"
 
  job_ad_infrastructure_engineer:0 "インフラ技師"
@@ -1157,7 +1157,7 @@
 
  job_ad_professorship_drone_effect_desc:0 "研究3分野を各2産出し、惑星の職業による各研究産出を1%増やす。維持費はエネルギー3（職業相当）。"
 
- job_ad_shipwright_drone_effect_desc:0 "工学研究4・艦隊許容量1を供給する。就業人数に応じた帝国の造船支援は月次更新で最大20%。維持費はエネルギー2・合金1（職業相当）。"
+ job_ad_shipwright_drone_effect_desc:0 "工学研究4・艦隊許容量1・帝国の造船速度+0.25%。維持費はエネルギー2・合金1（職業相当）。就業人数に比例し、上限はない。"
 
  job_ad_infrastructure_engineer_drone_effect_desc:0 "工学研究2を産出し、惑星の単純ドローン産出を1%増やす。維持費はエネルギー3（職業相当）。"
 
@@ -1178,3 +1178,5 @@
 
 
 
+
+ job_ad_data_minor_drone_effect_desc:0 "各研究2、惑星の研究職産出+1%、帝国の暗号力+0.1。維持費はエネルギー3（職業相当）。人数による上限はない。"

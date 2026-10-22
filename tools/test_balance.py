@@ -95,9 +95,8 @@ def main():
    for _ in range(3):
     apply(E['ad_refresh_shipwright_support'],s)
     found=[k for k in s['modifiers'] if k.startswith('ad_shipwright_support_')]
-    assert found==(['ad_shipwright_support_'+str(expected_tier(raw))] if raw>=100 else [])
+    assert found==[]
     assert 'unrelated_modifier' in s['modifiers'] and not s['vars']
-    if found:assert float(first(S[found[0]],'starbase_shipyard_build_speed_mult'))<=.2
     tests['shipwright_tiers']+=1
    s['jobs']={};apply(E['ad_refresh_shipwright_support'],s);assert list(s['modifiers'])==['unrelated_modifier'];tests['shipwright_loss']+=1
  specs=[('sky_cities','large_scale_air_area_construction',2,{'minerals':500,'alloys':250,'exotic_gases':50},180,125),('under_water_cities','large_scale_water_area_construction',5,{'minerals':200,'alloys':100},180,50),('underground_cities','large_scale_underground_area_construction',5,{'minerals':100,'alloys':200},180,50),('solar_power_generation','solar_power_generation',5,{'minerals':100},90,25)]
@@ -156,7 +155,7 @@ def main():
  for suffix in ('','_drone'):
   j=jobs['ad_professorship'+suffix];assert first(first(j,'planet_modifier'),'planet_jobs_specialist_produces_mult') is None
   assert {k:v for k,_,v in first(first(j,'resources'),'produces')}=={r:'2' for r in ('physics_research','society_research','engineering_research')}
-  j=jobs['ad_shipwright'+suffix];assert first(first(j,'country_modifier'),'starbase_shipyard_build_speed_mult') is None
+  j=jobs['ad_shipwright'+suffix];assert first(first(j,'country_modifier'),'starbase_shipyard_build_speed_mult')=='0.0025'
   assert first(first(j,'country_modifier'),'country_naval_cap_add')=='1'
   tests['job_roles']+=2
  university=next(b for n,_,b in load('common/districts/AD_districts.txt') if n=='district_ad_university_district')
@@ -191,7 +190,7 @@ def main():
  actions={n:b for n,_,b in load('common/on_actions/AD_on_actions.txt')}
  assert (None,None,'additionaldistricts.9010') in first(actions['on_monthly_pulse_country'],'events')
  assert (None,None,'additionaldistricts.9011') in first(actions['on_single_player_save_game_load'],'events')
- result={'version':'2.1.0-beta.4','engine_test':False,'cases':sum(tests.values()),'groups':dict(tests),'limits':'Native payment, queue completion/cancellation and job units require engine verification.'}
+ result={'version':'2.1.0-beta.5','engine_test':False,'cases':sum(tests.values()),'groups':dict(tests),'limits':'Native payment, queue completion/cancellation and job units require engine verification.'}
  if args.report:Path(args.report).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
  print(json.dumps(result,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()
