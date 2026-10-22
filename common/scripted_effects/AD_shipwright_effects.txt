@@ -1,0 +1,101 @@
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+ad_refresh_shipwright_support = {
+	export_trigger_value_to_variable = {
+		trigger = num_assigned_jobs
+		parameters = {
+			job = ad_shipwright
+		}
+		variable = ad_shipwright_employed
+	}
+	export_trigger_value_to_variable = {
+		trigger = num_assigned_jobs
+		parameters = {
+			job = ad_shipwright_drone
+		}
+		variable = ad_shipwright_employed_drone
+	}
+	change_variable = {
+		which = ad_shipwright_employed
+		value = ad_shipwright_employed_drone
+	}
+	remove_modifier = ad_shipwright_support_20
+	remove_modifier = ad_shipwright_support_15
+	remove_modifier = ad_shipwright_support_10
+	remove_modifier = ad_shipwright_support_5
+	remove_modifier = ad_shipwright_support_3
+	remove_modifier = ad_shipwright_support_1
+	if = {
+		limit = {
+			check_variable = {
+				which = ad_shipwright_employed
+				value >= 8000
+			}
+		}
+		add_modifier = {
+			modifier = ad_shipwright_support_20
+			days = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = ad_shipwright_employed
+				value >= 4000
+			}
+		}
+		add_modifier = {
+			modifier = ad_shipwright_support_15
+			days = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = ad_shipwright_employed
+				value >= 2000
+			}
+		}
+		add_modifier = {
+			modifier = ad_shipwright_support_10
+			days = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = ad_shipwright_employed
+				value >= 1000
+			}
+		}
+		add_modifier = {
+			modifier = ad_shipwright_support_5
+			days = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = ad_shipwright_employed
+				value >= 500
+			}
+		}
+		add_modifier = {
+			modifier = ad_shipwright_support_3
+			days = -1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = ad_shipwright_employed
+				value >= 100
+			}
+		}
+		add_modifier = {
+			modifier = ad_shipwright_support_1
+			days = -1
+		}
+	}
+	clear_variable = ad_shipwright_employed
+	clear_variable = ad_shipwright_employed_drone
+}

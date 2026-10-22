@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
 @base_ad_cost = 250
 @base_ad_2cost = 300
 district_ad_archaeological_cities = {
@@ -3267,10 +3267,10 @@ district_ad_university_district = {
 			}
 		}
 		modifier = {
-			job_ad_professorship_add = 200
-			job_physicist_add = 67
-			job_biologist_add = 67
-			job_engineer_add = 66
+			job_ad_professorship_add = 100
+			job_physicist_add = 100
+			job_biologist_add = 100
+			job_engineer_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -3281,10 +3281,10 @@ district_ad_university_district = {
 			}
 		}
 		modifier = {
-			job_ad_professorship_drone_add = 200
-			job_calculator_physicist_add = 67
-			job_calculator_biologist_add = 67
-			job_calculator_engineer_add = 66
+			job_ad_professorship_drone_add = 100
+			job_calculator_physicist_add = 100
+			job_calculator_biologist_add = 100
+			job_calculator_engineer_add = 100
 		}
 	}
 	triggered_planet_modifier = {
@@ -3298,12 +3298,15 @@ district_ad_university_district = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_regular_empire = yes
+			}
 		}
 		modifier = {
-			job_ad_professorship_add = 100
-			job_physicist_add = 34
-			job_biologist_add = 33
-			job_engineer_add = 33
+			job_ad_professorship_add = 50
+			job_physicist_add = 50
+			job_biologist_add = 50
+			job_engineer_add = 50
 		}
 	}
 	triggered_planet_modifier = {
@@ -3314,10 +3317,10 @@ district_ad_university_district = {
 			do_is_arcology_planet = yes
 		}
 		modifier = {
-			job_calculator_physicist_add = 34
-			job_calculator_biologist_add = 33
-			job_calculator_engineer_add = 33
-			job_ad_professorship_drone_add = 100
+			job_calculator_physicist_add = 50
+			job_calculator_biologist_add = 50
+			job_calculator_engineer_add = 50
+			job_ad_professorship_drone_add = 50
 		}
 	}
 	triggered_planet_modifier = {
@@ -3337,10 +3340,10 @@ district_ad_university_district = {
 			do_is_ringworld = yes
 		}
 		modifier = {
-			job_ad_professorship_add = 400
-			job_physicist_add = 134
-			job_biologist_add = 133
-			job_engineer_add = 133
+			job_ad_professorship_add = 200
+			job_physicist_add = 200
+			job_biologist_add = 200
+			job_engineer_add = 200
 		}
 	}
 	triggered_planet_modifier = {
@@ -3352,10 +3355,10 @@ district_ad_university_district = {
 			do_is_ringworld = yes
 		}
 		modifier = {
-			job_calculator_physicist_add = 134
-			job_calculator_biologist_add = 133
-			job_calculator_engineer_add = 133
-			job_ad_professorship_drone_add = 400
+			job_calculator_physicist_add = 200
+			job_calculator_biologist_add = 200
+			job_calculator_engineer_add = 200
+			job_ad_professorship_drone_add = 200
 		}
 	}
 	triggered_desc = {
@@ -3621,6 +3624,9 @@ district_ad_shipbuilding_arsenal = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_regular_empire = yes
+			}
 		}
 		modifier = {
 			job_ad_shipwright_add = 100

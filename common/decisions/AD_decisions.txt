@@ -1,70 +1,64 @@
-# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
 decision_ad_large_scale_air_area_construction = {
 	owned_planets_only = yes
-	enactment_time = 0
+	enactment_time = 180
 	resources = {
 		category = decisions
 		cost = {
-			minerals = 1000
-			alloys = 500
-			exotic_gases = 100
+			minerals = 500
+			alloys = 250
+			exotic_gases = 50
 		}
 	}
 	potential = {
-		habitable_planet = yes
-		owner = {
-			is_ai = yes
-		}
+		is_colony = yes
 		owner = {
 			has_technology = large_scale_air_construction_technology
 		}
 		NOT = {
-			has_deposit = d_ad_artificial_sky_cities
+			has_planet_flag = ad_artificial_project
 		}
-		count_deposits = {
-			type = d_ad_sky_cities
-			count < 2
+		ad_can_start_artificial_sky_cities = yes
+	}
+	allow = {
+		ad_artificial_candidate_sky_cities = yes
+		ad_capacity_for_artificial_one_sky_cities = yes
+		OR = {
+			NOT = {
+				has_planet_flag = ad_artificial_project
+			}
+			has_planet_flag = ad_artificial_project_sky_cities
 		}
+	}
+	on_queued = {
+		set_planet_flag = ad_artificial_project
+		set_planet_flag = ad_artificial_project_sky_cities
+	}
+	on_unqueued = {
+		remove_planet_flag = ad_artificial_project
+		remove_planet_flag = ad_artificial_project_sky_cities
 	}
 	effect = {
 		custom_tooltip = decision_ad_large_scale_air_area_construction_effects
+		remove_planet_flag = ad_artificial_project
+		remove_planet_flag = ad_artificial_project_sky_cities
 		hidden_effect = {
-			ad_add_artificial_sky_cities = yes
+			ad_add_artificial_one_sky_cities = yes
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 10
-			owner = {
-				AND = {
-					has_country_resource = {
-						type = alloys
-						amount > 500
-					}
-					has_country_resource = {
-						type = minerals
-						amount > 1000
-					}
-					has_country_resource = {
-						type = exotic_gases
-						amount > 100
-					}
-				}
-			}
+			factor = 0
+			ad_ai_can_develop_sky_cities = no
 		}
 		modifier = {
-			factor = 10
-			free_housing < 500
+			factor = 2
+			free_housing < 300
 		}
 		modifier = {
-			factor = 500
+			factor = 4
 			free_housing < 100
-		}
-	}
-	allow = {
-		NOT = {
-			has_deposit = d_ad_artificial_sky_cities
 		}
 	}
 }
@@ -74,95 +68,91 @@ decision_ad_undo_large_scale_air_area_construction = {
 	resources = {
 		category = decisions
 		cost = {
-			minerals = 1000
-			alloys = 500
-			exotic_gases = 100
+			minerals = 125
 		}
 	}
 	potential = {
-		owner = {
-			is_ai = yes
-		}
+		is_colony = yes
 		owner = {
 			has_technology = large_scale_air_construction_technology
 		}
+		NOT = {
+			has_planet_flag = ad_artificial_project
+		}
 		has_deposit = d_ad_artificial_sky_cities
+	}
+	allow = {
+		ad_can_remove_artificial_one_sky_cities = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_large_scale_air_area_construction_effects
 		hidden_effect = {
-			ad_remove_artificial_sky_cities = yes
+			ad_remove_artificial_one_sky_cities = yes
 		}
 	}
 	ai_weight = {
 		weight = 0
 	}
-	allow = {
-		has_deposit = d_ad_artificial_sky_cities
-		ad_can_remove_artificial_sky_cities = yes
-	}
 }
 decision_ad_large_scale_water_area_construction = {
 	owned_planets_only = yes
-	enactment_time = 0
+	enactment_time = 180
 	resources = {
 		category = decisions
 		cost = {
-			minerals = 1000
-			alloys = 500
+			minerals = 200
+			alloys = 100
 		}
 	}
 	potential = {
-		habitable_planet = yes
-		owner = {
-			is_ai = yes
-		}
+		is_colony = yes
 		owner = {
 			has_technology = large_scale_in_water_construction_technology
 		}
 		NOT = {
-			has_deposit = d_ad_artificial_under_water_cities
+			has_planet_flag = ad_artificial_project
 		}
-		count_deposits = {
-			type = d_ad_under_water_cities
-			count < 5
+		ad_can_start_artificial_under_water_cities = yes
+	}
+	allow = {
+		ad_artificial_candidate_under_water_cities = yes
+		ad_capacity_for_artificial_one_under_water_cities = yes
+		OR = {
+			NOT = {
+				has_planet_flag = ad_artificial_project
+			}
+			has_planet_flag = ad_artificial_project_under_water_cities
 		}
+	}
+	on_queued = {
+		set_planet_flag = ad_artificial_project
+		set_planet_flag = ad_artificial_project_under_water_cities
+	}
+	on_unqueued = {
+		remove_planet_flag = ad_artificial_project
+		remove_planet_flag = ad_artificial_project_under_water_cities
 	}
 	effect = {
 		custom_tooltip = decision_ad_large_scale_water_area_construction_effects
+		remove_planet_flag = ad_artificial_project
+		remove_planet_flag = ad_artificial_project_under_water_cities
 		hidden_effect = {
-			ad_add_artificial_under_water_cities = yes
+			ad_add_artificial_one_under_water_cities = yes
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 10
-			owner = {
-				AND = {
-					has_country_resource = {
-						type = alloys
-						amount > 500
-					}
-					has_country_resource = {
-						type = minerals
-						amount > 1000
-					}
-				}
-			}
+			factor = 0
+			ad_ai_can_develop_under_water_cities = no
 		}
 		modifier = {
-			add = 8
-			free_housing < 500
+			factor = 2
+			free_housing < 300
 		}
 		modifier = {
-			factor = 500
+			factor = 4
 			free_housing < 100
-		}
-	}
-	allow = {
-		NOT = {
-			has_deposit = d_ad_artificial_under_water_cities
 		}
 	}
 }
@@ -172,218 +162,227 @@ decision_ad_undo_large_scale_water_area_construction = {
 	resources = {
 		category = decisions
 		cost = {
-			minerals = 1000
-			alloys = 500
+			minerals = 50
 		}
 	}
 	potential = {
-		owner = {
-			is_ai = yes
-		}
+		is_colony = yes
 		owner = {
 			has_technology = large_scale_in_water_construction_technology
 		}
+		NOT = {
+			has_planet_flag = ad_artificial_project
+		}
 		has_deposit = d_ad_artificial_under_water_cities
+	}
+	allow = {
+		ad_can_remove_artificial_one_under_water_cities = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_large_scale_water_area_construction_effects
 		hidden_effect = {
-			ad_remove_artificial_under_water_cities = yes
+			ad_remove_artificial_one_under_water_cities = yes
 		}
 	}
 	ai_weight = {
 		weight = 0
 	}
-	allow = {
-		has_deposit = d_ad_artificial_under_water_cities
-		ad_can_remove_artificial_under_water_cities = yes
-	}
 }
 decision_ad_large_scale_underground_area_construction = {
 	owned_planets_only = yes
-	enactment_time = 0
-	resources = {
-		category = decisions
-		cost = {
-			minerals = 500
-			alloys = 1000
-		}
-	}
+	enactment_time = 180
 	potential = {
-		habitable_planet = yes
-		owner = {
-			is_ai = yes
-		}
+		is_colony = yes
 		owner = {
 			has_technology = large_scale_ground_construction_technology
 		}
 		NOT = {
-			has_deposit = d_ad_artificial_underground_cities
+			has_planet_flag = ad_artificial_project
 		}
-		count_deposits = {
-			type = d_ad_underground_cities
-			count < 5
+		ad_can_start_artificial_underground_cities = yes
+	}
+	allow = {
+		ad_artificial_candidate_underground_cities = yes
+		ad_capacity_for_artificial_one_underground_cities = yes
+		OR = {
+			NOT = {
+				has_planet_flag = ad_artificial_project
+			}
+			has_planet_flag = ad_artificial_project_underground_cities
 		}
+	}
+	on_queued = {
+		set_planet_flag = ad_artificial_project
+		set_planet_flag = ad_artificial_project_underground_cities
+	}
+	on_unqueued = {
+		remove_planet_flag = ad_artificial_project
+		remove_planet_flag = ad_artificial_project_underground_cities
 	}
 	effect = {
 		custom_tooltip = decision_ad_large_scale_underground_area_construction_effects
+		remove_planet_flag = ad_artificial_project
+		remove_planet_flag = ad_artificial_project_underground_cities
 		hidden_effect = {
-			ad_add_artificial_underground_cities = yes
+			ad_add_artificial_one_underground_cities = yes
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 10
-			owner = {
-				AND = {
-					has_country_resource = {
-						type = minerals
-						amount > 500
-					}
-					has_country_resource = {
-						type = alloys
-						amount > 1000
-					}
-				}
-			}
+			factor = 0
+			ad_ai_can_develop_underground_cities = no
 		}
 		modifier = {
-			factor = 6
-			free_housing < 500
+			factor = 2
+			free_housing < 300
 		}
 		modifier = {
-			factor = 500
+			factor = 4
 			free_housing < 100
 		}
 	}
-	allow = {
-		NOT = {
-			has_deposit = d_ad_artificial_underground_cities
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 100
+			alloys = 200
 		}
 	}
 }
 decision_ad_undo_large_scale_underground_area_construction = {
 	owned_planets_only = yes
 	enactment_time = 0
-	resources = {
-		category = decisions
-		cost = {
-			minerals = 500
-			alloys = 1000
-		}
-	}
 	potential = {
-		owner = {
-			is_ai = yes
-		}
+		is_colony = yes
 		owner = {
 			has_technology = large_scale_ground_construction_technology
 		}
+		NOT = {
+			has_planet_flag = ad_artificial_project
+		}
 		has_deposit = d_ad_artificial_underground_cities
+	}
+	allow = {
+		ad_can_remove_artificial_one_underground_cities = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_large_scale_underground_area_construction_effects
 		hidden_effect = {
-			ad_remove_artificial_underground_cities = yes
+			ad_remove_artificial_one_underground_cities = yes
 		}
 	}
 	ai_weight = {
 		weight = 0
 	}
-	allow = {
-		has_deposit = d_ad_artificial_underground_cities
-		ad_can_remove_artificial_underground_cities = yes
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 50
+		}
 	}
 }
 decision_ad_solar_power_generation = {
 	owned_planets_only = yes
-	enactment_time = 0
+	enactment_time = 90
 	resources = {
 		category = decisions
 		cost = {
-			minerals = 500
+			minerals = 100
 		}
 	}
 	potential = {
-		habitable_planet = yes
-		owner = {
-			is_ai = yes
-		}
+		is_colony = yes
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 		NOT = {
-			has_deposit = d_ad_artificial_solar_power_generation
+			has_planet_flag = ad_artificial_project
 		}
-		count_deposits = {
-			type = d_ad_solar_power_generation
-			count < 5
+		ad_can_start_artificial_solar_power_generation = yes
+	}
+	allow = {
+		ad_artificial_candidate_solar_power_generation = yes
+		ad_capacity_for_artificial_one_solar_power_generation = yes
+		OR = {
+			NOT = {
+				has_planet_flag = ad_artificial_project
+			}
+			has_planet_flag = ad_artificial_project_solar_power_generation
 		}
+	}
+	on_queued = {
+		set_planet_flag = ad_artificial_project
+		set_planet_flag = ad_artificial_project_solar_power_generation
+	}
+	on_unqueued = {
+		remove_planet_flag = ad_artificial_project
+		remove_planet_flag = ad_artificial_project_solar_power_generation
 	}
 	effect = {
 		custom_tooltip = decision_ad_solar_power_generation_effects
+		remove_planet_flag = ad_artificial_project
+		remove_planet_flag = ad_artificial_project_solar_power_generation
 		hidden_effect = {
-			ad_add_artificial_solar_power_generation = yes
+			ad_add_artificial_one_solar_power_generation = yes
 		}
 	}
 	ai_weight = {
-		weight = 0
-		modifier = {
-			add = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = worker
-						is_pop_category = simple_drone
-					}
-				}
-				count > 2000
-			}
-		}
+		weight = 5
 		modifier = {
 			factor = 0
+			ad_ai_can_develop_solar_power_generation = no
+		}
+		modifier = {
+			factor = 2
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_solar_power_generation = yes
-					num_districts = {
-						type = district_ad_solar_power_generation
-						value < 3
-					}
+				has_monthly_income = {
+					resource = energy
+					value < 10
 				}
 			}
 		}
-	}
-	allow = {
-		NOT = {
-			has_deposit = d_ad_artificial_solar_power_generation
+		modifier = {
+			factor = 4
+			owner = {
+				has_monthly_income = {
+					resource = energy
+					value < 5
+				}
+			}
 		}
 	}
 }
 decision_ad_undo_solar_power_generation = {
 	owned_planets_only = yes
 	enactment_time = 0
-	potential = {
-		owner = {
-			is_ai = yes
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 25
 		}
+	}
+	potential = {
+		is_colony = yes
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
+		NOT = {
+			has_planet_flag = ad_artificial_project
+		}
 		has_deposit = d_ad_artificial_solar_power_generation
+	}
+	allow = {
+		ad_can_remove_artificial_one_solar_power_generation = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_solar_power_generation_effects
 		hidden_effect = {
-			ad_remove_artificial_solar_power_generation = yes
+			ad_remove_artificial_one_solar_power_generation = yes
 		}
 	}
 	ai_weight = {
 		weight = 0
-	}
-	allow = {
-		has_deposit = d_ad_artificial_solar_power_generation
-		ad_can_remove_artificial_solar_power_generation = yes
 	}
 }
 decision_ad_government_district = {
@@ -421,39 +420,32 @@ decision_ad_government_district = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 2000
-			}
-		}
-		modifier = {
-			factor = 500
-			owner = {
-				has_country_resource = {
-					type = minerals
-					amount > 5000
-				}
-			}
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
 			factor = 0
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_government_district = yes
-					num_districts = {
-						type = district_ad_government_district
-						value < 3
-					}
+				has_country_resource = {
+					type = minerals
+					amount < 1000
 				}
 			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			is_capital = yes
 		}
 	}
 }
@@ -518,48 +510,32 @@ decision_ad_university_district = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 1000
-			OR = {
-				has_designation = col_research
-				has_designation = col_habitat_research
-				has_designation = col_ring_research
-				has_designation = col_ecu_research
-			}
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
-			factor = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 2000
-			}
-		}
-		modifier = {
-			factor = 1000
+			factor = 0
 			owner = {
 				has_country_resource = {
 					type = minerals
-					amount > 5000
+					amount < 1000
 				}
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 2
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_university_district = yes
-					num_districts = {
-						type = district_ad_university_district
-						value < 3
-					}
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
 				}
 			}
+		}
+		modifier = {
+			factor = 2
+			has_designation = col_research
 		}
 	}
 }
@@ -624,19 +600,32 @@ decision_ad_residential_area = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 100
-			has_designation = col_city
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
-			factor = 100
+			factor = 0
 			owner = {
 				has_country_resource = {
 					type = minerals
-					amount > 5000
+					amount < 1000
 				}
 			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			free_housing < 500
 		}
 	}
 }
@@ -701,39 +690,32 @@ decision_ad_shipbuilding_arsenal = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 2000
-			}
-		}
-		modifier = {
-			factor = 1000
-			owner = {
-				has_country_resource = {
-					type = minerals
-					amount > 5000
-				}
-			}
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
 			factor = 0
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_shipbuilding_arsenal = yes
-					num_districts = {
-						type = district_ad_shipbuilding_arsenal
-						value < 3
-					}
+				has_country_resource = {
+					type = minerals
+					amount < 1000
 				}
 			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			has_designation = col_fortress
 		}
 	}
 }
@@ -798,38 +780,35 @@ decision_ad_communication_area = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 2000
-			}
-		}
-		modifier = {
-			factor = 600
-			owner = {
-				has_country_resource = {
-					type = minerals
-					amount > 5000
-				}
-			}
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
 			factor = 0
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_communication_area = yes
-					num_districts = {
-						type = district_ad_communication_area
-						value < 3
-					}
+				has_country_resource = {
+					type = minerals
+					amount < 1000
 				}
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_designation = col_mining
+				has_designation = col_generator
+				has_designation = col_farming
 			}
 		}
 	}
@@ -895,37 +874,26 @@ decision_ad_tourist_area = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 2000
-			}
-		}
-		modifier = {
-			factor = 600
-			owner = {
-				has_country_resource = {
-					type = minerals
-					amount > 5000
-				}
-			}
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
 			factor = 0
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_tourist_area = yes
-					num_districts = {
-						type = district_ad_tourist_area
-						value < 3
-					}
+				has_country_resource = {
+					type = minerals
+					amount < 1000
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
 				}
 			}
 		}
@@ -992,39 +960,32 @@ decision_ad_defense_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 2000
-			}
-		}
-		modifier = {
-			factor = 400
-			owner = {
-				has_country_resource = {
-					type = minerals
-					amount > 5000
-				}
-			}
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
 			factor = 0
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_defense_zone = yes
-					num_districts = {
-						type = district_ad_defense_zone
-						value < 3
-					}
+				has_country_resource = {
+					type = minerals
+					amount < 1000
 				}
 			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			has_designation = col_fortress
 		}
 	}
 }
@@ -1089,39 +1050,32 @@ decision_ad_conceptual_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 2000
-			}
-		}
-		modifier = {
-			factor = 1000
-			owner = {
-				has_country_resource = {
-					type = minerals
-					amount > 5000
-				}
-			}
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
 			factor = 0
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_conceptual_zone = yes
-					num_districts = {
-						type = district_ad_conceptual_zone
-						value < 3
-					}
+				has_country_resource = {
+					type = minerals
+					amount < 1000
 				}
 			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			has_designation = col_city
 		}
 	}
 }
@@ -1186,48 +1140,32 @@ decision_ad_special_research_zone = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 1000
-			OR = {
-				has_designation = col_research
-				has_designation = col_habitat_research
-				has_designation = col_ring_research
-				has_designation = col_ecu_research
-			}
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
-			factor = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 2000
-			}
-		}
-		modifier = {
-			factor = 1000
+			factor = 0
 			owner = {
 				has_country_resource = {
 					type = minerals
-					amount > 5000
+					amount < 1000
 				}
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 2
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_special_research_zone = yes
-					num_districts = {
-						type = district_ad_special_research_zone
-						value < 3
-					}
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
 				}
 			}
+		}
+		modifier = {
+			factor = 2
+			has_designation = col_research
 		}
 	}
 }
@@ -1292,39 +1230,32 @@ decision_ad_spaceport_area = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 2000
-			}
-		}
-		modifier = {
-			factor = 1000
-			owner = {
-				has_country_resource = {
-					type = minerals
-					amount > 5000
-				}
-			}
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
 			factor = 0
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_spaceport_area = yes
-					num_districts = {
-						type = district_ad_spaceport_area
-						value < 3
-					}
+				has_country_resource = {
+					type = minerals
+					amount < 1000
 				}
 			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			has_designation = col_city
 		}
 	}
 }
@@ -1389,38 +1320,34 @@ decision_ad_orbital_elevator = {
 		}
 	}
 	ai_weight = {
-		weight = 50
+		weight = 5
 		modifier = {
-			factor = 4
-			count_owned_pop_amount = {
-				limit = {
-					OR = {
-						is_pop_category = specialist
-						is_pop_category = complex_drone
-					}
-				}
-				count > 2000
-			}
-		}
-		modifier = {
-			factor = 400
-			owner = {
-				has_country_resource = {
-					type = minerals
-					amount > 5000
-				}
-			}
+			factor = 0
+			ad_ai_development_economy = no
 		}
 		modifier = {
 			factor = 0
 			owner = {
-				any_planet_within_border = {
-					has_district_ad_orbital_elevator = yes
-					num_districts = {
-						type = district_ad_orbital_elevator
-						value < 3
-					}
+				has_country_resource = {
+					type = minerals
+					amount < 1000
 				}
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				has_country_resource = {
+					type = minerals
+					amount >= 5000
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_designation = col_foundry
+				has_designation = col_factory
 			}
 		}
 	}

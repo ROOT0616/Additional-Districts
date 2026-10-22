@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
 namespace = additionaldistricts
 event = {
 	id = additionaldistricts.9001

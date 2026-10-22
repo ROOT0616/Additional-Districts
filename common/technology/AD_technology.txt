@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
 mixed_use_development_plan = {
 	cost = @tier1cost2
 	area = society
@@ -8,10 +8,6 @@ mixed_use_development_plan = {
 	}
 	weight = @tier1weight2
 	weight_modifier = {
-		modifier = {
-			factor = 0
-			is_gestalt = yes
-		}
 		modifier = {
 			factor = 1.25
 			has_ethic = ethic_materialist
@@ -124,6 +120,9 @@ large_scale_in_water_construction_technology = {
 			has_civic = civic_functional_architecture
 		}
 	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
 }
 large_scale_air_construction_technology = {
 	cost = @tier2cost3
@@ -185,6 +184,9 @@ large_scale_air_construction_technology = {
 			has_civic = civic_functional_architecture
 		}
 	}
+	prerequisites = {
+		mixed_use_development_plan
+	}
 }
 large_scale_ground_construction_technology = {
 	cost = @tier2cost3
@@ -245,5 +247,8 @@ large_scale_ground_construction_technology = {
 			factor = 1.5
 			has_civic = civic_functional_architecture
 		}
+	}
+	prerequisites = {
+		mixed_use_development_plan
 	}
 }

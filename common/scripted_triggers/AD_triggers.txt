@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
 has_district_ad_solar_power_generation = {
 	OR = {
 		has_deposit = d_ad_solar_power_generation

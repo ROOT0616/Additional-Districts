@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
 namespace = additionaldistricts
 planet_event = {
 	id = additionaldistricts.1
@@ -735,339 +735,216 @@ planet_event = {
 		name = additionaldistricts.2.a
 		custom_tooltip = decision_ad_large_scale_air_area_construction_effects
 		trigger = {
+			is_colony = yes
 			owner = {
 				has_technology = large_scale_air_construction_technology
 			}
-			habitable_planet = yes
-			NOT = {
-				has_deposit = d_ad_artificial_sky_cities
-			}
-			count_deposits = {
-				type = d_ad_sky_cities
-				count < 2
-			}
+			ad_capacity_for_artificial_one_sky_cities = yes
 		}
 		allow = {
+			ad_can_start_artificial_sky_cities = yes
 			owner = {
 				resource_stockpile_compare = {
 					resource = minerals
-					value >= 1000
-				}
-				resource_stockpile_compare = {
-					resource = alloys
 					value >= 500
 				}
 				resource_stockpile_compare = {
+					resource = alloys
+					value >= 250
+				}
+				resource_stockpile_compare = {
 					resource = exotic_gases
-					value >= 100
+					value >= 50
 				}
 			}
-			NOT = {
-				has_modifier = resort_colony
-			}
-			NOT = {
-				has_modifier = slave_colony
-			}
-		}
-		owner = {
-			add_resource = {
-				minerals = -1000
-				alloys = -500
-				exotic_gases = -100
-			}
-		}
-		planet_event = {
-			id = additionaldistricts.2
 		}
 		hidden_effect = {
-			ad_add_artificial_sky_cities = yes
+			select_decision = {
+				name = decision_ad_large_scale_air_area_construction
+			}
 		}
 	}
 	option = {
 		name = additionaldistricts.2.b
 		custom_tooltip = decision_ad_undo_large_scale_air_area_construction_effects
 		trigger = {
+			is_colony = yes
 			owner = {
 				has_technology = large_scale_air_construction_technology
 			}
 			has_deposit = d_ad_artificial_sky_cities
 		}
 		allow = {
+			ad_can_remove_artificial_one_sky_cities = yes
 			owner = {
 				resource_stockpile_compare = {
 					resource = minerals
-					value >= 1000
-				}
-				resource_stockpile_compare = {
-					resource = alloys
-					value >= 500
-				}
-				resource_stockpile_compare = {
-					resource = exotic_gases
-					value >= 100
+					value >= 125
 				}
 			}
-			custom_tooltip = {
-				fail_text = ad_artificial_removal_blocked
-				ad_can_remove_artificial_sky_cities = yes
-			}
-		}
-		owner = {
-			add_resource = {
-				minerals = -1000
-				alloys = -500
-				exotic_gases = -100
-			}
-		}
-		planet_event = {
-			id = additionaldistricts.2
 		}
 		hidden_effect = {
-			ad_remove_artificial_sky_cities = yes
+			select_decision = {
+				name = decision_ad_undo_large_scale_air_area_construction
+			}
 		}
 	}
 	option = {
 		name = additionaldistricts.2.c
 		custom_tooltip = decision_ad_large_scale_water_area_construction_effects
 		trigger = {
+			is_colony = yes
 			owner = {
 				has_technology = large_scale_in_water_construction_technology
 			}
-			habitable_planet = yes
-			NOT = {
-				has_deposit = d_ad_artificial_under_water_cities
-			}
-			count_deposits = {
-				type = d_ad_under_water_cities
-				count < 5
-			}
+			ad_capacity_for_artificial_one_under_water_cities = yes
 		}
 		allow = {
+			ad_can_start_artificial_under_water_cities = yes
 			owner = {
 				resource_stockpile_compare = {
 					resource = minerals
-					value >= 1000
+					value >= 200
 				}
 				resource_stockpile_compare = {
 					resource = alloys
-					value >= 500
+					value >= 100
 				}
 			}
-			NOT = {
-				has_modifier = resort_colony
-			}
-			NOT = {
-				has_modifier = slave_colony
-			}
-		}
-		owner = {
-			add_resource = {
-				minerals = -1000
-				alloys = -500
-			}
-		}
-		planet_event = {
-			id = additionaldistricts.2
 		}
 		hidden_effect = {
-			ad_add_artificial_under_water_cities = yes
+			select_decision = {
+				name = decision_ad_large_scale_water_area_construction
+			}
 		}
 	}
 	option = {
 		name = additionaldistricts.2.d
 		custom_tooltip = decision_ad_undo_large_scale_water_area_construction_effects
 		trigger = {
+			is_colony = yes
 			owner = {
 				has_technology = large_scale_in_water_construction_technology
 			}
 			has_deposit = d_ad_artificial_under_water_cities
 		}
 		allow = {
+			ad_can_remove_artificial_one_under_water_cities = yes
 			owner = {
 				resource_stockpile_compare = {
 					resource = minerals
-					value >= 1000
-				}
-				resource_stockpile_compare = {
-					resource = alloys
-					value >= 500
+					value >= 50
 				}
 			}
-			custom_tooltip = {
-				fail_text = ad_artificial_removal_blocked
-				ad_can_remove_artificial_under_water_cities = yes
-			}
-		}
-		owner = {
-			add_resource = {
-				minerals = -1000
-				alloys = -500
-			}
-		}
-		planet_event = {
-			id = additionaldistricts.2
 		}
 		hidden_effect = {
-			ad_remove_artificial_under_water_cities = yes
+			select_decision = {
+				name = decision_ad_undo_large_scale_water_area_construction
+			}
 		}
 	}
 	option = {
 		name = additionaldistricts.2.e
 		custom_tooltip = decision_ad_large_scale_underground_area_construction_effects
 		trigger = {
+			is_colony = yes
 			owner = {
 				has_technology = large_scale_ground_construction_technology
 			}
-			NOT = {
-				has_deposit = d_ad_artificial_underground_cities
-			}
-			count_deposits = {
-				type = d_ad_underground_cities
-				count < 5
-			}
+			ad_capacity_for_artificial_one_underground_cities = yes
 		}
 		allow = {
+			ad_can_start_artificial_underground_cities = yes
 			owner = {
 				resource_stockpile_compare = {
 					resource = minerals
-					value >= 500
+					value >= 100
 				}
 				resource_stockpile_compare = {
 					resource = alloys
-					value >= 1000
+					value >= 200
 				}
 			}
-			NOT = {
-				has_modifier = resort_colony
-			}
-			NOT = {
-				has_modifier = slave_colony
-			}
-		}
-		owner = {
-			add_resource = {
-				minerals = -500
-				alloys = -1000
-			}
-		}
-		planet_event = {
-			id = additionaldistricts.2
 		}
 		hidden_effect = {
-			ad_add_artificial_underground_cities = yes
+			select_decision = {
+				name = decision_ad_large_scale_underground_area_construction
+			}
 		}
 	}
 	option = {
 		name = additionaldistricts.2.f
 		custom_tooltip = decision_ad_undo_large_scale_underground_area_construction_effects
 		trigger = {
+			is_colony = yes
 			owner = {
 				has_technology = large_scale_ground_construction_technology
 			}
 			has_deposit = d_ad_artificial_underground_cities
 		}
 		allow = {
+			ad_can_remove_artificial_one_underground_cities = yes
 			owner = {
 				resource_stockpile_compare = {
 					resource = minerals
-					value >= 500
-				}
-				resource_stockpile_compare = {
-					resource = alloys
-					value >= 1000
+					value >= 50
 				}
 			}
-			custom_tooltip = {
-				fail_text = ad_artificial_removal_blocked
-				ad_can_remove_artificial_underground_cities = yes
-			}
-		}
-		owner = {
-			add_resource = {
-				minerals = -500
-				alloys = -1000
-			}
-		}
-		planet_event = {
-			id = additionaldistricts.2
 		}
 		hidden_effect = {
-			ad_remove_artificial_underground_cities = yes
+			select_decision = {
+				name = decision_ad_undo_large_scale_underground_area_construction
+			}
 		}
 	}
 	option = {
 		name = additionaldistricts.2.g
 		custom_tooltip = decision_ad_solar_power_generation_effects
 		trigger = {
+			is_colony = yes
 			owner = {
 				has_technology = mixed_use_development_plan
 			}
-			habitable_planet = yes
-			NOT = {
-				has_deposit = d_ad_artificial_solar_power_generation
-			}
-			count_deposits = {
-				type = d_ad_solar_power_generation
-				count < 5
-			}
+			ad_capacity_for_artificial_one_solar_power_generation = yes
 		}
 		allow = {
+			ad_can_start_artificial_solar_power_generation = yes
 			owner = {
 				resource_stockpile_compare = {
 					resource = minerals
-					value >= 500
+					value >= 100
 				}
 			}
-			NOT = {
-				has_modifier = resort_colony
-			}
-			NOT = {
-				has_modifier = slave_colony
-			}
-		}
-		owner = {
-			add_resource = {
-				minerals = -500
-			}
-		}
-		planet_event = {
-			id = additionaldistricts.2
 		}
 		hidden_effect = {
-			ad_add_artificial_solar_power_generation = yes
+			select_decision = {
+				name = decision_ad_solar_power_generation
+			}
 		}
 	}
 	option = {
 		name = additionaldistricts.2.h
 		custom_tooltip = decision_ad_undo_solar_power_generation_effects
 		trigger = {
+			is_colony = yes
 			owner = {
 				has_technology = mixed_use_development_plan
 			}
 			has_deposit = d_ad_artificial_solar_power_generation
 		}
 		allow = {
+			ad_can_remove_artificial_one_solar_power_generation = yes
 			owner = {
 				resource_stockpile_compare = {
 					resource = minerals
-					value >= 500
+					value >= 25
 				}
 			}
-			custom_tooltip = {
-				fail_text = ad_artificial_removal_blocked
-				ad_can_remove_artificial_solar_power_generation = yes
-			}
-		}
-		owner = {
-			add_resource = {
-				minerals = -500
-			}
-		}
-		planet_event = {
-			id = additionaldistricts.2
 		}
 		hidden_effect = {
-			ad_remove_artificial_solar_power_generation = yes
+			select_decision = {
+				name = decision_ad_undo_solar_power_generation
+			}
 		}
 	}
 	option = {
@@ -1082,16 +959,32 @@ planet_event = {
 		this = {
 			has_building = building_ad_Anti_s_misile
 		}
+		exists = owner
+		NOT = {
+			has_planet_flag = ad_planet_defence_cooldown
+		}
+		solar_system = {
+			NOT = {
+				any_fleet_in_system = {
+					has_fleet_flag = ad_planet_defence@root
+				}
+			}
+		}
 	}
 	immediate = {
 		random_list = {
 			5 = {
+				set_timed_planet_flag = {
+					flag = ad_planet_defence_cooldown
+					days = 90
+				}
 				create_fleet = {
 					name = "Planet Defense"
 					settings = {
 						spawn_debris = no
 					}
 					effect = {
+						set_fleet_flag = ad_planet_defence@root
 						set_owner = root.owner
 						create_ship = {
 							design = NAME_NGM_planet_defence

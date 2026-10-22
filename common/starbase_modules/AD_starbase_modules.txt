@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
 ad_dry_dock = {
 	icon = GFX_spaceport_module_ad_dry_dock
 	construction_days = 360

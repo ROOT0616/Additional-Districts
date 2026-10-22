@@ -12,33 +12,33 @@
  decision_ad_undo_town_display_desc:0 ""
  decision_ad_undo_town_display_effects:0 ""
 
- decision_ad_large_scale_air_area_construction:0 "Construct Large Aerial Area"
- decision_ad_large_scale_air_area_construction_desc:0 "Implement the plan to build a floating city not only on the ground but also in the air."
- decision_ad_large_scale_air_area_construction_effects:0 "§Y空中都市§!を2区域建設可能にする\n空中都市は£job_clerk£ 事務員の職業枠と£trade£ 交易価値を生む\n$job_clerk_effect_desc$"
+ decision_ad_large_scale_air_area_construction:0 "$district_ad_sky_cities$: Develop 1 artificial slot"
+ decision_ad_large_scale_air_area_construction_desc:0 "Adds one artificial slot, up to 2 including natural capacity. Base cost: £minerals£ 500 / £alloys£ 250 / £exotic_gases£ 50. Time: 180 days."
+ decision_ad_large_scale_air_area_construction_effects:0 "Adds one artificial slot, up to 2 including natural capacity. Base cost: £minerals£ 500 / £alloys£ 250 / £exotic_gases£ 50. Time: 180 days."
 
- decision_ad_undo_large_scale_air_area_construction:0 "Withdrawal of Large Aerial Area"
- decision_ad_undo_large_scale_air_area_construction_desc:0 ""
- decision_ad_undo_large_scale_air_area_construction_effects:0 ""
+ decision_ad_undo_large_scale_air_area_construction:0 "$district_ad_sky_cities$: Remove 1 artificial slot"
+ decision_ad_undo_large_scale_air_area_construction_desc:0 "Removes one unused artificial slot; natural features are preserved. Base cost: £minerals£ 125. Instant."
+ decision_ad_undo_large_scale_air_area_construction_effects:0 "Removes one unused artificial slot; natural features are preserved. Base cost: £minerals£ 125. Instant."
 
- decision_ad_large_scale_water_area_construction:0 "Construct Large Underwater Area"
- decision_ad_large_scale_water_area_construction_desc:0 "Implement the plan to build cities underwater as well as on the ground."
- decision_ad_large_scale_water_area_construction_effects:0 "§Y水中都市§!を5区域建設可能にする\n水中都市は£job_ad_water_farmer£ 水中農家の職業枠を生む\n$job_ad_water_farmer_effect_desc$"
+ decision_ad_large_scale_water_area_construction:0 "$district_ad_under_water_cities$: Develop 1 artificial slot"
+ decision_ad_large_scale_water_area_construction_desc:0 "Adds one artificial slot, up to 5 including natural capacity. Base cost: £minerals£ 200 / £alloys£ 100. Time: 180 days."
+ decision_ad_large_scale_water_area_construction_effects:0 "Adds one artificial slot, up to 5 including natural capacity. Base cost: £minerals£ 200 / £alloys£ 100. Time: 180 days."
 
- decision_ad_undo_large_scale_water_area_construction:0 "Withdrawal of Large Underwater Area"
- decision_ad_undo_large_scale_water_area_construction_desc:0 ""
- decision_ad_undo_large_scale_water_area_construction_effects:0 ""
+ decision_ad_undo_large_scale_water_area_construction:0 "$district_ad_under_water_cities$: Remove 1 artificial slot"
+ decision_ad_undo_large_scale_water_area_construction_desc:0 "Removes one unused artificial slot; natural features are preserved. Base cost: £minerals£ 50. Instant."
+ decision_ad_undo_large_scale_water_area_construction_effects:0 "Removes one unused artificial slot; natural features are preserved. Base cost: £minerals£ 50. Instant."
 
- decision_ad_large_scale_underground_area_construction:0 "Construct Large Underground Area"
- decision_ad_large_scale_underground_area_construction_desc:0 "Implement plans to build cities not only above ground but also below ground."
- decision_ad_large_scale_underground_area_construction_effects:0 "§Y地下都市§!を5区域建設可能にする\n地下都市は£job_ad_facility_maintainer£ 施設維持業者の職業枠を生む\n$job_ad_facility_maintainer_effect_desc$"
+ decision_ad_large_scale_underground_area_construction:0 "$district_ad_underground_cities$: Develop 1 artificial slot"
+ decision_ad_large_scale_underground_area_construction_desc:0 "Adds one artificial slot, up to 5 including natural capacity. Base cost: £minerals£ 100 / £alloys£ 200. Time: 180 days."
+ decision_ad_large_scale_underground_area_construction_effects:0 "Adds one artificial slot, up to 5 including natural capacity. Base cost: £minerals£ 100 / £alloys£ 200. Time: 180 days."
 
- decision_ad_undo_large_scale_underground_area_construction:0 "Withdrawal of Large Underground Area"
- decision_ad_undo_large_scale_underground_area_construction_desc:0 ""
- decision_ad_undo_large_scale_underground_area_construction_effects:0 ""
+ decision_ad_undo_large_scale_underground_area_construction:0 "$district_ad_underground_cities$: Remove 1 artificial slot"
+ decision_ad_undo_large_scale_underground_area_construction_desc:0 "Removes one unused artificial slot; natural features are preserved. Base cost: £minerals£ 50. Instant."
+ decision_ad_undo_large_scale_underground_area_construction_effects:0 "Removes one unused artificial slot; natural features are preserved. Base cost: £minerals£ 50. Instant."
 
- decision_ad_solar_power_generation:0 "Infrastructure | Solar Power District"
- decision_ad_solar_power_generation_desc:0 "Maintain large scale solar panels on the planet to increase the amount of light reflected from the planet."
- decision_ad_solar_power_generation_effects:0 "§Y太陽光発電§!を5区域建設可能にする\n太陽光発電は£job_technician£ 技術者の職業枠を生む\n$job_technician_effect_desc$"
+ decision_ad_solar_power_generation:0 "$district_ad_solar_power_generation$: Develop 1 artificial slot"
+ decision_ad_solar_power_generation_desc:0 "Adds one artificial slot, up to 5 including natural capacity. Base cost: £minerals£ 100. Time: 90 days."
+ decision_ad_solar_power_generation_effects:0 "Adds one artificial slot, up to 5 including natural capacity. Base cost: £minerals£ 100. Time: 90 days."
 
  decision_ad_government_district:0 "Infrastructure | Government District"
  decision_ad_government_district_desc:0 "Implement the plan to develop a large governmental area."
@@ -84,9 +84,9 @@
  decision_ad_orbital_elevator_desc:0 "Implement the plan to build an orbital lift."
  decision_ad_orbital_elevator_effects:0 "§Y軌道エレベーター§!を5区域建設可能にする\n軌道エレベーターは£job_ad_spaceport_mechanics£ 宇宙港管制官と£job_ad_shipwright£ 造船技師の職業枠、£mod_planet_amenities_add£ 快適度、£trade£ 交易価値、£mod_pop_happiness£ 幸福度を生む\n$job_ad_spaceport_mechanics_effect_desc$\n$job_ad_shipwright_effect_desc$"
 
- decision_ad_undo_solar_power_generation:0 "Street Deletion | Solar Power District"
- decision_ad_undo_solar_power_generation_desc:0 "The reflected light is annoying. The removal of the solar panels begins."
- decision_ad_undo_solar_power_generation_effects:0 ""
+ decision_ad_undo_solar_power_generation:0 "$district_ad_solar_power_generation$: Remove 1 artificial slot"
+ decision_ad_undo_solar_power_generation_desc:0 "Removes one unused artificial slot; natural features are preserved. Base cost: £minerals£ 25. Instant."
+ decision_ad_undo_solar_power_generation_effects:0 "Removes one unused artificial slot; natural features are preserved. Base cost: £minerals£ 25. Instant."
 
  decision_ad_undo_government_district:0 "Street Deletion | Government District"
  decision_ad_undo_government_district_desc:0 "Let's cut the civil service!  Start removing plots."
@@ -253,13 +253,13 @@
  job_ad_shipwright:0 "Shipwright"
  job_ad_shipwright_plural:0 "Shipwright"
  job_ad_shipwright_desc:0 "Specialist in the construction of military and civilian ships."
- job_ad_shipwright_effect_desc:0 "£job_ad_shipwright£ $job_ad_shipwright_plural$ consume £consumer_goods£ §Y$consumer_goods$§! and £alloys£ §Y$alloys$§! to produce £mod_starbase_shipyard_build_speed_mult£ §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§! and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
+ job_ad_shipwright_effect_desc:0 "Provides 4 engineering research and 1 naval capacity. Employed shipwrights grant monthly shipyard support, capped at 20%. Upkeep: 2 consumer goods and 1 alloy per job equivalent."
  mod_job_ad_shipwright_add:0 "$job_ad_shipwright$ Jobs"
 
  job_ad_infrastructure_engineer:0 "Infrastructure Engineer"
  job_ad_infrastructure_engineer_plural:0 "Infrastructure Engineer"
  job_ad_infrastructure_engineer_desc:0 "Engineer who develops and expands the infrastructure, mainly in terms of telecommunications."
- job_ad_infrastructure_engineer_effect_desc:0 "£job_ad_infrastructure_engineer£ $job_ad_infrastructure_engineer_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to produce £mod_planet_jobs_worker_produces_mult£ §Y$mod_planet_jobs_worker_produces_mult$§!"
+ job_ad_infrastructure_engineer_effect_desc:0 "Produces 2 engineering research and increases worker output by 1%. Upkeep: 3 consumer goods per job equivalent."
  mod_job_ad_infrastructure_engineer_add:0 "$job_ad_infrastructure_engineer$ Jobs"
 
  job_ad_commissioned_officer:0 "Commissioned Officer"
@@ -285,7 +285,7 @@
  job_ad_professorship:0 "Professorship"
  job_ad_professorship_plural:0 "Professorship"
  job_ad_professorship_desc:0 "Expert who teaches intellectual workers and does research himself"
- job_ad_professorship_effect_desc:0 "£job_ad_professorship£ $job_ad_professorship_plural$ consume £consumer_goods£ §Y$consumer_goods$§! and increase £mod_planet_jobs_specialist_produces_mult£ §Y$mod_planet_jobs_specialist_produces_mult$§!"
+ job_ad_professorship_effect_desc:0 "Produces 2 of each research and increases planetary job research output by 1%. Upkeep: 3 consumer goods per job equivalent."
  mod_job_ad_professorship_add:0 "$job_ad_professorship$ Jobs"
 
  job_ad_excavator:0 "Excavator"
@@ -1107,14 +1107,14 @@
 
  additionaldistricts.2.name:0 "additional urban areas"
  additionaldistricts.2.desc:0 "Here is the Urban Area Development Commission\nYou have the option to add or delete additional districts in Additional Districts And Buildings.\nSelect the following areas to add to or remove from the building frame.\n\nCaution!　If the number of zones becomes too large, it may not be displayed."
- additionaldistricts.2.a:0 "Add $district_ad_sky_cities$"
- additionaldistricts.2.b:0 "Delete $district_ad_sky_cities$"
- additionaldistricts.2.c:0 "Add $district_ad_under_water_cities$"
- additionaldistricts.2.d:0 "Delete $district_ad_under_water_cities$"
- additionaldistricts.2.e:0 "Add $district_ad_underground_cities$"
- additionaldistricts.2.f:0 "Delete $district_ad_underground_cities$"
- additionaldistricts.2.g:0 "Add $district_ad_solar_power_generation$"
- additionaldistricts.2.h:0 "Delete $district_ad_solar_power_generation$"
+ additionaldistricts.2.a:0 "$district_ad_sky_cities$: Develop 1 artificial slot"
+ additionaldistricts.2.b:0 "$district_ad_sky_cities$: Remove 1 artificial slot"
+ additionaldistricts.2.c:0 "$district_ad_under_water_cities$: Develop 1 artificial slot"
+ additionaldistricts.2.d:0 "$district_ad_under_water_cities$: Remove 1 artificial slot"
+ additionaldistricts.2.e:0 "$district_ad_underground_cities$: Develop 1 artificial slot"
+ additionaldistricts.2.f:0 "$district_ad_underground_cities$: Remove 1 artificial slot"
+ additionaldistricts.2.g:0 "$district_ad_solar_power_generation$: Develop 1 artificial slot"
+ additionaldistricts.2.h:0 "$district_ad_solar_power_generation$: Remove 1 artificial slot"
 
 #######################
 #####    名称    ######
@@ -1151,6 +1151,30 @@
  d_ad_artificial_solar_power_generation:0 "Solar Development Site"
  d_ad_artificial_solar_power_generation_desc:0 "Infrastructure created by a development decision. Each feature adds one slot for its district. Removing it preserves natural features."
 
- ad_artificial_removal_blocked:0 "§RClear the construction queue and leave at least as many unused district slots as the artificial capacity being removed. Natural features are preserved.§!"
+ ad_artificial_removal_blocked:0 "Clear the construction queue and leave unused capacity of this district type."
 
  ad_development_removal_blocked:0 "§RClear the construction queue and demolish this development's districts before removal.§!"
+
+ job_ad_professorship_drone_effect_desc:0 "Produces 2 of each research and increases planetary job research output by 1%. Upkeep: 3 energy per job equivalent."
+
+ job_ad_shipwright_drone_effect_desc:0 "Provides 4 engineering research and 1 naval capacity. Employed shipwrights grant monthly shipyard support, capped at 20%. Upkeep: 2 energy and 1 alloy per job equivalent."
+
+ job_ad_infrastructure_engineer_drone_effect_desc:0 "Produces 2 engineering research and increases simple drone output by 1%. Upkeep: 3 energy per job equivalent."
+
+ ad_shipwright_support_20:0 "Shipyard Support +20%"
+
+ ad_shipwright_support_15:0 "Shipyard Support +15%"
+
+ ad_shipwright_support_10:0 "Shipyard Support +10%"
+
+ ad_shipwright_support_5:0 "Shipyard Support +5%"
+
+ ad_shipwright_support_3:0 "Shipyard Support +3%"
+
+ ad_shipwright_support_1:0 "Shipyard Support +1%"
+
+
+
+
+
+

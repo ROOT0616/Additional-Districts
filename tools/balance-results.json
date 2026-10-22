@@ -1,0 +1,18 @@
+{
+  "version": "2.1.0-beta.4",
+  "engine_test": false,
+  "cases": 9254,
+  "groups": {
+    "shipwright_tiers": 162,
+    "shipwright_loss": 54,
+    "single_add": 448,
+    "single_remove": 8512,
+    "queue_model": 28,
+    "ai_gates": 24,
+    "menu_delegation": 8,
+    "job_roles": 4,
+    "university_mix": 6,
+    "defense_gates": 8
+  },
+  "limits": "Native payment, queue completion/cancellation and job units require engine verification."
+}

@@ -1,0 +1,65 @@
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+ad_add_artificial_one_sky_cities = {
+	if = {
+		limit = {
+			ad_can_start_artificial_sky_cities = yes
+		}
+		add_deposit = d_ad_artificial_sky_cities
+	}
+}
+ad_remove_artificial_one_sky_cities = {
+	if = {
+		limit = {
+			ad_can_remove_artificial_one_sky_cities = yes
+		}
+		remove_deposit = d_ad_artificial_sky_cities
+	}
+}
+ad_add_artificial_one_under_water_cities = {
+	if = {
+		limit = {
+			ad_can_start_artificial_under_water_cities = yes
+		}
+		add_deposit = d_ad_artificial_under_water_cities
+	}
+}
+ad_remove_artificial_one_under_water_cities = {
+	if = {
+		limit = {
+			ad_can_remove_artificial_one_under_water_cities = yes
+		}
+		remove_deposit = d_ad_artificial_under_water_cities
+	}
+}
+ad_add_artificial_one_underground_cities = {
+	if = {
+		limit = {
+			ad_can_start_artificial_underground_cities = yes
+		}
+		add_deposit = d_ad_artificial_underground_cities
+	}
+}
+ad_remove_artificial_one_underground_cities = {
+	if = {
+		limit = {
+			ad_can_remove_artificial_one_underground_cities = yes
+		}
+		remove_deposit = d_ad_artificial_underground_cities
+	}
+}
+ad_add_artificial_one_solar_power_generation = {
+	if = {
+		limit = {
+			ad_can_start_artificial_solar_power_generation = yes
+		}
+		add_deposit = d_ad_artificial_solar_power_generation
+	}
+}
+ad_remove_artificial_one_solar_power_generation = {
+	if = {
+		limit = {
+			ad_can_remove_artificial_one_solar_power_generation = yes
+		}
+		remove_deposit = d_ad_artificial_solar_power_generation
+	}
+}

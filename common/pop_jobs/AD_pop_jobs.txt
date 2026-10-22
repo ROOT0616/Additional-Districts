@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
 ad_water_farmer = {
 	category = worker
 	swappable_data = {
@@ -1376,19 +1376,21 @@ ad_shipwright = {
 		is_being_assimilated = no
 	}
 	possible_precalc = can_fill_specialist_job
-	country_modifier = {
-		starbase_shipyard_build_speed_mult = 0.05
-		country_naval_cap_add = 2
-	}
-	resources = {
-		category = planet_technician
-		upkeep = {
-			consumer_goods = 3
-			alloys = 2
-		}
-	}
 	weight = {
 		weight = @specialist_job_weight
+	}
+	country_modifier = {
+		country_naval_cap_add = 1
+	}
+	resources = {
+		category = planet_jobs_productive
+		produces = {
+			engineering_research = 4
+		}
+		upkeep = {
+			consumer_goods = 2
+			alloys = 1
+		}
 	}
 }
 ad_infrastructure_engineer = {
@@ -1404,17 +1406,20 @@ ad_infrastructure_engineer = {
 		is_being_assimilated = no
 	}
 	possible_precalc = can_fill_specialist_job
+	weight = {
+		weight = @specialist_job_weight
+	}
 	planet_modifier = {
-		planet_jobs_worker_produces_mult = 0.05
+		planet_jobs_worker_produces_mult = 0.01
 	}
 	resources = {
-		category = planet_technician
+		category = planet_jobs_productive
+		produces = {
+			engineering_research = 2
+		}
 		upkeep = {
 			consumer_goods = 3
 		}
-	}
-	weight = {
-		weight = @specialist_job_weight
 	}
 }
 ad_commissioned_officer = {
@@ -1521,17 +1526,24 @@ ad_professorship = {
 		is_being_assimilated = no
 	}
 	possible_precalc = can_fill_specialist_job
+	weight = {
+		weight = @specialist_job_weight
+	}
 	planet_modifier = {
-		planet_jobs_specialist_produces_mult = 0.05
+		planet_jobs_physics_research_produces_mult = 0.01
+		planet_jobs_society_research_produces_mult = 0.01
+		planet_jobs_engineering_research_produces_mult = 0.01
 	}
 	resources = {
 		category = planet_researchers
-		upkeep = {
-			consumer_goods = 5
+		produces = {
+			physics_research = 2
+			society_research = 2
+			engineering_research = 2
 		}
-	}
-	weight = {
-		weight = @specialist_job_weight
+		upkeep = {
+			consumer_goods = 3
+		}
 	}
 }
 ad_excavator = {
@@ -3022,19 +3034,21 @@ ad_shipwright_drone = {
 		is_being_assimilated = no
 	}
 	possible_precalc = can_fill_drone_job
-	country_modifier = {
-		starbase_shipyard_build_speed_mult = 0.05
-		country_naval_cap_add = 2
-	}
-	resources = {
-		category = planet_technician
-		upkeep = {
-			energy = 3
-			alloys = 2
-		}
-	}
 	weight = {
 		weight = @specialist_job_weight
+	}
+	country_modifier = {
+		country_naval_cap_add = 1
+	}
+	resources = {
+		category = planet_jobs_productive
+		produces = {
+			engineering_research = 4
+		}
+		upkeep = {
+			energy = 2
+			alloys = 1
+		}
 	}
 }
 ad_infrastructure_engineer_drone = {
@@ -3050,17 +3064,20 @@ ad_infrastructure_engineer_drone = {
 		is_being_assimilated = no
 	}
 	possible_precalc = can_fill_drone_job
+	weight = {
+		weight = @specialist_job_weight
+	}
 	planet_modifier = {
-		planet_jobs_simple_drone_produces_mult = 0.05
+		planet_jobs_simple_drone_produces_mult = 0.01
 	}
 	resources = {
-		category = planet_technician
+		category = planet_jobs_productive
+		produces = {
+			engineering_research = 2
+		}
 		upkeep = {
 			energy = 3
 		}
-	}
-	weight = {
-		weight = @specialist_job_weight
 	}
 }
 ad_commissioned_officer_drone = {
@@ -3167,17 +3184,24 @@ ad_professorship_drone = {
 		is_being_assimilated = no
 	}
 	possible_precalc = can_fill_drone_job
+	weight = {
+		weight = @specialist_job_weight
+	}
 	planet_modifier = {
-		planet_jobs_complex_drone_produces_mult = 0.05
+		planet_jobs_physics_research_produces_mult = 0.01
+		planet_jobs_society_research_produces_mult = 0.01
+		planet_jobs_engineering_research_produces_mult = 0.01
 	}
 	resources = {
 		category = planet_researchers
-		upkeep = {
-			energy = 5
+		produces = {
+			physics_research = 2
+			society_research = 2
+			engineering_research = 2
 		}
-	}
-	weight = {
-		weight = @specialist_job_weight
+		upkeep = {
+			energy = 3
+		}
 	}
 }
 ad_excavator_drone = {

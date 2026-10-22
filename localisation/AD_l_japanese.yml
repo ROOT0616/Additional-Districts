@@ -12,33 +12,33 @@
  decision_ad_undo_town_display_desc:0 ""
  decision_ad_undo_town_display_effects:0 ""
 
- decision_ad_large_scale_air_area_construction:0 "AD 大規模空中地区建設"
- decision_ad_large_scale_air_area_construction_desc:0 "地上だけではなく空中に浮かぶ都市を築き上げる計画を実行する。"
- decision_ad_large_scale_air_area_construction_effects:0 "§Y空中都市§!を2区域建設可能にする\n空中都市は£job_clerk£ 事務員の職業枠と£trade£ 交易価値を生む\n$job_clerk_effect_desc$"
+ decision_ad_large_scale_air_area_construction:0 "$district_ad_sky_cities$：人工枠を1整備"
+ decision_ad_large_scale_air_area_construction_desc:0 "天然枠との合計2まで、人工枠を1つ追加する。 基本費用: £minerals£ 500 / £alloys£ 250 / £exotic_gases£ 50。期間: 180日。"
+ decision_ad_large_scale_air_area_construction_effects:0 "天然枠との合計2まで、人工枠を1つ追加する。 基本費用: £minerals£ 500 / £alloys£ 250 / £exotic_gases£ 50。期間: 180日。"
 
- decision_ad_undo_large_scale_air_area_construction:0 "AD 大規模空中地区撤去"
- decision_ad_undo_large_scale_air_area_construction_desc:0 ""
- decision_ad_undo_large_scale_air_area_construction_effects:0 ""
+ decision_ad_undo_large_scale_air_area_construction:0 "$district_ad_sky_cities$：人工枠を1撤去"
+ decision_ad_undo_large_scale_air_area_construction_desc:0 "未使用の人工枠を1つ撤去する。天然枠は変更しない。 基本費用: £minerals£ 125。即時。"
+ decision_ad_undo_large_scale_air_area_construction_effects:0 "未使用の人工枠を1つ撤去する。天然枠は変更しない。 基本費用: £minerals£ 125。即時。"
 
- decision_ad_large_scale_water_area_construction:0 "AD 大規模水中地区建設"
- decision_ad_large_scale_water_area_construction_desc:0 "地上だけではなく水中に都市を築き上げる計画を実行する。"
- decision_ad_large_scale_water_area_construction_effects:0 "§Y水中都市§!を5区域建設可能にする\n水中都市は£job_ad_water_farmer£ 水中農家の職業枠を生む\n$job_ad_water_farmer_effect_desc$"
+ decision_ad_large_scale_water_area_construction:0 "$district_ad_under_water_cities$：人工枠を1整備"
+ decision_ad_large_scale_water_area_construction_desc:0 "天然枠との合計5まで、人工枠を1つ追加する。 基本費用: £minerals£ 200 / £alloys£ 100。期間: 180日。"
+ decision_ad_large_scale_water_area_construction_effects:0 "天然枠との合計5まで、人工枠を1つ追加する。 基本費用: £minerals£ 200 / £alloys£ 100。期間: 180日。"
 
- decision_ad_undo_large_scale_water_area_construction:0 "AD 大規模水中地区撤去"
- decision_ad_undo_large_scale_water_area_construction_desc:0 ""
- decision_ad_undo_large_scale_water_area_construction_effects:0 ""
+ decision_ad_undo_large_scale_water_area_construction:0 "$district_ad_under_water_cities$：人工枠を1撤去"
+ decision_ad_undo_large_scale_water_area_construction_desc:0 "未使用の人工枠を1つ撤去する。天然枠は変更しない。 基本費用: £minerals£ 50。即時。"
+ decision_ad_undo_large_scale_water_area_construction_effects:0 "未使用の人工枠を1つ撤去する。天然枠は変更しない。 基本費用: £minerals£ 50。即時。"
 
- decision_ad_large_scale_underground_area_construction:0 "AD 大規模地下地区建設"
- decision_ad_large_scale_underground_area_construction_desc:0 "地上だけではなく地中に都市を築き上げる計画を実行する。"
- decision_ad_large_scale_underground_area_construction_effects:0 "§Y地下都市§!を5区域建設可能にする\n地下都市は£job_ad_facility_maintainer£ 施設維持業者の職業枠を生む\n$job_ad_facility_maintainer_effect_desc$"
+ decision_ad_large_scale_underground_area_construction:0 "$district_ad_underground_cities$：人工枠を1整備"
+ decision_ad_large_scale_underground_area_construction_desc:0 "天然枠との合計5まで、人工枠を1つ追加する。 基本費用: £minerals£ 100 / £alloys£ 200。期間: 180日。"
+ decision_ad_large_scale_underground_area_construction_effects:0 "天然枠との合計5まで、人工枠を1つ追加する。 基本費用: £minerals£ 100 / £alloys£ 200。期間: 180日。"
 
- decision_ad_undo_large_scale_underground_area_construction:0 "AD 大規模地下地区撤去"
- decision_ad_undo_large_scale_underground_area_construction_desc:0 ""
- decision_ad_undo_large_scale_underground_area_construction_effects:0 ""
+ decision_ad_undo_large_scale_underground_area_construction:0 "$district_ad_underground_cities$：人工枠を1撤去"
+ decision_ad_undo_large_scale_underground_area_construction_desc:0 "未使用の人工枠を1つ撤去する。天然枠は変更しない。 基本費用: £minerals£ 50。即時。"
+ decision_ad_undo_large_scale_underground_area_construction_effects:0 "未使用の人工枠を1つ撤去する。天然枠は変更しない。 基本費用: £minerals£ 50。即時。"
 
- decision_ad_solar_power_generation:0 "AD 区画整備：太陽光発電地区"
- decision_ad_solar_power_generation_desc:0 "惑星に大規模な太陽光パネルを整備し、惑星の反射光を増やす。"
- decision_ad_solar_power_generation_effects:0 "§Y太陽光発電§!を5区域建設可能にする\n太陽光発電は£job_technician£ 技術者の職業枠を生む\n$job_technician_effect_desc$"
+ decision_ad_solar_power_generation:0 "$district_ad_solar_power_generation$：人工枠を1整備"
+ decision_ad_solar_power_generation_desc:0 "天然枠との合計5まで、人工枠を1つ追加する。 基本費用: £minerals£ 100。期間: 90日。"
+ decision_ad_solar_power_generation_effects:0 "天然枠との合計5まで、人工枠を1つ追加する。 基本費用: £minerals£ 100。期間: 90日。"
 
  decision_ad_government_district:0 "AD 街整備：官庁街"
  decision_ad_government_district_desc:0 "大規模な官庁街を整備する計画を実行する。"
@@ -84,9 +84,9 @@
  decision_ad_orbital_elevator_desc:0 "軌道エレベーターを整備する計画を実行する。"
  decision_ad_orbital_elevator_effects:0 "§Y軌道エレベーター§!を5区域建設可能にする\n軌道エレベーターは£job_ad_spaceport_mechanics£ 宇宙港管制官と£job_ad_shipwright£ 造船技師の職業枠、£mod_planet_amenities_add£ 快適度、£trade£ 交易価値、£mod_pop_happiness£ 幸福度を生む\n$job_ad_spaceport_mechanics_effect_desc$\n$job_ad_shipwright_effect_desc$"
 
- decision_ad_undo_solar_power_generation:0 "AD 区画削除：太陽光発電地区"
- decision_ad_undo_solar_power_generation_desc:0 "反射光がうっとうしい。太陽光パネルの撤去を開始する。"
- decision_ad_undo_solar_power_generation_effects:0 ""
+ decision_ad_undo_solar_power_generation:0 "$district_ad_solar_power_generation$：人工枠を1撤去"
+ decision_ad_undo_solar_power_generation_desc:0 "未使用の人工枠を1つ撤去する。天然枠は変更しない。 基本費用: £minerals£ 25。即時。"
+ decision_ad_undo_solar_power_generation_effects:0 "未使用の人工枠を1つ撤去する。天然枠は変更しない。 基本費用: £minerals£ 25。即時。"
 
  decision_ad_undo_government_district:0 "AD 街削除：官庁街"
  decision_ad_undo_government_district_desc:0 "公務員を削減しよう！  区画の撤去を開始する。"
@@ -253,13 +253,13 @@
  job_ad_shipwright:0 "造船技師"
  job_ad_shipwright_plural:0 "造船技師"
  job_ad_shipwright_desc:0 "軍用艦艇、民間船の建造を行う専門家"
- job_ad_shipwright_effect_desc:0 "£job_ad_shipwright£ $job_ad_shipwright_plural$は、 £consumer_goods£ §Y$consumer_goods$§!と £alloys£ §Y$alloys$§!を消費して £mod_starbase_shipyard_build_speed_mult£ §Y$MOD_STARBASE_SHIPYARD_BUILD_SPEED_MULT$§!と £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を産出する"
+ job_ad_shipwright_effect_desc:0 "工学研究4・艦隊許容量1を供給する。就業人数に応じた帝国の造船支援は月次更新で最大20%。維持費は消費財2・合金1（職業相当）。"
  mod_job_ad_shipwright_add:0 "造船技師の職業枠"
 
  job_ad_infrastructure_engineer:0 "インフラ技師"
  job_ad_infrastructure_engineer_plural:0 "インフラ技師"
  job_ad_infrastructure_engineer_desc:0 "主に通信面でのインフラを整備、拡充を行う技術者"
- job_ad_infrastructure_engineer_effect_desc:0 "£job_ad_infrastructure_engineer£ $job_ad_infrastructure_engineer_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_planet_jobs_worker_produces_mult£ §Y$mod_planet_jobs_worker_produces_mult$§!を産出する"
+ job_ad_infrastructure_engineer_effect_desc:0 "工学研究2を産出し、惑星の労働者産出を1%増やす。維持費は消費財3（職業相当）。"
  mod_job_ad_infrastructure_engineer_add:0 "インフラ技師の職業枠"
 
  job_ad_commissioned_officer:0 "将校"
@@ -285,7 +285,7 @@
  job_ad_professorship:0 "教授職"
  job_ad_professorship_plural:0 "教授職"
  job_ad_professorship_desc:0 "知的労働者に教育を行い、自身も研究を行う専門家"
- job_ad_professorship_effect_desc:0 "£job_ad_professorship£ $job_ad_professorship_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_planet_jobs_specialist_produces_mult£ §Y$mod_planet_jobs_specialist_produces_mult$§!を増加させる"
+ job_ad_professorship_effect_desc:0 "研究3分野を各2産出し、惑星の職業による各研究産出を1%増やす。維持費は消費財3（職業相当）。"
  mod_job_ad_professorship_add:0 "教授職の職業枠"
 
  job_ad_excavator:0 "発掘者"
@@ -1107,14 +1107,14 @@
 
  additionaldistricts.2.name:0 "都市区域開発の開催"
  additionaldistricts.2.desc:0 "ここは都市区域開発委員会\nAdditional Districts And Buildingsで追加された区域を追加削除する選択肢があります。\n下記の区域を選択すると建造枠に追加、もしくは削除できます。\n\n注意！　区域数が多くなりすぎると表示されなくなる可能性があります。"
- additionaldistricts.2.a:0 "$district_ad_sky_cities$の追加"
- additionaldistricts.2.b:0 "$district_ad_sky_cities$の削除"
- additionaldistricts.2.c:0 "$district_ad_under_water_cities$の追加"
- additionaldistricts.2.d:0 "$district_ad_under_water_cities$の削除"
- additionaldistricts.2.e:0 "$district_ad_underground_cities$の追加"
- additionaldistricts.2.f:0 "$district_ad_underground_cities$の削除"
- additionaldistricts.2.g:0 "$district_ad_solar_power_generation$の追加"
- additionaldistricts.2.h:0 "$district_ad_solar_power_generation$の削除"
+ additionaldistricts.2.a:0 "$district_ad_sky_cities$：人工枠を1整備"
+ additionaldistricts.2.b:0 "$district_ad_sky_cities$：人工枠を1撤去"
+ additionaldistricts.2.c:0 "$district_ad_under_water_cities$：人工枠を1整備"
+ additionaldistricts.2.d:0 "$district_ad_under_water_cities$：人工枠を1撤去"
+ additionaldistricts.2.e:0 "$district_ad_underground_cities$：人工枠を1整備"
+ additionaldistricts.2.f:0 "$district_ad_underground_cities$：人工枠を1撤去"
+ additionaldistricts.2.g:0 "$district_ad_solar_power_generation$：人工枠を1整備"
+ additionaldistricts.2.h:0 "$district_ad_solar_power_generation$：人工枠を1撤去"
 
 #######################
 #####    名称    ######
@@ -1151,6 +1151,30 @@
  d_ad_artificial_solar_power_generation:0 "太陽光発電整備区画"
  d_ad_artificial_solar_power_generation_desc:0 "ディシジョンで整備した人工の開発基盤。この特性1つにつき対応する区域の上限が1増える。撤去しても天然の特性は失われない。"
 
- ad_artificial_removal_blocked:0 "§R建設キューを空にし、撤去する人工枠以上の未使用区域枠を確保してください。天然の枠は撤去しません。§!"
+ ad_artificial_removal_blocked:0 "建設キューを空にし、同種の未使用区域枠を確保してください。"
 
  ad_development_removal_blocked:0 "§R建設キューを空にし、この開発で利用する区域を先に解体してください。§!"
+
+ job_ad_professorship_drone_effect_desc:0 "研究3分野を各2産出し、惑星の職業による各研究産出を1%増やす。維持費はエネルギー3（職業相当）。"
+
+ job_ad_shipwright_drone_effect_desc:0 "工学研究4・艦隊許容量1を供給する。就業人数に応じた帝国の造船支援は月次更新で最大20%。維持費はエネルギー2・合金1（職業相当）。"
+
+ job_ad_infrastructure_engineer_drone_effect_desc:0 "工学研究2を産出し、惑星の単純ドローン産出を1%増やす。維持費はエネルギー3（職業相当）。"
+
+ ad_shipwright_support_20:0 "造船支援 +20%"
+
+ ad_shipwright_support_15:0 "造船支援 +15%"
+
+ ad_shipwright_support_10:0 "造船支援 +10%"
+
+ ad_shipwright_support_5:0 "造船支援 +5%"
+
+ ad_shipwright_support_3:0 "造船支援 +3%"
+
+ ad_shipwright_support_1:0 "造船支援 +1%"
+
+
+
+
+
+

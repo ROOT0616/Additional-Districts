@@ -1,0 +1,19 @@
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+ad_shipwright_support_20 = {
+	starbase_shipyard_build_speed_mult = 0.2
+}
+ad_shipwright_support_15 = {
+	starbase_shipyard_build_speed_mult = 0.15
+}
+ad_shipwright_support_10 = {
+	starbase_shipyard_build_speed_mult = 0.1
+}
+ad_shipwright_support_5 = {
+	starbase_shipyard_build_speed_mult = 0.05
+}
+ad_shipwright_support_3 = {
+	starbase_shipyard_build_speed_mult = 0.03
+}
+ad_shipwright_support_1 = {
+	starbase_shipyard_build_speed_mult = 0.01
+}

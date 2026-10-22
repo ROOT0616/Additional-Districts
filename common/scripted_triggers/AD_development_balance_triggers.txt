@@ -1,0 +1,425 @@
+# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+ad_artificial_surface_colony = {
+	is_colony = yes
+	OR = {
+		uses_district_set = standard
+		uses_district_set = city_world
+		uses_district_set = ring_world
+		uses_district_set = hive_world
+		uses_district_set = machine_world
+	}
+	NOR = {
+		has_modifier = resort_colony
+		has_modifier = slave_colony
+	}
+}
+ad_ai_development_economy = {
+	is_colony = yes
+	free_district_slots > 0
+	has_building_construction = no
+	OR = {
+		free_jobs <= 400
+		free_housing < 100
+	}
+	owner = {
+		has_monthly_income = {
+			resource = energy
+			value >= 0
+		}
+		has_monthly_income = {
+			resource = minerals
+			value >= 0
+		}
+	}
+}
+ad_capacity_for_artificial_one_sky_cities = {
+	OR = {
+		AND = {
+			count_deposits = {
+				type = d_ad_sky_cities
+				count = 0
+			}
+			count_deposits = {
+				type = d_ad_artificial_sky_cities
+				count < 2
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_sky_cities
+				count = 1
+			}
+			count_deposits = {
+				type = d_ad_artificial_sky_cities
+				count < 1
+			}
+		}
+	}
+}
+ad_can_remove_artificial_one_sky_cities = {
+	has_deposit = d_ad_artificial_sky_cities
+	has_building_construction = no
+	NOT = {
+		has_planet_flag = ad_artificial_project
+	}
+	num_free_districts = {
+		type = district_ad_sky_cities
+		value >= 1
+	}
+}
+ad_artificial_candidate_sky_cities = {
+	ad_artificial_surface_colony = yes
+	owner = {
+		has_technology = large_scale_air_construction_technology
+	}
+}
+ad_can_start_artificial_sky_cities = {
+	ad_artificial_candidate_sky_cities = yes
+	ad_capacity_for_artificial_one_sky_cities = yes
+	NOT = {
+		has_planet_flag = ad_artificial_project
+	}
+}
+ad_ai_can_develop_sky_cities = {
+	ad_ai_development_economy = yes
+	num_free_districts = {
+		type = district_ad_sky_cities
+		value = 0
+	}
+	owner = {
+		has_country_resource = {
+			type = minerals
+			amount >= 1000
+		}
+		has_country_resource = {
+			type = alloys
+			amount >= 500
+		}
+		has_country_resource = {
+			type = exotic_gases
+			amount >= 100
+		}
+		OR = {
+			is_at_war = no
+			has_country_resource = {
+				type = alloys
+				amount >= 2250
+			}
+		}
+	}
+	free_housing < 500
+}
+ad_capacity_for_artificial_one_under_water_cities = {
+	OR = {
+		AND = {
+			count_deposits = {
+				type = d_ad_under_water_cities
+				count = 0
+			}
+			count_deposits = {
+				type = d_ad_artificial_under_water_cities
+				count < 5
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_under_water_cities
+				count = 1
+			}
+			count_deposits = {
+				type = d_ad_artificial_under_water_cities
+				count < 4
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_under_water_cities
+				count = 2
+			}
+			count_deposits = {
+				type = d_ad_artificial_under_water_cities
+				count < 3
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_under_water_cities
+				count = 3
+			}
+			count_deposits = {
+				type = d_ad_artificial_under_water_cities
+				count < 2
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_under_water_cities
+				count = 4
+			}
+			count_deposits = {
+				type = d_ad_artificial_under_water_cities
+				count < 1
+			}
+		}
+	}
+}
+ad_can_remove_artificial_one_under_water_cities = {
+	has_deposit = d_ad_artificial_under_water_cities
+	has_building_construction = no
+	NOT = {
+		has_planet_flag = ad_artificial_project
+	}
+	num_free_districts = {
+		type = district_ad_under_water_cities
+		value >= 1
+	}
+}
+ad_artificial_candidate_under_water_cities = {
+	ad_artificial_surface_colony = yes
+	owner = {
+		has_technology = large_scale_in_water_construction_technology
+	}
+	OR = {
+		ad_ng_wet = yes
+		has_deposit = d_ad_under_water_cities
+	}
+}
+ad_can_start_artificial_under_water_cities = {
+	ad_artificial_candidate_under_water_cities = yes
+	ad_capacity_for_artificial_one_under_water_cities = yes
+	NOT = {
+		has_planet_flag = ad_artificial_project
+	}
+}
+ad_ai_can_develop_under_water_cities = {
+	ad_ai_development_economy = yes
+	num_free_districts = {
+		type = district_ad_under_water_cities
+		value = 0
+	}
+	owner = {
+		has_country_resource = {
+			type = minerals
+			amount >= 400
+		}
+		has_country_resource = {
+			type = alloys
+			amount >= 200
+		}
+		OR = {
+			is_at_war = no
+			has_country_resource = {
+				type = alloys
+				amount >= 2100
+			}
+		}
+	}
+	free_housing < 500
+}
+ad_capacity_for_artificial_one_underground_cities = {
+	OR = {
+		AND = {
+			count_deposits = {
+				type = d_ad_underground_cities
+				count = 0
+			}
+			count_deposits = {
+				type = d_ad_artificial_underground_cities
+				count < 5
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_underground_cities
+				count = 1
+			}
+			count_deposits = {
+				type = d_ad_artificial_underground_cities
+				count < 4
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_underground_cities
+				count = 2
+			}
+			count_deposits = {
+				type = d_ad_artificial_underground_cities
+				count < 3
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_underground_cities
+				count = 3
+			}
+			count_deposits = {
+				type = d_ad_artificial_underground_cities
+				count < 2
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_underground_cities
+				count = 4
+			}
+			count_deposits = {
+				type = d_ad_artificial_underground_cities
+				count < 1
+			}
+		}
+	}
+}
+ad_can_remove_artificial_one_underground_cities = {
+	has_deposit = d_ad_artificial_underground_cities
+	has_building_construction = no
+	NOT = {
+		has_planet_flag = ad_artificial_project
+	}
+	num_free_districts = {
+		type = district_ad_underground_cities
+		value >= 1
+	}
+}
+ad_artificial_candidate_underground_cities = {
+	ad_artificial_surface_colony = yes
+	owner = {
+		has_technology = large_scale_ground_construction_technology
+	}
+}
+ad_can_start_artificial_underground_cities = {
+	ad_artificial_candidate_underground_cities = yes
+	ad_capacity_for_artificial_one_underground_cities = yes
+	NOT = {
+		has_planet_flag = ad_artificial_project
+	}
+}
+ad_ai_can_develop_underground_cities = {
+	ad_ai_development_economy = yes
+	num_free_districts = {
+		type = district_ad_underground_cities
+		value = 0
+	}
+	owner = {
+		has_country_resource = {
+			type = minerals
+			amount >= 200
+		}
+		has_country_resource = {
+			type = alloys
+			amount >= 400
+		}
+		OR = {
+			is_at_war = no
+			has_country_resource = {
+				type = alloys
+				amount >= 2200
+			}
+		}
+	}
+	free_housing < 500
+}
+ad_capacity_for_artificial_one_solar_power_generation = {
+	OR = {
+		AND = {
+			count_deposits = {
+				type = d_ad_solar_power_generation
+				count = 0
+			}
+			count_deposits = {
+				type = d_ad_artificial_solar_power_generation
+				count < 5
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_solar_power_generation
+				count = 1
+			}
+			count_deposits = {
+				type = d_ad_artificial_solar_power_generation
+				count < 4
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_solar_power_generation
+				count = 2
+			}
+			count_deposits = {
+				type = d_ad_artificial_solar_power_generation
+				count < 3
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_solar_power_generation
+				count = 3
+			}
+			count_deposits = {
+				type = d_ad_artificial_solar_power_generation
+				count < 2
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_solar_power_generation
+				count = 4
+			}
+			count_deposits = {
+				type = d_ad_artificial_solar_power_generation
+				count < 1
+			}
+		}
+	}
+}
+ad_can_remove_artificial_one_solar_power_generation = {
+	has_deposit = d_ad_artificial_solar_power_generation
+	has_building_construction = no
+	NOT = {
+		has_planet_flag = ad_artificial_project
+	}
+	num_free_districts = {
+		type = district_ad_solar_power_generation
+		value >= 1
+	}
+}
+ad_artificial_candidate_solar_power_generation = {
+	ad_artificial_surface_colony = yes
+	owner = {
+		has_technology = mixed_use_development_plan
+	}
+}
+ad_can_start_artificial_solar_power_generation = {
+	ad_artificial_candidate_solar_power_generation = yes
+	ad_capacity_for_artificial_one_solar_power_generation = yes
+	NOT = {
+		has_planet_flag = ad_artificial_project
+	}
+}
+ad_ai_can_develop_solar_power_generation = {
+	ad_ai_development_economy = yes
+	num_free_districts = {
+		type = district_ad_solar_power_generation
+		value = 0
+	}
+	owner = {
+		has_country_resource = {
+			type = minerals
+			amount >= 200
+		}
+		OR = {
+			is_at_war = no
+			has_country_resource = {
+				type = alloys
+				amount >= 2000
+			}
+		}
+	}
+	owner = {
+		has_monthly_income = {
+			resource = energy
+			value < 20
+		}
+	}
+}
