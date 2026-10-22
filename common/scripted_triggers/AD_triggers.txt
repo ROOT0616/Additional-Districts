@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
 has_district_ad_solar_power_generation = {
 	OR = {
 		has_deposit = d_ad_solar_power_generation
@@ -279,25 +279,10 @@ large_food_income = {
 	}
 }
 is_ad_ancient = {
-	OR = {
-		is_planet_class = pc_gaia
-		is_planet_class = pc_relic
-	}
-	NOT = {
-		OR = {
-			always = no
-		}
-	}
+	is_planet_class = pc_relic
 }
 is_ad_fungal = {
-	OR = {
-		always = no
-	}
-	NOT = {
-		OR = {
-			always = no
-		}
-	}
+	ad_ng_can_mycorrhizal_communities = yes
 }
 is_ad_planet = {
 	OR = {

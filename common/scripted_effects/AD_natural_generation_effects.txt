@@ -1,0 +1,1648 @@
+# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
+ad_ng_add_archaeological_cities = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_archaeological_cities
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_archaeological_cities
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_archaeological_cities
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_archaeological_cities
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_archaeological_cities
+				}
+			}
+			else = {
+				add_deposit = d_ad_archaeological_cities
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_archaeological_cities
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_sky_cities = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_sky_cities
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_sky_cities
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_sky_cities
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_sky_cities
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_sky_cities
+				}
+			}
+			else = {
+				add_deposit = d_ad_sky_cities
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_sky_cities
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_water_cities = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_water_cities
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_water_cities
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_water_cities
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_water_cities
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_water_cities
+				}
+			}
+			else = {
+				add_deposit = d_ad_water_cities
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_water_cities
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_under_water_cities = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_under_water_cities
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_under_water_cities
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_under_water_cities
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_under_water_cities
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_under_water_cities
+				}
+			}
+			else = {
+				add_deposit = d_ad_under_water_cities
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_under_water_cities
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_underground_cities = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_underground_cities
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_underground_cities
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_underground_cities
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_underground_cities
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_underground_cities
+				}
+			}
+			else = {
+				add_deposit = d_ad_underground_cities
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_underground_cities
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_geothermal_electric_power_generation = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_geothermal_electric_power_generation
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_geothermal_electric_power_generation
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_geothermal_electric_power_generation
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_geothermal_electric_power_generation
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_geothermal_electric_power_generation
+				}
+			}
+			else = {
+				add_deposit = d_ad_geothermal_electric_power_generation
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_geothermal_electric_power_generation
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_tidal_current_generation = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_tidal_current_generation
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_tidal_current_generation
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_tidal_current_generation
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_tidal_current_generation
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_tidal_current_generation
+				}
+			}
+			else = {
+				add_deposit = d_ad_tidal_current_generation
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_tidal_current_generation
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_natural_nuclear_power_generation = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_natural_nuclear_power_generation
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_natural_nuclear_power_generation
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_natural_nuclear_power_generation
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_natural_nuclear_power_generation
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_natural_nuclear_power_generation
+				}
+			}
+			else = {
+				add_deposit = d_ad_natural_nuclear_power_generation
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_natural_nuclear_power_generation
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_open_pit_ore_deposits = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_open_pit_ore_deposits
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_open_pit_ore_deposits
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_open_pit_ore_deposits
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_open_pit_ore_deposits
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_open_pit_ore_deposits
+				}
+			}
+			else = {
+				add_deposit = d_ad_open_pit_ore_deposits
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_open_pit_ore_deposits
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_under_water_deposits = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_under_water_deposits
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_under_water_deposits
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_under_water_deposits
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_under_water_deposits
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_under_water_deposits
+				}
+			}
+			else = {
+				add_deposit = d_ad_under_water_deposits
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_under_water_deposits
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_orbital_deposits = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_orbital_deposits
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_orbital_deposits
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_orbital_deposits
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_orbital_deposits
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_orbital_deposits
+				}
+			}
+			else = {
+				add_deposit = d_ad_orbital_deposits
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_orbital_deposits
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_high_quality_deposits = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_high_quality_deposits
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_high_quality_deposits
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_high_quality_deposits
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_high_quality_deposits
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_high_quality_deposits
+				}
+			}
+			else = {
+				add_deposit = d_ad_high_quality_deposits
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_high_quality_deposits
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_low_quality_deposits = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_low_quality_deposits
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_low_quality_deposits
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_low_quality_deposits
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_low_quality_deposits
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_low_quality_deposits
+				}
+			}
+			else = {
+				add_deposit = d_ad_low_quality_deposits
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_low_quality_deposits
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_shed_cultivation_land = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_shed_cultivation_land
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_shed_cultivation_land
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_shed_cultivation_land
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_shed_cultivation_land
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_shed_cultivation_land
+				}
+			}
+			else = {
+				add_deposit = d_ad_shed_cultivation_land
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_shed_cultivation_land
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_in_water_ecosystem = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_in_water_ecosystem
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_in_water_ecosystem
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_in_water_ecosystem
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_in_water_ecosystem
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_in_water_ecosystem
+				}
+			}
+			else = {
+				add_deposit = d_ad_in_water_ecosystem
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_in_water_ecosystem
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_mycorrhizal_communities = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_mycorrhizal_communities
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_mycorrhizal_communities
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_mycorrhizal_communities
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_mycorrhizal_communities
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_mycorrhizal_communities
+				}
+			}
+			else = {
+				add_deposit = d_ad_mycorrhizal_communities
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_mycorrhizal_communities
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_large_scale_grazing_land = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_large_scale_grazing_land
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_large_scale_grazing_land
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_large_scale_grazing_land
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_large_scale_grazing_land
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_large_scale_grazing_land
+				}
+			}
+			else = {
+				add_deposit = d_ad_large_scale_grazing_land
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_large_scale_grazing_land
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_large_scale_agricultural_land = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_large_scale_agricultural_land
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_large_scale_agricultural_land
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_large_scale_agricultural_land
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_large_scale_agricultural_land
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_large_scale_agricultural_land
+				}
+			}
+			else = {
+				add_deposit = d_ad_large_scale_agricultural_land
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_large_scale_agricultural_land
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_ancient_ruins = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_ancient_ruins
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_ancient_ruins
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_ancient_ruins
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_ancient_ruins
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_ancient_ruins
+				}
+			}
+			else = {
+				add_deposit = d_ad_ancient_ruins
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_ancient_ruins
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_ancient_databank = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_ancient_databank
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_ancient_databank
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_ancient_databank
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_ancient_databank
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_ancient_databank
+				}
+			}
+			else = {
+				add_deposit = d_ad_ancient_databank
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_ancient_databank
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_natural_fortress = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_natural_fortress
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_natural_fortress
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_natural_fortress
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_natural_fortress
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_natural_fortress
+				}
+			}
+			else = {
+				add_deposit = d_ad_natural_fortress
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_natural_fortress
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_add_special_tourism_zone = {
+	if = {
+		limit = {
+			OR = {
+				has_planet_flag = ad_ng_secondary
+				has_planet_flag = ad_ng_rare
+			}
+		}
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			random_list = {
+				50 = {
+					add_deposit = d_ad_special_tourism_zone
+				}
+				50 = {
+					while = {
+						count = 2
+						add_deposit = d_ad_special_tourism_zone
+					}
+				}
+			}
+		}
+		else = {
+			add_deposit = d_ad_special_tourism_zone
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				planet_size >= 20
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_special_tourism_zone
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					planet_size >= 15
+				}
+				while = {
+					count = 2
+					add_deposit = d_ad_special_tourism_zone
+				}
+			}
+			else = {
+				add_deposit = d_ad_special_tourism_zone
+			}
+		}
+		random_list = {
+			30 = {
+				add_deposit = d_ad_special_tourism_zone
+			}
+			70 = {
+			}
+		}
+	}
+}
+ad_ng_choose_energy = {
+	set_planet_flag = ad_ng_used_energy
+	random_list = {
+		70 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_geothermal_electric_power_generation = no
+			}
+			ad_ng_add_geothermal_electric_power_generation = yes
+		}
+		30 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_tidal_current_generation = no
+			}
+			ad_ng_add_tidal_current_generation = yes
+		}
+	}
+}
+ad_ng_choose_mining = {
+	set_planet_flag = ad_ng_used_mining
+	random_list = {
+		45 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_open_pit_ore_deposits = no
+			}
+			ad_ng_add_open_pit_ore_deposits = yes
+		}
+		30 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_under_water_deposits = no
+			}
+			ad_ng_add_under_water_deposits = yes
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_orbital_deposits = no
+			}
+			ad_ng_add_orbital_deposits = yes
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_high_quality_deposits = no
+			}
+			ad_ng_add_high_quality_deposits = yes
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_low_quality_deposits = no
+			}
+			ad_ng_add_low_quality_deposits = yes
+		}
+	}
+}
+ad_ng_choose_farming = {
+	set_planet_flag = ad_ng_used_farming
+	random_list = {
+		30 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_shed_cultivation_land = no
+			}
+			ad_ng_add_shed_cultivation_land = yes
+		}
+		30 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_in_water_ecosystem = no
+			}
+			ad_ng_add_in_water_ecosystem = yes
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_mycorrhizal_communities = no
+			}
+			modifier = {
+				factor = 2
+				is_planet_class = pc_tropical
+			}
+			ad_ng_add_mycorrhizal_communities = yes
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_large_scale_grazing_land = no
+			}
+			ad_ng_add_large_scale_grazing_land = yes
+		}
+		20 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_large_scale_agricultural_land = no
+			}
+			ad_ng_add_large_scale_agricultural_land = yes
+		}
+	}
+}
+ad_ng_choose_rare = {
+	random_list = {
+		10 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_archaeological_cities = no
+			}
+			ad_ng_add_archaeological_cities = yes
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_ancient_ruins = no
+			}
+			ad_ng_add_ancient_ruins = yes
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_ancient_databank = no
+			}
+			ad_ng_add_ancient_databank = yes
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_natural_nuclear_power_generation = no
+			}
+			ad_ng_add_natural_nuclear_power_generation = yes
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_sky_cities = no
+			}
+			ad_ng_add_sky_cities = yes
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_water_cities = no
+			}
+			ad_ng_add_water_cities = yes
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_under_water_cities = no
+			}
+			ad_ng_add_under_water_cities = yes
+		}
+		10 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_underground_cities = no
+			}
+			ad_ng_add_underground_cities = yes
+		}
+		15 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_natural_fortress = no
+			}
+			ad_ng_add_natural_fortress = yes
+		}
+		15 = {
+			modifier = {
+				factor = 0
+				ad_ng_can_special_tourism_zone = no
+			}
+			ad_ng_add_special_tourism_zone = yes
+		}
+	}
+}
+ad_ng_generate_planet = {
+	if = {
+		limit = {
+			has_global_flag = ad_ng_v3_enabled
+			ad_ng_eligible = yes
+			NOT = {
+				has_planet_flag = ad_ng_v3_checked
+			}
+		}
+		set_planet_flag = ad_ng_v3_checked
+		if = {
+			limit = {
+				ad_ng_existing_features = no
+			}
+			random_list = {
+				20 = {
+				}
+				25 = {
+					ad_ng_choose_energy = yes
+				}
+				30 = {
+					ad_ng_choose_mining = yes
+				}
+				25 = {
+					modifier = {
+						factor = 0
+						ad_ng_can_farm = no
+					}
+					ad_ng_choose_farming = yes
+				}
+			}
+			if = {
+				limit = {
+					planet_size >= 20
+				}
+				random_list = {
+					35 = {
+						set_planet_flag = ad_ng_secondary
+						random_list = {
+							25 = {
+								modifier = {
+									factor = 0
+									has_planet_flag = ad_ng_used_energy
+								}
+								ad_ng_choose_energy = yes
+							}
+							30 = {
+								modifier = {
+									factor = 0
+									has_planet_flag = ad_ng_used_mining
+								}
+								ad_ng_choose_mining = yes
+							}
+							25 = {
+								modifier = {
+									factor = 0
+									has_planet_flag = ad_ng_used_farming
+								}
+								modifier = {
+									factor = 0
+									ad_ng_can_farm = no
+								}
+								ad_ng_choose_farming = yes
+							}
+						}
+						remove_planet_flag = ad_ng_secondary
+					}
+					65 = {
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						planet_size >= 15
+					}
+					random_list = {
+						20 = {
+							set_planet_flag = ad_ng_secondary
+							random_list = {
+								25 = {
+									modifier = {
+										factor = 0
+										has_planet_flag = ad_ng_used_energy
+									}
+									ad_ng_choose_energy = yes
+								}
+								30 = {
+									modifier = {
+										factor = 0
+										has_planet_flag = ad_ng_used_mining
+									}
+									ad_ng_choose_mining = yes
+								}
+								25 = {
+									modifier = {
+										factor = 0
+										has_planet_flag = ad_ng_used_farming
+									}
+									modifier = {
+										factor = 0
+										ad_ng_can_farm = no
+									}
+									ad_ng_choose_farming = yes
+								}
+							}
+							remove_planet_flag = ad_ng_secondary
+						}
+						80 = {
+						}
+					}
+				}
+			}
+			random_list = {
+				15 = {
+					set_planet_flag = ad_ng_rare
+					ad_ng_choose_rare = yes
+					remove_planet_flag = ad_ng_rare
+				}
+				85 = {
+				}
+			}
+			remove_planet_flag = ad_ng_used_energy
+			remove_planet_flag = ad_ng_used_mining
+			remove_planet_flag = ad_ng_used_farming
+		}
+	}
+}

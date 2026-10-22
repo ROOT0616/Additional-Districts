@@ -1,902 +1,101 @@
-# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
 add_AD_archaeological_cities = {
 	every_galaxy_planet = {
-		limit = {
-			is_ad_ancient = yes
-		}
-		random_list = {
-			50 = {
-				random_list = {
-					5 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_archaeological_cities
-						}
-					}
-					10 = {
-						while = {
-							count = 5
-							add_deposit = d_ad_archaeological_cities
-						}
-					}
-					20 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_archaeological_cities
-						}
-					}
-					40 = {
-						while = {
-							count = 3
-							add_deposit = d_ad_archaeological_cities
-						}
-					}
-					25 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_archaeological_cities
-						}
-					}
-				}
-			}
-			50 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_sky_cities = {
 	every_galaxy_planet = {
-		limit = {
-			is_ad_planet = yes
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					15 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_sky_cities
-						}
-					}
-					30 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_sky_cities
-						}
-					}
-					55 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_sky_cities
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_water_cities = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_ad_wet = yes
-				is_ad_cold = yes
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					5 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_water_cities
-						}
-					}
-					15 = {
-						while = {
-							count = 5
-							add_deposit = d_ad_water_cities
-						}
-					}
-					25 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_water_cities
-						}
-					}
-					45 = {
-						while = {
-							count = 3
-							add_deposit = d_ad_water_cities
-						}
-					}
-					10 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_water_cities
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_under_water_cities = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_wet = yes
-				is_ad_wet = yes
-			}
-		}
-		random_list = {
-			25 = {
-				random_list = {
-					5 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_under_water_cities
-						}
-						set_planet_flag = do_ad_water_cities_6
-					}
-					15 = {
-						while = {
-							count = 5
-							add_deposit = d_ad_under_water_cities
-						}
-						set_planet_flag = do_ad_water_cities_5
-					}
-					25 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_under_water_cities
-						}
-						set_planet_flag = do_ad_water_cities_4
-					}
-					45 = {
-						while = {
-							count = 3
-							add_deposit = d_ad_under_water_cities
-						}
-						set_planet_flag = do_ad_water_cities_3
-					}
-					10 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_under_water_cities
-						}
-						set_planet_flag = do_ad_water_cities_2
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_underground_cities = {
 	every_galaxy_planet = {
-		limit = {
-			is_ad_planet = yes
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					5 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_underground_cities
-						}
-						set_planet_flag = do_ad_underground_cities_6
-					}
-					15 = {
-						while = {
-							count = 5
-							add_deposit = d_ad_underground_cities
-						}
-						set_planet_flag = do_ad_underground_cities_5
-					}
-					25 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_underground_cities
-						}
-						set_planet_flag = do_ad_underground_cities_4
-					}
-					45 = {
-						while = {
-							count = 3
-							add_deposit = d_ad_underground_cities
-						}
-						set_planet_flag = do_ad_underground_cities_3
-					}
-					10 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_underground_cities
-						}
-						set_planet_flag = do_ad_underground_cities_2
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_geothermal_electric_power_generation = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_wet = yes
-				is_dry = yes
-				is_ad_wet = yes
-				is_ad_dry = yes
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							add_deposit = d_ad_geothermal_electric_power_generation
-							count = 6
-						}
-					}
-					30 = {
-						while = {
-							add_deposit = d_ad_geothermal_electric_power_generation
-							count = 2
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_geothermal_electric_power_generation
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_tidal_current_generation = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_wet = yes
-				is_ad_wet = yes
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_tidal_current_generation
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_tidal_current_generation
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_tidal_current_generation
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_natural_nuclear_power_generation = {
 	every_galaxy_planet = {
-		limit = {
-			is_ad_planet = yes
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_natural_nuclear_power_generation
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_natural_nuclear_power_generation
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_natural_nuclear_power_generation
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_open_pit_ore_deposits = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_planet_class = pc_continental
-				is_planet_class = pc_tropical
-				is_planet_class = pc_ocean
-				is_planet_class = pc_desert
-				is_planet_class = pc_arid
-				is_planet_class = pc_savannah
-				is_planet_class = pc_arctic
-				is_planet_class = pc_tundra
-				is_planet_class = pc_alpine
-				is_planet_class = pc_gaia
-				is_planet_class = pc_relic
-				is_planet_class = pc_city
-				is_planet_class = pc_toxic
-				is_planet_class = pc_nuked
-			}
-		}
-		random_list = {
-			15 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_open_pit_ore_deposits
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_open_pit_ore_deposits
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_open_pit_ore_deposits
-						}
-					}
-				}
-			}
-			85 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_under_water_deposits = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_planet_class = pc_continental
-				is_planet_class = pc_tropical
-				is_planet_class = pc_ocean
-				is_planet_class = pc_gaia
-				is_planet_class = pc_relic
-				is_planet_class = pc_city
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_under_water_deposits
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_under_water_deposits
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_under_water_deposits
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_orbital_deposits = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				has_ring = yes
-				has_moon = yes
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_orbital_deposits
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_orbital_deposits
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_orbital_deposits
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_quality_deposits = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_planet_class = pc_continental
-				is_planet_class = pc_tropical
-				is_planet_class = pc_ocean
-				is_planet_class = pc_desert
-				is_planet_class = pc_arid
-				is_planet_class = pc_savannah
-				is_planet_class = pc_arctic
-				is_planet_class = pc_tundra
-				is_planet_class = pc_alpine
-				is_planet_class = pc_gaia
-				is_planet_class = pc_relic
-				is_planet_class = pc_city
-				is_planet_class = pc_toxic
-				is_planet_class = pc_nuked
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 3
-							add_deposit = d_ad_high_quality_deposits
-						}
-					}
-					30 = {
-						while = {
-							count = 1
-							add_deposit = d_ad_high_quality_deposits
-						}
-					}
-					50 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_high_quality_deposits
-						}
-					}
-				}
-			}
-			15 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_low_quality_deposits
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_low_quality_deposits
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_low_quality_deposits
-						}
-					}
-				}
-			}
-			75 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_shed_cultivation_land = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_planet_class = pc_continental
-				is_planet_class = pc_tropical
-				is_planet_class = pc_ocean
-				is_planet_class = pc_gaia
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_shed_cultivation_land
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_shed_cultivation_land
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_shed_cultivation_land
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_in_water_ecosystem = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_planet_class = pc_continental
-				is_planet_class = pc_tropical
-				is_planet_class = pc_ocean
-				is_planet_class = pc_gaia
-				is_planet_class = pc_relic
-				is_planet_class = pc_city
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_in_water_ecosystem
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_in_water_ecosystem
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_in_water_ecosystem
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_mycorrhizal_communities = {
 	every_galaxy_planet = {
-		limit = {
-			is_ad_fungal = yes
-		}
-		random_list = {
-			60 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_mycorrhizal_communities
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_mycorrhizal_communities
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_mycorrhizal_communities
-						}
-					}
-				}
-			}
-			40 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_large_scale_land = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_planet_class = pc_continental
-				is_planet_class = pc_gaia
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 3
-							add_deposit = d_ad_large_scale_grazing_land
-						}
-					}
-					30 = {
-						while = {
-							count = 1
-							add_deposit = d_ad_large_scale_grazing_land
-						}
-					}
-					50 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_large_scale_grazing_land
-						}
-					}
-				}
-			}
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 3
-							add_deposit = d_ad_large_scale_agricultural_land
-						}
-					}
-					30 = {
-						while = {
-							count = 1
-							add_deposit = d_ad_large_scale_agricultural_land
-						}
-					}
-					50 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_large_scale_agricultural_land
-						}
-					}
-				}
-			}
-			5 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 3
-							add_deposit = d_ad_large_scale_agricultural_land
-						}
-					}
-					30 = {
-						while = {
-							count = 1
-							add_deposit = d_ad_large_scale_agricultural_land
-						}
-					}
-					50 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_large_scale_agricultural_land
-						}
-					}
-				}
-				random_list = {
-					20 = {
-						while = {
-							count = 3
-							add_deposit = d_ad_large_scale_grazing_land
-						}
-					}
-					30 = {
-						while = {
-							count = 1
-							add_deposit = d_ad_large_scale_grazing_land
-						}
-					}
-					50 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_large_scale_grazing_land
-						}
-					}
-				}
-			}
-			75 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_ancient_ruins = {
 	every_galaxy_planet = {
-		limit = {
-			is_ad_ancient = yes
-		}
-		random_list = {
-			50 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_ancient_ruins
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_ancient_ruins
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_ancient_ruins
-						}
-					}
-				}
-			}
-			50 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_ancient_databank = {
 	every_galaxy_planet = {
-		limit = {
-			is_ad_ancient = yes
-		}
-		random_list = {
-			50 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_ancient_databank
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_ancient_databank
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_ancient_databank
-						}
-					}
-				}
-			}
-			50 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_natural_fortress = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_wet = yes
-				is_cold = yes
-				is_dry = yes
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_natural_fortress
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_natural_fortress
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_natural_fortress
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }
 add_AD_special_tourism_zone = {
 	every_galaxy_planet = {
-		limit = {
-			OR = {
-				is_wet = yes
-				is_cold = yes
-				is_dry = yes
-			}
-		}
-		random_list = {
-			10 = {
-				random_list = {
-					20 = {
-						while = {
-							count = 6
-							add_deposit = d_ad_special_tourism_zone
-						}
-					}
-					30 = {
-						while = {
-							count = 2
-							add_deposit = d_ad_special_tourism_zone
-						}
-					}
-					50 = {
-						while = {
-							count = 4
-							add_deposit = d_ad_special_tourism_zone
-						}
-					}
-				}
-			}
-			90 = {
-
-			}
-		}
+		ad_ng_generate_planet = yes
 	}
 }

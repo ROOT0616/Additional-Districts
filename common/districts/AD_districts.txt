@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
 @base_ad_cost = 250
 @base_ad_2cost = 300
 district_ad_archaeological_cities = {

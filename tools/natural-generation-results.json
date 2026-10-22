@@ -1,0 +1,340 @@
+{
+  "version": "2.1.0-beta.3",
+  "engine_test": false,
+  "cases": 33063,
+  "reachable_natural_types": 22,
+  "rare_rate": 0.14751515151515152,
+  "secondary_rates": {
+    "14": 0.0,
+    "19": 0.2040909090909091,
+    "25": 0.3639090909090909
+  },
+  "primary_distribution": {
+    "continental": {
+      "energy": 0.251,
+      "mining": 0.2996666666666667,
+      "none": 0.199,
+      "farming": 0.25033333333333335
+    },
+    "tropical": {
+      "mining": 0.309,
+      "farming": 0.25233333333333335,
+      "energy": 0.24166666666666667,
+      "none": 0.197
+    },
+    "ocean": {
+      "farming": 0.25066666666666665,
+      "none": 0.19766666666666666,
+      "mining": 0.306,
+      "energy": 0.24566666666666667
+    },
+    "desert": {
+      "energy": 0.36333333333333334,
+      "none": 0.24966666666666668,
+      "mining": 0.387
+    },
+    "arid": {
+      "energy": 0.3273333333333333,
+      "none": 0.27366666666666667,
+      "mining": 0.399
+    },
+    "savannah": {
+      "none": 0.19966666666666666,
+      "energy": 0.24866666666666667,
+      "mining": 0.29133333333333333,
+      "farming": 0.26033333333333336
+    },
+    "arctic": {
+      "mining": 0.41133333333333333,
+      "energy": 0.31133333333333335,
+      "none": 0.2773333333333333
+    },
+    "tundra": {
+      "mining": 0.415,
+      "none": 0.26366666666666666,
+      "energy": 0.32133333333333336
+    },
+    "alpine": {
+      "mining": 0.3993333333333333,
+      "energy": 0.34,
+      "none": 0.26066666666666666
+    },
+    "gaia": {
+      "mining": 0.309,
+      "none": 0.198,
+      "energy": 0.25766666666666665,
+      "farming": 0.23533333333333334
+    },
+    "relic": {
+      "energy": 0.3443333333333333,
+      "none": 0.26466666666666666,
+      "mining": 0.391
+    }
+  },
+  "summary": [
+    {
+      "class": "continental",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.177,
+      "mean_types": 0.925,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "continental",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.223,
+      "mean_types": 1.152,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "continental",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.392,
+      "mean_types": 1.297,
+      "max_feature_copies": 8
+    },
+    {
+      "class": "tropical",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.204,
+      "mean_types": 0.962,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "tropical",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.205,
+      "mean_types": 1.155,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "tropical",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.463,
+      "mean_types": 1.338,
+      "max_feature_copies": 8
+    },
+    {
+      "class": "ocean",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.173,
+      "mean_types": 0.939,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "ocean",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.186,
+      "mean_types": 1.125,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "ocean",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.414,
+      "mean_types": 1.306,
+      "max_feature_copies": 7
+    },
+    {
+      "class": "desert",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.119,
+      "mean_types": 0.895,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "desert",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.074,
+      "mean_types": 1.101,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "desert",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.238,
+      "mean_types": 1.257,
+      "max_feature_copies": 8
+    },
+    {
+      "class": "arid",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.094,
+      "mean_types": 0.883,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "arid",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.059,
+      "mean_types": 1.096,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "arid",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.202,
+      "mean_types": 1.266,
+      "max_feature_copies": 8
+    },
+    {
+      "class": "savannah",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.223,
+      "mean_types": 0.961,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "savannah",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.142,
+      "mean_types": 1.121,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "savannah",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.39,
+      "mean_types": 1.31,
+      "max_feature_copies": 8
+    },
+    {
+      "class": "arctic",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.079,
+      "mean_types": 0.859,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "arctic",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.024,
+      "mean_types": 1.087,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "arctic",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.124,
+      "mean_types": 1.232,
+      "max_feature_copies": 8
+    },
+    {
+      "class": "tundra",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.109,
+      "mean_types": 0.883,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "tundra",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.119,
+      "mean_types": 1.142,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "tundra",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.109,
+      "mean_types": 1.215,
+      "max_feature_copies": 8
+    },
+    {
+      "class": "alpine",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.077,
+      "mean_types": 0.858,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "alpine",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.061,
+      "mean_types": 1.096,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "alpine",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.286,
+      "mean_types": 1.284,
+      "max_feature_copies": 8
+    },
+    {
+      "class": "gaia",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.21,
+      "mean_types": 0.965,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "gaia",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.206,
+      "mean_types": 1.154,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "gaia",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.345,
+      "mean_types": 1.28,
+      "max_feature_copies": 8
+    },
+    {
+      "class": "relic",
+      "size": 14,
+      "samples": 1000,
+      "mean_feature_copies": 1.141,
+      "mean_types": 0.903,
+      "max_feature_copies": 3
+    },
+    {
+      "class": "relic",
+      "size": 19,
+      "samples": 1000,
+      "mean_feature_copies": 2.015,
+      "mean_types": 1.074,
+      "max_feature_copies": 5
+    },
+    {
+      "class": "relic",
+      "size": 25,
+      "samples": 1000,
+      "mean_feature_copies": 3.19,
+      "mean_types": 1.252,
+      "max_feature_copies": 8
+    }
+  ]
+}

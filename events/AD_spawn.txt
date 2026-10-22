@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
 namespace = additionaldistricts
 event = {
 	id = additionaldistricts.9000
@@ -6,25 +6,9 @@ event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		add_AD_archaeological_cities = yes
-		add_AD_sky_cities = yes
-		add_AD_water_cities = yes
-		add_AD_under_water_cities = yes
-		add_AD_underground_cities = yes
-		add_AD_geothermal_electric_power_generation = yes
-		add_AD_tidal_current_generation = yes
-		add_AD_natural_nuclear_power_generation = yes
-		add_AD_open_pit_ore_deposits = yes
-		add_AD_under_water_deposits = yes
-		add_AD_orbital_deposits = yes
-		add_AD_quality_deposits = yes
-		add_AD_shed_cultivation_land = yes
-		add_AD_in_water_ecosystem = yes
-		add_AD_mycorrhizal_communities = yes
-		add_AD_large_scale_land = yes
-		add_AD_ancient_ruins = yes
-		add_AD_ancient_databank = yes
-		add_AD_natural_fortress = yes
-		add_AD_special_tourism_zone = yes
+		set_global_flag = ad_ng_v3_enabled
+		every_galaxy_planet = {
+			ad_ng_generate_planet = yes
+		}
 	}
 }

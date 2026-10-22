@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
 ad_sync_development_slots = {
 	remove_planet_flag = do_ad_1
 	remove_planet_flag = do_ad_2

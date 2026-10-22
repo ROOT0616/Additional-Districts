@@ -1,0 +1,181 @@
+# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
+ad_ng_eligible = {
+	OR = {
+		is_planet_class = pc_continental
+		is_planet_class = pc_tropical
+		is_planet_class = pc_ocean
+		is_planet_class = pc_desert
+		is_planet_class = pc_arid
+		is_planet_class = pc_savannah
+		is_planet_class = pc_arctic
+		is_planet_class = pc_tundra
+		is_planet_class = pc_alpine
+		is_planet_class = pc_gaia
+		is_planet_class = pc_relic
+	}
+	uses_district_set = standard
+}
+ad_ng_wet = {
+	OR = {
+		is_planet_class = pc_continental
+		is_planet_class = pc_tropical
+		is_planet_class = pc_ocean
+		is_planet_class = pc_gaia
+	}
+}
+ad_ng_can_farm = {
+	OR = {
+		is_planet_class = pc_continental
+		is_planet_class = pc_tropical
+		is_planet_class = pc_ocean
+		is_planet_class = pc_gaia
+		is_planet_class = pc_savannah
+	}
+}
+ad_ng_existing_features = {
+	OR = {
+		has_deposit = d_ad_archaeological_cities
+		has_deposit = d_ad_sky_cities
+		has_deposit = d_ad_water_cities
+		has_deposit = d_ad_under_water_cities
+		has_deposit = d_ad_underground_cities
+		has_deposit = d_ad_solar_power_generation
+		has_deposit = d_ad_geothermal_electric_power_generation
+		has_deposit = d_ad_tidal_current_generation
+		has_deposit = d_ad_natural_nuclear_power_generation
+		has_deposit = d_ad_open_pit_ore_deposits
+		has_deposit = d_ad_under_water_deposits
+		has_deposit = d_ad_orbital_deposits
+		has_deposit = d_ad_high_quality_deposits
+		has_deposit = d_ad_low_quality_deposits
+		has_deposit = d_ad_shed_cultivation_land
+		has_deposit = d_ad_in_water_ecosystem
+		has_deposit = d_ad_mycorrhizal_communities
+		has_deposit = d_ad_large_scale_grazing_land
+		has_deposit = d_ad_large_scale_agricultural_land
+		has_deposit = d_ad_ancient_ruins
+		has_deposit = d_ad_ancient_databank
+		has_deposit = d_ad_natural_fortress
+		has_deposit = d_ad_special_tourism_zone
+		has_deposit = d_ad_government_district
+		has_deposit = d_ad_university_district
+		has_deposit = d_ad_residential_area
+		has_deposit = d_ad_shipbuilding_arsenal
+		has_deposit = d_ad_communication_area
+		has_deposit = d_ad_tourist_area
+		has_deposit = d_ad_defense_zone
+		has_deposit = d_ad_conceptual_zone
+		has_deposit = d_ad_special_research_zone
+		has_deposit = d_ad_spaceport_area
+		has_deposit = d_ad_orbital_elevator
+		has_deposit = d_ad_artificial_sky_cities
+		has_deposit = d_ad_artificial_under_water_cities
+		has_deposit = d_ad_artificial_underground_cities
+		has_deposit = d_ad_artificial_solar_power_generation
+	}
+}
+ad_ng_can_archaeological_cities = {
+	ad_ng_eligible = yes
+	is_planet_class = pc_relic
+}
+ad_ng_can_sky_cities = {
+	ad_ng_eligible = yes
+	ad_ng_eligible = yes
+}
+ad_ng_can_water_cities = {
+	ad_ng_eligible = yes
+	ad_ng_wet = yes
+}
+ad_ng_can_under_water_cities = {
+	ad_ng_eligible = yes
+	ad_ng_wet = yes
+}
+ad_ng_can_underground_cities = {
+	ad_ng_eligible = yes
+	ad_ng_eligible = yes
+}
+ad_ng_can_geothermal_electric_power_generation = {
+	ad_ng_eligible = yes
+	ad_ng_eligible = yes
+}
+ad_ng_can_tidal_current_generation = {
+	ad_ng_eligible = yes
+	ad_ng_wet = yes
+}
+ad_ng_can_natural_nuclear_power_generation = {
+	ad_ng_eligible = yes
+	ad_ng_eligible = yes
+}
+ad_ng_can_open_pit_ore_deposits = {
+	ad_ng_eligible = yes
+	NOT = {
+		is_planet_class = pc_ocean
+	}
+}
+ad_ng_can_under_water_deposits = {
+	ad_ng_eligible = yes
+	ad_ng_wet = yes
+}
+ad_ng_can_orbital_deposits = {
+	ad_ng_eligible = yes
+	OR = {
+		has_ring = yes
+		has_moon = yes
+	}
+}
+ad_ng_can_high_quality_deposits = {
+	ad_ng_eligible = yes
+	NOT = {
+		has_deposit = d_ad_low_quality_deposits
+	}
+}
+ad_ng_can_low_quality_deposits = {
+	ad_ng_eligible = yes
+	NOT = {
+		has_deposit = d_ad_high_quality_deposits
+	}
+}
+ad_ng_can_shed_cultivation_land = {
+	ad_ng_eligible = yes
+	ad_ng_wet = yes
+}
+ad_ng_can_in_water_ecosystem = {
+	ad_ng_eligible = yes
+	ad_ng_wet = yes
+}
+ad_ng_can_mycorrhizal_communities = {
+	ad_ng_eligible = yes
+	ad_ng_wet = yes
+}
+ad_ng_can_large_scale_grazing_land = {
+	ad_ng_eligible = yes
+	OR = {
+		is_planet_class = pc_continental
+		is_planet_class = pc_savannah
+		is_planet_class = pc_gaia
+	}
+}
+ad_ng_can_large_scale_agricultural_land = {
+	ad_ng_eligible = yes
+	OR = {
+		is_planet_class = pc_continental
+		is_planet_class = pc_tropical
+		is_planet_class = pc_gaia
+	}
+}
+ad_ng_can_ancient_ruins = {
+	ad_ng_eligible = yes
+	is_planet_class = pc_relic
+}
+ad_ng_can_ancient_databank = {
+	ad_ng_eligible = yes
+	is_planet_class = pc_relic
+}
+ad_ng_can_natural_fortress = {
+	ad_ng_eligible = yes
+	ad_ng_eligible = yes
+}
+ad_ng_can_special_tourism_zone = {
+	ad_ng_eligible = yes
+	ad_ng_eligible = yes
+}

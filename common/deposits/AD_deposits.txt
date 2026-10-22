@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
 @high = 16
 @med = 8
 @low = 4
@@ -8,67 +8,67 @@
 @planet_type_bonus = 1.5
 d_ad_archaeological_cities = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_archaeological_cities_max_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_sky_cities = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_sky_cities_max_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_water_cities = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_water_cities_max_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_under_water_cities = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_under_water_cities_max_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_underground_cities = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_underground_cities_max_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_solar_power_generation = {
@@ -86,7 +86,6 @@ d_ad_solar_power_generation = {
 }
 d_ad_geothermal_electric_power_generation = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -108,13 +107,13 @@ d_ad_geothermal_electric_power_generation = {
 		}
 		district_generator_max_add = 2
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_tidal_current_generation = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -137,13 +136,13 @@ d_ad_tidal_current_generation = {
 		district_generator_max_add = 2
 		planet_max_districts_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_natural_nuclear_power_generation = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -165,13 +164,13 @@ d_ad_natural_nuclear_power_generation = {
 		}
 		district_generator_max_add = 2
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_open_pit_ore_deposits = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -193,13 +192,13 @@ d_ad_open_pit_ore_deposits = {
 		}
 		district_mining_max_add = 2
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_under_water_deposits = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -222,13 +221,13 @@ d_ad_under_water_deposits = {
 		district_mining_max_add = 2
 		planet_max_districts_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_orbital_deposits = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -251,13 +250,13 @@ d_ad_orbital_deposits = {
 		district_mining_max_add = 2
 		planet_max_districts_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_high_quality_deposits = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -279,13 +278,13 @@ d_ad_high_quality_deposits = {
 		}
 		district_mining_max_add = 4
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_low_quality_deposits = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -307,13 +306,13 @@ d_ad_low_quality_deposits = {
 		}
 		district_mining_max_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_shed_cultivation_land = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -335,13 +334,13 @@ d_ad_shed_cultivation_land = {
 		}
 		district_farming_max_add = 2
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_in_water_ecosystem = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -364,13 +363,13 @@ d_ad_in_water_ecosystem = {
 		district_farming_max_add = 2
 		planet_max_districts_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_mycorrhizal_communities = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -392,13 +391,13 @@ d_ad_mycorrhizal_communities = {
 		}
 		district_farming_max_add = 2
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_large_scale_grazing_land = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -420,13 +419,13 @@ d_ad_large_scale_grazing_land = {
 		}
 		district_farming_max_add = 4
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_large_scale_agricultural_land = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
@@ -448,60 +447,61 @@ d_ad_large_scale_agricultural_land = {
 		}
 		district_farming_max_add = 4
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_ancient_ruins = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_ancient_ruins_max_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_ancient_databank = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_ancient_databank_max_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_natural_fortress = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_natural_fortress_max_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_special_tourism_zone = {
 	is_for_colonizable = yes
-	use_for_min_max_adjustments = yes
 	use_weights_for_terraforming_swap_types = no
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
 		district_ad_special_tourism_zone_max_add = 1
 	}
+	use_for_min_max_adjustments = no
 	drop_weight = {
-		weight = @low
+		weight = 0
 	}
 }
 d_ad_government_district = {

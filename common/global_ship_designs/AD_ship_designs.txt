@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.3 / Stellaris 4.5.2
 ship_design = {
 	name = NAME_NGM_planet_defence
 	ship_size = military_station_small_fallen_empire
