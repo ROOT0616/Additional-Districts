@@ -1,4 +1,4 @@
-# 債務者
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
 debtor_army = {
 	damage = 1
 	health = 1
@@ -22,20 +22,24 @@ debtor_army = {
 	}
 	potential = {
 		owner = {
-			any_owned_pop = {
-				is_pop_category = slave
+			any_owned_pop_group = {
+				is_enslaved = yes
 				is_same_species = from
 			}
 		}
 		from = {
 			NOR = {
-				has_trait = "trait_mechanical"
-				has_trait = "trait_machine_unit"
+				has_trait = trait_mechanical
+				has_trait = trait_machine_unit
 				is_sapient = no
 			}
 		}
 		planet = {
-			has_building = building_empire_undergraund
+			exists = branch_office_owner
+			has_holding = {
+				holding = building_empire_undergraund
+				owner = branch_office_owner
+			}
 		}
 	}
 }

@@ -1,59 +1,60 @@
-
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
 ship_design = {
-	name = "NAME_NGM_planet_defence"
+	name = NAME_NGM_planet_defence
 	ship_size = military_station_small_fallen_empire
 	section = {
-		template = "station_generic_01_key"
-		slot = "mid"
-
+		template = ad_planet_defense_section
+		slot = mid
 		component = {
-			slot = "LARGE_GUN_01"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_01
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_02"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_02
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_03"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_03
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_04"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_04
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_05"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_05
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_06"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_06
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_07"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_07
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_08"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_08
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_09"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_09
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_10"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_10
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_11"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_11
+			template = MISSILE_5
 		}
 		component = {
-			slot = "LARGE_GUN_12"
-			template = "MISSILE_5"
+			slot = SMALL_GUN_12
+			template = MISSILE_5
 		}
 	}
-	required_component="SENSOR_2"
+	required_component = SENSOR_2
+	required_component = PLATFORM_ZERO_POINT_REACTOR
+	required_component = COMBAT_COMPUTER_PLATFORM_BASIC
 }

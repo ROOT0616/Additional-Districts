@@ -1,3 +1,4 @@
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
 @high = 16
 @med = 8
 @low = 4
@@ -5,10 +6,6 @@
 @mid_rare = 0.25
 @low_rare = 0.1
 @planet_type_bonus = 1.5
-##############################
-#####    都市区域追加    ######
-##############################
-# 遺跡都市  district_ad_archaeological_cities 住居*5	発掘者*2	（自然発生）
 d_ad_archaeological_cities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -16,14 +13,12 @@ d_ad_archaeological_cities = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_archaeological_cities_max = 1
+		district_ad_archaeological_cities_max_add = 1
 	}
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 空中都市 sky_cities 住居*30	事務員*2	交易価値	（自然発生）	（技術開発）
 d_ad_sky_cities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -31,14 +26,12 @@ d_ad_sky_cities = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_sky_cities_max = 1
+		district_ad_sky_cities_max_add = 1
 	}
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 水上都市	water_cities	住居*20	事務員*2	交易価値	（自然発生）
 d_ad_water_cities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -46,14 +39,12 @@ d_ad_water_cities = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_water_cities_max = 1
+		district_ad_water_cities_max_add = 1
 	}
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 水中都市	under_water_cities	住居*5	水中農家*2	農作物	（自然発生）	（技術開発）
 d_ad_under_water_cities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -61,14 +52,12 @@ d_ad_under_water_cities = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_under_water_cities_max = 1
+		district_ad_under_water_cities_max_add = 1
 	}
 	drop_weight = {
 		weight = @low
 	}
 }
-
-#地下都市 underground_cities	住居*5	施設維持業者*1	鉱物生産	（自然発生）	（技術開発）
 d_ad_underground_cities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -76,21 +65,12 @@ d_ad_underground_cities = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_underground_cities_max = 1
+		district_ad_underground_cities_max_add = 1
 	}
 	drop_weight = {
 		weight = @low
 	}
 }
-
-##############################
-#####    発電区域追加    ######
-##############################
-# 太陽光発電	solar_power_generation	技術者*5	（技術開発）
-# 地熱発電	geothermal_electric_power_generation	地熱技師*2	（技術開発）
-# 潮流発電	tidal_current_generation	技術者*5	（技術開発）
-# 天然原子炉発電	natural_nuclear_power_generation	原子技師*2	（技術開発）
-#太陽光発電 solar_power_generation	住居*2	技術者*5	（技術開発）
 d_ad_solar_power_generation = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -98,14 +78,12 @@ d_ad_solar_power_generation = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_solar_power_generation_max = 1
+		district_ad_solar_power_generation_max_add = 1
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-#地熱発電 geothermal_electric_power_generation	住居*2 地熱技師*2	（技術開発）
 d_ad_geothermal_electric_power_generation = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -119,9 +97,7 @@ d_ad_geothermal_electric_power_generation = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_geothermal_electric_power_generation_max = 1
-		}
+		district_ad_geothermal_electric_power_generation_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -130,19 +106,12 @@ d_ad_geothermal_electric_power_generation = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_generator_max = 2
-		}
+		district_generator_max_add = 2
 	}
-	# planet_modifier = {
-	# 	district_ad_geothermal_electric_power_generation_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-#潮流発電 tidal_current_generation	住居*2 技術者*5	（技術開発）
 d_ad_tidal_current_generation = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -156,9 +125,7 @@ d_ad_tidal_current_generation = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_tidal_current_generation_max = 1
-		}
+		district_ad_tidal_current_generation_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -167,20 +134,13 @@ d_ad_tidal_current_generation = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_generator_max = 2
-			planet_max_districts_add = 1
-		}
+		district_generator_max_add = 2
+		planet_max_districts_add = 1
 	}
-	# planet_modifier = {
-	# 	district_ad_tidal_current_generation_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-#天然原子炉発電 natural_nuclear_power_generation	住居*2 原子技師*2	（技術開発）
 d_ad_natural_nuclear_power_generation = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -194,9 +154,7 @@ d_ad_natural_nuclear_power_generation = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_natural_nuclear_power_generation_max = 1
-		}
+		district_ad_natural_nuclear_power_generation_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -205,27 +163,12 @@ d_ad_natural_nuclear_power_generation = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_generator_max = 2
-		}
+		district_generator_max_add = 2
 	}
-	# planet_modifier = {
-	# 	district_ad_natural_nuclear_power_generation_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-##############################
-#####    鉱物区域追加    ######
-##############################	
-# 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
-# 水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
-# 軌道鉱石群	orbital_deposits	宇宙採掘者*2	（技術開発）
-# 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
-# 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生）
-# 露天鉱床	open_pit_ore_deposits	採掘者*5	（自然発生）
 d_ad_open_pit_ore_deposits = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -239,9 +182,7 @@ d_ad_open_pit_ore_deposits = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_open_pit_ore_deposits_max = 1
-		}
+		district_ad_open_pit_ore_deposits_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -250,19 +191,12 @@ d_ad_open_pit_ore_deposits = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_mining_max = 2
-		}
+		district_mining_max_add = 2
 	}
-	# planet_modifier = {
-	# 	district_ad_open_pit_ore_deposits_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 水中鉱床	under_water_deposits	水中採掘者*2	（自然発生）
 d_ad_under_water_deposits = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -276,9 +210,7 @@ d_ad_under_water_deposits = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_under_water_deposits_max = 1
-		}
+		district_ad_under_water_deposits_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -287,20 +219,13 @@ d_ad_under_water_deposits = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_mining_max = 2
-			planet_max_districts_add = 1
-		}
+		district_mining_max_add = 2
+		planet_max_districts_add = 1
 	}
-	# planet_modifier = {
-	# 	district_ad_under_water_deposits_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 軌道鉱石群	orbital_deposits	宇宙採掘者*2	（技術開発）
 d_ad_orbital_deposits = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -314,9 +239,7 @@ d_ad_orbital_deposits = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_orbital_deposits_max = 1
-		}
+		district_ad_orbital_deposits_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -325,20 +248,13 @@ d_ad_orbital_deposits = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_mining_max = 2
-			planet_max_districts_add = 1
-		}
+		district_mining_max_add = 2
+		planet_max_districts_add = 1
 	}
-	# planet_modifier = {
-	# 	district_ad_orbital_deposits_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 高質鉱床	high_quality_deposits	効率的採掘者*3	（自然発生）
 d_ad_high_quality_deposits = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -352,9 +268,7 @@ d_ad_high_quality_deposits = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_high_quality_deposits_max = 1
-		}
+		district_ad_high_quality_deposits_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -363,19 +277,12 @@ d_ad_high_quality_deposits = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_mining_max = 4
-		}
+		district_mining_max_add = 4
 	}
-	# planet_modifier = {
-	# 	district_ad_high_quality_deposits_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 低質鉱床	low_quality_deposits	低効率採掘者*7	（自然発生
 d_ad_low_quality_deposits = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -389,9 +296,7 @@ d_ad_low_quality_deposits = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_low_quality_deposits_max = 1
-		}
+		district_ad_low_quality_deposits_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -400,27 +305,12 @@ d_ad_low_quality_deposits = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_mining_max = 1
-		}
+		district_mining_max_add = 1
 	}
-	# planet_modifier = {
-	# 	district_ad_low_quality_deposits_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-##############################
-#####    農業区域追加    ######
-##############################
-# 棚状耕作地	shed_cultivation_land	（技術開発）
-# 水中生態系	in_water_ecosystem	（自然発生）
-# 菌類群生体	mycorrhizal_communities	（自然発生）
-# 大規模牧草地	large_scale_grazing_land（技術開発）
-# 大自然農業地	large_scale_agricultural_land（技術開発）
-# 棚状耕作地	shed_cultivation_land	（技術開発）
 d_ad_shed_cultivation_land = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -434,9 +324,7 @@ d_ad_shed_cultivation_land = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_shed_cultivation_land_max = 1
-		}
+		district_ad_shed_cultivation_land_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -445,19 +333,12 @@ d_ad_shed_cultivation_land = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_farming_max = 2
-		}
+		district_farming_max_add = 2
 	}
-	# planet_modifier = {
-	# 	district_ad_shed_cultivation_land_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 水中生態系	in_water_ecosystem	（自然発生）
 d_ad_in_water_ecosystem = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -471,9 +352,7 @@ d_ad_in_water_ecosystem = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_in_water_ecosystem_max = 1
-		}
+		district_ad_in_water_ecosystem_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -482,20 +361,13 @@ d_ad_in_water_ecosystem = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_farming_max = 2
-			planet_max_districts_add = 1
-		}
+		district_farming_max_add = 2
+		planet_max_districts_add = 1
 	}
-	# planet_modifier = {
-	# 	district_ad_in_water_ecosystem_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 菌類群生体	mycorrhizal_communities	（自然発生）
 d_ad_mycorrhizal_communities = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -509,9 +381,7 @@ d_ad_mycorrhizal_communities = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_mycorrhizal_communities_max = 1
-		}
+		district_ad_mycorrhizal_communities_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -520,19 +390,12 @@ d_ad_mycorrhizal_communities = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_farming_max = 2
-		}
+		district_farming_max_add = 2
 	}
-	# planet_modifier = {
-	# 	district_ad_mycorrhizal_communities_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 大規模牧草地	large_scale_grazing_land	（技術開発）
 d_ad_large_scale_grazing_land = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -546,9 +409,7 @@ d_ad_large_scale_grazing_land = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_large_scale_grazing_land_max = 1
-		}
+		district_ad_large_scale_grazing_land_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -557,19 +418,12 @@ d_ad_large_scale_grazing_land = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_farming_max = 4
-		}
+		district_farming_max_add = 4
 	}
-	# planet_modifier = {
-	# 	district_ad_large_scale_grazing_land_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 大自然農業地	large_scale_agricultural_land（技術開発）
 d_ad_large_scale_agricultural_land = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -583,9 +437,7 @@ d_ad_large_scale_agricultural_land = {
 				is_regular_empire = yes
 			}
 		}
-		modifier = {
-			district_ad_large_scale_agricultural_land_max = 1
-		}
+		district_ad_large_scale_agricultural_land_max_add = 1
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -594,26 +446,12 @@ d_ad_large_scale_agricultural_land = {
 				is_gestalt = yes
 			}
 		}
-		modifier = {
-			district_farming_max = 4
-		}
+		district_farming_max_add = 4
 	}
-	# planet_modifier = {
-	# 	district_ad_large_scale_agricultural_land_max = 1
-	# }
 	drop_weight = {
 		weight = @low
 	}
 }
-
-################################
-#####    その他区域追加    ######
-################################
-# 古代遺跡群	ancient_ruins	（自然発生）
-# 古代データバンク	ancient_databank	（自然発生）
-# 天然の要塞	natural_fortress	（自然発生）
-# 観光特区	special_tourism_zone	（自然発生）
-# 古代遺跡群	ancient_ruins	（自然発生）
 d_ad_ancient_ruins = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -621,14 +459,12 @@ d_ad_ancient_ruins = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_ancient_ruins_max = 1
+		district_ad_ancient_ruins_max_add = 1
 	}
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 古代データバンク	ancient_databank	（自然発生）
 d_ad_ancient_databank = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -636,14 +472,12 @@ d_ad_ancient_databank = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_ancient_databank_max = 1
+		district_ad_ancient_databank_max_add = 1
 	}
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 天然の要塞	natural_fortress	（自然発生）
 d_ad_natural_fortress = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -651,14 +485,12 @@ d_ad_natural_fortress = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_natural_fortress_max = 1
+		district_ad_natural_fortress_max_add = 1
 	}
 	drop_weight = {
 		weight = @low
 	}
 }
-
-# 観光特区	special_tourism_zone	（自然発生）
 d_ad_special_tourism_zone = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -666,28 +498,12 @@ d_ad_special_tourism_zone = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_special_tourism_zone_max = 1
+		district_ad_special_tourism_zone_max_add = 1
 	}
 	drop_weight = {
 		weight = @low
 	}
 }
-
-################################
-#####    その他区域追加    ######
-################################
-# 官庁街 government_district
-# 大学街 university_district
-# 住宅街 residential_area
-# 造船工廠 shipbuilding_arsenal
-# 通信区域 communication_area
-# 観光区域 tourist_area
-# 防衛区域 defense_zone
-# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
-# 研究特区 special_research_zone 	研究者 researchers
-# 宇宙港区域 spaceport_area
-# 軌道エレベーター orbital_elevator
-# 官庁街 government_district
 d_ad_government_district = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -695,14 +511,12 @@ d_ad_government_district = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_government_district_max = 5
+		district_ad_government_district_max_add = 5
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-# 大学街 university_district
 d_ad_university_district = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -710,14 +524,12 @@ d_ad_university_district = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_university_district_max = 5
+		district_ad_university_district_max_add = 5
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-# 住宅街 residential_area
 d_ad_residential_area = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -725,14 +537,12 @@ d_ad_residential_area = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_residential_area_max = 5
+		district_ad_residential_area_max_add = 5
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-# 造船工廠 shipbuilding_arsenal
 d_ad_shipbuilding_arsenal = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -740,14 +550,12 @@ d_ad_shipbuilding_arsenal = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_shipbuilding_arsenal_max = 5
+		district_ad_shipbuilding_arsenal_max_add = 5
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-# 通信区域 communication_area
 d_ad_communication_area = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -755,14 +563,12 @@ d_ad_communication_area = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_communication_area_max = 5
+		district_ad_communication_area_max_add = 5
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-# 観光区域 tourist_area
 d_ad_tourist_area = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -770,14 +576,12 @@ d_ad_tourist_area = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_tourist_area_max = 5
+		district_ad_tourist_area_max_add = 5
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-# 防衛区域 defense_zone
 d_ad_defense_zone = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -785,14 +589,12 @@ d_ad_defense_zone = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_defense_zone_max = 5
+		district_ad_defense_zone_max_add = 5
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
 d_ad_conceptual_zone = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -800,14 +602,12 @@ d_ad_conceptual_zone = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_conceptual_zone_max = 5
+		district_ad_conceptual_zone_max_add = 5
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-# 研究特区 special_research_zone 	研究者 researchers
 d_ad_special_research_zone = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -815,14 +615,12 @@ d_ad_special_research_zone = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_special_research_zone_max = 5
+		district_ad_special_research_zone_max_add = 5
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-# 宇宙港区域 spaceport_area
 d_ad_spaceport_area = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -830,14 +628,12 @@ d_ad_spaceport_area = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_spaceport_area_max = 5
+		district_ad_spaceport_area_max_add = 5
 	}
 	drop_weight = {
 		weight = 0
 	}
 }
-
-# 軌道エレベーター orbital_elevator
 d_ad_orbital_elevator = {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
@@ -845,7 +641,63 @@ d_ad_orbital_elevator = {
 	should_swap_deposit_on_terraforming = no
 	category = deposit_cat_rare
 	planet_modifier = {
-		district_ad_orbital_elevator_max = 5
+		district_ad_orbital_elevator_max_add = 5
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+d_ad_artificial_sky_cities = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = no
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
+	icon = d_ad_sky_cities
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_sky_cities_max_add = 1
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+d_ad_artificial_under_water_cities = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = no
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
+	icon = d_ad_under_water_cities
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_under_water_cities_max_add = 1
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+d_ad_artificial_underground_cities = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = no
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
+	icon = d_ad_underground_cities
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_underground_cities_max_add = 1
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+d_ad_artificial_solar_power_generation = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = no
+	use_weights_for_terraforming_swap_types = no
+	should_swap_deposit_on_terraforming = no
+	icon = d_ad_solar_power_generation
+	category = deposit_cat_rare
+	planet_modifier = {
+		district_ad_solar_power_generation_max_add = 1
 	}
 	drop_weight = {
 		weight = 0

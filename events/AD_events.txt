@@ -1,12 +1,11 @@
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
 namespace = additionaldistricts
-# 区画整備
 planet_event = {
 	id = additionaldistricts.1
 	title = additionaldistricts.1.name
 	desc = additionaldistricts.1.desc
 	picture = GFX_evt_ad_large_scale_district
 	is_triggered_only = yes
-	# 官庁街	
 	option = {
 		name = additionaldistricts.1.a
 		custom_tooltip = decision_ad_government_district_effects
@@ -30,8 +29,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_government_district
@@ -73,7 +74,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 官庁街の削除
 	option = {
 		name = additionaldistricts.1.b
 		custom_tooltip = decision_ad_undo_government_district_effects
@@ -88,8 +88,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_government_district
@@ -123,7 +125,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 大学街 
 	option = {
 		name = additionaldistricts.1.c
 		custom_tooltip = decision_ad_university_district_effects
@@ -147,8 +148,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_university_district
@@ -190,7 +193,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 大学街の削除
 	option = {
 		name = additionaldistricts.1.d
 		custom_tooltip = decision_ad_undo_university_district_effects
@@ -205,8 +207,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_university_district
@@ -240,7 +244,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 住宅街
 	option = {
 		name = additionaldistricts.1.e
 		custom_tooltip = decision_ad_residential_area_effects
@@ -264,8 +267,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_residential_area
@@ -307,7 +312,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 住宅街の削除
 	option = {
 		name = additionaldistricts.1.f
 		custom_tooltip = decision_ad_undo_residential_area_effects
@@ -322,8 +326,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_residential_area
@@ -357,7 +363,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 造船工廠
 	option = {
 		name = additionaldistricts.1.g
 		custom_tooltip = decision_ad_shipbuilding_arsenal_effects
@@ -381,8 +386,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_shipbuilding_arsenal
@@ -424,7 +431,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 造船工廠の削除
 	option = {
 		name = additionaldistricts.1.h
 		custom_tooltip = decision_ad_undo_shipbuilding_arsenal_effects
@@ -439,8 +445,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_shipbuilding_arsenal
@@ -474,7 +482,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 通信区域
 	option = {
 		name = additionaldistricts.1.i
 		custom_tooltip = decision_ad_communication_area_effects
@@ -498,8 +505,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_communication_area
@@ -541,7 +550,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 通信区域の削除
 	option = {
 		name = additionaldistricts.1.j
 		custom_tooltip = decision_ad_undo_communication_area_effects
@@ -556,8 +564,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_communication_area
@@ -591,7 +601,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 観光区域
 	option = {
 		name = additionaldistricts.1.k
 		custom_tooltip = decision_ad_tourist_area_effects
@@ -615,8 +624,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_tourist_area
@@ -658,7 +669,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 観光区域の削除
 	option = {
 		name = additionaldistricts.1.l
 		custom_tooltip = decision_ad_undo_communication_area_effects
@@ -673,8 +683,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_tourist_area
@@ -708,7 +720,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 防衛区域
 	option = {
 		name = additionaldistricts.1.n
 		custom_tooltip = decision_ad_defense_zone_effects
@@ -732,8 +743,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_defense_zone
@@ -775,7 +788,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 防衛区域の削除
 	option = {
 		name = additionaldistricts.1.m
 		custom_tooltip = decision_ad_undo_communication_area_effects
@@ -790,8 +802,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_defense_zone
@@ -825,7 +839,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 構想特区
 	option = {
 		name = additionaldistricts.1.o
 		custom_tooltip = decision_ad_conceptual_zone_effects
@@ -849,8 +862,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_conceptual_zone
@@ -892,7 +907,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 構想特区の削除
 	option = {
 		name = additionaldistricts.1.p
 		custom_tooltip = decision_ad_undo_communication_area_effects
@@ -907,8 +921,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_conceptual_zone
@@ -942,7 +958,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 研究特区
 	option = {
 		name = additionaldistricts.1.q
 		custom_tooltip = decision_ad_special_research_zone_effects
@@ -966,8 +981,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_special_research_zone
@@ -1009,7 +1026,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 研究特区の削除
 	option = {
 		name = additionaldistricts.1.r
 		custom_tooltip = decision_ad_undo_communication_area_effects
@@ -1024,8 +1040,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_special_research_zone
@@ -1059,7 +1077,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 宇宙港区域
 	option = {
 		name = additionaldistricts.1.s
 		custom_tooltip = decision_ad_spaceport_area_effects
@@ -1083,8 +1100,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_spaceport_area
@@ -1126,7 +1145,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 宇宙港区域の削除
 	option = {
 		name = additionaldistricts.1.t
 		custom_tooltip = decision_ad_undo_communication_area_effects
@@ -1141,8 +1159,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_spaceport_area
@@ -1176,7 +1196,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 軌道エレベーター
 	option = {
 		name = additionaldistricts.1.u
 		custom_tooltip = decision_ad_orbital_elevator_effects
@@ -1200,8 +1219,10 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			add_deposit = d_ad_orbital_elevator
@@ -1243,7 +1264,6 @@ planet_event = {
 			id = additionaldistricts.1
 		}
 	}
-	# 軌道エレベーターの削除
 	option = {
 		name = additionaldistricts.1.v
 		custom_tooltip = decision_ad_undo_communication_area_effects
@@ -1258,8 +1278,10 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
+		owner = {
+			add_resource = {
+				minerals = -500
+			}
 		}
 		hidden_effect = {
 			remove_deposit = d_ad_orbital_elevator
@@ -1297,15 +1319,12 @@ planet_event = {
 		name = CLOSE
 	}
 }
-
-# 都市区域追加
 planet_event = {
 	id = additionaldistricts.2
 	title = additionaldistricts.2.name
 	desc = additionaldistricts.2.desc
 	picture = GFX_evt_ad_large_scale_district
 	is_triggered_only = yes
-	# 空中都市
 	option = {
 		name = additionaldistricts.2.a
 		custom_tooltip = decision_ad_large_scale_air_area_construction_effects
@@ -1315,7 +1334,11 @@ planet_event = {
 			}
 			habitable_planet = yes
 			NOT = {
-				has_deposit = d_ad_sky_cities
+				has_deposit = d_ad_artificial_sky_cities
+			}
+			count_deposits = {
+				type = d_ad_sky_cities
+				count < 2
 			}
 		}
 		allow = {
@@ -1340,22 +1363,20 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -1000
-			alloys = -500
-			exotic_gases = -100
-		}
-		hidden_effect = {
-			while = {
-				count = 2
-				add_deposit = d_ad_sky_cities
+		owner = {
+			add_resource = {
+				minerals = -1000
+				alloys = -500
+				exotic_gases = -100
 			}
 		}
 		planet_event = {
 			id = additionaldistricts.2
 		}
+		hidden_effect = {
+			ad_add_artificial_sky_cities = yes
+		}
 	}
-	# 空中都市の削除
 	option = {
 		name = additionaldistricts.2.b
 		custom_tooltip = decision_ad_undo_large_scale_air_area_construction_effects
@@ -1363,7 +1384,7 @@ planet_event = {
 			owner = {
 				has_technology = large_scale_air_construction_technology
 			}
-			has_deposit = d_ad_sky_cities
+			has_deposit = d_ad_artificial_sky_cities
 		}
 		allow = {
 			owner = {
@@ -1381,22 +1402,20 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -1000
-			alloys = -500
-			exotic_gases = -100
-		}
-		hidden_effect = {
-			while = {
-				count = 2
-				remove_deposit = d_ad_sky_cities
+		owner = {
+			add_resource = {
+				minerals = -1000
+				alloys = -500
+				exotic_gases = -100
 			}
 		}
 		planet_event = {
 			id = additionaldistricts.2
 		}
+		hidden_effect = {
+			ad_remove_artificial_sky_cities = yes
+		}
 	}
-	# 水中都市
 	option = {
 		name = additionaldistricts.2.c
 		custom_tooltip = decision_ad_large_scale_water_area_construction_effects
@@ -1405,9 +1424,12 @@ planet_event = {
 				has_technology = large_scale_in_water_construction_technology
 			}
 			habitable_planet = yes
-			NOR = {
-				has_planet_flag = do_ad_water_cities_5
-				has_planet_flag = do_ad_water_cities_6
+			NOT = {
+				has_deposit = d_ad_artificial_under_water_cities
+			}
+			count_deposits = {
+				type = d_ad_under_water_cities
+				count < 5
 			}
 		}
 		allow = {
@@ -1428,71 +1450,27 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -1000
-			alloys = -500
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					NOR = {
-						has_planet_flag = do_ad_water_cities_6
-						has_planet_flag = do_ad_water_cities_5
-						has_planet_flag = do_ad_water_cities_4
-						has_planet_flag = do_ad_water_cities_3
-						has_planet_flag = do_ad_water_cities_2
-					}
-				}
-				while = {
-					count = 5
-					add_deposit = d_ad_under_water_cities
-				}
-				set_planet_flag = do_ad_water_cities_5
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_water_cities_2
-				}
-				while = {
-					count = 3
-					add_deposit = d_ad_under_water_cities
-				}
-				set_planet_flag = do_ad_water_cities_5
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_water_cities_3
-				}
-				while = {
-					count = 2
-					add_deposit = d_ad_under_water_cities
-				}
-				set_planet_flag = do_ad_water_cities_5
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_water_cities_4
-				}
-				add_deposit = d_ad_under_water_cities
-				set_planet_flag = do_ad_water_cities_5
+		owner = {
+			add_resource = {
+				minerals = -1000
+				alloys = -500
 			}
 		}
 		planet_event = {
 			id = additionaldistricts.2
 		}
+		hidden_effect = {
+			ad_add_artificial_under_water_cities = yes
+		}
 	}
-	# 水中都市の削除
 	option = {
 		name = additionaldistricts.2.d
-		custom_tooltip = decision_ad_undo_university_district_effects
+		custom_tooltip = decision_ad_undo_large_scale_water_area_construction_effects
 		trigger = {
 			owner = {
 				has_technology = large_scale_in_water_construction_technology
 			}
-			OR = {
-				has_planet_flag = do_ad_water_cities_5
-				has_planet_flag = do_ad_water_cities_6
-			}
+			has_deposit = d_ad_artificial_under_water_cities
 		}
 		allow = {
 			owner = {
@@ -1506,37 +1484,19 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -1000
-			alloys = -500
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					has_planet_flag = do_ad_water_cities_5
-				}
-				while = {
-					count = 5
-					remove_deposit = d_ad_under_water_cities
-				}
-				remove_planet_flag = do_ad_water_cities_5
-			}
-			if = {
-				limit = {
-					has_planet_flag = do_ad_water_cities_6
-				}
-				while = {
-					count = 6
-					remove_deposit = d_ad_under_water_cities
-				}
-				remove_planet_flag = do_ad_water_cities_6
+		owner = {
+			add_resource = {
+				minerals = -1000
+				alloys = -500
 			}
 		}
 		planet_event = {
 			id = additionaldistricts.2
 		}
+		hidden_effect = {
+			ad_remove_artificial_under_water_cities = yes
+		}
 	}
-	# 地下都市
 	option = {
 		name = additionaldistricts.2.e
 		custom_tooltip = decision_ad_large_scale_underground_area_construction_effects
@@ -1544,9 +1504,12 @@ planet_event = {
 			owner = {
 				has_technology = large_scale_ground_construction_technology
 			}
-			NOR = {
-				has_planet_flag = do_ad_underground_cities_5
-				has_planet_flag = do_ad_underground_cities_6
+			NOT = {
+				has_deposit = d_ad_artificial_underground_cities
+			}
+			count_deposits = {
+				type = d_ad_underground_cities
+				count < 5
 			}
 		}
 		allow = {
@@ -1567,60 +1530,19 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
-			alloys = -1000
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					NOR = {
-						has_planet_flag = do_ad_underground_cities_6
-						has_planet_flag = do_ad_underground_cities_5
-						has_planet_flag = do_ad_underground_cities_4
-						has_planet_flag = do_ad_underground_cities_3
-						has_planet_flag = do_ad_underground_cities_2
-					}
-				}
-				while = {
-					count = 5
-					add_deposit = d_ad_underground_cities
-				}
-				set_planet_flag = do_ad_underground_cities_5
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_underground_cities_2
-				}
-				while = {
-					count = 3
-					add_deposit = d_ad_underground_cities
-				}
-				set_planet_flag = do_ad_underground_cities_5
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_underground_cities_3
-				}
-				while = {
-					count = 2
-					add_deposit = d_ad_underground_cities
-				}
-				set_planet_flag = do_ad_underground_cities_5
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_underground_cities_4
-				}
-				add_deposit = d_ad_underground_cities
-				set_planet_flag = do_ad_underground_cities_5
+		owner = {
+			add_resource = {
+				minerals = -500
+				alloys = -1000
 			}
 		}
 		planet_event = {
 			id = additionaldistricts.2
 		}
+		hidden_effect = {
+			ad_add_artificial_underground_cities = yes
+		}
 	}
-	# 地下都市の削除
 	option = {
 		name = additionaldistricts.2.f
 		custom_tooltip = decision_ad_undo_large_scale_underground_area_construction_effects
@@ -1628,10 +1550,7 @@ planet_event = {
 			owner = {
 				has_technology = large_scale_ground_construction_technology
 			}
-			OR = {
-				has_planet_flag = do_ad_underground_cities_5
-				has_planet_flag = do_ad_underground_cities_6
-			}
+			has_deposit = d_ad_artificial_underground_cities
 		}
 		allow = {
 			owner = {
@@ -1645,37 +1564,19 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
-			alloys = -1000
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					has_planet_flag = do_ad_underground_cities_5
-				}
-				while = {
-					count = 5
-					remove_deposit = d_ad_underground_cities
-				}
-				remove_planet_flag = do_ad_underground_cities_5
-			}
-			if = {
-				limit = {
-					has_planet_flag = do_ad_underground_cities_6
-				}
-				while = {
-					count = 6
-					remove_deposit = d_ad_underground_cities
-				}
-				remove_planet_flag = do_ad_underground_cities_6
+		owner = {
+			add_resource = {
+				minerals = -500
+				alloys = -1000
 			}
 		}
 		planet_event = {
 			id = additionaldistricts.2
 		}
+		hidden_effect = {
+			ad_remove_artificial_underground_cities = yes
+		}
 	}
-	# 太陽光発電
 	option = {
 		name = additionaldistricts.2.g
 		custom_tooltip = decision_ad_solar_power_generation_effects
@@ -1685,7 +1586,11 @@ planet_event = {
 			}
 			habitable_planet = yes
 			NOT = {
-				has_deposit = d_ad_solar_power_generation
+				has_deposit = d_ad_artificial_solar_power_generation
+			}
+			count_deposits = {
+				type = d_ad_solar_power_generation
+				count < 5
 			}
 		}
 		allow = {
@@ -1702,20 +1607,18 @@ planet_event = {
 				has_modifier = slave_colony
 			}
 		}
-		add_resource = {
-			minerals = -500
-		}
-		hidden_effect = {
-			while = {
-				count = 5
-				add_deposit = d_ad_solar_power_generation
+		owner = {
+			add_resource = {
+				minerals = -500
 			}
 		}
 		planet_event = {
 			id = additionaldistricts.2
 		}
+		hidden_effect = {
+			ad_add_artificial_solar_power_generation = yes
+		}
 	}
-	# 太陽光発電の削除
 	option = {
 		name = additionaldistricts.2.h
 		custom_tooltip = decision_ad_undo_solar_power_generation_effects
@@ -1723,7 +1626,7 @@ planet_event = {
 			owner = {
 				has_technology = mixed_use_development_plan
 			}
-			has_deposit = d_ad_solar_power_generation
+			has_deposit = d_ad_artificial_solar_power_generation
 		}
 		allow = {
 			owner = {
@@ -1733,25 +1636,22 @@ planet_event = {
 				}
 			}
 		}
-		add_resource = {
-			minerals = -500
-		}
-		hidden_effect = {
-			while = {
-				count = 5
-				remove_deposit = d_ad_solar_power_generation
+		owner = {
+			add_resource = {
+				minerals = -500
 			}
 		}
 		planet_event = {
 			id = additionaldistricts.2
+		}
+		hidden_effect = {
+			ad_remove_artificial_solar_power_generation = yes
 		}
 	}
 	option = {
 		name = CLOSE
 	}
 }
-
-# 対宙ミサイル施設	軌道上の艦隊に与ダメージ
 planet_event = {
 	id = additionaldistricts.100
 	hide_window = yes
@@ -1763,7 +1663,7 @@ planet_event = {
 	}
 	immediate = {
 		random_list = {
-			5 =  {
+			5 = {
 				create_fleet = {
 					name = "Planet Defense"
 					settings = {
@@ -1772,7 +1672,7 @@ planet_event = {
 					effect = {
 						set_owner = root.owner
 						create_ship = {
-							design = "NAME_NGM_planet_defence"
+							design = NAME_NGM_planet_defence
 							name = "Planet Defense"
 						}
 						set_location = {
@@ -1785,7 +1685,9 @@ planet_event = {
 					factor = value:num_active_buildings|BUILDING|building_ad_Anti_s_misile|
 				}
 			}
-			995 = {}
+			995 = {
+
+			}
 		}
 	}
 }

@@ -1,8 +1,4 @@
-
-##############################
-#####    都市区域追加    ######
-##############################
-#大規模空中地区建設 large_scale_air_area_construction
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
 decision_ad_large_scale_air_area_construction = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -16,30 +12,24 @@ decision_ad_large_scale_air_area_construction = {
 	}
 	potential = {
 		habitable_planet = yes
-		is_ai = yes
-		NOT = {
-			has_deposit = d_ad_sky_cities
-		}
-		NOT = {
-			has_planet_flag = do_ad_sky_cities
+		owner = {
+			is_ai = yes
 		}
 		owner = {
 			has_technology = large_scale_air_construction_technology
 		}
-	}
-	allow = {
 		NOT = {
-			has_planet_flag = do_ad_sky_cities
+			has_deposit = d_ad_artificial_sky_cities
+		}
+		count_deposits = {
+			type = d_ad_sky_cities
+			count < 2
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_large_scale_air_area_construction_effects
 		hidden_effect = {
-			while = {
-				count = 2
-				add_deposit = d_ad_sky_cities
-			}
-			set_planet_flag = do_ad_sky_cities
+			ad_add_artificial_sky_cities = yes
 		}
 	}
 	ai_weight = {
@@ -65,15 +55,19 @@ decision_ad_large_scale_air_area_construction = {
 		}
 		modifier = {
 			factor = 10
-			free_housing < 5
+			free_housing < 500
 		}
 		modifier = {
 			factor = 500
-			free_housing < 1
+			free_housing < 100
+		}
+	}
+	allow = {
+		NOT = {
+			has_deposit = d_ad_artificial_sky_cities
 		}
 	}
 }
-
 decision_ad_undo_large_scale_air_area_construction = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -86,31 +80,27 @@ decision_ad_undo_large_scale_air_area_construction = {
 		}
 	}
 	potential = {
-		is_ai = yes
-		has_planet_flag = do_ad_sky_cities
+		owner = {
+			is_ai = yes
+		}
 		owner = {
 			has_technology = large_scale_air_construction_technology
 		}
-	}
-	allow = {
-		has_planet_flag = do_ad_sky_cities
+		has_deposit = d_ad_artificial_sky_cities
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_large_scale_air_area_construction_effects
-		while = {
-			count = 2
-			remove_deposit = d_ad_sky_cities
-		}
 		hidden_effect = {
-			remove_planet_flag = do_ad_sky_cities
+			ad_remove_artificial_sky_cities = yes
 		}
 	}
 	ai_weight = {
 		weight = 0
 	}
+	allow = {
+		has_deposit = d_ad_artificial_sky_cities
+	}
 }
-
-#大規模水中地区建設 large_scale_water_area_construction 
 decision_ad_large_scale_water_area_construction = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -123,30 +113,24 @@ decision_ad_large_scale_water_area_construction = {
 	}
 	potential = {
 		habitable_planet = yes
-		is_ai = yes
-		NOT = {
-			has_deposit = d_ad_under_water_cities
-		}
-		NOT = {
-			has_planet_flag = do_ad_under_water_cities
+		owner = {
+			is_ai = yes
 		}
 		owner = {
 			has_technology = large_scale_in_water_construction_technology
 		}
-	}
-	allow = {
 		NOT = {
-			has_planet_flag = do_ad_under_water_cities
+			has_deposit = d_ad_artificial_under_water_cities
+		}
+		count_deposits = {
+			type = d_ad_under_water_cities
+			count < 5
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_large_scale_water_area_construction_effects
 		hidden_effect = {
-			while = {
-				count = 5
-				add_deposit = d_ad_under_water_cities
-			}
-			set_planet_flag = do_ad_under_water_cities
+			ad_add_artificial_under_water_cities = yes
 		}
 	}
 	ai_weight = {
@@ -167,16 +151,20 @@ decision_ad_large_scale_water_area_construction = {
 			}
 		}
 		modifier = {
-			weight = 8
-			free_housing < 5
+			add = 8
+			free_housing < 500
 		}
 		modifier = {
 			factor = 500
-			free_housing < 1
+			free_housing < 100
+		}
+	}
+	allow = {
+		NOT = {
+			has_deposit = d_ad_artificial_under_water_cities
 		}
 	}
 }
-
 decision_ad_undo_large_scale_water_area_construction = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -188,31 +176,27 @@ decision_ad_undo_large_scale_water_area_construction = {
 		}
 	}
 	potential = {
-		is_ai = yes
-		has_planet_flag = do_ad_under_water_cities
+		owner = {
+			is_ai = yes
+		}
 		owner = {
 			has_technology = large_scale_in_water_construction_technology
 		}
-	}
-	allow = {
-		has_planet_flag = do_ad_under_water_cities
+		has_deposit = d_ad_artificial_under_water_cities
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_large_scale_water_area_construction_effects
-		while = {
-			count = 5
-			remove_deposit = d_ad_under_water_cities
-		}
 		hidden_effect = {
-			remove_planet_flag = do_ad_under_water_cities
+			ad_remove_artificial_under_water_cities = yes
 		}
 	}
 	ai_weight = {
 		weight = 0
 	}
+	allow = {
+		has_deposit = d_ad_artificial_under_water_cities
+	}
 }
-
-#大規模地下地区建設 large_scale_underground_area_construction 
 decision_ad_large_scale_underground_area_construction = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -225,30 +209,24 @@ decision_ad_large_scale_underground_area_construction = {
 	}
 	potential = {
 		habitable_planet = yes
-		is_ai = yes
-		NOT = {
-			has_deposit = d_ad_underground_cities
-		}
-		NOT = {
-			has_planet_flag = do_ad_underground_cities
+		owner = {
+			is_ai = yes
 		}
 		owner = {
 			has_technology = large_scale_ground_construction_technology
 		}
-	}
-	allow = {
 		NOT = {
-			has_planet_flag = do_ad_underground_cities
+			has_deposit = d_ad_artificial_underground_cities
+		}
+		count_deposits = {
+			type = d_ad_underground_cities
+			count < 5
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_large_scale_underground_area_construction_effects
 		hidden_effect = {
-			while = {
-				count = 5
-				add_deposit = d_ad_underground_cities
-			}
-			set_planet_flag = do_ad_underground_cities
+			ad_add_artificial_underground_cities = yes
 		}
 	}
 	ai_weight = {
@@ -270,15 +248,19 @@ decision_ad_large_scale_underground_area_construction = {
 		}
 		modifier = {
 			factor = 6
-			free_housing < 5
+			free_housing < 500
 		}
 		modifier = {
 			factor = 500
-			free_housing < 1
+			free_housing < 100
+		}
+	}
+	allow = {
+		NOT = {
+			has_deposit = d_ad_artificial_underground_cities
 		}
 	}
 }
-
 decision_ad_undo_large_scale_underground_area_construction = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -290,34 +272,27 @@ decision_ad_undo_large_scale_underground_area_construction = {
 		}
 	}
 	potential = {
-		is_ai = yes
-		has_planet_flag = do_ad_underground_cities
+		owner = {
+			is_ai = yes
+		}
 		owner = {
 			has_technology = large_scale_ground_construction_technology
 		}
-	}
-	allow = {
-		has_planet_flag = do_ad_underground_cities
+		has_deposit = d_ad_artificial_underground_cities
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_large_scale_underground_area_construction_effects
-		while = {
-			count = 5
-			remove_deposit = d_ad_underground_cities
-		}
 		hidden_effect = {
-			remove_planet_flag = do_ad_underground_cities
+			ad_remove_artificial_underground_cities = yes
 		}
 	}
 	ai_weight = {
 		weight = 0
 	}
+	allow = {
+		has_deposit = d_ad_artificial_underground_cities
+	}
 }
-
-##############################
-#####    発電区域追加    ######
-##############################
-# 太陽光発電	solar_power_generation	技術者*5	（技術開発）
 decision_ad_solar_power_generation = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -329,41 +304,38 @@ decision_ad_solar_power_generation = {
 	}
 	potential = {
 		habitable_planet = yes
-		is_ai = yes
-		NOT = {
-			has_planet_flag = do_ad_solar_power_generation
+		owner = {
+			is_ai = yes
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
-	}
-	allow = {
 		NOT = {
-			has_planet_flag = do_ad_solar_power_generation
+			has_deposit = d_ad_artificial_solar_power_generation
+		}
+		count_deposits = {
+			type = d_ad_solar_power_generation
+			count < 5
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_solar_power_generation_effects
 		hidden_effect = {
-			while = {
-				count = 5
-				add_deposit = d_ad_solar_power_generation
-			}
-			set_planet_flag = do_ad_solar_power_generation
+			ad_add_artificial_solar_power_generation = yes
 		}
 	}
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = 4
-			count_owned_pop = {
+			add = 4
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = worker
 						is_pop_category = simple_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -379,52 +351,37 @@ decision_ad_solar_power_generation = {
 			}
 		}
 	}
+	allow = {
+		NOT = {
+			has_deposit = d_ad_artificial_solar_power_generation
+		}
+	}
 }
-
-# 太陽光発電の削除
 decision_ad_undo_solar_power_generation = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
-		has_planet_flag = do_ad_solar_power_generation
+		owner = {
+			is_ai = yes
+		}
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
-	}
-	allow = {
-		has_planet_flag = do_ad_solar_power_generation
+		has_deposit = d_ad_artificial_solar_power_generation
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_solar_power_generation_effects
-		while = {
-			count = 5
-			remove_deposit = d_ad_solar_power_generation
-		}
 		hidden_effect = {
-			remove_planet_flag = do_ad_solar_power_generation
+			ad_remove_artificial_solar_power_generation = yes
 		}
 	}
 	ai_weight = {
 		weight = 0
 	}
+	allow = {
+		has_deposit = d_ad_artificial_solar_power_generation
+	}
 }
-
-################################
-#####    その他区域追加    ######
-################################
-# 官庁街
-# 大学街
-# 住宅街
-# 造船工廠
-# 通信区域
-# 観光区域
-# 防衛区域
-# 構想特区 起業家 （研究力とか交易価値？）
-# 研究特区 	研究者
-# 宇宙港区域
-# 軌道エレベーター
-# 官庁街	
 decision_ad_government_district = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -438,7 +395,9 @@ decision_ad_government_district = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_government_district
 		}
@@ -494,14 +453,14 @@ decision_ad_government_district = {
 		weight = 50
 		modifier = {
 			factor = 4
-			count_owned_pop = {
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = specialist
 						is_pop_category = complex_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -527,13 +486,13 @@ decision_ad_government_district = {
 		}
 	}
 }
-
-# 官庁街の削除
 decision_ad_undo_government_district = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_government_district
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -577,8 +536,6 @@ decision_ad_undo_government_district = {
 		weight = 0
 	}
 }
-
-# 大学街 university_district
 decision_ad_university_district = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -592,7 +549,9 @@ decision_ad_university_district = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_university_district
 		}
@@ -657,14 +616,14 @@ decision_ad_university_district = {
 		}
 		modifier = {
 			factor = 4
-			count_owned_pop = {
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = specialist
 						is_pop_category = complex_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -690,13 +649,13 @@ decision_ad_university_district = {
 		}
 	}
 }
-
-# 大学街の削除
 decision_ad_undo_university_district = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_university_district
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -740,8 +699,6 @@ decision_ad_undo_university_district = {
 		weight = 0
 	}
 }
-
-# 住宅街 residential_area
 decision_ad_residential_area = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -755,7 +712,9 @@ decision_ad_residential_area = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_residential_area
 		}
@@ -792,13 +751,13 @@ decision_ad_residential_area = {
 		}
 	}
 }
-
-# 住宅街の削除
 decision_ad_undo_residential_area = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_residential_area
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -842,8 +801,6 @@ decision_ad_undo_residential_area = {
 		weight = 0
 	}
 }
-
-# 造船工廠 shipbuilding_arsenal
 decision_ad_shipbuilding_arsenal = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -857,7 +814,9 @@ decision_ad_shipbuilding_arsenal = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_shipbuilding_arsenal
 		}
@@ -913,14 +872,14 @@ decision_ad_shipbuilding_arsenal = {
 		weight = 50
 		modifier = {
 			factor = 4
-			count_owned_pop = {
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = specialist
 						is_pop_category = complex_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -946,13 +905,13 @@ decision_ad_shipbuilding_arsenal = {
 		}
 	}
 }
-
-# 造船工廠の削除
 decision_ad_undo_shipbuilding_arsenal = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_shipbuilding_arsenal
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -996,8 +955,6 @@ decision_ad_undo_shipbuilding_arsenal = {
 		weight = 0
 	}
 }
-
-# 通信区域 communication_area
 decision_ad_communication_area = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -1011,7 +968,9 @@ decision_ad_communication_area = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_communication_area
 		}
@@ -1067,14 +1026,14 @@ decision_ad_communication_area = {
 		weight = 50
 		modifier = {
 			factor = 4
-			count_owned_pop = {
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = specialist
 						is_pop_category = complex_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -1100,13 +1059,13 @@ decision_ad_communication_area = {
 		}
 	}
 }
-
-# 通信区域の削除
 decision_ad_undo_communication_area = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_communication_area
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1150,8 +1109,6 @@ decision_ad_undo_communication_area = {
 		weight = 0
 	}
 }
-
-# 観光区域 tourist_area
 decision_ad_tourist_area = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -1165,7 +1122,9 @@ decision_ad_tourist_area = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_tourist_area
 		}
@@ -1221,14 +1180,14 @@ decision_ad_tourist_area = {
 		weight = 50
 		modifier = {
 			factor = 4
-			count_owned_pop = {
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = specialist
 						is_pop_category = complex_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -1254,13 +1213,13 @@ decision_ad_tourist_area = {
 		}
 	}
 }
-
-# 観光区域の削除
 decision_ad_undo_tourist_area = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_tourist_area
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1304,8 +1263,6 @@ decision_ad_undo_tourist_area = {
 		weight = 0
 	}
 }
-
-# 防衛区域
 decision_ad_defense_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -1319,7 +1276,9 @@ decision_ad_defense_zone = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_defense_zone
 		}
@@ -1375,14 +1334,14 @@ decision_ad_defense_zone = {
 		weight = 50
 		modifier = {
 			factor = 4
-			count_owned_pop = {
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = specialist
 						is_pop_category = complex_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -1408,13 +1367,13 @@ decision_ad_defense_zone = {
 		}
 	}
 }
-
-# 防衛区域の削除
 decision_ad_undo_defense_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_defense_zone
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1458,8 +1417,6 @@ decision_ad_undo_defense_zone = {
 		weight = 0
 	}
 }
-
-# 構想特区 conceptual_zone	起業家 entrepreneurs （研究力とか交易価値？）
 decision_ad_conceptual_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -1473,7 +1430,9 @@ decision_ad_conceptual_zone = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_conceptual_zone
 		}
@@ -1529,14 +1488,14 @@ decision_ad_conceptual_zone = {
 		weight = 50
 		modifier = {
 			factor = 4
-			count_owned_pop = {
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = specialist
 						is_pop_category = complex_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -1562,13 +1521,13 @@ decision_ad_conceptual_zone = {
 		}
 	}
 }
-
-# 構想特区の削除
 decision_ad_undo_conceptual_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_conceptual_zone
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1612,8 +1571,6 @@ decision_ad_undo_conceptual_zone = {
 		weight = 0
 	}
 }
-
-# 研究特区 special_research_zone 	研究者 researchers
 decision_ad_special_research_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -1627,7 +1584,9 @@ decision_ad_special_research_zone = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_special_research_zone
 		}
@@ -1692,14 +1651,14 @@ decision_ad_special_research_zone = {
 		}
 		modifier = {
 			factor = 4
-			count_owned_pop = {
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = specialist
 						is_pop_category = complex_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -1725,13 +1684,13 @@ decision_ad_special_research_zone = {
 		}
 	}
 }
-
-# 研究特区の削除
 decision_ad_undo_special_research_zone = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_special_research_zone
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1775,8 +1734,6 @@ decision_ad_undo_special_research_zone = {
 		weight = 0
 	}
 }
-
-# 宇宙港区域 spaceport_area
 decision_ad_spaceport_area = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -1790,7 +1747,9 @@ decision_ad_spaceport_area = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_spaceport_area
 		}
@@ -1846,14 +1805,14 @@ decision_ad_spaceport_area = {
 		weight = 50
 		modifier = {
 			factor = 4
-			count_owned_pop = {
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = specialist
 						is_pop_category = complex_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -1879,13 +1838,13 @@ decision_ad_spaceport_area = {
 		}
 	}
 }
-
-# 宇宙港区域の削除
 decision_ad_undo_spaceport_area = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_spaceport_area
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1929,8 +1888,6 @@ decision_ad_undo_spaceport_area = {
 		weight = 0
 	}
 }
-
-# 軌道エレベーター orbital_elevator
 decision_ad_orbital_elevator = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -1944,7 +1901,9 @@ decision_ad_orbital_elevator = {
 		NOT = {
 			has_planet_flag = do_ad_4
 		}
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		NOT = {
 			has_planet_flag = do_ad_orbital_elevator
 		}
@@ -2000,14 +1959,14 @@ decision_ad_orbital_elevator = {
 		weight = 50
 		modifier = {
 			factor = 4
-			count_owned_pop = {
+			count_owned_pop_amount = {
 				limit = {
 					OR = {
 						is_pop_category = specialist
 						is_pop_category = complex_drone
 					}
 				}
-				count > 20
+				count > 2000
 			}
 		}
 		modifier = {
@@ -2033,13 +1992,13 @@ decision_ad_orbital_elevator = {
 		}
 	}
 }
-
-# 軌道エレベーターの削除
 decision_ad_undo_orbital_elevator = {
 	owned_planets_only = yes
 	enactment_time = 0
 	potential = {
-		is_ai = yes
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = do_ad_orbital_elevator
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -2083,8 +2042,6 @@ decision_ad_undo_orbital_elevator = {
 		weight = 0
 	}
 }
-
-# 区画整備
 decision_ad_district = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -2106,8 +2063,6 @@ decision_ad_district = {
 		weight = 0
 	}
 }
-
-# 都市区域追加
 decision_ad_large_scale_district = {
 	owned_planets_only = yes
 	enactment_time = 0

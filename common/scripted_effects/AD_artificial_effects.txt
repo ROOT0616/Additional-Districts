@@ -1,0 +1,273 @@
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
+ad_add_artificial_sky_cities = {
+	if = {
+		limit = {
+			NOT = {
+				has_deposit = d_ad_artificial_sky_cities
+			}
+		}
+		if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_sky_cities
+					count = 0
+				}
+			}
+			while = {
+				count = 2
+				add_deposit = d_ad_artificial_sky_cities
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_sky_cities
+					count = 1
+				}
+			}
+			while = {
+				count = 1
+				add_deposit = d_ad_artificial_sky_cities
+			}
+		}
+	}
+}
+ad_remove_artificial_sky_cities = {
+	while = {
+		limit = {
+			has_deposit = d_ad_artificial_sky_cities
+		}
+		remove_deposit = d_ad_artificial_sky_cities
+	}
+}
+ad_add_artificial_under_water_cities = {
+	if = {
+		limit = {
+			NOT = {
+				has_deposit = d_ad_artificial_under_water_cities
+			}
+		}
+		if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_under_water_cities
+					count = 0
+				}
+			}
+			while = {
+				count = 5
+				add_deposit = d_ad_artificial_under_water_cities
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_under_water_cities
+					count = 1
+				}
+			}
+			while = {
+				count = 4
+				add_deposit = d_ad_artificial_under_water_cities
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_under_water_cities
+					count = 2
+				}
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_artificial_under_water_cities
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_under_water_cities
+					count = 3
+				}
+			}
+			while = {
+				count = 2
+				add_deposit = d_ad_artificial_under_water_cities
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_under_water_cities
+					count = 4
+				}
+			}
+			while = {
+				count = 1
+				add_deposit = d_ad_artificial_under_water_cities
+			}
+		}
+	}
+}
+ad_remove_artificial_under_water_cities = {
+	while = {
+		limit = {
+			has_deposit = d_ad_artificial_under_water_cities
+		}
+		remove_deposit = d_ad_artificial_under_water_cities
+	}
+}
+ad_add_artificial_underground_cities = {
+	if = {
+		limit = {
+			NOT = {
+				has_deposit = d_ad_artificial_underground_cities
+			}
+		}
+		if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_underground_cities
+					count = 0
+				}
+			}
+			while = {
+				count = 5
+				add_deposit = d_ad_artificial_underground_cities
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_underground_cities
+					count = 1
+				}
+			}
+			while = {
+				count = 4
+				add_deposit = d_ad_artificial_underground_cities
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_underground_cities
+					count = 2
+				}
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_artificial_underground_cities
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_underground_cities
+					count = 3
+				}
+			}
+			while = {
+				count = 2
+				add_deposit = d_ad_artificial_underground_cities
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_underground_cities
+					count = 4
+				}
+			}
+			while = {
+				count = 1
+				add_deposit = d_ad_artificial_underground_cities
+			}
+		}
+	}
+}
+ad_remove_artificial_underground_cities = {
+	while = {
+		limit = {
+			has_deposit = d_ad_artificial_underground_cities
+		}
+		remove_deposit = d_ad_artificial_underground_cities
+	}
+}
+ad_add_artificial_solar_power_generation = {
+	if = {
+		limit = {
+			NOT = {
+				has_deposit = d_ad_artificial_solar_power_generation
+			}
+		}
+		if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_solar_power_generation
+					count = 0
+				}
+			}
+			while = {
+				count = 5
+				add_deposit = d_ad_artificial_solar_power_generation
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_solar_power_generation
+					count = 1
+				}
+			}
+			while = {
+				count = 4
+				add_deposit = d_ad_artificial_solar_power_generation
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_solar_power_generation
+					count = 2
+				}
+			}
+			while = {
+				count = 3
+				add_deposit = d_ad_artificial_solar_power_generation
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_solar_power_generation
+					count = 3
+				}
+			}
+			while = {
+				count = 2
+				add_deposit = d_ad_artificial_solar_power_generation
+			}
+		}
+		else_if = {
+			limit = {
+				count_deposits = {
+					type = d_ad_solar_power_generation
+					count = 4
+				}
+			}
+			while = {
+				count = 1
+				add_deposit = d_ad_artificial_solar_power_generation
+			}
+		}
+	}
+}
+ad_remove_artificial_solar_power_generation = {
+	while = {
+		limit = {
+			has_deposit = d_ad_artificial_solar_power_generation
+		}
+		remove_deposit = d_ad_artificial_solar_power_generation
+	}
+}

@@ -1,10 +1,11 @@
-# 	worker
-# 1.水中農家    消費財    1    →食料    6
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
 ad_water_farmer = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -17,8 +18,8 @@ ad_water_farmer = {
 			food = 6
 		}
 		upkeep = {
-				consumer_goods = 1
-			}
+			consumer_goods = 1
+		}
 	}
 	weight = {
 		weight = @worker_job_weight
@@ -31,7 +32,9 @@ ad_water_farmer = {
 		}
 		modifier = {
 			factor = 1.1
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 		}
 		modifier = {
 			factor = 10
@@ -45,7 +48,9 @@ ad_water_farmer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -54,7 +59,11 @@ ad_water_farmer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -97,7 +106,9 @@ ad_water_farmer = {
 		}
 		modifier = {
 			factor = 1.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			OR = {
 				has_trait = trait_robot_domestic_protocols
 				has_trait = trait_charismatic
@@ -105,38 +116,18 @@ ad_water_farmer = {
 		}
 		modifier = {
 			factor = 0.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			has_trait = trait_repugnant
 		}
 		modifier = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 5
-
-			OR = {
-				is_unemployed = yes
-				has_job = farmer
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = farmer
-			}
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-
 		modifier = {
 			factor = 0.5
 			has_trait = trait_lithoid
-
 			owner = {
 				is_lithoid_empire = yes
 				has_monthly_income = {
@@ -151,13 +142,13 @@ ad_water_farmer = {
 		}
 	}
 }
-
-# 2.施設維持業者    消費財    1    →    鉱石    5    快適度    3
 ad_facility_maintainer = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -165,7 +156,7 @@ ad_facility_maintainer = {
 	}
 	possible_precalc = can_fill_worker_job
 	planet_modifier = {
-		planet_amenities_add = 3
+		planet_amenities_add = 300
 	}
 	resources = {
 		category = planet_miners
@@ -180,13 +171,13 @@ ad_facility_maintainer = {
 		weight = @worker_job_weight
 	}
 }
-
-# 3.地熱技師    エネルギ    6
 ad_geothermal_technician = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -281,64 +272,34 @@ ad_geothermal_technician = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		#modifier = {
-		#	factor = 500
-		#	planet = {
-		#		owner = {
-		#			is_megacorp = yes
-		#		}
-		#	}
-		#}
-
-		# low income modifier
-		modifier = {
-			factor = 2
-
-			OR = {
-				is_unemployed = yes
-				has_job = "technician"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "technician"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 0
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# 4.原子技師    消費財    2    →    エネルギ    8
 ad_atomic_engineer = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
-
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_worker_job
 	possible = {
-		hidden_trigger = { exists = owner }
+		hidden_trigger = {
+			exists = owner
+		}
 		owner = {
 			is_gestalt = no
 		}
 	}
-
 	resources = {
 		category = planet_technician
 		produces = {
@@ -378,16 +339,6 @@ ad_atomic_engineer = {
 	}
 	weight = {
 		weight = @worker_job_weight
-		mult = value:job_weights_modifier|JOB|technician|RESOURCE|energy|
-		modifier = {
-			factor = 100
-			OR = {
-				is_non_sapient_robot = yes
-				is_shackled_robot = yes
-			}
-			can_take_servant_job = no
-			can_fill_specialist_job = no
-		}
 		modifier = {
 			factor = 8
 			is_enslaved = yes
@@ -410,12 +361,11 @@ ad_atomic_engineer = {
 			factor = 0.25
 			can_take_servant_job = yes
 		}
-		# low income modifier
 		modifier = {
 			factor = 250
 			exists = planet
 			planet = {
-				has_available_jobs = "technician"
+				has_available_jobs = technician
 			}
 			exists = owner
 			owner = {
@@ -428,13 +378,14 @@ ad_atomic_engineer = {
 		}
 	}
 }
-
-# 5.水中採掘者    消費財    1    →    鉱石    5
 ad_underwater_miner = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_mineral_purification_plant
-	clothes_texture_index = 2
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_mineral_purification_plant
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -471,7 +422,9 @@ ad_underwater_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -480,7 +433,11 @@ ad_underwater_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -527,39 +484,20 @@ ad_underwater_miner = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.1
-
-			OR = {
-				is_unemployed = yes
-				has_job = "miner"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "miner"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 30
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# 7.低効率採掘者    鉱石    3
 ad_low_efficiency_miner = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_mineral_purification_plant
-	clothes_texture_index = 2
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_mineral_purification_plant
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -593,7 +531,9 @@ ad_low_efficiency_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -602,7 +542,11 @@ ad_low_efficiency_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -649,39 +593,19 @@ ad_low_efficiency_miner = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.1
-
-			OR = {
-				is_unemployed = yes
-				has_job = "miner"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "miner"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 30
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# 8.菌農家    食料    5
 ad_fungus_farmer = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -705,7 +629,9 @@ ad_fungus_farmer = {
 		}
 		modifier = {
 			factor = 1.1
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 		}
 		modifier = {
 			factor = 10
@@ -719,7 +645,9 @@ ad_fungus_farmer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -728,7 +656,11 @@ ad_fungus_farmer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -771,7 +703,9 @@ ad_fungus_farmer = {
 		}
 		modifier = {
 			factor = 1.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			OR = {
 				has_trait = trait_robot_domestic_protocols
 				has_trait = trait_charismatic
@@ -779,38 +713,18 @@ ad_fungus_farmer = {
 		}
 		modifier = {
 			factor = 0.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			has_trait = trait_repugnant
 		}
 		modifier = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.2
-
-			OR = {
-				is_unemployed = yes
-				has_job = farmer
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = farmer
-			}
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-
 		modifier = {
 			factor = 0.5
 			has_trait = trait_lithoid
-
 			owner = {
 				is_lithoid_empire = yes
 				has_monthly_income = {
@@ -825,13 +739,13 @@ ad_fungus_farmer = {
 		}
 	}
 }
-
-# 9.酪農家    消費財    1    →    食物 8
 ad_dairy_farmer = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -858,7 +772,9 @@ ad_dairy_farmer = {
 		}
 		modifier = {
 			factor = 1.1
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 		}
 		modifier = {
 			factor = 10
@@ -872,7 +788,9 @@ ad_dairy_farmer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -881,7 +799,11 @@ ad_dairy_farmer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -924,7 +846,9 @@ ad_dairy_farmer = {
 		}
 		modifier = {
 			factor = 1.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			OR = {
 				has_trait = trait_robot_domestic_protocols
 				has_trait = trait_charismatic
@@ -932,38 +856,18 @@ ad_dairy_farmer = {
 		}
 		modifier = {
 			factor = 0.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			has_trait = trait_repugnant
 		}
 		modifier = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.2
-
-			OR = {
-				is_unemployed = yes
-				has_job = farmer
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = farmer
-			}
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-
 		modifier = {
 			factor = 0.5
 			has_trait = trait_lithoid
-
 			owner = {
 				is_lithoid_empire = yes
 				has_monthly_income = {
@@ -978,13 +882,13 @@ ad_dairy_farmer = {
 		}
 	}
 }
-
-# 10.大規模農家    食料    6
 ad_large_scale_farmer = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1008,7 +912,9 @@ ad_large_scale_farmer = {
 		}
 		modifier = {
 			factor = 1.1
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 		}
 		modifier = {
 			factor = 10
@@ -1022,7 +928,9 @@ ad_large_scale_farmer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -1031,7 +939,11 @@ ad_large_scale_farmer = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -1074,7 +986,9 @@ ad_large_scale_farmer = {
 		}
 		modifier = {
 			factor = 1.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			OR = {
 				has_trait = trait_robot_domestic_protocols
 				has_trait = trait_charismatic
@@ -1082,38 +996,18 @@ ad_large_scale_farmer = {
 		}
 		modifier = {
 			factor = 0.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			has_trait = trait_repugnant
 		}
 		modifier = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.2
-
-			OR = {
-				is_unemployed = yes
-				has_job = farmer
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = farmer
-			}
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-
 		modifier = {
 			factor = 0.5
 			has_trait = trait_lithoid
-
 			owner = {
 				is_lithoid_empire = yes
 				has_monthly_income = {
@@ -1128,13 +1022,13 @@ ad_large_scale_farmer = {
 		}
 	}
 }
-
-# 11.サービス職    快適度+2、幸福度+1%
 ad_servicer = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1142,20 +1036,20 @@ ad_servicer = {
 	}
 	possible_precalc = can_fill_worker_job
 	planet_modifier = {
-		planet_amenities_add = 2
+		planet_amenities_add = 200
 		pop_happiness = 0.01
 	}
 	weight = {
 		weight = @worker_job_weight
 	}
 }
-
-# 12.強制労働者    食料、鉱物+1ずつ、消費財+0.1
 ad_forcrd_larbor = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1172,12 +1066,15 @@ ad_forcrd_larbor = {
 	}
 	weight = {
 		weight = @worker_job_weight
-		mult = value:job_weights_modifier|JOB|miner|RESOURCE|minerals|
 		modifier = {
 			factor = 10
 			is_enslaved = yes
 			can_take_servant_job = no
-			NOT = { has_slavery_type = { type = slavery_indentured } }
+			NOT = {
+				has_slavery_type = {
+					type = slavery_indentured
+				}
+			}
 		}
 		modifier = {
 			factor = 3
@@ -1186,7 +1083,9 @@ ad_forcrd_larbor = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -1195,7 +1094,11 @@ ad_forcrd_larbor = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -1207,13 +1110,14 @@ ad_forcrd_larbor = {
 		}
 	}
 }
-
-# 効率的採掘者    鉱石    10
 ad_efficient_miner = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_mineral_purification_plant
-	clothes_texture_index = 2
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_mineral_purification_plant
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1247,7 +1151,9 @@ ad_efficient_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -1256,7 +1162,11 @@ ad_efficient_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -1303,40 +1213,20 @@ ad_efficient_miner = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 2
-
-			OR = {
-				is_unemployed = yes
-				has_job = "miner"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "miner"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 30
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# 	specialist
-# 軌道鉱物学者   鉱物6,工学2
 ad_space_miner = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_mineral_purification_plant
-	clothes_texture_index = 2
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_mineral_purification_plant
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1371,7 +1261,9 @@ ad_space_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -1380,7 +1272,11 @@ ad_space_miner = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -1427,39 +1323,19 @@ ad_space_miner = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 5
-
-			OR = {
-				is_unemployed = yes
-				has_job = "miner"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "miner"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 30
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# データマイナー    消費財    5    →    物理 社会 工学2 科学者POPの資源産出0.05 暗号力1
 ad_data_minor = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1487,13 +1363,13 @@ ad_data_minor = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 造船技師    消費財    3  合金2  →    造船速度0.05    宇宙軍許容量    2
 ad_shipwright = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1515,13 +1391,13 @@ ad_shipwright = {
 		weight = @specialist_job_weight
 	}
 }
-
-# インフラ技師    消費財    3    →    労働者POPの資源産出0.05
 ad_infrastructure_engineer = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1541,21 +1417,21 @@ ad_infrastructure_engineer = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 将校    消費財    3    →    防衛軍5    宇宙軍許容量    10
 ad_commissioned_officer = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
 	possible_precalc = can_fill_specialist_job
-	pop_modifier = {
-		pop_defense_armies_add = 5
+	planet_modifier = {
+		planet_defense_armies_add = 5
 	}
 	country_modifier = {
 		country_naval_cap_add = 10
@@ -1570,13 +1446,13 @@ ad_commissioned_officer = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 起業家    消費財    3    →    交易価値0.05    交易価値5  社会研究2
 ad_entrepreneur = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1584,8 +1460,7 @@ ad_entrepreneur = {
 	}
 	possible_precalc = can_fill_specialist_job
 	planet_modifier = {
-		trade_value_mult = 0.05
-		trade_value_add = 5
+		planet_jobs_trade_produces_mult = 0.05
 	}
 	resources = {
 		category = planet_merchants
@@ -1595,18 +1470,21 @@ ad_entrepreneur = {
 		upkeep = {
 			consumer_goods = 3
 		}
+		produces = {
+			trade = 5
+		}
 	}
 	weight = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 宇宙港管制官  消費財    2   合金1   →    工学3  宇宙軍許容量    10
 ad_spaceport_mechanics = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1630,13 +1508,13 @@ ad_spaceport_mechanics = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 教授職  消費財5  →  専門家POPの資源産出*0.05
 ad_professorship = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1654,29 +1532,15 @@ ad_professorship = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		modifier = {
-			factor = 10
-			OR = {
-				is_unemployed = yes
-				has_job = farmer
-			}
-			exists = planet
-			from = {
-				num_assigned_jobs = {
-					job = researcher
-					value > 4
-				}
-			}
-		}
 	}
 }
-
-# 発掘者    消費財5  →  出土品    0.5
 ad_excavator = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1694,30 +1558,16 @@ ad_excavator = {
 	}
 	weight = {
 		weight = @specialist_job_weight
-		# low income modifier
-		modifier = {
-			factor = 4
-			OR = {
-				is_unemployed = yes
-				has_job = farmer
-			}
-			exists = planet
-			owner = {
-				has_monthly_income = {
-					resource = minor_artifacts
-					value < 5
-				}
-			}
-		}
 	}
 }
-
-# 銀行家        快適度+3、交易価値+5、エネルギー+5
 ad_banker = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_ad_E_bank
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_ad_E_bank
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1725,26 +1575,29 @@ ad_banker = {
 	}
 	possible_precalc = can_fill_specialist_job
 	planet_modifier = {
-		planet_amenities_add = 3
-		trade_value_add = 5
+		planet_amenities_add = 300
 	}
 	resources = {
 		category = planet_jobs_productive
 		produces = {
 			energy = 5
 		}
+		produces = {
+			trade = 5
+		}
 	}
 	weight = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 法曹        快適度+1、社会学+2、犯罪度-5
 ad_lawyer = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_ad_E_court
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_ad_E_court
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1752,8 +1605,8 @@ ad_lawyer = {
 	}
 	possible_precalc = can_fill_specialist_job
 	planet_modifier = {
-		planet_amenities_add = 1
-		planet_crime_add = -5 
+		planet_amenities_add = 100
+		planet_crime_add = -5
 	}
 	resources = {
 		category = planet_enforcers
@@ -1765,13 +1618,13 @@ ad_lawyer = {
 		weight = @specialist_job_weight
 	}
 }
-
-# ジャーナリスト    労働者の政治力-10%、快適度+2、統合力+3
 ad_journalist = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1782,7 +1635,7 @@ ad_journalist = {
 		pop_cat_worker_political_power = -0.1
 	}
 	planet_modifier = {
-		planet_amenities_add = 2
+		planet_amenities_add = 200
 	}
 	resources = {
 		category = planet_culture_workers
@@ -1794,13 +1647,13 @@ ad_journalist = {
 		weight = @specialist_job_weight
 	}
 }
-
-# データ司書    統合力+3、研究力+2ずつ
 ad_librarian = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1820,13 +1673,13 @@ ad_librarian = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 公安職員    暗号力+1、犯罪度-15、安定度+1
 ad_psp = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1844,21 +1697,21 @@ ad_psp = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 統治者
-# 将官    消費財    4    →    防衛軍8    宇宙軍許容量    16
 ad_general_officer = {
 	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = RULER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
 	possible_precalc = can_fill_ruler_job
-	pop_modifier = {
-		pop_defense_armies_add = 8
+	planet_modifier = {
+		planet_defense_armies_add = 8
 	}
 	country_modifier = {
 		country_naval_cap_add = 16
@@ -1873,12 +1726,13 @@ ad_general_officer = {
 		weight = @ruler_job_weight
 	}
 }
-
-# 側近        消費財3    影響力+1
 ad_ministor = {
 	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = RULER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1898,12 +1752,13 @@ ad_ministor = {
 		weight = @ruler_job_weight
 	}
 }
-
-# 代弁者        消費財3    安定度+5、幸福度+5%
 ad_congressman = {
 	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = RULER_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1924,15 +1779,15 @@ ad_congressman = {
 		weight = @ruler_job_weight
 	}
 }
-
-# 	雑役ドローン
-# 雑務ドローン
 ad_clerk_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	building_icon = building_residence
-	clothes_texture_index = 2
-
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_residence
+			icon = maintenance_drone
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1940,21 +1795,25 @@ ad_clerk_drone = {
 	}
 	possible_precalc = can_fill_drone_job
 	planet_modifier = {
-		planet_amenities_add = 2
-		trade_value_add = 4
+		planet_amenities_add = 200
 	}
-
 	weight = {
 		weight = @clerk_job_weight
 	}
+	resources = {
+		category = planet_jobs
+		produces = {
+			trade = 4
+		}
+	}
 }
-
-# 水中農業ドローン
 ad_water_farmer_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -1981,20 +1840,6 @@ ad_water_farmer_drone = {
 		}
 		modifier = {
 			factor = 0.9
-			NOT = { has_job = mining_drone }
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value > 50
-				}
-			}
-		}
-		modifier = {
-			factor = 1.2
-			has_job = agri_drone
-		}
-		modifier = {
-			factor = 0.9
 			owner = {
 				is_robot_empire = yes
 			}
@@ -2003,14 +1848,14 @@ ad_water_farmer_drone = {
 			factor = 1.1
 			exists = owner
 			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
+			owner = {
+				has_valid_civic = civic_machine_assimilator
+			}
 			has_trait = trait_cybernetic
 		}
-
 		modifier = {
 			factor = 0.5
 			has_trait = trait_lithoid
-
 			owner = {
 				is_lithoid_empire = yes
 				has_monthly_income = {
@@ -2025,12 +1870,13 @@ ad_water_farmer_drone = {
 		}
 	}
 }
-
-# 施設維持業者ドローン
 ad_facility_maintainer_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -2038,7 +1884,7 @@ ad_facility_maintainer_drone = {
 	}
 	possible_precalc = can_fill_drone_job
 	planet_modifier = {
-		planet_amenities_add = 3
+		planet_amenities_add = 300
 	}
 	resources = {
 		category = planet_miners
@@ -2046,20 +1892,20 @@ ad_facility_maintainer_drone = {
 			minerals = 5
 		}
 		upkeep = {
-			energy = 1	
+			energy = 1
 		}
 	}
 	weight = {
 		weight = @worker_job_weight
 	}
 }
-
-# 地熱技術ドローン
 ad_geothermal_technician_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -2154,48 +2000,19 @@ ad_geothermal_technician_drone = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		#modifier = {
-		#	factor = 500
-		#	planet = {
-		#		owner = {
-		#			is_megacorp = yes
-		#		}
-		#	}
-		#}
-
-		# low income modifier
-		modifier = {
-			factor = 1.2
-
-			OR = {
-				is_unemployed = yes
-				has_job = "technician"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "technician"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 0
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# 原子技術ドローン
 ad_atomic_engineer_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -2293,48 +2110,19 @@ ad_atomic_engineer_drone = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		#modifier = {
-		#	factor = 500
-		#	planet = {
-		#		owner = {
-		#			is_megacorp = yes
-		#		}
-		#	}
-		#}
-
-		# low income modifier
-		modifier = {
-			factor = 1.2
-
-			OR = {
-				is_unemployed = yes
-				has_job = "technician"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "technician"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = energy
-					value < 0
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# 水中採掘ドローン
 ad_underwater_miner_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -2371,7 +2159,9 @@ ad_underwater_miner_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -2380,7 +2170,11 @@ ad_underwater_miner_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -2427,39 +2221,19 @@ ad_underwater_miner_drone = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.1
-
-			OR = {
-				is_unemployed = yes
-				has_job = "miner"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "miner"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 30
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# 低効率採掘ドローン
 ad_low_efficiency_miner_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -2493,7 +2267,9 @@ ad_low_efficiency_miner_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -2502,7 +2278,11 @@ ad_low_efficiency_miner_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -2549,39 +2329,19 @@ ad_low_efficiency_miner_drone = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.1
-
-			OR = {
-				is_unemployed = yes
-				has_job = "miner"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "miner"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 30
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# 菌農業ドローン
 ad_fungus_farmer_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -2605,7 +2365,9 @@ ad_fungus_farmer_drone = {
 		}
 		modifier = {
 			factor = 1.1
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 		}
 		modifier = {
 			factor = 10
@@ -2619,7 +2381,9 @@ ad_fungus_farmer_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -2628,7 +2392,11 @@ ad_fungus_farmer_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -2671,7 +2439,9 @@ ad_fungus_farmer_drone = {
 		}
 		modifier = {
 			factor = 1.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			OR = {
 				has_trait = trait_robot_domestic_protocols
 				has_trait = trait_charismatic
@@ -2679,38 +2449,18 @@ ad_fungus_farmer_drone = {
 		}
 		modifier = {
 			factor = 0.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			has_trait = trait_repugnant
 		}
 		modifier = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.2
-
-			OR = {
-				is_unemployed = yes
-				has_job = farmer
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = farmer
-			}
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-
 		modifier = {
 			factor = 0.5
 			has_trait = trait_lithoid
-
 			owner = {
 				is_lithoid_empire = yes
 				has_monthly_income = {
@@ -2725,13 +2475,13 @@ ad_fungus_farmer_drone = {
 		}
 	}
 }
-
-# 酪農業ドローン
 ad_dairy_farmer_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -2758,7 +2508,9 @@ ad_dairy_farmer_drone = {
 		}
 		modifier = {
 			factor = 1.1
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 		}
 		modifier = {
 			factor = 10
@@ -2772,7 +2524,9 @@ ad_dairy_farmer_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -2781,7 +2535,11 @@ ad_dairy_farmer_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -2824,7 +2582,9 @@ ad_dairy_farmer_drone = {
 		}
 		modifier = {
 			factor = 1.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			OR = {
 				has_trait = trait_robot_domestic_protocols
 				has_trait = trait_charismatic
@@ -2832,38 +2592,18 @@ ad_dairy_farmer_drone = {
 		}
 		modifier = {
 			factor = 0.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			has_trait = trait_repugnant
 		}
 		modifier = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.2
-
-			OR = {
-				is_unemployed = yes
-				has_job = farmer
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = farmer
-			}
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-
 		modifier = {
 			factor = 0.5
 			has_trait = trait_lithoid
-
 			owner = {
 				is_lithoid_empire = yes
 				has_monthly_income = {
@@ -2878,13 +2618,13 @@ ad_dairy_farmer_drone = {
 		}
 	}
 }
-
-# 大規模農家ドローン
 ad_large_scale_farmer_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -2908,7 +2648,9 @@ ad_large_scale_farmer_drone = {
 		}
 		modifier = {
 			factor = 1.1
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 		}
 		modifier = {
 			factor = 10
@@ -2922,7 +2664,9 @@ ad_large_scale_farmer_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -2931,7 +2675,11 @@ ad_large_scale_farmer_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -2974,7 +2722,9 @@ ad_large_scale_farmer_drone = {
 		}
 		modifier = {
 			factor = 1.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			OR = {
 				has_trait = trait_robot_domestic_protocols
 				has_trait = trait_charismatic
@@ -2982,38 +2732,18 @@ ad_large_scale_farmer_drone = {
 		}
 		modifier = {
 			factor = 0.5
-			owner = { has_valid_civic = civic_agrarian_idyll }
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
 			has_trait = trait_repugnant
 		}
 		modifier = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.2
-
-			OR = {
-				is_unemployed = yes
-				has_job = farmer
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = farmer
-			}
-			owner = {
-				has_monthly_income = {
-					resource = food
-					value < 0
-				}
-			}
-		}
-
 		modifier = {
 			factor = 0.5
 			has_trait = trait_lithoid
-
 			owner = {
 				is_lithoid_empire = yes
 				has_monthly_income = {
@@ -3028,13 +2758,13 @@ ad_large_scale_farmer_drone = {
 		}
 	}
 }
-
-# 効率的採掘ドローン
 ad_efficient_miner_drone = {
 	category = simple_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -3068,7 +2798,9 @@ ad_efficient_miner_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -3077,7 +2809,11 @@ ad_efficient_miner_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -3124,40 +2860,19 @@ ad_efficient_miner_drone = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 1.1
-
-			OR = {
-				is_unemployed = yes
-				has_job = "miner"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "miner"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 30
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# 	複雑ドローン
-# 軌道鉱物学ドローン   鉱物6,工学2
 ad_space_miner_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -3192,7 +2907,9 @@ ad_space_miner_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { has_technology = tech_droid_workers }
+			owner = {
+				has_technology = tech_droid_workers
+			}
 		}
 		modifier = {
 			factor = 200
@@ -3201,7 +2918,11 @@ ad_space_miner_drone = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-			owner = { NOT = { has_technology = tech_droid_workers } }
+			owner = {
+				NOT = {
+					has_technology = tech_droid_workers
+				}
+			}
 		}
 		modifier = {
 			factor = 0.25
@@ -3248,39 +2969,19 @@ ad_space_miner_drone = {
 			factor = 1.5
 			has_trait = trait_void_dweller_1
 		}
-
-		# low income modifier
-		modifier = {
-			factor = 3
-
-			OR = {
-				is_unemployed = yes
-				has_job = "miner"
-			}
-			exists = planet
-			planet = {
-				has_available_jobs = "miner"
-			}
-			owner = {
-				has_monthly_income = {
-					resource = minerals
-					value < 30
-				}
-			}
-		}
 		modifier = {
 			factor = 0.75
 			has_trait = trait_necrophage
 		}
 	}
 }
-
-# データマイナードローン
 ad_data_minor_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -3308,13 +3009,13 @@ ad_data_minor_drone = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 造船技術ドローン
 ad_shipwright_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -3336,13 +3037,13 @@ ad_shipwright_drone = {
 		weight = @specialist_job_weight
 	}
 }
-
-# インフラ技術ドローン
 ad_infrastructure_engineer_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -3362,21 +3063,21 @@ ad_infrastructure_engineer_drone = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 将校ドローン
 ad_commissioned_officer_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
 	possible_precalc = can_fill_drone_job
-	pop_modifier = {
-		pop_defense_armies_add = 5
+	planet_modifier = {
+		planet_defense_armies_add = 5
 	}
 	country_modifier = {
 		country_naval_cap_add = 10
@@ -3391,13 +3092,13 @@ ad_commissioned_officer_drone = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 起業ドローン
 ad_entrepreneur_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -3405,8 +3106,7 @@ ad_entrepreneur_drone = {
 	}
 	possible_precalc = can_fill_drone_job
 	planet_modifier = {
-		trade_value_mult = 0.05
-		trade_value_add = 5
+		planet_jobs_trade_produces_mult = 0.05
 	}
 	resources = {
 		category = planet_merchants
@@ -3416,18 +3116,21 @@ ad_entrepreneur_drone = {
 		upkeep = {
 			energy = 2
 		}
+		produces = {
+			trade = 5
+		}
 	}
 	weight = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 宇宙港管制官ドローン
 ad_spaceport_mechanics_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -3451,13 +3154,13 @@ ad_spaceport_mechanics_drone = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 教授職ドローン
 ad_professorship_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -3477,13 +3180,13 @@ ad_professorship_drone = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 発掘ドローン
 ad_excavator_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	# building_icon = 
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -3503,20 +3206,21 @@ ad_excavator_drone = {
 		weight = @specialist_job_weight
 	}
 }
-
-# 将官ドローン
 ad_general_officer_drone = {
 	category = complex_drone
-	condition_string = DRONE_JOB_TRIGGER
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = DRONE_JOB_TRIGGER
+		}
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
 	possible_precalc = can_fill_drone_job
-	pop_modifier = {
-		pop_defense_armies_add = 8
+	planet_modifier = {
+		planet_defense_armies_add = 8
 	}
 	country_modifier = {
 		country_naval_cap_add = 16

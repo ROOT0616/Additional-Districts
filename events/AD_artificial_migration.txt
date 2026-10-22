@@ -1,0 +1,197 @@
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
+namespace = additionaldistricts
+event = {
+	id = additionaldistricts.9001
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_galaxy_planet = {
+			if = {
+				limit = {
+					has_planet_flag = do_ad_sky_cities
+					NOT = {
+						has_deposit = d_ad_artificial_sky_cities
+					}
+					count_deposits = {
+						type = d_ad_sky_cities
+						count >= 2
+					}
+				}
+				while = {
+					count = 2
+					remove_deposit = d_ad_sky_cities
+					add_deposit = d_ad_artificial_sky_cities
+				}
+				remove_planet_flag = do_ad_sky_cities
+			}
+			if = {
+				limit = {
+					has_planet_flag = do_ad_under_water_cities
+					NOT = {
+						has_deposit = d_ad_artificial_under_water_cities
+					}
+					count_deposits = {
+						type = d_ad_under_water_cities
+						count >= 5
+					}
+				}
+				while = {
+					count = 5
+					remove_deposit = d_ad_under_water_cities
+					add_deposit = d_ad_artificial_under_water_cities
+				}
+				remove_planet_flag = do_ad_under_water_cities
+			}
+			if = {
+				limit = {
+					has_planet_flag = do_ad_water_cities_5
+					has_planet_flag = do_ad_water_cities_2
+					NOT = {
+						has_deposit = d_ad_artificial_under_water_cities
+					}
+					count_deposits = {
+						type = d_ad_under_water_cities
+						count = 5
+					}
+				}
+				while = {
+					count = 3
+					remove_deposit = d_ad_under_water_cities
+					add_deposit = d_ad_artificial_under_water_cities
+				}
+				remove_planet_flag = do_ad_water_cities_5
+			}
+			if = {
+				limit = {
+					has_planet_flag = do_ad_water_cities_5
+					has_planet_flag = do_ad_water_cities_3
+					NOT = {
+						has_deposit = d_ad_artificial_under_water_cities
+					}
+					count_deposits = {
+						type = d_ad_under_water_cities
+						count = 5
+					}
+				}
+				while = {
+					count = 2
+					remove_deposit = d_ad_under_water_cities
+					add_deposit = d_ad_artificial_under_water_cities
+				}
+				remove_planet_flag = do_ad_water_cities_5
+			}
+			if = {
+				limit = {
+					has_planet_flag = do_ad_water_cities_5
+					has_planet_flag = do_ad_water_cities_4
+					NOT = {
+						has_deposit = d_ad_artificial_under_water_cities
+					}
+					count_deposits = {
+						type = d_ad_under_water_cities
+						count = 5
+					}
+				}
+				while = {
+					count = 1
+					remove_deposit = d_ad_under_water_cities
+					add_deposit = d_ad_artificial_under_water_cities
+				}
+				remove_planet_flag = do_ad_water_cities_5
+			}
+			if = {
+				limit = {
+					has_planet_flag = do_ad_underground_cities
+					NOT = {
+						has_deposit = d_ad_artificial_underground_cities
+					}
+					count_deposits = {
+						type = d_ad_underground_cities
+						count >= 5
+					}
+				}
+				while = {
+					count = 5
+					remove_deposit = d_ad_underground_cities
+					add_deposit = d_ad_artificial_underground_cities
+				}
+				remove_planet_flag = do_ad_underground_cities
+			}
+			if = {
+				limit = {
+					has_planet_flag = do_ad_underground_cities_5
+					has_planet_flag = do_ad_underground_cities_2
+					NOT = {
+						has_deposit = d_ad_artificial_underground_cities
+					}
+					count_deposits = {
+						type = d_ad_underground_cities
+						count = 5
+					}
+				}
+				while = {
+					count = 3
+					remove_deposit = d_ad_underground_cities
+					add_deposit = d_ad_artificial_underground_cities
+				}
+				remove_planet_flag = do_ad_underground_cities_5
+			}
+			if = {
+				limit = {
+					has_planet_flag = do_ad_underground_cities_5
+					has_planet_flag = do_ad_underground_cities_3
+					NOT = {
+						has_deposit = d_ad_artificial_underground_cities
+					}
+					count_deposits = {
+						type = d_ad_underground_cities
+						count = 5
+					}
+				}
+				while = {
+					count = 2
+					remove_deposit = d_ad_underground_cities
+					add_deposit = d_ad_artificial_underground_cities
+				}
+				remove_planet_flag = do_ad_underground_cities_5
+			}
+			if = {
+				limit = {
+					has_planet_flag = do_ad_underground_cities_5
+					has_planet_flag = do_ad_underground_cities_4
+					NOT = {
+						has_deposit = d_ad_artificial_underground_cities
+					}
+					count_deposits = {
+						type = d_ad_underground_cities
+						count = 5
+					}
+				}
+				while = {
+					count = 1
+					remove_deposit = d_ad_underground_cities
+					add_deposit = d_ad_artificial_underground_cities
+				}
+				remove_planet_flag = do_ad_underground_cities_5
+			}
+			if = {
+				limit = {
+					has_planet_flag = do_ad_solar_power_generation
+					NOT = {
+						has_deposit = d_ad_artificial_solar_power_generation
+					}
+					count_deposits = {
+						type = d_ad_solar_power_generation
+						count >= 5
+					}
+				}
+				while = {
+					count = 5
+					remove_deposit = d_ad_solar_power_generation
+					add_deposit = d_ad_artificial_solar_power_generation
+				}
+				remove_planet_flag = do_ad_solar_power_generation
+			}
+		}
+	}
+}

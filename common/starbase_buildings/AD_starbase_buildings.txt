@@ -1,16 +1,18 @@
-# ステーション管制室(Station_control_room)		合金200	360	エネルギー10		(ステーションに入港する軍事艦隊を制御する部署)		星系基地補正:軍港の宇宙軍許容量+5
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
 ad_station_control_room = {
-	icon = "GFX_spaceport_module_ad_station_control_room"
+	icon = GFX_spaceport_module_ad_station_control_room
 	construction_days = 360
 	initial = yes
 	custom_tooltip = ad_station_control_room_custom_tooltip
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ad_great_naval_port"
-			has_starbase_module = ad_great_naval_port
-			starbase_buildable_is_in_queue_before = {
-				first = ad_great_naval_port
-				second = ad_station_control_room
+			fail_text = requires_ad_great_naval_port
+			OR = {
+				has_starbase_module = ad_great_naval_port
+				starbase_buildable_is_in_queue_before = {
+					first = ad_great_naval_port
+					second = ad_station_control_room
+				}
 			}
 		}
 	}
@@ -24,20 +26,20 @@ ad_station_control_room = {
 		}
 	}
 }
-
-# ステーション商業モール(Station_commercial_mall)		合金200	360	消費財3			(税関の外で商取引を行える魅力的な商業施設)		星系基地補正:交易港1つごとに10交易価値を算出する
 ad_station_commercial_mall = {
-	icon = "GFX_spaceport_module_ad_station_commercial_mall"
+	icon = GFX_spaceport_module_ad_station_commercial_mall
 	construction_days = 360
 	initial = yes
-  custom_tooltip = ad_station_commercial_mall_custom_tooltip
+	custom_tooltip = ad_station_commercial_mall_custom_tooltip
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ad_great_trade_port"
-			has_starbase_module = ad_great_trade_port
-			starbase_buildable_is_in_queue_before = {
-				first = ad_great_trade_port
-				second = ad_station_commercial_mall
+			fail_text = requires_ad_great_trade_port
+			OR = {
+				has_starbase_module = ad_great_trade_port
+				starbase_buildable_is_in_queue_before = {
+					first = ad_great_trade_port
+					second = ad_station_commercial_mall
+				}
 			}
 		}
 	}
@@ -51,20 +53,20 @@ ad_station_commercial_mall = {
 		}
 	}
 }
-
-# ステーション軍需本部(Munitions_headquarters)		合金200	360	エネルギー10,鉱物10	(ステーションの軍需工場を統括する施設)			星系基地補正:低重力軍需工廠1つごとに3合金を算出する
 ad_munitions_headquarters = {
-	icon = "GFX_spaceport_module_ad_munitions_headquarters"
+	icon = GFX_spaceport_module_ad_munitions_headquarters
 	construction_days = 360
 	initial = yes
-  custom_tooltip = ad_munitions_headquarters_custom_tooltip
+	custom_tooltip = ad_munitions_headquarters_custom_tooltip
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ad_munitions_arsenal"
-			has_starbase_module = ad_munitions_arsenal
-			starbase_buildable_is_in_queue_before = {
-				first = ad_munitions_arsenal
-				second = ad_munitions_headquarters
+			fail_text = requires_ad_munitions_arsenal
+			OR = {
+				has_starbase_module = ad_munitions_arsenal
+				starbase_buildable_is_in_queue_before = {
+					first = ad_munitions_arsenal
+					second = ad_munitions_headquarters
+				}
 			}
 		}
 	}
@@ -78,20 +80,20 @@ ad_munitions_headquarters = {
 		}
 	}
 }
-
-# ステーション民需本部((Private_secter_headquarters)	合金200	360	エネルギー10,鉱物10	(ステーションの民需工場を統括する施設)			星系基地補正:低重力民需工廠1つごとに3消費財を算出する
 ad_private_secter_headquarters = {
-	icon = "GFX_spaceport_module_ad_private_secter_headquarters"
+	icon = GFX_spaceport_module_ad_private_secter_headquarters
 	construction_days = 360
 	initial = yes
-  custom_tooltip = ad_private_secter_headquarters_custom_tooltip
+	custom_tooltip = ad_private_secter_headquarters_custom_tooltip
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ad_private_secter_arsenal"
-			has_starbase_module = ad_private_secter_arsenal
-			starbase_buildable_is_in_queue_before = {
-				first = ad_private_secter_arsenal
-				second = ad_private_secter_headquarters
+			fail_text = requires_ad_private_secter_arsenal
+			OR = {
+				has_starbase_module = ad_private_secter_arsenal
+				starbase_buildable_is_in_queue_before = {
+					first = ad_private_secter_arsenal
+					second = ad_private_secter_headquarters
+				}
 			}
 		}
 	}
@@ -105,10 +107,8 @@ ad_private_secter_headquarters = {
 		}
 	}
 }
-
-# サブステーション管制室(Sub_station_control_room)	合金300	360	エネルギー20		(小型ステーションを統括する管制部署)			星系基地補正:防衛プラットフォーム上限+10
 ad_sub_station_control_room = {
-	icon = "GFX_spaceport_module_ad_sub_station_control_room"
+	icon = GFX_spaceport_module_ad_sub_station_control_room
 	construction_days = 360
 	initial = yes
 	resources = {
@@ -124,20 +124,20 @@ ad_sub_station_control_room = {
 		starbase_defense_platform_capacity_add = 10
 	}
 }
-
-# 無重力研究本部(Microgravity_research_division)		合金200	360	エネルギー10		(無重力を活用した画期的な研究施設)			星系基地補正:低重力コンピュータハブ1つごとに各3研究力を算出する
 ad_microgravity_research_division = {
-	icon = "GFX_spaceport_module_ad_microgravity_research_division"
+	icon = GFX_spaceport_module_ad_microgravity_research_division
 	construction_days = 360
 	initial = yes
-  custom_tooltip = ad_microgravity_research_division_custom_tooltip
+	custom_tooltip = ad_microgravity_research_division_custom_tooltip
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_ad_computer_hub"
-			has_starbase_module = ad_computer_hub
-			starbase_buildable_is_in_queue_before = {
-				first = ad_computer_hub
-				second = ad_microgravity_research_division
+			fail_text = requires_ad_computer_hub
+			OR = {
+				has_starbase_module = ad_computer_hub
+				starbase_buildable_is_in_queue_before = {
+					first = ad_computer_hub
+					second = ad_microgravity_research_division
+				}
 			}
 		}
 	}
@@ -151,10 +151,8 @@ ad_microgravity_research_division = {
 		}
 	}
 }
-
-# 無重力訓練施設(Microgravity_training_center)		合金200	360	エネルギー5		(無重力を活用した画期的な軍事訓練施設)			帝国補正:陸軍初期経験値+100,地上軍編成速度+10%
 ad_microgravity_training_center = {
-	icon = "GFX_spaceport_module_ad_microgravity_training_center"
+	icon = GFX_spaceport_module_ad_microgravity_training_center
 	construction_days = 360
 	initial = yes
 	resources = {
@@ -171,10 +169,8 @@ ad_microgravity_training_center = {
 		planet_army_build_speed_mult = 0.1
 	}
 }
-
-# 低重力医療センター(Low_gravity_medical_center)		合金200	360	消費財5、エネルギー1	(低重力を活用した身体活性化医療を提供する病院)		星系内の惑星のPop成長速度+5%,リーダー寿命+1年
 ad_low_gravity_medical_center = {
-	icon = "GFX_spaceport_module_ad_low_gravity_medical_center"
+	icon = GFX_spaceport_module_ad_low_gravity_medical_center
 	construction_days = 360
 	initial = yes
 	resources = {
@@ -188,16 +184,14 @@ ad_low_gravity_medical_center = {
 		}
 	}
 	country_modifier = {
-		leader_age = 5
+		leader_lifespan_add = 5
 	}
 	system_modifier = {
-		pop_growth_speed = 0.05
+		logistic_growth_mult = 0.05
 	}
 }
-
-# 対外諜報室(Station_foreign_intelligence_office)		合金200	360	エネルギー5,影響力0.5	(人里離れた所で良からぬことをたくらむ部署)		帝国補正:解読力+5
 ad_station_foreign_intelligence_office = {
-	icon = "GFX_spaceport_module_ad_station_foreign_intelligence_office"
+	icon = GFX_spaceport_module_ad_station_foreign_intelligence_office
 	construction_days = 360
 	initial = yes
 	resources = {
@@ -214,10 +208,8 @@ ad_station_foreign_intelligence_office = {
 		intel_decryption_add = 5
 	}
 }
-
-# 内国防諜室(Station_ICT_office)				合金200	360	エネルギー5,統合力5	(人里離れた所で良からぬ者を探す部署)			帝国補正:暗号力+2
 ad_station_ict_office = {
-	icon = "GFX_spaceport_module_ad_station_ict_office"
+	icon = GFX_spaceport_module_ad_station_ict_office
 	construction_days = 360
 	initial = yes
 	resources = {
@@ -234,10 +226,8 @@ ad_station_ict_office = {
 		intel_encryption_add = 2
 	}
 }
-
-# 星系運輸管制本部(Transportation_control_division)	合金300	360	エネルギー10		(星系内部における交通管制を行う部署)			星系基地補正:星系内移動速度+20%
 ad_transportation_control_division = {
-	icon = "GFX_spaceport_module_ad_transportation_control_division"
+	icon = GFX_spaceport_module_ad_transportation_control_division
 	construction_days = 360
 	initial = yes
 	resources = {
@@ -253,10 +243,8 @@ ad_transportation_control_division = {
 		ship_speed_mult = 0.2
 	}
 }
-
-# 星系通信管制本部(Communication_control_division)	合金300	360	エネルギー10		(星系内部における通信管制を行う部署)			星系基地補正:探知強度+2,通信ハブセンター1つごとに3統合力を算出する
 ad_communication_control_division = {
-	icon = "GFX_spaceport_module_ad_communication_control_division"
+	icon = GFX_spaceport_module_ad_communication_control_division
 	construction_days = 360
 	initial = yes
 	resources = {
@@ -268,15 +256,13 @@ ad_communication_control_division = {
 			energy = 10
 		}
 	}
-  custom_tooltip = ad_communication_control_division_custom_tooltip
+	custom_tooltip = ad_communication_control_division_custom_tooltip
 	station_modifier = {
 		ship_cloaking_detection_add = 2
 	}
 }
-
-# 艦隊基地司令部(Fleet_base_command_center)		合金500	360	エネルギー30,消費財10	(星系に駐留する艦隊を統御する常設司令部)		帝国補正:艦隊指揮上限+5,艦隊維持費-1%,宇宙軍許容量+10
 ad_fleet_base_command_center = {
-	icon = "GFX_spaceport_module_ad_fleet_base_command_center"
+	icon = GFX_spaceport_module_ad_fleet_base_command_center
 	construction_days = 360
 	initial = yes
 	resources = {
@@ -290,15 +276,13 @@ ad_fleet_base_command_center = {
 		}
 	}
 	country_modifier = {
-		country_command_limit_add = 5
+		command_limit_add = 5
 		ships_upkeep_mult = -0.01
 		country_naval_cap_add = 10
 	}
 }
-
-# ステーション防衛司令部(Station_defense_command_center)	合金500	360	エネルギー10		(星系基地を防御し、生存性を確保する司令部)		星系基地補正:ステーション船体値+20%,シールドHP+20%,装甲HP+20%
 ad_station_defense_command_center = {
-	icon = "GFX_spaceport_module_ad_station_defense_command_center"
+	icon = GFX_spaceport_module_ad_station_defense_command_center
 	construction_days = 360
 	initial = yes
 	resources = {
@@ -311,15 +295,13 @@ ad_station_defense_command_center = {
 		}
 	}
 	station_modifier = {
-    ship_hull_mult = 0.2
+		ship_hull_mult = 0.2
 		ship_shield_mult = 0.2
 		ship_armor_mult = 0.2
 	}
 }
-
-# ステーション管理司令部(Station_control_command_center)	合金500	360	エネルギー10		(ステーションの事務作業を統括し、管理業務を行う部署)	星系基地補正:ステーション維持費-10%,停泊中艦船の維持費-20%
 ad_station_control_command_center = {
-	icon = "GFX_spaceport_module_ad_station_control_command_center"
+	icon = GFX_spaceport_module_ad_station_control_command_center
 	construction_days = 360
 	initial = yes
 	resources = {

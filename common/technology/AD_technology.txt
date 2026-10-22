@@ -1,4 +1,4 @@
-# 大規模地区開発計画	mixed_use_development_plan	 Tire1
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
 mixed_use_development_plan = {
 	cost = @tier1cost2
 	area = society
@@ -25,13 +25,6 @@ mixed_use_development_plan = {
 			has_ethic = ethic_fanatic_spiritualist
 		}
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
 			factor = 0.5
 			has_civic = civic_agrarian_idyll
 		}
@@ -58,13 +51,6 @@ mixed_use_development_plan = {
 			has_ethic = ethic_fanatic_spiritualist
 		}
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
 			factor = 0.5
 			has_civic = civic_agrarian_idyll
 		}
@@ -78,8 +64,6 @@ mixed_use_development_plan = {
 		}
 	}
 }
-
-# 大規模水中建設技術	Large_scale_in_water_construction_technology	 Tire1
 large_scale_in_water_construction_technology = {
 	cost = @tier2cost3
 	area = society
@@ -102,13 +86,6 @@ large_scale_in_water_construction_technology = {
 			has_ethic = ethic_fanatic_spiritualist
 		}
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
 			factor = 0.5
 			has_civic = civic_agrarian_idyll
 		}
@@ -135,13 +112,6 @@ large_scale_in_water_construction_technology = {
 			has_ethic = ethic_fanatic_spiritualist
 		}
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
 			factor = 0.5
 			has_civic = civic_agrarian_idyll
 		}
@@ -155,8 +125,6 @@ large_scale_in_water_construction_technology = {
 		}
 	}
 }
-
-# 大規模空中建設技術	large_scale_air_construction_technology	 Tire1
 large_scale_air_construction_technology = {
 	cost = @tier2cost3
 	area = society
@@ -179,13 +147,6 @@ large_scale_air_construction_technology = {
 			has_ethic = ethic_fanatic_spiritualist
 		}
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
 			factor = 0.5
 			has_civic = civic_agrarian_idyll
 		}
@@ -212,13 +173,6 @@ large_scale_air_construction_technology = {
 			has_ethic = ethic_fanatic_spiritualist
 		}
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
 			factor = 0.5
 			has_civic = civic_agrarian_idyll
 		}
@@ -232,8 +186,6 @@ large_scale_air_construction_technology = {
 		}
 	}
 }
-
-# 大規模地中建設技術	large_scale_ground_construction_technology	 Tire1
 large_scale_ground_construction_technology = {
 	cost = @tier2cost3
 	area = society
@@ -256,13 +208,6 @@ large_scale_ground_construction_technology = {
 			has_ethic = ethic_fanatic_spiritualist
 		}
 		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
-		}
-		modifier = {
 			factor = 0.5
 			has_civic = civic_agrarian_idyll
 		}
@@ -287,13 +232,6 @@ large_scale_ground_construction_technology = {
 		modifier = {
 			factor = 0.75
 			has_ethic = ethic_fanatic_spiritualist
-		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
 		}
 		modifier = {
 			factor = 0.5

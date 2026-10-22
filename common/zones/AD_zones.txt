@@ -1,0 +1,58 @@
+# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
+zone_ad_buildings_1 = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = 240
+	potential = {
+
+	}
+	unlock = {
+
+	}
+	max_buildings = 6
+	districts_per_building = 1
+	include = {
+		all
+	}
+	zone_sets = {
+		ad_buildings
+	}
+	ai_priority = 0
+}
+zone_ad_buildings_2 = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = 240
+	potential = {
+
+	}
+	unlock = {
+
+	}
+	max_buildings = 6
+	districts_per_building = 0.5
+	include = {
+		all
+	}
+	zone_sets = {
+		ad_buildings
+	}
+	ai_priority = 0
+}
+zone_ad_buildings_3 = {
+	icon = GFX_diplomatic_weight_large
+	base_buildtime = 240
+	potential = {
+
+	}
+	unlock = {
+
+	}
+	max_buildings = 6
+	districts_per_building = 0.3333333333
+	include = {
+		all
+	}
+	zone_sets = {
+		ad_buildings
+	}
+	ai_priority = 0
+}
