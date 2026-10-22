@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
 namespace = additionaldistricts
 planet_event = {
 	id = additionaldistricts.1
@@ -12,7 +12,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_government_district
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -34,44 +34,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_government_district
-			set_planet_flag = do_ad_government_district
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_government_district = yes
 		}
 	}
 	option = {
@@ -87,42 +54,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_government_district = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_government_district
-			remove_planet_flag = do_ad_government_district
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_government_district = yes
 		}
 	}
 	option = {
@@ -131,7 +77,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_university_district
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -153,44 +99,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_university_district
-			set_planet_flag = do_ad_university_district
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_university_district = yes
 		}
 	}
 	option = {
@@ -206,42 +119,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_university_district = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_university_district
-			remove_planet_flag = do_ad_university_district
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_university_district = yes
 		}
 	}
 	option = {
@@ -250,7 +142,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_residential_area
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -272,44 +164,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_residential_area
-			set_planet_flag = do_ad_residential_area
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_residential_area = yes
 		}
 	}
 	option = {
@@ -325,42 +184,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_residential_area = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_residential_area
-			remove_planet_flag = do_ad_residential_area
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_residential_area = yes
 		}
 	}
 	option = {
@@ -369,7 +207,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_shipbuilding_arsenal
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -391,44 +229,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_shipbuilding_arsenal
-			set_planet_flag = do_ad_shipbuilding_arsenal
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_shipbuilding_arsenal = yes
 		}
 	}
 	option = {
@@ -444,42 +249,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_shipbuilding_arsenal = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_shipbuilding_arsenal
-			remove_planet_flag = do_ad_shipbuilding_arsenal
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_shipbuilding_arsenal = yes
 		}
 	}
 	option = {
@@ -488,7 +272,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_communication_area
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -510,44 +294,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_communication_area
-			set_planet_flag = do_ad_communication_area
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_communication_area = yes
 		}
 	}
 	option = {
@@ -563,42 +314,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_communication_area = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_communication_area
-			remove_planet_flag = do_ad_communication_area
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_communication_area = yes
 		}
 	}
 	option = {
@@ -607,7 +337,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_tourist_area
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -629,44 +359,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_tourist_area
-			set_planet_flag = do_ad_tourist_area
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_tourist_area = yes
 		}
 	}
 	option = {
@@ -682,42 +379,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_tourist_area = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_tourist_area
-			remove_planet_flag = do_ad_tourist_area
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_tourist_area = yes
 		}
 	}
 	option = {
@@ -726,7 +402,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_defense_zone
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -748,44 +424,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_defense_zone
-			set_planet_flag = do_ad_defense_zone
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_defense_zone = yes
 		}
 	}
 	option = {
@@ -801,42 +444,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_defense_zone = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_defense_zone
-			remove_planet_flag = do_ad_defense_zone
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_defense_zone = yes
 		}
 	}
 	option = {
@@ -845,7 +467,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_conceptual_zone
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -867,44 +489,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_conceptual_zone
-			set_planet_flag = do_ad_conceptual_zone
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_conceptual_zone = yes
 		}
 	}
 	option = {
@@ -920,42 +509,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_conceptual_zone = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_conceptual_zone
-			remove_planet_flag = do_ad_conceptual_zone
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_conceptual_zone = yes
 		}
 	}
 	option = {
@@ -964,7 +532,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_special_research_zone
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -986,44 +554,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_special_research_zone
-			set_planet_flag = do_ad_special_research_zone
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_special_research_zone = yes
 		}
 	}
 	option = {
@@ -1039,42 +574,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_special_research_zone = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_special_research_zone
-			remove_planet_flag = do_ad_special_research_zone
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_special_research_zone = yes
 		}
 	}
 	option = {
@@ -1083,7 +597,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_spaceport_area
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -1105,44 +619,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_spaceport_area
-			set_planet_flag = do_ad_spaceport_area
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_spaceport_area = yes
 		}
 	}
 	option = {
@@ -1158,42 +639,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_spaceport_area = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_spaceport_area
-			remove_planet_flag = do_ad_spaceport_area
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_spaceport_area = yes
 		}
 	}
 	option = {
@@ -1202,7 +662,7 @@ planet_event = {
 		trigger = {
 			NOR = {
 				has_deposit = d_ad_orbital_elevator
-				has_planet_flag = do_ad_4
+				ad_development_slots_full = yes
 			}
 		}
 		allow = {
@@ -1224,44 +684,11 @@ planet_event = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			add_deposit = d_ad_orbital_elevator
-			set_planet_flag = do_ad_orbital_elevator
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_add_development_orbital_elevator = yes
 		}
 	}
 	option = {
@@ -1277,42 +704,21 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_development_removal_blocked
+				ad_can_remove_development_orbital_elevator = yes
+			}
 		}
 		owner = {
 			add_resource = {
 				minerals = -500
 			}
 		}
-		hidden_effect = {
-			remove_deposit = d_ad_orbital_elevator
-			remove_planet_flag = do_ad_orbital_elevator
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
-		}
 		planet_event = {
 			id = additionaldistricts.1
+		}
+		hidden_effect = {
+			ad_remove_development_orbital_elevator = yes
 		}
 	}
 	option = {
@@ -1401,6 +807,10 @@ planet_event = {
 					value >= 100
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_artificial_removal_blocked
+				ad_can_remove_artificial_sky_cities = yes
+			}
 		}
 		owner = {
 			add_resource = {
@@ -1483,6 +893,10 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_artificial_removal_blocked
+				ad_can_remove_artificial_under_water_cities = yes
+			}
 		}
 		owner = {
 			add_resource = {
@@ -1563,6 +977,10 @@ planet_event = {
 					value >= 1000
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_artificial_removal_blocked
+				ad_can_remove_artificial_underground_cities = yes
+			}
 		}
 		owner = {
 			add_resource = {
@@ -1635,6 +1053,10 @@ planet_event = {
 					value >= 500
 				}
 			}
+			custom_tooltip = {
+				fail_text = ad_artificial_removal_blocked
+				ad_can_remove_artificial_solar_power_generation = yes
+			}
 		}
 		owner = {
 			add_resource = {
@@ -1686,7 +1108,6 @@ planet_event = {
 				}
 			}
 			995 = {
-
 			}
 		}
 	}

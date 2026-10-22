@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
 slot_ad_buildings_1 = {
 	start = zone_ad_buildings_1
 	include = {

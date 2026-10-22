@@ -1015,7 +1015,7 @@
  sm_ad_private_secter_arsenal_desc:0 "低重力を利用した民需用の工場"
 
  sm_ad_space_guard_base:0 "星間警備管区基地"
- sm_ad_space_guard_base_desc:0 "星系を警備し、海賊を抑制する低強度軍基地"
+ sm_ad_space_guard_base_desc:0 "小規模防衛拠点を管制し、防衛プラットフォームの収容数を増やす基地。"
 
  sm_ad_protective_bulkhead:0 "防御隔壁"
  sm_ad_protective_bulkhead_desc:0 "ステーションの強度を高め、耐久力を向上させる壁"
@@ -1027,7 +1027,7 @@
 
  sm_ad_station_commercial_mall:0 "ステーション商業モール"
  sm_ad_station_commercial_mall_desc:0 "税関の外で商取引を行える魅力的な商業施設" 
- ad_station_commercial_mall_custom_tooltip:0 "$sm_ad_great_trade_port$ 1つごとに§G10§! £trade_value£ §Y$TRADE_VALUE$§!を産出する\n\n" 
+ ad_station_commercial_mall_custom_tooltip:0 "交易港1つごとに交易を追加で§G4§!産出する。港単体の4と合わせて合計8。"
  requires_ad_great_trade_port:0 "§R§Y$sm_ad_great_trade_port$§!が必要。§!"
 
  sm_ad_munitions_headquarters:0 "ステーション軍需本部"
@@ -1150,3 +1150,7 @@
 
  d_ad_artificial_solar_power_generation:0 "太陽光発電整備区画"
  d_ad_artificial_solar_power_generation_desc:0 "ディシジョンで整備した人工の開発基盤。この特性1つにつき対応する区域の上限が1増える。撤去しても天然の特性は失われない。"
+
+ ad_artificial_removal_blocked:0 "§R建設キューを空にし、撤去する人工枠以上の未使用区域枠を確保してください。天然の枠は撤去しません。§!"
+
+ ad_development_removal_blocked:0 "§R建設キューを空にし、この開発で利用する区域を先に解体してください。§!"

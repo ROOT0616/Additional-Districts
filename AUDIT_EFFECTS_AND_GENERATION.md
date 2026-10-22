@@ -88,3 +88,4 @@
 新方式を実装する際は、複数の銀河で惑星クラス別の出現率・平均枠数・特性種類数を集計し、人工拡張の追加/撤去、テラフォーミング、ゲシュタルト、セーブ再読込も確認します。
 
 今回の更新は文書のみなので、追加のVanilla override・競合・セーブ変更はありません。既存の競合対象はcol_mining / col_generator / col_farming、planet_view.gui / colonize_planet_view.guiです。
+

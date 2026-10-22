@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
 ad_add_artificial_sky_cities = {
 	if = {
 		limit = {
@@ -33,11 +33,16 @@ ad_add_artificial_sky_cities = {
 	}
 }
 ad_remove_artificial_sky_cities = {
-	while = {
+	if = {
 		limit = {
-			has_deposit = d_ad_artificial_sky_cities
+			ad_can_remove_artificial_sky_cities = yes
 		}
-		remove_deposit = d_ad_artificial_sky_cities
+		while = {
+			limit = {
+				has_deposit = d_ad_artificial_sky_cities
+			}
+			remove_deposit = d_ad_artificial_sky_cities
+		}
 	}
 }
 ad_add_artificial_under_water_cities = {
@@ -110,11 +115,16 @@ ad_add_artificial_under_water_cities = {
 	}
 }
 ad_remove_artificial_under_water_cities = {
-	while = {
+	if = {
 		limit = {
-			has_deposit = d_ad_artificial_under_water_cities
+			ad_can_remove_artificial_under_water_cities = yes
 		}
-		remove_deposit = d_ad_artificial_under_water_cities
+		while = {
+			limit = {
+				has_deposit = d_ad_artificial_under_water_cities
+			}
+			remove_deposit = d_ad_artificial_under_water_cities
+		}
 	}
 }
 ad_add_artificial_underground_cities = {
@@ -187,11 +197,16 @@ ad_add_artificial_underground_cities = {
 	}
 }
 ad_remove_artificial_underground_cities = {
-	while = {
+	if = {
 		limit = {
-			has_deposit = d_ad_artificial_underground_cities
+			ad_can_remove_artificial_underground_cities = yes
 		}
-		remove_deposit = d_ad_artificial_underground_cities
+		while = {
+			limit = {
+				has_deposit = d_ad_artificial_underground_cities
+			}
+			remove_deposit = d_ad_artificial_underground_cities
+		}
 	}
 }
 ad_add_artificial_solar_power_generation = {
@@ -264,10 +279,15 @@ ad_add_artificial_solar_power_generation = {
 	}
 }
 ad_remove_artificial_solar_power_generation = {
-	while = {
+	if = {
 		limit = {
-			has_deposit = d_ad_artificial_solar_power_generation
+			ad_can_remove_artificial_solar_power_generation = yes
 		}
-		remove_deposit = d_ad_artificial_solar_power_generation
+		while = {
+			limit = {
+				has_deposit = d_ad_artificial_solar_power_generation
+			}
+			remove_deposit = d_ad_artificial_solar_power_generation
+		}
 	}
 }

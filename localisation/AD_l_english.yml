@@ -1015,7 +1015,7 @@
  sm_ad_private_secter_arsenal_desc:0 "Factory for private demand using low gravity"
 
  sm_ad_space_guard_base:0 "Interstellar Police District Base"
- sm_ad_space_guard_base_desc:0 "Low intensity military base to guard the star system and suppress pirates"
+ sm_ad_space_guard_base_desc:0 "Coordinates small defense outposts and increases defense platform capacity."
 
  sm_ad_protective_bulkhead:0 "Protective Bulkhead"
  sm_ad_protective_bulkhead_desc:0 "Walls that increase station strength and durability"
@@ -1027,7 +1027,7 @@
 
  sm_ad_station_commercial_mall:0 "Station Commercial Mall"
  sm_ad_station_commercial_mall_desc:0 "Attractive commercial facilities to conduct business transactions outside of customs" 
- ad_station_commercial_mall_custom_tooltip:0 "Produces §G10§! £trade_value£§Y$TRADE_VALUE$§! for each $sm_ad_great_trade_port$\n\n" 
+ ad_station_commercial_mall_custom_tooltip:0 "Each Trade Port produces an additional §G4§! trade, for a total of 8 including its base output."
  requires_ad_great_trade_port:0 "§RRequires §Y$sm_ad_great_trade_port$§!.§!"
 
  sm_ad_munitions_headquarters:0 "Station Munitions Headquarters"
@@ -1150,3 +1150,7 @@
 
  d_ad_artificial_solar_power_generation:0 "Solar Development Site"
  d_ad_artificial_solar_power_generation_desc:0 "Infrastructure created by a development decision. Each feature adds one slot for its district. Removing it preserves natural features."
+
+ ad_artificial_removal_blocked:0 "§RClear the construction queue and leave at least as many unused district slots as the artificial capacity being removed. Natural features are preserved.§!"
+
+ ad_development_removal_blocked:0 "§RClear the construction queue and demolish this development's districts before removal.§!"

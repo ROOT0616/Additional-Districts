@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
 decision_ad_large_scale_air_area_construction = {
 	owned_planets_only = yes
 	enactment_time = 0
@@ -99,6 +99,7 @@ decision_ad_undo_large_scale_air_area_construction = {
 	}
 	allow = {
 		has_deposit = d_ad_artificial_sky_cities
+		ad_can_remove_artificial_sky_cities = yes
 	}
 }
 decision_ad_large_scale_water_area_construction = {
@@ -195,6 +196,7 @@ decision_ad_undo_large_scale_water_area_construction = {
 	}
 	allow = {
 		has_deposit = d_ad_artificial_under_water_cities
+		ad_can_remove_artificial_under_water_cities = yes
 	}
 }
 decision_ad_large_scale_underground_area_construction = {
@@ -291,6 +293,7 @@ decision_ad_undo_large_scale_underground_area_construction = {
 	}
 	allow = {
 		has_deposit = d_ad_artificial_underground_cities
+		ad_can_remove_artificial_underground_cities = yes
 	}
 }
 decision_ad_solar_power_generation = {
@@ -380,6 +383,7 @@ decision_ad_undo_solar_power_generation = {
 	}
 	allow = {
 		has_deposit = d_ad_artificial_solar_power_generation
+		ad_can_remove_artificial_solar_power_generation = yes
 	}
 }
 decision_ad_government_district = {
@@ -393,13 +397,13 @@ decision_ad_government_district = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_government_district
+			has_deposit = d_ad_government_district
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -407,46 +411,13 @@ decision_ad_government_district = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_government_district
+			has_deposit = d_ad_government_district
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_government_district_effects
 		hidden_effect = {
-			add_deposit = d_ad_government_district
-			set_planet_flag = do_ad_government_district
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
+			ad_add_development_government_district = yes
 		}
 	}
 	ai_weight = {
@@ -493,43 +464,19 @@ decision_ad_undo_government_district = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_government_district
+		has_deposit = d_ad_government_district
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_government_district
+		has_deposit = d_ad_government_district
+		ad_can_remove_development_government_district = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_government_district_effects
-		remove_deposit = d_ad_government_district
 		hidden_effect = {
-			remove_planet_flag = do_ad_government_district
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_government_district = yes
 		}
 	}
 	ai_weight = {
@@ -547,13 +494,13 @@ decision_ad_university_district = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_university_district
+			has_deposit = d_ad_university_district
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -561,46 +508,13 @@ decision_ad_university_district = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_university_district
+			has_deposit = d_ad_university_district
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_university_district_effects
 		hidden_effect = {
-			add_deposit = d_ad_university_district
-			set_planet_flag = do_ad_university_district
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
+			ad_add_development_university_district = yes
 		}
 	}
 	ai_weight = {
@@ -656,43 +570,19 @@ decision_ad_undo_university_district = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_university_district
+		has_deposit = d_ad_university_district
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_university_district
+		has_deposit = d_ad_university_district
+		ad_can_remove_development_university_district = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_university_district_effects
-		remove_deposit = d_ad_university_district
 		hidden_effect = {
-			remove_planet_flag = do_ad_university_district
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_university_district = yes
 		}
 	}
 	ai_weight = {
@@ -710,13 +600,13 @@ decision_ad_residential_area = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_residential_area
+			has_deposit = d_ad_residential_area
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -724,14 +614,13 @@ decision_ad_residential_area = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_residential_area
+			has_deposit = d_ad_residential_area
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_residential_area_effects
 		hidden_effect = {
-			add_deposit = d_ad_residential_area
-			set_planet_flag = do_ad_residential_area
+			ad_add_development_residential_area = yes
 		}
 	}
 	ai_weight = {
@@ -758,43 +647,19 @@ decision_ad_undo_residential_area = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_residential_area
+		has_deposit = d_ad_residential_area
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_residential_area
+		has_deposit = d_ad_residential_area
+		ad_can_remove_development_residential_area = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_residential_area_effects
-		remove_deposit = d_ad_residential_area
 		hidden_effect = {
-			remove_planet_flag = do_ad_residential_area
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_residential_area = yes
 		}
 	}
 	ai_weight = {
@@ -812,13 +677,13 @@ decision_ad_shipbuilding_arsenal = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_shipbuilding_arsenal
+			has_deposit = d_ad_shipbuilding_arsenal
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -826,46 +691,13 @@ decision_ad_shipbuilding_arsenal = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_shipbuilding_arsenal
+			has_deposit = d_ad_shipbuilding_arsenal
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_shipbuilding_arsenal_effects
 		hidden_effect = {
-			add_deposit = d_ad_shipbuilding_arsenal
-			set_planet_flag = do_ad_shipbuilding_arsenal
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
+			ad_add_development_shipbuilding_arsenal = yes
 		}
 	}
 	ai_weight = {
@@ -912,43 +744,19 @@ decision_ad_undo_shipbuilding_arsenal = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_shipbuilding_arsenal
+		has_deposit = d_ad_shipbuilding_arsenal
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_shipbuilding_arsenal
+		has_deposit = d_ad_shipbuilding_arsenal
+		ad_can_remove_development_shipbuilding_arsenal = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_shipbuilding_arsenal_effects
-		remove_deposit = d_ad_shipbuilding_arsenal
 		hidden_effect = {
-			remove_planet_flag = do_ad_shipbuilding_arsenal
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_shipbuilding_arsenal = yes
 		}
 	}
 	ai_weight = {
@@ -966,13 +774,13 @@ decision_ad_communication_area = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_communication_area
+			has_deposit = d_ad_communication_area
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -980,46 +788,13 @@ decision_ad_communication_area = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_communication_area
+			has_deposit = d_ad_communication_area
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_communication_area_effects
 		hidden_effect = {
-			add_deposit = d_ad_communication_area
-			set_planet_flag = do_ad_communication_area
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
+			ad_add_development_communication_area = yes
 		}
 	}
 	ai_weight = {
@@ -1066,43 +841,19 @@ decision_ad_undo_communication_area = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_communication_area
+		has_deposit = d_ad_communication_area
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_communication_area
+		has_deposit = d_ad_communication_area
+		ad_can_remove_development_communication_area = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_communication_area_effects
-		remove_deposit = d_ad_communication_area
 		hidden_effect = {
-			remove_planet_flag = do_ad_communication_area
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_communication_area = yes
 		}
 	}
 	ai_weight = {
@@ -1120,13 +871,13 @@ decision_ad_tourist_area = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_tourist_area
+			has_deposit = d_ad_tourist_area
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1134,46 +885,13 @@ decision_ad_tourist_area = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_tourist_area
+			has_deposit = d_ad_tourist_area
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_tourist_area_effects
 		hidden_effect = {
-			add_deposit = d_ad_tourist_area
-			set_planet_flag = do_ad_tourist_area
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
+			ad_add_development_tourist_area = yes
 		}
 	}
 	ai_weight = {
@@ -1220,43 +938,19 @@ decision_ad_undo_tourist_area = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_tourist_area
+		has_deposit = d_ad_tourist_area
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_tourist_area
+		has_deposit = d_ad_tourist_area
+		ad_can_remove_development_tourist_area = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_tourist_area_effects
-		remove_deposit = d_ad_tourist_area
 		hidden_effect = {
-			remove_planet_flag = do_ad_tourist_area
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_tourist_area = yes
 		}
 	}
 	ai_weight = {
@@ -1274,13 +968,13 @@ decision_ad_defense_zone = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_defense_zone
+			has_deposit = d_ad_defense_zone
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1288,46 +982,13 @@ decision_ad_defense_zone = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_defense_zone
+			has_deposit = d_ad_defense_zone
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_defense_zone_effects
 		hidden_effect = {
-			add_deposit = d_ad_defense_zone
-			set_planet_flag = do_ad_defense_zone
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
+			ad_add_development_defense_zone = yes
 		}
 	}
 	ai_weight = {
@@ -1374,43 +1035,19 @@ decision_ad_undo_defense_zone = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_defense_zone
+		has_deposit = d_ad_defense_zone
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_defense_zone
+		has_deposit = d_ad_defense_zone
+		ad_can_remove_development_defense_zone = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_defense_zone_effects
-		remove_deposit = d_ad_defense_zone
 		hidden_effect = {
-			remove_planet_flag = do_ad_defense_zone
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_defense_zone = yes
 		}
 	}
 	ai_weight = {
@@ -1428,13 +1065,13 @@ decision_ad_conceptual_zone = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_conceptual_zone
+			has_deposit = d_ad_conceptual_zone
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1442,46 +1079,13 @@ decision_ad_conceptual_zone = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_conceptual_zone
+			has_deposit = d_ad_conceptual_zone
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_conceptual_zone_effects
 		hidden_effect = {
-			add_deposit = d_ad_conceptual_zone
-			set_planet_flag = do_ad_conceptual_zone
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
+			ad_add_development_conceptual_zone = yes
 		}
 	}
 	ai_weight = {
@@ -1528,43 +1132,19 @@ decision_ad_undo_conceptual_zone = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_conceptual_zone
+		has_deposit = d_ad_conceptual_zone
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_conceptual_zone
+		has_deposit = d_ad_conceptual_zone
+		ad_can_remove_development_conceptual_zone = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_conceptual_zone_effects
-		remove_deposit = d_ad_conceptual_zone
 		hidden_effect = {
-			remove_planet_flag = do_ad_conceptual_zone
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_conceptual_zone = yes
 		}
 	}
 	ai_weight = {
@@ -1582,13 +1162,13 @@ decision_ad_special_research_zone = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_special_research_zone
+			has_deposit = d_ad_special_research_zone
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1596,46 +1176,13 @@ decision_ad_special_research_zone = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_special_research_zone
+			has_deposit = d_ad_special_research_zone
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_special_research_zone_effects
 		hidden_effect = {
-			add_deposit = d_ad_special_research_zone
-			set_planet_flag = do_ad_special_research_zone
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
+			ad_add_development_special_research_zone = yes
 		}
 	}
 	ai_weight = {
@@ -1691,43 +1238,19 @@ decision_ad_undo_special_research_zone = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_special_research_zone
+		has_deposit = d_ad_special_research_zone
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_special_research_zone
+		has_deposit = d_ad_special_research_zone
+		ad_can_remove_development_special_research_zone = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_special_research_zone_effects
-		remove_deposit = d_ad_special_research_zone
 		hidden_effect = {
-			remove_planet_flag = do_ad_special_research_zone
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_special_research_zone = yes
 		}
 	}
 	ai_weight = {
@@ -1745,13 +1268,13 @@ decision_ad_spaceport_area = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_spaceport_area
+			has_deposit = d_ad_spaceport_area
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1759,46 +1282,13 @@ decision_ad_spaceport_area = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_spaceport_area
+			has_deposit = d_ad_spaceport_area
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_spaceport_area_effects
 		hidden_effect = {
-			add_deposit = d_ad_spaceport_area
-			set_planet_flag = do_ad_spaceport_area
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
+			ad_add_development_spaceport_area = yes
 		}
 	}
 	ai_weight = {
@@ -1845,43 +1335,19 @@ decision_ad_undo_spaceport_area = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_spaceport_area
+		has_deposit = d_ad_spaceport_area
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_spaceport_area
+		has_deposit = d_ad_spaceport_area
+		ad_can_remove_development_spaceport_area = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_spaceport_area_effects
-		remove_deposit = d_ad_spaceport_area
 		hidden_effect = {
-			remove_planet_flag = do_ad_spaceport_area
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_spaceport_area = yes
 		}
 	}
 	ai_weight = {
@@ -1899,13 +1365,13 @@ decision_ad_orbital_elevator = {
 	}
 	potential = {
 		NOT = {
-			has_planet_flag = do_ad_4
+			ad_development_slots_full = yes
 		}
 		owner = {
 			is_ai = yes
 		}
 		NOT = {
-			has_planet_flag = do_ad_orbital_elevator
+			has_deposit = d_ad_orbital_elevator
 		}
 		owner = {
 			has_technology = mixed_use_development_plan
@@ -1913,46 +1379,13 @@ decision_ad_orbital_elevator = {
 	}
 	allow = {
 		NOT = {
-			has_planet_flag = do_ad_orbital_elevator
+			has_deposit = d_ad_orbital_elevator
 		}
 	}
 	effect = {
 		custom_tooltip = decision_ad_orbital_elevator_effects
 		hidden_effect = {
-			add_deposit = d_ad_orbital_elevator
-			set_planet_flag = do_ad_orbital_elevator
-			if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_1
-					}
-				}
-				set_planet_flag = do_ad_1
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_2
-					}
-				}
-				set_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_3
-					}
-				}
-				set_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_planet_flag = do_ad_4
-					}
-				}
-				set_planet_flag = do_ad_4
-			}
+			ad_add_development_orbital_elevator = yes
 		}
 	}
 	ai_weight = {
@@ -1999,43 +1432,19 @@ decision_ad_undo_orbital_elevator = {
 		owner = {
 			is_ai = yes
 		}
-		has_planet_flag = do_ad_orbital_elevator
+		has_deposit = d_ad_orbital_elevator
 		owner = {
 			has_technology = mixed_use_development_plan
 		}
 	}
 	allow = {
-		has_planet_flag = do_ad_orbital_elevator
+		has_deposit = d_ad_orbital_elevator
+		ad_can_remove_development_orbital_elevator = yes
 	}
 	effect = {
 		custom_tooltip = decision_ad_undo_orbital_elevator_effects
-		remove_deposit = d_ad_orbital_elevator
 		hidden_effect = {
-			remove_planet_flag = do_ad_orbital_elevator
-			if = {
-				limit = {
-					has_planet_flag = do_ad_4
-				}
-				remove_planet_flag = do_ad_4
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_3
-				}
-				remove_planet_flag = do_ad_3
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_2
-				}
-				remove_planet_flag = do_ad_2
-			}
-			else_if = {
-				limit = {
-					has_planet_flag = do_ad_1
-				}
-				remove_planet_flag = do_ad_1
-			}
+			ad_remove_development_orbital_elevator = yes
 		}
 	}
 	ai_weight = {

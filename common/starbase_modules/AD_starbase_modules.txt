@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
 ad_dry_dock = {
 	icon = GFX_spaceport_module_ad_dry_dock
 	construction_days = 360
@@ -87,23 +87,19 @@ ad_great_trade_port = {
 			alloys = 500
 		}
 		upkeep = {
-			energy = 5
+			energy = 3
+		}
+		produces = {
+			trade = 4
 		}
 		produces = {
 			trigger = {
+				exists = starbase
 				starbase = {
 					has_starbase_building = ad_station_commercial_mall
 				}
 			}
-			trade = 10
-		}
-	}
-	station_modifier = {
-
-	}
-	triggered_country_modifier = {
-		potential = {
-			has_starbase_building = ad_station_commercial_mall
+			trade = 4
 		}
 	}
 }
@@ -262,11 +258,11 @@ ad_space_guard_base = {
 			alloys = 300
 		}
 		upkeep = {
-			energy = 5
+			energy = 3
 		}
 	}
 	station_modifier = {
-
+		starbase_defense_platform_capacity_add = 2
 	}
 }
 ad_protective_bulkhead = {

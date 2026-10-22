@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.1 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.2 / Stellaris 4.5.2
 has_district_ad_solar_power_generation = {
 	OR = {
 		has_deposit = d_ad_solar_power_generation
@@ -6,37 +6,37 @@ has_district_ad_solar_power_generation = {
 	}
 }
 has_district_ad_government_district = {
-	has_planet_flag = do_ad_government_district
+	has_deposit = d_ad_government_district
 }
 has_district_ad_university_district = {
-	has_planet_flag = do_ad_university_district
+	has_deposit = d_ad_university_district
 }
 has_district_ad_residential_area = {
-	has_planet_flag = do_ad_residential_area
+	has_deposit = d_ad_residential_area
 }
 has_district_ad_shipbuilding_arsenal = {
-	has_planet_flag = do_ad_shipbuilding_arsenal
+	has_deposit = d_ad_shipbuilding_arsenal
 }
 has_district_ad_communication_area = {
-	has_planet_flag = do_ad_communication_area
+	has_deposit = d_ad_communication_area
 }
 has_district_ad_tourist_area = {
-	has_planet_flag = do_ad_tourist_area
+	has_deposit = d_ad_tourist_area
 }
 has_district_ad_defense_zone = {
-	has_planet_flag = do_ad_defense_zone
+	has_deposit = d_ad_defense_zone
 }
 has_district_ad_conceptual_zone = {
-	has_planet_flag = do_ad_conceptual_zone
+	has_deposit = d_ad_conceptual_zone
 }
 has_district_ad_special_research_zone = {
-	has_planet_flag = do_ad_special_research_zone
+	has_deposit = d_ad_special_research_zone
 }
 has_district_ad_spaceport_area = {
-	has_planet_flag = do_ad_spaceport_area
+	has_deposit = d_ad_spaceport_area
 }
 has_district_ad_orbital_elevator = {
-	has_planet_flag = do_ad_orbital_elevator
+	has_deposit = d_ad_orbital_elevator
 }
 do_is_arcology_planet = {
 	OR = {
@@ -336,5 +336,288 @@ is_ad_cold = {
 		is_planet_class = pc_arctic
 		is_planet_class = pc_alpine
 		is_planet_class = pc_tundra
+	}
+}
+ad_development_slots_full = {
+	calc_true_if = {
+		amount >= 4
+		has_deposit = d_ad_government_district
+		has_deposit = d_ad_university_district
+		has_deposit = d_ad_residential_area
+		has_deposit = d_ad_shipbuilding_arsenal
+		has_deposit = d_ad_communication_area
+		has_deposit = d_ad_tourist_area
+		has_deposit = d_ad_defense_zone
+		has_deposit = d_ad_conceptual_zone
+		has_deposit = d_ad_special_research_zone
+		has_deposit = d_ad_spaceport_area
+		has_deposit = d_ad_orbital_elevator
+	}
+}
+ad_can_remove_development_government_district = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_government_district
+		value = 0
+	}
+}
+ad_can_remove_development_university_district = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_university_district
+		value = 0
+	}
+}
+ad_can_remove_development_residential_area = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_residential_area
+		value = 0
+	}
+}
+ad_can_remove_development_shipbuilding_arsenal = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_shipbuilding_arsenal
+		value = 0
+	}
+}
+ad_can_remove_development_communication_area = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_communication_area
+		value = 0
+	}
+}
+ad_can_remove_development_tourist_area = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_tourist_area
+		value = 0
+	}
+}
+ad_can_remove_development_defense_zone = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_defense_zone
+		value = 0
+	}
+}
+ad_can_remove_development_conceptual_zone = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_conceptual_zone
+		value = 0
+	}
+}
+ad_can_remove_development_special_research_zone = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_special_research_zone
+		value = 0
+	}
+}
+ad_can_remove_development_spaceport_area = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_spaceport_area
+		value = 0
+	}
+}
+ad_can_remove_development_orbital_elevator = {
+	has_building_construction = no
+	num_districts = {
+		type = district_ad_orbital_elevator
+		value = 0
+	}
+}
+ad_can_remove_artificial_sky_cities = {
+	has_building_construction = no
+	OR = {
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_sky_cities
+				count = 1
+			}
+			num_free_districts = {
+				type = district_ad_sky_cities
+				value >= 1
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_sky_cities
+				count = 2
+			}
+			num_free_districts = {
+				type = district_ad_sky_cities
+				value >= 2
+			}
+		}
+	}
+}
+ad_can_remove_artificial_under_water_cities = {
+	has_building_construction = no
+	OR = {
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_under_water_cities
+				count = 1
+			}
+			num_free_districts = {
+				type = district_ad_under_water_cities
+				value >= 1
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_under_water_cities
+				count = 2
+			}
+			num_free_districts = {
+				type = district_ad_under_water_cities
+				value >= 2
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_under_water_cities
+				count = 3
+			}
+			num_free_districts = {
+				type = district_ad_under_water_cities
+				value >= 3
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_under_water_cities
+				count = 4
+			}
+			num_free_districts = {
+				type = district_ad_under_water_cities
+				value >= 4
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_under_water_cities
+				count = 5
+			}
+			num_free_districts = {
+				type = district_ad_under_water_cities
+				value >= 5
+			}
+		}
+	}
+}
+ad_can_remove_artificial_underground_cities = {
+	has_building_construction = no
+	OR = {
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_underground_cities
+				count = 1
+			}
+			num_free_districts = {
+				type = district_ad_underground_cities
+				value >= 1
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_underground_cities
+				count = 2
+			}
+			num_free_districts = {
+				type = district_ad_underground_cities
+				value >= 2
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_underground_cities
+				count = 3
+			}
+			num_free_districts = {
+				type = district_ad_underground_cities
+				value >= 3
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_underground_cities
+				count = 4
+			}
+			num_free_districts = {
+				type = district_ad_underground_cities
+				value >= 4
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_underground_cities
+				count = 5
+			}
+			num_free_districts = {
+				type = district_ad_underground_cities
+				value >= 5
+			}
+		}
+	}
+}
+ad_can_remove_artificial_solar_power_generation = {
+	has_building_construction = no
+	OR = {
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_solar_power_generation
+				count = 1
+			}
+			num_free_districts = {
+				type = district_ad_solar_power_generation
+				value >= 1
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_solar_power_generation
+				count = 2
+			}
+			num_free_districts = {
+				type = district_ad_solar_power_generation
+				value >= 2
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_solar_power_generation
+				count = 3
+			}
+			num_free_districts = {
+				type = district_ad_solar_power_generation
+				value >= 3
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_solar_power_generation
+				count = 4
+			}
+			num_free_districts = {
+				type = district_ad_solar_power_generation
+				value >= 4
+			}
+		}
+		AND = {
+			count_deposits = {
+				type = d_ad_artificial_solar_power_generation
+				count = 5
+			}
+			num_free_districts = {
+				type = district_ad_solar_power_generation
+				value >= 5
+			}
+		}
 	}
 }

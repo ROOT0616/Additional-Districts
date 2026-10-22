@@ -1,4 +1,8 @@
-# Additional Districts And Buildings 2.1.0-beta.1
+# Additional Districts And Buildings 2.1.0-beta.2
+
+## 現行版 2.1.0-beta.2
+
+施設・開発枠・撤去条件を修正しました。[変更内容と検証範囲](RELEASE_2_1_BETA_2.md)を参照してください。以下の旧版記録は履歴です。天然生成・職業数値はまだ変更していません。
 
 対象: Stellaris 4.5.2 (9776)。4.5.* 表記はLauncher用であり、将来の4.5パッチまで動作保証するものではありません。
 
