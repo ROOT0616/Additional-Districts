@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.6 / Stellaris 4.5.2
 building_ad_Palace = {
 	building_sets = {
 		ad_buildings
@@ -56,12 +56,6 @@ building_ad_Palace = {
 			remove_country_flag = build_ad_Palace
 		}
 	}
-	ai_resource_production = {
-		trigger = {
-			always = yes
-		}
-		influence = 1
-	}
 }
 building_ad_CEO = {
 	building_sets = {
@@ -118,12 +112,6 @@ building_ad_CEO = {
 		owner = {
 			remove_country_flag = build_ad_CEO
 		}
-	}
-	ai_resource_production = {
-		trigger = {
-			always = yes
-		}
-		influence = 1
 	}
 }
 building_ad_M_def = {
@@ -514,12 +502,6 @@ building_ad_O_dip = {
 			remove_country_flag = build_ad_O_dip
 		}
 	}
-	ai_resource_production = {
-		energy = 8
-		trigger = {
-			always = yes
-		}
-	}
 }
 building_ad_M_inf = {
 	building_sets = {
@@ -705,12 +687,6 @@ building_ad_M_tra = {
 			remove_country_flag = build_ad_M_tra
 		}
 	}
-	ai_resource_production = {
-		energy = 8
-		trigger = {
-			always = yes
-		}
-	}
 }
 building_ad_O_tra = {
 	building_sets = {
@@ -772,12 +748,6 @@ building_ad_O_tra = {
 	on_destroy = {
 		owner = {
 			remove_country_flag = build_ad_O_tra
-		}
-	}
-	ai_resource_production = {
-		energy = 8
-		trigger = {
-			always = yes
 		}
 	}
 }
@@ -1264,12 +1234,6 @@ building_ad_O_bank = {
 			remove_country_flag = build_ad_O_bank
 		}
 	}
-	ai_resource_production = {
-		energy = 8
-		trigger = {
-			always = yes
-		}
-	}
 }
 building_ad_E_mil = {
 	building_sets = {
@@ -1510,15 +1474,6 @@ building_ad_G_datebank = {
 			remove_country_flag = build_ad_G_datebank
 		}
 	}
-	ai_resource_production = {
-		trigger = {
-			always = yes
-		}
-		unity = 3
-		physics_research = 2
-		society_research = 2
-		engineering_research = 2
-	}
 }
 building_ad_medicinelab = {
 	building_sets = {
@@ -1578,15 +1533,6 @@ building_ad_medicinelab = {
 		owner = {
 			remove_country_flag = build_ad_medicinelab
 		}
-	}
-	ai_resource_production = {
-		trigger = {
-			always = yes
-		}
-		unity = 3
-		physics_research = 2
-		society_research = 2
-		engineering_research = 2
 	}
 }
 building_ad_cathedral_of_the_sky = {
@@ -1655,12 +1601,6 @@ building_ad_cathedral_of_the_sky = {
 			remove_country_flag = build_ad_cathedral_of_the_sky
 		}
 	}
-	ai_resource_production = {
-		trigger = {
-			always = yes
-		}
-		unity = 3
-	}
 }
 building_ad_P_datebank = {
 	building_sets = {
@@ -1696,15 +1636,6 @@ building_ad_P_datebank = {
 			exotic_gases = 1
 		}
 	}
-	ai_resource_production = {
-		trigger = {
-			always = yes
-		}
-		unity = 3
-		physics_research = 2
-		society_research = 2
-		engineering_research = 2
-	}
 }
 building_ad_E_libraly = {
 	building_sets = {
@@ -1736,15 +1667,6 @@ building_ad_E_libraly = {
 			energy = 3
 			exotic_gases = 1
 		}
-	}
-	ai_resource_production = {
-		trigger = {
-			always = yes
-		}
-		unity = 6
-		physics_research = 4
-		society_research = 4
-		engineering_research = 4
 	}
 }
 building_ad_welness = {
@@ -1796,7 +1718,7 @@ building_ad_P_Police = {
 		job_enforcer_per_pop = 0.04
 	}
 	country_modifier = {
-		intel_encryption_add = 5
+		intel_encryption_add = 0.5
 	}
 	resources = {
 		category = planet_buildings
@@ -2094,7 +2016,7 @@ building_ad_university = {
 		job_physicist_add = 67
 		job_biologist_add = 67
 		job_engineer_add = 66
-		job_culture_worker_add = 200
+		job_bureaucrat_add = 200
 	}
 	resources = {
 		category = planet_buildings
@@ -2107,15 +2029,6 @@ building_ad_university = {
 			energy = 3
 			exotic_gases = 1
 		}
-	}
-	ai_resource_production = {
-		trigger = {
-			always = yes
-		}
-		unity = 3
-		physics_research = 2
-		society_research = 2
-		engineering_research = 2
 	}
 }
 building_ad_perfectethic = {
@@ -2167,9 +2080,8 @@ building_ad_diversity = {
 		}
 	}
 	planet_modifier = {
-		job_bureaucrat_add = 100
-		job_culture_worker_add = 300
 		pop_ethic_xenophile_attraction_mult = 0.2
+		job_bureaucrat_add = 400
 	}
 	resources = {
 		category = planet_buildings
@@ -2201,10 +2113,9 @@ building_ad_judgement = {
 		}
 	}
 	planet_modifier = {
-		job_bureaucrat_add = 100
-		job_culture_worker_add = 100
 		job_ad_lawyer_add = 200
 		planet_crime_mult = -0.2
+		job_bureaucrat_add = 200
 	}
 	resources = {
 		category = planet_buildings
@@ -2233,9 +2144,9 @@ building_ad_P_broad = {
 	}
 	planet_modifier = {
 		job_ad_journalist_add = 200
-		job_culture_worker_add = 100
 		planet_stability_add = 5
 		pop_happiness = 0.05
+		job_bureaucrat_add = 100
 	}
 	resources = {
 		category = planet_buildings
@@ -2352,9 +2263,9 @@ building_ad_red_light = {
 	}
 	planet_modifier = {
 		job_entertainer_add = 400
-		job_culture_worker_add = 100
 		planet_amenities_mult = 0.05
 		pop_cat_worker_happiness = 0.05
+		job_bureaucrat_add = 100
 	}
 	resources = {
 		category = planet_buildings
@@ -2449,7 +2360,7 @@ building_ad_college = {
 		job_engineer_add = 33
 		job_ad_lawyer_add = 100
 		job_healthcare_add = 100
-		job_culture_worker_add = 100
+		job_bureaucrat_add = 100
 	}
 	resources = {
 		category = planet_buildings
@@ -2462,15 +2373,6 @@ building_ad_college = {
 			energy = 3
 			exotic_gases = 1
 		}
-	}
-	ai_resource_production = {
-		trigger = {
-			always = yes
-		}
-		unity = 1
-		physics_research = 1
-		society_research = 1
-		engineering_research = 1
 	}
 }
 building_ad_H_hotel = {
@@ -2638,9 +2540,6 @@ building_ad_D_Auto = {
 			}
 		}
 	}
-	country_modifier = {
-		army_defense_damage_mult = 0.3
-	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -2653,6 +2552,9 @@ building_ad_D_Auto = {
 			alloys = 2
 			volatile_motes = 1
 		}
+	}
+	planet_modifier = {
+		army_defense_damage_mult = 0.3
 	}
 }
 building_ad_Anti_b_pit = {
@@ -2670,12 +2572,10 @@ building_ad_Anti_b_pit = {
 			}
 		}
 	}
-	country_modifier = {
-		army_defense_health_mult = 0.1
-	}
 	planet_modifier = {
 		job_soldier_add = 100
 		planet_orbital_bombardment_damage = -0.2
+		army_defense_health_mult = 0.1
 	}
 	resources = {
 		category = planet_buildings
@@ -2946,7 +2846,7 @@ building_ad_social_welfare_service_corporation = {
 		}
 	}
 	country_modifier = {
-		diplo_weight_mult = 0.05
+		diplo_weight_mult = 0.01
 	}
 	planet_modifier = {
 		pop_happiness = 0.05
@@ -3135,7 +3035,7 @@ building_ad_planet_shipyard = {
 		}
 	}
 	country_modifier = {
-		starbase_shipyard_build_speed_mult = 0.05
+		starbase_shipyard_build_speed_mult = 0.01
 	}
 	planet_modifier = {
 		planet_jobs_alloys_produces_mult = 0.05
@@ -3397,7 +3297,6 @@ building_slave_shop = {
 		job_clerk_add = 200
 	}
 	country_modifier = {
-
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3494,7 +3393,6 @@ building_yakuza_office = {
 		job_soldier_add = 100
 	}
 	country_modifier = {
-
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3557,7 +3455,6 @@ building_yakuza_estate = {
 		job_clerk_add = 200
 	}
 	country_modifier = {
-
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3590,7 +3487,7 @@ building_pirate_broad = {
 	}
 	country_modifier = {
 		intel_encryption_add = -1
-		country_unity_produces_mult = 0.1
+		country_unity_produces_mult = 0.02
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3652,9 +3549,9 @@ building_f_rank_universities = {
 		planet_jobs_specialist_produces_mult = -0.02
 	}
 	country_modifier = {
-		country_physics_research_produces_mult = 0.05
-		country_society_research_produces_mult = 0.05
-		country_engineering_research_produces_mult = 0.05
+		country_physics_research_produces_mult = 0.01
+		country_society_research_produces_mult = 0.01
+		country_engineering_research_produces_mult = 0.01
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3687,7 +3584,7 @@ building_corp_nazi = {
 		job_clerk_add = 200
 	}
 	country_modifier = {
-		country_unity_produces_mult = 0.1
+		country_unity_produces_mult = 0.02
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3720,7 +3617,6 @@ building_so_kai_ya = {
 		job_trader_add = 100
 	}
 	country_modifier = {
-
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3752,7 +3648,7 @@ building_yakuza_a_pro = {
 		pop_government_ethic_attraction = -0.1
 	}
 	country_modifier = {
-		country_unity_produces_mult = 0.05
+		country_unity_produces_mult = 0.01
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3786,7 +3682,6 @@ building_boryoku_ya = {
 		pop_cat_ruler_happiness = 0.05
 	}
 	country_modifier = {
-
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3880,7 +3775,6 @@ building_buki_factry = {
 		planet_jobs_alloys_produces_mult = 0.05
 	}
 	country_modifier = {
-
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3914,7 +3808,7 @@ building_zosen_factry = {
 		job_ad_shipwright_add = 100
 	}
 	country_modifier = {
-		starbase_shipyard_build_speed_mult = 0.05
+		starbase_shipyard_build_speed_mult = 0.01
 	}
 	resources = {
 		category = planet_branch_office_buildings

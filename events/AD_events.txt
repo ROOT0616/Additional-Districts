@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.6 / Stellaris 4.5.2
 namespace = additionaldistricts
 planet_event = {
 	id = additionaldistricts.1
@@ -734,6 +734,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.2.a
 		custom_tooltip = decision_ad_large_scale_air_area_construction_effects
+		custom_tooltip = ad_artificial_native_cost_notice
 		trigger = {
 			is_colony = yes
 			owner = {
@@ -743,20 +744,6 @@ planet_event = {
 		}
 		allow = {
 			ad_can_start_artificial_sky_cities = yes
-			owner = {
-				resource_stockpile_compare = {
-					resource = minerals
-					value >= 500
-				}
-				resource_stockpile_compare = {
-					resource = alloys
-					value >= 250
-				}
-				resource_stockpile_compare = {
-					resource = exotic_gases
-					value >= 50
-				}
-			}
 		}
 		hidden_effect = {
 			select_decision = {
@@ -767,6 +754,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.2.b
 		custom_tooltip = decision_ad_undo_large_scale_air_area_construction_effects
+		custom_tooltip = ad_artificial_native_cost_notice
 		trigger = {
 			is_colony = yes
 			owner = {
@@ -776,12 +764,6 @@ planet_event = {
 		}
 		allow = {
 			ad_can_remove_artificial_one_sky_cities = yes
-			owner = {
-				resource_stockpile_compare = {
-					resource = minerals
-					value >= 125
-				}
-			}
 		}
 		hidden_effect = {
 			select_decision = {
@@ -792,6 +774,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.2.c
 		custom_tooltip = decision_ad_large_scale_water_area_construction_effects
+		custom_tooltip = ad_artificial_native_cost_notice
 		trigger = {
 			is_colony = yes
 			owner = {
@@ -801,16 +784,6 @@ planet_event = {
 		}
 		allow = {
 			ad_can_start_artificial_under_water_cities = yes
-			owner = {
-				resource_stockpile_compare = {
-					resource = minerals
-					value >= 200
-				}
-				resource_stockpile_compare = {
-					resource = alloys
-					value >= 100
-				}
-			}
 		}
 		hidden_effect = {
 			select_decision = {
@@ -821,6 +794,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.2.d
 		custom_tooltip = decision_ad_undo_large_scale_water_area_construction_effects
+		custom_tooltip = ad_artificial_native_cost_notice
 		trigger = {
 			is_colony = yes
 			owner = {
@@ -830,12 +804,6 @@ planet_event = {
 		}
 		allow = {
 			ad_can_remove_artificial_one_under_water_cities = yes
-			owner = {
-				resource_stockpile_compare = {
-					resource = minerals
-					value >= 50
-				}
-			}
 		}
 		hidden_effect = {
 			select_decision = {
@@ -846,6 +814,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.2.e
 		custom_tooltip = decision_ad_large_scale_underground_area_construction_effects
+		custom_tooltip = ad_artificial_native_cost_notice
 		trigger = {
 			is_colony = yes
 			owner = {
@@ -855,16 +824,6 @@ planet_event = {
 		}
 		allow = {
 			ad_can_start_artificial_underground_cities = yes
-			owner = {
-				resource_stockpile_compare = {
-					resource = minerals
-					value >= 100
-				}
-				resource_stockpile_compare = {
-					resource = alloys
-					value >= 200
-				}
-			}
 		}
 		hidden_effect = {
 			select_decision = {
@@ -875,6 +834,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.2.f
 		custom_tooltip = decision_ad_undo_large_scale_underground_area_construction_effects
+		custom_tooltip = ad_artificial_native_cost_notice
 		trigger = {
 			is_colony = yes
 			owner = {
@@ -884,12 +844,6 @@ planet_event = {
 		}
 		allow = {
 			ad_can_remove_artificial_one_underground_cities = yes
-			owner = {
-				resource_stockpile_compare = {
-					resource = minerals
-					value >= 50
-				}
-			}
 		}
 		hidden_effect = {
 			select_decision = {
@@ -900,6 +854,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.2.g
 		custom_tooltip = decision_ad_solar_power_generation_effects
+		custom_tooltip = ad_artificial_native_cost_notice
 		trigger = {
 			is_colony = yes
 			owner = {
@@ -909,12 +864,6 @@ planet_event = {
 		}
 		allow = {
 			ad_can_start_artificial_solar_power_generation = yes
-			owner = {
-				resource_stockpile_compare = {
-					resource = minerals
-					value >= 100
-				}
-			}
 		}
 		hidden_effect = {
 			select_decision = {
@@ -925,6 +874,7 @@ planet_event = {
 	option = {
 		name = additionaldistricts.2.h
 		custom_tooltip = decision_ad_undo_solar_power_generation_effects
+		custom_tooltip = ad_artificial_native_cost_notice
 		trigger = {
 			is_colony = yes
 			owner = {
@@ -934,12 +884,6 @@ planet_event = {
 		}
 		allow = {
 			ad_can_remove_artificial_one_solar_power_generation = yes
-			owner = {
-				resource_stockpile_compare = {
-					resource = minerals
-					value >= 25
-				}
-			}
 		}
 		hidden_effect = {
 			select_decision = {

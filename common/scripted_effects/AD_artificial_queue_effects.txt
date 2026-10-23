@@ -1,0 +1,17 @@
+# Additional Districts 2.1.0-beta.6 / Stellaris 4.5.2
+ad_clear_artificial_project = {
+	remove_planet_flag = ad_artificial_project
+	remove_planet_flag = ad_artificial_tracked
+	remove_planet_flag = ad_artificial_project_sky_cities
+	remove_planet_flag = ad_artificial_project_under_water_cities
+	remove_planet_flag = ad_artificial_project_underground_cities
+	remove_planet_flag = ad_artificial_project_solar_power_generation
+	if = {
+		limit = {
+			exists = owner
+		}
+		owner = {
+			remove_country_flag = ad_artificial_sponsor@root
+		}
+	}
+}

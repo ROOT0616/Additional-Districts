@@ -1,4 +1,4 @@
-"""Evaluate real beta.4 definitions with a small logic model, not the game engine."""
+"""Evaluate real definitions with a small logic model, not the game engine."""
 from pathlib import Path
 from collections import Counter
 from copy import deepcopy
@@ -13,6 +13,8 @@ D={n:b for n,_,b in load('common/decisions/AD_decisions.txt') if isinstance(b,li
 S={n:b for n,_,b in load('common/static_modifiers/AD_shipwright_modifiers.txt')}
 def cmp(a,o,b):return {'=':a==b,'!=':a!=b,'>':a>b,'>=':a>=b,'<':a<b,'<=':a<=b}[o]
 def state():return {'deposits':Counter(),'flags':set(),'built':0,'extra':0,'construction':False,'class':'pc_ocean','set':'standard','colony':True,'modifiers':{},'vars':{},'jobs':{},'bank':Counter(minerals=100000,alloys=100000,exotic_gases=100000),'income':Counter(energy=10,minerals=10),'tech':{'mixed_use_development_plan','large_scale_air_construction_technology','large_scale_in_water_construction_technology','large_scale_ground_construction_technology'},'war':False,'housing':0,'free_jobs':0,'free_district_slots':10,'designation':'col_research','capital':False,'gestalt':False,'fleet_tagged':False,'building':True,'owner_exists':True}
+
+def country_flag(key,s):return key.replace('@root','@'+str(s.get('planet_id',1)))
 def check(body,s):
  for k,o,v in body:
   if k=='OR':r=any(check([x],s) for x in v)
@@ -20,6 +22,7 @@ def check(body,s):
   elif k=='NOT':r=not check(v,s)
   elif k=='NOR':r=not any(check([x],s) for x in v)
   elif k=='has_planet_flag':r=v in s['flags']
+  elif k=='has_country_flag':r=country_flag(v,s) in s.setdefault('country_flags',{}).setdefault(s.get('owner_id',1),set())
   elif k=='has_deposit':r=s['deposits'][v]>0
   elif k=='has_building_construction':r=s['construction']==(v=='yes')
   elif k=='is_colony':r=s['colony']==(v=='yes')
@@ -45,7 +48,7 @@ def check(body,s):
   elif k in ('free_housing','free_jobs','free_district_slots'):r=cmp(s[{'free_housing':'housing'}.get(k,k)],o,float(v))
   elif k=='check_variable':
    _,op,n=next(x for x in v if x[0]=='value');r=cmp(s['vars'][first(v,'which')],op,float(n))
-  elif k=='exists':assert v=='owner';r=s['owner_exists']
+  elif k=='exists':r=s['owner_exists'] if v=='owner' else s.get('old_owner_exists',False) if v=='fromfrom' else False
   elif k=='has_building':assert v=='building_ad_Anti_s_misile';r=s['building']
   elif k=='any_fleet_in_system':r=s['fleet_tagged'] and check(v,s)
   elif k=='has_fleet_flag':assert v=='ad_planet_defence@root';r=s['fleet_tagged']
@@ -74,6 +77,13 @@ def apply(body,s):
   elif k=='remove_deposit':s['deposits'][v]-=1;assert s['deposits'][v]>=0
   elif k=='set_planet_flag':s['flags'].add(v)
   elif k=='remove_planet_flag':s['flags'].discard(v)
+  elif k=='set_timed_planet_flag':
+   s['flags'].add(first(v,'flag'));s.setdefault('flag_days',{})[first(v,'flag')]=int(first(v,'days'))
+  elif k=='set_country_flag':s.setdefault('country_flags',{}).setdefault(s.get('owner_id',1),set()).add(country_flag(v,s))
+  elif k=='remove_country_flag':s.setdefault('country_flags',{}).setdefault(s.get('owner_id',1),set()).discard(country_flag(v,s))
+  elif k=='owner':apply(v,s)
+  elif k=='fromfrom':
+   current=s.get('owner_id',1);s['owner_id']=s.get('old_owner_id',0);apply(v,s);s['owner_id']=current
   elif k=='hidden_effect':apply(v,s)
   elif k=='custom_tooltip':pass
   elif k in E:apply(E[k],s)
@@ -190,7 +200,7 @@ def main():
  actions={n:b for n,_,b in load('common/on_actions/AD_on_actions.txt')}
  assert (None,None,'additionaldistricts.9010') in first(actions['on_monthly_pulse_country'],'events')
  assert (None,None,'additionaldistricts.9011') in first(actions['on_single_player_save_game_load'],'events')
- result={'version':'2.1.0-beta.5','engine_test':False,'cases':sum(tests.values()),'groups':dict(tests),'limits':'Native payment, queue completion/cancellation and job units require engine verification.'}
+ result={'version':'2.1.0-beta.6','engine_test':False,'cases':sum(tests.values()),'groups':dict(tests),'limits':'Native payment, queue completion/cancellation and job units require engine verification.'}
  if args.report:Path(args.report).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
  print(json.dumps(result,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

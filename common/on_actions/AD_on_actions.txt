@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.6 / Stellaris 4.5.2
 on_press_begin = {
 	events = {
 		additionaldistricts.9000
@@ -40,5 +40,15 @@ on_monthly_pulse_country = {
 on_game_start_country = {
 	events = {
 		additionaldistricts.9010
+	}
+}
+on_colony_transfer = {
+	events = {
+		additionaldistricts.9020
+	}
+}
+on_colony_ownerless = {
+	events = {
+		additionaldistricts.9020
 	}
 }

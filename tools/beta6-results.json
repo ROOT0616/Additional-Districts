@@ -1,0 +1,23 @@
+{
+  "version": "2.1.0-beta.6",
+  "engine_test": false,
+  "cases": 671,
+  "groups": {
+    "queue_manual": 48,
+    "queue_tech": 48,
+    "queue_surface": 48,
+    "queue_ownerless": 48,
+    "queue_capacity": 48,
+    "queue_transfer": 48,
+    "queue_legacy": 48,
+    "queue_normal": 48,
+    "abort_cleanup": 48,
+    "independent_planets": 4,
+    "gestalt_development_jobs": 33,
+    "drone_job": 21,
+    "real_ai_estimates": 127,
+    "drone_tooltip": 50,
+    "district_amenities": 4
+  },
+  "limits": "Queue callback order, native costs/refunds, job units and long-term AI construction require engine verification."
+}

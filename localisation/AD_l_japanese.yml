@@ -273,13 +273,13 @@
  job_ad_entrepreneur:0 "起業家"
  job_ad_entrepreneur_plural:0 "起業家"
  job_ad_entrepreneur_desc:0 "新たな市場を開拓し、新たな事業を始める経済面の開拓者"
- job_ad_entrepreneur_effect_desc:0 "£job_ad_entrepreneur£ $job_ad_entrepreneur_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £trade£ §Y$TRADE_VALUE$§!、£society£ §Y$society_research$§!を産出し、£trade£ §Y$TRADE_VALUE$§!を増加させる"
+ job_ad_entrepreneur_effect_desc:0 "職業相当: 社会研究 2、交易 5、惑星の職業による交易産出 +1%。 維持費: 消費財 3。"
  mod_job_ad_entrepreneur_add:0 "起業家の職業枠"
 
  job_ad_spaceport_mechanics:0 "宇宙港管制官"
  job_ad_spaceport_mechanics_plural:0 "宇宙港管制官"
  job_ad_spaceport_mechanics_desc:0 "宇宙港を管理し、管制を行う専門的オペレーター"
- job_ad_spaceport_mechanics_effect_desc:0 "£job_ad_spaceport_mechanics£ $job_ad_spaceport_mechanics_plural$は、 £consumer_goods£ §Y$consumer_goods$§! £alloys£ §Y$alloys$§!を消費して £engineering£ §Y$engineering_research$§!を産出し、£mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!を増加させる"
+ job_ad_spaceport_mechanics_effect_desc:0 "職業相当: 工学研究 3、艦隊許容量 +4。 維持費: 消費財 2・合金 1。"
  mod_job_ad_spaceport_mechanics_add:0 "宇宙港管制官の職業枠"
 
  job_ad_professorship:0 "教授職"
@@ -309,7 +309,7 @@
  job_ad_journalist:0 "ジャーナリスト"
  job_ad_journalist_plural:0 "ジャーナリスト"
  job_ad_journalist_desc:0 "（彼らが信じた、もしくは信じさせたい）真実を集め、民衆に大きな影響を与える専門家。"
- job_ad_journalist_effect_desc:0 "££ $_plural$は、 ££ §Y$$§!を消費して £unity£ §Y$unity$§!と £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!を産出し、 £mod_pop_cat_worker_political_power£ §Y$mod_pop_cat_worker_political_power$§!を増加させる"
+ job_ad_journalist_effect_desc:0 "職業相当: 統合力 3、快適度 +2、惑星安定度 +0.5。 維持費: 消費財 1。"
  mod_job_ad_journalist_add:0 "ジャーナリストの職業枠"
 
  job_ad_librarian:0 "データ司書"
@@ -321,7 +321,7 @@
  job_ad_psp:0 "公安職員"
  job_ad_psp_plural:0 "公安職員"
  job_ad_psp_desc:0 "国家の安全のために、スパイや暴力的団体、テロリストを監視し、摘発する治安職員。"
- job_ad_psp_effect_desc:0 "£job_ad_psp£ $job_ad_psp_plural$は、 £mod_intel_encryption_add£ §Y$intel_encryption_add$§!を産出し、 £crime£ §Y$PLANET_CRIME_TITLE$§!を減らし、  £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!を増加させる"
+ job_ad_psp_effect_desc:0 "職業相当: 統合力 2、犯罪 -15、惑星安定度 +1、帝国暗号力 +0.1。 維持費: 消費財 2。"
  mod_job_ad_psp_add:0 "公安職員の職業枠"
 
 #########################
@@ -343,7 +343,7 @@
  job_ad_congressman:0 "代弁者"
  job_ad_congressman_plural:0 "代弁者"
  job_ad_congressman_desc:0 "選挙で選ばれた議員や、高名な社会活動家、退役した英雄的軍人など社会や市民の意見を代表し、政府に強い働きかけを行う人々。"
- job_ad_congressman_effect_desc:0 "£job_ad_congressman£ $job_ad_congressman_plural$は、 £consumer_goods£ §Y$consumer_goods$§!を消費して £mod_pop_happiness£ §Y$MOD_POP_HAPPINESS$§!、 £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!を増加させる"
+ job_ad_congressman_effect_desc:0 "職業相当: 統合力 3、惑星安定度 +2、幸福度 +1%。 維持費: 消費財 3。"
  mod_job_ad_congressman_add:0 "代弁者の職業枠"
 
 ##############################
@@ -1155,11 +1155,11 @@
 
  ad_development_removal_blocked:0 "§R建設キューを空にし、この開発で利用する区域を先に解体してください。§!"
 
- job_ad_professorship_drone_effect_desc:0 "研究3分野を各2産出し、惑星の職業による各研究産出を1%増やす。維持費はエネルギー3（職業相当）。"
+ job_ad_professorship_drone_effect_desc:0 "職業相当: 物理研究 2、社会研究 2、工学研究 2、物理研究職産出 +1%、社会研究職産出 +1%、工学研究職産出 +1%。 維持費: エネルギー 3。"
 
- job_ad_shipwright_drone_effect_desc:0 "工学研究4・艦隊許容量1・帝国の造船速度+0.25%。維持費はエネルギー2・合金1（職業相当）。就業人数に比例し、上限はない。"
+ job_ad_shipwright_drone_effect_desc:0 "職業相当: 工学研究 4、艦隊許容量 +1、帝国造船速度 +0.25%。 維持費: エネルギー 2・合金 1。"
 
- job_ad_infrastructure_engineer_drone_effect_desc:0 "工学研究2を産出し、惑星の単純ドローン産出を1%増やす。維持費はエネルギー3（職業相当）。"
+ job_ad_infrastructure_engineer_drone_effect_desc:0 "職業相当: 工学研究 2、単純ドローン産出 +1%。 維持費: エネルギー 3。"
 
  ad_shipwright_support_20:0 "造船支援 +20%"
 
@@ -1179,4 +1179,40 @@
 
 
 
- job_ad_data_minor_drone_effect_desc:0 "各研究2、惑星の研究職産出+1%、帝国の暗号力+0.1。維持費はエネルギー3（職業相当）。人数による上限はない。"
+ job_ad_data_minor_drone_effect_desc:0 "職業相当: 物理研究 2、社会研究 2、工学研究 2、惑星研究職産出 +1%、帝国暗号力 +0.1。 維持費: エネルギー 3。"
+
+ job_ad_atomic_engineer_drone_effect_desc:0 "職業相当: エネルギー 8。 維持費: 鉱物 2。 機械帝国はさらにエネルギー2。"
+
+ job_ad_clerk_drone_effect_desc:0 "職業相当: 交易 4、快適度 +2。"
+
+ job_ad_commissioned_officer_drone_effect_desc:0 "職業相当: 防衛軍 +5、艦隊許容量 +10。 維持費: エネルギー 3。"
+
+ job_ad_dairy_farmer_drone_effect_desc:0 "職業相当: 食料 8。 維持費: エネルギー 1。"
+
+ job_ad_efficient_miner_drone_effect_desc:0 "職業相当: 鉱物 10。"
+
+ job_ad_entrepreneur_drone_effect_desc:0 "職業相当: 社会研究 4、交易 5、惑星の職業による交易産出 +1%。 維持費: エネルギー 3。"
+
+ job_ad_excavator_drone_effect_desc:0 "職業相当: 出土品 0.5。 維持費: エネルギー 5。"
+
+ job_ad_facility_maintainer_drone_effect_desc:0 "職業相当: 鉱物 5、快適度 +3。 維持費: エネルギー 1。"
+
+ job_ad_fungus_farmer_drone_effect_desc:0 "職業相当: 食料 5。"
+
+ job_ad_general_officer_drone_effect_desc:0 "職業相当: 防衛軍 +8、艦隊許容量 +16。 維持費: エネルギー 4。"
+
+ job_ad_geothermal_technician_drone_effect_desc:0 "職業相当: エネルギー 6。 機械帝国はさらにエネルギー2。"
+
+ job_ad_large_scale_farmer_drone_effect_desc:0 "職業相当: 食料 6。"
+
+ job_ad_low_efficiency_miner_drone_effect_desc:0 "職業相当: 鉱物 3。"
+
+ job_ad_space_miner_drone_effect_desc:0 "職業相当: 鉱物 6、工学研究 2。"
+
+ job_ad_spaceport_mechanics_drone_effect_desc:0 "職業相当: 工学研究 3、艦隊許容量 +4。 維持費: エネルギー 2・合金 1。"
+
+ job_ad_underwater_miner_drone_effect_desc:0 "職業相当: 鉱物 5。 維持費: エネルギー 1。"
+
+ job_ad_water_farmer_drone_effect_desc:0 "職業相当: 食料 6。 維持費: エネルギー 1。"
+
+ ad_artificial_native_cost_notice:0 "実際の費用・資源不足判定・取消時の精算は惑星ディシジョンの処理に従う。領有変更時は未完了の整備を中止し、3日間は新規整備を待機する。"

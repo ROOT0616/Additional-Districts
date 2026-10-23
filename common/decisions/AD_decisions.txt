@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.6 / Stellaris 4.5.2
 decision_ad_large_scale_air_area_construction = {
 	owned_planets_only = yes
 	enactment_time = 180
@@ -29,21 +29,8 @@ decision_ad_large_scale_air_area_construction = {
 			}
 			has_planet_flag = ad_artificial_project_sky_cities
 		}
-	}
-	on_queued = {
-		set_planet_flag = ad_artificial_project
-		set_planet_flag = ad_artificial_project_sky_cities
-	}
-	on_unqueued = {
-		remove_planet_flag = ad_artificial_project
-		remove_planet_flag = ad_artificial_project_sky_cities
-	}
-	effect = {
-		custom_tooltip = decision_ad_large_scale_air_area_construction_effects
-		remove_planet_flag = ad_artificial_project
-		remove_planet_flag = ad_artificial_project_sky_cities
-		hidden_effect = {
-			ad_add_artificial_one_sky_cities = yes
+		NOT = {
+			has_planet_flag = ad_artificial_transfer_pause
 		}
 	}
 	ai_weight = {
@@ -59,6 +46,40 @@ decision_ad_large_scale_air_area_construction = {
 		modifier = {
 			factor = 4
 			free_housing < 100
+		}
+	}
+	on_queued = {
+		set_planet_flag = ad_artificial_project
+		set_planet_flag = ad_artificial_project_sky_cities
+		set_planet_flag = ad_artificial_tracked
+		owner = {
+			set_country_flag = ad_artificial_sponsor@root
+		}
+	}
+	on_unqueued = {
+		ad_clear_artificial_project = yes
+	}
+	abort_trigger = {
+		ad_valid_artificial_project_sky_cities = no
+	}
+	abort_effect = {
+		ad_clear_artificial_project = yes
+	}
+	effect = {
+		custom_tooltip = decision_ad_large_scale_air_area_construction_effects
+		hidden_effect = {
+			if = {
+				limit = {
+					ad_valid_artificial_project_sky_cities = yes
+				}
+				hidden_effect = {
+					ad_clear_artificial_project = yes
+					ad_add_artificial_one_sky_cities = yes
+				}
+			}
+			else = {
+				ad_clear_artificial_project = yes
+			}
 		}
 	}
 }
@@ -123,21 +144,8 @@ decision_ad_large_scale_water_area_construction = {
 			}
 			has_planet_flag = ad_artificial_project_under_water_cities
 		}
-	}
-	on_queued = {
-		set_planet_flag = ad_artificial_project
-		set_planet_flag = ad_artificial_project_under_water_cities
-	}
-	on_unqueued = {
-		remove_planet_flag = ad_artificial_project
-		remove_planet_flag = ad_artificial_project_under_water_cities
-	}
-	effect = {
-		custom_tooltip = decision_ad_large_scale_water_area_construction_effects
-		remove_planet_flag = ad_artificial_project
-		remove_planet_flag = ad_artificial_project_under_water_cities
-		hidden_effect = {
-			ad_add_artificial_one_under_water_cities = yes
+		NOT = {
+			has_planet_flag = ad_artificial_transfer_pause
 		}
 	}
 	ai_weight = {
@@ -153,6 +161,40 @@ decision_ad_large_scale_water_area_construction = {
 		modifier = {
 			factor = 4
 			free_housing < 100
+		}
+	}
+	on_queued = {
+		set_planet_flag = ad_artificial_project
+		set_planet_flag = ad_artificial_project_under_water_cities
+		set_planet_flag = ad_artificial_tracked
+		owner = {
+			set_country_flag = ad_artificial_sponsor@root
+		}
+	}
+	on_unqueued = {
+		ad_clear_artificial_project = yes
+	}
+	abort_trigger = {
+		ad_valid_artificial_project_under_water_cities = no
+	}
+	abort_effect = {
+		ad_clear_artificial_project = yes
+	}
+	effect = {
+		custom_tooltip = decision_ad_large_scale_water_area_construction_effects
+		hidden_effect = {
+			if = {
+				limit = {
+					ad_valid_artificial_project_under_water_cities = yes
+				}
+				hidden_effect = {
+					ad_clear_artificial_project = yes
+					ad_add_artificial_one_under_water_cities = yes
+				}
+			}
+			else = {
+				ad_clear_artificial_project = yes
+			}
 		}
 	}
 }
@@ -210,21 +252,8 @@ decision_ad_large_scale_underground_area_construction = {
 			}
 			has_planet_flag = ad_artificial_project_underground_cities
 		}
-	}
-	on_queued = {
-		set_planet_flag = ad_artificial_project
-		set_planet_flag = ad_artificial_project_underground_cities
-	}
-	on_unqueued = {
-		remove_planet_flag = ad_artificial_project
-		remove_planet_flag = ad_artificial_project_underground_cities
-	}
-	effect = {
-		custom_tooltip = decision_ad_large_scale_underground_area_construction_effects
-		remove_planet_flag = ad_artificial_project
-		remove_planet_flag = ad_artificial_project_underground_cities
-		hidden_effect = {
-			ad_add_artificial_one_underground_cities = yes
+		NOT = {
+			has_planet_flag = ad_artificial_transfer_pause
 		}
 	}
 	ai_weight = {
@@ -247,6 +276,40 @@ decision_ad_large_scale_underground_area_construction = {
 		cost = {
 			minerals = 100
 			alloys = 200
+		}
+	}
+	on_queued = {
+		set_planet_flag = ad_artificial_project
+		set_planet_flag = ad_artificial_project_underground_cities
+		set_planet_flag = ad_artificial_tracked
+		owner = {
+			set_country_flag = ad_artificial_sponsor@root
+		}
+	}
+	on_unqueued = {
+		ad_clear_artificial_project = yes
+	}
+	abort_trigger = {
+		ad_valid_artificial_project_underground_cities = no
+	}
+	abort_effect = {
+		ad_clear_artificial_project = yes
+	}
+	effect = {
+		custom_tooltip = decision_ad_large_scale_underground_area_construction_effects
+		hidden_effect = {
+			if = {
+				limit = {
+					ad_valid_artificial_project_underground_cities = yes
+				}
+				hidden_effect = {
+					ad_clear_artificial_project = yes
+					ad_add_artificial_one_underground_cities = yes
+				}
+			}
+			else = {
+				ad_clear_artificial_project = yes
+			}
 		}
 	}
 }
@@ -310,21 +373,8 @@ decision_ad_solar_power_generation = {
 			}
 			has_planet_flag = ad_artificial_project_solar_power_generation
 		}
-	}
-	on_queued = {
-		set_planet_flag = ad_artificial_project
-		set_planet_flag = ad_artificial_project_solar_power_generation
-	}
-	on_unqueued = {
-		remove_planet_flag = ad_artificial_project
-		remove_planet_flag = ad_artificial_project_solar_power_generation
-	}
-	effect = {
-		custom_tooltip = decision_ad_solar_power_generation_effects
-		remove_planet_flag = ad_artificial_project
-		remove_planet_flag = ad_artificial_project_solar_power_generation
-		hidden_effect = {
-			ad_add_artificial_one_solar_power_generation = yes
+		NOT = {
+			has_planet_flag = ad_artificial_transfer_pause
 		}
 	}
 	ai_weight = {
@@ -349,6 +399,40 @@ decision_ad_solar_power_generation = {
 					resource = energy
 					value < 5
 				}
+			}
+		}
+	}
+	on_queued = {
+		set_planet_flag = ad_artificial_project
+		set_planet_flag = ad_artificial_project_solar_power_generation
+		set_planet_flag = ad_artificial_tracked
+		owner = {
+			set_country_flag = ad_artificial_sponsor@root
+		}
+	}
+	on_unqueued = {
+		ad_clear_artificial_project = yes
+	}
+	abort_trigger = {
+		ad_valid_artificial_project_solar_power_generation = no
+	}
+	abort_effect = {
+		ad_clear_artificial_project = yes
+	}
+	effect = {
+		custom_tooltip = decision_ad_solar_power_generation_effects
+		hidden_effect = {
+			if = {
+				limit = {
+					ad_valid_artificial_project_solar_power_generation = yes
+				}
+				hidden_effect = {
+					ad_clear_artificial_project = yes
+					ad_add_artificial_one_solar_power_generation = yes
+				}
+			}
+			else = {
+				ad_clear_artificial_project = yes
 			}
 		}
 	}

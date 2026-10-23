@@ -273,13 +273,13 @@
  job_ad_entrepreneur:0 "Entrepreneur"
  job_ad_entrepreneur_plural:0 "Entrepreneur"
  job_ad_entrepreneur_desc:0 "Economic pioneer who opens up new markets and starts new businesses."
- job_ad_entrepreneur_effect_desc:0 "£job_ad_entrepreneur£ $job_ad_entrepreneur_plural$ consume £consumer_goods£ §Y$consumer_goods$§! and produce £trade£ §Y$TRADE_VALUE$§!, £society£ §Y$society_research$§!, increasing £trade£ §Y$TRADE_VALUE$§!"
+ job_ad_entrepreneur_effect_desc:0 "Per job equivalent: society research 2; trade 5; planetary job trade output +1%. Upkeep: consumer goods 3."
  mod_job_ad_entrepreneur_add:0 "$job_ad_entrepreneur$ Jobs"
 
  job_ad_spaceport_mechanics:0 "Spaceport Control Officer"
  job_ad_spaceport_mechanics_plural:0 "Spaceport Control Officer"
  job_ad_spaceport_mechanics_desc:0 "Specialist operator who manages and controls a spaceport."
- job_ad_spaceport_mechanics_effect_desc:0 "£job_ad_spaceport_mechanics£ $job_ad_spaceport_mechanics_plural$ consume £consumer_goods£ §Y$consumer_goods$§! £alloys£ §Y$alloys$§! and produce £engineering£ §Y$engineering_research$§!, increasing £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
+ job_ad_spaceport_mechanics_effect_desc:0 "Per job equivalent: engineering research 3; naval capacity +4. Upkeep: consumer goods 2, alloys 1."
  mod_job_ad_spaceport_mechanics_add:0 "$job_ad_spaceport_mechanics$ Jobs"
 
  job_ad_professorship:0 "Professorship"
@@ -309,7 +309,7 @@
  job_ad_journalist:0 "Journalist"
  job_ad_journalist_plural:0 "Journalist"
  job_ad_journalist_desc:0 "A professional who gathers the truth (which they believe, or would have us believe) and has a great influence on the public."
- job_ad_journalist_effect_desc:0 "£job_ad_journalist£ $job_ad_journalist_plural$ consume £consumer_goods£ §Y$consumer_goods$§! and produce £unity£ §Y$unity$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, increasing £mod_pop_cat_worker_political_power£ §Y$mod_pop_cat_worker_political_power$§!"
+ job_ad_journalist_effect_desc:0 "Per job equivalent: unity 3; amenities +2; planet stability +0.5. Upkeep: consumer goods 1."
  mod_job_ad_journalist_add:0 "$job_ad_journalist$ Jobs"
 
  job_ad_librarian:0 "Data Librarian"
@@ -321,7 +321,7 @@
  job_ad_psp:0 "Public Security Officer"
  job_ad_psp_plural:0 "Public Security Officer"
  job_ad_psp_desc:0 "A security official who monitors and exposes spies, violent groups and terrorists in the interests of national security."
- job_ad_psp_effect_desc:0 "£job_ad_psp£ $job_ad_psp_plural$ produce £mod_intel_encryption_add£ §Y$intel_encryption_add$§!, reduce £crime£ §Y$PLANET_CRIME_TITLE$§!, and increase £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!"
+ job_ad_psp_effect_desc:0 "Per job equivalent: unity 2; crime -15; planet stability +1; empire encryption +0.1. Upkeep: consumer goods 2."
  mod_job_ad_psp_add:0 "$job_ad_psp$ Jobs"
 
 #########################
@@ -343,7 +343,7 @@
  job_ad_congressman:0 "Advocate"
  job_ad_congressman_plural:0 "Advocate"
  job_ad_congressman_desc:0 "People who represent the views of society and citizens, such as elected representatives, high-profile social activists and retired heroic military personnel, and who strongly lobby the government."
- job_ad_congressman_effect_desc:0 "£job_ad_congressman£ $job_ad_congressman_plural$ consume £consumer_goods£ §Y$consumer_goods$§! to increase £mod_pop_happiness£ §Y$MOD_POP_HAPPINESS$§! and £mod_planet_stability_add£ §Y$PLANET_STABILITY_TITLE$§!"
+ job_ad_congressman_effect_desc:0 "Per job equivalent: unity 3; planet stability +2; happiness +1%. Upkeep: consumer goods 3."
  mod_job_ad_congressman_add:0 "$job_ad_congressman$ Jobs"
 
 ##############################
@@ -1155,11 +1155,11 @@
 
  ad_development_removal_blocked:0 "§RClear the construction queue and demolish this development's districts before removal.§!"
 
- job_ad_professorship_drone_effect_desc:0 "Produces 2 of each research and increases planetary job research output by 1%. Upkeep: 3 energy per job equivalent."
+ job_ad_professorship_drone_effect_desc:0 "Per job equivalent: physics research 2; society research 2; engineering research 2; physics job output +1%; society job output +1%; engineering job output +1%. Upkeep: energy 3."
 
- job_ad_shipwright_drone_effect_desc:0 "Per job equivalent: 4 engineering, 1 naval capacity and +0.25% empire shipyard speed. Upkeep: 2 energy and 1 alloy. Scales with employment without a cap."
+ job_ad_shipwright_drone_effect_desc:0 "Per job equivalent: engineering research 4; naval capacity +1; empire shipyard speed +0.25%. Upkeep: energy 2, alloys 1."
 
- job_ad_infrastructure_engineer_drone_effect_desc:0 "Produces 2 engineering research and increases simple drone output by 1%. Upkeep: 3 energy per job equivalent."
+ job_ad_infrastructure_engineer_drone_effect_desc:0 "Per job equivalent: engineering research 2; simple drone output +1%. Upkeep: energy 3."
 
  ad_shipwright_support_20:0 "Shipyard Support +20%"
 
@@ -1179,4 +1179,40 @@
 
 
 
- job_ad_data_minor_drone_effect_desc:0 "Per job equivalent: 2 of each research, +1% planetary researcher output and +0.1 empire encryption. Upkeep: 3 energy. No workforce cap."
+ job_ad_data_minor_drone_effect_desc:0 "Per job equivalent: physics research 2; society research 2; engineering research 2; planetary researcher output +1%; empire encryption +0.1. Upkeep: energy 3."
+
+ job_ad_atomic_engineer_drone_effect_desc:0 "Per job equivalent: energy 8. Upkeep: minerals 2. Robot empires produce 2 additional energy."
+
+ job_ad_clerk_drone_effect_desc:0 "Per job equivalent: trade 4; amenities +2."
+
+ job_ad_commissioned_officer_drone_effect_desc:0 "Per job equivalent: defense armies +5; naval capacity +10. Upkeep: energy 3."
+
+ job_ad_dairy_farmer_drone_effect_desc:0 "Per job equivalent: food 8. Upkeep: energy 1."
+
+ job_ad_efficient_miner_drone_effect_desc:0 "Per job equivalent: minerals 10."
+
+ job_ad_entrepreneur_drone_effect_desc:0 "Per job equivalent: society research 4; trade 5; planetary job trade output +1%. Upkeep: energy 3."
+
+ job_ad_excavator_drone_effect_desc:0 "Per job equivalent: minor artifacts 0.5. Upkeep: energy 5."
+
+ job_ad_facility_maintainer_drone_effect_desc:0 "Per job equivalent: minerals 5; amenities +3. Upkeep: energy 1."
+
+ job_ad_fungus_farmer_drone_effect_desc:0 "Per job equivalent: food 5."
+
+ job_ad_general_officer_drone_effect_desc:0 "Per job equivalent: defense armies +8; naval capacity +16. Upkeep: energy 4."
+
+ job_ad_geothermal_technician_drone_effect_desc:0 "Per job equivalent: energy 6. Robot empires produce 2 additional energy."
+
+ job_ad_large_scale_farmer_drone_effect_desc:0 "Per job equivalent: food 6."
+
+ job_ad_low_efficiency_miner_drone_effect_desc:0 "Per job equivalent: minerals 3."
+
+ job_ad_space_miner_drone_effect_desc:0 "Per job equivalent: minerals 6; engineering research 2."
+
+ job_ad_spaceport_mechanics_drone_effect_desc:0 "Per job equivalent: engineering research 3; naval capacity +4. Upkeep: energy 2, alloys 1."
+
+ job_ad_underwater_miner_drone_effect_desc:0 "Per job equivalent: minerals 5. Upkeep: energy 1."
+
+ job_ad_water_farmer_drone_effect_desc:0 "Per job equivalent: food 6. Upkeep: energy 1."
+
+ ad_artificial_native_cost_notice:0 "Actual costs, affordability and cancellation settlement use native planetary decisions. Ownership changes abort unfinished development and pause new projects for 3 days."

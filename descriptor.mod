@@ -1,4 +1,4 @@
-﻿version="2.1.0-beta.5"
+﻿version="2.1.0-beta.6"
 tags={
 	"Gameplay"
 	"Diplomacy"

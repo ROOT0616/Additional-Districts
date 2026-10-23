@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.5 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.6 / Stellaris 4.5.2
 @base_ad_cost = 250
 @base_ad_2cost = 300
 district_ad_archaeological_cities = {
@@ -55,6 +55,9 @@ district_ad_archaeological_cities = {
 			owner = {
 				is_gestalt = no
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_excavator_add = 200
@@ -64,39 +67,14 @@ district_ad_archaeological_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				is_gestalt = no
-				is_ai = yes
+				is_gestalt = yes
 			}
-			free_district_slots > 0
-			num_housing <= 200
-		}
-		modifier = {
-			job_clerk_add = 400
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
 			owner = {
 				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_ad_excavator_drone_add = 200
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-				is_ai = yes
-			}
-			free_district_slots > 0
-			free_housing <= 200
-		}
-		modifier = {
-			job_maintenance_drone_add = 400
 		}
 	}
 	triggered_planet_modifier = {
@@ -142,6 +120,9 @@ district_ad_archaeological_cities = {
 				has_technology = tech_housing_2
 				has_ethic = ethic_gestalt_consciousness
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 100
@@ -152,6 +133,9 @@ district_ad_archaeological_cities = {
 			exists = owner
 			owner = {
 				has_active_tradition = tr_prosperity_interstellar_franchising
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -167,15 +151,14 @@ district_ad_archaeological_cities = {
 		}
 		text = job_ad_excavator_effect_desc
 	}
-	ai_resource_production = {
-		minor_artifacts = 100
-		unity = 100
-		physics_research = 100
-		society_research = 100
-		engineering_research = 100
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_excavator_drone_effect_desc
 	}
 }
 district_ad_sky_cities = {
@@ -247,6 +230,9 @@ district_ad_sky_cities = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_clerk_add = 200
@@ -256,39 +242,14 @@ district_ad_sky_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				is_gestalt = no
-				is_ai = yes
+				is_gestalt = yes
 			}
-			free_district_slots > 0
-			num_housing <= 200
-		}
-		modifier = {
-			job_clerk_add = 400
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
 			owner = {
 				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 200
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-				is_ai = yes
-			}
-			free_district_slots > 0
-			free_housing <= 200
-		}
-		modifier = {
-			job_maintenance_drone_add = 400
 		}
 	}
 	triggered_planet_modifier = {
@@ -334,6 +295,9 @@ district_ad_sky_cities = {
 				has_technology = tech_housing_2
 				has_ethic = ethic_gestalt_consciousness
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 100
@@ -344,6 +308,9 @@ district_ad_sky_cities = {
 			exists = owner
 			owner = {
 				has_active_tradition = tr_prosperity_interstellar_franchising
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -367,13 +334,6 @@ district_ad_sky_cities = {
 			}
 		}
 		text = job_maintenance_drone_effect_desc
-	}
-	ai_resource_production = {
-		energy = 1000
-		unity = 100
-		trigger = {
-			always = yes
-		}
 	}
 }
 district_ad_water_cities = {
@@ -436,6 +396,9 @@ district_ad_water_cities = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_clerk_add = 200
@@ -445,39 +408,14 @@ district_ad_water_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				is_gestalt = no
-				is_ai = yes
+				is_gestalt = yes
 			}
-			free_district_slots > 0
-			num_housing <= 200
-		}
-		modifier = {
-			job_clerk_add = 400
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
 			owner = {
 				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 200
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-				is_ai = yes
-			}
-			free_district_slots > 0
-			free_housing <= 200
-		}
-		modifier = {
-			job_maintenance_drone_add = 400
 		}
 	}
 	triggered_planet_modifier = {
@@ -523,6 +461,9 @@ district_ad_water_cities = {
 				has_technology = tech_housing_2
 				has_ethic = ethic_gestalt_consciousness
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 100
@@ -533,6 +474,9 @@ district_ad_water_cities = {
 			exists = owner
 			owner = {
 				has_active_tradition = tr_prosperity_interstellar_franchising
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -556,13 +500,6 @@ district_ad_water_cities = {
 			}
 		}
 		text = job_maintenance_drone_effect_desc
-	}
-	ai_resource_production = {
-		energy = 800
-		unity = 100
-		trigger = {
-			always = yes
-		}
 	}
 }
 district_ad_under_water_cities = {
@@ -631,6 +568,9 @@ district_ad_under_water_cities = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_water_farmer_add = 200
@@ -640,39 +580,14 @@ district_ad_under_water_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				is_gestalt = no
-				is_ai = yes
+				is_gestalt = yes
 			}
-			free_district_slots > 0
-			num_housing <= 200
-		}
-		modifier = {
-			job_clerk_add = 400
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
 			owner = {
 				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_ad_water_farmer_drone_add = 200
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-				is_ai = yes
-			}
-			free_district_slots > 0
-			free_housing <= 200
-		}
-		modifier = {
-			job_maintenance_drone_add = 400
 		}
 	}
 	triggered_planet_modifier = {
@@ -718,6 +633,9 @@ district_ad_under_water_cities = {
 				has_technology = tech_housing_2
 				has_ethic = ethic_gestalt_consciousness
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 100
@@ -728,6 +646,9 @@ district_ad_under_water_cities = {
 			exists = owner
 			owner = {
 				has_active_tradition = tr_prosperity_interstellar_franchising
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -743,13 +664,14 @@ district_ad_under_water_cities = {
 		}
 		text = job_ad_water_farmer_effect_desc
 	}
-	ai_resource_production = {
-		unity = 100
-		energy = 600
-		food = 500
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_water_farmer_drone_effect_desc
 	}
 }
 district_ad_underground_cities = {
@@ -818,6 +740,9 @@ district_ad_underground_cities = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_facility_maintainer_add = 100
@@ -827,39 +752,14 @@ district_ad_underground_cities = {
 		potential = {
 			exists = owner
 			owner = {
-				is_gestalt = no
-				is_ai = yes
+				is_gestalt = yes
 			}
-			free_district_slots > 0
-			num_housing <= 200
-		}
-		modifier = {
-			job_clerk_add = 400
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
 			owner = {
 				is_gestalt = yes
 			}
 		}
 		modifier = {
 			job_ad_facility_maintainer_drone_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-				is_ai = yes
-			}
-			free_district_slots > 0
-			free_housing <= 200
-		}
-		modifier = {
-			job_maintenance_drone_add = 400
 		}
 	}
 	triggered_planet_modifier = {
@@ -905,6 +805,9 @@ district_ad_underground_cities = {
 				has_technology = tech_housing_2
 				has_ethic = ethic_gestalt_consciousness
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 100
@@ -915,6 +818,9 @@ district_ad_underground_cities = {
 			exists = owner
 			owner = {
 				has_active_tradition = tr_prosperity_interstellar_franchising
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -930,13 +836,14 @@ district_ad_underground_cities = {
 		}
 		text = job_ad_facility_maintainer_effect_desc
 	}
-	ai_resource_production = {
-		unity = 100
-		energy = 600
-		minerals = 50
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_facility_maintainer_drone_effect_desc
 	}
 }
 district_ad_solar_power_generation = {
@@ -994,6 +901,9 @@ district_ad_solar_power_generation = {
 					has_ethic = ethic_gestalt_consciousness
 				}
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_technician_add = 500
@@ -1004,6 +914,9 @@ district_ad_solar_power_generation = {
 			exists = owner
 			owner = {
 				has_ethic = ethic_gestalt_consciousness
+			}
+			owner = {
+				is_gestalt = yes
 			}
 		}
 		modifier = {
@@ -1028,12 +941,6 @@ district_ad_solar_power_generation = {
 			}
 		}
 		text = job_technician_effect_desc
-	}
-	ai_resource_production = {
-		energy = 24
-		trigger = {
-			always = yes
-		}
 	}
 }
 district_ad_geothermal_electric_power_generation = {
@@ -1091,6 +998,9 @@ district_ad_geothermal_electric_power_generation = {
 					has_ethic = ethic_gestalt_consciousness
 				}
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_geothermal_technician_add = 400
@@ -1101,6 +1011,9 @@ district_ad_geothermal_electric_power_generation = {
 			exists = owner
 			owner = {
 				has_ethic = ethic_gestalt_consciousness
+			}
+			owner = {
+				is_gestalt = yes
 			}
 		}
 		modifier = {
@@ -1117,11 +1030,14 @@ district_ad_geothermal_electric_power_generation = {
 		}
 		text = job_ad_geothermal_technician_effect_desc
 	}
-	ai_resource_production = {
-		energy = 4
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_geothermal_technician_drone_effect_desc
 	}
 }
 district_ad_tidal_current_generation = {
@@ -1181,6 +1097,9 @@ district_ad_tidal_current_generation = {
 					has_ethic = ethic_gestalt_consciousness
 				}
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_technician_add = 500
@@ -1191,6 +1110,9 @@ district_ad_tidal_current_generation = {
 			exists = owner
 			owner = {
 				has_ethic = ethic_gestalt_consciousness
+			}
+			owner = {
+				is_gestalt = yes
 			}
 		}
 		modifier = {
@@ -1215,12 +1137,6 @@ district_ad_tidal_current_generation = {
 			}
 		}
 		text = job_technician_effect_desc
-	}
-	ai_resource_production = {
-		energy = 20
-		trigger = {
-			always = yes
-		}
 	}
 }
 district_ad_natural_nuclear_power_generation = {
@@ -1279,6 +1195,9 @@ district_ad_natural_nuclear_power_generation = {
 					has_ethic = ethic_gestalt_consciousness
 				}
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_atomic_engineer_add = 200
@@ -1289,6 +1208,9 @@ district_ad_natural_nuclear_power_generation = {
 			exists = owner
 			owner = {
 				has_ethic = ethic_gestalt_consciousness
+			}
+			owner = {
+				is_gestalt = yes
 			}
 		}
 		modifier = {
@@ -1305,11 +1227,14 @@ district_ad_natural_nuclear_power_generation = {
 		}
 		text = job_ad_atomic_engineer_effect_desc
 	}
-	ai_resource_production = {
-		energy = 4
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_atomic_engineer_drone_effect_desc
 	}
 }
 district_ad_open_pit_ore_deposits = {
@@ -1376,6 +1301,9 @@ district_ad_open_pit_ore_deposits = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_mining_drone_add = 500
@@ -1398,6 +1326,9 @@ district_ad_open_pit_ore_deposits = {
 			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -1442,12 +1373,6 @@ district_ad_open_pit_ore_deposits = {
 			}
 		}
 		text = job_fe_acolyte_mine_effect_desc
-	}
-	ai_resource_production = {
-		minerals = 6
-		trigger = {
-			always = yes
-		}
 	}
 }
 district_ad_under_water_deposits = {
@@ -1515,6 +1440,9 @@ district_ad_under_water_deposits = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_underwater_miner_drone_add = 200
@@ -1537,6 +1465,9 @@ district_ad_under_water_deposits = {
 			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -1564,11 +1495,14 @@ district_ad_under_water_deposits = {
 		}
 		text = job_ad_underwater_miner_effect_desc
 	}
-	ai_resource_production = {
-		minerals = 20000
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_underwater_miner_drone_effect_desc
 	}
 }
 district_ad_orbital_deposits = {
@@ -1625,6 +1559,9 @@ district_ad_orbital_deposits = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_space_miner_drone_add = 100
@@ -1647,6 +1584,9 @@ district_ad_orbital_deposits = {
 			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -1674,11 +1614,14 @@ district_ad_orbital_deposits = {
 		}
 		text = job_ad_space_miner_effect_desc
 	}
-	ai_resource_production = {
-		minerals = 2000
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_space_miner_drone_effect_desc
 	}
 }
 district_ad_high_quality_deposits = {
@@ -1746,6 +1689,9 @@ district_ad_high_quality_deposits = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_efficient_miner_drone_add = 300
@@ -1768,6 +1714,9 @@ district_ad_high_quality_deposits = {
 			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -1795,20 +1744,14 @@ district_ad_high_quality_deposits = {
 		}
 		text = job_ad_efficient_miner_effect_desc
 	}
-	ai_resource_production = {
-		minerals = 10
+	triggered_desc = {
 		trigger = {
-			always = yes
-		}
-	}
-	ai_resource_production = {
-		minerals = 58
-		trigger = {
-			OR = {
-				low_mineral_income = yes
-				medium_mineral_income = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
 			}
 		}
+		text = job_ad_efficient_miner_drone_effect_desc
 	}
 }
 district_ad_low_quality_deposits = {
@@ -1876,6 +1819,9 @@ district_ad_low_quality_deposits = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_low_efficiency_miner_drone_add = 700
@@ -1898,6 +1844,9 @@ district_ad_low_quality_deposits = {
 			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -1925,20 +1874,14 @@ district_ad_low_quality_deposits = {
 		}
 		text = job_ad_low_efficiency_miner_effect_desc
 	}
-	ai_resource_production = {
-		minerals = 4
+	triggered_desc = {
 		trigger = {
-			always = yes
-		}
-	}
-	ai_resource_production = {
-		minerals = 12
-		trigger = {
-			OR = {
-				low_mineral_income = yes
-				medium_mineral_income = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
 			}
 		}
+		text = job_ad_low_efficiency_miner_drone_effect_desc
 	}
 }
 district_ad_shed_cultivation_land = {
@@ -2017,6 +1960,9 @@ district_ad_shed_cultivation_land = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_agri_drone_add = 500
@@ -2039,6 +1985,9 @@ district_ad_shed_cultivation_land = {
 			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -2083,21 +2032,6 @@ district_ad_shed_cultivation_land = {
 			}
 		}
 		text = job_fe_acolyte_farm_effect_desc
-	}
-	ai_resource_production = {
-		food = 10
-		trigger = {
-			always = yes
-		}
-	}
-	ai_resource_production = {
-		food = 14
-		trigger = {
-			OR = {
-				low_food_income = yes
-				medium_food_income = yes
-			}
-		}
 	}
 }
 district_ad_in_water_ecosystem = {
@@ -2177,6 +2111,9 @@ district_ad_in_water_ecosystem = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_water_farmer_drone_add = 200
@@ -2199,6 +2136,9 @@ district_ad_in_water_ecosystem = {
 			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -2226,20 +2166,14 @@ district_ad_in_water_ecosystem = {
 		}
 		text = job_ad_water_farmer_effect_desc
 	}
-	ai_resource_production = {
-		food = 100
+	triggered_desc = {
 		trigger = {
-			always = yes
-		}
-	}
-	ai_resource_production = {
-		food = 1000
-		trigger = {
-			OR = {
-				low_food_income = yes
-				medium_food_income = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
 			}
 		}
+		text = job_ad_water_farmer_drone_effect_desc
 	}
 }
 district_ad_mycorrhizal_communities = {
@@ -2318,6 +2252,9 @@ district_ad_mycorrhizal_communities = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_fungus_farmer_drone_add = 200
@@ -2340,6 +2277,9 @@ district_ad_mycorrhizal_communities = {
 			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -2367,11 +2307,14 @@ district_ad_mycorrhizal_communities = {
 		}
 		text = job_ad_fungus_farmer_effect_desc
 	}
-	ai_resource_production = {
-		food = 1
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_fungus_farmer_drone_effect_desc
 	}
 }
 district_ad_large_scale_grazing_land = {
@@ -2450,6 +2393,9 @@ district_ad_large_scale_grazing_land = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_dairy_farmer_drone_add = 400
@@ -2472,6 +2418,9 @@ district_ad_large_scale_grazing_land = {
 			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -2499,20 +2448,14 @@ district_ad_large_scale_grazing_land = {
 		}
 		text = job_ad_dairy_farmer_effect_desc
 	}
-	ai_resource_production = {
-		food = 10
+	triggered_desc = {
 		trigger = {
-			always = yes
-		}
-	}
-	ai_resource_production = {
-		food = 14
-		trigger = {
-			OR = {
-				low_food_income = yes
-				medium_food_income = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
 			}
 		}
+		text = job_ad_dairy_farmer_drone_effect_desc
 	}
 }
 district_ad_large_scale_agricultural_land = {
@@ -2591,6 +2534,9 @@ district_ad_large_scale_agricultural_land = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_large_scale_farmer_drone_add = 400
@@ -2613,6 +2559,9 @@ district_ad_large_scale_agricultural_land = {
 			owner = {
 				is_gestalt = no
 				is_fallen_empire_spiritualist = no
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -2640,20 +2589,14 @@ district_ad_large_scale_agricultural_land = {
 		}
 		text = job_ad_large_scale_farmer_effect_desc
 	}
-	ai_resource_production = {
-		food = 10
+	triggered_desc = {
 		trigger = {
-			always = yes
-		}
-	}
-	ai_resource_production = {
-		food = 14
-		trigger = {
-			OR = {
-				low_food_income = yes
-				medium_food_income = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
 			}
 		}
+		text = job_ad_large_scale_farmer_drone_effect_desc
 	}
 }
 district_ad_ancient_ruins = {
@@ -2708,6 +2651,9 @@ district_ad_ancient_ruins = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_excavator_add = 600
@@ -2716,6 +2662,9 @@ district_ad_ancient_ruins = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -2734,14 +2683,14 @@ district_ad_ancient_ruins = {
 		}
 		text = job_ad_excavator_effect_desc
 	}
-	ai_resource_production = {
-		minor_artifacts = 10
-		physics_research = 8
-		society_research = 8
-		engineering_research = 8
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_excavator_drone_effect_desc
 	}
 }
 district_ad_ancient_databank = {
@@ -2796,6 +2745,9 @@ district_ad_ancient_databank = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_data_minor_add = 400
@@ -2804,6 +2756,9 @@ district_ad_ancient_databank = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -2822,13 +2777,14 @@ district_ad_ancient_databank = {
 		}
 		text = job_ad_data_minor_effect_desc
 	}
-	ai_resource_production = {
-		physics_research = 8
-		society_research = 8
-		engineering_research = 8
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_data_minor_drone_effect_desc
 	}
 }
 district_ad_natural_fortress = {
@@ -2885,6 +2841,9 @@ district_ad_natural_fortress = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_commissioned_officer_add = 100
@@ -2894,6 +2853,9 @@ district_ad_natural_fortress = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -2920,12 +2882,6 @@ district_ad_natural_fortress = {
 			}
 		}
 		text = job_soldier_effect_desc
-	}
-	ai_resource_production = {
-		unity = 1
-		trigger = {
-			always = yes
-		}
 	}
 }
 district_ad_special_tourism_zone = {
@@ -2976,13 +2932,15 @@ district_ad_special_tourism_zone = {
 	}
 	planet_modifier = {
 		planet_housing_add = 200
-		planet_amenities_add = 500
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -2992,6 +2950,9 @@ district_ad_special_tourism_zone = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -3019,11 +2980,26 @@ district_ad_special_tourism_zone = {
 		}
 		text = job_entertainer_effect_desc
 	}
-	ai_resource_production = {
-		unity = 2
-		energy = 2
-		trigger = {
-			always = yes
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			planet_amenities_add = 500
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			planet_amenities_no_happiness_add = 500
 		}
 	}
 }
@@ -3087,6 +3063,9 @@ district_ad_government_district = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_politician_add = 100
@@ -3099,9 +3078,12 @@ district_ad_government_district = {
 			owner = {
 				is_gestalt = yes
 			}
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
-			job_synapse_drone_add = 400
+			job_coordinator_add = 400
 			job_maintenance_drone_add = 100
 		}
 	}
@@ -3116,6 +3098,9 @@ district_ad_government_district = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_politician_add = 100
@@ -3128,10 +3113,13 @@ district_ad_government_district = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 100
-			job_synapse_drone_add = 200
+			job_coordinator_add = 200
 		}
 	}
 	triggered_planet_modifier = {
@@ -3149,6 +3137,9 @@ district_ad_government_district = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_politician_add = 200
@@ -3162,10 +3153,13 @@ district_ad_government_district = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 200
-			job_synapse_drone_add = 800
+			job_coordinator_add = 800
 		}
 	}
 	triggered_desc = {
@@ -3187,12 +3181,6 @@ district_ad_government_district = {
 			}
 		}
 		text = job_politician_effect_desc
-	}
-	ai_resource_production = {
-		energy = 1
-		trigger = {
-			always = yes
-		}
 	}
 }
 district_ad_university_district = {
@@ -3255,6 +3243,9 @@ district_ad_university_district = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_professorship_add = 100
@@ -3266,6 +3257,9 @@ district_ad_university_district = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -3291,6 +3285,9 @@ district_ad_university_district = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_professorship_add = 50
@@ -3305,6 +3302,9 @@ district_ad_university_district = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_calculator_physicist_add = 50
@@ -3328,6 +3328,9 @@ district_ad_university_district = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_professorship_add = 200
@@ -3343,6 +3346,9 @@ district_ad_university_district = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_calculator_physicist_add = 200
@@ -3371,14 +3377,14 @@ district_ad_university_district = {
 		}
 		text = job_researcher_effect_desc
 	}
-	ai_resource_production = {
-		unity = 10
-		physics_research = 100
-		society_research = 100
-		engineering_research = 100
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_professorship_drone_effect_desc
 	}
 }
 district_ad_residential_area = {
@@ -3435,6 +3441,9 @@ district_ad_residential_area = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_clerk_add = 500
@@ -3443,6 +3452,9 @@ district_ad_residential_area = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -3462,6 +3474,9 @@ district_ad_residential_area = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_clerk_add = 200
@@ -3473,6 +3488,9 @@ district_ad_residential_area = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_clerk_drone_add = 200
@@ -3493,6 +3511,9 @@ district_ad_residential_area = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_clerk_add = 1000
@@ -3505,6 +3526,9 @@ district_ad_residential_area = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_clerk_drone_add = 1000
@@ -3520,11 +3544,14 @@ district_ad_residential_area = {
 		}
 		text = job_clerk_effect_desc
 	}
-	ai_resource_production = {
-		energy = 1
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_clerk_drone_effect_desc
 	}
 }
 district_ad_shipbuilding_arsenal = {
@@ -3587,6 +3614,9 @@ district_ad_shipbuilding_arsenal = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_shipwright_add = 400
@@ -3595,6 +3625,9 @@ district_ad_shipbuilding_arsenal = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -3617,6 +3650,9 @@ district_ad_shipbuilding_arsenal = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_shipwright_add = 100
@@ -3628,6 +3664,9 @@ district_ad_shipbuilding_arsenal = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_shipwright_drone_add = 100
@@ -3648,6 +3687,9 @@ district_ad_shipbuilding_arsenal = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_shipwright_add = 400
@@ -3660,6 +3702,9 @@ district_ad_shipbuilding_arsenal = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_shipwright_drone_add = 400
@@ -3675,11 +3720,14 @@ district_ad_shipbuilding_arsenal = {
 		}
 		text = job_ad_shipwright_effect_desc
 	}
-	ai_resource_production = {
-		energy = 1
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_shipwright_drone_effect_desc
 	}
 }
 district_ad_communication_area = {
@@ -3742,6 +3790,9 @@ district_ad_communication_area = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_infrastructure_engineer_add = 200
@@ -3750,6 +3801,9 @@ district_ad_communication_area = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -3769,6 +3823,9 @@ district_ad_communication_area = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_infrastructure_engineer_add = 100
@@ -3780,6 +3837,9 @@ district_ad_communication_area = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_infrastructure_engineer_drone_add = 100
@@ -3800,6 +3860,9 @@ district_ad_communication_area = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_infrastructure_engineer_add = 400
@@ -3812,6 +3875,9 @@ district_ad_communication_area = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_infrastructure_engineer_drone_add = 400
@@ -3827,11 +3893,14 @@ district_ad_communication_area = {
 		}
 		text = job_ad_infrastructure_engineer_effect_desc
 	}
-	ai_resource_production = {
-		energy = 2
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_infrastructure_engineer_drone_effect_desc
 	}
 }
 district_ad_tourist_area = {
@@ -3894,6 +3963,9 @@ district_ad_tourist_area = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_entertainer_add = 400
@@ -3902,6 +3974,9 @@ district_ad_tourist_area = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -3921,6 +3996,9 @@ district_ad_tourist_area = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_entertainer_add = 200
@@ -3932,6 +4010,9 @@ district_ad_tourist_area = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 200
@@ -3952,6 +4033,9 @@ district_ad_tourist_area = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_entertainer_add = 800
@@ -3964,6 +4048,9 @@ district_ad_tourist_area = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_maintenance_drone_add = 800
@@ -3987,13 +4074,6 @@ district_ad_tourist_area = {
 			}
 		}
 		text = job_entertainer_effect_desc
-	}
-	ai_resource_production = {
-		energy = 3
-		unity = 3
-		trigger = {
-			always = yes
-		}
 	}
 }
 district_ad_defense_zone = {
@@ -4056,6 +4136,9 @@ district_ad_defense_zone = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_general_officer_add = 100
@@ -4066,6 +4149,9 @@ district_ad_defense_zone = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -4087,6 +4173,9 @@ district_ad_defense_zone = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_general_officer_add = 100
@@ -4100,6 +4189,9 @@ district_ad_defense_zone = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_general_officer_drone_add = 100
@@ -4122,6 +4214,9 @@ district_ad_defense_zone = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_general_officer_add = 200
@@ -4136,6 +4231,9 @@ district_ad_defense_zone = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_general_officer_drone_add = 200
@@ -4173,11 +4271,23 @@ district_ad_defense_zone = {
 		}
 		text = job_soldier_effect_desc
 	}
-	ai_resource_production = {
-		energy = 1
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_commissioned_officer_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_ad_general_officer_drone_effect_desc
 	}
 }
 district_ad_conceptual_zone = {
@@ -4240,6 +4350,9 @@ district_ad_conceptual_zone = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_trader_add = 100
@@ -4249,6 +4362,9 @@ district_ad_conceptual_zone = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -4268,6 +4384,9 @@ district_ad_conceptual_zone = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_trader_add = 100
@@ -4280,6 +4399,9 @@ district_ad_conceptual_zone = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_entrepreneur_drone_add = 100
@@ -4300,6 +4422,9 @@ district_ad_conceptual_zone = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_trader_add = 200
@@ -4313,6 +4438,9 @@ district_ad_conceptual_zone = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_entrepreneur_drone_add = 600
@@ -4338,12 +4466,14 @@ district_ad_conceptual_zone = {
 		}
 		text = job_ad_entrepreneur_effect_desc
 	}
-	ai_resource_production = {
-		energy = 3
-		unity = 3
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_entrepreneur_drone_effect_desc
 	}
 }
 district_ad_special_research_zone = {
@@ -4406,6 +4536,9 @@ district_ad_special_research_zone = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_politician_add = 100
@@ -4417,6 +4550,9 @@ district_ad_special_research_zone = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -4438,6 +4574,9 @@ district_ad_special_research_zone = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_politician_add = 100
@@ -4452,6 +4591,9 @@ district_ad_special_research_zone = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_calculator_physicist_add = 100
@@ -4474,6 +4616,9 @@ district_ad_special_research_zone = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_politician_add = 200
@@ -4489,6 +4634,9 @@ district_ad_special_research_zone = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_calculator_physicist_add = 467
@@ -4515,15 +4663,6 @@ district_ad_special_research_zone = {
 			}
 		}
 		text = job_researcher_effect_desc
-	}
-	ai_resource_production = {
-		energy = 1
-		physics_research = 3
-		society_research = 3
-		engineering_research = 3
-		trigger = {
-			always = yes
-		}
 	}
 }
 district_ad_spaceport_area = {
@@ -4586,6 +4725,9 @@ district_ad_spaceport_area = {
 			owner = {
 				is_regular_empire = yes
 			}
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_spaceport_mechanics_add = 600
@@ -4594,6 +4736,9 @@ district_ad_spaceport_area = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -4613,6 +4758,9 @@ district_ad_spaceport_area = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_spaceport_mechanics_add = 300
@@ -4624,6 +4772,9 @@ district_ad_spaceport_area = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_spaceport_mechanics_drone_add = 300
@@ -4644,6 +4795,9 @@ district_ad_spaceport_area = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_spaceport_mechanics_add = 1200
@@ -4656,6 +4810,9 @@ district_ad_spaceport_area = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_spaceport_mechanics_drone_add = 1200
@@ -4671,11 +4828,14 @@ district_ad_spaceport_area = {
 		}
 		text = job_ad_spaceport_mechanics_effect_desc
 	}
-	ai_resource_production = {
-		energy = 1
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 		}
+		text = job_ad_spaceport_mechanics_drone_effect_desc
 	}
 }
 district_ad_orbital_elevator = {
@@ -4734,14 +4894,15 @@ district_ad_orbital_elevator = {
 	}
 	planet_modifier = {
 		planet_housing_add = 200
-		planet_amenities_add = 500
-		pop_happiness = 0.05
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
+			}
+			owner = {
+				is_gestalt = no
 			}
 		}
 		modifier = {
@@ -4752,6 +4913,9 @@ district_ad_orbital_elevator = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
 			owner = {
 				is_gestalt = yes
 			}
@@ -4772,6 +4936,9 @@ district_ad_orbital_elevator = {
 	triggered_planet_modifier = {
 		potential = {
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_spaceport_mechanics_add = 100
@@ -4784,6 +4951,9 @@ district_ad_orbital_elevator = {
 				is_gestalt = yes
 			}
 			do_is_arcology_planet = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_spaceport_mechanics_drone_add = 100
@@ -4805,6 +4975,9 @@ district_ad_orbital_elevator = {
 				is_regular_empire = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = no
+			}
 		}
 		modifier = {
 			job_ad_spaceport_mechanics_add = 200
@@ -4818,6 +4991,9 @@ district_ad_orbital_elevator = {
 				is_gestalt = yes
 			}
 			do_is_ringworld = yes
+			owner = {
+				is_gestalt = yes
+			}
 		}
 		modifier = {
 			job_ad_spaceport_mechanics_drone_add = 200
@@ -4844,10 +5020,45 @@ district_ad_orbital_elevator = {
 		}
 		text = job_ad_shipwright_effect_desc
 	}
-	ai_resource_production = {
-		energy = 5
+	triggered_desc = {
 		trigger = {
-			always = yes
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_ad_shipwright_drone_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		text = job_ad_spaceport_mechanics_drone_effect_desc
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			planet_amenities_add = 500
+			pop_happiness = 0.05
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			planet_amenities_no_happiness_add = 500
 		}
 	}
 }
