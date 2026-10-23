@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.7 / Stellaris 4.5.2
 namespace = additionaldistricts
 event = {
 	id = additionaldistricts.9001
@@ -192,6 +192,12 @@ event = {
 				}
 				remove_planet_flag = do_ad_solar_power_generation
 			}
+		}
+		set_global_flag = ad_artificial_migration_v1_done
+	}
+	trigger = {
+		NOT = {
+			has_global_flag = ad_artificial_migration_v1_done
 		}
 	}
 }

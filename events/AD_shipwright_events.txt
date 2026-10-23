@@ -1,20 +1,87 @@
-# Additional Districts 2.1.0-beta.4 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.7 / Stellaris 4.5.2
 namespace = additionaldistricts
-country_event = {
-	id = additionaldistricts.9010
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		ad_refresh_shipwright_support = yes
-	}
-}
 event = {
 	id = additionaldistricts.9011
 	hide_window = yes
 	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			has_global_flag = ad_legacy_cleanup_v7_done
+		}
+	}
 	immediate = {
 		every_country = {
 			ad_refresh_shipwright_support = yes
+			remove_country_flag = build_ad_CEO
+			remove_country_flag = build_ad_C_cap
+			remove_country_flag = build_ad_C_court
+			remove_country_flag = build_ad_C_mil
+			remove_country_flag = build_ad_E_bank
+			remove_country_flag = build_ad_E_cap
+			remove_country_flag = build_ad_E_court
+			remove_country_flag = build_ad_E_mil
+			remove_country_flag = build_ad_G_datebank
+			remove_country_flag = build_ad_M_def
+			remove_country_flag = build_ad_M_dip
+			remove_country_flag = build_ad_M_dom
+			remove_country_flag = build_ad_M_ind
+			remove_country_flag = build_ad_M_inf
+			remove_country_flag = build_ad_M_tra
+			remove_country_flag = build_ad_O_bank
+			remove_country_flag = build_ad_O_def
+			remove_country_flag = build_ad_O_dip
+			remove_country_flag = build_ad_O_dom
+			remove_country_flag = build_ad_O_ind
+			remove_country_flag = build_ad_O_inf
+			remove_country_flag = build_ad_O_tra
+			remove_country_flag = build_ad_Palace
+			remove_country_flag = build_ad_broad
+			remove_country_flag = build_ad_cathedral_of_the_sky
+			remove_country_flag = build_ad_medicinelab
 		}
+		every_galaxy_planet = {
+			remove_planet_flag = build_planet_ad_CEO
+			remove_planet_flag = build_planet_ad_C_cap
+			remove_planet_flag = build_planet_ad_C_court
+			remove_planet_flag = build_planet_ad_C_mil
+			remove_planet_flag = build_planet_ad_E_bank
+			remove_planet_flag = build_planet_ad_E_cap
+			remove_planet_flag = build_planet_ad_E_court
+			remove_planet_flag = build_planet_ad_E_mil
+			remove_planet_flag = build_planet_ad_G_datebank
+			remove_planet_flag = build_planet_ad_M_def
+			remove_planet_flag = build_planet_ad_M_dip
+			remove_planet_flag = build_planet_ad_M_dom
+			remove_planet_flag = build_planet_ad_M_ind
+			remove_planet_flag = build_planet_ad_M_inf
+			remove_planet_flag = build_planet_ad_M_tra
+			remove_planet_flag = build_planet_ad_O_bank
+			remove_planet_flag = build_planet_ad_O_def
+			remove_planet_flag = build_planet_ad_O_dip
+			remove_planet_flag = build_planet_ad_O_dom
+			remove_planet_flag = build_planet_ad_O_ind
+			remove_planet_flag = build_planet_ad_O_inf
+			remove_planet_flag = build_planet_ad_O_tra
+			remove_planet_flag = build_planet_ad_broad
+			remove_planet_flag = build_planet_ad_cathedral_of_the_sky
+			remove_planet_flag = build_planet_ad_medicinelab
+			remove_planet_flag = building_ad_Anti_s_misile_planet_flag
+			remove_planet_flag = do_ad_1
+			remove_planet_flag = do_ad_2
+			remove_planet_flag = do_ad_3
+			remove_planet_flag = do_ad_4
+			remove_planet_flag = do_ad_communication_area
+			remove_planet_flag = do_ad_conceptual_zone
+			remove_planet_flag = do_ad_defense_zone
+			remove_planet_flag = do_ad_government_district
+			remove_planet_flag = do_ad_orbital_elevator
+			remove_planet_flag = do_ad_residential_area
+			remove_planet_flag = do_ad_shipbuilding_arsenal
+			remove_planet_flag = do_ad_spaceport_area
+			remove_planet_flag = do_ad_special_research_zone
+			remove_planet_flag = do_ad_tourist_area
+			remove_planet_flag = do_ad_university_district
+		}
+		set_global_flag = ad_legacy_cleanup_v7_done
 	}
 }

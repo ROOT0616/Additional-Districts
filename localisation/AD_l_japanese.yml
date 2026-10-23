@@ -1161,17 +1161,17 @@
 
  job_ad_infrastructure_engineer_drone_effect_desc:0 "職業相当: 工学研究 2、単純ドローン産出 +1%。 維持費: エネルギー 3。"
 
- ad_shipwright_support_20:0 "造船支援 +20%"
+ ad_shipwright_support_20:0 "旧造船補正（無効・移行時に解除）"
 
- ad_shipwright_support_15:0 "造船支援 +15%"
+ ad_shipwright_support_15:0 "旧造船補正（無効・移行時に解除）"
 
- ad_shipwright_support_10:0 "造船支援 +10%"
+ ad_shipwright_support_10:0 "旧造船補正（無効・移行時に解除）"
 
- ad_shipwright_support_5:0 "造船支援 +5%"
+ ad_shipwright_support_5:0 "旧造船補正（無効・移行時に解除）"
 
- ad_shipwright_support_3:0 "造船支援 +3%"
+ ad_shipwright_support_3:0 "旧造船補正（無効・移行時に解除）"
 
- ad_shipwright_support_1:0 "造船支援 +1%"
+ ad_shipwright_support_1:0 "旧造船補正（無効・移行時に解除）"
 
 
 

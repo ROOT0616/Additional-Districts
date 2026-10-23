@@ -1161,17 +1161,17 @@
 
  job_ad_infrastructure_engineer_drone_effect_desc:0 "Per job equivalent: engineering research 2; simple drone output +1%. Upkeep: energy 3."
 
- ad_shipwright_support_20:0 "Shipyard Support +20%"
+ ad_shipwright_support_20:0 "Legacy shipyard modifier (inactive; removed on migration)"
 
- ad_shipwright_support_15:0 "Shipyard Support +15%"
+ ad_shipwright_support_15:0 "Legacy shipyard modifier (inactive; removed on migration)"
 
- ad_shipwright_support_10:0 "Shipyard Support +10%"
+ ad_shipwright_support_10:0 "Legacy shipyard modifier (inactive; removed on migration)"
 
- ad_shipwright_support_5:0 "Shipyard Support +5%"
+ ad_shipwright_support_5:0 "Legacy shipyard modifier (inactive; removed on migration)"
 
- ad_shipwright_support_3:0 "Shipyard Support +3%"
+ ad_shipwright_support_3:0 "Legacy shipyard modifier (inactive; removed on migration)"
 
- ad_shipwright_support_1:0 "Shipyard Support +1%"
+ ad_shipwright_support_1:0 "Legacy shipyard modifier (inactive; removed on migration)"
 
 
 

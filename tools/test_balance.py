@@ -22,6 +22,9 @@ def check(body,s):
   elif k=='NOT':r=not check(v,s)
   elif k=='NOR':r=not any(check([x],s) for x in v)
   elif k=='has_planet_flag':r=v in s['flags']
+  elif k=='has_global_flag':r=v in s.setdefault('global_flags',set())
+  elif k=='calc_true_if':
+   _,op,num=next(x for x in v if x[0]=='amount');r=cmp(sum(check([x],s) for x in v if x[0]!='amount'),op,int(num))
   elif k=='has_country_flag':r=country_flag(v,s) in s.setdefault('country_flags',{}).setdefault(s.get('owner_id',1),set())
   elif k=='has_deposit':r=s['deposits'][v]>0
   elif k=='has_building_construction':r=s['construction']==(v=='yes')
@@ -40,6 +43,8 @@ def check(body,s):
   elif k=='num_free_districts':
    suffix=first(v,'type')[len('district_ad_'):];num=s['deposits']['d_ad_'+suffix]+s['deposits']['d_ad_artificial_'+suffix]+s['extra']-s['built']
    _,op,n=next(x for x in v if x[0]=='value');r=cmp(max(0,num),op,int(n))
+  elif k=='num_districts':
+   _,op,n=next(x for x in v if x[0]=='value');r=cmp(s.get('built_types',{}).get(first(v,'type'),s['built']),op,int(n))
   elif k=='has_monthly_income':
    _,op,n=next(x for x in v if x[0]=='value');r=cmp(s['income'][first(v,'resource')],op,float(n))
   elif k in ('has_country_resource','resource_stockpile_compare'):
@@ -76,6 +81,10 @@ def apply(body,s):
   elif k=='add_deposit':s['deposits'][v]+=1
   elif k=='remove_deposit':s['deposits'][v]-=1;assert s['deposits'][v]>=0
   elif k=='set_planet_flag':s['flags'].add(v)
+  elif k=='set_global_flag':s.setdefault('global_flags',set()).add(v)
+  elif k=='while':
+   count=first(v,'count');assert count is not None
+   for _ in range(int(count)):apply([x for x in v if x[0]!='count'],s)
   elif k=='remove_planet_flag':s['flags'].discard(v)
   elif k=='set_timed_planet_flag':
    s['flags'].add(first(v,'flag'));s.setdefault('flag_days',{})[first(v,'flag')]=int(first(v,'days'))
@@ -198,9 +207,9 @@ def main():
   if n!='mixed_use_development_plan':assert (None,None,'mixed_use_development_plan') in first(b,'prerequisites')
  assert not any(k=='is_gestalt' for k,_,v in walk(first(techs['mixed_use_development_plan'],'weight_modifier')))
  actions={n:b for n,_,b in load('common/on_actions/AD_on_actions.txt')}
- assert (None,None,'additionaldistricts.9010') in first(actions['on_monthly_pulse_country'],'events')
+ assert 'on_monthly_pulse_country' not in actions
  assert (None,None,'additionaldistricts.9011') in first(actions['on_single_player_save_game_load'],'events')
- result={'version':'2.1.0-beta.6','engine_test':False,'cases':sum(tests.values()),'groups':dict(tests),'limits':'Native payment, queue completion/cancellation and job units require engine verification.'}
+ result={'version':'2.1.0-beta.7','engine_test':False,'cases':sum(tests.values()),'groups':dict(tests),'limits':'Native payment, queue completion/cancellation and job units require engine verification.'}
  if args.report:Path(args.report).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
  print(json.dumps(result,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

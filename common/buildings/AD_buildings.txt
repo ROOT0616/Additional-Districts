@@ -1,4 +1,4 @@
-# Additional Districts 2.1.0-beta.6 / Stellaris 4.5.2
+# Additional Districts 2.1.0-beta.7 / Stellaris 4.5.2
 building_ad_Palace = {
 	building_sets = {
 		ad_buildings
@@ -39,23 +39,6 @@ building_ad_Palace = {
 			energy = 3
 		}
 	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_Palace
-					}
-				}
-				set_country_flag = build_ad_Palace
-			}
-		}
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_Palace
-		}
-	}
 }
 building_ad_CEO = {
 	building_sets = {
@@ -93,24 +76,6 @@ building_ad_CEO = {
 		}
 		upkeep = {
 			energy = 3
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_CEO
-					}
-				}
-				set_country_flag = build_ad_CEO
-			}
-		}
-		set_planet_flag = build_planet_ad_CEO
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_CEO
 		}
 	}
 }
@@ -161,24 +126,6 @@ building_ad_M_def = {
 			volatile_motes = 1
 		}
 	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_M_def
-					}
-				}
-				set_country_flag = build_ad_M_def
-			}
-		}
-		set_planet_flag = build_planet_ad_M_def
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_M_def
-		}
-	}
 }
 building_ad_O_def = {
 	building_sets = {
@@ -224,24 +171,6 @@ building_ad_O_def = {
 		upkeep = {
 			energy = 5
 			volatile_motes = 1
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_O_def
-					}
-				}
-				set_country_flag = build_ad_O_def
-			}
-		}
-		set_planet_flag = build_planet_ad_O_def
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_O_def
 		}
 	}
 }
@@ -291,24 +220,6 @@ building_ad_M_dom = {
 			rare_crystals = 1
 		}
 	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_M_dom
-					}
-				}
-				set_country_flag = build_ad_M_dom
-			}
-		}
-		set_planet_flag = build_planet_ad_M_dom
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_M_dom
-		}
-	}
 }
 building_ad_O_dom = {
 	building_sets = {
@@ -353,24 +264,6 @@ building_ad_O_dom = {
 		upkeep = {
 			energy = 5
 			rare_crystals = 1
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_O_dom
-					}
-				}
-				set_country_flag = build_ad_O_dom
-			}
-		}
-		set_planet_flag = build_planet_ad_O_dom
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_O_dom
 		}
 	}
 }
@@ -420,24 +313,6 @@ building_ad_M_dip = {
 			volatile_motes = 1
 		}
 	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_M_dip
-					}
-				}
-				set_country_flag = build_ad_M_dip
-			}
-		}
-		set_planet_flag = build_planet_ad_M_dip
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_M_dip
-		}
-	}
 }
 building_ad_O_dip = {
 	building_sets = {
@@ -482,24 +357,6 @@ building_ad_O_dip = {
 		upkeep = {
 			energy = 5
 			volatile_motes = 1
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_O_dip
-					}
-				}
-				set_country_flag = build_ad_O_dip
-			}
-		}
-		set_planet_flag = build_planet_ad_O_dip
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_O_dip
 		}
 	}
 }
@@ -549,24 +406,6 @@ building_ad_M_inf = {
 			exotic_gases = 1
 		}
 	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_M_inf
-					}
-				}
-				set_country_flag = build_ad_M_inf
-			}
-		}
-		set_planet_flag = build_planet_ad_M_inf
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_M_inf
-		}
-	}
 }
 building_ad_O_inf = {
 	building_sets = {
@@ -610,24 +449,6 @@ building_ad_O_inf = {
 		upkeep = {
 			energy = 5
 			exotic_gases = 1
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_O_inf
-					}
-				}
-				set_country_flag = build_ad_O_inf
-			}
-		}
-		set_planet_flag = build_planet_ad_O_inf
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_O_inf
 		}
 	}
 }
@@ -676,17 +497,6 @@ building_ad_M_tra = {
 			rare_crystals = 1
 		}
 	}
-	on_built = {
-		owner = {
-			set_country_flag = build_ad_M_tra
-		}
-		set_planet_flag = build_planet_ad_M_tra
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_M_tra
-		}
-	}
 }
 building_ad_O_tra = {
 	building_sets = {
@@ -730,24 +540,6 @@ building_ad_O_tra = {
 		upkeep = {
 			energy = 5
 			rare_crystals = 1
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_O_tra
-					}
-				}
-				set_country_flag = build_ad_O_tra
-			}
-		}
-		set_planet_flag = build_planet_ad_O_tra
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_O_tra
 		}
 	}
 }
@@ -796,17 +588,6 @@ building_ad_M_ind = {
 			exotic_gases = 1
 		}
 	}
-	on_built = {
-		owner = {
-			set_country_flag = build_ad_M_ind
-		}
-		set_planet_flag = build_planet_ad_M_ind
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_M_ind
-		}
-	}
 }
 building_ad_O_ind = {
 	building_sets = {
@@ -851,24 +632,6 @@ building_ad_O_ind = {
 			exotic_gases = 1
 		}
 	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_O_ind
-					}
-				}
-				set_country_flag = build_ad_O_ind
-			}
-		}
-		set_planet_flag = build_planet_ad_O_ind
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_O_ind
-		}
-	}
 }
 building_ad_E_cap = {
 	building_sets = {
@@ -910,24 +673,6 @@ building_ad_E_cap = {
 			energy = 3
 		}
 	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_E_cap
-					}
-				}
-				set_country_flag = build_ad_E_cap
-			}
-		}
-		set_planet_flag = build_planet_ad_E_cap
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_E_cap
-		}
-	}
 }
 building_ad_C_cap = {
 	building_sets = {
@@ -965,24 +710,6 @@ building_ad_C_cap = {
 		}
 		upkeep = {
 			energy = 3
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_C_cap
-					}
-				}
-				set_country_flag = build_ad_C_cap
-			}
-		}
-		set_planet_flag = build_planet_ad_C_cap
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_C_cap
 		}
 	}
 }
@@ -1030,24 +757,6 @@ building_ad_E_court = {
 			energy = 3
 		}
 	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_E_court
-					}
-				}
-				set_country_flag = build_ad_E_court
-			}
-		}
-		set_planet_flag = build_planet_ad_E_court
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_E_court
-		}
-	}
 }
 building_ad_C_court = {
 	building_sets = {
@@ -1089,24 +798,6 @@ building_ad_C_court = {
 		}
 		upkeep = {
 			energy = 3
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_C_court
-					}
-				}
-				set_country_flag = build_ad_C_court
-			}
-		}
-		set_planet_flag = build_planet_ad_C_court
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_C_court
 		}
 	}
 }
@@ -1153,24 +844,6 @@ building_ad_E_bank = {
 		upkeep = {
 			energy = 5
 			rare_crystals = 1
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_E_bank
-					}
-				}
-				set_country_flag = build_ad_E_bank
-			}
-		}
-		set_planet_flag = build_planet_ad_E_bank
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_E_bank
 		}
 	}
 	on_queued = {
@@ -1223,17 +896,6 @@ building_ad_O_bank = {
 			rare_crystals = 1
 		}
 	}
-	on_built = {
-		owner = {
-			set_country_flag = build_ad_O_bank
-		}
-		set_planet_flag = build_planet_ad_O_bank
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_O_bank
-		}
-	}
 }
 building_ad_E_mil = {
 	building_sets = {
@@ -1281,17 +943,6 @@ building_ad_E_mil = {
 			volatile_motes = 1
 		}
 	}
-	on_built = {
-		owner = {
-			set_country_flag = build_ad_E_mil
-		}
-		set_planet_flag = build_planet_ad_E_mil
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_E_mil
-		}
-	}
 }
 building_ad_C_mil = {
 	building_sets = {
@@ -1337,24 +988,6 @@ building_ad_C_mil = {
 			volatile_motes = 1
 		}
 	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_C_mil
-					}
-				}
-				set_country_flag = build_ad_C_mil
-			}
-		}
-		set_planet_flag = build_planet_ad_C_mil
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_C_mil
-		}
-	}
 }
 building_ad_broad = {
 	building_sets = {
@@ -1398,24 +1031,6 @@ building_ad_broad = {
 			rare_crystals = 1
 		}
 	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_broad
-					}
-				}
-				set_country_flag = build_ad_broad
-			}
-		}
-		set_planet_flag = build_planet_ad_broad
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_broad
-		}
-	}
 }
 building_ad_G_datebank = {
 	building_sets = {
@@ -1454,24 +1069,6 @@ building_ad_G_datebank = {
 		upkeep = {
 			energy = 3
 			exotic_gases = 2
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_G_datebank
-					}
-				}
-				set_country_flag = build_ad_G_datebank
-			}
-		}
-		set_planet_flag = build_planet_ad_G_datebank
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_G_datebank
 		}
 	}
 }
@@ -1514,24 +1111,6 @@ building_ad_medicinelab = {
 		}
 		upkeep = {
 			energy = 5
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_medicinelab
-					}
-				}
-				set_country_flag = build_ad_medicinelab
-			}
-		}
-		set_planet_flag = build_planet_ad_medicinelab
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_medicinelab
 		}
 	}
 }
@@ -1581,24 +1160,6 @@ building_ad_cathedral_of_the_sky = {
 		upkeep = {
 			consumer_goods = 15
 			energy = 20
-		}
-	}
-	on_built = {
-		owner = {
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = build_ad_cathedral_of_the_sky
-					}
-				}
-				set_country_flag = build_ad_cathedral_of_the_sky
-			}
-		}
-		set_planet_flag = build_planet_ad_cathedral_of_the_sky
-	}
-	on_destroy = {
-		owner = {
-			remove_country_flag = build_ad_cathedral_of_the_sky
 		}
 	}
 }
@@ -2707,12 +2268,6 @@ building_ad_Anti_s_misile = {
 			volatile_motes = 1
 		}
 	}
-	on_built = {
-		set_planet_flag = building_ad_Anti_s_misile_planet_flag
-	}
-	on_destroy = {
-		remove_planet_flag = building_ad_Anti_s_misile_planet_flag
-	}
 }
 building_ad_robot_assembly_plant = {
 	building_sets = {
@@ -3296,8 +2851,6 @@ building_slave_shop = {
 		planet_crime_add = 75
 		job_clerk_add = 200
 	}
-	country_modifier = {
-	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -3392,8 +2945,6 @@ building_yakuza_office = {
 		job_clerk_add = 200
 		job_soldier_add = 100
 	}
-	country_modifier = {
-	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -3453,8 +3004,6 @@ building_yakuza_estate = {
 		branch_office_target_max_buildings_add = 3
 		planet_buildings_cost_mult = 0.2
 		job_clerk_add = 200
-	}
-	country_modifier = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3616,8 +3165,6 @@ building_so_kai_ya = {
 		job_clerk_add = 200
 		job_trader_add = 100
 	}
-	country_modifier = {
-	}
 	resources = {
 		category = planet_branch_office_buildings
 		cost = {
@@ -3680,8 +3227,6 @@ building_boryoku_ya = {
 		branch_office_criminal_syndicate_value_add = 0.1
 		planet_stability_add = 5
 		pop_cat_ruler_happiness = 0.05
-	}
-	country_modifier = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
@@ -3773,8 +3318,6 @@ building_buki_factry = {
 		planet_crime_add = 50
 		job_foundry_add = 100
 		planet_jobs_alloys_produces_mult = 0.05
-	}
-	country_modifier = {
 	}
 	resources = {
 		category = planet_branch_office_buildings
